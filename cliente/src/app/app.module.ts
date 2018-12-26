@@ -7,6 +7,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { LoginGuard } from './login.guard';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

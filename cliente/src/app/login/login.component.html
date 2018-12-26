@@ -9,23 +9,26 @@
           </div>
         </span>
         
+        <form #loginForm = "ngForm" (ngSubmit)="login(loginForm)" class="formulario">
         
         <div class="wrap-input100 rs1 validate-input" data-validate = "Username is required">
-          <input class="input100" type="text" name="username" ngModel>
-          <span class="label-input100">Usuario:</span>
+          <input class="input100" type="text" placeholder="Usuario:" name="username" ngModel>
+          
         </div>
         
         
         <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
-          <input class="input100" type="password" name="pass" ngModel>
-          <span class="label-input100">Contraseña:</span>
+          <input class="input100" type="password" placeholder="Contraseña:" name="pass" ngModel>
+          
         </div>
 
         <div class="container-login100-form-btn">
-          <a routerLink="/home" class="login100-form-btn">
+          <button type="submit" class="login100-form-btn">
             Iniciar Sesión
-          </a>
+          </button>
         </div>
+
+      </form>
         
         <div class="text-center w-full p-t-23">
           <a routerLink="#" class="txt1">
