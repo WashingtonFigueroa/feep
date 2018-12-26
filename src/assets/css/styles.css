@@ -4,7 +4,7 @@
 body {
 	margin:0px auto;
 	padding:0;
-	background: rgb(148, 212, 114) url("../imgs/bg02.png");
+	background: #94d472 url("../imgs/bg02.png");
 	font-family: "Source Sans Pro","sans-serif";
 	font-size: 1.0em;
 	color:#666;
@@ -217,7 +217,11 @@ section#content {
 aside#sidebar {
 	width:250px;
 	position: fixed;
-	background-image: url("../imgs/bg02.png");
+	background: #94d472 url("../imgs/bg02.png");
+}
+.sdbheader {
+	text-align: center;
+	font-family: OpenSans-Bold;
 }
 nav#mainnav ul {
 	padding: 0;
@@ -248,7 +252,7 @@ nav#mainnav li a {
 	color: #f0f0f0;
 	display: block;
 	padding: 15px 17px;
-	text-align: right;
+	text-align: center;
 	font-weight:  bold;
 	text-decoration: none;
 }
