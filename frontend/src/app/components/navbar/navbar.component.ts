@@ -138,7 +138,7 @@ export class NavbarComponent implements OnInit {
         }
     };
 
-    getTitle(){
+    getTitle() {
       var titlee = this.location.prepareExternalUrl(this.location.path());
       if(titlee.charAt(0) === '#'){
           titlee = titlee.slice( 2 );
@@ -150,6 +150,6 @@ export class NavbarComponent implements OnInit {
               return this.listTitles[item].title;
           }
       }
-      return 'Dashboard';
+      return 'Lo imposible solo tarda un poco más';
     }
 }
