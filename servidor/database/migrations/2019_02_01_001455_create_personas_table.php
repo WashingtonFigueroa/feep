@@ -18,7 +18,7 @@ class CreatePersonasTable extends Migration
             $table->integer('tipo_persona_id')->unsigned();
             $table->integer('organizacion_id')->unsigned();
             $table->integer('parroquia_id')->unsigned();
-            $table->foreign('organizacion_id')
+            $table->foreign('tipo_persona_id')
                 ->references('tipo_persona_id')
                 ->on('tipo_personas')
                 ->onDelete('cascade');

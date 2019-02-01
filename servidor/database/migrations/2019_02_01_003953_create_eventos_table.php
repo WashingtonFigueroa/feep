@@ -16,7 +16,7 @@ class CreateEventosTable extends Migration
         Schema::create('eventos', function (Blueprint $table) {
             $table->increments('evento_id');
             $table->integer('tipo_evento_id')->unsigned();
-            $table->integer('persona_id')->unsigned();
+            $table->integer('parroquia_id')->unsigned();
             $table->foreign('tipo_evento_id')
                 ->references('tipo_evento_id')
                 ->on('tipo_eventos')
