@@ -31,4 +31,6 @@ Route::apiResources([
     'parroquias' => 'API\ParroquiaController',
     'participantes' => 'API\ParticipanteController',
     'organizacion-eventos' => 'API\OrganizacionEventoController',
+    'tipo-insumos' => 'API\TipoInsumoController',
+    'suministros' => 'API\SuministroController',
 ]);
