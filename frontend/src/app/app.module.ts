@@ -12,6 +12,10 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { OrganizacionComponent } from './organizacion/organizacion.component';
+import { OrganizacionIndexComponent } from './organizacion/organizacion-index/organizacion-index.component';
+import { OrganizacionCreateComponent } from './organizacion/organizacion-create/organizacion-create.component';
+import { OrganizacionUpdateComponent } from './organizacion/organizacion-update/organizacion-update.component';
 
 @NgModule({
   imports: [
@@ -26,6 +30,10 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    OrganizacionComponent,
+    OrganizacionIndexComponent,
+    OrganizacionCreateComponent,
+    OrganizacionUpdateComponent,
 
   ],
   providers: [],
