@@ -15,6 +15,11 @@ class CreateCiudadsTable extends Migration
     {
         Schema::create('ciudades', function (Blueprint $table) {
             $table->increments('ciudad_id');
+            $table->integer('provincia_id')->unsigned();
+            $table->foreign('provincia_id')
+                ->references('provincia_id')
+                ->on('provincias')
+                ->onDelete('cascade');
             $table->string('nombre');
             $table->string('descripcion');
             $table->softDeletes();
