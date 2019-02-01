@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers\API;
 
-use App\TipoOrganizacion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use test\Mockery\ReturnTypeObjectTypeHint;
 
-class TipoOrganizacionController extends Controller
+class OrganizacionEventoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,7 @@ class TipoOrganizacionController extends Controller
      */
     public function index()
     {
-        $tipo_organizacion = TipoOrganizacion::orderBy('descripcion')->get();
-        return response()->json($tipo_organizacion, 200);
+        //
     }
 
     /**
@@ -62,8 +59,6 @@ class TipoOrganizacionController extends Controller
      */
     public function destroy($id)
     {
-        $tipo_organizacion = TipoOrganizacion::find($id);
-        $tipo_organizacion->delete($id);
-        return response()->json(['message' => 'Tipo de organizacion eliminada']);
+        //
     }
 }
