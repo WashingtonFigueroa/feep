@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Persona;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        //
+        $personas = Persona::orderby('nombres')->get();
+        return response()->json($personas, 200);
     }
 
     /**
@@ -25,7 +27,8 @@ class PersonaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $persona = Persona::create($request->all());
+        return response()->json($persona, 201);
     }
 
     /**
@@ -36,7 +39,7 @@ class PersonaController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Persona::find($id), 200);
     }
 
     /**
@@ -48,7 +51,9 @@ class PersonaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $persona = Persona::find($id);
+        $persona->update($request->all());
+        return response()->json($persona, 200);
     }
 
     /**
@@ -59,6 +64,8 @@ class PersonaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $persona = Persona::find($id);
+        $persona->delete();
+        return response()->json($persona, 200);
     }
 }
