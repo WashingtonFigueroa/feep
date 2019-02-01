@@ -15,7 +15,7 @@ class TipoController extends Controller
      */
     public function index()
     {
-        return response()->json(Tipo::orderBy('nombre')->get(), 200);
+        return response()->json(Tipo::orderBy('nombre')->paginate(10), 200);
     }
 
     /**

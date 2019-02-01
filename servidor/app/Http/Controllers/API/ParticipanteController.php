@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Participante;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,7 @@ class ParticipanteController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(Participante::paginate(), 200);
     }
 
     /**
@@ -25,7 +26,8 @@ class ParticipanteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $participante = Participante::create($request->all());
+        return response()->json($participante, 201);
     }
 
     /**
@@ -36,7 +38,7 @@ class ParticipanteController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Participante::find($id), 200);
     }
 
     /**
@@ -48,7 +50,9 @@ class ParticipanteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $participante = Participante::find($id);
+        $participante->update($request->all());
+        return response()->json($participante, 200);
     }
 
     /**
@@ -59,6 +63,8 @@ class ParticipanteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $participante = Participante::find($id);
+        $participante->delete();
+        return response()->json($participante, 200);
     }
 }

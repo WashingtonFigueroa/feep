@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Parroquia;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class ParroquiaController extends Controller
      */
     public function index()
     {
-        //
+        $parroquias = Parroquia::orderBy('nombre')->paginate(10);
+        return response()->json($parroquias, 200);
     }
 
     /**
@@ -25,7 +27,7 @@ class ParroquiaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return response()->json(Parroquia::create($request->all()), 200);
     }
 
     /**
@@ -36,7 +38,7 @@ class ParroquiaController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Parroquia::find($id), 200);
     }
 
     /**
@@ -48,7 +50,8 @@ class ParroquiaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $parroquia = Parroquia::find($id);
+        $parroquia->update($request->all());
     }
 
     /**
@@ -59,6 +62,8 @@ class ParroquiaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $parroquia = Parroquia::find($id);
+        $parroquia->delete();
+        return response()->json($parroquia, 200);
     }
 }

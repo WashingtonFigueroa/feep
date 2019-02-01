@@ -15,7 +15,7 @@ class BarrioController extends Controller
      */
     public function index()
     {
-        return response()->json(Barrio::orderBy('nombre')->get(), 200);
+        return response()->json(Barrio::orderBy('nombre')->paginate(10), 200);
     }
 
 
@@ -27,8 +27,7 @@ class BarrioController extends Controller
      */
     public function store(Request $request)
     {
-/*        Barrio::create($request)
-        return response()->json(); */
+        return response()->json(Barrio::create($request), 200);
     }
 
     /**
@@ -39,7 +38,7 @@ class BarrioController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Barrio::find($id), 200);
     }
 
     /**
@@ -51,7 +50,9 @@ class BarrioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $barrio = Barrio::find($id);
+        $barrio->update($request->all());
+        return response()->json($barrio, 200);
     }
 
     /**
@@ -62,6 +63,8 @@ class BarrioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $barrio = Barrio::find($id);
+        $barrio->delete();
+        return response()->json($barrio, 200);
     }
 }

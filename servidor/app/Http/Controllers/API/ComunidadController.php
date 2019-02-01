@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Comunidad;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,7 @@ class ComunidadController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(Comunidad::orderBy('nombre')->paginate(10), 200);
     }
 
     /**
@@ -25,7 +26,8 @@ class ComunidadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $comunidad = Comunidad::create($request->all());
+        return response()->json($comunidad, 201);
     }
 
     /**
@@ -36,7 +38,7 @@ class ComunidadController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Comunidad::find($id), 200);
     }
 
     /**
@@ -48,7 +50,9 @@ class ComunidadController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $comunidad = Comunidad::find($id);
+        $comunidad->update($request->all());
+        return response()->json($comunidad, 200);
     }
 
     /**
@@ -59,6 +63,8 @@ class ComunidadController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $comunidad = Comunidad::find($id);
+        $comunidad->delete();
+        return response()->json($comunidad, 200);
     }
 }

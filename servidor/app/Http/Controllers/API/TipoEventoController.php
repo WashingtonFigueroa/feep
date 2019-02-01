@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\TipoEvento;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class TipoEventoController extends Controller
      */
     public function index()
     {
-        //
+        $tipo_eventos = TipoEvento::orderBy('nombre')->paginate(10);
+        return response()->json($tipo_eventos, 200);
     }
 
     /**
@@ -25,7 +27,7 @@ class TipoEventoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return response()->json(TipoEvento::create($request->all()), 201);
     }
 
     /**
@@ -36,7 +38,7 @@ class TipoEventoController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(TipoEvento::find($id), 200);
     }
 
     /**
@@ -48,7 +50,9 @@ class TipoEventoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $tipo_evento = TipoEvento::find($id);
+        $tipo_evento->update();
+        return response()->json($tipo_evento, 200);
     }
 
     /**
@@ -59,6 +63,8 @@ class TipoEventoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tipo_evento = TipoEvento::find($id);
+        $tipo_evento->delete();
+        return response()->json($tipo_evento, 200);
     }
 }
