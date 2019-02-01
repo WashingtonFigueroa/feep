@@ -18,7 +18,11 @@ class OrganizacionController extends Controller
         $organizaciones = Organizacion::orderBy('nombre')->paginate(10);
         return response()->json($organizaciones, 200);
     }
-
+    public function listar()
+    {
+        $organizacion = Organizacion::orderBy('nombre')->get();
+        return response()->json($organizacion, 200);
+    }
     /**
      * Store a newly created resource in storage.
      *

@@ -1,3 +1,171 @@
-<p>
-  miembro-create works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-info" routerLink="/miembros"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+          <h5 class="title">Registrar Persona</h5>
+        </div>
+        <div class="card-body">
+          <form (submit)="store()" [formGroup]="miembroGroup" *ngIf="tipo_personas !== null && organizaciones !== null" role="form">
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Tipo Persona</label>
+                  <select name="tipo_persona_id" id="tipo_persona_id" formControlName="tipo_persona_id" class="form-control">
+                    <option [value]="tipopersona.tipo_persona_id" *ngFor="let tipopersona of tipo_personas">{{ tipopersona.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Seleccione Organización</label>
+                  <select name="organizacion_id" id="organizacion_id" formControlName="organizacion_id" class="form-control">
+                    <option [value]="organizacion.organizacion_id" *ngFor="let organizacion of organizaciones">{{ organizacion.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Parroquia</label>
+                  <input type="text" class="form-control" formControlName="parroquia" name="parroquia" id="parroquia">
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Cedula</label>
+                  <input type="text" class="form-control" formControlName="cedula" name="cedula" id="cedula">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Nombres</label>
+                  <input type="text" class="form-control" formControlName="nombres" name="nombres" id="nombres">
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Genero</label>
+                  <select class="form-control" id="sel1">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Travesti">Travesti</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Ocupacion</label>
+                  <input type="text" class="form-control" formControlName="ocupacion" name="ocupacion" id="ocupacion">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label>Etnia</label>
+                  <select class="form-control" id="sel2">
+                    <option value="Afroecuatorianos">Afroecuatorianos</option>
+                    <option value="Quichua">Quichua</option>
+                    <option value="Mestizos">Mestizos</option>
+                    <option value="Montubios">Montubios</option>
+                    <option value="Achuar">Achuar</option>
+                    <option value="Cofán">Cofán</option>
+                    <option value="Huaorani">Huaorani</option>
+                    <option value="Secoya">Secoya</option>
+                    <option value="Siona">Siona</option>
+                    <option value="Siona">Siona</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Fecha Nacimiento</label>
+                  <input type="date" class="form-control" formControlName="fecha_nacimiento" name="fecha_nacimiento" id="fecha_nacimiento">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Dirección</label>
+                  <input type="text" class="form-control" formControlName="direccion" name="direccion" id="direccion">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label>Telefono Fijo</label>
+                  <input type="text" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Operadora</label>
+                  <input type="text" class="form-control" formControlName="operadora" name="operadora" id="operadora">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Contacto</label>
+                  <input type="text" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="form-group">
+                    <button class="btn btn-dark" routerLink="/miembros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
+                    <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                  </div>  </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <a href="#">
+              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            </a>
+            <br>
+            <button class="btn btn-primary" routerLink="/tipopersona/crear" >Tipo Persona &nbsp;  <span class="fa fa-save"></span></button>
+            <p class="description">
+              Tipos de Organizaciones
+            </p>
+          </div>
+          <p class="description text-center">
+            "Lamborghini Mercy
+            <br> Your chick she so thirsty
+            <br> I'm in that two seat Lambo"
+          </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,7 +11,7 @@ class TipoPersona extends Model
     protected $table = 'tipo_personas';
     protected $primaryKey = 'tipo_persona_id';
     protected $fillable = [
-        'imagen',
+        'nombre',
         'descripcion',
     ];
     protected $dates = "deleted_at";

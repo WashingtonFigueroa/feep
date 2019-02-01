@@ -10,6 +10,9 @@ export class OrganizacionService {
     index() {
         return this.http.get(`${this.base}organizaciones`);
     }
+    listar() {
+        return this.http.get(`${this.base}organizaciones-listar`);
+    }
     buscar(valor: string = '') {
         return this.http.get(`${this.base}organizaciones-buscar/${valor}`);
     }

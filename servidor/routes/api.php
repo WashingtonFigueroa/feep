@@ -21,6 +21,8 @@ Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
 
 /*listados*/
 Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
+Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
+Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 
 
 Route::apiResources([

@@ -1,0 +1,103 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-primary" routerLink="/miembros/crear">REGISTRAR MIEMBROS  <span class="fa fa-save"></span></button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <form (submit)="buscar(valor)" class="form-inline" role="form">
+                                        <div>
+                                            <input type="search" id="search"
+                                                   [(ngModel)]="valor"
+                                                   name="valor"
+                                                   class="input-search"
+                                                   placeholder="Persona..">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn-search">BUSCAR</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table " *ngIf="miembros !== null">
+                                            <thead class=" text-primary">
+                                            <tr>
+                                                <th> #   </th>
+                                                <th> Tipo   </th>
+                                                <th> Organización   </th>
+                                                <th> Cedula   </th>
+                                                <th> Nombres </th>
+                                                <th> Dirección </th>
+                                                <th> Contacto </th>
+                                                <th> Acciones   </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr *ngFor="let miembro of miembros.data; let i = index">
+                                                <td>  {{ miembro.persona_id }} </td>
+                                                <td>  {{ miembro.tipo_persona_id }} </td>
+                                                <td>  {{ miembro.organizacion_id }} </td>
+                                                <td>  {{ miembro.cedula }} </td>
+                                                <td>  {{ miembro.nombres }} </td>
+                                                <td>  {{ miembro.direccion }} </td>
+                                                <td>  {{ miembro.contacto }} </td>
+                                                <td class="text-center">
+                                                    <button routerLink="/miembros/editar/{{miembro.persona_id}}" type="button"
+                                                            class="btn btn-xs btn-info">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-xs btn-danger" (click)="destroy(miembro, i)">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end table-->
+                            <div class="container-fluid" *ngIf="miembros !== null">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <small>Página {{ current_page }}</small>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <small> <button class="page-link" [disabled]="prev_page === null" (click)="loadPagination(prev_page)">Anterior</button> </small>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <small> <button class="page-link" *ngFor="let page of pages"(click)="loadPagination(page.url)">{{ page.item }}</button> </small>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <small> <button class="page-link" [disabled]="next_page === null" (click)="loadPagination(next_page)">Siguiente</button> </small>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end paginate-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
