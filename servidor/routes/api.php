@@ -17,7 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 //Imegenes
-Route::get('organizaciones-imagen/{url}', 'OrganizacionController@imagen');
+Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
+
+/*listados*/
+Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
 
 
 Route::apiResources([

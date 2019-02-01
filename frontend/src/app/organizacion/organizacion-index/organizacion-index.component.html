@@ -31,7 +31,6 @@
           <div class="col-md-12">
             <div style="overflow-x:auto;">
               <table class="table" *ngIf="organizaciones !== null">
-              <!--<table class="table" *ngIf="organizaciones !== null">-->
                 <thead>
                 <tr>
                   <th> #   </th>
@@ -54,14 +53,15 @@
                   <td>  {{ organizacion.representante }} </td>
                   <td>  {{ organizacion.contacto }} </td>
                   <td class="text-center">
-                    <img src="{{url_base}}{{organizacion.imagen.split('/')[1]}}" [alt]="organizacion.nombre" width="80" height="80">
+                    <img src="{{url_base}}{{organizacion.imagen}}" [alt]="organizacion.nombre" width="80" height="80">
                   </td>
                   <td class="text-center">
-                    <button routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" type="button" class="btn-ctrl">
-                      <i class="fa fa-pencil-square-o"></i>
+                    <button routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" type="button"
+                            class="btn btn-xs btn-info">
+                      <i class="fa fa-edit"></i>
                     </button>
-                    <button type="button" class="btn-ctrl" (click)="destroy(organizacion, i)">
-                      <i class="fa fa-trash-o"></i>
+                    <button type="button" class="btn btn-xs btn-danger" (click)="destroy(organizacion, i)">
+                      <i class="fa fa-trash"></i>
                     </button>
                   </td>
                 </tr>

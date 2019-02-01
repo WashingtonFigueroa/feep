@@ -15,7 +15,7 @@ class OrganizacionController extends Controller
      */
     public function index()
     {
-        $organizaciones = Organizacion::get();
+        $organizaciones = Organizacion::orderBy('nombre')->paginate(10);
         return response()->json($organizaciones, 200);
     }
 
@@ -73,5 +73,9 @@ class OrganizacionController extends Controller
         $organizacion = Organizacion::find($id);
         $organizacion->delete();
         return response()->json($organizacion, 200);
+    }
+
+    public function imagen($url){
+        return response()->file(storage_path('app/organizaciones/' . $url));
     }
 }

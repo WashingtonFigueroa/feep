@@ -31,11 +31,11 @@
                   {{ tipoorg.descripcion }}
                 </td>
                 <td class="text-center">
-                  <button routerLink="/tipoorganizaciones/editar/{{tipoorg.tipo_organizacion_id}}" type="button" class="btn-ctrl">
-                    <i class="fa fa-pencil-square-o"></i>
+                  <button routerLink="/tipoorganizaciones/editar/{{tipoorg.tipo_organizacion_id}}" type="button" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit"></i>
                   </button>                  &nbsp;
-                  <button type="button" class="btn-ctrl" (click)="destroy(tipoorg, i)">
-                    <i class="fa fa-trash-o"></i>
+                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipoorg, i)">
+                    <i class="fa fa-trash"></i>
                   </button>
                 </td>
               </tr>

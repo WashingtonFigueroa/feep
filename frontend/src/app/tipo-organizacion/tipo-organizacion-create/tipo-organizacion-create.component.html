@@ -14,7 +14,9 @@
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>Tipo Organización</label>
-                  <input type="text" class="form-control" formControlName="nombres" name="nombres" id="nombres" autofocus>
+                  <select class="form-control" formControlName="tipo_organizacion_id" name="tipo_organizacion_id">
+                    <option [value]="tipo_organizacion.tipo_organizacion_id" *ngFor="let tipo_organizacion of tipo_organizaciones">{{ tipo_organizacion.nombre }}</option>
+                  </select>
 
                 </div>
               </div>
@@ -22,8 +24,8 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label>Detalle</label>
-                  <input type="text" class="form-control" formControlName="detalle" name="detalle" id="detalle" autofocus>
+                  <label>Descripcion</label>
+                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion" autofocus>
                 </div>
               </div>
             </div>

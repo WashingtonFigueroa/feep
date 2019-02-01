@@ -15,6 +15,12 @@ class TipoOrganizacionController extends Controller
      */
     public function index()
     {
+        $tipo_organizacion = TipoOrganizacion::orderBy('nombre')->paginate(10);
+        return response()->json($tipo_organizacion, 200);
+    }
+
+    public function listar()
+    {
         $tipo_organizacion = TipoOrganizacion::orderBy('nombre')->get();
         return response()->json($tipo_organizacion, 200);
     }
@@ -28,7 +34,7 @@ class TipoOrganizacionController extends Controller
     public function store(Request $request)
     {
             $tipo_organizacion = new TipoOrganizacion();
-            $tipo_organizacion->descripcion = $request->input('nombre');
+            $tipo_organizacion->nombre = $request->input('nombre');
             $tipo_organizacion->descripcion = $request->input('descripcion');
             $tipo_organizacion->save();
             return response()->json($tipo_organizacion, 201);

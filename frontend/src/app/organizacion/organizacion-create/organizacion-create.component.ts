@@ -1,8 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {OrganizacionService} from "../organizacion.service";
-import {TipoOrganizacionService} from "../../tipo-organizacion/tipo-organizacion.service";
-import {Router} from "@angular/router";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {OrganizacionService} from '../organizacion.service';
+import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-organizacion-create',
@@ -12,16 +12,16 @@ import {Router} from "@angular/router";
 export class OrganizacionCreateComponent implements OnInit {
     @ViewChild('imagen') imagen;
     organizacionGroup: FormGroup;
-    tipoorgs: any = null;
+    tipo_organizaciones: any = null;
     constructor(private organizacionService: OrganizacionService,
                 private tipoorgsService: TipoOrganizacionService,
                 private router: Router,
                 private fb: FormBuilder) {
-        this.crearForm();
-        this.tipoorgsService.index()
+        this.tipoorgsService.listar()
             .subscribe((res: any) => {
-                this.tipoorgs = res;
+                this.tipo_organizaciones = res;
             });
+        this.crearForm();
     }
 
     ngOnInit() {

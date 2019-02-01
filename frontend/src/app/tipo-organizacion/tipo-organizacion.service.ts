@@ -10,6 +10,9 @@ export class TipoOrganizacionService {
     index() {
         return this.http.get(`${this.base}tipo-organizaciones`);
     }
+    listar() {
+        return this.http.get(`${this.base}tipo-organizaciones-listar`);
+    }
     buscar(valor: string = '') {
         return this.http.get(`${this.base}tipo-organizaciones-buscar/${valor}`);
     }

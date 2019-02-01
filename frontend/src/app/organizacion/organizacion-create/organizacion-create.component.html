@@ -9,14 +9,13 @@
           <h5 class="title">Registrar Organización</h5>
         </div>
         <div class="card-body">
-          <!--<form (submit)="store()" [formGroup]="organizacionGroup" role="form" *ngIf="tipoorgs !== null">-->
-          <form (submit)="store()" [formGroup]="organizacionGroup" role="form">
+          <form (submit)="store()" [formGroup]="organizacionGroup" *ngIf="tipo_organizaciones !== null" role="form">
           <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>Tipo Organización</label>
                   <select name="tipo_organizacion_id" id="tipo_organizacion_id" formControlName="tipo_organizacion_id" class="form-control">
-                    <option [value]="tipoorg.tipo_organizacion_id" *ngFor="let tipoorg of tipoorgs">{{ tipoorg.periodo }}</option>
+                    <option [value]="tipoorg.tipo_organizacion_id" *ngFor="let tipoorg of tipo_organizaciones">{{ tipoorg.nombre }}</option>
                   </select>
                 </div>
               </div>
@@ -31,11 +30,11 @@
               <div class="col-md-12">
                 <div class="form-group">
                 <label>Descripción</label>
-                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion" autofocus>
+                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
               </div>
                 <div>
                   <label>Logo</label>
-                  <input type="file" class="form-control" #foto  name="imagen" id="imagen">
+                  <input type="file" class="form-control" #imagen  name="imagen" id="imagen">
                 </div>
               </div>
             </div>
@@ -44,19 +43,19 @@
               <div class="col-md-4 pr-1">
                 <div class="form-group">
                   <label>Actividad</label>
-                  <input type="text" class="form-control" formControlName="actividad" name="actividad" id="actividad" autofocus>
+                  <input type="text" class="form-control" formControlName="actividad" name="actividad" id="actividad">
                 </div>
               </div>
               <div class="col-md-4 px-1">
                 <div class="form-group">
                   <label>Representante</label>
-                  <input type="text" class="form-control" formControlName="representante" name="representante" id="representante" autofocus>
+                  <input type="text" class="form-control" formControlName="representante" name="representante" id="representante">
                 </div>
               </div>
               <div class="col-md-4 pl-1">
                 <div class="form-group">
                   <label>Contacto</label>
-                  <input type="number" class="form-control" formControlName="contacto" name="contacto" id="contacto" autofocus>
+                  <input type="text" class="form-control" formControlName="contacto" name="contacto" id="contacto">
                 </div>
               </div>
             </div>
