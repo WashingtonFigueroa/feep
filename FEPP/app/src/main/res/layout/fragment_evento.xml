@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_detalle_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tit_responsable_evento">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detalle_evento"
+                android:enabled="false"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:hint="Detalle del evento"
+                android:inputType="textMultiLine"
+                android:text="Este evento es para la adquisiscion dedsadadadadadadnakdakdjakdjakdakdjadadasdadadada"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_responsable_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tit_detalle_evento">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/responsable_evento"
+                android:hint="Responsable"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:text="Juancito pinto"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_fecha_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tit_responsable_evento">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fecha_evento"
+                android:enabled="false"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:hint="Fecha inicio - Fecha Fin"
+                android:inputType="textMultiLine"
+                android:text="15/feb/2019 - 18/feb/2019"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_inscritos_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tit_registros_evento"
+            app:layout_constraintBottom_toTopOf="@id/tit_insumos_evento"
+            app:layout_constraintTop_toBottomOf="@id/tit_fecha_evento">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inscritos_evento"
+                android:hint="Número de Inscritos"
+                android:enabled="false"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:text="15"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_registros_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tit_fecha_evento"
+            app:layout_constraintStart_toEndOf="@id/tit_inscritos_evento"
+            app:layout_constraintBottom_toTopOf="@id/tit_anexos_evento">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registros_evento"
+                android:hint="Número de Registros"
+                android:enabled="false"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:text="15"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_insumos_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tit_anexos_evento"
+            app:layout_constraintTop_toBottomOf="@id/tit_inscritos_evento"
+            app:layout_constraintBottom_toTopOf="@id/subir_anexo">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/insumos_evento"
+                android:hint="Número de Insumos"
+                android:enabled="false"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:text="15"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_anexos_evento"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tit_registros_evento"
+            app:layout_constraintStart_toEndOf="@id/tit_insumos_evento"
+            app:layout_constraintBottom_toTopOf="@id/ver_anexo">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/anexos_evento"
+                android:enabled="false"
+                android:textColor="@drawable/text_disable_color"
+                android:focusable="false"
+                android:hint="Número de Anexos"
+                android:text="15"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subir_anexo"
+            android:text="Subir Anexo"
+            android:background="@drawable/boton_redondeado"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tit_insumos_evento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ver_anexo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ver_anexo"
+            android:text="Ver Anexo"
+            android:background="@drawable/boton_redondeado"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintStart_toEndOf="@id/subir_anexo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tit_anexos_evento"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
