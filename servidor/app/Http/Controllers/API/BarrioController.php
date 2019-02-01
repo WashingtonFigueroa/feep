@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Barrio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,8 +15,9 @@ class BarrioController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(Barrio::orderBy('nombre')->get(), 200);
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -25,7 +27,8 @@ class BarrioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+/*        Barrio::create($request)
+        return response()->json(); */
     }
 
     /**
