@@ -43,6 +43,7 @@ import {EventoService} from '../../evento/evento.service';
 import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
 import {TipoEventoService} from '../../tipo-evento/tipo-evento.service';
 import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -51,7 +52,10 @@ import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
     FormsModule,
     ChartsModule,
     NgbModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+      HttpClientModule,
+      ReactiveFormsModule,
+      FormsModule
   ],
   declarations: [
     DashboardComponent,

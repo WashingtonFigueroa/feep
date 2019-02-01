@@ -12,6 +12,7 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
   imports: [
@@ -21,7 +22,10 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+      BrowserModule,
+      AppRoutingModule,
+      BrowserAnimationsModule, // required animations module
   ],
   declarations: [
     AppComponent,

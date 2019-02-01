@@ -11,7 +11,7 @@ class TipoOrganizacion extends Model
     protected $table = 'tipo_organizaciones';
     protected $primaryKey = 'tipo_organizacion_id';
     protected $fillable = [
-        'imagen',
+        'nombre',
         'descripcion',
     ];
     protected $dates = ['deleted_at'];

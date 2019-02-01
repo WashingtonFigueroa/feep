@@ -1,3 +1,49 @@
-<p>
-  tipo-organizacion-index works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-primary" routerLink="/tipoorganizacion/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+          <h4 class="card-title">TIPO ORGANIZACION</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table" *ngIf=" tipoorganizaciones!== null">
+              <thead>
+              <tr class="text-primary">
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Detalle</th>
+                <th>Operaciones</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let tipoorg of tipoorganizaciones.data; let i = index">
+                <td>
+                  {{ tipoorg.tipo_organizacion_id }}
+                </td>
+                <td>
+                  {{ tipoorg.nombre }}
+                </td>
+                <td>
+                  {{ tipoorg.descripcion }}
+                </td>
+                <td class="text-center">
+                  <button routerLink="/tipoorganizaciones/editar/{{tipoorg.tipo_organizacion_id}}" type="button" class="btn-ctrl">
+                    <i class="fa fa-pencil-square-o"></i>
+                  </button>                  &nbsp;
+                  <button type="button" class="btn-ctrl" (click)="destroy(tipoorg, i)">
+                    <i class="fa fa-trash-o"></i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

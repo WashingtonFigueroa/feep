@@ -20,12 +20,12 @@ class CreateOrganizacionsTable extends Migration
                 ->references('tipo_organizacion_id')
                 ->on('tipo_organizaciones')
                 ->onDelete('cascade');
-            $table->string('imagen');
+            $table->string('nombre');
             $table->string('descripcion');
-            $table->string('zona');
-            $table->string('contacto');
-            $table->string('cuenta');
+            $table->string('imagen');
+            $table->string('actividad');
             $table->string('representante');
+            $table->string('contacto');
             $table->softDeletes();
             $table->timestamps();
         });
