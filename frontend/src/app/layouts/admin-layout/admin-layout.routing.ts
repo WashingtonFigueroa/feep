@@ -11,6 +11,26 @@ import {OrganizacionComponent} from '../../organizacion/organizacion.component';
 import {OrganizacionIndexComponent} from '../../organizacion/organizacion-index/organizacion-index.component';
 import {OrganizacionCreateComponent} from '../../organizacion/organizacion-create/organizacion-create.component';
 import {OrganizacionUpdateComponent} from '../../organizacion/organizacion-update/organizacion-update.component';
+import {TipoOrganizacionComponent} from '../../tipo-organizacion/tipo-organizacion.component';
+import {TipoOrganizacionIndexComponent} from '../../tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component';
+import {TipoOrganizacionCreateComponent} from '../../tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component';
+import {TipoOrganizacionUpdateComponent} from '../../tipo-organizacion/tipo-organizacion-update/tipo-organizacion-update.component';
+import {MiembroComponent} from '../../miembro/miembro.component';
+import {MiembroIndexComponent} from '../../miembro/miembro-index/miembro-index.component';
+import {MiembroCreateComponent} from '../../miembro/miembro-create/miembro-create.component';
+import {MiembroUpdateComponent} from '../../miembro/miembro-update/miembro-update.component';
+import {TipoPersonaComponent} from '../../tipo-persona/tipo-persona.component';
+import {TipoPersonaIndexComponent} from '../../tipo-persona/tipo-persona-index/tipo-persona-index.component';
+import {TipoPersonaCreateComponent} from '../../tipo-persona/tipo-persona-create/tipo-persona-create.component';
+import {TipoPersonaUpdateComponent} from '../../tipo-persona/tipo-persona-update/tipo-persona-update.component';
+import {EventoComponent} from '../../evento/evento.component';
+import {EventoIndexComponent} from '../../evento/evento-index/evento-index.component';
+import {EventoCreateComponent} from '../../evento/evento-create/evento-create.component';
+import {EventoUpdateComponent} from '../../evento/evento-update/evento-update.component';
+import {TipoEventoComponent} from '../../tipo-evento/tipo-evento.component';
+import {TipoEventoIndexComponent} from '../../tipo-evento/tipo-evento-index/tipo-evento-index.component';
+import {TipoEventoCreateComponent} from '../../tipo-evento/tipo-evento-create/tipo-evento-create.component';
+import {TipoEventoUpdateComponent} from '../../tipo-evento/tipo-evento-update/tipo-evento-update.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -20,7 +40,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'organizacion',  component: OrganizacionComponent,
+    { path: 'organizaciones',  component: OrganizacionComponent,
         children: [
             {
                 path: 'listar',
@@ -33,6 +53,106 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: OrganizacionUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'tipoorganizacion',  component: TipoOrganizacionComponent,
+        children: [
+            {
+                path: 'listar',
+                component: TipoOrganizacionIndexComponent
+            },
+            {
+                path: 'crear',
+                component: TipoOrganizacionCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: TipoOrganizacionUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'miembros',  component: MiembroComponent,
+        children: [
+            {
+                path: 'listar',
+                component: MiembroIndexComponent
+            },
+            {
+                path: 'crear',
+                component: MiembroCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: MiembroUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'tipopersona',  component: TipoPersonaComponent,
+        children: [
+            {
+                path: 'listar',
+                component: TipoPersonaIndexComponent
+            },
+            {
+                path: 'crear',
+                component: TipoPersonaCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: TipoPersonaUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'eventos',  component: EventoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: EventoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: EventoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: EventoUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'tipoeventos',  component: TipoEventoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: TipoEventoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: TipoEventoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: TipoEventoUpdateComponent
             },
             {
                 path: '',
