@@ -29,7 +29,7 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

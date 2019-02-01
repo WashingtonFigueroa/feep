@@ -44,6 +44,11 @@ import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion
 import {TipoEventoService} from '../../tipo-evento/tipo-evento.service';
 import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
 import {HttpClientModule} from '@angular/common/http';
+import {TipoInsumoComponent} from '../../tipo-insumo/tipo-insumo.component';
+import {TipoInsumoCreateComponent} from '../../tipo-insumo/tipo-insumo-create/tipo-insumo-create.component';
+import {TipoInsumoUpdateComponent} from '../../tipo-insumo/tipo-insumo-update/tipo-insumo-update.component';
+import {TipoInsumoIndexComponent} from '../../tipo-insumo/tipo-insumo-index/tipo-insumo-index.component';
+import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
 
 @NgModule({
   imports: [
@@ -69,26 +74,30 @@ import {HttpClientModule} from '@angular/common/http';
     OrganizacionIndexComponent,
     OrganizacionCreateComponent,
     OrganizacionUpdateComponent,
-      MiembroComponent,
-      MiembroIndexComponent,
-      MiembroUpdateComponent,
-      MiembroCreateComponent,
-      EventoComponent,
-      EventoIndexComponent,
-      EventoCreateComponent,
-      EventoUpdateComponent,
-      TipoOrganizacionComponent,
-      TipoOrganizacionIndexComponent,
-      TipoOrganizacionUpdateComponent,
-      TipoOrganizacionCreateComponent,
-      TipoPersonaComponent,
-      TipoPersonaIndexComponent,
-      TipoPersonaCreateComponent,
-      TipoPersonaUpdateComponent,
-      TipoEventoComponent,
-      TipoEventoIndexComponent,
-      TipoEventoUpdateComponent,
-      TipoEventoCreateComponent
+    MiembroComponent,
+    MiembroIndexComponent,
+    MiembroUpdateComponent,
+    MiembroCreateComponent,
+    EventoComponent,
+    EventoIndexComponent,
+    EventoCreateComponent,
+    EventoUpdateComponent,
+    TipoOrganizacionComponent,
+    TipoOrganizacionIndexComponent,
+    TipoOrganizacionUpdateComponent,
+    TipoOrganizacionCreateComponent,
+    TipoPersonaComponent,
+    TipoPersonaIndexComponent,
+    TipoPersonaCreateComponent,
+    TipoPersonaUpdateComponent,
+    TipoEventoComponent,
+    TipoEventoIndexComponent,
+    TipoEventoUpdateComponent,
+    TipoEventoCreateComponent,
+    TipoInsumoComponent,
+    TipoInsumoCreateComponent,
+    TipoInsumoUpdateComponent,
+    TipoInsumoIndexComponent
   ],
   providers: [
       OrganizacionService,
@@ -96,7 +105,8 @@ import {HttpClientModule} from '@angular/common/http';
       EventoService,
       TipoOrganizacionService,
       TipoEventoService,
-      TipoPersonaService
+      TipoPersonaService,
+      TipoInsumoService
   ]
 })
 

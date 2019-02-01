@@ -24,7 +24,6 @@ Route::get('anexos-imagen/{url}', 'API\AnexoController@imagen');
 /*listados*/
 Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
 
-
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',
     'tipo-personas' => 'API\TipoPersonaController',

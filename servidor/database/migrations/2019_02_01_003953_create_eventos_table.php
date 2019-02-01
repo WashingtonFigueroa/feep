@@ -33,6 +33,9 @@ class CreateEventosTable extends Migration
             $table->date('fecha_finaliza');
             $table->string('latitud');
             $table->string('longitud');
+            $table->string('longitud');
+            $table->string('longitud');
+            $table->boolean('estado')->default(true);
             $table->softDeletes();
             $table->timestamps();
         });

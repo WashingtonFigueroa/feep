@@ -31,6 +31,10 @@ import {TipoEventoComponent} from '../../tipo-evento/tipo-evento.component';
 import {TipoEventoIndexComponent} from '../../tipo-evento/tipo-evento-index/tipo-evento-index.component';
 import {TipoEventoCreateComponent} from '../../tipo-evento/tipo-evento-create/tipo-evento-create.component';
 import {TipoEventoUpdateComponent} from '../../tipo-evento/tipo-evento-update/tipo-evento-update.component';
+import {TipoInsumoComponent} from '../../tipo-insumo/tipo-insumo.component';
+import {TipoInsumoIndexComponent} from '../../tipo-insumo/tipo-insumo-index/tipo-insumo-index.component';
+import {TipoInsumoCreateComponent} from '../../tipo-insumo/tipo-insumo-create/tipo-insumo-create.component';
+import {TipoInsumoUpdateComponent} from '../../tipo-insumo/tipo-insumo-update/tipo-insumo-update.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -160,4 +164,25 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
+    { path: 'tipo-insumos',  component: TipoInsumoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: TipoInsumoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: TipoInsumoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: TipoInsumoUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+
 ];

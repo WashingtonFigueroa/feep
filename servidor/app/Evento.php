@@ -22,5 +22,6 @@ class Evento extends Model
         'fecha_finaliza',
         'latitud',
         'longitud',
+        'estado',
     ];
 }

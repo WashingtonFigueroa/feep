@@ -1,0 +1,49 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-primary" routerLink="/tipo-insumos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+          <h4 class="card-title">TIPO DE INSUMOS</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table" *ngIf="tipo_insumos !== null">
+              <thead>
+              <tr class="text-primary">
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Operaciones</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let tipo_insumo of tipo_insumos.data; let i = index">
+                <td>
+                  {{ i + 1 }}
+                </td>
+                <td>
+                  {{ tipo_insumo.nombre }}
+                </td>
+                <td>
+                  {{ tipo_insumo.descripcion }}
+                </td>
+                <td class="text-center">
+                  <button routerLink="/tipo-insumos/editar/{{tipo_insumo.tipo_insumo_id}}" type="button" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit"></i>
+                  </button>                  &nbsp;
+                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipo_insumo, i)">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
