@@ -36,4 +36,8 @@ Route::apiResources([
     'organizacion-eventos' => 'API\OrganizacionEventoController',
     'tipo-insumos' => 'API\TipoInsumoController',
     'suministros' => 'API\SuministroController',
+    'tipo-suministros' => 'API\TipoSuministroController',
+    'tipos' => 'API\TipoController',
+    'insumos' => 'API\InsumoController',
+    'anexo' => 'API\AnexoController',
 ]);
