@@ -15,7 +15,7 @@ class SuministroController extends Controller
      */
     public function index()
     {
-        return response()->json(Suministro::orderBy('nombre')->get());
+        return response()->json(Suministro::orderBy('nombre')->paginate(), 200);
     }
 
     /**

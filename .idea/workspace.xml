@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88deb9cd-3602-410d-ad20-b9ea3f05d373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParroquiaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParroquiaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,21 +58,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="974">
+              <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
               <folding>
-                <element signature="e#44#62#0#PHP" expanded="true" />
+                <element signature="e#44#71#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,30 +79,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#44#59#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
-              <folding>
-                <element signature="e#44#71#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParroquiaController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -125,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="289">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding>
                 <element signature="e#44#65#0#PHP" expanded="true" />
               </folding>
@@ -138,33 +100,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php">
+        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="243">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            <state relative-caret-position="255">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
               <folding>
-                <element signature="e#44#59#0#PHP" expanded="true" />
+                <element signature="e#44#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            <state relative-caret-position="255">
+              <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
               <folding>
-                <element signature="e#44#59#0#PHP" expanded="true" />
+                <element signature="e#44#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,7 +196,12 @@
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParroquiaController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php" />
       </list>
     </option>
   </component>
@@ -395,12 +389,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549042979064</updated>
-      <workItem from="1549042985621" duration="7585000" />
+      <workItem from="1549042985621" duration="8834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7585000" />
+    <option name="totallyTimeSpent" value="8834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -735,16 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -799,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -813,12 +790,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php">
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+        <state relative-caret-position="243">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#44#71#0#PHP" expanded="true" />
+            <element signature="e#44#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding>
+            <element signature="e#44#65#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -830,12 +845,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="974">
+          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
           <folding>
-            <element signature="e#44#65#0#PHP" expanded="true" />
+            <element signature="e#44#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="e#44#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

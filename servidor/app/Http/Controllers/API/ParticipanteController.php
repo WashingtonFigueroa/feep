@@ -15,7 +15,7 @@ class ParticipanteController extends Controller
      */
     public function index()
     {
-        return response()->json(Participante::get(), 200);
+        return response()->json(Participante::paginate(), 200);
     }
 
     /**

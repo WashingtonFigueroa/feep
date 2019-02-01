@@ -15,7 +15,7 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        $personas = Persona::orderby('nombres')->get();
+        $personas = Persona::orderby('nombres')->paginate();
         return response()->json($personas, 200);
     }
 
