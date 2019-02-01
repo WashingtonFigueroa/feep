@@ -16,3 +16,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResources([
+    'tipo-organizaciones' => 'API\TipoOrganizacionController',
+    'tipo-personas' => 'API\TipoPersonaController',
+    'provincias' => 'API\ProvinciaController',
+    'organizaciones' => 'API\OrganizacionController',
+    'tipo-eventos' => 'API\TipoEventoController',
+    'barrios' => 'API\BarrioController',
+    'ciudades' => 'API\CiudadController',
+    'comunidades' => 'API\ComunidadController',
+    'personas' => 'API\PersonaController',
+    'eventos' => 'API\EventoController',
+    'parroquias' => 'API\ParroquiaController',
+]);
