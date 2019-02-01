@@ -30,7 +30,7 @@ class TipoOrganizacionController extends Controller
         if ($request->hasFile('imagen')) {
             $url = $request->file('imagen')->store('tipo-organizaciones');
             $tipo_organizacion = new TipoOrganizacion();
-            $tipo_organizacion->imagen = $url;
+            $tipo_organizacion->imagen = explode('',$url)[1];
             $tipo_organizacion->descripcion = $request->input('descripcion');
             $tipo_organizacion->save();
             return response()->json($tipo_organizacion, 201);

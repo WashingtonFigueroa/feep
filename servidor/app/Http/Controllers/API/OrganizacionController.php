@@ -31,7 +31,7 @@ class OrganizacionController extends Controller
             $url = $request->file('imagen')->store('organizaciones');
             $organizacion = new Organizacion();
             $organizacion->fill($request->all());
-            $organizacion->imagen = $url;
+            $organizacion->imagen = explode('', $url)[1];
             $organizacion->save();
             return response()->json($organizacion, 201);
         }

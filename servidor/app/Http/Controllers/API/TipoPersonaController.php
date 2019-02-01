@@ -30,7 +30,7 @@ class TipoPersonaController extends Controller
             $url = $request->file('imagen')->store('tipo_personas');
             $tipo_persona = new TipoPersona();
             $tipo_persona->fill($request->all());
-            $tipo_persona->imagen = $url;
+            $tipo_persona->imagen = explode('/', $url)[1];
             $tipo_persona->save();
             return response()->json($tipo_persona, 201);
         }
