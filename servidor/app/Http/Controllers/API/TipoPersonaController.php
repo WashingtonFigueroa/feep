@@ -15,9 +15,14 @@ class TipoPersonaController extends Controller
      */
     public function index()
     {
-        return response()->json(TipoPersona::get(), 200);
+        $tipo_persona = TipoPersona::orderBy('nombre')->paginate(10);
+        return response()->json($tipo_persona, 200);
     }
-
+    public function listar()
+    {
+        $tipo_personas = TipoPersona::orderBy('nombre')->get();
+        return response()->json($tipo_personas, 200);
+    }
     /**
      * Store a newly created resource in storage.
      *

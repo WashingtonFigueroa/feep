@@ -14,10 +14,7 @@
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>Tipo Organización</label>
-                  <select class="form-control" formControlName="tipo_organizacion_id" name="tipo_organizacion_id">
-                    <option [value]="tipo_organizacion.tipo_organizacion_id" *ngFor="let tipo_organizacion of tipo_organizaciones">{{ tipo_organizacion.nombre }}</option>
-                  </select>
-
+                  <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
                 </div>
               </div>
             </div>

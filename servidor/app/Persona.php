@@ -16,17 +16,15 @@ class Persona extends Model
         'parroquia_id',
         'cedula',
         'nombres',
-        'apellidos',
         'genero',
         'ocupacion',
+        'etnia',
         'fecha_nacimiento',
         'direccion',
         'telefono_fijo',
         'operadora',
         'contacto',
-        'cuenta',
         'email',
-        'etnia',
     ];
     protected $dates = ['deleted_at'];
 }

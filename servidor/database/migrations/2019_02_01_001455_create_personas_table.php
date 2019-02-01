@@ -32,17 +32,15 @@ class CreatePersonasTable extends Migration
                 ->onDelete('cascade');
             $table->string('cedula');
             $table->string('nombres');
-            $table->string('apellidos');
             $table->string('genero');
             $table->string('ocupacion');
+            $table->string('etnia');
             $table->string('fecha_nacimiento');
             $table->string('direccion');
             $table->string('telefono_fijo');
             $table->string('operadora');
             $table->string('contacto');
-            $table->string('cuenta');
             $table->string('email');
-            $table->string('etnia');
             $table->softDeletes();
             $table->timestamps();
         });
