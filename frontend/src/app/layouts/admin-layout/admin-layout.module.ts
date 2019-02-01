@@ -13,6 +13,11 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
+import {OrganizacionComponent} from '../../organizacion/organizacion.component';
+import {OrganizacionCreateComponent} from '../../organizacion/organizacion-create/organizacion-create.component';
+import {OrganizacionUpdateComponent} from '../../organizacion/organizacion-update/organizacion-update.component';
+import {OrganizacionIndexComponent} from '../../organizacion/organizacion-index/organizacion-index.component';
+import {OrganizacionService} from '../../organizacion/organizacion.service';
 
 @NgModule({
   imports: [
@@ -31,6 +36,13 @@ import { ToastrModule } from 'ngx-toastr';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
+    OrganizacionComponent,
+    OrganizacionIndexComponent,
+    OrganizacionCreateComponent,
+    OrganizacionUpdateComponent
+  ],
+  providers: [
+      OrganizacionService
   ]
 })
 
