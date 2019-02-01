@@ -13,6 +13,36 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
+import {OrganizacionComponent} from '../../organizacion/organizacion.component';
+import {OrganizacionCreateComponent} from '../../organizacion/organizacion-create/organizacion-create.component';
+import {OrganizacionUpdateComponent} from '../../organizacion/organizacion-update/organizacion-update.component';
+import {OrganizacionIndexComponent} from '../../organizacion/organizacion-index/organizacion-index.component';
+import {OrganizacionService} from '../../organizacion/organizacion.service';
+import { MiembroComponent } from '../../miembro/miembro.component';
+import { MiembroIndexComponent } from '../../miembro/miembro-index/miembro-index.component';
+import { MiembroUpdateComponent } from '../../miembro/miembro-update/miembro-update.component';
+import { MiembroCreateComponent } from '../../miembro/miembro-create/miembro-create.component';
+import { EventoComponent } from '../../evento/evento.component';
+import { EventoIndexComponent } from '../../evento/evento-index/evento-index.component';
+import { EventoCreateComponent } from '../../evento/evento-create/evento-create.component';
+import { EventoUpdateComponent } from '../../evento/evento-update/evento-update.component';
+import { TipoOrganizacionComponent } from '../../tipo-organizacion/tipo-organizacion.component';
+import { TipoOrganizacionIndexComponent } from '../../tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component';
+import { TipoOrganizacionUpdateComponent } from '../../tipo-organizacion/tipo-organizacion-update/tipo-organizacion-update.component';
+import { TipoOrganizacionCreateComponent } from '../../tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component';
+import { TipoPersonaComponent } from '../../tipo-persona/tipo-persona.component';
+import { TipoPersonaIndexComponent } from '../../tipo-persona/tipo-persona-index/tipo-persona-index.component';
+import { TipoPersonaCreateComponent } from '../../tipo-persona/tipo-persona-create/tipo-persona-create.component';
+import { TipoPersonaUpdateComponent } from '../../tipo-persona/tipo-persona-update/tipo-persona-update.component';
+import { TipoEventoComponent } from '../../tipo-evento/tipo-evento.component';
+import { TipoEventoIndexComponent } from '../../tipo-evento/tipo-evento-index/tipo-evento-index.component';
+import { TipoEventoUpdateComponent } from '../../tipo-evento/tipo-evento-update/tipo-evento-update.component';
+import { TipoEventoCreateComponent } from '../../tipo-evento/tipo-evento-create/tipo-evento-create.component';
+import {MiembroService} from '../../miembro/miembro.service';
+import {EventoService} from '../../evento/evento.service';
+import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
+import {TipoEventoService} from '../../tipo-evento/tipo-evento.service';
+import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
 
 @NgModule({
   imports: [
@@ -31,6 +61,38 @@ import { ToastrModule } from 'ngx-toastr';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
+    OrganizacionComponent,
+    OrganizacionIndexComponent,
+    OrganizacionCreateComponent,
+    OrganizacionUpdateComponent,
+      MiembroComponent,
+      MiembroIndexComponent,
+      MiembroUpdateComponent,
+      MiembroCreateComponent,
+      EventoComponent,
+      EventoIndexComponent,
+      EventoCreateComponent,
+      EventoUpdateComponent,
+      TipoOrganizacionComponent,
+      TipoOrganizacionIndexComponent,
+      TipoOrganizacionUpdateComponent,
+      TipoOrganizacionCreateComponent,
+      TipoPersonaComponent,
+      TipoPersonaIndexComponent,
+      TipoPersonaCreateComponent,
+      TipoPersonaUpdateComponent,
+      TipoEventoComponent,
+      TipoEventoIndexComponent,
+      TipoEventoUpdateComponent,
+      TipoEventoCreateComponent
+  ],
+  providers: [
+      OrganizacionService,
+      MiembroService,
+      EventoService,
+      TipoOrganizacionService,
+      TipoEventoService,
+      TipoPersonaService
   ]
 })
 

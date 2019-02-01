@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Organizacion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class OrganizacionController extends Controller
      */
     public function index()
     {
-        //
+        $organizaciones = Organizacion::get();
+        return response()->json($organizaciones, 200);
     }
 
     /**
@@ -25,7 +27,14 @@ class OrganizacionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->hasFile('imagen')) {
+            $url = $request->file('imagen')->store('organizaciones');
+            $organizacion = new Organizacion();
+            $organizacion->fill($request->all());
+            $organizacion->imagen = explode('/', $url)[1];
+            $organizacion->save();
+            return response()->json($organizacion, 201);
+        }
     }
 
     /**
@@ -36,7 +45,7 @@ class OrganizacionController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Organizacion::find($id));
     }
 
     /**
@@ -48,7 +57,9 @@ class OrganizacionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $organizacion = Organizacion::find($id);
+        $organizacion->update($request->all());
+        return response()->json($organizacion, 200);
     }
 
     /**
@@ -59,6 +70,8 @@ class OrganizacionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $organizacion = Organizacion::find($id);
+        $organizacion->delete();
+        return response()->json($organizacion, 200);
     }
 }

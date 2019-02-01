@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\TipoPersona;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,7 @@ class TipoPersonaController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(TipoPersona::get(), 200);
     }
 
     /**
@@ -25,7 +26,14 @@ class TipoPersonaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->hasFile('imagen')) {
+            $url = $request->file('imagen')->store('tipo_personas');
+            $tipo_persona = new TipoPersona();
+            $tipo_persona->fill($request->all());
+            $tipo_persona->imagen = explode('/', $url)[1];
+            $tipo_persona->save();
+            return response()->json($tipo_persona, 201);
+        }
     }
 
     /**
@@ -36,7 +44,7 @@ class TipoPersonaController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(TipoPersona::find($id));
     }
 
     /**
@@ -48,7 +56,9 @@ class TipoPersonaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $tipo_persona = TipoPersona::find($id);
+        $tipo_persona->update($request->all());
+        return response()->json($tipo_persona, 200);
     }
 
     /**
@@ -59,6 +69,8 @@ class TipoPersonaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tipo_persona = TipoPersona::find($id);
+        $tipo_persona->delete();
+        return response()->json($tipo_persona, 200);
     }
 }
