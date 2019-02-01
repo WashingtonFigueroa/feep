@@ -8,61 +8,88 @@
           <button class="btn btn-primary" routerLink="/organizaciones/crear">REGISTRAR &nbsp;  <span class="fa fa-save"></span></button>
           <h4 class="card-title"> ORGANIZACIONES</h4>
         </div>
-        <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                    <tr class="text-primary">
-                      <th>#</th>
-                      <th>Tipo</th>
-                      <th>Imagen</th>
-                      <th>Descripción</th>
-                      <th>Zona</th>
-                      <th>Contacto</th>
-                      <th>Cargo</th>
-                      <th>Representante</th>
-                      <th>Operaciones</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td scope="row">1</td>
-                      <td>fds</td>
-                      <td>fdsf</td>
-                      <td>dsfdsf</td>
-                      <td>fdsdsf</td>
-                      <td>fsdf</td>
-                      <td>sdf</td>
-                      <td>sdf</td>
-                      <td>sdf</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">2</td>
-                      <td>fds</td>
-                      <td>fdsf</td>
-                      <td>dsfdsf</td>
-                      <td>fdsdsf</td>
-                      <td>fsdf</td>
-                      <td>sdf</td>
-                      <td>sdf</td>
-                      <td>sdf</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">3</td>
-                      <td>fds</td>
-                      <td>fdsf</td>
-                      <td>dsfdsf</td>
-                      <td>fdsdsf</td>
-                      <td>fsdf</td>
-                      <td>sdf</td>
-                      <td>sdf</td>
-                      <td>sdf</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
+
+
+        <div class="row">
+          <div class="col-md-4">
+            <form (submit)="buscar(valor)" class="form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="search">Buscar</label>
+                <input type="search" id="search"
+                       [(ngModel)]="valor"
+                       name="valor"
+                       class="input-search"
+                       placeholder="Organizacion..">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-search">BUSCAR</button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div style="overflow-x:auto;">
+              <table class="table" *ngIf="organizaciones !== null">
+              <!--<table class="table" *ngIf="organizaciones !== null">-->
+                <thead>
+                <tr>
+                  <th> #   </th>
+                  <th> Tipo   </th>
+                  <th> Nombre   </th>
+                  <th> Descripción   </th>
+                  <th> Actividad   </th>
+                  <th> Representante </th>
+                  <th> Contacto </th>
+                  <th> Imagen </th>
+                  <th> Acciones   </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let organizacion of organizaciones.data; let i = index">
+                  <td>  {{ organizacion.organizacion_id }} </td>
+                  <td>  {{ organizacion.tipo_organizacion_id }} </td>
+                  <td>  {{ organizacion.nombre }} </td>
+                  <td>  {{ organizacion.actividad }} </td>
+                  <td>  {{ organizacion.representante }} </td>
+                  <td>  {{ organizacion.contacto }} </td>
+                  <td class="text-center">
+                    <img src="{{url_base}}{{organizacion.imagen.split('/')[1]}}" [alt]="organizacion.nombre" width="80" height="80">
+                  </td>
+                  <td class="text-center">
+                    <button routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" type="button" class="btn-ctrl">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </button>
+                    <button type="button" class="btn-ctrl" (click)="destroy(organizacion, i)">
+                      <i class="fa fa-trash-o"></i>
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              <!-- end table-->
+              <div class="container-fluid" *ngIf="organizaciones !== null">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <small>Página {{ current_page }}</small>
+                    <br>
+                    <button class="page-link" [disabled]="prev_page === null" (click)="loadPagination(prev_page)">Anterior</button>
+                    <button class="page-link" *ngFor="let page of pages"(click)="loadPagination(page.url)">{{ page.item }}</button>
+                    <button class="page-link" [disabled]="next_page === null" (click)="loadPagination(next_page)">Siguiente</button>
+                  </div>
+                </div>
+              </div>
+              <!-- end paginate-->
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
 </div>
+
+
+
+

@@ -16,6 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+//Imegenes
+Route::get('organizaciones-imagen/{url}', 'OrganizacionController@imagen');
+
 
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',

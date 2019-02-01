@@ -12,12 +12,12 @@ class Organizacion extends Model
     protected $primaryKey = 'organizacion_id';
     protected $fillable = [
         'tipo_organizacion_id',
-        'imagen',
+        'nombre',
         'descripcion',
-        'zona',
-        'contacto',
-        'cuenta',
+        'imagen',
+        'actividad',
         'representante',
+        'contacto'
     ];
     protected $dates = ['deleted_at'];
 }
