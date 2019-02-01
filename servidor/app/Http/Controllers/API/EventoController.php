@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Evento;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class EventoController extends Controller
      */
     public function index()
     {
-        //
+        $eventos = Evento::orderBy('fecha_evento', 'desc')->paginate(10);
+        return response()->json($eventos, 200);
     }
 
     /**
@@ -25,7 +27,8 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $evento = Evento::create($request->all());
+        return response()->json($evento, 201);
     }
 
     /**
@@ -36,7 +39,7 @@ class EventoController extends Controller
      */
     public function show($id)
     {
-        //
+        return response()->json(Evento::find($id), 200);
     }
 
     /**
@@ -48,7 +51,9 @@ class EventoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $evento = Evento::find($id);
+        $evento->update($evento);
+        return response()->json($evento, 200);
     }
 
     /**
@@ -59,6 +64,8 @@ class EventoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $evento = Evento::find($id);
+        $evento->delete();
+        return response()->json($evento, 200);
     }
 }

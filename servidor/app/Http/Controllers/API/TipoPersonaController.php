@@ -73,4 +73,8 @@ class TipoPersonaController extends Controller
         $tipo_persona->delete();
         return response()->json($tipo_persona, 200);
     }
+
+    public function imagen($url){
+        return response()->file(storage_path('app/tipo_personas/' . $url));
+    }
 }

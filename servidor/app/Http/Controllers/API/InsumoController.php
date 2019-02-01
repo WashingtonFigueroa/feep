@@ -15,7 +15,7 @@ class InsumoController extends Controller
      */
     public function index()
     {
-        return response()->json(Insumo::orderBy('nombre')->get(), 200);
+        return response()->json(Insumo::orderBy('nombre')->paginate(10), 200);
     }
 
     /**

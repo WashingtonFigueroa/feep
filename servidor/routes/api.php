@@ -16,8 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-//Imegenes
+//Imágenes
 Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
+Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
+Route::get('anexos-imagen/{url}', 'API\AnexoController@imagen');
 
 /*listados*/
 Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');

@@ -73,4 +73,8 @@ class AnexoController extends Controller
         $anexo->delete();
         return response()->json($anexo, 200);
     }
+
+    public function imagen($url){
+        return response()->file(storage_path('app/anexos/' . $url));
+    }
 }
