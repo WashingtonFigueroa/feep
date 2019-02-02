@@ -31,14 +31,11 @@ class TipoPersonaController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->hasFile('imagen')) {
-            $url = $request->file('imagen')->store('tipo_personas');
-            $tipo_persona = new TipoPersona();
-            $tipo_persona->fill($request->all());
-            $tipo_persona->imagen = explode('/', $url)[1];
-            $tipo_persona->save();
-            return response()->json($tipo_persona, 201);
-        }
+        $tipo_persona = new TipoPersona();
+        $tipo_persona->nombre = $request->input('nombre');
+        $tipo_persona->descripcion = $request->input('descripcion');
+        $tipo_persona->save();
+        return response()->json($tipo_persona, 201);
     }
 
     /**

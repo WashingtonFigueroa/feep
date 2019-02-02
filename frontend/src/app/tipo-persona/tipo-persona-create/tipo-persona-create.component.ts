@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+import {TipoPersonaService} from '../tipo-persona.service';
 
 @Component({
   selector: 'app-tipo-persona-create',
@@ -7,9 +10,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TipoPersonaCreateComponent implements OnInit {
 
-  constructor() { }
+    tipopersonaGroup: FormGroup;
+    constructor(private fb: FormBuilder,
+                private tipopersonaService: TipoPersonaService,
+                private router: Router) {
+        this.crearForm();
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
+    crearForm() {
+        this.tipopersonaGroup = this.fb.group({
+            'nombre' : ['', [Validators.required]],
+            'descripcion' : ['', [Validators.required]]
+        });
+    }
+
+    store() {
+        this.tipopersonaService.store(this.tipopersonaGroup.value)
+            .subscribe((res: any) => {
+                console.log(res);
+                if (res.mensaje) {
+                    alert(res.mensaje);
+                }
+                this.router.navigate(['/tipopersona/listar']);
+            }, (error: any) => {
+                alert(error.error.mensaje);
+                this.tipopersonaGroup.reset();
+            });
+    }
 }

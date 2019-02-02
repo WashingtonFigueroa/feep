@@ -1,3 +1,51 @@
-<p>
-  tipo-persona-index works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="btn-group col-md-3 text-left" role="group" style="justify-content: flex-end;">
+          <button class="btn btn-primary" routerLink="/tipopersona/crear">REGISTRAR TIPO PERSONA&nbsp; <span class="fa fa-save"></span></button>
+        </div>
+        <div class="btn-group col-md-9 text-right" role="group" style="justify-content: flex-end;">
+          <button class="btn btn-info" routerLink="/miembros/listar">LISTA PERSONAS &nbsp; <span class="fa fa-caret-left"></span></button>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table" *ngIf=" tipopersona!== null">
+              <thead>
+              <tr class="text-primary">
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Detalle</th>
+                <th>Operaciones</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let tipo of tipopersona.data; let i = index">
+                <td>
+                  {{ tipo.tipo_persona_id }}
+                </td>
+                <td>
+                  {{ tipo.nombre }}
+                </td>
+                <td>
+                  {{ tipo.descripcion }}
+                </td>
+                <td class="text-center">
+                  <button routerLink="/tipopersonas/editar/{{tipo.tipo_persona_id}}" type="button" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit"></i>
+                  </button>                  &nbsp;
+                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipo, i)">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
