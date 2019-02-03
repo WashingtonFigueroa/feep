@@ -14,5 +14,5 @@ class TipoPersona extends Model
         'nombre',
         'descripcion',
     ];
-    protected $dates = "deleted_at";
+    protected $dates = ["deleted_at"];
 }

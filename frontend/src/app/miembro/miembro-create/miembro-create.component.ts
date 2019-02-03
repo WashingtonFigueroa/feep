@@ -3,6 +3,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {OrganizacionService} from '../../organizacion/organizacion.service';
 import {Router} from '@angular/router';
 import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
+import {UbicacionService} from "../../ubicacion/ubicacion.service";
+import {MiembroService} from "../miembro.service";
 
 @Component({
   selector: 'app-miembro-create',
@@ -13,9 +15,11 @@ export class MiembroCreateComponent implements OnInit {
     miembroGroup: FormGroup;
     tipo_personas: any = null;
     organizaciones: any = null;
-    constructor(private miembroService: OrganizacionService,
+    parroquias: any = null;
+    constructor(private miembroService: MiembroService,
                 private tipopersonaService: TipoPersonaService,
                 private organizacionService: OrganizacionService,
+                private parroquiasService: UbicacionService,
                 private router: Router,
                 private fb: FormBuilder) {
         this.tipopersonaService.listar()
@@ -25,6 +29,10 @@ export class MiembroCreateComponent implements OnInit {
         this.organizacionService.listar()
             .subscribe((res: any) => {
                 this.organizaciones = res;
+            });
+        this.parroquiasService.parroquiaslistar()
+            .subscribe((res: any) => {
+                this.parroquias = res;
             });
         this.crearForm();
     }
@@ -42,10 +50,10 @@ export class MiembroCreateComponent implements OnInit {
             'etnia': ['', [Validators.required]],
             'fecha_nacimiento': ['', [Validators.required]],
             'direccion': ['', [Validators.required]],
-            'telefono_fijo': ['', [Validators.required]],
+            'telefono_fijo': [''],
             'operadora': ['', [Validators.required]],
-            'contacto': ['', [Validators.required]],
-            'email': ['', [Validators.required]],
+            'contacto': [''],
+            'email': [''],
         });
     }
     store() {
