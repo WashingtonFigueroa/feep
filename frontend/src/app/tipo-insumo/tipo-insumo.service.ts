@@ -11,8 +11,20 @@ export class TipoInsumoService {
   index() {
     return this.http.get(`${this.base}tipo-insumos`);
   }
-  store($request) {
-    return this.http.post(`${this.base}tipo-insumos`, $request);
+  load(url) {
+    return this.http.get(url);
+  }
+  show(id) {
+    return this.http.get(`${this.base}tipo-insumos/${id}`);
+  }
+  store(request) {
+    return this.http.post(`${this.base}tipo-insumos`, request);
+  }
+  update(id, request) {
+    return this.http.put(`${this.base}tipo-insumos/${id}`, request);
+  }
+  destroy(id) {
+    return this.http.delete(`${this.base}tipo-insumos/${id}`);
   }
 
 }

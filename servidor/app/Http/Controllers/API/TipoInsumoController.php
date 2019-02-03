@@ -15,7 +15,7 @@ class TipoInsumoController extends Controller
      */
     public function index()
     {
-        return response()->json(TipoInsumo::orderBy('nombre')->paginate(10), 200);
+        return response()->json(TipoInsumo::orderBy('nombre')->paginate(2), 200);
     }
 
     /**
@@ -37,7 +37,7 @@ class TipoInsumoController extends Controller
      */
     public function show($id)
     {
-        return response()->json(TipoInsumo::find(id), 200);
+        return response()->json(TipoInsumo::find($id), 200);
     }
 
     /**

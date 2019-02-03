@@ -1,0 +1,15 @@
+.paginacion {
+  margin-top: 1em;
+}
+.paginacion-btn{
+  border: none;
+  background-color: #1b1e21;
+  color: whitesmoke;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+.paginacion-btn:hover, .activated {
+  background-color: #28a946;
+}
