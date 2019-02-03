@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88deb9cd-3602-410d-ad20-b9ea3f05d373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232025_create_provincias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232025_create_provincias_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/apple-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Barrio.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Barrio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,14 +75,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="13" />
-          <entry key="php" value="10" />
+          <entry key="php" value="17" />
           <entry key="ts" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="13" />
-          <entry key="PHP" value="10" />
+          <entry key="PHP" value="17" />
           <entry key="TypeScript" value="17" />
         </counts>
       </usages-collector>
@@ -91,16 +93,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="306" />
-          <entry key="php" value="29" />
-          <entry key="ts" value="496" />
+          <entry key="html" value="450" />
+          <entry key="php" value="74" />
+          <entry key="ts" value="792" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="306" />
-          <entry key="PHP" value="29" />
-          <entry key="TypeScript" value="496" />
+          <entry key="HTML" value="450" />
+          <entry key="PHP" value="74" />
+          <entry key="TypeScript" value="792" />
         </counts>
       </usages-collector>
     </session>
@@ -108,19 +110,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="220">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -128,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="42" column="51" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="188">
+              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -140,22 +133,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="51" selection-start-line="51" selection-end-line="74" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,11 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-              <caret line="104" column="41" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
-              <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+            <state relative-caret-position="314">
+              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
               <folding>
                 <element signature="e#1113#1119#0" expanded="true" />
               </folding>
@@ -189,9 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
@@ -199,9 +174,6 @@
         <option value="$PROJECT_DIR$/servidor/app/Ciudad.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" />
@@ -236,6 +208,12 @@
         <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" />
         <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Barrio.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" />
         <option value="$PROJECT_DIR$/servidor/routes/api.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" />
@@ -462,7 +440,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="CiudadController&#9;null&#9;null&#10;miemcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;miem&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;persocon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/TipoPersonaController.php&#10;provicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProvinciaController.php&#10;miembrocreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;provicon&#9;null&#9;null&#10;miembcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;personacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts&#10;ubicaccrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts&#10;tipo/inscre&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.html&#10;ubicaciocreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html&#10;ubicainde&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html&#10;ubicaindts&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.ts&#10;ubiser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion.service.ts&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php" />
+    <property name="SearchEverywhereHistoryKey" value="ciudadcon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/CiudadController.php&#10;comucon&#9;null&#9;null&#10;provcon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProvinciaController.php&#10;barrioco&#9;null&#9;null&#10;CiudadController&#9;null&#9;null&#10;miemcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;miem&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;persocon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/TipoPersonaController.php&#10;provicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProvinciaController.php&#10;miembrocreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;provicon&#9;null&#9;null&#10;miembcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;personacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts&#10;ubicaccrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts&#10;tipo/inscre&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.html&#10;ubicaciocreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html&#10;ubicainde&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html&#10;ubicaindts&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.ts&#10;ubiser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion.service.ts&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/modelo" />
@@ -497,18 +475,18 @@
       <workItem from="1549042985621" duration="13353000" />
       <workItem from="1549154554448" duration="6545000" />
       <workItem from="1549166254831" duration="642000" />
-      <workItem from="1549196116697" duration="7144000" />
+      <workItem from="1549196116697" duration="11900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27684000" />
+    <option name="totallyTimeSpent" value="32440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.30257186" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.3464448" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.22024292" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -522,7 +500,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.11413969" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.47529814" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -548,41 +526,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoSuministroController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-561" />
@@ -848,14 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -873,24 +808,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Barrio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" selection-start-line="21" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="288">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="188">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -899,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="162">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -909,11 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-          <caret line="104" column="41" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
-          <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+        <state relative-caret-position="314">
+          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="e#1113#1119#0" expanded="true" />
           </folding>

@@ -26,7 +26,7 @@ class CreateParroquiasTable extends Migration
                 ->on('ciudades')
                 ->onDelete('cascade');
             $table->string('nombre');
-            $table->string('descripcion');
+            $table->string('descripcion')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

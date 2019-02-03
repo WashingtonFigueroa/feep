@@ -17,7 +17,11 @@ class ComunidadController extends Controller
     {
         return response()->json(Comunidad::orderBy('nombre')->paginate(10), 200);
     }
-
+    public function listar()
+    {
+        $barrio = Comunidad::orderBy('nombre')->get();
+        return response()->json($barrio, 200);
+    }
     /**
      * Store a newly created resource in storage.
      *

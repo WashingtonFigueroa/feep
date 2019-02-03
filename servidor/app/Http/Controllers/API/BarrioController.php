@@ -18,6 +18,11 @@ class BarrioController extends Controller
         return response()->json(Barrio::orderBy('nombre')->paginate(10), 200);
     }
 
+    public function listar()
+    {
+        $barrio = Barrio::orderBy('nombre')->get();
+        return response()->json($barrio, 200);
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -27,7 +32,8 @@ class BarrioController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json(Barrio::create($request), 200);
+        $barrio = Barrio::create($request->all());
+        return response()->json($barrio, 201);
     }
 
     /**

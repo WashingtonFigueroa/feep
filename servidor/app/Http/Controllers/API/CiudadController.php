@@ -17,6 +17,11 @@ class CiudadController extends Controller
     {
         return response()->json(Ciudad::orderBy('nombre')->paginate(10), 200);
     }
+    public function listar()
+    {
+        $barrio = Ciudad::orderBy('nombre')->get();
+        return response()->json($barrio, 200);
+    }
 
     /**
      * Store a newly created resource in storage.

@@ -26,6 +26,9 @@ Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar'
 Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
 Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 Route::get('provincias-listar', 'API\ProvinciaController@listar');
+Route::get('barrios-listar', 'API\BarrioController@listar');
+Route::get('comunidades-listar', 'API\ComunidadController@listar');
+Route::get('ciudades-listar', 'API\CiudadController@listar');
 
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',

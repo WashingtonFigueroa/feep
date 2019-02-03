@@ -39,10 +39,12 @@
         </div>
         <div class="card-body">
           <form (submit)="storeciudad()" [formGroup]="ubicacionGroup" *ngIf="provincias !== null" role="form">
+            <div class="form-group">
             <label>Seleccione Provincia</label>
             <select name="provincia_id" id="provincia_id" formControlName="provincia_id" class="form-control">
               <option [value]="provincia.provincia_id" *ngFor="let provincia of provincias">{{ provincia.nombre }}</option>
             </select>
+            </div>
             <div class="form-group">
               <label>Nombre</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
@@ -75,24 +77,36 @@
             </div>
             <div class="row">
               <div class="col-lg-8 ml-auto mr-auto">
-                <!--<form (submit)="storeprovincias()" [formGroup]="ubicacionGroup" role="form">-->
+                <form (submit)="storeparroquia()" [formGroup]="ubicacionGroup" *ngIf="ciudades !== null && comunidades !== null " role="form">
+
+                  <div class="form-group">
+                    <label>Seleccione Ciudad</label>
+                    <select name="ciudad_id" id="ciudad_id" formControlName="ciudad_id" class="form-control">
+                      <option [value]="ciudad.ciudad_id" *ngFor="let ciudad of ciudades">{{ ciudad.nombre }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Seleccione Comunidad</label>
+                    <select name="comunidad_id" id="comunidad_id" formControlName="comunidad_id" class="form-control">
+                      <option [value]="comunidad.comunidad_id" *ngFor="let comunidad of comunidades">{{ comunidad.nombre }}</option>
+                    </select>
+                  </div>
                   <div class="form-group">
                     <label>Nombre</label>
-                    <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+                    <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
                   </div>
                   <div class="form-group">
                     <label>Descripcion</label>
-                    <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+                    <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
                   </div>
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
                         <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
                       </div>
                     </div>
                   </div>
-                <!--</form>-->
+                </form>
               </div>
             </div>
           </div>
@@ -102,54 +116,60 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Ingresar Comunidad</h4>
+          <h4 class="card-title">Ingresar Barrio</h4>
         </div>
         <div class="card-body">
-          <!--<form (submit)="storeprovincias()" [formGroup]="ubicacionGroup" role="form">-->
+          <form (submit)="storebarrio()" [formGroup]="ubicacionGroup" role="form">
             <div class="form-group">
               <label>Nombre</label>
-              <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+              <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
             </div>
             <div class="form-group">
               <label>Descripcion</label>
-              <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+              <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
                   <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
                 </div>
               </div>
             </div>
-          <!--</form>-->
+          </form>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Ingresar Barrio</h4>
+          <h4 class="card-title">Ingresar Comunidad</h4>
         </div>
         <div class="card-body">
-          <!--<form (submit)="storeprovincias()" [formGroup]="ubicacionGroup" role="form">-->
+          <form (submit)="storecomunidad()" [formGroup]="ubicacionGroup" *ngIf="barrios !== null" role="form">
+            <label>Seleccione Barrio</label>
+            <select name="barrio_id" id="barrio_id" formControlName="barrio_id" class="form-control">
+              <option [value]="barrio.barrio_id" *ngFor="let barrio of barrios">{{ barrio.nombre }}</option>
+            </select>
             <div class="form-group">
               <label>Nombre</label>
-              <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+              <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
+            </div>
+            <div class="form-group">
+              <label>Pueblo</label>
+              <input type="text" class="form-control" formControlName="pueblo" name="pueblo" autofocus>
             </div>
             <div class="form-group">
               <label>Descripcion</label>
-              <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+              <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
                   <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
                 </div>
               </div>
             </div>
-          <!--</form>-->
+          </form>
         </div>
       </div>
     </div>
