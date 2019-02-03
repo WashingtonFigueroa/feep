@@ -53,7 +53,8 @@ import { UbicacionComponent } from '../../ubicacion/ubicacion.component';
 import { UbicacionIndexComponent } from '../../ubicacion/ubicacion-index/ubicacion-index.component';
 import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubicacion-update.component';
 import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
-import {UbicacionService} from "../../ubicacion/ubicacion.service";
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
+import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
 
 @NgModule({
   imports: [
@@ -99,14 +100,15 @@ import {UbicacionService} from "../../ubicacion/ubicacion.service";
     TipoEventoIndexComponent,
     TipoEventoUpdateComponent,
     TipoEventoCreateComponent,
+    InsumoContainerComponent,
     TipoInsumoComponent,
     TipoInsumoCreateComponent,
     TipoInsumoUpdateComponent,
     TipoInsumoIndexComponent,
-      UbicacionComponent,
-      UbicacionIndexComponent,
-      UbicacionUpdateComponent,
-      UbicacionCreateComponent,
+    UbicacionComponent,
+    UbicacionIndexComponent,
+    UbicacionUpdateComponent,
+    UbicacionCreateComponent
   ],
   providers: [
       OrganizacionService,

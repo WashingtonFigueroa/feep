@@ -39,6 +39,7 @@ import {UbicacionComponent} from "../../ubicacion/ubicacion.component";
 import {UbicacionIndexComponent} from "../../ubicacion/ubicacion-index/ubicacion-index.component";
 import {UbicacionCreateComponent} from "../../ubicacion/ubicacion-create/ubicacion-create.component";
 import {UbicacionUpdateComponent} from "../../ubicacion/ubicacion-update/ubicacion-update.component";
+import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -168,26 +169,6 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'tipo-insumos',  component: TipoInsumoComponent,
-        children: [
-            {
-                path: 'listar',
-                component: TipoInsumoIndexComponent
-            },
-            {
-                path: 'crear',
-                component: TipoInsumoCreateComponent
-            },
-            {
-                path: 'editar/:id',
-                component: TipoInsumoUpdateComponent
-            },
-            {
-                path: '',
-                redirectTo: 'listar'
-            },
-        ]
-    },
     { path: 'ubicaciones',  component: UbicacionComponent,
         children: [
             {
@@ -206,6 +187,37 @@ export const AdminLayoutRoutes: Routes = [
                 path: '',
                 redirectTo: 'listar'
             },
+        ]
+    },
+    { path: 'insumos',  component: InsumoContainerComponent,
+        children: [
+            {
+                path: 'tipo-insumos',
+                component: TipoInsumoComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: TipoInsumoIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: TipoInsumoCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: TipoInsumoUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: '',
+                redirectTo: 'tipo-insumos',
+                pathMatch: 'full'
+            }
         ]
     },
 

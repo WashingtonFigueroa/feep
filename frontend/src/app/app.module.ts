@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {BrowserModule} from '@angular/platform-browser';
+import { InsumoContainerComponent } from './insumo-container/insumo-container.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
+    AdminLayoutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
