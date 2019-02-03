@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88deb9cd-3602-410d-ad20-b9ea3f05d373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-index/tipo-persona-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-index/tipo-persona-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-index/tipo-persona-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-index/tipo-persona-index.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_231452_create_tipo_personas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_231452_create_tipo_personas_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +47,7 @@
     <session id="-351818816">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="13" />
+          <entry key="html" value="14" />
           <entry key="php" value="8" />
           <entry key="scss" value="10" />
           <entry key="ts" value="9" />
@@ -75,7 +55,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="14" />
           <entry key="PHP" value="8" />
           <entry key="SCSS" value="10" />
           <entry key="TypeScript" value="9" />
@@ -83,7 +63,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="213" />
+          <entry key="html" value="216" />
           <entry key="php" value="18" />
           <entry key="scss" value="1" />
           <entry key="ts" value="79" />
@@ -91,7 +71,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="213" />
+          <entry key="HTML" value="216" />
           <entry key="PHP" value="18" />
           <entry key="SCSS" value="1" />
           <entry key="TypeScript" value="79" />
@@ -102,13 +82,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+            <state relative-caret-position="234">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
-                <element signature="e#688#694#0" expanded="true" />
-                <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +146,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.scss" />
         <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.scss" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
@@ -187,6 +165,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-index/tipo-persona-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.scss" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" />
       </list>
     </option>
   </component>
@@ -398,7 +377,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="eveindecs&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.scss&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;tipo-orgacreats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts&#10;tipoorganicontr&#9;null&#9;null&#10;TipoPersonaController&#9;null&#9;null&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;tipo-perser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona.service.ts&#10;ubicacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts&#10;ubicacreats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.scss&#10;tipo-personacreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.html&#10;tipo-percreatets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts&#10;miembrindecs&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-index/miembro-index.component.scss&#10;miembrindeh&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-index/miembro-index.component.html&#10;tipo-orgaindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html&#10;organizaindexht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html&#10;tipoorgaindes&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.scss&#10;tipoorgaindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html&#10;organizacioncreateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;orgacon&#9;null&#9;null&#10;organizacreatets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organiindecs&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss&#10;organiindeh&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html&#10;ubicacindeh&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" />
+    <property name="SearchEverywhereHistoryKey" value="ubicacindehtml&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html&#10;eveindecs&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.scss&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;tipo-orgacreats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts&#10;tipoorganicontr&#9;null&#9;null&#10;TipoPersonaController&#9;null&#9;null&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;tipo-perser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona.service.ts&#10;ubicacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts&#10;ubicacreats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.scss&#10;tipo-personacreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.html&#10;tipo-percreatets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts&#10;miembrindecs&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-index/miembro-index.component.scss&#10;miembrindeh&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-index/miembro-index.component.html&#10;tipo-orgaindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html&#10;organizaindexht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html&#10;tipoorgaindes&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.scss&#10;tipoorgaindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html&#10;organizacioncreateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;orgacon&#9;null&#9;null&#10;organizacreatets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organiindecs&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss&#10;organiindeh&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html&#10;ubicacindeh&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -438,7 +417,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29274000" />
+    <option name="totallyTimeSpent" value="29542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
@@ -764,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1008,11 +980,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+        <state relative-caret-position="49">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="e#688#694#0" expanded="true" />
             <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
