@@ -19,6 +19,12 @@ class ProvinciaController extends Controller
         return response()->json($provincias, 200);
     }
 
+    public function listar()
+    {
+        $provincia = Provincia::orderBy('nombre')->get();
+        return response()->json($provincia, 200);
+    }
+
     /**
      * Store a newly created resource in storage.
      *

@@ -35,6 +35,10 @@ import {TipoInsumoComponent} from '../../tipo-insumo/tipo-insumo.component';
 import {TipoInsumoIndexComponent} from '../../tipo-insumo/tipo-insumo-index/tipo-insumo-index.component';
 import {TipoInsumoCreateComponent} from '../../tipo-insumo/tipo-insumo-create/tipo-insumo-create.component';
 import {TipoInsumoUpdateComponent} from '../../tipo-insumo/tipo-insumo-update/tipo-insumo-update.component';
+import {UbicacionComponent} from "../../ubicacion/ubicacion.component";
+import {UbicacionIndexComponent} from "../../ubicacion/ubicacion-index/ubicacion-index.component";
+import {UbicacionCreateComponent} from "../../ubicacion/ubicacion-create/ubicacion-create.component";
+import {UbicacionUpdateComponent} from "../../ubicacion/ubicacion-update/ubicacion-update.component";
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -177,6 +181,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: TipoInsumoUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'ubicaciones',  component: UbicacionComponent,
+        children: [
+            {
+                path: 'listar',
+                component: UbicacionIndexComponent
+            },
+            {
+                path: 'crear',
+                component: UbicacionCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: UbicacionUpdateComponent
             },
             {
                 path: '',

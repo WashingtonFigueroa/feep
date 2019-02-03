@@ -49,6 +49,11 @@ import {TipoInsumoCreateComponent} from '../../tipo-insumo/tipo-insumo-create/ti
 import {TipoInsumoUpdateComponent} from '../../tipo-insumo/tipo-insumo-update/tipo-insumo-update.component';
 import {TipoInsumoIndexComponent} from '../../tipo-insumo/tipo-insumo-index/tipo-insumo-index.component';
 import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
+import { UbicacionComponent } from '../../ubicacion/ubicacion.component';
+import { UbicacionIndexComponent } from '../../ubicacion/ubicacion-index/ubicacion-index.component';
+import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubicacion-update.component';
+import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
+import {UbicacionService} from "../../ubicacion/ubicacion.service";
 
 @NgModule({
   imports: [
@@ -97,7 +102,11 @@ import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
     TipoInsumoComponent,
     TipoInsumoCreateComponent,
     TipoInsumoUpdateComponent,
-    TipoInsumoIndexComponent
+    TipoInsumoIndexComponent,
+      UbicacionComponent,
+      UbicacionIndexComponent,
+      UbicacionUpdateComponent,
+      UbicacionCreateComponent,
   ],
   providers: [
       OrganizacionService,
@@ -106,7 +115,8 @@ import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
       TipoOrganizacionService,
       TipoEventoService,
       TipoPersonaService,
-      TipoInsumoService
+      TipoInsumoService,
+      UbicacionService
   ]
 })
 

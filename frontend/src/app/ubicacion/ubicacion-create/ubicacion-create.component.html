@@ -1,0 +1,157 @@
+<div class="panel-header">
+  <div class="header text-center">
+    <h2 class="title">Ubicación Geográfica</h2>
+    <p class="category">Ecuador</p>
+  </div>
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Crear Provincia</h4>
+        </div>
+        <div class="card-body">
+              <form (submit)="storeprovincia()" [formGroup]="ubicacionGroup" role="form">
+                <div class="form-group">
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
+                </div>
+                <div class="form-group">
+                  <label>Descripcion</label>
+                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <button class="btn btn-primary" type="submit" >Guardar &nbsp; <span class="fa fa-save"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Ingresar Ciudad</h4>
+        </div>
+        <div class="card-body">
+          <form (submit)="storeciudad()" [formGroup]="ubicacionGroup" *ngIf="provincias !== null" role="form">
+            <label>Seleccione Provincia</label>
+            <select name="provincia_id" id="provincia_id" formControlName="provincia_id" class="form-control">
+              <option [value]="provincia.provincia_id" *ngFor="let provincia of provincias">{{ provincia.nombre }}</option>
+            </select>
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
+            </div>
+            <div class="form-group">
+              <label>Descripcion</label>
+              <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="places-buttons">
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto text-center">
+                <h4 class="card-title">
+                  Ingresar Parroquias
+                </h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 ml-auto mr-auto">
+                <!--<form (submit)="storeprovincias()" [formGroup]="ubicacionGroup" role="form">-->
+                  <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+                  </div>
+                  <div class="form-group">
+                    <label>Descripcion</label>
+                    <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                        <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                <!--</form>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Ingresar Comunidad</h4>
+        </div>
+        <div class="card-body">
+          <!--<form (submit)="storeprovincias()" [formGroup]="ubicacionGroup" role="form">-->
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+            </div>
+            <div class="form-group">
+              <label>Descripcion</label>
+              <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                </div>
+              </div>
+            </div>
+          <!--</form>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Ingresar Barrio</h4>
+        </div>
+        <div class="card-body">
+          <!--<form (submit)="storeprovincias()" [formGroup]="ubicacionGroup" role="form">-->
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+            </div>
+            <div class="form-group">
+              <label>Descripcion</label>
+              <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                </div>
+              </div>
+            </div>
+          <!--</form>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
