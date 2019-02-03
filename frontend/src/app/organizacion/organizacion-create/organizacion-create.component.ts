@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {OrganizacionService} from '../organizacion.service';
 import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
 import {Router} from '@angular/router';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-organizacion-create',
@@ -16,7 +17,8 @@ export class OrganizacionCreateComponent implements OnInit {
     constructor(private organizacionService: OrganizacionService,
                 private tipoorgsService: TipoOrganizacionService,
                 private router: Router,
-                private fb: FormBuilder) {
+                private fb: FormBuilder,
+                private toastrService: ToastrService) {
         this.tipoorgsService.listar()
             .subscribe((res: any) => {
                 this.tipo_organizaciones = res;
@@ -58,12 +60,10 @@ export class OrganizacionCreateComponent implements OnInit {
             }
             this.organizacionService.store(formData)
                 .subscribe((res: any) => {
-                   // this.toastrService.success('Registrado', 'Docente')
-                    console.log('exito', 'Docente');
-                    this.router.navigate(['/admin/docentes']);
+                    this.toastrService.success('Registrada', 'Organizacion')
+                    this.router.navigate(['/organizaciones']);
                 }, (error) => {
-                    console.log('Registrado', 'Docente');
-                   // this.toastrService.error('registrado');
+                    this.toastrService.error('registrado');
                 });
     }
 }

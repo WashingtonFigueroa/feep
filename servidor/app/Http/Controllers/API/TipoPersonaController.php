@@ -31,11 +31,11 @@ class TipoPersonaController extends Controller
      */
     public function store(Request $request)
     {
-        $tipo_persona = new TipoPersona();
-        $tipo_persona->nombre = $request->input('nombre');
-        $tipo_persona->descripcion = $request->input('descripcion');
-        $tipo_persona->save();
-        return response()->json($tipo_persona, 201);
+        $tipopersona = new TipoPersona();
+        $tipopersona->nombre = $request->input('nombre');
+        $tipopersona->descripcion = $request->input('descripcion');
+        $tipopersona->save();
+        return response()->json($tipopersona, 201);
     }
 
     /**

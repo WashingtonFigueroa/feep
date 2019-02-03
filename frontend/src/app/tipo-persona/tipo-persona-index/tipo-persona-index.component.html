@@ -4,17 +4,31 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <div class="btn-group col-md-3 text-left" role="group" style="justify-content: flex-end;">
-          <button class="btn btn-primary" routerLink="/tipopersona/crear">REGISTRAR TIPO PERSONA&nbsp; <span class="fa fa-save"></span></button>
+        <div class="card-header">
+          <h4 class="card-title">Tipo Personas</h4>
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-primary" routerLink="/tipopersona/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+            </div>
+            <div class="col-6">
+              <form action="" method="post" class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="">label</label>
+                  <input type="email" class="input-search" name="" id="">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button class="btn btn-info" routerLink="/miembros/listar">LISTA PERSONAS &nbsp; <span class="fa fa-caret-left"></span></button>
+
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="btn-group col-md-9 text-right" role="group" style="justify-content: flex-end;">
-          <button class="btn btn-info" routerLink="/miembros/listar">LISTA PERSONAS &nbsp; <span class="fa fa-caret-left"></span></button>
-        </div>
+
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table" *ngIf=" tipopersona!== null">
-              <thead>
-              <tr class="text-primary">
+            <table class="table small" *ngIf=" tipopersona!== null">
+              <thead style="background-color: #303030; color: #f7f7f7">
+              <tr>
                 <th>#</th>
                 <th>Nombre</th>
                 <th>Detalle</th>

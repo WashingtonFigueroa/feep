@@ -4,30 +4,30 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
-                    <button class="btn btn-primary" routerLink="/miembros/crear">REGISTRAR MIEMBROS  <span class="fa fa-save"></span></button>
-                </div>
                 <div class="row">
                     <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <form (submit)="buscar(valor)" class="form-inline" role="form">
-                                        <div>
-                                            <input type="search" id="search"
-                                                   [(ngModel)]="valor"
-                                                   name="valor"
-                                                   class="input-search"
-                                                   placeholder="Persona..">
+                                    <h4 class="card-title">Personas</h4>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <button class="btn btn-primary" routerLink="/miembros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                                         </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn-search">BUSCAR</button>
+                                        <div class="col-4">
+                                            <form action="" method="post" class="form-inline" role="form">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="">label</label>
+                                                    <input type="email" class="input-search" name="" id="">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Buscar</button>
+                                            </form>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table " *ngIf="miembros !== null">
-                                            <thead class=" text-primary">
+                                        <table class="table small" *ngIf="miembros !== null">
+                                            <thead style="background-color: #303030; color: #f7f7f7">
                                             <tr>
                                                 <th> #   </th>
                                                 <th> Tipo   </th>
@@ -61,38 +61,22 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!-- end table-->
-                            <div class="container-fluid" *ngIf="miembros !== null">
-                                <div class="row">
-                                    <div class="col-md-12 text-center">
-                                        <small>Página {{ current_page }}</small>
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <small> <button class="page-link" [disabled]="prev_page === null" (click)="loadPagination(prev_page)">Anterior</button> </small>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <small> <button class="page-link" *ngFor="let page of pages"(click)="loadPagination(page.url)">{{ page.item }}</button> </small>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <small> <button class="page-link" [disabled]="next_page === null" (click)="loadPagination(next_page)">Siguiente</button> </small>
-
-                                                </div>
-                                            </div>
+                                    <div *ngIf="miembros !== null && miembros.last_page > 1" class="paginacion text-center">
+                                        <div>
+                                            Página {{ miembros.current_page }} de {{ miembros.last_page }}
                                         </div>
+                                        <button class="paginacion-btn" (click)="loadPages(miembros.first_page_url)"><i class="fa fa-backward"></i></button>
+                                        <button class="paginacion-btn" (click)="loadPages(miembros.prev_page_url)" [disabled]="miembros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                                        <button class="paginacion-btn" *ngFor="let page of pages"
+                                                [class.activated]="page.page == miembros.current_page"
+                                                (click)="loadPages(page.url)">{{ page.page }}</button>
+                                        <button class="paginacion-btn" (click)="loadPages(miembros.next_page_url)" [disabled]="miembros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                                        <button class="paginacion-btn" (click)="loadPages(miembros.last_page_url)"><i class="fa fa-forward"></i></button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- end paginate-->
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

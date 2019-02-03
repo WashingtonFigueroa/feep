@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {TipoPersonaService} from '../tipo-persona.service';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-tipo-persona-create',
@@ -13,7 +14,8 @@ export class TipoPersonaCreateComponent implements OnInit {
     tipopersonaGroup: FormGroup;
     constructor(private fb: FormBuilder,
                 private tipopersonaService: TipoPersonaService,
-                private router: Router) {
+                private router: Router,
+                private toastrService: ToastrService) {
         this.crearForm();
     }
 
@@ -28,16 +30,15 @@ export class TipoPersonaCreateComponent implements OnInit {
     }
 
     store() {
-        this.tipopersonaService.store(this.tipopersonaGroup.value)
+        const formData = new FormData();
+        formData.append('nombre', this.tipopersonaGroup.value.nombre);
+        formData.append('descripcion', this.tipopersonaGroup.value.descripcion);
+        this.tipopersonaService.store(formData)
             .subscribe((res: any) => {
-                console.log(res);
-                if (res.mensaje) {
-                    alert(res.mensaje);
-                }
+                this.toastrService.success('Registrada', 'Tipo Persona')
                 this.router.navigate(['/tipopersona/listar']);
-            }, (error: any) => {
-                alert(error.error.mensaje);
-                this.tipopersonaGroup.reset();
+            }, (error) => {
+                this.toastrService.error('Registrada', 'Tipo Persona')
             });
     }
 }

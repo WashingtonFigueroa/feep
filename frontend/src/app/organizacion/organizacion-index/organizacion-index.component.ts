@@ -34,11 +34,10 @@ export class OrganizacionIndexComponent implements OnInit {
     }
 
     loadPages() {
-        this.pages = [];
-        for (let i = 1; i <= this.last_page; i++) {
+        for (let i = 1; i <= this.organizaciones.last_page;  i++) {
             this.pages.push({
-                item: i,
-                url: environment.servidor + 'organizaciones?page=' + i
+                page: i,
+                url: this.organizaciones.path + '?page=' + i
             });
         }
     }

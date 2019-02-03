@@ -9,7 +9,7 @@
           <h5 class="title">Registrar Persona</h5>
         </div>
         <div class="card-body">
-          <form (submit)="store()" [formGroup]="miembroGroup" *ngIf="tipo_personas !== null && organizaciones !== null" role="form">
+          <form (submit)="store()" [formGroup]="miembroGroup" *ngIf="tipo_personas !== null && organizaciones !== null && parroquias !== null" role="form">
             <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
@@ -31,14 +31,16 @@
             <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>Parroquia</label>
-                  <input type="text" class="form-control" formControlName="parroquia" name="parroquia" id="parroquia">
+                  <label>Seleccione Parroquia</label>
+                  <select name="parroquia_id" id="parroquia_id" formControlName="parroquia_id" class="form-control">
+                    <option [value]="parroquia.parroquia_id" *ngFor="let parroquia of parroquias">{{ parroquia.nombre }}</option>
+                  </select>
                 </div>
               </div>
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>Cedula</label>
-                  <input type="text" class="form-control" formControlName="cedula" name="cedula" id="cedula">
+                  <input type="number" class="form-control" formControlName="cedula" name="cedula" id="cedula">
                 </div>
               </div>
             </div>
@@ -52,10 +54,9 @@
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>Genero</label>
-                  <select class="form-control" id="sel1">
+                  <select class="form-control" formControlName="genero" name="genero">
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
-                    <option value="Travesti">Travesti</option>
                     <option value="Otro">Otro</option>
                   </select>
                 </div>
@@ -71,7 +72,7 @@
               <div class="col-md-4 px-1">
                 <div class="form-group">
                   <label>Etnia</label>
-                  <select class="form-control" id="sel2">
+                  <select class="form-control" formControlName="etnia" name="etnia">
                     <option value="Afroecuatorianos">Afroecuatorianos</option>
                     <option value="Quichua">Quichua</option>
                     <option value="Mestizos">Mestizos</option>
@@ -103,21 +104,25 @@
               <div class="col-md-4 px-1">
                 <div class="form-group">
                   <label>Telefono Fijo</label>
-                  <input type="text" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
+                  <input type="number" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
                 </div>
               </div>
               <div class="col-md-4 pl-1">
                 <div class="form-group">
                   <label>Operadora</label>
-                  <input type="text" class="form-control" formControlName="operadora" name="operadora" id="operadora">
+                  <select class="form-control" formControlName="operadora" name="operadora">
+                    <option value="Masculino">Claro</option>
+                    <option value="Femenino">Movistar</option>
+                    <option value="Otro">Otro</option>
+                  </select>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>Contacto</label>
-                  <input type="text" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                  <label>Numero Contacto</label>
+                  <input type="number" class="form-control" formControlName="contacto" name="contacto" id="contacto">
                 </div>
               </div>
               <div class="col-md-6 pr-1">
@@ -134,7 +139,7 @@
                 <div class="form-group">
                   <div class="form-group">
                     <button class="btn btn-dark" routerLink="/miembros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
-                    <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                    <button class="btn btn-primary" [disabled]="miembroGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
                   </div>  </div>
               </div>
             </div>

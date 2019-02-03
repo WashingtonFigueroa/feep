@@ -65,6 +65,7 @@ export class UbicacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.provincias = res;
                 this.toastrService.success('Registrada', 'Provincia')
+                this.provinciaGroup.reset();
             }, (error) => {
                 this.toastrService.error('Registrada', 'Provincia')
             });
@@ -87,6 +88,7 @@ export class UbicacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.ciudades = res;
                 this.toastrService.success('Registrada', 'Ciudad')
+                this.ciudadGroup.reset();
             }, (error) => {
                 this.toastrService.error('Registrada', 'Ciudad')
             });
@@ -107,6 +109,7 @@ export class UbicacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.barrios = res;
                 this.toastrService.success('Registrado', 'Barrio')
+                this.barrioGroup.reset();
             }, (error) => {
                 this.toastrService.error('Registrado', 'Barrio')
             });
@@ -131,6 +134,8 @@ export class UbicacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.comunidades = res;
                 this.toastrService.success('Registrada', 'Comunidad')
+                this.comunidadGroup.reset();
+
             }, (error) => {
                 this.toastrService.error('Registrada', 'Comunidad')
             });
@@ -155,6 +160,7 @@ export class UbicacionCreateComponent implements OnInit {
         this.ubicacionService.storeparroquias(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Registrada', 'Parroquia')
+                this.parroquiaGroup.reset();
             }, (error) => {
                 this.toastrService.error('Registrada', 'Parroquia')
             });

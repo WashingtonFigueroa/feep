@@ -18,7 +18,11 @@ class ParroquiaController extends Controller
         $parroquias = Parroquia::orderBy('nombre')->paginate(10);
         return response()->json($parroquias, 200);
     }
-
+    public function listar()
+    {
+        $parroquia = Parroquia::orderBy('nombre')->get();
+        return response()->json($parroquia, 200);
+    }
     /**
      * Store a newly created resource in storage.
      *
