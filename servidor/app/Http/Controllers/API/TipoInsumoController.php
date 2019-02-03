@@ -15,7 +15,7 @@ class TipoInsumoController extends Controller
      */
     public function index()
     {
-        return response()->json(TipoInsumo::orderBy('nombre')->get());
+        return response()->json(TipoInsumo::orderBy('nombre')->paginate(10), 200);
     }
 
     /**
