@@ -33,7 +33,7 @@ class BarrioController extends Controller
     public function store(Request $request)
     {
         $barrio = Barrio::create($request->all());
-        return response()->json($barrio, 201);
+        return $this->listar();
     }
 
     /**

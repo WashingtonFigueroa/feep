@@ -32,7 +32,7 @@ class CiudadController extends Controller
     public function store(Request $request)
     {
         $ciudad = Ciudad::create($request->all());
-        return response()->json($ciudad, 201);
+        return $this->listar();
     }
 
     /**

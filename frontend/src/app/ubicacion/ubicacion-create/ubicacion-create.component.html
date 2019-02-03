@@ -12,7 +12,8 @@
           <h4 class="card-title">Crear Provincia</h4>
         </div>
         <div class="card-body">
-              <form (submit)="storeprovincia()" [formGroup]="ubicacionGroup" role="form">
+              <form (submit)="storeprovincia()"
+                    [formGroup]="provinciaGroup" role="form">
                 <div class="form-group">
                   <label>Nombre</label>
                   <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
@@ -38,7 +39,7 @@
           <h4 class="card-title">Ingresar Ciudad</h4>
         </div>
         <div class="card-body">
-          <form (submit)="storeciudad()" [formGroup]="ubicacionGroup" *ngIf="provincias !== null" role="form">
+          <form (submit)="storeciudad()" [formGroup]="ciudadGroup" *ngIf="provincias !== null" role="form">
             <div class="form-group">
             <label>Seleccione Provincia</label>
             <select name="provincia_id" id="provincia_id" formControlName="provincia_id" class="form-control">
@@ -77,7 +78,7 @@
             </div>
             <div class="row">
               <div class="col-lg-8 ml-auto mr-auto">
-                <form (submit)="storeparroquia()" [formGroup]="ubicacionGroup" *ngIf="ciudades !== null && comunidades !== null " role="form">
+                <form (submit)="storeparroquia()" [formGroup]="parroquiaGroup" *ngIf="ciudades !== null && comunidades !== null " role="form">
 
                   <div class="form-group">
                     <label>Seleccione Ciudad</label>
@@ -119,7 +120,7 @@
           <h4 class="card-title">Ingresar Barrio</h4>
         </div>
         <div class="card-body">
-          <form (submit)="storebarrio()" [formGroup]="ubicacionGroup" role="form">
+          <form (submit)="storebarrio()" [formGroup]="barrioGroup" role="form">
             <div class="form-group">
               <label>Nombre</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
@@ -145,7 +146,7 @@
           <h4 class="card-title">Ingresar Comunidad</h4>
         </div>
         <div class="card-body">
-          <form (submit)="storecomunidad()" [formGroup]="ubicacionGroup" *ngIf="barrios !== null" role="form">
+          <form (submit)="storecomunidad()" [formGroup]="comunidadGroup" *ngIf="barrios !== null" role="form">
             <label>Seleccione Barrio</label>
             <select name="barrio_id" id="barrio_id" formControlName="barrio_id" class="form-control">
               <option [value]="barrio.barrio_id" *ngFor="let barrio of barrios">{{ barrio.nombre }}</option>

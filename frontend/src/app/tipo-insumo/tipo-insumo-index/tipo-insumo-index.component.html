@@ -5,7 +5,20 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <button class="btn btn-primary" routerLink="/tipo-insumos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+            <div class="row">
+                <div class="col-8">
+                    <button class="btn btn-primary" routerLink="/tipo-insumos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                </div>
+                <div class="col-4">
+                    <form action="" method="post" class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="">label</label>
+                            <input type="email" class="input-search" name="" id="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                </div>
+            </div>
           <h4 class="card-title">TIPO DE INSUMOS</h4>
         </div>
         <div class="card-body">

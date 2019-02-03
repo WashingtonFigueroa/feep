@@ -34,7 +34,7 @@ class ProvinciaController extends Controller
     public function store(Request $request)
     {
         $provincia = Provincia::create($request->all());
-        return response()->json($provincia, 201);
+        return $this->listar();
     }
 
     /**

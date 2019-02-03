@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {Router} from "@angular/router";
-import {UbicacionService} from "../ubicacion.service";
-import {ToastrService} from "ngx-toastr";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+import {UbicacionService} from '../ubicacion.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-ubicacion-create',
@@ -11,15 +11,19 @@ import {ToastrService} from "ngx-toastr";
 })
 export class UbicacionCreateComponent implements OnInit {
 
-    ubicacionGroup:  FormGroup;
-    provincias = '';
-    barrios = '';
-    comunidades = '';
-    ciudades = '';
+    provinciaGroup:  FormGroup;
+    ciudadGroup:  FormGroup;
+    barrioGroup:  FormGroup;
+    comunidadGroup:  FormGroup;
+    parroquiaGroup:  FormGroup;
+    provincias: any  = null;
+    barrios: any  = null;
+    comunidades: any  = null;
+    ciudades: any  = null;
     constructor(private fb: FormBuilder,
                 private router: Router,
                 private ubicacionService: UbicacionService,
-                private ToastrService: ToastrService) {
+                private toastrService: ToastrService) {
         this.ubicacionService.provinciaslistar()
             .subscribe((res: any) => {
                 this.provincias = res;
@@ -45,9 +49,9 @@ export class UbicacionCreateComponent implements OnInit {
 
     ngOnInit() {
     }
-//Provincia
+    // Provincia
     crearFormprovincia() {
-        this.ubicacionGroup = this.fb.group({
+        this.provinciaGroup = this.fb.group({
             'nombre' : ['', [Validators.required]],
             'descripcion' : [''],
         });
@@ -55,18 +59,19 @@ export class UbicacionCreateComponent implements OnInit {
 
     storeprovincia() {
         const formData = new FormData();
-        formData.append('nombre', this.ubicacionGroup.value.nombre);
-        formData.append('descripcion', this.ubicacionGroup.value.descripcion);
+        formData.append('nombre', this.provinciaGroup.value.nombre);
+        formData.append('descripcion', this.provinciaGroup.value.descripcion);
         this.ubicacionService.storeprovincias(formData)
             .subscribe((res: any) => {
-                this.ToastrService.success('Registrada', 'Provincia')
+                this.provincias = res;
+                this.toastrService.success('Registrada', 'Provincia')
             }, (error) => {
-                this.ToastrService.error('Registrada', 'Provincia')
+                this.toastrService.error('Registrada', 'Provincia')
             });
     }
-//ciudad
+    // ciudad
     crearFormciudad() {
-        this.ubicacionGroup = this.fb.group({
+        this.ciudadGroup = this.fb.group({
             'provincia_id': [0, [Validators.required]],
             'nombre' : ['', [Validators.required]],
             'descripcion' : [''],
@@ -75,19 +80,20 @@ export class UbicacionCreateComponent implements OnInit {
 
     storeciudad() {
         const formData = new FormData();
-        formData.append('provincia_id', this.ubicacionGroup.value.provincia_id);
-        formData.append('nombre', this.ubicacionGroup.value.nombre);
-        formData.append('descripcion', this.ubicacionGroup.value.descripcion);
+        formData.append('provincia_id', this.ciudadGroup.value.provincia_id);
+        formData.append('nombre', this.ciudadGroup.value.nombre);
+        formData.append('descripcion', this.ciudadGroup.value.descripcion);
         this.ubicacionService.storeciudades(formData)
             .subscribe((res: any) => {
-                this.ToastrService.success('Registrada', 'Ciudad')
+                this.ciudades = res;
+                this.toastrService.success('Registrada', 'Ciudad')
             }, (error) => {
-                this.ToastrService.error('Registrada', 'Ciudad')
+                this.toastrService.error('Registrada', 'Ciudad')
             });
     }
-//barrio
+    // barrio
     crearFormbarrio() {
-        this.ubicacionGroup = this.fb.group({
+        this.barrioGroup = this.fb.group({
             'nombre' : ['', [Validators.required]],
             'descripcion' : [''],
         });
@@ -95,18 +101,19 @@ export class UbicacionCreateComponent implements OnInit {
 
     storebarrio() {
         const formData = new FormData();
-        formData.append('nombre', this.ubicacionGroup.value.nombre);
-        formData.append('descripcion', this.ubicacionGroup.value.descripcion);
+        formData.append('nombre', this.barrioGroup.value.nombre);
+        formData.append('descripcion', this.barrioGroup.value.descripcion);
         this.ubicacionService.storebarrios(formData)
             .subscribe((res: any) => {
-                this.ToastrService.success('Registrado', 'Barrio')
+                this.barrios = res;
+                this.toastrService.success('Registrado', 'Barrio')
             }, (error) => {
-                this.ToastrService.error('Registrado', 'Barrio')
+                this.toastrService.error('Registrado', 'Barrio')
             });
     }
-    //comunidad
+    // comunidad
     crearFormcomunidad() {
-        this.ubicacionGroup = this.fb.group({
+        this.comunidadGroup = this.fb.group({
             'barrio_id': [0, [Validators.required]],
             'nombre' : ['', [Validators.required]],
             'pueblo' : ['', [Validators.required]],
@@ -116,21 +123,22 @@ export class UbicacionCreateComponent implements OnInit {
 
     storecomunidad() {
         const formData = new FormData();
-        formData.append('barrio_id', this.ubicacionGroup.value.barrio_id);
-        formData.append('nombre', this.ubicacionGroup.value.nombre);
-        formData.append('pueblo', this.ubicacionGroup.value.pueblo);
-        formData.append('descripcion', this.ubicacionGroup.value.descripcion);
+        formData.append('barrio_id', this.comunidadGroup.value.barrio_id);
+        formData.append('nombre', this.comunidadGroup.value.nombre);
+        formData.append('pueblo', this.comunidadGroup.value.pueblo);
+        formData.append('descripcion', this.comunidadGroup.value.descripcion);
         this.ubicacionService.storecomunidades(formData)
             .subscribe((res: any) => {
-                this.ToastrService.success('Registrada', 'Comunidad')
+                this.comunidades = res;
+                this.toastrService.success('Registrada', 'Comunidad')
             }, (error) => {
-                this.ToastrService.error('Registrada', 'Comunidad')
+                this.toastrService.error('Registrada', 'Comunidad')
             });
     }
 
-    //Parroquias
+    // Parroquias
     crearFormparroquia() {
-        this.ubicacionGroup = this.fb.group({
+        this.parroquiaGroup = this.fb.group({
             'comunidad_id': [0, [Validators.required]],
             'ciudad_id' : ['', [Validators.required]],
             'nombre' : ['', [Validators.required]],
@@ -140,15 +148,15 @@ export class UbicacionCreateComponent implements OnInit {
 
     storeparroquia() {
         const formData = new FormData();
-        formData.append('comunidad_id', this.ubicacionGroup.value.comunidad_id);
-        formData.append('ciudad_id', this.ubicacionGroup.value.ciudad_id);
-        formData.append('nombre', this.ubicacionGroup.value.nombre);
-        formData.append('descripcion', this.ubicacionGroup.value.descripcion);
+        formData.append('comunidad_id', this.parroquiaGroup.value.comunidad_id);
+        formData.append('ciudad_id', this.parroquiaGroup.value.ciudad_id);
+        formData.append('nombre', this.parroquiaGroup.value.nombre);
+        formData.append('descripcion', this.parroquiaGroup.value.descripcion);
         this.ubicacionService.storeparroquias(formData)
             .subscribe((res: any) => {
-                this.ToastrService.success('Registrada', 'Parroquia')
+                this.toastrService.success('Registrada', 'Parroquia')
             }, (error) => {
-                this.ToastrService.error('Registrada', 'Parroquia')
+                this.toastrService.error('Registrada', 'Parroquia')
             });
     }
 }

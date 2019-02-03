@@ -31,7 +31,7 @@ class ComunidadController extends Controller
     public function store(Request $request)
     {
         $comunidad = Comunidad::create($request->all());
-        return response()->json($comunidad, 201);
+        return $this->listar();
     }
 
     /**

@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88deb9cd-3602-410d-ad20-b9ea3f05d373" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0851a830-c574-442d-9980-8a21799ca55a.corrupted.20190202-105733.reason.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0851a830-c574-442d-9980-8a21799ca55a.corrupted.20190202-105733.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0851a830-c574-442d-9980-8a21799ca55a.corrupted.20190203-071511.reason.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0851a830-c574-442d-9980-8a21799ca55a.corrupted.20190203-071511.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/apple-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Barrio.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Barrio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,104 +54,239 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tipo_insumos: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-351818816">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="13" />
-          <entry key="php" value="17" />
-          <entry key="ts" value="17" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="13" />
-          <entry key="PHP" value="17" />
-          <entry key="TypeScript" value="17" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="Angular2LanguageService" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="450" />
-          <entry key="php" value="74" />
-          <entry key="ts" value="792" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="450" />
-          <entry key="PHP" value="74" />
-          <entry key="TypeScript" value="792" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="260">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#44#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="544">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#44#59#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+              <folding>
+                <element signature="e#44#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding>
+                <element signature="e#44#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Barrio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoInsumoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-              <folding>
-                <element signature="e#1113#1119#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a8c0df77-0638-4eca-a3ae-d6085f8d0833/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/a8c0df77-0638-4eca-a3ae-d6085f8d0833.SCHEMA:fepp">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>a8c0df77-0638-4eca-a3ae-d6085f8d0833.SCHEMA:fepp</OriginalElement>
+              <nodes>
+                <node x="689.3958333333334" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.barrios</node>
+                <node x="674.8958333333334" y="212.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.comunidades</node>
+                <node x="26.25" y="234.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_organizaciones</node>
+                <node x="0.0" y="1583.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.password_resets</node>
+                <node x="1322.25" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.users</node>
+                <node x="445.89583333333337" y="223.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.ciudades</node>
+                <node x="1043.25" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_insumos</node>
+                <node x="303.25" y="523.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_personas</node>
+                <node x="1034.25" y="512.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_suministros</node>
+                <node x="696.625" y="823.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos</node>
+                <node x="791.25" y="523.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_eventos</node>
+                <node x="740.375" y="1310.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.anexos</node>
+                <node x="1043.25" y="223.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.suministros</node>
+                <node x="367.14583333333337" y="1299.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.participantes</node>
+                <node x="22.25" y="1310.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizacion_eventos</node>
+                <node x="445.89583333333337" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.provincias</node>
+                <node x="1008.0" y="1266.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.insumos</node>
+                <node x="1034.25" y="911.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipos</node>
+                <node x="308.89583333333337" y="790.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas</node>
+                <node x="552.25" y="501.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias</node>
+                <node x="26.25" y="468.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones</node>
+                <node x="1582.25" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.migrations</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_suministros" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.suministros">
+                  <point x="0.0" y="-92.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.participantes" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+                  <point x="56.25" y="-103.0" />
+                  <point x="535.8958333333334" y="1246.0" />
+                  <point x="781.375" y="1246.0" />
+                  <point x="-28.25" y="180.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias">
+                  <point x="-56.5" y="-180.0" />
+                  <point x="753.125" y="765.0" />
+                  <point x="716.5" y="765.0" />
+                  <point x="54.75" y="103.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.insumos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipos">
+                  <point x="49.25" y="-136.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.ciudades">
+                  <point x="-54.75" y="-103.0" />
+                  <point x="607.0" y="443.0" />
+                  <point x="550.3958333333334" y="443.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_suministros">
+                  <point x="0.0" y="-92.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.insumos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+                  <point x="-49.25" y="-136.0" />
+                  <point x="1057.25" y="1246.0" />
+                  <point x="894.375" y="1246.0" />
+                  <point x="84.75" y="180.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizacion_eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones">
+                  <point x="-68.25" y="-92.0" />
+                  <point x="-64.25" y="136.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.comunidades">
+                  <point x="54.75" y="-103.0" />
+                  <point x="716.5" y="443.0" />
+                  <point x="784.3958333333334" y="443.0" />
+                  <point x="0.0" y="103.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizacion_eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+                  <point x="68.25" y="-92.0" />
+                  <point x="227.0" y="1236.0" />
+                  <point x="724.875" y="1236.0" />
+                  <point x="-84.75" y="180.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.ciudades" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.provincias">
+                  <point x="0.0" y="-92.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.anexos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+                  <point x="0.0" y="-92.0" />
+                  <point x="28.25" y="180.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.suministros" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_insumos">
+                  <point x="0.0" y="-92.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.comunidades" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.barrios">
+                  <point x="0.0" y="-103.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.participantes" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas">
+                  <point x="-56.25" y="-103.0" />
+                  <point x="0.0" y="213.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones">
+                  <point x="-76.33333333333331" y="-213.0" />
+                  <point x="347.06250000000006" y="765.0" />
+                  <point x="219.0" y="765.0" />
+                  <point x="64.25" y="136.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias">
+                  <point x="76.33333333333331" y="-213.0" />
+                  <point x="499.7291666666667" y="765.0" />
+                  <point x="607.0" y="765.0" />
+                  <point x="-54.75" y="103.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_eventos">
+                  <point x="56.5" y="-180.0" />
+                  <point x="866.125" y="765.0" />
+                  <point x="902.75" y="765.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_personas">
+                  <point x="0.0" y="-213.0" />
+                  <point x="423.39583333333337" y="765.0" />
+                  <point x="417.75" y="765.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_organizaciones">
+                  <point x="0.0" y="-136.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6713780918727915" x="876.1066859402063" y="785.4736842105262" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
@@ -159,6 +296,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>imagen</find>
+      <find>toastr</find>
+      <find>ubicacion</find>
+      <find>ubicacionGroup</find>
+      <find>crear</find>
+      <find>store</find>
+      <find>storebarrio</find>
+      <find>storeco</find>
+      <find>ciudad</find>
+      <find>storeciduad</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,11 +313,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/servidor/app/Http/Middleware/Cors.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion.service.ts" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
         <option value="$PROJECT_DIR$/servidor/app/Ciudad.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
@@ -185,56 +340,31 @@
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoSuministroController.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" />
         <option value="$PROJECT_DIR$/servidor/app/Evento.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/styles.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoInsumoController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232025_create_provincias_table.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Barrio.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" />
-        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoInsumoController.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/frontend/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/frontend/package.json" />
-      <path value="$PROJECT_DIR$/servidor/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -339,116 +469,65 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-insumo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="tipo-insumo" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-insumo-create" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ubicacion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ubicacion" type="462c0819:PsiDirectoryNode" />
-              <item name="ubicacion-create" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ubicacion" type="462c0819:PsiDirectoryNode" />
-              <item name="ubicacion-index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="tipo-insumo" type="462c0819:PsiDirectoryNode" />
+              <item name="tipo-insumo-index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="ciudadcon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/CiudadController.php&#10;comucon&#9;null&#9;null&#10;provcon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProvinciaController.php&#10;barrioco&#9;null&#9;null&#10;CiudadController&#9;null&#9;null&#10;miemcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;miem&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;persocon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/TipoPersonaController.php&#10;provicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProvinciaController.php&#10;miembrocreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;provicon&#9;null&#9;null&#10;miembcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;personacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts&#10;ubicaccrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts&#10;tipo/inscre&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.html&#10;ubicaciocreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html&#10;ubicainde&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html&#10;ubicaindts&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.ts&#10;ubiser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/ubicacion/ubicacion.service.ts&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modelo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\FAMILIA\Documents\trabajos\washington\fepp\frontend\node_modules\tslint" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\xampp\htdocs\DTE\feep\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\FAMILIA\Documents\trabajos\washington\fepp\frontend\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -473,21 +552,21 @@
       <option name="presentableId" value="Default" />
       <updated>1549042979064</updated>
       <workItem from="1549042985621" duration="13353000" />
-      <workItem from="1549154554448" duration="6545000" />
-      <workItem from="1549166254831" duration="642000" />
-      <workItem from="1549196116697" duration="11900000" />
+      <workItem from="1549154554448" duration="7196000" />
+      <workItem from="1549207809087" duration="2877000" />
+      <workItem from="1549210853647" duration="957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32440000" />
+    <option name="totallyTimeSpent" value="24383000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.3464448" />
-      <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.22024292" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.2291498" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.5026455" side_tool="true" visible="true" weight="0.22024292" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -498,9 +577,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.47529814" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.39253998" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -511,24 +590,124 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/servidor/vendor/nexmo/client/src/ApiErrorHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#44#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding>
+            <element signature="e#44#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParroquiaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+          <folding>
+            <element signature="e#44#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="e#44#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoSuministroController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561" />
+        <state relative-caret-position="-561">
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.html">
@@ -540,7 +719,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
+        <state relative-caret-position="-357">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.component.ts">
@@ -560,6 +743,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#3449#3987#0" />
+            <element signature="e#3993#4549#0" />
+            <element signature="e#4555#5067#0" />
+            <element signature="e#5073#5604#0" />
+            <element signature="e#5610#6117#0" />
+            <element signature="e#6123#6650#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -567,10 +786,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="71" column="14" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="35" column="41" selection-start-line="18" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -588,138 +835,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0851a830-c574-442d-9980-8a21799ca55a/console.sql" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoInsumoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/dashboard/dashboard.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="67" selection-start-column="67" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="198" column="51" lean-forward="true" selection-start-line="198" selection-start-column="51" selection-end-line="198" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/notifications/notifications.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="26" lean-forward="true" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="41" column="22" lean-forward="true" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" lean-forward="true" selection-start-line="6" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Provincia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="48" lean-forward="true" selection-start-line="9" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="e#269#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-index/ubicacion-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="527">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -728,169 +864,267 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" selection-start-line="11" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="289">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-create/tipo-insumo-create.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" lean-forward="true" selection-start-line="11" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232025_create_provincias_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Ciudad.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-persona/tipo-persona-create/tipo-persona-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="629">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0851a830-c574-442d-9980-8a21799ca55a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="91" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="51" selection-start-line="51" selection-end-line="74" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Barrio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235052_create_barrios_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001454_create_parroquias_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" selection-start-line="21" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="221">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ComunidadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="e#44#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#44#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding>
+            <element signature="e#44#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#44#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Barrio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding>
-            <element signature="e#1113#1119#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a8c0df77-0638-4eca-a3ae-d6085f8d0833/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/a8c0df77-0638-4eca-a3ae-d6085f8d0833.SCHEMA:fepp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>a8c0df77-0638-4eca-a3ae-d6085f8d0833.SCHEMA:fepp</OriginalElement>
+          <nodes>
+            <node x="689.3958333333334" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.barrios</node>
+            <node x="674.8958333333334" y="212.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.comunidades</node>
+            <node x="26.25" y="234.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_organizaciones</node>
+            <node x="0.0" y="1583.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.password_resets</node>
+            <node x="1322.25" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.users</node>
+            <node x="445.89583333333337" y="223.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.ciudades</node>
+            <node x="1043.25" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_insumos</node>
+            <node x="303.25" y="523.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_personas</node>
+            <node x="1034.25" y="512.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_suministros</node>
+            <node x="696.625" y="823.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos</node>
+            <node x="791.25" y="523.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_eventos</node>
+            <node x="740.375" y="1310.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.anexos</node>
+            <node x="1043.25" y="223.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.suministros</node>
+            <node x="367.14583333333337" y="1299.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.participantes</node>
+            <node x="22.25" y="1310.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizacion_eventos</node>
+            <node x="445.89583333333337" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.provincias</node>
+            <node x="1008.0" y="1266.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.insumos</node>
+            <node x="1034.25" y="911.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipos</node>
+            <node x="308.89583333333337" y="790.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas</node>
+            <node x="552.25" y="501.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias</node>
+            <node x="26.25" y="468.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones</node>
+            <node x="1582.25" y="0.0">a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.migrations</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_suministros" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.suministros">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.participantes" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+              <point x="56.25" y="-103.0" />
+              <point x="535.8958333333334" y="1246.0" />
+              <point x="781.375" y="1246.0" />
+              <point x="-28.25" y="180.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias">
+              <point x="-56.5" y="-180.0" />
+              <point x="753.125" y="765.0" />
+              <point x="716.5" y="765.0" />
+              <point x="54.75" y="103.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.insumos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipos">
+              <point x="49.25" y="-136.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.ciudades">
+              <point x="-54.75" y="-103.0" />
+              <point x="607.0" y="443.0" />
+              <point x="550.3958333333334" y="443.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_suministros">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.insumos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+              <point x="-49.25" y="-136.0" />
+              <point x="1057.25" y="1246.0" />
+              <point x="894.375" y="1246.0" />
+              <point x="84.75" y="180.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizacion_eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones">
+              <point x="-68.25" y="-92.0" />
+              <point x="-64.25" y="136.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.comunidades">
+              <point x="54.75" y="-103.0" />
+              <point x="716.5" y="443.0" />
+              <point x="784.3958333333334" y="443.0" />
+              <point x="0.0" y="103.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizacion_eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+              <point x="68.25" y="-92.0" />
+              <point x="227.0" y="1236.0" />
+              <point x="724.875" y="1236.0" />
+              <point x="-84.75" y="180.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.ciudades" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.provincias">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.anexos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos">
+              <point x="0.0" y="-92.0" />
+              <point x="28.25" y="180.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.suministros" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_insumos">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.comunidades" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.barrios">
+              <point x="0.0" y="-103.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.participantes" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas">
+              <point x="-56.25" y="-103.0" />
+              <point x="0.0" y="213.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones">
+              <point x="-76.33333333333331" y="-213.0" />
+              <point x="347.06250000000006" y="765.0" />
+              <point x="219.0" y="765.0" />
+              <point x="64.25" y="136.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.parroquias">
+              <point x="76.33333333333331" y="-213.0" />
+              <point x="499.7291666666667" y="765.0" />
+              <point x="607.0" y="765.0" />
+              <point x="-54.75" y="103.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.eventos" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_eventos">
+              <point x="56.5" y="-180.0" />
+              <point x="866.125" y="765.0" />
+              <point x="902.75" y="765.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.personas" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_personas">
+              <point x="0.0" y="-213.0" />
+              <point x="423.39583333333337" y="765.0" />
+              <point x="417.75" y="765.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.organizaciones" target="a8c0df77-0638-4eca-a3ae-d6085f8d0833.TABLE:fepp.tipo_organizaciones">
+              <point x="0.0" y="-136.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6713780918727915" x="876.1066859402063" y="785.4736842105262" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoInsumoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
         </state>
       </provider>
     </entry>
