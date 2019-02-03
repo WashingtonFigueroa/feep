@@ -42,7 +42,7 @@
               </tbody>
             </table>
           </div>
-          <div *ngIf="tipo_insumos !== null" class="paginacion text-center">
+          <div *ngIf="tipo_insumos !== null && tipo_insumos.last_page > 1" class="paginacion text-center">
             <div>
               Página {{ tipo_insumos.current_page }} de {{ tipo_insumos.last_page }}
             </div>
