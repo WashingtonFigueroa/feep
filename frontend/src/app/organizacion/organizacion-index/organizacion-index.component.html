@@ -4,32 +4,31 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <div class="card-header">
-          <button class="btn btn-primary" routerLink="/organizaciones/crear">REGISTRAR ORGANIZACIÓN  <span class="fa fa-save"></span></button>
-        </div>
         <div class="row">
           <div class="col-md-12">
             <div style="overflow-x:auto;">
-
               <div class="card">
                 <div class="card-header">
-                  <form (submit)="buscar(valor)" class="form-inline" role="form">
-                    <div>
-                      <input type="search" id="search"
-                             [(ngModel)]="valor"
-                             name="valor"
-                             class="input-search"
-                             placeholder="Organizacion..">
+                  <h4 class="card-title">Organizaciones</h4>
+                  <div class="row">
+                    <div class="col-8">
+                      <button class="btn btn-primary" routerLink="/organizaciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                     </div>
-                    <div class="form-group">
-                      <button type="submit" class="btn-search">BUSCAR</button>
+                    <div class="col-4">
+                      <form action="" method="post" class="form-inline" role="form">
+                        <div class="form-group">
+                          <label class="sr-only" for="">label</label>
+                          <input type="email" class="input-search" name="" id="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                      </form>
                     </div>
-                  </form>
+                  </div>
                 </div>
               <div class="card-body">
               <div class="table-responsive">
-              <table class="table " *ngIf="organizaciones !== null">
-                <thead class=" text-primary">
+              <table class="table small" *ngIf="organizaciones !== null">
+                <thead style="background-color: #303030; color: #f7f7f7">
                 <tr>
                   <th> #   </th>
                   <th> Tipo   </th>
@@ -50,7 +49,7 @@
                   <td>  {{ organizacion.representante }} </td>
                   <td>  {{ organizacion.contacto }} </td>
                   <td class="text-center">
-                    <img src="{{url_base}}{{organizacion.imagen}}" [alt]="organizacion.nombre" width="80" height="80">
+                    <img src="{{url_base}}{{organizacion.imagen}}" [alt]="organizacion.nombre" width="60" height="60">
                   </td>
                   <td class="text-center">
                     <button routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" type="button"
@@ -65,39 +64,23 @@
                 </tbody>
               </table>
               </div>
-              </div>
-              </div>
-
-              <!-- end table-->
-              <div class="container-fluid" *ngIf="organizaciones !== null">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <small>Página {{ current_page }}</small>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <small> <button class="page-link" [disabled]="prev_page === null" (click)="loadPagination(prev_page)">Anterior</button> </small>
-
-                        </div>
-                        <div class="col-md-4">
-                          <small> <button class="page-link" *ngFor="let page of pages"(click)="loadPagination(page.url)">{{ page.item }}</button> </small>
-
-                        </div>
-                        <div class="col-md-4">
-                          <small> <button class="page-link" [disabled]="next_page === null" (click)="loadPagination(next_page)">Siguiente</button> </small>
-
-                        </div>
-                      </div>
-                    </div>
+                <div *ngIf="organizaciones !== null && organizaciones.last_page > 1" class="paginacion text-center">
+                  <div>
+                    Página {{ organizaciones.current_page }} de {{ organizaciones.last_page }}
                   </div>
+                  <button class="paginacion-btn" (click)="loadPages(organizaciones.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(organizaciones.prev_page_url)" [disabled]="organizaciones.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages"
+                          [class.activated]="page.page == organizaciones.current_page"
+                          (click)="loadPages(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPages(organizaciones.next_page_url)" [disabled]="organizaciones.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(organizaciones.last_page_url)"><i class="fa fa-forward"></i></button>
                 </div>
               </div>
-              <!-- end paginate-->
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
