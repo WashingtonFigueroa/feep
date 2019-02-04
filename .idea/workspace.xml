@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c789561f-7a18-4689-ab69-73d5d905f8cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizador/organizador-index/organizador-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizador/organizador-index/organizador-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,37 +63,37 @@
     <session id="-351818816">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="9" />
-          <entry key="ts" value="10" />
+          <entry key="html" value="13" />
+          <entry key="ts" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="9" />
-          <entry key="TypeScript" value="10" />
+          <entry key="HTML" value="13" />
+          <entry key="TypeScript" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="129" />
-          <entry key="ts" value="436" />
+          <entry key="html" value="140" />
+          <entry key="ts" value="519" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="129" />
-          <entry key="TypeScript" value="436" />
+          <entry key="HTML" value="140" />
+          <entry key="TypeScript" value="519" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="323">
+              <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -104,23 +101,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-index/organizador-index.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+            <state relative-caret-position="270">
+              <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+              <folding>
+                <element signature="e#514#520#0" expanded="true" />
+                <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="9" column="66" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="66" />
+            <state relative-caret-position="126">
+              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
               <folding>
-                <element signature="e#246#252#0" expanded="true" />
+                <element signature="e#284#290#0" expanded="true" />
+                <element signature="e#6672#6678#0" expanded="true" />
+                <element signature="e#6800#6806#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-create/organizador-create.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="11" column="130" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="130" />
             </state>
           </provider>
         </entry>
@@ -154,9 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-index/tipo-suministro-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-create/tipo-suministro-create.component.ts" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoSuministroController.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-update/tipo-suministro-update.component.html" />
@@ -205,6 +214,9 @@
         <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizador/organizador-index/organizador-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.ts" />
       </list>
     </option>
   </component>
@@ -368,7 +380,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="tipoinsuupdaht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html&#10;miembrcreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;organiupdateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html&#10;miembroupdateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-update/miembro-update.component.html&#10;miembcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;tiposumiupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-suministro/tipo-suministro-update/tipo-suministro-update.component.ts&#10;orgaupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts&#10;miembrupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-update/miembro-update.component.ts&#10;organizacionupdateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html&#10;organizacioncreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;organizacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organizacioncreats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organizacreateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;tipoinsupdah&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html&#10;organiupdaht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html&#10;organizacret&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;insuupdatets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.ts&#10;organizacioupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
+    <property name="SearchEverywhereHistoryKey" value="organizadorindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizador/organizador-index/organizador-index.component.html&#10;organizaindexht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html&#10;organizadorcreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizador/organizador-create/organizador-create.component.html&#10;organizadorupdaht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizador/organizador-update/organizador-update.component.html&#10;organizadupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizador/organizador-update/organizador-update.component.ts&#10;tipoinsuupdaht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html&#10;miembrcreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;organiupdateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html&#10;miembroupdateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-update/miembro-update.component.html&#10;miembcrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;tiposumiupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-suministro/tipo-suministro-update/tipo-suministro-update.component.ts&#10;orgaupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts&#10;miembrupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/miembro/miembro-update/miembro-update.component.ts&#10;organizacionupdateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html&#10;organizacioncreht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;organizacrets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organizacioncreats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organizacreateht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;tipoinsupdah&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.html&#10;organiupdaht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html&#10;organizacret&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;insuupdatets&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/tipo-insumo/tipo-insumo-update/tipo-insumo-update.component.ts&#10;organizacioupdats&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -417,7 +429,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32217000" />
+    <option name="totallyTimeSpent" value="33625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -449,47 +461,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-index/tipo-suministro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="e#2049#2055#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-create/tipo-suministro-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo/tipo-create/tipo-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -936,11 +907,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        <state relative-caret-position="449">
+          <caret line="82" lean-forward="true" selection-start-line="15" selection-end-line="82" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" lean-forward="true" selection-end-line="149" />
         </state>
       </provider>
     </entry>
@@ -954,10 +932,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-create/organizador-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        <state relative-caret-position="72">
+          <caret line="11" column="130" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-index/organizador-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="e#514#520#0" expanded="true" />
+            <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <element signature="e#284#290#0" expanded="true" />
+            <element signature="e#6672#6678#0" expanded="true" />
+            <element signature="e#6800#6806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizador/organizador-update/organizador-update.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
