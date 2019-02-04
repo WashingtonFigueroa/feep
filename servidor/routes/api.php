@@ -45,6 +45,7 @@ Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');
 Route::get('suministros-buscar/{valor?}', 'API\SuministroController@buscar');
 Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@buscar');
 Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
+Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
 
 
 Route::apiResources([

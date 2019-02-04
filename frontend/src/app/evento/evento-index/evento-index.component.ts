@@ -56,8 +56,8 @@ export class EventoIndexComponent implements OnInit {
             });
     }
 
-    buscar(valor: string) {
-        this.eventoService.buscar(valor)
+    buscar() {
+        this.eventoService.buscar(this.valor)
             .subscribe((res: any) => {
                 this.eventos = res;
                 this.current_page = this.eventos.current_page;

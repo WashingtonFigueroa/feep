@@ -18,7 +18,7 @@ export class EventoService {
     load(url) {
         return this.http.get(url);
     }
-    buscar(valor: string = '') {
+    buscar(valor) {
         return this.http.get(`${this.base}eventos-buscar/${valor}`);
     }
     show(id) {

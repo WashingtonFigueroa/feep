@@ -14,10 +14,10 @@
                     <button class="btn btn-primary" routerLink="/eventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
                   <div class="col-4">
-                    <form action="" method="post" class="form-inline" role="form">
+                    <form (submit)="buscar()" class="form-inline" role="form">
                       <div class="form-group">
-                        <label class="sr-only" for="">label</label>
-                        <input type="email" class="input-search" name="" id="">
+                        <label class="sr-only" for="valor">label</label>
+                        <input type="text" class="input-search" [(ngModel)]="valor" name="valor" id="valor">
                       </div>
                       <button type="submit" class="btn btn-primary">Buscar</button>
                     </form>
