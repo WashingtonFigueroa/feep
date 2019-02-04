@@ -15,7 +15,11 @@ class EventoController extends Controller
      */
     public function index()
     {
-        $eventos = Evento::orderBy('fecha_evento', 'desc')->paginate(10);
+        $eventos = Evento::join('tipo_eventos', 'tipo_eventos.tipo_evento_id', '=', 'eventos.tipo_evento_id')
+                            ->join('parroquias', 'parroquias.parroquia_id', '=', 'eventos.parroquia_id')
+                            ->selectRaw('eventos.*, tipo_eventos.nombre as tipo_evento, parroquias.nombre as parroquia')
+                            ->orderBy('eventos.fecha_evento', 'desc')
+                            ->paginate(10);
         return response()->json($eventos, 200);
     }
     public function listar()
@@ -32,8 +36,17 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        $evento = Evento::create($request->all());
-        return response()->json($evento, 201);
+        if ($request->hasFile('imagen')) {
+            $url = $request->file('imagen')->store('eventos');
+            $evento = new Evento();
+            $evento->fill($request->all());
+            $evento->imagen = explode('/', $url)[1];
+            $evento->save();
+            return response()->json($evento, 201);
+        } else {
+            $evento = Evento::create($request->all());
+            return response()->json($evento, 201);
+        }
     }
 
     /**

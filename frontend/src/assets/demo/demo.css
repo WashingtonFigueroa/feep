@@ -91,3 +91,19 @@ table thead tr th{
     border-bottom-left-radius: 15px;
     border: 1px solid lightgray;
 }
+
+label.upload {
+    display: block;
+    width: 80%;
+    background-color: #28a946;
+    color: white;
+    margin: 1.5em auto 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label.upload:hover {
+    background-color: #1e2125;
+}
