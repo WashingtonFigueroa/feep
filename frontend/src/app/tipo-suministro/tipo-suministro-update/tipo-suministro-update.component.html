@@ -1,3 +1,66 @@
-<p>
-  tipo-suministro-update works!
-</p>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-info" routerLink="/insumos/tipo-suministros"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+          <h5 class="title">Editar Tipo de Suministro</h5>
+        </div>
+        <div class="card-body">
+          <form (submit)="update()" [formGroup]="tipoSuministroGroup" *ngIf="tipo_suministro !== null" role="form">
+            <div class="form-group">
+              <label>Tipo de Suministro</label>
+              <select
+                      class="form-control"
+                      formControlName="suministro_id"
+                      name="suministro_id">
+                <option [value]="suministro.suministro_id"
+                        *ngFor="let suministro of suministros">{{ suministro.nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+            </div>
+            <div class="form-group">
+              <label>Descripción</label>
+              <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <a class="btn btn-dark" routerLink="/insumos/tipo-suministros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <button class="btn btn-primary" type="submit" >Actualizar&nbsp;  <span class="fa fa-save"></span></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <a href="#">
+              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            </a>
+            <button class="btn btn-primary" routerLink="/tipoorganizacion/crear" >Tipo Organización &nbsp;  <span class="fa fa-save"></span></button>
+            <p class="description">
+              Tipos de Organizaciones
+            </p>
+          </div>
+          <p class="description text-center">
+            "Lamborghini Mercy
+            <br> Your chick she so thirsty
+            <br> I'm in that two seat Lambo"
+          </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
