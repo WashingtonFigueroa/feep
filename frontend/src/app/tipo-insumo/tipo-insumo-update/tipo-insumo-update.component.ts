@@ -41,7 +41,7 @@ export class TipoInsumoUpdateComponent implements OnInit {
   update() {
     this.tipoInsumoService.update(this.tipo_insumo_id, this.tipoInsumoGroup.value)
         .subscribe((res: any) => {
-          this.router.navigate(['/tipo-insumos']);
+          this.router.navigate(['/insumos/tipo-insumos']);
         });
   }
 }

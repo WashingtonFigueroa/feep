@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {environment} from '../../environments/environment.prod';
-import {HttpClient} from '../../../node_modules/@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class TipoPersonaService {
@@ -31,5 +31,4 @@ export class TipoPersonaService {
     pagination(url: string) {
         return this.http.get(url);
     }
-
 }

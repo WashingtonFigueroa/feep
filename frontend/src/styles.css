@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+table thead {
+    background-color: #303030;
+    color: #f7f7f7;
+}

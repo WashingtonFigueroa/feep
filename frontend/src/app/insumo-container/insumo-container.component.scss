@@ -1,0 +1,22 @@
+.selection {
+  margin-top: -1.2em;
+  padding: .5em 2.1em;
+  color: whitesmoke;
+  text-align: left;
+}
+.selection button {
+  outline: none;
+  display: inline-block;
+  width: 120px;
+  margin: 0;
+  padding: .5em 0;
+  font-size: 0.8em;
+  text-align: center;
+  border: none;
+  background-color: #208336;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.selection button:hover {
+  background-color: #1c7430;
+}

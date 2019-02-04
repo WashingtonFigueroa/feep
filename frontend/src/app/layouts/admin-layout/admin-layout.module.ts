@@ -13,11 +13,11 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
-import {OrganizacionComponent} from '../../organizacion/organizacion.component';
-import {OrganizacionCreateComponent} from '../../organizacion/organizacion-create/organizacion-create.component';
-import {OrganizacionUpdateComponent} from '../../organizacion/organizacion-update/organizacion-update.component';
-import {OrganizacionIndexComponent} from '../../organizacion/organizacion-index/organizacion-index.component';
-import {OrganizacionService} from '../../organizacion/organizacion.service';
+import { OrganizacionComponent } from '../../organizacion/organizacion.component';
+import { OrganizacionCreateComponent } from '../../organizacion/organizacion-create/organizacion-create.component';
+import { OrganizacionUpdateComponent } from '../../organizacion/organizacion-update/organizacion-update.component';
+import { OrganizacionIndexComponent } from '../../organizacion/organizacion-index/organizacion-index.component';
+import { OrganizacionService } from '../../organizacion/organizacion.service';
 import { MiembroComponent } from '../../miembro/miembro.component';
 import { MiembroIndexComponent } from '../../miembro/miembro-index/miembro-index.component';
 import { MiembroUpdateComponent } from '../../miembro/miembro-update/miembro-update.component';
@@ -53,6 +53,7 @@ import { UbicacionComponent } from '../../ubicacion/ubicacion.component';
 import { UbicacionIndexComponent } from '../../ubicacion/ubicacion-index/ubicacion-index.component';
 import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubicacion-update.component';
 import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
+<<<<<<< HEAD
 import {UbicacionService} from "../../ubicacion/ubicacion.service";
 import { InscripcionComponent } from '../../inscripcion/inscripcion.component';
 import { InscripcionIndexComponent } from '../../inscripcion/inscripcion-index/inscripcion-index.component';
@@ -63,6 +64,25 @@ import { OrganizadorIndexComponent } from '../../organizador/organizador-index/o
 import { OrganizadorUpdateComponent } from '../../organizador/organizador-update/organizador-update.component';
 import { OrganizadorCreateComponent } from '../../organizador/organizador-create/organizador-create.component';
 import {InscripcionService} from "../../inscripcion/inscripcion.service";
+=======
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
+import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
+import {SuministroComponent} from '../../suministro/suministro.component';
+import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
+import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
+import {SuministroUpdateComponent} from '../../suministro/suministro-update/suministro-update.component';
+import {SuministroService} from '../../suministro/suministro.service';
+import {TipoSuministroComponent} from '../../tipo-suministro/tipo-suministro.component';
+import {TipoSuministroCreateComponent} from '../../tipo-suministro/tipo-suministro-create/tipo-suministro-create.component';
+import {TipoSuministroIndexComponent} from '../../tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
+import {TipoSuministroUpdateComponent} from '../../tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
+import {TipoSuministroService} from '../../tipo-suministro/tipo-suministro.service';
+import {TipoComponent} from '../../tipo/tipo.component';
+import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component';
+import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
+import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
+import {TipoService} from '../../tipo/tipo.service';
+>>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
 
 @NgModule({
   imports: [
@@ -108,10 +128,12 @@ import {InscripcionService} from "../../inscripcion/inscripcion.service";
     TipoEventoIndexComponent,
     TipoEventoUpdateComponent,
     TipoEventoCreateComponent,
+    InsumoContainerComponent,
     TipoInsumoComponent,
     TipoInsumoCreateComponent,
     TipoInsumoUpdateComponent,
     TipoInsumoIndexComponent,
+<<<<<<< HEAD
       UbicacionComponent,
       UbicacionIndexComponent,
       UbicacionUpdateComponent,
@@ -124,6 +146,24 @@ import {InscripcionService} from "../../inscripcion/inscripcion.service";
       OrganizadorIndexComponent,
       OrganizadorUpdateComponent,
       OrganizadorCreateComponent
+=======
+    UbicacionComponent,
+    UbicacionIndexComponent,
+    UbicacionUpdateComponent,
+    UbicacionCreateComponent,
+    SuministroComponent,
+    SuministroCreateComponent,
+    SuministroIndexComponent,
+    SuministroUpdateComponent,
+    TipoSuministroComponent,
+    TipoSuministroCreateComponent,
+    TipoSuministroIndexComponent,
+    TipoSuministroUpdateComponent,
+    TipoComponent,
+    TipoCreateComponent,
+    TipoIndexComponent,
+    TipoUpdateComponent
+>>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
   ],
   providers: [
       OrganizacionService,
@@ -134,8 +174,14 @@ import {InscripcionService} from "../../inscripcion/inscripcion.service";
       TipoPersonaService,
       TipoInsumoService,
       UbicacionService,
+<<<<<<< HEAD
       InscripcionService,
       OrganizacionService
+=======
+      SuministroService,
+      TipoSuministroService,
+      TipoService
+>>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
   ]
 })
 

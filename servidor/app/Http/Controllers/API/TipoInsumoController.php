@@ -15,9 +15,21 @@ class TipoInsumoController extends Controller
      */
     public function index()
     {
-        return response()->json(TipoInsumo::orderBy('nombre')->paginate(2), 200);
+        return response()->json(TipoInsumo::orderBy('nombre')->paginate(10), 200);
     }
 
+    public function listar()
+    {
+        return response()->json(TipoInsumo::orderBy('nombre')->get(), 200);
+    }
+
+    public function buscar($valor = '') {
+        $tipo_insumos = TipoInsumo::where('nombre', 'like', '%' . $valor . '%')
+                                ->orWhere('descripcion', 'like', '%' . $valor . '%')
+                                ->orderBy('nombre')
+                                ->paginate(10);
+        return response()->json($tipo_insumos, 200);
+    }
     /**
      * Store a newly created resource in storage.
      *

@@ -15,8 +15,28 @@ class TipoSuministroController extends Controller
      */
     public function index()
     {
-        return response()->json(TipoSuministro::orderBy('nombre')->get(), 200);
+        $tipo_suministros = TipoSuministro::join('suministros', 'suministros.suministro_id', '=', 'tipo_suministros.suministro_id')
+                                            ->selectRaw('tipo_suministros.*, suministros.nombre as suministro')
+                                            ->orderBy('tipo_suministros.nombre')
+                                            ->paginate(10);
+        return response()->json($tipo_suministros, 200);
     }
+
+    public function listar() {
+        $tipo_suministros = TipoSuministro::orderBy('nombre')->get();
+        return response()->json($tipo_suministros, 200);
+    }
+
+    public function buscar($valor = '') {
+        $tipo_suministros = TipoSuministro::join('suministros', 'suministros.suministro_id', '=', 'tipo_suministros.suministro_id')
+            ->where('tipo_suministros.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('tipo_suministros.descripcion', 'like', '%' . $valor . '%')
+            ->selectRaw('tipo_suministros.*, suministros.nombre as suministro')
+            ->orderBy('suministros.nombre')
+            ->paginate(10);
+        return response()->json($tipo_suministros, 200);
+    }
+
 
     /**
      * Store a newly created resource in storage.

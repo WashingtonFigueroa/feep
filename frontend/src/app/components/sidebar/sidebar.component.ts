@@ -18,7 +18,7 @@ export const ROUTES: RouteInfo[] = [
 //    { path: '/user-profile', title: 'Users',  icon: 'location_map-big', class: '' },
 //    { path: '/table-list', title: 'Table List',  icon: 'design_bullet-list-67', class: '' },
 //    { path: '/typography', title: 'Typography',  icon: 'text_caps-small', class: '' },
-    { path: '/tipo-insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
+    { path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
 //    { path: '/icons', title: 'Icon',  icon: 'education_atom', class: '' },
 ];
 

@@ -15,7 +15,24 @@ class TipoController extends Controller
      */
     public function index()
     {
-        return response()->json(Tipo::orderBy('nombre')->paginate(10), 200);
+        $tipos = Tipo::join('tipo_suministros', 'tipo_suministros.tipo_suministro_id', '=', 'tipos.tipo_suministro_id')
+                        ->selectRaw('tipos.*, tipo_suministros.nombre as tipo_suministro')
+                        ->orderBy('tipos.nombre')
+                        ->paginate(10);
+        return response()->json($tipos, 200);
+    }
+    public function listar()
+    {
+        return response()->json(Tipo::orderBy('nombre')->get(), 200);
+    }
+    public function buscar($valor = '') {
+        $tipos = Tipo::join('tipo_suministros', 'tipo_suministros.tipo_suministro_id', '=', 'tipos.tipo_suministro_id')
+            ->where('tipos.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('tipos.descripcion', 'like', '%' . $valor . '%')
+            ->selectRaw('tipos.*, tipo_suministros.nombre as tipo_suministro')
+            ->orderBy('tipos.nombre')
+            ->paginate(10);
+        return response()->json($tipos, 200);
     }
 
     /**

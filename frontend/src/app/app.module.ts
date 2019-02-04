@@ -23,13 +23,13 @@ import {BrowserModule} from '@angular/platform-browser';
     RouterModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule, // required animations module
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule, // required animations module
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
+    AdminLayoutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

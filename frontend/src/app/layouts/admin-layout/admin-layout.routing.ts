@@ -39,6 +39,7 @@ import {UbicacionComponent} from "../../ubicacion/ubicacion.component";
 import {UbicacionIndexComponent} from "../../ubicacion/ubicacion-index/ubicacion-index.component";
 import {UbicacionCreateComponent} from "../../ubicacion/ubicacion-create/ubicacion-create.component";
 import {UbicacionUpdateComponent} from "../../ubicacion/ubicacion-update/ubicacion-update.component";
+<<<<<<< HEAD
 import {OrganizadorComponent} from "../../organizador/organizador.component";
 import {OrganizadorIndexComponent} from "../../organizador/organizador-index/organizador-index.component";
 import {OrganizadorCreateComponent} from "../../organizador/organizador-create/organizador-create.component";
@@ -47,6 +48,21 @@ import {InscripcionComponent} from "../../inscripcion/inscripcion.component";
 import {InscripcionIndexComponent} from "../../inscripcion/inscripcion-index/inscripcion-index.component";
 import {InscripcionCreateComponent} from "../../inscripcion/inscripcion-create/inscripcion-create.component";
 import {InscripcionUpdateComponent} from "../../inscripcion/inscripcion-update/inscripcion-update.component";
+=======
+import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
+import {SuministroComponent} from '../../suministro/suministro.component';
+import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
+import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
+import {SuministroUpdateComponent} from '../../suministro/suministro-update/suministro-update.component';
+import {TipoSuministroComponent} from '../../tipo-suministro/tipo-suministro.component';
+import {TipoSuministroIndexComponent} from '../../tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
+import {TipoSuministroCreateComponent} from '../../tipo-suministro/tipo-suministro-create/tipo-suministro-create.component';
+import {TipoSuministroUpdateComponent} from '../../tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
+import {TipoComponent} from '../../tipo/tipo.component';
+import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
+import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component';
+import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
+>>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -176,26 +192,6 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'tipo-insumos',  component: TipoInsumoComponent,
-        children: [
-            {
-                path: 'listar',
-                component: TipoInsumoIndexComponent
-            },
-            {
-                path: 'crear',
-                component: TipoInsumoCreateComponent
-            },
-            {
-                path: 'editar/:id',
-                component: TipoInsumoUpdateComponent
-            },
-            {
-                path: '',
-                redirectTo: 'listar'
-            },
-        ]
-    },
     { path: 'ubicaciones',  component: UbicacionComponent,
         children: [
             {
@@ -214,6 +210,103 @@ export const AdminLayoutRoutes: Routes = [
                 path: '',
                 redirectTo: 'listar'
             },
+        ]
+    },
+    { path: 'insumos',  component: InsumoContainerComponent,
+        children: [
+            {
+                path: 'tipo-insumos',
+                component: TipoInsumoComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: TipoInsumoIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: TipoInsumoCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: TipoInsumoUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: 'suministros',
+                component: SuministroComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: SuministroIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: SuministroCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: SuministroUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: 'tipo-suministros',
+                component: TipoSuministroComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: TipoSuministroIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: TipoSuministroCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: TipoSuministroUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: 'tipos',
+                component: TipoComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: TipoIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: TipoCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: TipoUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: '',
+                redirectTo: 'tipo-insumos',
+                pathMatch: 'full'
+            }
         ]
     },
     { path: 'organizadores',  component: OrganizadorComponent,

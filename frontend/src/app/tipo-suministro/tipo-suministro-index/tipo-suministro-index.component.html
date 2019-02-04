@@ -1,0 +1,77 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Tipos de Suministros</h4>
+          <div class="row">
+            <div class="col-8">
+              <button class="btn btn-primary" routerLink="/insumos/tipo-suministros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+            </div>
+            <div class="col-4">
+              <form (submit)="buscar()" class="form-inline" role="form">
+                <div class="form-group">
+                  <input type="email" class="input-search"
+                         [(ngModel)]="valor"
+                         name="valor">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table small" *ngIf="tipo_suministros !== null">
+              <thead>
+              <tr class="text-primary">
+                <th>#</th>
+                <th>Suministro</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Operaciones</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let tipo_suministro of tipo_suministros.data; let i = index">
+                <td>
+                  {{ i + 1 }}
+                </td>
+                <td>
+                  {{ tipo_suministro.suministro }}
+                </td>
+                <td>
+                  {{ tipo_suministro.nombre }}
+                </td>
+                <td>
+                  {{ tipo_suministro.descripcion }}
+                </td>
+                <td class="text-center">
+                  <button routerLink="/insumos/tipo-suministros/editar/{{tipo_suministro.tipo_suministro_id}}" type="button" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit"></i>
+                  </button>                  &nbsp;
+                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipo_suministro, i)">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div *ngIf="tipo_suministros !== null && tipo_suministros.last_page > 1" class="paginacion text-center">
+            <div>
+              Página {{ tipo_suministros.current_page }} de {{ tipo_suministros.last_page }}
+            </div>
+            <button class="paginacion-btn" (click)="load(tipo_suministros.first_page_url)"><i class="fa fa-backward"></i></button>
+            <button class="paginacion-btn" (click)="load(tipo_suministros.prev_page_url)" [disabled]="tipo_suministros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+            <button class="paginacion-btn" *ngFor="let page of pages"
+                    [class.activated]="page.page == tipo_suministros.current_page"
+                    (click)="load(page.url)">{{ page.page }}</button>
+            <button class="paginacion-btn" (click)="load(tipo_suministros.next_page_url)" [disabled]="tipo_suministros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+            <button class="paginacion-btn" (click)="load(tipo_suministros.last_page_url)"><i class="fa fa-forward"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
