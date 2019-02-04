@@ -31,6 +31,13 @@ Route::get('comunidades-listar', 'API\ComunidadController@listar');
 Route::get('ciudades-listar', 'API\CiudadController@listar');
 Route::get('parroquias-listar', 'API\ParroquiaController@listar');
 
+Route::get('tipo-insumos-listar', 'API\TipoInsumoController@listar');
+
+/*buscar*/
+Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');
+Route::get('suministros-buscar/{valor?}', 'API\SuministroController@buscar');
+
+
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',
     'tipo-personas' => 'API\TipoPersonaController',

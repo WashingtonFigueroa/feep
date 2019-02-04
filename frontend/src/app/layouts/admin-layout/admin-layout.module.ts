@@ -13,11 +13,11 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
-import {OrganizacionComponent} from '../../organizacion/organizacion.component';
-import {OrganizacionCreateComponent} from '../../organizacion/organizacion-create/organizacion-create.component';
-import {OrganizacionUpdateComponent} from '../../organizacion/organizacion-update/organizacion-update.component';
-import {OrganizacionIndexComponent} from '../../organizacion/organizacion-index/organizacion-index.component';
-import {OrganizacionService} from '../../organizacion/organizacion.service';
+import { OrganizacionComponent } from '../../organizacion/organizacion.component';
+import { OrganizacionCreateComponent } from '../../organizacion/organizacion-create/organizacion-create.component';
+import { OrganizacionUpdateComponent } from '../../organizacion/organizacion-update/organizacion-update.component';
+import { OrganizacionIndexComponent } from '../../organizacion/organizacion-index/organizacion-index.component';
+import { OrganizacionService } from '../../organizacion/organizacion.service';
 import { MiembroComponent } from '../../miembro/miembro.component';
 import { MiembroIndexComponent } from '../../miembro/miembro-index/miembro-index.component';
 import { MiembroUpdateComponent } from '../../miembro/miembro-update/miembro-update.component';
@@ -55,6 +55,11 @@ import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubica
 import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
 import {UbicacionService} from '../../ubicacion/ubicacion.service';
 import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
+import {SuministroComponent} from '../../suministro/suministro.component';
+import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
+import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
+import {SuministroUpdateComponent} from '../../suministro/suministro-update/suministro-update.component';
+import {SuministroService} from '../../suministro/suministro.service';
 
 @NgModule({
   imports: [
@@ -108,7 +113,11 @@ import {InsumoContainerComponent} from '../../insumo-container/insumo-container.
     UbicacionComponent,
     UbicacionIndexComponent,
     UbicacionUpdateComponent,
-    UbicacionCreateComponent
+    UbicacionCreateComponent,
+    SuministroComponent,
+    SuministroCreateComponent,
+    SuministroIndexComponent,
+    SuministroUpdateComponent
   ],
   providers: [
       OrganizacionService,
@@ -118,7 +127,8 @@ import {InsumoContainerComponent} from '../../insumo-container/insumo-container.
       TipoEventoService,
       TipoPersonaService,
       TipoInsumoService,
-      UbicacionService
+      UbicacionService,
+      SuministroService
   ]
 })
 

@@ -3,24 +3,34 @@
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">
-          <button class="btn btn-info" routerLink="/tipo-insumos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Registrar Tipo de Insumo</h5>
+          <button class="btn btn-info" routerLink="/insumos/suministros"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+          <h5 class="title">Editar Suministro</h5>
         </div>
         <div class="card-body">
-          <form (submit)="store()" [formGroup]="tipoInsumoGroup" role="form">
+          <form (submit)="update()" [formGroup]="suministroGroup" *ngIf="suministro !== null" role="form">
+            <div class="form-group">
+              <label>Tipos de Insumos</label>
+              <select
+                      class="form-control"
+                      formControlName="tipo_insumo_id"
+                      name="tipo_insumo_id">
+                <option [value]="tipo_insumo.tipo_insumo_id"
+                        *ngFor="let tipo_insumo of tipo_insumos">{{ tipo_insumo.nombre }}</option>
+              </select>
+            </div>
             <div class="form-group">
               <label>Nombre</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
             </div>
             <div class="form-group">
-              <label>Descripcion</label>
+              <label>Descripción</label>
               <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <a class="btn btn-dark" routerLink="/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
-                  <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                  <a class="btn btn-dark" routerLink="/insumos/suministros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <button class="btn btn-primary" type="submit" >Actualizar&nbsp;  <span class="fa fa-save"></span></button>
                 </div>
               </div>
             </div>

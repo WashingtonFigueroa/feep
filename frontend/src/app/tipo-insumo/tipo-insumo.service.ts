@@ -11,8 +11,14 @@ export class TipoInsumoService {
   index() {
     return this.http.get(`${this.base}tipo-insumos`);
   }
+  buscar(valor) {
+    return this.http.get(`${this.base}tipo-insumos-buscar/${valor}`);
+  }
   load(url) {
     return this.http.get(url);
+  }
+  listar() {
+    return this.http.get(`${this.base}tipo-insumos-listar`);
   }
   show(id) {
     return this.http.get(`${this.base}tipo-insumos/${id}`);

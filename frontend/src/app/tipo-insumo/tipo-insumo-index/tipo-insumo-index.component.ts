@@ -10,6 +10,7 @@ export class TipoInsumoIndexComponent implements OnInit {
 
   tipo_insumos: any = null;
   pages: any = [];
+  valor = '';
   constructor(private tipoInsumoService: TipoInsumoService) {
     this.tipoInsumoService.index()
         .subscribe((res: any) => {
@@ -34,6 +35,12 @@ export class TipoInsumoIndexComponent implements OnInit {
         .subscribe((res: any) => {
           this.tipo_insumos = res;
         })
+  }
+  buscar() {
+      this.tipoInsumoService.buscar(this.valor)
+          .subscribe((res: any) => {
+              this.tipo_insumos = res;
+          });
   }
   destroy(tipo_insumo, index) {
     if (confirm(`¿Esta seguro de eliminar ${tipo_insumo.nombre}?`)) {

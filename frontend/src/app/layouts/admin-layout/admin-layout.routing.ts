@@ -40,6 +40,10 @@ import {UbicacionIndexComponent} from "../../ubicacion/ubicacion-index/ubicacion
 import {UbicacionCreateComponent} from "../../ubicacion/ubicacion-create/ubicacion-create.component";
 import {UbicacionUpdateComponent} from "../../ubicacion/ubicacion-update/ubicacion-update.component";
 import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
+import {SuministroComponent} from '../../suministro/suministro.component';
+import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
+import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
+import {SuministroUpdateComponent} from '../../suministro/suministro-update/suministro-update.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -206,6 +210,28 @@ export const AdminLayoutRoutes: Routes = [
                     {
                         path: 'editar/:id',
                         component: TipoInsumoUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: 'suministros',
+                component: SuministroComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: SuministroIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: SuministroCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: SuministroUpdateComponent
                     },
                     {
                         path: '',

@@ -15,8 +15,23 @@ class SuministroController extends Controller
      */
     public function index()
     {
-        return response()->json(Suministro::orderBy('nombre')->paginate(), 200);
+        $suministros = Suministro::join('tipo_insumos', 'tipo_insumos.tipo_insumo_id', '=', 'suministros.tipo_insumo_id')
+                                ->selectRaw('suministros.*, tipo_insumos.nombre as tipo_insumo')
+                                ->orderBy('nombre')
+                                ->paginate(10);
+        return response()->json($suministros, 200);
     }
+
+    public function buscar($valor = '') {
+        $suministros = Suministro::join('tipo_insumos', 'tipo_insumos.tipo_insumo_id', '=', 'suministros.tipo_insumo_id')
+            ->where('suministros.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('suministros.descripcion', 'like', '%' . $valor . '%')
+            ->selectRaw('suministros.*, tipo_insumos.nombre as tipo_insumo')
+            ->orderBy('suministros.nombre')
+            ->paginate(10);
+        return response()->json($suministros, 200);
+    }
+
 
     /**
      * Store a newly created resource in storage.
