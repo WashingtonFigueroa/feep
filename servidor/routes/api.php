@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
 Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
 Route::get('anexos-imagen/{url}', 'API\AnexoController@imagen');
+Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
 
 /*listados*/
 Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');

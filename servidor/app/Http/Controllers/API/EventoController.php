@@ -86,4 +86,8 @@ class EventoController extends Controller
         $evento->delete();
         return response()->json($evento, 200);
     }
+
+    public function imagen($url){
+        return response()->file(storage_path('app/eventos/' . $url));
+    }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {environment} from '../../../environments/environment.prod';
-import {EventoService} from "../evento.service";
-import {ToastrService} from "ngx-toastr";
+import {EventoService} from '../evento.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-evento-index',
@@ -17,6 +17,7 @@ export class EventoIndexComponent implements OnInit {
     current_page: any = null;
     eventos: any = null;
     valor = '';
+    base_imagen: string = environment.servidor + 'eventos-imagen/';
     constructor(private eventoService: EventoService,
                 private toastrService: ToastrService) {
         this.eventoService.index()

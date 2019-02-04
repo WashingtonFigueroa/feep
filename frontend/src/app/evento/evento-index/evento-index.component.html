@@ -34,8 +34,8 @@
                       <th> Nombre   </th>
                       <th> Imagen   </th>
                       <th> Dirección </th>
-                      <th> Fecha Evento </th>
-                      <th> Fecha FIN </th>
+                      <th> Inicia </th>
+                      <th> Finaliza </th>
                       <th> Acciones   </th>
                     </tr>
                     </thead>
@@ -44,15 +44,20 @@
                       <td>  {{i+1}} </td>
                       <td>  {{ evento.tipo_evento_id }} </td>
                       <td>  {{ evento.nombre }} </td>
-                      <td>  {{ evento.imagen }} </td>
+                      <td>
+                        <span *ngIf="!evento.imagen" class="badge badge-danger">Sin imagen</span>
+                        <img src="{{base_imagen}}{{evento.imagen}}" height="100"
+                             [alt]="evento.nombre" *ngIf="evento.imagen">
+                      </td>
                       <td>  {{ evento.direccion }} </td>
-                      <td>  {{ evento.fecha_evento }} </td>
-                      <td>  {{ evento.fecha_finaliza }} </td>
+                      <td>  {{ evento.fecha_evento | date: 'dd/MM/yyyy' }} </td>
+                      <td>  {{ evento.fecha_finaliza | date: 'dd/MM/yyyy' }} </td>
                       <td class="text-center">
-                        <button routerLink="/eventos/editar/{{evento.evento_id}}" type="button"
+                        <button routerLink="/eventos/editar/{{ evento.evento_id }}" type="button"
                                 class="btn btn-xs btn-info">
                           <i class="fa fa-edit"></i>
                         </button>
+                        &nbsp;&nbsp;
                         <button type="button" class="btn btn-xs btn-danger" (click)="destroy(evento, i)">
                           <i class="fa fa-trash"></i>
                         </button>
