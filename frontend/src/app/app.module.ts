@@ -13,6 +13,10 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {BrowserModule} from '@angular/platform-browser';
+import { TipoSuministroComponent } from './tipo-suministro/tipo-suministro.component';
+import { TipoSuministroCreateComponent } from './tipo-suministro/tipo-suministro-create/tipo-suministro-create.component';
+import { TipoSuministroIndexComponent } from './tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
+import { TipoSuministroUpdateComponent } from './tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
 
 @NgModule({
   imports: [
@@ -23,9 +27,9 @@ import {BrowserModule} from '@angular/platform-browser';
     RouterModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule, // required animations module
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule, // required animations module
   ],
   declarations: [
     AppComponent,

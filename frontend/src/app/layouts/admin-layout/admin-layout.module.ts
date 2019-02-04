@@ -60,6 +60,11 @@ import {SuministroCreateComponent} from '../../suministro/suministro-create/sumi
 import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
 import {SuministroUpdateComponent} from '../../suministro/suministro-update/suministro-update.component';
 import {SuministroService} from '../../suministro/suministro.service';
+import {TipoSuministroComponent} from '../../tipo-suministro/tipo-suministro.component';
+import {TipoSuministroCreateComponent} from '../../tipo-suministro/tipo-suministro-create/tipo-suministro-create.component';
+import {TipoSuministroIndexComponent} from '../../tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
+import {TipoSuministroUpdateComponent} from '../../tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
+import {TipoSuministroService} from '../../tipo-suministro/tipo-suministro.service';
 
 @NgModule({
   imports: [
@@ -117,7 +122,11 @@ import {SuministroService} from '../../suministro/suministro.service';
     SuministroComponent,
     SuministroCreateComponent,
     SuministroIndexComponent,
-    SuministroUpdateComponent
+    SuministroUpdateComponent,
+    TipoSuministroComponent,
+    TipoSuministroCreateComponent,
+    TipoSuministroIndexComponent,
+    TipoSuministroUpdateComponent
   ],
   providers: [
       OrganizacionService,
@@ -128,7 +137,8 @@ import {SuministroService} from '../../suministro/suministro.service';
       TipoPersonaService,
       TipoInsumoService,
       UbicacionService,
-      SuministroService
+      SuministroService,
+      TipoSuministroService
   ]
 })
 

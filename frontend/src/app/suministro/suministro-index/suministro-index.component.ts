@@ -7,7 +7,6 @@ import {SuministroService} from '../suministro.service';
   styleUrls: ['./suministro-index.component.scss']
 })
 export class SuministroIndexComponent implements OnInit {
-
   suministros: any = null;
   pages: any = [];
   valor = '';
@@ -50,5 +49,4 @@ export class SuministroIndexComponent implements OnInit {
           });
     }
   }
-
 }

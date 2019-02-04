@@ -44,6 +44,10 @@ import {SuministroComponent} from '../../suministro/suministro.component';
 import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
 import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
 import {SuministroUpdateComponent} from '../../suministro/suministro-update/suministro-update.component';
+import {TipoSuministroComponent} from '../../tipo-suministro/tipo-suministro.component';
+import {TipoSuministroIndexComponent} from '../../tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
+import {TipoSuministroCreateComponent} from '../../tipo-suministro/tipo-suministro-create/tipo-suministro-create.component';
+import {TipoSuministroUpdateComponent} from '../../tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -232,6 +236,28 @@ export const AdminLayoutRoutes: Routes = [
                     {
                         path: 'editar/:id',
                         component: SuministroUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: 'tipo-suministros',
+                component: TipoSuministroComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: TipoSuministroIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: TipoSuministroCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: TipoSuministroUpdateComponent
                     },
                     {
                         path: '',

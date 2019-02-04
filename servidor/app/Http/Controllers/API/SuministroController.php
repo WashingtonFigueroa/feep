@@ -22,6 +22,11 @@ class SuministroController extends Controller
         return response()->json($suministros, 200);
     }
 
+    public function listar() {
+        $suministros = Suministro::orderBy('nombre')->get();
+        return response()->json($suministros, 200);
+    }
+
     public function buscar($valor = '') {
         $suministros = Suministro::join('tipo_insumos', 'tipo_insumos.tipo_insumo_id', '=', 'suministros.tipo_insumo_id')
             ->where('suministros.nombre', 'like', '%' . $valor . '%')
@@ -31,7 +36,6 @@ class SuministroController extends Controller
             ->paginate(10);
         return response()->json($suministros, 200);
     }
-
 
     /**
      * Store a newly created resource in storage.

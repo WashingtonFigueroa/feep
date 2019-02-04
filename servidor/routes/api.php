@@ -32,10 +32,12 @@ Route::get('ciudades-listar', 'API\CiudadController@listar');
 Route::get('parroquias-listar', 'API\ParroquiaController@listar');
 
 Route::get('tipo-insumos-listar', 'API\TipoInsumoController@listar');
+Route::get('suministros-listar', 'API\SuministroController@listar');
 
 /*buscar*/
 Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');
 Route::get('suministros-buscar/{valor?}', 'API\SuministroController@buscar');
+Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@buscar');
 
 
 Route::apiResources([
