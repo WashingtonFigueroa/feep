@@ -80,6 +80,11 @@ import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
 import {TipoService} from '../../tipo/tipo.service';
 import {OrganizadorService} from "../../organizador/organizador.service";
+import {UsuarioComponent} from '../../usuario/usuario.component';
+import {UsuarioCreateComponent} from '../../usuario/usuario-create/usuario-create.component';
+import {UsuarioIndexComponent} from '../../usuario/usuario-index/usuario-index.component';
+import {UsuarioUpdateComponent} from '../../usuario/usuario-update/usuario-update.component';
+import {UsuarioService} from '../../usuario/usuario.service';
 
 
 @NgModule({
@@ -131,18 +136,18 @@ import {OrganizadorService} from "../../organizador/organizador.service";
     TipoInsumoCreateComponent,
     TipoInsumoUpdateComponent,
     TipoInsumoIndexComponent,
-      UbicacionComponent,
-      UbicacionIndexComponent,
-      UbicacionUpdateComponent,
-      UbicacionCreateComponent,
-      InscripcionComponent,
-      InscripcionIndexComponent,
-      InscripcionUpdateComponent,
-      InscripcionCreateComponent,
-      OrganizadorComponent,
-      OrganizadorIndexComponent,
-      OrganizadorUpdateComponent,
-      OrganizadorCreateComponent,
+    UbicacionComponent,
+    UbicacionIndexComponent,
+    UbicacionUpdateComponent,
+    UbicacionCreateComponent,
+    InscripcionComponent,
+    InscripcionIndexComponent,
+    InscripcionUpdateComponent,
+    InscripcionCreateComponent,
+    OrganizadorComponent,
+    OrganizadorIndexComponent,
+    OrganizadorUpdateComponent,
+    OrganizadorCreateComponent,
     UbicacionIndexComponent,
     UbicacionUpdateComponent,
     UbicacionCreateComponent,
@@ -157,7 +162,11 @@ import {OrganizadorService} from "../../organizador/organizador.service";
     TipoComponent,
     TipoCreateComponent,
     TipoIndexComponent,
-    TipoUpdateComponent
+    TipoUpdateComponent,
+    UsuarioComponent,
+    UsuarioCreateComponent,
+    UsuarioIndexComponent,
+    UsuarioUpdateComponent
   ],
   providers: [
       OrganizacionService,
@@ -173,7 +182,8 @@ import {OrganizadorService} from "../../organizador/organizador.service";
       SuministroService,
       TipoSuministroService,
       TipoService,
-      OrganizadorService
+      OrganizadorService,
+      UsuarioService
   ]
 })
 

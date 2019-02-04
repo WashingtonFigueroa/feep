@@ -32,5 +32,4 @@ export class TipoInsumoService {
   destroy(id) {
     return this.http.delete(`${this.base}tipo-insumos/${id}`);
   }
-
 }

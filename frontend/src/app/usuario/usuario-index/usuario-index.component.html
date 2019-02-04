@@ -1,0 +1,81 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Usuarios</h4>
+          <div class="row">
+            <div class="col-8">
+              <button class="btn btn-primary" routerLink="/usuarios/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+            </div>
+            <div class="col-4">
+              <form (submit)="buscar()" class="form-inline" role="form">
+                <div class="form-group">
+                  <input type="email" class="input-search"
+                         [(ngModel)]="valor"
+                         name="valor">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table small" *ngIf="usuarios !== null">
+              <thead>
+              <tr class="text-primary">
+                <th>#</th>
+                <th>Nombres</th>
+                <th>Cuenta</th>
+                <th>Correo Electrónico</th>
+                <th>Tipo de Usuario</th>
+                <th>Operaciones</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let usuario of usuarios.data; let i = index">
+                <td>
+                  {{ i + 1 }}
+                </td>
+                <td>
+                  {{ usuario.nombres }}
+                </td>
+                <td>
+                  {{ usuario.cuenta }}
+                </td>
+                <td>
+                  {{ usuario.email }}
+                </td>
+                <td>
+                  {{ usuario.tipo }}
+                </td>
+                <td class="text-center">
+                  <button routerLink="/usuarios/editar/{{usuario.usuario_id}}" type="button" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit"></i>
+                  </button>                  &nbsp;
+                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(usuario, i)">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div *ngIf="usuarios !== null && usuarios.last_page > 1" class="paginacion text-center">
+            <div>
+              Página {{ usuarios.current_page }} de {{ usuarios.last_page }}
+            </div>
+            <button class="paginacion-btn" (click)="load(usuarios.first_page_url)"><i class="fa fa-backward"></i></button>
+            <button class="paginacion-btn" (click)="load(usuarios.prev_page_url)" [disabled]="usuarios.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+            <button class="paginacion-btn" *ngFor="let page of pages"
+                    [class.activated]="page.page == usuarios.current_page"
+                    (click)="load(page.url)">{{ page.page }}</button>
+            <button class="paginacion-btn" (click)="load(usuarios.next_page_url)" [disabled]="usuarios.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+            <button class="paginacion-btn" (click)="load(usuarios.last_page_url)"><i class="fa fa-forward"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

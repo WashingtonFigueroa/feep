@@ -14,6 +14,10 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {BrowserModule} from '@angular/platform-browser';
 import { LoginComponent } from './login/login.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { UsuarioCreateComponent } from './usuario/usuario-create/usuario-create.component';
+import { UsuarioIndexComponent } from './usuario/usuario-index/usuario-index.component';
+import { UsuarioUpdateComponent } from './usuario/usuario-update/usuario-update.component';
 
 @NgModule({
   imports: [

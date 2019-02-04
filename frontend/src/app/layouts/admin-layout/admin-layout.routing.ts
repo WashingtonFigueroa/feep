@@ -60,6 +60,10 @@ import {TipoComponent} from '../../tipo/tipo.component';
 import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
+import {UsuarioComponent} from '../../usuario/usuario.component';
+import {UsuarioIndexComponent} from '../../usuario/usuario-index/usuario-index.component';
+import {UsuarioCreateComponent} from '../../usuario/usuario-create/usuario-create.component';
+import {UsuarioUpdateComponent} from '../../usuario/usuario-update/usuario-update.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -340,6 +344,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: InscripcionUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'usuarios',  component: UsuarioComponent,
+        children: [
+            {
+                path: 'listar',
+                component: UsuarioIndexComponent
+            },
+            {
+                path: 'crear',
+                component: UsuarioCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: UsuarioUpdateComponent
             },
             {
                 path: '',

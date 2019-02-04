@@ -1,0 +1,66 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-info" routerLink="/usuarios"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+          <h5 class="title">Registrar Usuario</h5>
+        </div>
+        <div class="card-body">
+          <form (submit)="store()" [formGroup]="usuarioGroup" role="form">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label>Nombres</label>
+                  <input type="text" class="form-control" formControlName="nombres" name="nombres" id="nombres" autofocus>
+                </div>
+                <div class="col-6">
+                  <label>Cuenta</label>
+                  <input type="text" class="form-control" formControlName="cuenta" name="cuenta" id="cuenta">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label>Correo Electrónico</label>
+                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
+                </div>
+                <div class="col-6">
+                  <label>Tipo</label>
+                  <select class="form-control" formControlName="tipo" name="tipo" id="tipo">
+                    <option value="administrador">Administrador</option>
+                    <option value="trabajador">Trabajador</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label>Contraseña</label>
+                  <input type="password" class="form-control" formControlName="password" name="password" id="password" minlength="3">
+                </div>
+                <div class="col-6">
+                  <label>Repetir Contraseña</label>
+                  <input type="password" class="form-control" formControlName="password_repeat" name="password_repeat" id="password_repeat" minlength="3">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <a class="btn btn-dark" routerLink="/usuarios/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <button class="btn btn-primary"
+                          [disabled]="usuarioGroup.status === 'INVALID'"
+                          type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
