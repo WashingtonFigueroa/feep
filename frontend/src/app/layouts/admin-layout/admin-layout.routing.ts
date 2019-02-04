@@ -60,6 +60,10 @@ import {TipoComponent} from '../../tipo/tipo.component';
 import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
+import {AsignacionComponent} from "../../asignacion/asignacion.component";
+import {AsignacionIndexComponent} from "../../asignacion/asignacion-index/asignacion-index.component";
+import {AsignacionCreateComponent} from "../../asignacion/asignacion-create/asignacion-create.component";
+import {AsignacionUpdateComponent} from "../../asignacion/asignacion-update/asignacion-update.component";
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -340,6 +344,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: InscripcionUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'asignaciones',  component: AsignacionComponent,
+        children: [
+            {
+                path: 'listar',
+                component: AsignacionIndexComponent
+            },
+            {
+                path: 'crear',
+                component: AsignacionCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: AsignacionUpdateComponent
             },
             {
                 path: '',

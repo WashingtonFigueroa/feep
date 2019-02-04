@@ -27,8 +27,8 @@ class CreateInsumosTable extends Migration
                 ->onDelete('cascade');
             $table->string('nombre');
             $table->integer('cantidad');
-            $table->date('fecha');
-            $table->string('imagen');
+            $table->date('fecha')->nullable();
+            $table->string('imagen')->nullable();
             $table->string('receptor');
             $table->softDeletes();
             $table->timestamps();

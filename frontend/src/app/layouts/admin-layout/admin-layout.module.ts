@@ -80,6 +80,11 @@ import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
 import {TipoService} from '../../tipo/tipo.service';
 import {OrganizadorService} from "../../organizador/organizador.service";
+import { AsignacionComponent } from '../../asignacion/asignacion.component';
+import { AsignacionIndexComponent } from '../../asignacion/asignacion-index/asignacion-index.component';
+import { AsignacionUpdateComponent } from '../../asignacion/asignacion-update/asignacion-update.component';
+import { AsignacionCreateComponent } from '../../asignacion/asignacion-create/asignacion-create.component';
+import {AsignacionService} from "../../asignacion/asignacion.service";
 
 
 @NgModule({
@@ -157,7 +162,11 @@ import {OrganizadorService} from "../../organizador/organizador.service";
     TipoComponent,
     TipoCreateComponent,
     TipoIndexComponent,
-    TipoUpdateComponent
+    TipoUpdateComponent,
+      AsignacionComponent,
+      AsignacionIndexComponent,
+      AsignacionUpdateComponent,
+      AsignacionCreateComponent
   ],
   providers: [
       OrganizacionService,
@@ -173,7 +182,8 @@ import {OrganizadorService} from "../../organizador/organizador.service";
       SuministroService,
       TipoSuministroService,
       TipoService,
-      OrganizadorService
+      OrganizadorService,
+      AsignacionService
   ]
 })
 

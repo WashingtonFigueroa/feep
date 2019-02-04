@@ -12,7 +12,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
     { path: '/organizadores', title: 'Organizadores',  icon: 'business_badge', class: '' },
-    { path: '/asignarinsumos', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
+    { path: '/asignaciones', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
     { path: '/inscripciones', title: 'Inscripciones',  icon: 'education_atom', class: '' },
     { path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
     { path: '/ubicaciones', title: 'Geografía',  icon: 'location_map-big', class: '' },
