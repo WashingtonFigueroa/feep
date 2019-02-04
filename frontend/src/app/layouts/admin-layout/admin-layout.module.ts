@@ -53,7 +53,6 @@ import { UbicacionComponent } from '../../ubicacion/ubicacion.component';
 import { UbicacionIndexComponent } from '../../ubicacion/ubicacion-index/ubicacion-index.component';
 import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubicacion-update.component';
 import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
-<<<<<<< HEAD
 import {UbicacionService} from "../../ubicacion/ubicacion.service";
 import { InscripcionComponent } from '../../inscripcion/inscripcion.component';
 import { InscripcionIndexComponent } from '../../inscripcion/inscripcion-index/inscripcion-index.component';
@@ -64,8 +63,6 @@ import { OrganizadorIndexComponent } from '../../organizador/organizador-index/o
 import { OrganizadorUpdateComponent } from '../../organizador/organizador-update/organizador-update.component';
 import { OrganizadorCreateComponent } from '../../organizador/organizador-create/organizador-create.component';
 import {InscripcionService} from "../../inscripcion/inscripcion.service";
-=======
-import {UbicacionService} from '../../ubicacion/ubicacion.service';
 import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
 import {SuministroComponent} from '../../suministro/suministro.component';
 import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
@@ -82,7 +79,7 @@ import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component'
 import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
 import {TipoService} from '../../tipo/tipo.service';
->>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
+
 
 @NgModule({
   imports: [
@@ -133,7 +130,6 @@ import {TipoService} from '../../tipo/tipo.service';
     TipoInsumoCreateComponent,
     TipoInsumoUpdateComponent,
     TipoInsumoIndexComponent,
-<<<<<<< HEAD
       UbicacionComponent,
       UbicacionIndexComponent,
       UbicacionUpdateComponent,
@@ -145,9 +141,7 @@ import {TipoService} from '../../tipo/tipo.service';
       OrganizadorComponent,
       OrganizadorIndexComponent,
       OrganizadorUpdateComponent,
-      OrganizadorCreateComponent
-=======
-    UbicacionComponent,
+      OrganizadorCreateComponent,
     UbicacionIndexComponent,
     UbicacionUpdateComponent,
     UbicacionCreateComponent,
@@ -163,7 +157,6 @@ import {TipoService} from '../../tipo/tipo.service';
     TipoCreateComponent,
     TipoIndexComponent,
     TipoUpdateComponent
->>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
   ],
   providers: [
       OrganizacionService,
@@ -174,14 +167,11 @@ import {TipoService} from '../../tipo/tipo.service';
       TipoPersonaService,
       TipoInsumoService,
       UbicacionService,
-<<<<<<< HEAD
       InscripcionService,
-      OrganizacionService
-=======
+      OrganizacionService,
       SuministroService,
       TipoSuministroService,
       TipoService
->>>>>>> e3b323ddedc0734b5731f64f765e56ac2df65e95
   ]
 })
 
