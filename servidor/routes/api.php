@@ -47,6 +47,9 @@ Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@bus
 Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
 Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
 
+/*login*/
+
+Route::post('login', 'API\UsuarioController@login');
 
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',
@@ -68,4 +71,6 @@ Route::apiResources([
     'tipos' => 'API\TipoController',
     'insumos' => 'API\InsumoController',
     'anexo' => 'API\AnexoController',
+    'usuarios' => 'API\UsuarioController',
+    'asignacion-eventos' => 'API\AsignacionEventoController',
 ]);
