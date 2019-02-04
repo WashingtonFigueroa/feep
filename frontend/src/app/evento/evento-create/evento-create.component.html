@@ -9,12 +9,18 @@
           <h5 class="title">Registrar Evento</h5>
         </div>
         <div class="card-body">
-          <form (submit)="store()" [formGroup]="eventoGroup" *ngIf="tipo_eventos !== null && parroquias !== null" role="form">
+          <form (submit)="store()"
+                [formGroup]="eventoGroup"
+                *ngIf="tipo_eventos !== null && parroquias !== null" role="form">
             <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>Tipo Evento</label>
-                  <select name="tipo_evento_id" id="tipo_evento_id" formControlName="tipo_evento_id" class="form-control">
+                  <label for="tipo_evento_id">Tipo Evento</label>
+                  <select
+                          name="tipo_evento_id"
+                          id="tipo_evento_id"
+                          formControlName="tipo_evento_id"
+                          class="form-control">
                     <option [value]="tipoevento.tipo_evento_id" *ngFor="let tipoevento of tipo_eventos">{{ tipoevento.nombre }}</option>
                   </select>
                 </div>
@@ -38,7 +44,7 @@
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>Dirección</label>
-                  <input type="text" class="form-control" formControlName="direccion" name="direccion" >
+                  <input type="text" class="form-control" formControlName="direccion" name="direccion">
                 </div>
               </div>
             </div>
@@ -51,9 +57,12 @@
               </div>
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>Imagen o Logo</label>
-
-                  <input type="number" class="form-control" formControlName="imagen" name="imagen" id="imagen">
+                  <label for="imagen" class="upload">Imagen o Logo <i class="fa fa-upload"></i></label>
+                  <input type="file" class="form-control"
+                         #imagen
+                         formControlName="imagen"
+                         name="imagen"
+                         id="imagen">
                 </div>
               </div>
             </div>
@@ -61,7 +70,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Tiempo de Duración</label>
-                  <input type="text" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
+                  <input type="number" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
                 </div>
               </div>
               <div class="col-md-4 pl-1">
@@ -86,14 +95,21 @@
               </div>
 
             </div>
-
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
                   <div class="form-group">
-                    <button class="btn btn-dark" routerLink="/miembros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
-                    <button class="btn btn-primary" [disabled]="eventoGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
-                  </div>  </div>
+                    <a class="btn btn-dark"
+                       routerLink="/miembros/listar">Cancelar &nbsp;
+                      <span class="fa fa-window-close"></span>
+                    </a>
+                    <button class="btn btn-primary"
+                            type="submit"
+                            [disabled]="eventoGroup.status === 'INVALID'">Guardar &nbsp;
+                            <span class="fa fa-save"></span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </form>
@@ -112,8 +128,9 @@
             </a>
             <br>
             <button class="btn btn-primary" routerLink="/tipoeventos/crear" >Tipo Evento &nbsp;  <span class="fa fa-save"></span></button>
+            <button class="btn btn-primary" routerLink="/ubicaciones/crear" >Parroquia &nbsp;  <span class="fa fa-save"></span></button>
             <p class="description">
-              Tipos de Eventos
+              Crear tipos de eventos o las parroquias que necesita.
             </p>
           </div>
           <p class="description text-center">

@@ -36,8 +36,17 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        $evento = Evento::create($request->all());
-        return response()->json($evento, 201);
+        if ($request->hasFile('imagen')) {
+            $url = $request->file('imagen')->store('eventos');
+            $evento = new Evento();
+            $evento->fill($request->all());
+            $evento->imagen = explode('/', $url)[1];
+            $evento->save();
+            return response()->json($evento, 201);
+        } else {
+            $evento = Evento::create($request->all());
+            return response()->json($evento, 201);
+        }
     }
 
     /**
