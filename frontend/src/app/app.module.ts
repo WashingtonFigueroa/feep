@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {BrowserModule} from '@angular/platform-browser';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    LoginComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

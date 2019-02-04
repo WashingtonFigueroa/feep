@@ -42,7 +42,7 @@
                     <tbody>
                     <tr *ngFor="let evento of eventos.data; let i = index">
                       <td>  {{i+1}} </td>
-                      <td>  {{ evento.tipo_evento_id }} </td>
+                      <td>  {{ evento.tipo_evento }} </td>
                       <td>  {{ evento.nombre }} </td>
                       <td>
                         <span *ngIf="!evento.imagen" class="badge badge-danger">Sin imagen</span>

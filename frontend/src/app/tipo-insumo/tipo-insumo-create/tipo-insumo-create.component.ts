@@ -31,7 +31,7 @@ export class TipoInsumoCreateComponent implements OnInit {
     this.tipoInsumoService.store(this.tipoInsumoGroup.value)
         .subscribe((res: any) => {
           alert(res.nombre + ' registrado');
-          this.router.navigate(['/tipo-insumos']);
+          this.router.navigate(['/insumos/tipo-insumos']);
         });
   }
 }
