@@ -12,14 +12,16 @@ export const ROUTES: RouteInfo[] = [
     { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
     { path: '/organizadores', title: 'Organizadores',  icon: 'business_badge', class: '' },
+    { path: '/asignarinsumos', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
     { path: '/inscripciones', title: 'Inscripciones',  icon: 'education_atom', class: '' },
-    { path: '/ubicaciones', title: 'Geografía',  icon: 'location_map-big', class: '' },
-//    { path: '/notifications', title: 'Geografía',  icon: 'location_map-big', class: '' },
-//    { path: '/user-profile', title: 'Users',  icon: 'location_map-big', class: '' },
-//    { path: '/table-list', title: 'Table List',  icon: 'design_bullet-list-67', class: '' },
-//    { path: '/typography', title: 'Typography',  icon: 'text_caps-small', class: '' },
     { path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
-//    { path: '/icons', title: 'Icon',  icon: 'education_atom', class: '' },
+    { path: '/ubicaciones', title: 'Geografía',  icon: 'location_map-big', class: '' },
+
+//  { path: '/notifications', title: 'Geografía',  icon: 'location_map-big', class: '' },
+//  { path: '/user-profile', title: 'Users',  icon: 'location_map-big', class: '' },
+//  { path: '/table-list', title: 'Table List',  icon: 'design_bullet-list-67', class: '' },
+//  { path: '/typography', title: 'Typography',  icon: 'text_caps-small', class: '' },
+//  { path: '/icons', title: 'Icon',  icon: 'education_atom', class: '' },
 ];
 
 @Component({
