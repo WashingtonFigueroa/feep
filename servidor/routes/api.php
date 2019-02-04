@@ -36,6 +36,8 @@ Route::get('tipo-insumos-listar', 'API\TipoInsumoController@listar');
 Route::get('suministros-listar', 'API\SuministroController@listar');
 Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
 Route::get('tipos-listar', 'API\SuministroController@listar');
+Route::get('personas-listar', 'API\PersonaController@listar');
+Route::get('eventos-listar', 'API\EventoController@listar');
 
 /*buscar*/
 Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');

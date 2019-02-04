@@ -25,8 +25,8 @@ class CreateParticipantesTable extends Migration
                 ->references('persona_id')
                 ->on('personas')
                 ->onDelete('cascade');
+            $table->text('observacion')->nullable();
             $table->boolean('estado')->default(true);
-            $table->text('observacion');
             $table->softDeletes();
             $table->timestamps();
         });

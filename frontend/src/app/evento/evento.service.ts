@@ -13,7 +13,7 @@ export class EventoService {
         return this.http.get(`${this.base}eventos`);
     }
     listar() {
-        return this.http.get(`${this.base}tipo-eventos-listar`);
+        return this.http.get(`${this.base}eventos-listar`);
     }
     load(url) {
         return this.http.get(url);

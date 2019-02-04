@@ -1,3 +1,79 @@
-<p>
-  inscripcion-index works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Inscripciones</h4>
+                <div class="row">
+                  <div class="col-8">
+                    <button class="btn btn-primary" routerLink="/inscripciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                  </div>
+                  <div class="col-4">
+                    <form action="" method="post" class="form-inline" role="form">
+                      <div class="form-group">
+                        <label class="sr-only" for="">label</label>
+                        <input type="email" class="input-search" name="" id="">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table small" *ngIf="participantes !== null">
+                    <thead style="background-color: #303030; color: #f7f7f7">
+                    <tr>
+                      <th> #   </th>
+                      <th> Evento   </th>
+                      <th> Participante   </th>
+                      <th> Acciones   </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let participante of participantes.data; let i = index">
+                      <td>  {{ i + 1}} </td>
+                      <td>  {{ participante.evento_id }} </td>
+                      <td>  {{ participante.persona_id }} </td>
+                      <td class="text-center">
+                        <button routerLink="/participantes/editar/{{participante.participante_id}}" type="button"
+                                class="btn btn-xs btn-info">
+                          <i class="fa fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-xs btn-danger" (click)="destroy(participante, i)">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div *ngIf="participantes !== null && participantes.last_page > 1" class="paginacion text-center">
+                  <div>
+                    Página {{ participantes.current_page }} de {{ participantes.last_page }}
+                  </div>
+                  <button class="paginacion-btn" (click)="loadPages(participantes.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(participantes.prev_page_url)" [disabled]="participantes.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages"
+                          [class.activated]="page.page == participantes.current_page"
+                          (click)="loadPages(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPages(participantes.next_page_url)" [disabled]="participantes.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(participantes.last_page_url)"><i class="fa fa-forward"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

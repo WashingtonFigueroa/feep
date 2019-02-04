@@ -18,7 +18,11 @@ class PersonaController extends Controller
         $personas = Persona::orderby('nombres')->paginate();
         return response()->json($personas, 200);
     }
-
+    public function listar()
+    {
+        $persona = Persona::orderBy('nombres')->get();
+        return response()->json($persona, 200);
+    }
     /**
      * Store a newly created resource in storage.
      *

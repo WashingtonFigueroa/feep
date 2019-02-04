@@ -10,6 +10,9 @@ export class MiembroService {
     index() {
         return this.http.get(`${this.base}personas`);
     }
+    listar() {
+        return this.http.get(`${this.base}personas-listar`);
+    }
     buscar(valor: string = '') {
         return this.http.get(`${this.base}personas-buscar/${valor}`);
     }

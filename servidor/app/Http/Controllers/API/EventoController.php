@@ -18,6 +18,11 @@ class EventoController extends Controller
         $eventos = Evento::orderBy('fecha_evento', 'desc')->paginate(10);
         return response()->json($eventos, 200);
     }
+    public function listar()
+    {
+        $organizacion = Evento::orderBy('evento_id', 'desc')->get();
+        return response()->json($organizacion, 200);
+    }
 
     /**
      * Store a newly created resource in storage.
