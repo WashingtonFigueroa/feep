@@ -57,3 +57,14 @@
   max-width: 530px;
   margin: 0 auto;
 }
+
+.table-responsive {
+    overflow: auto;
+}
+table thead {
+    background-color: #303030;
+    color: #f7f7f7;
+}
+table thead tr th{
+    color: #f7f7f7;
+}

@@ -65,6 +65,11 @@ import {TipoSuministroCreateComponent} from '../../tipo-suministro/tipo-suminist
 import {TipoSuministroIndexComponent} from '../../tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
 import {TipoSuministroUpdateComponent} from '../../tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
 import {TipoSuministroService} from '../../tipo-suministro/tipo-suministro.service';
+import {TipoComponent} from '../../tipo/tipo.component';
+import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component';
+import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
+import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
+import {TipoService} from '../../tipo/tipo.service';
 
 @NgModule({
   imports: [
@@ -126,7 +131,11 @@ import {TipoSuministroService} from '../../tipo-suministro/tipo-suministro.servi
     TipoSuministroComponent,
     TipoSuministroCreateComponent,
     TipoSuministroIndexComponent,
-    TipoSuministroUpdateComponent
+    TipoSuministroUpdateComponent,
+    TipoComponent,
+    TipoCreateComponent,
+    TipoIndexComponent,
+    TipoUpdateComponent
   ],
   providers: [
       OrganizacionService,
@@ -138,7 +147,8 @@ import {TipoSuministroService} from '../../tipo-suministro/tipo-suministro.servi
       TipoInsumoService,
       UbicacionService,
       SuministroService,
-      TipoSuministroService
+      TipoSuministroService,
+      TipoService
   ]
 })
 

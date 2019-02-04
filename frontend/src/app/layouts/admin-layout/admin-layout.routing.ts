@@ -48,6 +48,10 @@ import {TipoSuministroComponent} from '../../tipo-suministro/tipo-suministro.com
 import {TipoSuministroIndexComponent} from '../../tipo-suministro/tipo-suministro-index/tipo-suministro-index.component';
 import {TipoSuministroCreateComponent} from '../../tipo-suministro/tipo-suministro-create/tipo-suministro-create.component';
 import {TipoSuministroUpdateComponent} from '../../tipo-suministro/tipo-suministro-update/tipo-suministro-update.component';
+import {TipoComponent} from '../../tipo/tipo.component';
+import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
+import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component';
+import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -258,6 +262,28 @@ export const AdminLayoutRoutes: Routes = [
                     {
                         path: 'editar/:id',
                         component: TipoSuministroUpdateComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'listar'
+                    }
+                ]
+            },
+            {
+                path: 'tipos',
+                component: TipoComponent,
+                children: [
+                    {
+                        path: 'listar',
+                        component: TipoIndexComponent
+                    },
+                    {
+                        path: 'crear',
+                        component: TipoCreateComponent
+                    },
+                    {
+                        path: 'editar/:id',
+                        component: TipoUpdateComponent
                     },
                     {
                         path: '',
