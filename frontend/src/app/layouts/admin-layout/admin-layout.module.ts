@@ -79,6 +79,7 @@ import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component'
 import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
 import {TipoService} from '../../tipo/tipo.service';
+import {OrganizadorService} from "../../organizador/organizador.service";
 
 
 @NgModule({
@@ -171,7 +172,8 @@ import {TipoService} from '../../tipo/tipo.service';
       OrganizacionService,
       SuministroService,
       TipoSuministroService,
-      TipoService
+      TipoService,
+      OrganizadorService
   ]
 })
 
