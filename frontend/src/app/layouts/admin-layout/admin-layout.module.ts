@@ -54,6 +54,15 @@ import { UbicacionIndexComponent } from '../../ubicacion/ubicacion-index/ubicaci
 import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubicacion-update.component';
 import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
 import {UbicacionService} from "../../ubicacion/ubicacion.service";
+import { InscripcionComponent } from '../../inscripcion/inscripcion.component';
+import { InscripcionIndexComponent } from '../../inscripcion/inscripcion-index/inscripcion-index.component';
+import { InscripcionUpdateComponent } from '../../inscripcion/inscripcion-update/inscripcion-update.component';
+import { InscripcionCreateComponent } from '../../inscripcion/inscripcion-create/inscripcion-create.component';
+import { OrganizadorComponent } from '../../organizador/organizador.component';
+import { OrganizadorIndexComponent } from '../../organizador/organizador-index/organizador-index.component';
+import { OrganizadorUpdateComponent } from '../../organizador/organizador-update/organizador-update.component';
+import { OrganizadorCreateComponent } from '../../organizador/organizador-create/organizador-create.component';
+import {InscripcionService} from "../../inscripcion/inscripcion.service";
 
 @NgModule({
   imports: [
@@ -107,6 +116,14 @@ import {UbicacionService} from "../../ubicacion/ubicacion.service";
       UbicacionIndexComponent,
       UbicacionUpdateComponent,
       UbicacionCreateComponent,
+      InscripcionComponent,
+      InscripcionIndexComponent,
+      InscripcionUpdateComponent,
+      InscripcionCreateComponent,
+      OrganizadorComponent,
+      OrganizadorIndexComponent,
+      OrganizadorUpdateComponent,
+      OrganizadorCreateComponent
   ],
   providers: [
       OrganizacionService,
@@ -116,7 +133,9 @@ import {UbicacionService} from "../../ubicacion/ubicacion.service";
       TipoEventoService,
       TipoPersonaService,
       TipoInsumoService,
-      UbicacionService
+      UbicacionService,
+      InscripcionService,
+      OrganizacionService
   ]
 })
 

@@ -18,6 +18,11 @@ class TipoEventoController extends Controller
         $tipo_eventos = TipoEvento::orderBy('nombre')->paginate(10);
         return response()->json($tipo_eventos, 200);
     }
+    public function listar()
+    {
+        $tipo_eventos = TipoEvento::orderBy('nombre')->get();
+        return response()->json($tipo_eventos, 200);
+    }
 
     /**
      * Store a newly created resource in storage.

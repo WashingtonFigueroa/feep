@@ -1,3 +1,76 @@
-<p>
-  tipo-evento-index works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Tipo de Eventos</h4>
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-primary" routerLink="/tipoeventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+            </div>
+            <div class="col-6">
+              <form action="" method="post" class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="">label</label>
+                  <input type="email" class="input-search" name="" id="">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button class="btn btn-info" routerLink="/eventos">LISTA EVENTOS &nbsp; <span class="fa fa-caret-left"></span></button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive small">
+            <table class="table" *ngIf="tipoEventos !== null">
+              <thead style="background-color: #303030; color: #f7f7f7">
+              <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Operaciones</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let tipoevento of tipoEventos.data; let i = index">
+                <td>
+                  {{ i + 1 }}
+                </td>
+                <td>
+                  {{ tipoevento.nombre }}
+                </td>
+                <td>
+                  {{ tipoevento.descripcion }}
+                </td>
+                <td class="text-center">
+                  <button routerLink="/tipo-insumos/editar/{{tipoevento.tipo_evento_id}}" type="button" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit"></i>
+                  </button>                  &nbsp;
+                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipoevento, i)">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div *ngIf="tipoEventos !== null && tipoEventos.last_page > 1" class="paginacion text-center">
+            <div>
+              Página {{ tipoEventos.current_page }} de {{ tipoEventos.last_page }}
+            </div>
+            <button class="paginacion-btn" (click)="load(tipoEventos.first_page_url)"><i class="fa fa-backward"></i></button>
+            <button class="paginacion-btn" (click)="load(tipoEventos.prev_page_url)" [disabled]="tipoEventos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+            <button class="paginacion-btn" *ngFor="let page of pages"
+                    [class.activated]="page.page == tipoEventos.current_page"
+                    (click)="load(page.url)">{{ page.page }}</button>
+            <button class="paginacion-btn" (click)="load(tipoEventos.next_page_url)" [disabled]="tipoEventos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+            <button class="paginacion-btn" (click)="load(tipoEventos.last_page_url)"><i class="fa fa-forward"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

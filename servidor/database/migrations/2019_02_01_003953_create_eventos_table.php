@@ -25,14 +25,14 @@ class CreateEventosTable extends Migration
                 ->references('parroquia_id')
                 ->on('parroquias')
                 ->onDelete('cascade');
-            $table->string('imagen');
+            $table->string('nombre');
+            $table->string('imagen')->nullable();
             $table->date('fecha_evento');
             $table->string('direccion');
-            $table->string('lugar');
             $table->integer('duracion_horas')->unsigned();
-            $table->date('fecha_finaliza');
-            $table->string('latitud');
-            $table->string('longitud');
+            $table->date('fecha_finaliza')->nullable();
+            $table->string('latitud')->nullable();
+            $table->string('longitud')->nullable();
             $table->boolean('estado')->default(true);
             $table->softDeletes();
             $table->timestamps();

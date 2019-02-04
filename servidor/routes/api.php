@@ -30,6 +30,7 @@ Route::get('barrios-listar', 'API\BarrioController@listar');
 Route::get('comunidades-listar', 'API\ComunidadController@listar');
 Route::get('ciudades-listar', 'API\CiudadController@listar');
 Route::get('parroquias-listar', 'API\ParroquiaController@listar');
+Route::get('tipo-eventos-listar', 'API\TipoEventoController@listar');
 
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',

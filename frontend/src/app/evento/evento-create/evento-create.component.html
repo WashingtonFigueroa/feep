@@ -1,3 +1,128 @@
-<p>
-  evento-create works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-info" routerLink="/eventos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+          <h5 class="title">Registrar Evento</h5>
+        </div>
+        <div class="card-body">
+          <form (submit)="store()" [formGroup]="eventoGroup" *ngIf="tipo_eventos !== null && parroquias !== null" role="form">
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Tipo Evento</label>
+                  <select name="tipo_evento_id" id="tipo_evento_id" formControlName="tipo_evento_id" class="form-control">
+                    <option [value]="tipoevento.tipo_evento_id" *ngFor="let tipoevento of tipo_eventos">{{ tipoevento.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" formControlName="nombre" name="nombre" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Seleccione Parroquia</label>
+                  <select name="parroquia_id" id="parroquia_id" formControlName="parroquia_id" class="form-control">
+                    <option [value]="parroquia.parroquia_id" *ngFor="let parroquia of parroquias">{{ parroquia.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Dirección</label>
+                  <input type="text" class="form-control" formControlName="direccion" name="direccion" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Fecha Evento</label>
+                  <input type="date" class="form-control" formControlName="fecha_evento" name="fecha_evento" >
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>Imagen o Logo</label>
+                  <input type="number" class="form-control" formControlName="imagen" name="imagen" id="imagen">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Tiempo de Duración</label>
+                  <input type="text" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Fecha Finaliza</label>
+                  <input type="date" class="form-control" formControlName="fecha_finaliza" name="fecha_finaliza" id="fecha_finaliza">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Latitud</label>
+                  <input type="text" class="form-control" formControlName="latitud" name="latitud" id="latitud">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label>Longitud</label>
+                  <input type="text" class="form-control" formControlName="longitud" name="longitud" id="longitud">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="form-group">
+                    <button class="btn btn-dark" routerLink="/miembros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
+                    <button class="btn btn-primary" [disabled]="eventoGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                  </div>  </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <a href="#">
+              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            </a>
+            <br>
+            <button class="btn btn-primary" routerLink="/tipoeventos/crear" >Tipo Evento &nbsp;  <span class="fa fa-save"></span></button>
+            <p class="description">
+              Tipos de Eventos
+            </p>
+          </div>
+          <p class="description text-center">
+            "Lamborghini Mercy
+            <br> Your chick she so thirsty
+            <br> I'm in that two seat Lambo"
+          </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

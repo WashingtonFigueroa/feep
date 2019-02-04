@@ -39,6 +39,14 @@ import {UbicacionComponent} from "../../ubicacion/ubicacion.component";
 import {UbicacionIndexComponent} from "../../ubicacion/ubicacion-index/ubicacion-index.component";
 import {UbicacionCreateComponent} from "../../ubicacion/ubicacion-create/ubicacion-create.component";
 import {UbicacionUpdateComponent} from "../../ubicacion/ubicacion-update/ubicacion-update.component";
+import {OrganizadorComponent} from "../../organizador/organizador.component";
+import {OrganizadorIndexComponent} from "../../organizador/organizador-index/organizador-index.component";
+import {OrganizadorCreateComponent} from "../../organizador/organizador-create/organizador-create.component";
+import {OrganizadorUpdateComponent} from "../../organizador/organizador-update/organizador-update.component";
+import {InscripcionComponent} from "../../inscripcion/inscripcion.component";
+import {InscripcionIndexComponent} from "../../inscripcion/inscripcion-index/inscripcion-index.component";
+import {InscripcionCreateComponent} from "../../inscripcion/inscripcion-create/inscripcion-create.component";
+import {InscripcionUpdateComponent} from "../../inscripcion/inscripcion-update/inscripcion-update.component";
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -201,6 +209,46 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: UbicacionUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'organizadores',  component: OrganizadorComponent,
+        children: [
+            {
+                path: 'listar',
+                component: OrganizadorIndexComponent
+            },
+            {
+                path: 'crear',
+                component: OrganizadorCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: OrganizadorUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'inscripciones',  component: InscripcionComponent,
+        children: [
+            {
+                path: 'listar',
+                component: InscripcionIndexComponent
+            },
+            {
+                path: 'crear',
+                component: InscripcionCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: InscripcionUpdateComponent
             },
             {
                 path: '',

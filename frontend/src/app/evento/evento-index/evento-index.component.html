@@ -11,7 +11,7 @@
                 <h4 class="card-title">Eventos</h4>
                 <div class="row">
                   <div class="col-8">
-                    <button class="btn btn-primary" routerLink="/miembros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                    <button class="btn btn-primary" routerLink="/eventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
                   <div class="col-4">
                     <form action="" method="post" class="form-inline" role="form">
@@ -26,34 +26,34 @@
               </div>
               <div class="card-body">
                 <div class="table-responsive small">
-                  <table class="table " *ngIf="miembros !== null">
+                  <table class="table " *ngIf="eventos !== null">
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <tr>
                       <th> #   </th>
                       <th> Tipo   </th>
-                      <th> Organización   </th>
-                      <th> Cedula   </th>
-                      <th> Nombres </th>
+                      <th> Nombre   </th>
+                      <th> Imagen   </th>
                       <th> Dirección </th>
-                      <th> Contacto </th>
+                      <th> Fecha Evento </th>
+                      <th> Fecha FIN </th>
                       <th> Acciones   </th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr *ngFor="let miembro of miembros.data; let i = index">
-                      <td>  {{ miembro.persona_id }} </td>
-                      <td>  {{ miembro.tipo_persona_id }} </td>
-                      <td>  {{ miembro.organizacion_id }} </td>
-                      <td>  {{ miembro.cedula }} </td>
-                      <td>  {{ miembro.nombres }} </td>
-                      <td>  {{ miembro.direccion }} </td>
-                      <td>  {{ miembro.contacto }} </td>
+                    <tr *ngFor="let evento of eventos.data; let i = index">
+                      <td>  {{i+1}} </td>
+                      <td>  {{ evento.tipo_evento_id }} </td>
+                      <td>  {{ evento.nombre }} </td>
+                      <td>  {{ evento.imagen }} </td>
+                      <td>  {{ evento.direccion }} </td>
+                      <td>  {{ evento.fecha_evento }} </td>
+                      <td>  {{ evento.fecha_finaliza }} </td>
                       <td class="text-center">
-                        <button routerLink="/miembros/editar/{{miembro.persona_id}}" type="button"
+                        <button routerLink="/eventos/editar/{{evento.evento_id}}" type="button"
                                 class="btn btn-xs btn-info">
                           <i class="fa fa-edit"></i>
                         </button>
-                        <button type="button" class="btn btn-xs btn-danger" (click)="destroy(miembro, i)">
+                        <button type="button" class="btn btn-xs btn-danger" (click)="destroy(evento, i)">
                           <i class="fa fa-trash"></i>
                         </button>
                       </td>
@@ -61,17 +61,17 @@
                     </tbody>
                   </table>
                 </div>
-                <div *ngIf="miembros !== null && miembros.last_page > 1" class="paginacion text-center">
+                <div *ngIf="eventos !== null && eventos.last_page > 1" class="paginacion text-center">
                   <div>
-                    Página {{ miembros.current_page }} de {{ miembros.last_page }}
+                    Página {{ eventos.current_page }} de {{ eventos.last_page }}
                   </div>
-                  <button class="paginacion-btn" (click)="loadPages(miembros.first_page_url)"><i class="fa fa-backward"></i></button>
-                  <button class="paginacion-btn" (click)="loadPages(miembros.prev_page_url)" [disabled]="miembros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(eventos.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(eventos.prev_page_url)" [disabled]="eventos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
                   <button class="paginacion-btn" *ngFor="let page of pages"
-                          [class.activated]="page.page == miembros.current_page"
+                          [class.activated]="page.page == eventos.current_page"
                           (click)="loadPages(page.url)">{{ page.page }}</button>
-                  <button class="paginacion-btn" (click)="loadPages(miembros.next_page_url)" [disabled]="miembros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-                  <button class="paginacion-btn" (click)="loadPages(miembros.last_page_url)"><i class="fa fa-forward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(eventos.next_page_url)" [disabled]="eventos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(eventos.last_page_url)"><i class="fa fa-forward"></i></button>
                 </div>
               </div>
             </div>

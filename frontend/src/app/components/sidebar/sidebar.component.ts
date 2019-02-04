@@ -11,6 +11,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/organizaciones', title: 'Organizacion',  icon: 'business_bank', class: '' },
     { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
+    { path: '/organizadores', title: 'Organizadores',  icon: 'business_badge', class: '' },
     { path: '/inscripciones', title: 'Inscripciones',  icon: 'education_atom', class: '' },
     { path: '/ubicaciones', title: 'Geografía',  icon: 'location_map-big', class: '' },
 //    { path: '/notifications', title: 'Geografía',  icon: 'location_map-big', class: '' },

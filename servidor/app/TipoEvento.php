@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class TipoEvento extends Model
 {
     use SoftDeletes;
-    protected $table = 'tipo_evento';
+    protected $table = 'tipo_eventos';
     protected $primaryKey = 'tipo_evento_id';
     protected $fillable = [
         'nombre',
