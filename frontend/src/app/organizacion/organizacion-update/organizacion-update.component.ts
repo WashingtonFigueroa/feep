@@ -43,17 +43,26 @@ export class OrganizacionUpdateComponent implements OnInit {
 
     crearForm() {
         this.organizacionGroup = this.fb.group({
+            'tipo_organizacion_id': [this.organizacion.tipo_organizacion_id, [Validators.required]],
             'nombre' : [this.organizacion.nombre, [Validators.required]],
-            'descripcion' : [this.organizacion.descripcion, [Validators.required]],
             'actividad': [this.organizacion.actividad, [Validators.required]],
             'representante': [this.organizacion.representante, [Validators.required]],
-            'contacto': [this.organizacion.contacto, [Validators.required]],
+            'contacto': [this.organizacion.contacto],
+            'direccion': [this.organizacion.direccion],
+            'descripcion': [this.organizacion.descripcion],
+            'acuerdo': [this.organizacion.acuerdo],
+            'mujeres': [this.organizacion.mujeres],
+            'hombres': [this.organizacion.hombres],
+            'latitud': [this.organizacion.latitud],
+            'longitud': [this.organizacion.longitud],
+            'precision': [this.organizacion.precision],
         });
     }
 
     update() {
         this.organizacionService.update(this.organizacion_id, this.organizacionGroup.value)
             .subscribe((res: any) => {
+                this.toastrService.success('Datos Actualizados','Organización')
                 this.router.navigate(['/organizaciones']);
             });
     }

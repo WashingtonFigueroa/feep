@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {OrganizacionService} from '../../organizacion/organizacion.service';
 import {Router} from '@angular/router';
-import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
 import {UbicacionService} from "../../ubicacion/ubicacion.service";
 import {MiembroService} from "../miembro.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-miembro-create',
@@ -13,19 +13,33 @@ import {MiembroService} from "../miembro.service";
 })
 export class MiembroCreateComponent implements OnInit {
     miembroGroup: FormGroup;
-    tipo_personas: any = null;
     organizaciones: any = null;
     parroquias: any = null;
+    //Buscador Cedula
+    mostrar = false;
+    miembros: any = [];
+    persona: any = {
+        persona_id : 0,
+        organizacion_id : 0,
+        parroquia_id : 0,
+        cedula : '',
+        nombres : '',
+        genero : '',
+        ocupacion : '',
+        etnia : '',
+        fecha_nacimiento : '',
+        direccion : '',
+        telefono_fijo : '',
+        operadora : '',
+        contacto : '',
+        email : '',
+    };
     constructor(private miembroService: MiembroService,
-                private tipopersonaService: TipoPersonaService,
                 private organizacionService: OrganizacionService,
                 private parroquiasService: UbicacionService,
                 private router: Router,
-                private fb: FormBuilder) {
-        this.tipopersonaService.listar()
-            .subscribe((res: any) => {
-                this.tipo_personas = res;
-            });
+                private fb: FormBuilder,
+                private toastrService:ToastrService) {
         this.organizacionService.listar()
             .subscribe((res: any) => {
                 this.organizaciones = res;
@@ -40,25 +54,23 @@ export class MiembroCreateComponent implements OnInit {
     }
     crearForm() {
         this.miembroGroup = this.fb.group({
-            'tipo_persona_id': [0, [Validators.required]],
             'organizacion_id': ['', [Validators.required]],
             'parroquia_id': ['', [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
-            'genero': ['', [Validators.required]],
-            'ocupacion': ['', [Validators.required]],
-            'etnia': ['', [Validators.required]],
-            'fecha_nacimiento': ['', [Validators.required]],
-            'direccion': ['', [Validators.required]],
+            'genero': [''],
+            'ocupacion': [''],
+            'etnia': [''],
+            'fecha_nacimiento': [''],
+            'direccion': [''],
             'telefono_fijo': [''],
-            'operadora': ['', [Validators.required]],
+            'operadora': [''],
             'contacto': [''],
             'email': [''],
         });
     }
     store() {
         const formData = new FormData();
-            formData.append('tipo_persona_id', this.miembroGroup.value.tipo_persona_id);
             formData.append('organizacion_id', this.miembroGroup.value.organizacion_id);
             formData.append('parroquia_id', this.miembroGroup.value.parroquia_id);
             formData.append('cedula', this.miembroGroup.value.cedula);
@@ -74,12 +86,95 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('email', this.miembroGroup.value.email);
         this.miembroService.store(formData)
             .subscribe((res: any) => {
-                // this.toastrService.success('Registrado', 'Docente')
-                console.log('exito', 'Persoona');
+                this.toastrService.success('Datos Agregados', 'Persona')
                 this.router.navigate(['/miembros/listar']);
             }, (error) => {
-                console.log('replica', 'persona');
-                // this.toastrService.error('registrado');
+                 this.toastrService.warning('Registrada','Persona');
+            });
+    }
+    resetPersona() {
+        this.persona = {
+            persona_id : 0,
+            organizacion_id : 0,
+            parroquia_id : 0,
+            cedula : '',
+            nombres : '',
+            genero : '',
+            ocupacion : '',
+            etnia : '',
+            fecha_nacimiento : '',
+            direccion : '',
+            telefono_fijo : '',
+            operadora : '',
+            contacto : '',
+            email : '',
+        };
+        this.miembroGroup.patchValue({
+            'persona_id' : 0,
+            'organizacion_id' : 0,
+            'parroquia_id' : 0,
+            'genero' : '',
+            'ocupacion' : '',
+            'etnia' : '',
+            'fecha_nacimiento' : '',
+            'direccion' : '',
+            'telefono_fijo' : '',
+            'operadora' : '',
+            'contacto' : '',
+            'email' : '',
+        });
+    }
+    searchPerson() {
+        this.mostrar = true;
+        this.resetPersona();
+        const cedula = this.miembroGroup.value.cedula;
+        this.miembroService.sri(cedula).subscribe((res: any) => {
+                this.mostrar = false;
+                if (res.type === 'sri') {
+                    let fecha_nac = res.data.data.fechaNacimiento;
+                    fecha_nac = fecha_nac.split('/');
+                    const fecha_nacimiento = fecha_nac[2] + '-' + fecha_nac[1] + '-' + fecha_nac[0];
+                    this.miembroGroup.patchValue({
+                        'nombres' : res.data.data.nombreCompleto,
+                        'direccion' : res.data.data.residencia,
+                        'fecha_nacimiento' : fecha_nacimiento,
+                        'genero' : res.data.data.genero
+                    });
+                } else {
+                    this.miembroGroup.patchValue({
+                        'persona_id' : res.data.persona_id,
+                        'organizacion_id' : res.data.organizacion_id,
+                        'parroquia_id' : res.data.parroquia_id,
+                        'cedula' : res.data.cedula,
+                        'nombres' : res.data.nombres,
+                        'genero' : res.data.genero,
+                        'ocupacion' : res.data.ocupacion,
+                        'etnia' : res.data.etnia,
+                        'fecha_nacimiento' : res.data.fecha_nacimiento,
+                        'direccion' : res.data.direccion,
+                        'telefono_fijo' : res.data.telefono_fijo,
+                        'operadora' : res.data.operadora,
+                        'contacto' : res.data.contacto,
+                        'email' : res.data.email,
+                    });
+                        this.persona.persona_id = res.data.persona_id;
+                        this.persona.organizacion_id = res.data.organizacion_id;
+                        this.persona.parroquia_id = res.data.parroquia_id;
+                        this.persona.cedula  = res.data.cedula ;
+                        this.persona.nombres  = res.data.nombres ;
+                        this.persona.genero  = res.data.genero ;
+                        this.persona.ocupacion  = res.data.ocupacion ;
+                        this.persona.etnia  = res.data.etnia ;
+                        this.persona.fecha_nacimiento  = res.data.fecha_nacimiento ;
+                        this.persona.direccion  = res.data.direccion ;
+                        this.persona.telefono_fijo  = res.data.telefono_fijo ;
+                        this.persona.operadora  = res.data.operadora ;
+                        this.persona.contacto  = res.data.contacto ;
+                        this.persona.email  = res.data.email ;
+                }
+            }, (error) => { ;
+                this.mostrar = false;
+                this.toastrService.error('Erronia', 'Cedula');
             });
     }
 }

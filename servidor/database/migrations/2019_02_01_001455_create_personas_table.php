@@ -15,13 +15,8 @@ class CreatePersonasTable extends Migration
     {
         Schema::create('personas', function (Blueprint $table) {
             $table->increments('persona_id');
-            $table->integer('tipo_persona_id')->unsigned();
             $table->integer('organizacion_id')->unsigned();
             $table->integer('parroquia_id')->unsigned();
-            $table->foreign('tipo_persona_id')
-                ->references('tipo_persona_id')
-                ->on('tipo_personas')
-                ->onDelete('cascade');
             $table->foreign('organizacion_id')
                 ->references('organizacion_id')
                 ->on('organizaciones')
@@ -32,15 +27,15 @@ class CreatePersonasTable extends Migration
                 ->onDelete('cascade');
             $table->string('cedula');
             $table->string('nombres');
-            $table->string('genero');
-            $table->string('ocupacion');
-            $table->string('etnia');
-            $table->string('fecha_nacimiento');
-            $table->string('direccion');
-            $table->string('telefono_fijo');
-            $table->string('operadora');
-            $table->string('contacto');
-            $table->string('email');
+            $table->string('genero')->nullable();
+            $table->string('ocupacion')->nullable();
+            $table->string('etnia')->nullable();
+            $table->string('fecha_nacimiento')->nullable();
+            $table->string('direccion')->nullable();
+            $table->string('telefono_fijo')->nullable();
+            $table->string('operadora')->nullable();
+            $table->string('contacto')->nullable();
+            $table->string('email')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
