@@ -13,11 +13,18 @@ class Organizacion extends Model
     protected $fillable = [
         'tipo_organizacion_id',
         'nombre',
-        'descripcion',
         'imagen',
         'actividad',
         'representante',
-        'contacto'
+        'contacto',
+        'direccion',
+        'descripcion',
+        'acuerdo',
+        'mujeres',
+        'hombres',
+        'latitud',
+        'longitud',
+        'precision',
     ];
     protected $dates = ['deleted_at'];
 }

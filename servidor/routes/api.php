@@ -47,8 +47,10 @@ Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@bus
 Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
 Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
 
-/*login*/
+//consultas
+Route::get('sri/{cedula}', 'API\PersonaController@sri');
 
+/*login*/
 Route::post('login', 'API\UsuarioController@login');
 
 Route::apiResources([

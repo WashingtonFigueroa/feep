@@ -30,7 +30,6 @@
                                             <thead style="background-color: #303030; color: #f7f7f7">
                                             <tr>
                                                 <th> #   </th>
-                                                <th> Tipo   </th>
                                                 <th> Organización   </th>
                                                 <th> Cedula   </th>
                                                 <th> Nombres </th>
@@ -41,8 +40,7 @@
                                             </thead>
                                             <tbody>
                                             <tr *ngFor="let miembro of miembros.data; let i = index">
-                                                <td>  {{ miembro.persona_id }} </td>
-                                                <td>  {{ miembro.tipo_persona_id }} </td>
+                                                <td>  {{ i + 1}} </td>
                                                 <td>  {{ miembro.organizacion_id }} </td>
                                                 <td>  {{ miembro.cedula }} </td>
                                                 <td>  {{ miembro.nombres }} </td>

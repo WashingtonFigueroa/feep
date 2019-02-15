@@ -15,12 +15,12 @@ class OrganizacionController extends Controller
      */
     public function index()
     {
-        $organizaciones = Organizacion::orderBy('nombre')->paginate(10);
+        $organizaciones = Organizacion::orderBy('organizacion_id','desc')->paginate(10);
         return response()->json($organizaciones, 200);
     }
     public function listar()
     {
-        $organizacion = Organizacion::orderBy('nombre')->get();
+        $organizacion = Organizacion::orderBy('organizacion_id','desc')->get();
         return response()->json($organizacion, 200);
     }
     /**
@@ -31,14 +31,14 @@ class OrganizacionController extends Controller
      */
     public function store(Request $request)
     {
+        $organizacion = new Organizacion();
         if ($request->hasFile('imagen')) {
             $url = $request->file('imagen')->store('organizaciones');
-            $organizacion = new Organizacion();
-            $organizacion->fill($request->all());
             $organizacion->imagen = explode('/', $url)[1];
-            $organizacion->save();
-            return response()->json($organizacion, 201);
         }
+        $organizacion->fill($request->all());
+        $organizacion->save();
+        return response()->json($organizacion, 201);
     }
 
     /**

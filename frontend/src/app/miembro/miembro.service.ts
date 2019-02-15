@@ -31,4 +31,7 @@ export class MiembroService {
     pagination(url: string) {
         return this.http.get(url);
     }
+    sri(cedula: string) {
+        return this.http.get(`${this.base}sri/${cedula}`);
+    }
 }

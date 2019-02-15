@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {TipoOrganizacionService} from '../tipo-organizacion.service';
 import {Router} from '@angular/router';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-tipo-organizacion-create',
@@ -13,7 +14,8 @@ export class TipoOrganizacionCreateComponent implements OnInit {
     tipoorganizacionGroup: FormGroup;
     constructor(private fb: FormBuilder,
                 private tipoorganizacionService: TipoOrganizacionService,
-                private router: Router) {
+                private router: Router,
+                private toastrService:ToastrService) {
 
         this.crearForm();
     }
@@ -24,7 +26,7 @@ export class TipoOrganizacionCreateComponent implements OnInit {
     crearForm() {
         this.tipoorganizacionGroup = this.fb.group({
             'nombre' : ['', [Validators.required]],
-            'descripcion' : ['', [Validators.required]]
+            'descripcion' : ['']
         });
     }
 
@@ -32,12 +34,10 @@ export class TipoOrganizacionCreateComponent implements OnInit {
         this.tipoorganizacionService.store(this.tipoorganizacionGroup.value)
             .subscribe((res: any) => {
                 console.log(res);
-                if (res.mensaje) {
-                    alert(res.mensaje);
-                }
+                this.toastrService.success('Datos Agredados','Tipo Organización')
                 this.router.navigate(['/tipoorganizacion/listar']);
             }, (error: any) => {
-                alert(error.error.mensaje);
+               this.toastrService.warning('Datos Registrados','Tipo Organización')
                 this.tipoorganizacionGroup.reset();
             });
     }

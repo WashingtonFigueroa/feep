@@ -21,11 +21,18 @@ class CreateOrganizacionsTable extends Migration
                 ->on('tipo_organizaciones')
                 ->onDelete('cascade');
             $table->string('nombre');
-            $table->string('descripcion');
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->string('actividad');
             $table->string('representante');
-            $table->string('contacto');
+            $table->string('contacto')->nullable();
+            $table->string('direccion')->nullable();
+            $table->string('descripcion')->nullable();
+            $table->string('acuerdo')->nullable();
+            $table->string('mujeres')->nullable();
+            $table->string('hombres')->nullable();
+            $table->string('latitud')->nullable();
+            $table->string('longitud')->nullable();
+            $table->string('precision')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

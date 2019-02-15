@@ -26,18 +26,6 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                <label>Descripción</label>
-                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
-              </div>
-                <div>
-                  <label>Logo</label>
-                  <input type="file" class="form-control" #imagen  name="imagen" id="imagen">
-                </div>
-              </div>
-            </div>
             <br>
             <div class="row">
               <div class="col-md-4 pr-1">
@@ -62,6 +50,59 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
+                <label>Descripción</label>
+                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+              </div>
+                <div>
+                  <label>Logo</label>
+                  <input type="file" class="form-control" #imagen  name="imagen" id="imagen">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Acuerdo Ministerial</label>
+                  <input type="text" class="form-control" formControlName="acuerdo" name="acuerdo" id="acuerdo">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label>N° Mujeres</label>
+                  <input type="number" class="form-control" formControlName="mujeres" name="mujeres" id="mujeres">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>N° Hombres</label>
+                  <input type="number" class="form-control" formControlName="hombres" name="hombres" id="hombres">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Latitud</label>
+                  <input type="text" class="form-control" formControlName="latitud" name="latitud" id="latitud">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label>longitud</label>
+                  <input type="text" class="form-control" formControlName="longitud" name="longitud" id="longitud">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Precisión</label>
+                  <input type="text" class="form-control" formControlName="precision" name="precision" id="precision">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
                   <div class="form-group">
                     <button class="btn btn-dark" routerLink="/organizaciones" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
                     <button class="btn btn-primary" type="submit" [disabled]="organizacionGroup.status === 'INVALID'">Guardar &nbsp;  <span class="fa fa-save"></span></button>
@@ -79,22 +120,16 @@
         </div>
         <div class="card-body">
           <div class="author">
-            <a href="#">
               <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
-            </a>
             <br>
             <button class="btn btn-primary" routerLink="/tipoorganizacion/crear" >Tipo Organización &nbsp;  <span class="fa fa-save"></span></button>
-            <p class="description">
-              Tipos de Organizaciones
-            </p>
           </div>
-          <p class="description text-center">
-            "Lamborghini Mercy
-            <br> Your chick she so thirsty
-            <br> I'm in that two seat Lambo"
-          </p>
+          <hr>
         </div>
-        <hr>
+        <div class="author">
+          <p>Logo Organización</p>
+          <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+        </div>
       </div>
     </div>
   </div>

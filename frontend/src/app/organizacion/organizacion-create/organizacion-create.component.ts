@@ -33,37 +33,45 @@ export class OrganizacionCreateComponent implements OnInit {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': [0, [Validators.required]],
             'nombre': ['', [Validators.required]],
-            'descripcion': ['', [Validators.required]],
+            'imagen': [''],
             'actividad': ['', [Validators.required]],
             'representante': ['', [Validators.required]],
-            'contacto': ['', [Validators.required]],
+            'contacto': [''],
+            'direccion': [''],
+            'descripcion': [''],
+            'acuerdo': [''],
+            'mujeres': [''],
+            'hombres': [''],
+            'latitud': [''],
+            'longitud': [''],
+            'precision': [''],
         });
     }
     store() {
         const imagen = this.imagen.nativeElement;
             const formData = new FormData();
             if (imagen.files[0]) {
-                formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
-                formData.append('nombre', this.organizacionGroup.value.nombre);
-                formData.append('descripcion', this.organizacionGroup.value.descripcion);
-                formData.append('actividad', this.organizacionGroup.value.actividad);
-                formData.append('representante', this.organizacionGroup.value.representante);
-                formData.append('contacto', this.organizacionGroup.value.contacto);
                 formData.append('imagen', imagen.files[0]);
-            } else {
-                formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
-                formData.append('nombre', this.organizacionGroup.value.nombre);
-                formData.append('descripcion', this.organizacionGroup.value.descripcion);
-                formData.append('actividad', this.organizacionGroup.value.actividad);
-                formData.append('representante', this.organizacionGroup.value.representante);
-                formData.append('contacto', this.organizacionGroup.value.contacto);
             }
+            formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
+            formData.append('nombre', this.organizacionGroup.value.nombre);
+            formData.append('actividad', this.organizacionGroup.value.actividad);
+            formData.append('representante', this.organizacionGroup.value.representante);
+            formData.append('contacto', this.organizacionGroup.value.contacto);
+            formData.append('direccion', this.organizacionGroup.value.direccion);
+            formData.append('descripcion', this.organizacionGroup.value.descripcion);
+            formData.append('acuerdo', this.organizacionGroup.value.acuerdo);
+            formData.append('mujeres', this.organizacionGroup.value.mujeres);
+            formData.append('hombres', this.organizacionGroup.value.hombres);
+            formData.append('latitud', this.organizacionGroup.value.latitud);
+            formData.append('longitud', this.organizacionGroup.value.longitud);
+            formData.append('precision', this.organizacionGroup.value.precision);
             this.organizacionService.store(formData)
                 .subscribe((res: any) => {
-                    this.toastrService.success('Registrada', 'Organizacion')
+                    this.toastrService.success('Datos Agregados', 'Organizacion')
                     this.router.navigate(['/organizaciones']);
                 }, (error) => {
-                    this.toastrService.error('registrado');
+                    this.toastrService.warning('Registrada','Organización');
                 });
     }
 }
