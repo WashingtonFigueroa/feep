@@ -70,7 +70,8 @@ export class MiembroCreateComponent implements OnInit {
         });
     }
     store() {
-        const formData = new FormData();
+        if (this.miembroGroup.value.nombres != '') {
+            const formData = new FormData();
             formData.append('organizacion_id', this.miembroGroup.value.organizacion_id);
             formData.append('parroquia_id', this.miembroGroup.value.parroquia_id);
             formData.append('cedula', this.miembroGroup.value.cedula);
@@ -84,13 +85,14 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('operadora', this.miembroGroup.value.operadora);
             formData.append('contacto', this.miembroGroup.value.contacto);
             formData.append('email', this.miembroGroup.value.email);
-        this.miembroService.store(formData)
-            .subscribe((res: any) => {
-                this.toastrService.success('Datos Agregados', 'Persona')
-                this.router.navigate(['/miembros/listar']);
-            }, (error) => {
-                 this.toastrService.warning('Registrada','Persona');
-            });
+            this.miembroService.store(formData)
+                .subscribe((res: any) => {
+                    this.toastrService.success('Datos Agregados', 'Persona')
+                    this.router.navigate(['/miembros/listar']);
+                }, (error) => {
+                    this.toastrService.warning('Registrada','Persona');
+                });
+        }
     }
     resetPersona() {
         this.persona = {
@@ -174,7 +176,7 @@ export class MiembroCreateComponent implements OnInit {
                 }
             }, (error) => { ;
                 this.mostrar = false;
-                this.toastrService.error('Erronia', 'Cedula');
+                this.toastrService.error('Erronea', 'Cedula');
             });
     }
 }

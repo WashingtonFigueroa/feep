@@ -76,8 +76,8 @@ class PersonaController extends Controller
     public function sri($cedula, $timeOut = 0, $proxy=null) {
         $data=array('success'=>true, 'message'=>null, 'data'=>null);
         $personas = Persona::where('cedula', 'like', '%'.$cedula.'%')->count();
-        echo $cedula;
-        echo $personas;
+/*        echo $cedula;
+        echo $personas;*/
         if ($personas > 0) {
             $data = Persona::where('cedula', 'like', '%'.$cedula.'%')->first();
             $type = 'local';
