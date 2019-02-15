@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
+import {UsuarioService} from '../usuario.service';
 
 @Component({
   selector: 'app-usuario-index',
@@ -11,7 +11,7 @@ export class UsuarioIndexComponent implements OnInit {
   usuarios: any = null;
   pages: any = [];
   valor = '';
-  constructor(private usuarioService: TipoInsumoService) {
+  constructor(private usuarioService: UsuarioService) {
     this.usuarioService.index()
         .subscribe((res: any) => {
           this.usuarios = res;

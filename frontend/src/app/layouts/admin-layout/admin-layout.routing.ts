@@ -35,18 +35,18 @@ import {TipoInsumoComponent} from '../../tipo-insumo/tipo-insumo.component';
 import {TipoInsumoIndexComponent} from '../../tipo-insumo/tipo-insumo-index/tipo-insumo-index.component';
 import {TipoInsumoCreateComponent} from '../../tipo-insumo/tipo-insumo-create/tipo-insumo-create.component';
 import {TipoInsumoUpdateComponent} from '../../tipo-insumo/tipo-insumo-update/tipo-insumo-update.component';
-import {UbicacionComponent} from "../../ubicacion/ubicacion.component";
-import {UbicacionIndexComponent} from "../../ubicacion/ubicacion-index/ubicacion-index.component";
-import {UbicacionCreateComponent} from "../../ubicacion/ubicacion-create/ubicacion-create.component";
-import {UbicacionUpdateComponent} from "../../ubicacion/ubicacion-update/ubicacion-update.component";
-import {OrganizadorComponent} from "../../organizador/organizador.component";
-import {OrganizadorIndexComponent} from "../../organizador/organizador-index/organizador-index.component";
-import {OrganizadorCreateComponent} from "../../organizador/organizador-create/organizador-create.component";
-import {OrganizadorUpdateComponent} from "../../organizador/organizador-update/organizador-update.component";
-import {InscripcionComponent} from "../../inscripcion/inscripcion.component";
-import {InscripcionIndexComponent} from "../../inscripcion/inscripcion-index/inscripcion-index.component";
-import {InscripcionCreateComponent} from "../../inscripcion/inscripcion-create/inscripcion-create.component";
-import {InscripcionUpdateComponent} from "../../inscripcion/inscripcion-update/inscripcion-update.component";
+import {UbicacionComponent} from '../../ubicacion/ubicacion.component';
+import {UbicacionIndexComponent} from '../../ubicacion/ubicacion-index/ubicacion-index.component';
+import {UbicacionCreateComponent} from '../../ubicacion/ubicacion-create/ubicacion-create.component';
+import {UbicacionUpdateComponent} from '../../ubicacion/ubicacion-update/ubicacion-update.component';
+import {OrganizadorComponent} from '../../organizador/organizador.component';
+import {OrganizadorIndexComponent} from '../../organizador/organizador-index/organizador-index.component';
+import {OrganizadorCreateComponent} from '../../organizador/organizador-create/organizador-create.component';
+import {OrganizadorUpdateComponent} from '../../organizador/organizador-update/organizador-update.component';
+import {InscripcionComponent} from '../../inscripcion/inscripcion.component';
+import {InscripcionIndexComponent} from '../../inscripcion/inscripcion-index/inscripcion-index.component';
+import {InscripcionCreateComponent} from '../../inscripcion/inscripcion-create/inscripcion-create.component';
+import {InscripcionUpdateComponent} from '../../inscripcion/inscripcion-update/inscripcion-update.component';
 import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
 import {SuministroComponent} from '../../suministro/suministro.component';
 import {SuministroIndexComponent} from '../../suministro/suministro-index/suministro-index.component';
@@ -64,6 +64,10 @@ import {UsuarioComponent} from '../../usuario/usuario.component';
 import {UsuarioIndexComponent} from '../../usuario/usuario-index/usuario-index.component';
 import {UsuarioCreateComponent} from '../../usuario/usuario-create/usuario-create.component';
 import {UsuarioUpdateComponent} from '../../usuario/usuario-update/usuario-update.component';
+import {AsignacionComponent} from '../../asignacion/asignacion.component';
+import {AsignacionIndexComponent} from '../../asignacion/asignacion-index/asignacion-index.component';
+import {AsignacionCreateComponent} from '../../asignacion/asignacion-create/asignacion-create.component';
+import {AsignacionUpdateComponent} from '../../asignacion/asignacion-update/asignacion-update.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -371,5 +375,24 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-
+    { path: 'asignaciones',  component: AsignacionComponent,
+        children: [
+            {
+                path: 'listar',
+                component: AsignacionIndexComponent
+            },
+            {
+                path: 'crear',
+                component: AsignacionCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: AsignacionUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            }
+        ]
+    },
 ];

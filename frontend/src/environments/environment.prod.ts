@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-    servidor: 'http://localhost:8000/api/'
+  servidor: 'http://fepp.dte-ecuador.org/public/api/'
 };

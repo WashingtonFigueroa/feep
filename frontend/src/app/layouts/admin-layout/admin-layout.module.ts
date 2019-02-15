@@ -79,13 +79,17 @@ import {TipoCreateComponent} from '../../tipo/tipo-create/tipo-create.component'
 import {TipoIndexComponent} from '../../tipo/tipo-index/tipo-index.component';
 import {TipoUpdateComponent} from '../../tipo/tipo-update/tipo-update.component';
 import {TipoService} from '../../tipo/tipo.service';
-import {OrganizadorService} from "../../organizador/organizador.service";
 import {UsuarioComponent} from '../../usuario/usuario.component';
 import {UsuarioCreateComponent} from '../../usuario/usuario-create/usuario-create.component';
 import {UsuarioIndexComponent} from '../../usuario/usuario-index/usuario-index.component';
 import {UsuarioUpdateComponent} from '../../usuario/usuario-update/usuario-update.component';
+import {AsignacionComponent} from '../../asignacion/asignacion.component';
+import {AsignacionCreateComponent} from '../../asignacion/asignacion-create/asignacion-create.component';
+import {AsignacionUpdateComponent} from '../../asignacion/asignacion-update/asignacion-update.component';
+import {AsignacionIndexComponent} from '../../asignacion/asignacion-index/asignacion-index.component';
+import {OrganizadorService} from '../../organizador/organizador.service';
 import {UsuarioService} from '../../usuario/usuario.service';
-
+import {AsignacionService} from '../../asignacion/asignacion.service';
 
 @NgModule({
   imports: [
@@ -166,7 +170,11 @@ import {UsuarioService} from '../../usuario/usuario.service';
     UsuarioComponent,
     UsuarioCreateComponent,
     UsuarioIndexComponent,
-    UsuarioUpdateComponent
+    UsuarioUpdateComponent,
+    AsignacionComponent,
+    AsignacionCreateComponent,
+    AsignacionUpdateComponent,
+    AsignacionIndexComponent
   ],
   providers: [
       OrganizacionService,
@@ -183,7 +191,8 @@ import {UsuarioService} from '../../usuario/usuario.service';
       TipoSuministroService,
       TipoService,
       OrganizadorService,
-      UsuarioService
+      UsuarioService,
+      AsignacionService
   ]
 })
 
