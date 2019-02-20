@@ -8,7 +8,6 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Inicio',  icon: 'design_app', class: '' },
-    { path: '/usuarios', title: 'Usuarios',  icon: 'users_single-02', class: '' },
     { path: '/organizaciones', title: 'Organizacion',  icon: 'business_bank', class: '' },
     { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
@@ -17,12 +16,8 @@ export const ROUTES: RouteInfo[] = [
     { path: '/inscripciones', title: 'Inscripciones',  icon: 'education_atom', class: '' },
     { path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
     { path: '/ubicaciones', title: 'Geografía',  icon: 'location_map-big', class: '' },
-
-//  { path: '/notifications', title: 'Geografía',  icon: 'location_map-big', class: '' },
-//  { path: '/user-profile', title: 'Users',  icon: 'location_map-big', class: '' },
-//  { path: '/table-list', title: 'Table List',  icon: 'design_bullet-list-67', class: '' },
-//  { path: '/typography', title: 'Typography',  icon: 'text_caps-small', class: '' },
-//  { path: '/icons', title: 'Icon',  icon: 'education_atom', class: '' },
+    { path: '/usuarios', title: 'Usuarios',  icon: 'users_single-02', class: '' }
+ // { path: '/icons', title: 'Icon',  icon: 'education_atom', class: '' },
 ];
 
 @Component({

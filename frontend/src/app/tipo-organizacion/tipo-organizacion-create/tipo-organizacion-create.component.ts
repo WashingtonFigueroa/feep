@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {TipoOrganizacionService} from '../tipo-organizacion.service';
 import {Router} from '@angular/router';
-import {ToastrService} from "ngx-toastr";
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-tipo-organizacion-create',
@@ -15,7 +15,7 @@ export class TipoOrganizacionCreateComponent implements OnInit {
     constructor(private fb: FormBuilder,
                 private tipoorganizacionService: TipoOrganizacionService,
                 private router: Router,
-                private toastrService:ToastrService) {
+                private toastrService: ToastrService) {
 
         this.crearForm();
     }
@@ -25,6 +25,7 @@ export class TipoOrganizacionCreateComponent implements OnInit {
 
     crearForm() {
         this.tipoorganizacionGroup = this.fb.group({
+            'tipo' : ['', [Validators.required]],
             'nombre' : ['', [Validators.required]],
             'descripcion' : ['']
         });

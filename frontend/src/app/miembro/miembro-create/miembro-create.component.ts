@@ -59,7 +59,7 @@ export class MiembroCreateComponent implements OnInit {
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
             'genero': [''],
-            'ocupacion': [''],
+            'ocupacion': ['', [Validators.required]],
             'etnia': [''],
             'fecha_nacimiento': [''],
             'direccion': [''],

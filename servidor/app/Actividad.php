@@ -3,15 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class TipoOrganizacion extends Model
+class Actividad extends Model
 {
     use SoftDeletes;
-    protected $table = 'tipo_organizaciones';
-    protected $primaryKey = 'tipo_organizacion_id';
+    protected $table = 'actividades';
+    protected $primaryKey = 'actividad_id';
     protected $fillable = [
-        'tipo',
         'nombre',
         'descripcion',
     ];

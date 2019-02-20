@@ -39,6 +39,9 @@ Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
 Route::get('tipos-listar', 'API\SuministroController@listar');
 Route::get('personas-listar', 'API\PersonaController@listar');
 Route::get('eventos-listar', 'API\EventoController@listar');
+//Actividades
+Route::get('actividades-listar', 'API\ActividadController@listar');
+Route::get('actividades-buscar/{valor?}', 'API\ActividadController@buscar');
 
 /*buscar*/
 Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');
@@ -76,4 +79,5 @@ Route::apiResources([
     'anexo' => 'API\AnexoController',
     'usuarios' => 'API\UsuarioController',
     'asignacion-eventos' => 'API\AsignacionEventoController',
+    'actividades' => 'API\ActividadController',
 ]);

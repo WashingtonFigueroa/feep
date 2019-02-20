@@ -53,7 +53,7 @@ import { UbicacionComponent } from '../../ubicacion/ubicacion.component';
 import { UbicacionIndexComponent } from '../../ubicacion/ubicacion-index/ubicacion-index.component';
 import { UbicacionUpdateComponent } from '../../ubicacion/ubicacion-update/ubicacion-update.component';
 import { UbicacionCreateComponent } from '../../ubicacion/ubicacion-create/ubicacion-create.component';
-import {UbicacionService} from "../../ubicacion/ubicacion.service";
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
 import { InscripcionComponent } from '../../inscripcion/inscripcion.component';
 import { InscripcionIndexComponent } from '../../inscripcion/inscripcion-index/inscripcion-index.component';
 import { InscripcionUpdateComponent } from '../../inscripcion/inscripcion-update/inscripcion-update.component';
@@ -62,7 +62,7 @@ import { OrganizadorComponent } from '../../organizador/organizador.component';
 import { OrganizadorIndexComponent } from '../../organizador/organizador-index/organizador-index.component';
 import { OrganizadorUpdateComponent } from '../../organizador/organizador-update/organizador-update.component';
 import { OrganizadorCreateComponent } from '../../organizador/organizador-create/organizador-create.component';
-import {InscripcionService} from "../../inscripcion/inscripcion.service";
+import {InscripcionService} from '../../inscripcion/inscripcion.service';
 import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
 import {SuministroComponent} from '../../suministro/suministro.component';
 import {SuministroCreateComponent} from '../../suministro/suministro-create/suministro-create.component';
@@ -90,6 +90,11 @@ import {AsignacionIndexComponent} from '../../asignacion/asignacion-index/asigna
 import {OrganizadorService} from '../../organizador/organizador.service';
 import {UsuarioService} from '../../usuario/usuario.service';
 import {AsignacionService} from '../../asignacion/asignacion.service';
+import { ActividadComponent } from '../../actividad/actividad.component';
+import { ActividadIndexComponent } from '../../actividad/actividad-index/actividad-index.component';
+import { ActividadUpdateComponent } from '../../actividad/actividad-update/actividad-update.component';
+import { ActividadCreateComponent } from '../../actividad/actividad-create/actividad-create.component';
+import {ActividadService} from '../../actividad/actividad.service';
 
 @NgModule({
   imports: [
@@ -99,9 +104,9 @@ import {AsignacionService} from '../../asignacion/asignacion.service';
     ChartsModule,
     NgbModule,
     ToastrModule.forRoot(),
-      HttpClientModule,
-      ReactiveFormsModule,
-      FormsModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   declarations: [
     DashboardComponent,
@@ -174,7 +179,11 @@ import {AsignacionService} from '../../asignacion/asignacion.service';
     AsignacionComponent,
     AsignacionCreateComponent,
     AsignacionUpdateComponent,
-    AsignacionIndexComponent
+    AsignacionIndexComponent,
+    ActividadComponent,
+    ActividadIndexComponent,
+    ActividadUpdateComponent,
+    ActividadCreateComponent
   ],
   providers: [
       OrganizacionService,
@@ -192,7 +201,8 @@ import {AsignacionService} from '../../asignacion/asignacion.service';
       TipoService,
       OrganizadorService,
       UsuarioService,
-      AsignacionService
+      AsignacionService,
+      ActividadService
   ]
 })
 

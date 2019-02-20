@@ -36,7 +36,7 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Ingresar Ciudad</h4>
+          <h4 class="card-title">Ingresar Cantón</h4>
         </div>
         <div class="card-body">
           <form (submit)="storeciudad()" [formGroup]="ciudadGroup" *ngIf="provincias !== null" role="form">
@@ -81,7 +81,7 @@
                 <form (submit)="storeparroquia()" [formGroup]="parroquiaGroup" *ngIf="ciudades !== null && comunidades !== null " role="form">
 
                   <div class="form-group">
-                    <label>Seleccione Ciudad</label>
+                    <label>Seleccione Cantón</label>
                     <select name="ciudad_id" id="ciudad_id" formControlName="ciudad_id" class="form-control">
                       <option [value]="ciudad.ciudad_id" *ngFor="let ciudad of ciudades">{{ ciudad.nombre }}</option>
                     </select>
