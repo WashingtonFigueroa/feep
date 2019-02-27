@@ -1,13 +1,13 @@
 <div class="panel-header">
   <div class="header text-center">
-    <h2 class="title">Ubicación Geográfica</h2>
-    <p class="category">Ecuador</p>
+    <h2 class="title">Georeferenciación Ecuador</h2>
   </div>
 </div>
 <div class="main-content">
   <div class="row">
     <div class="col-md-6">
       <div class="card">
+        &nbsp; &nbsp;<button class="btn btn-dark" routerLink="/ubicaciones"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
         <div class="card-header">
           <h4 class="card-title">Crear Provincia</h4>
         </div>
@@ -15,12 +15,12 @@
               <form (submit)="storeprovincia()"
                     [formGroup]="provinciaGroup" role="form">
                 <div class="form-group">
-                  <label>Nombre</label>
-                  <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
+                  <label>Codigo</label>
+                  <input type="text" class="form-control" formControlName="codigo" name="codigo" autofocus>
                 </div>
                 <div class="form-group">
-                  <label>Descripcion</label>
-                  <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
                 </div>
                 <div class="row">
                   <div class="col-md-12">
@@ -29,6 +29,7 @@
                     </div>
                   </div>
                 </div>
+                <br>
               </form>
         </div>
       </div>
@@ -42,17 +43,21 @@
           <form (submit)="storeciudad()" [formGroup]="ciudadGroup" *ngIf="provincias !== null" role="form">
             <div class="form-group">
             <label>Seleccione Provincia</label>
-            <select name="provincia_id" id="provincia_id" formControlName="provincia_id" class="form-control">
-              <option [value]="provincia.provincia_id" *ngFor="let provincia of provincias">{{ provincia.nombre }}</option>
-            </select>
+              <ng-select [items]="provincias"
+                         class="custom"
+                         id="provincia_id"
+                         bindLabel="nombre"
+                         bindValue="provincia_id"
+                         formControlName="provincia_id">
+              </ng-select>
+            </div>
+            <div class="form-group">
+              <label>Codigo</label>
+              <input type="text" class="form-control" formControlName="codigo" name="codigo" autofocus>
             </div>
             <div class="form-group">
               <label>Nombre</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
-            </div>
-            <div class="form-group">
-              <label>Descripcion</label>
-              <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
             </div>
             <div class="row">
               <div class="col-md-12">
@@ -65,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-6">
       <div class="card">
         <div class="card-body">
           <div class="places-buttons">
@@ -78,27 +83,28 @@
             </div>
             <div class="row">
               <div class="col-lg-8 ml-auto mr-auto">
-                <form (submit)="storeparroquia()" [formGroup]="parroquiaGroup" *ngIf="ciudades !== null && comunidades !== null " role="form">
+                <form (submit)="storeparroquia()" [formGroup]="parroquiaGroup" *ngIf="ciudades !== null" role="form">
 
                   <div class="form-group">
                     <label>Seleccione Cantón</label>
-                    <select name="ciudad_id" id="ciudad_id" formControlName="ciudad_id" class="form-control">
-                      <option [value]="ciudad.ciudad_id" *ngFor="let ciudad of ciudades">{{ ciudad.nombre }}</option>
-                    </select>
+                    <!--<select name="ciudad_id" id="ciudad_id" formControlName="ciudad_id" class="form-control">-->
+                      <!--<option [value]="ciudad.ciudad_id" *ngFor="let ciudad of ciudades">{{ ciudad.nombre }}</option>-->
+                    <!--</select>-->
+                    <ng-select [items]="ciudades"
+                               class="form-control"
+                               id="ciudad_id"
+                               bindLabel="nombre"
+                               bindValue="ciudad_id"
+                               formControlName="ciudad_id">
+                    </ng-select>
                   </div>
                   <div class="form-group">
-                    <label>Seleccione Comunidad</label>
-                    <select name="comunidad_id" id="comunidad_id" formControlName="comunidad_id" class="form-control">
-                      <option [value]="comunidad.comunidad_id" *ngFor="let comunidad of comunidades">{{ comunidad.nombre }}</option>
-                    </select>
+                    <label>Codigo</label>
+                    <input type="text" class="form-control" formControlName="codigo" name="codigo" autofocus>
                   </div>
                   <div class="form-group">
                     <label>Nombre</label>
                     <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
-                  </div>
-                  <div class="form-group">
-                    <label>Descripcion</label>
-                    <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
                   </div>
                   <div class="row">
                     <div class="col-md-12">
@@ -120,48 +126,28 @@
           <h4 class="card-title">Ingresar Barrio</h4>
         </div>
         <div class="card-body">
-          <form (submit)="storebarrio()" [formGroup]="barrioGroup" role="form">
+          <form (submit)="storebarrio()" [formGroup]="barrioGroup" *ngIf="parroquias !== null" role="form">
+            <div class="form-group">
+              <label>Seleccione Parroquia</label>
+              <!--<select name="parroquia_id" id="parroquia_id" formControlName="parroquia_id" class="form-control">-->
+                <!--<option [value]="parroquia.parroquia_id" *ngFor="let parroquia of parroquias">{{ parroquia.nombre }}</option>-->
+              <!--</select>-->
+              <ng-select [items]="parroquias"
+                         class="form-control"
+                         id="parroquia_id"
+                         bindLabel="nombre"
+                         bindValue="parroquia_id"
+                         formControlName="parroquia_id">
+              </ng-select>
+            </div>
+
+            <div class="form-group">
+              <label>Comunidad</label>
+              <input type="text" class="form-control" formControlName="comunidad" name="comunidad" autofocus>
+            </div>
             <div class="form-group">
               <label>Nombre</label>
-              <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
-            </div>
-            <div class="form-group">
-              <label>Descripcion</label>
-              <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <button class="btn btn-primary" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <h4 class="card-title">Ingresar Comunidad</h4>
-        </div>
-        <div class="card-body">
-          <form (submit)="storecomunidad()" [formGroup]="comunidadGroup" *ngIf="barrios !== null" role="form">
-            <label>Seleccione Barrio</label>
-            <select name="barrio_id" id="barrio_id" formControlName="barrio_id" class="form-control">
-              <option [value]="barrio.barrio_id" *ngFor="let barrio of barrios">{{ barrio.nombre }}</option>
-            </select>
-            <div class="form-group">
-              <label>Nombre</label>
-              <input type="text" class="form-control" formControlName="nombre" name="nombre" autofocus>
-            </div>
-            <div class="form-group">
-              <label>Pueblo</label>
-              <input type="text" class="form-control" formControlName="pueblo" name="pueblo" autofocus>
-            </div>
-            <div class="form-group">
-              <label>Descripcion</label>
-              <input type="text" class="form-control" formControlName="descripcion" name="descripcion">
+              <input type="text" class="form-control" formControlName="nombre" name="nombre">
             </div>
             <div class="row">
               <div class="col-md-12">

@@ -1,10 +1,10 @@
 <?php
-
 namespace App\Http\Controllers\API;
-use App\Http\Controllers\Controller;
 
 use App\Actividad;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class ActividadController extends Controller
 {

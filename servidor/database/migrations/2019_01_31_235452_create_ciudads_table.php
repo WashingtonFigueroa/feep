@@ -20,8 +20,8 @@ class CreateCiudadsTable extends Migration
                 ->references('provincia_id')
                 ->on('provincias')
                 ->onDelete('cascade');
+            $table->string('codigo');
             $table->string('nombre');
-            $table->string('descripcion')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -99,15 +99,15 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <div class="form-group">
+                    <button class="btn btn-primary"
+                            type="submit"
+                            [disabled]="eventoGroup.status === 'INVALID'">Guardar &nbsp;
+                      <span class="fa fa-save"></span>
+                    </button>
                     <a class="btn btn-dark"
                        routerLink="/miembros/listar">Cancelar &nbsp;
                       <span class="fa fa-window-close"></span>
                     </a>
-                    <button class="btn btn-primary"
-                            type="submit"
-                            [disabled]="eventoGroup.status === 'INVALID'">Guardar &nbsp;
-                            <span class="fa fa-save"></span>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -123,23 +123,10 @@
         </div>
         <div class="card-body">
           <div class="author">
-            <a href="#">
-              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
-            </a>
-            <br>
-            <button class="btn btn-primary" routerLink="/tipoeventos/crear" >Tipo Evento &nbsp;  <span class="fa fa-save"></span></button>
-            <button class="btn btn-primary" routerLink="/ubicaciones/crear" >Parroquia &nbsp;  <span class="fa fa-save"></span></button>
-            <p class="description">
-              Crear tipos de eventos o las parroquias que necesita.
-            </p>
+            <br><br>
+            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
           </div>
-          <p class="description text-center">
-            "Lamborghini Mercy
-            <br> Your chick she so thirsty
-            <br> I'm in that two seat Lambo"
-          </p>
         </div>
-        <hr>
       </div>
     </div>
   </div>

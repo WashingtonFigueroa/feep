@@ -28,7 +28,6 @@ Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
 Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 Route::get('provincias-listar', 'API\ProvinciaController@listar');
 Route::get('barrios-listar', 'API\BarrioController@listar');
-Route::get('comunidades-listar', 'API\ComunidadController@listar');
 Route::get('ciudades-listar', 'API\CiudadController@listar');
 Route::get('parroquias-listar', 'API\ParroquiaController@listar');
 Route::get('tipo-eventos-listar', 'API\TipoEventoController@listar');
@@ -39,10 +38,16 @@ Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
 Route::get('tipos-listar', 'API\SuministroController@listar');
 Route::get('personas-listar', 'API\PersonaController@listar');
 Route::get('eventos-listar', 'API\EventoController@listar');
+//Proyectos
+Route::get('proyectos-listar', 'API\ProyectoController@listar');
+Route::get('proyectos-buscar/{valor?}', 'API\ProyectoController@buscar');
+Route::get('proyectos-imagen/{url}', 'API\ProyectoController@imagen');
 //Actividades
 Route::get('actividades-listar', 'API\ActividadController@listar');
 Route::get('actividades-buscar/{valor?}', 'API\ActividadController@buscar');
-
+//organizaciones ejecutoras
+Route::get('ejecutoras-listar', 'API\EjecutoraController@listar');
+Route::get('ejecutoras-buscar/{valor?}', 'API\EjecutoraController@buscar');
 /*buscar*/
 Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');
 Route::get('suministros-buscar/{valor?}', 'API\SuministroController@buscar');
@@ -65,8 +70,9 @@ Route::apiResources([
     'tipo-eventos' => 'API\TipoEventoController',
     'barrios' => 'API\BarrioController',
     'ciudades' => 'API\CiudadController',
-    'comunidades' => 'API\ComunidadController',
     'personas' => 'API\PersonaController',
+    'proyectos' => 'API\ProyectoController',
+    'ejecutoras' => 'API\EjecutoraController',
     'eventos' => 'API\EventoController',
     'parroquias' => 'API\ParroquiaController',
     'participantes' => 'API\ParticipanteController',
@@ -79,5 +85,5 @@ Route::apiResources([
     'anexo' => 'API\AnexoController',
     'usuarios' => 'API\UsuarioController',
     'asignacion-eventos' => 'API\AsignacionEventoController',
-    'actividades' => 'API\ActividadController',
+    'actividades' => 'API\ActividadController'
 ]);

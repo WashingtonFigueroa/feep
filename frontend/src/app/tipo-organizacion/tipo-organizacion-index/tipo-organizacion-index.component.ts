@@ -8,7 +8,6 @@ import {TipoOrganizacionService} from '../tipo-organizacion.service';
   styleUrls: ['./tipo-organizacion-index.component.scss']
 })
 export class TipoOrganizacionIndexComponent implements OnInit {
-
     prev_page: string = null;
     next_page: string = null;
     last_page: number = null;

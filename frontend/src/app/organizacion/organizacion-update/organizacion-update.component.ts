@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {TipoInsumoService} from "../../tipo-insumo/tipo-insumo.service";
-import {ActivatedRoute, Router} from "@angular/router";
-import {OrganizacionService} from "../organizacion.service";
-import {ToastrService} from "ngx-toastr";
-import {TipoOrganizacionService} from "../../tipo-organizacion/tipo-organizacion.service";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute, Router} from '@angular/router';
+import {OrganizacionService} from '../organizacion.service';
+import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
+import {ToastrService} from 'ngx-toastr';
+import {ActividadService} from '../../actividad/actividad.service';
 
 @Component({
   selector: 'app-organizacion-update',
@@ -16,16 +16,22 @@ export class OrganizacionUpdateComponent implements OnInit {
     organizacion_id: number = null;
     organizacion: any = null;
     organizacionGroup: FormGroup;
-    tipo_organizaciones : any = null;
+    tipo_organizaciones: any = null;
+    actividades: any = null;
     constructor(private organizacionService: OrganizacionService,
                 private tipoorganizacionService: TipoOrganizacionService,
+                private actividadService: ActividadService,
                 private fb: FormBuilder,
                 private router: Router,
                 private route: ActivatedRoute,
-                private toastrService:ToastrService) {
+                private toastrService: ToastrService) {
         this.tipoorganizacionService.listar()
             .subscribe((res: any) => {
                 this.tipo_organizaciones = res;
+            });
+        this.actividadService.listar()
+            .subscribe((res: any) => {
+                this.actividades = res;
             });
 
         this.route.params.subscribe((param: any) => {
@@ -44,15 +50,17 @@ export class OrganizacionUpdateComponent implements OnInit {
     crearForm() {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': [this.organizacion.tipo_organizacion_id, [Validators.required]],
+            'actividad_id': [this.organizacion.actividad_id, [Validators.required]],
             'nombre' : [this.organizacion.nombre, [Validators.required]],
-            'actividad': [this.organizacion.actividad, [Validators.required]],
             'representante': [this.organizacion.representante, [Validators.required]],
             'contacto': [this.organizacion.contacto],
             'direccion': [this.organizacion.direccion],
             'descripcion': [this.organizacion.descripcion],
             'acuerdo': [this.organizacion.acuerdo],
             'mujeres': [this.organizacion.mujeres],
+            'ninias': [this.organizacion.ninias],
             'hombres': [this.organizacion.hombres],
+            'ninios': [this.organizacion.ninios],
             'latitud': [this.organizacion.latitud],
             'longitud': [this.organizacion.longitud],
             'precision': [this.organizacion.precision],
@@ -62,7 +70,7 @@ export class OrganizacionUpdateComponent implements OnInit {
     update() {
         this.organizacionService.update(this.organizacion_id, this.organizacionGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados','Organización')
+                this.toastrService.success('Datos Actualizados', 'Organización')
                 this.router.navigate(['/organizaciones']);
             });
     }

@@ -15,16 +15,24 @@ class CreateEventosTable extends Migration
     {
         Schema::create('eventos', function (Blueprint $table) {
             $table->increments('evento_id');
+            $table->integer('proyecto_id')->unsigned();
+            $table->foreign('proyecto_id')
+                ->references('proyecto_id')
+                ->on('proyectos')
+                ->onDelete('cascade');
+
             $table->integer('tipo_evento_id')->unsigned();
-            $table->integer('parroquia_id')->unsigned();
             $table->foreign('tipo_evento_id')
                 ->references('tipo_evento_id')
                 ->on('tipo_eventos')
                 ->onDelete('cascade');
-            $table->foreign('parroquia_id')
-                ->references('parroquia_id')
-                ->on('parroquias')
+
+            $table->integer('barrio_id')->unsigned();
+            $table->foreign('barrio_id')
+                ->references('barrio_id')
+                ->on('barrios')
                 ->onDelete('cascade');
+
             $table->string('nombre');
             $table->string('imagen')->nullable();
             $table->date('fecha_evento');

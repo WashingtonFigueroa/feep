@@ -31,5 +31,4 @@ export class TipoOrganizacionService {
     pagination(url: string) {
         return this.http.get(url);
     }
-
 }

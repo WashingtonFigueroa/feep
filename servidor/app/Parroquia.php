@@ -11,11 +11,9 @@ class Parroquia extends Model
     protected $table = 'parroquias';
     protected $primaryKey = 'parroquia_id';
     protected $fillable = [
-        'comunidad_id',
         'ciudad_id',
+        'codigo',
         'nombre',
-        'nombre',
-        'descripcion'
     ];
     protected $dates = ['deleted_at'];
 }

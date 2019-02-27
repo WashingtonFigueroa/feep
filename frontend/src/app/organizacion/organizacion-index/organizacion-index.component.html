@@ -31,31 +31,30 @@
                 <thead style="background-color: #303030; color: #f7f7f7">
                 <tr>
                   <th> #   </th>
-                  <th> Tipo   </th>
-                  <th> Nombre   </th>
+                  <th> Organización   </th>
                   <th> Actividad   </th>
+                  <th> Nombre   </th>
                   <th> Representante </th>
                   <th> Contacto </th>
-                  <th> Imagen </th>
-                  <th> Acciones   </th>
+                  <th> N° Personas </th>
+                  <th class="text-center">Operaciones</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr *ngFor="let organizacion of organizaciones.data; let i = index">
-                  <td>  {{ organizacion.organizacion_id }} </td>
-                  <td>  {{ organizacion.tipo_organizacion_id }} </td>
-                  <td>  {{ organizacion.nombre }} </td>
+                  <td>  {{ i + 1}} </td>
+                  <td>  {{ organizacion.tipoorganizacion }} </td>
                   <td>  {{ organizacion.actividad }} </td>
+                  <td>  {{ organizacion.nombre }} </td>
                   <td>  {{ organizacion.representante }} </td>
                   <td>  {{ organizacion.contacto }} </td>
-                  <td class="text-center">
-                    <img src="{{url_base}}{{organizacion.imagen}}" [alt]="organizacion.nombre" width="60" height="60">
-                  </td>
+                  <td>  {{ organizacion.total }} </td>
+
                   <td class="text-center">
                     <button routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" type="button"
                             class="btn btn-xs btn-info">
                       <i class="fa fa-edit"></i>
-                    </button>
+                    </button>&nbsp;
                     <button type="button" class="btn btn-xs btn-danger" (click)="destroy(organizacion, i)">
                       <i class="fa fa-trash"></i>
                     </button>

@@ -11,8 +11,8 @@ class Provincia extends Model
     protected $table = 'provincias';
     protected $primaryKey = 'provincia_id';
     protected $fillable = [
+        'codigo',
         'nombre',
-        'descripcion',
     ];
     protected $dates = ['deleted_at'];
 }
