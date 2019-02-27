@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
 import { OrganizacionComponent } from '../../organizacion/organizacion.component';
 import { OrganizacionIndexComponent } from '../../organizacion/organizacion-index/organizacion-index.component';
 import { OrganizacionCreateComponent } from '../../organizacion/organizacion-create/organizacion-create.component';
@@ -67,11 +66,18 @@ import {ActividadComponent} from '../../actividad/actividad.component';
 import {ActividadIndexComponent} from '../../actividad/actividad-index/actividad-index.component';
 import {ActividadCreateComponent} from '../../actividad/actividad-create/actividad-create.component';
 import {ActividadUpdateComponent} from '../../actividad/actividad-update/actividad-update.component';
+import {ProyectoComponent} from '../../proyecto/proyecto.component';
+import {ProyectoIndexComponent} from '../../proyecto/proyecto-index/proyecto-index.component';
+import {ProyectoCreateComponent} from '../../proyecto/proyecto-create/proyecto-create.component';
+import {ProyectoUpdateComponent} from '../../proyecto/proyecto-update/proyecto-update.component';
+import {EjecutoraComponent} from '../../ejecutora/ejecutora.component';
+import {EjecutoraIndexComponent} from '../../ejecutora/ejecutora-index/ejecutora-index.component';
+import {EjecutoraCreateComponent} from '../../ejecutora/ejecutora-create/ejecutora-create.component';
+import {EjecutoraUpdateComponent} from '../../ejecutora/ejecutora-update/ejecutora-update.component';
 
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
-    { path: 'notifications',  component: NotificationsComponent },
     { path: 'organizaciones',  component: OrganizacionComponent,
         children: [
             {
@@ -145,6 +151,46 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: TipoPersonaUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'proyectos',  component: ProyectoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: ProyectoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: ProyectoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: ProyectoUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'ejecutoras',  component: EjecutoraComponent,
+        children: [
+            {
+                path: 'listar',
+                component: EjecutoraIndexComponent
+            },
+            {
+                path: 'crear',
+                component: EjecutoraCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: EjecutoraUpdateComponent
             },
             {
                 path: '',

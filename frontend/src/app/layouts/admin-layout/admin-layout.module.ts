@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
@@ -90,7 +89,17 @@ import { ActividadComponent } from '../../actividad/actividad.component';
 import { ActividadIndexComponent } from '../../actividad/actividad-index/actividad-index.component';
 import { ActividadUpdateComponent } from '../../actividad/actividad-update/actividad-update.component';
 import { ActividadCreateComponent } from '../../actividad/actividad-create/actividad-create.component';
-import {ActividadService} from '../../actividad/actividad.service';
+import { ActividadService} from '../../actividad/actividad.service';
+import { ProyectoComponent } from '../../proyecto/proyecto.component';
+import { ProyectoIndexComponent } from '../../proyecto/proyecto-index/proyecto-index.component';
+import { ProyectoUpdateComponent } from '../../proyecto/proyecto-update/proyecto-update.component';
+import { ProyectoCreateComponent } from '../../proyecto/proyecto-create/proyecto-create.component';
+import { EjecutoraComponent } from '../../ejecutora/ejecutora.component';
+import { EjecutoraIndexComponent } from '../../ejecutora/ejecutora-index/ejecutora-index.component';
+import { EjecutoraUpdateComponent } from '../../ejecutora/ejecutora-update/ejecutora-update.component';
+import { EjecutoraCreateComponent } from '../../ejecutora/ejecutora-create/ejecutora-create.component';
+import {ProyectoService} from '../../proyecto/proyecto.service';
+import {EjecutoraService} from '../../ejecutora/ejecutora.service';
 
 @NgModule({
   imports: [
@@ -107,7 +116,6 @@ import {ActividadService} from '../../actividad/actividad.service';
   ],
   declarations: [
     DashboardComponent,
-    NotificationsComponent,
     OrganizacionComponent,
     OrganizacionIndexComponent,
     OrganizacionCreateComponent,
@@ -175,7 +183,15 @@ import {ActividadService} from '../../actividad/actividad.service';
     ActividadComponent,
     ActividadIndexComponent,
     ActividadUpdateComponent,
-    ActividadCreateComponent
+    ActividadCreateComponent,
+    ProyectoComponent,
+    ProyectoIndexComponent,
+    ProyectoUpdateComponent,
+    ProyectoCreateComponent,
+    EjecutoraComponent,
+    EjecutoraIndexComponent,
+    EjecutoraUpdateComponent,
+    EjecutoraCreateComponent
   ],
   providers: [
       OrganizacionService,
@@ -194,7 +210,9 @@ import {ActividadService} from '../../actividad/actividad.service';
       OrganizadorService,
       UsuarioService,
       AsignacionService,
-      ActividadService
+      ActividadService,
+      ProyectoService,
+      EjecutoraService
   ]
 })
 
