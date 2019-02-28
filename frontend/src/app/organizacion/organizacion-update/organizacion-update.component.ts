@@ -13,6 +13,7 @@ import {ActividadService} from '../../actividad/actividad.service';
 })
 export class OrganizacionUpdateComponent implements OnInit {
     @ViewChild('imagen') imagen;
+    @ViewChild('preview') preview;
     organizacion_id: number = null;
     organizacion: any = null;
     organizacionGroup: FormGroup;
@@ -73,6 +74,11 @@ export class OrganizacionUpdateComponent implements OnInit {
     }
     loadImage() {
         const imagen = this.imagen.nativeElement;
-        console.log(imagen.files[0]);
+/*        console.log(imagen.files[0]);*/
+        const reader = new FileReader();
+        reader.onload = (e: any) => {
+            this.preview.nativeElement.src = e.target.result;
+        };
+        reader.readAsDataURL(imagen.files[0]);
     }
 }
