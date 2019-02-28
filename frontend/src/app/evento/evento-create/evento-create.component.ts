@@ -5,6 +5,7 @@ import {Router} from '@angular/router';
 import {EventoService} from '../evento.service';
 import {TipoEventoService} from '../../tipo-evento/tipo-evento.service';
 import {ToastrService} from 'ngx-toastr';
+import {ProyectoService} from '../../proyecto/proyecto.service';
 
 @Component({
   selector: 'app-evento-create',
@@ -14,11 +15,13 @@ import {ToastrService} from 'ngx-toastr';
 export class EventoCreateComponent implements OnInit {
     @ViewChild('imagen') imagen;
     eventoGroup: FormGroup;
+    proyectos: any = null;
     tipo_eventos: any = null;
-    parroquias: any = null;
+    barrios: any = null;
     constructor(private eventoService: EventoService,
                 private tipoeventoService: TipoEventoService,
                 private parroquiasService: UbicacionService,
+                private proyectoService: ProyectoService,
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
@@ -26,9 +29,12 @@ export class EventoCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.tipo_eventos = res;
             });
-        this.parroquiasService.parroquiaslistar()
+        this.proyectoService.listar().subscribe((res: any) => {
+           this.proyectos = res;
+        });
+        this.parroquiasService.barrioslistar()
             .subscribe((res: any) => {
-                this.parroquias = res;
+                this.barrios = res;
             });
         this.crearForm();
     }
@@ -36,8 +42,9 @@ export class EventoCreateComponent implements OnInit {
     }
     crearForm() {
         this.eventoGroup = this.fb.group({
+            'proyecto_id': [0, [Validators.required]],
             'tipo_evento_id': [0, [Validators.required]],
-            'parroquia_id': [0, [Validators.required]],
+            'barrio_id': [0, [Validators.required]],
             'nombre': ['', [Validators.required]],
             'imagen': [''],
             'fecha_evento': ['', [Validators.required]],
@@ -51,16 +58,17 @@ export class EventoCreateComponent implements OnInit {
     store() {
         if (this.imagen.nativeElement.files[0]) {
             const formData = new FormData();
+            formData.append('proyecto_id', this.eventoGroup.value.proyecto_id);
             formData.append('tipo_evento_id', this.eventoGroup.value.tipo_evento_id);
-            formData.append('parroquia_id', this.eventoGroup.value.parroquia_id);
+            formData.append('barrio_id', this.eventoGroup.value.barrio_id);
             formData.append('nombre', this.eventoGroup.value.nombre);
             formData.append('imagen', this.imagen.nativeElement.files[0]);
             formData.append('fecha_evento', this.eventoGroup.value.fecha_evento);
             formData.append('direccion', this.eventoGroup.value.direccion);
             formData.append('duracion_horas', this.eventoGroup.value.duracion_horas);
             formData.append('fecha_finaliza', this.eventoGroup.value.fecha_finaliza);
-            formData.append('latitud', this.eventoGroup.value.latitud);
-            formData.append('longitud', this.eventoGroup.value.longitud);
+           // formData.append('latitud', this.eventoGroup.value.latitud);
+           // formData.append('longitud', this.eventoGroup.value.longitud);
             this.eventoService.store(formData)
                 .subscribe((res: any) => {
                     this.toastrService.success('Registrado', 'Evento');

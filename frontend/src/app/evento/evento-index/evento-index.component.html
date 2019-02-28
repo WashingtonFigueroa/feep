@@ -30,6 +30,7 @@
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <tr>
                       <th> #   </th>
+                      <th> Proyecto   </th>
                       <th> Tipo   </th>
                       <th> Nombre   </th>
                       <th> Imagen   </th>
@@ -42,6 +43,7 @@
                     <tbody>
                     <tr *ngFor="let evento of eventos.data; let i = index">
                       <td>  {{i+1}} </td>
+                      <td>  {{ evento.proyecto }} </td>
                       <td>  {{ evento.tipo_evento }} </td>
                       <td>  {{ evento.nombre }} </td>
                       <td>
