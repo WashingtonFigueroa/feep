@@ -56,7 +56,7 @@ class EventoController extends Controller
     public function update(Request $request, $id)
     {
         $evento = Evento::find($id);
-        $evento->update($evento);
+        $evento->update($request->all());
         return response()->json($evento, 200);
     }
     public function destroy($id)

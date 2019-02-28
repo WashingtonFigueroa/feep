@@ -1,3 +1,128 @@
-<p>
-  evento-update works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              &nbsp; &nbsp;          <button class="btn btn-dark" routerLink="/eventos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Editar Evento</h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form (submit)="update()" [formGroup]="eventoGroup" *ngIf="proyectos !== null && tipoeventos !== null && barrios !== null" role="form">
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="proyecto_id">* Seleccione Proyecto</label>
+                  <select name="proyecto_id" id="proyecto_id" formControlName="proyecto_id" class="form-control">
+                    <option [value]="proyecto.proyecto_id" *ngFor="let proyecto of proyectos">{{ proyecto.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="tipo_evento_id">* Seleccione Tipo Evento</label>
+                  <select name="tipo_evento_id" id="tipo_evento_id" formControlName="tipo_evento_id" class="form-control">
+                    <option [value]="tipoevento.tipo_evento_id" *ngFor="let tipoevento of tipoeventos">{{ tipoevento.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>* Tema</label>
+                  <input type="text" class="form-control" formControlName="nombre" name="nombre" >
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="imagen" class="upload">Imagen o Logo <i class="fa fa-upload"></i></label>
+                  <input type="file" class="form-control" #imagen formControlName="imagen" name="imagen" id="imagen">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label>* Seleccione Barrio</label>
+                  <select name="barrio_id" id="barrio_id" formControlName="barrio_id" class="form-control">
+                    <option [value]="barrio.barrio_id" *ngFor="let barrio of barrios">{{ barrio.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pl-1">
+                <div class="form-group">
+                  <label>Dirección</label>
+                  <input type="text" class="form-control" formControlName="direccion" name="direccion">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Fecha Evento</label>
+                  <input type="date" class="form-control" formControlName="fecha_evento" name="fecha_evento" >
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Fecha Finaliza Evento</label>
+                  <input type="date" class="form-control" formControlName="fecha_finaliza" name="fecha_finaliza" id="fecha_finaliza">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label>Tiempo de Duración</label>
+                  <input type="number" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
+                </div>
+              </div>
+            </div>
+            <!--<div class="row">-->
+            <!--<div class="col-md-4 pr-1">-->
+            <!--<div class="form-group">-->
+            <!--<label>Latitud</label>-->
+            <!--<input type="text" class="form-control" formControlName="latitud" name="latitud" id="latitud">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 px-1">-->
+            <!--<div class="form-group">-->
+            <!--<label>Longitud</label>-->
+            <!--<input type="text" class="form-control" formControlName="longitud" name="longitud" id="longitud">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit" >Actualizar&nbsp;  <span class="fa fa-save"></span></button>
+                  <a class="btn btn-dark" routerLink="/eventos" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <br><br>
+            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
