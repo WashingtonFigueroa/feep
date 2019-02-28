@@ -28,6 +28,7 @@ export class UbicacionIndexComponent implements OnInit {
     }
 
     loadPagesprovincia() {
+        this.pages = [];
         for (let i = 1; i <= this.provincias.last_page;  i++) {
             this.pages.push({
                 page: i,

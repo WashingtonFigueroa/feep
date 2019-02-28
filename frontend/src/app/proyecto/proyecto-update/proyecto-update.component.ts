@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { ProyectoService} from '../../proyecto/proyecto.service';
 import { TipoProyectoService} from '../../tipo-proyecto/tipo-proyecto.service';
 import { ActivatedRoute, Router} from '@angular/router';
@@ -44,11 +44,11 @@ export class ProyectoUpdateComponent implements OnInit {
     }
     crearForm(proyecto) {
         this.proyectoGroup = this.fb.group({
-            'tipo_proyecto_id': [proyecto.tipo_proyecto_id, [Validators.required]],
-            'barrio_id': [proyecto.barrio_id, [Validators.required]],
-            'nombre' : [proyecto.nombre, [Validators.required]],
-            'inicio': [proyecto.inicio, [Validators.required]],
-            'fin': [proyecto.fin, [Validators.required]],
+            'tipo_proyecto_id': new FormControl(proyecto.tipo_proyecto_id, [Validators.required]),
+            'barrio_id': new FormControl(proyecto.barrio_id, [Validators.required]),
+            'nombre' : new FormControl(proyecto.nombre, [Validators.required]),
+            'inicio': new FormControl(proyecto.inicio, [Validators.required]),
+            'fin': new FormControl(proyecto.fin, [Validators.required])
         });
     }
     update() {
