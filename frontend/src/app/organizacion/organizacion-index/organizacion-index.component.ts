@@ -14,8 +14,8 @@ export class OrganizacionIndexComponent implements OnInit {
     pages: any = [];
     current_page: any = null;
     organizaciones: any = null;
-    url_base = environment.servidor + 'organizaciones-imagen/'
-  valor = '';
+    url_base = environment.servidor + 'organizaciones-imagen/';
+    valor = '';
     constructor(private organizacionService: OrganizacionService) {
         this.organizacionService.index()
             .subscribe((res: any) => {
@@ -30,6 +30,7 @@ export class OrganizacionIndexComponent implements OnInit {
     ngOnInit() {
     }
     loadPages() {
+        this.pages = [];
         for (let i = 1; i <= this.organizaciones.last_page;  i++) {
             this.pages.push({
                 page: i,

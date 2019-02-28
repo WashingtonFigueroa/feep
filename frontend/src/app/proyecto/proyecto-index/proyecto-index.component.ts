@@ -29,6 +29,7 @@ export class ProyectoIndexComponent implements OnInit {
     ngOnInit() {
     }
     loadPages() {
+        this.pages = [];
         for (let i = 1; i <= this.proyectos.last_page;  i++) {
             this.pages.push({
                 page: i,

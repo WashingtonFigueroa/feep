@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {environment} from "../../../environments/environment.prod";
-import {AsignacionService} from "../asignacion.service";
+import {environment} from '../../../environments/environment.prod';
+import {AsignacionService} from '../asignacion.service';
 
 @Component({
   selector: 'app-asignacion-index',

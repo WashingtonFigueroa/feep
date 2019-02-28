@@ -13,6 +13,7 @@ import {ActividadService} from '../../actividad/actividad.service';
 })
 export class OrganizacionCreateComponent implements OnInit {
     @ViewChild('imagen') imagen;
+    @ViewChild('preview') preview;
     organizacionGroup: FormGroup;
     tipo_organizaciones: any = null;
     actividades: any = null;
@@ -52,12 +53,15 @@ export class OrganizacionCreateComponent implements OnInit {
             'total': [''],
             'latitud': [''],
             'longitud': [''],
-            'precision': [''],
+            'precision': ['']
         });
     }
     store() {
-    const imagen = this.imagen.nativeElement;
-    const total = this.organizacionGroup.value.mujeres + this.organizacionGroup.value.ninias + this.organizacionGroup.value.hombres + this.organizacionGroup.value.ninios;
+    const imagen =  this.imagen.nativeElement;
+    const total =   this.organizacionGroup.value.mujeres +
+                    this.organizacionGroup.value.ninias +
+                    this.organizacionGroup.value.hombres +
+                    this.organizacionGroup.value.ninios;
         const formData = new FormData();
             if (imagen.files[0]) {
                 formData.append('imagen', imagen.files[0]);
@@ -86,5 +90,13 @@ export class OrganizacionCreateComponent implements OnInit {
                 }, (error) => {
                     this.toastrService.warning('Registrada', 'Organización');
                 });
+    }
+    loadImage() {
+          const imagen = this.imagen.nativeElement;
+          const reader = new FileReader();
+          reader.onload = (e: any) => {
+              this.preview.nativeElement.src = e.target.result;
+          };
+          reader.readAsDataURL(imagen.files[0]);
     }
 }

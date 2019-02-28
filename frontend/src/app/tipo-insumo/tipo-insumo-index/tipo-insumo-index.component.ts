@@ -23,6 +23,7 @@ export class TipoInsumoIndexComponent implements OnInit {
   }
 
   loadPages() {
+    this.pages = [];
     for (let i = 1; i <= this.tipo_insumos.last_page;  i++) {
       this.pages.push({
         page: i,

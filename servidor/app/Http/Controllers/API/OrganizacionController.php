@@ -33,11 +33,13 @@ class OrganizacionController extends Controller
     public function store(Request $request)
     {
         $organizacion = new Organizacion();
+        $organizacion->fill($request->all());
         if ($request->hasFile('imagen')) {
             $url = $request->file('imagen')->store('organizaciones');
             $organizacion->imagen = explode('/', $url)[1];
+        }else {
+            $organizacion->imagen = 'sin_imagen';
         }
-        $organizacion->fill($request->all());
         $organizacion->save();
         return response()->json($organizacion, 201);
     }
