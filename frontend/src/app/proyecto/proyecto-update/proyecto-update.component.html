@@ -18,12 +18,15 @@
           </div>
         </div>
         <div class="card-body">
-          <form (submit)="update()" [formGroup]="proyectoGroup" *ngIf="tipoproyectos !== null && barrios !== null" role="form">
+          <form (submit)="update()" [formGroup]="proyectoGroup"
+                *ngIf="tipoproyectos !== null && barrios !== null && proyecto !== null" role="form">
             <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>* Seleccione Tipo Proyecto</label>
-                  <select name="tipo_proyecto_id" id="tipo_proyecto_id" formControlName="tipo_proyecto_id" class="form-control">
+                  <select id="tipo_proyecto_id"
+                          formControlName="tipo_proyecto_id"
+                          name="tipo_proyecto_id" class="form-control">
                     <option [value]="tipoproyecto.tipo_proyecto_id" *ngFor="let tipoproyecto of tipoproyectos">{{ tipoproyecto.nombre }}</option>
                   </select>
                 </div>
@@ -47,7 +50,9 @@
               <div class="col-md-6 px-1">
                 <div class="form-group">
                   <label>Imagen </label>
-                  <input type="file" class="form-control" #imagen  name="imagen" id="imagen">
+                  <input type="file" class="form-control"
+                         #imagen
+                         name="imagen" id="imagen">
                 </div>
               </div>
             </div>

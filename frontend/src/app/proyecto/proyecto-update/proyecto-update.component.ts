@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import { ProyectoService} from '../../proyecto/proyecto.service';
 import { TipoProyectoService} from '../../tipo-proyecto/tipo-proyecto.service';
 import { ActivatedRoute, Router} from '@angular/router';
 import { ToastrService} from 'ngx-toastr';
 import { UbicacionService} from '../../ubicacion/ubicacion.service';
+import {ProyectoService} from '../proyecto.service';
 
 @Component({
   selector: 'app-proyecto-update',
@@ -34,7 +34,8 @@ export class ProyectoUpdateComponent implements OnInit {
             });
         this.route.params.subscribe((param: any) => {
             this.proyecto_id = param.id;
-            this.proyectoService.show(this.proyecto_id).subscribe((res: any) => {
+            this.proyectoService.show(this.proyecto_id)
+                .subscribe((res: any) => {
                     this.proyecto = res;
                     this.crearForm(res);
                 });
@@ -42,7 +43,7 @@ export class ProyectoUpdateComponent implements OnInit {
     }
     ngOnInit() {
     }
-    crearForm(proyecto) {
+    crearForm(proyecto: any) {
         this.proyectoGroup = this.fb.group({
             'tipo_proyecto_id': new FormControl(proyecto.tipo_proyecto_id, [Validators.required]),
             'barrio_id': new FormControl(proyecto.barrio_id, [Validators.required]),

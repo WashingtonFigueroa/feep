@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import {OrganizacionService} from '../organizacion.service';
 import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
@@ -12,6 +12,7 @@ import {ActividadService} from '../../actividad/actividad.service';
   styleUrls: ['./organizacion-update.component.scss']
 })
 export class OrganizacionUpdateComponent implements OnInit {
+    @ViewChild('imagen') imagen;
     organizacion_id: number = null;
     organizacion: any = null;
     organizacionGroup: FormGroup;
@@ -46,21 +47,21 @@ export class OrganizacionUpdateComponent implements OnInit {
     }
     crearForm() {
         this.organizacionGroup = this.fb.group({
-            'tipo_organizacion_id': [this.organizacion.tipo_organizacion_id, [Validators.required]],
-            'actividad_id': [this.organizacion.actividad_id, [Validators.required]],
-            'nombre' : [this.organizacion.nombre, [Validators.required]],
-            'representante': [this.organizacion.representante, [Validators.required]],
-            'contacto': [this.organizacion.contacto],
-            'direccion': [this.organizacion.direccion],
-            'descripcion': [this.organizacion.descripcion],
-            'acuerdo': [this.organizacion.acuerdo],
-            'mujeres': [this.organizacion.mujeres],
-            'ninias': [this.organizacion.ninias],
-            'hombres': [this.organizacion.hombres],
-            'ninios': [this.organizacion.ninios],
-            'latitud': [this.organizacion.latitud],
-            'longitud': [this.organizacion.longitud],
-            'precision': [this.organizacion.precision],
+            'tipo_organizacion_id': new FormControl(this.organizacion.tipo_organizacion_id, [Validators.required]),
+            'actividad_id': new FormControl(this.organizacion.actividad_id, [Validators.required]),
+            'nombre' : new FormControl(this.organizacion.nombre, [Validators.required]),
+            'representante': new FormControl(this.organizacion.representante, [Validators.required]),
+            'contacto': new FormControl(this.organizacion.contacto),
+            'direccion': new FormControl(this.organizacion.direccion),
+            'descripcion': new FormControl(this.organizacion.descripcion),
+            'acuerdo': new FormControl(this.organizacion.acuerdo),
+            'mujeres': new FormControl(this.organizacion.mujeres),
+            'ninias': new FormControl(this.organizacion.ninias),
+            'hombres': new FormControl(this.organizacion.hombres),
+            'ninios': new FormControl(this.organizacion.ninios),
+            'latitud': new FormControl(this.organizacion.latitud),
+            'longitud': new FormControl(this.organizacion.longitud),
+            'precision': new FormControl(this.organizacion.precision)
         });
     }
     update() {
@@ -69,5 +70,9 @@ export class OrganizacionUpdateComponent implements OnInit {
                 this.toastrService.success('Datos Actualizados', 'Organización')
                 this.router.navigate(['/organizaciones']);
             });
+    }
+    loadImage() {
+        const imagen = this.imagen.nativeElement;
+        console.log(imagen.files[0]);
     }
 }
