@@ -12,6 +12,8 @@ import {ProyectoService} from '../proyecto.service';
   styleUrls: ['./proyecto-update.component.scss']
 })
 export class ProyectoUpdateComponent implements OnInit {
+    @ViewChild('imagen') imagen;
+    @ViewChild('preview') preview;
     proyecto_id: number = null;
     proyecto: any = null;
     proyectoGroup: FormGroup;
@@ -57,5 +59,13 @@ export class ProyectoUpdateComponent implements OnInit {
                 this.toastrService.success('Datos Actualizados', 'Proyecto')
                 this.router.navigate(['/proyectos']);
             });
+    }
+    loadImage() {
+        const imagen = this.imagen.nativeElement;
+        const reader = new FileReader();
+        reader.onload = (e: any) => {
+            this.preview.nativeElement.src = e.target.result;
+        };
+        reader.readAsDataURL(imagen.files[0]);
     }
 }

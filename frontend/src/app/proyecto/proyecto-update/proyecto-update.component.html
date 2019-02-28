@@ -48,10 +48,11 @@
                 </div>
               </div>
               <div class="col-md-6 px-1">
-                <div class="form-group">
+                <div>
                   <label>Imagen </label>
                   <input type="file" class="form-control"
                          #imagen
+                         (change)="loadImage()"
                          name="imagen" id="imagen">
                 </div>
               </div>
@@ -90,7 +91,7 @@
         <div class="card-body">
           <div class="author">
             <br><br>
-            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            <img #preview src="../assets/img/mike.jpg">
           </div>
         </div>
       </div>
