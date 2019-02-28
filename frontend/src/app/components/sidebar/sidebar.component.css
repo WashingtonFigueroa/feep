@@ -12,7 +12,7 @@
 
 .mainmenu li:hover .submenu {
     display: block;
-    max-height: 300px;
+    max-height: 320px;
 }
 
 .submenu a {

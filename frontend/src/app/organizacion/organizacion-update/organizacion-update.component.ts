@@ -12,7 +12,6 @@ import {ActividadService} from '../../actividad/actividad.service';
   styleUrls: ['./organizacion-update.component.scss']
 })
 export class OrganizacionUpdateComponent implements OnInit {
-
     organizacion_id: number = null;
     organizacion: any = null;
     organizacionGroup: FormGroup;
@@ -43,10 +42,8 @@ export class OrganizacionUpdateComponent implements OnInit {
                 });
         });
     }
-
     ngOnInit() {
     }
-
     crearForm() {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': [this.organizacion.tipo_organizacion_id, [Validators.required]],
@@ -66,7 +63,6 @@ export class OrganizacionUpdateComponent implements OnInit {
             'precision': [this.organizacion.precision],
         });
     }
-
     update() {
         this.organizacionService.update(this.organizacion_id, this.organizacionGroup.value)
             .subscribe((res: any) => {

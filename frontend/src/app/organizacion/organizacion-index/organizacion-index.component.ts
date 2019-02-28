@@ -8,7 +8,6 @@ import {OrganizacionService} from '../organizacion.service';
   styleUrls: ['./organizacion-index.component.scss']
 })
 export class OrganizacionIndexComponent implements OnInit {
-
     prev_page: string = null;
     next_page: string = null;
     last_page: number = null;
@@ -21,7 +20,6 @@ export class OrganizacionIndexComponent implements OnInit {
         this.organizacionService.index()
             .subscribe((res: any) => {
                 this.organizaciones = res;
-                console.log(res);
                 this.current_page = this.organizaciones.current_page;
                 this.prev_page = this.organizaciones.prev_page_url;
                 this.next_page = this.organizaciones.next_page_url;
@@ -29,10 +27,8 @@ export class OrganizacionIndexComponent implements OnInit {
                 this.loadPages();
             });
     }
-
     ngOnInit() {
     }
-
     loadPages() {
         for (let i = 1; i <= this.organizaciones.last_page;  i++) {
             this.pages.push({
@@ -41,7 +37,6 @@ export class OrganizacionIndexComponent implements OnInit {
             });
         }
     }
-
     loadPagination(url: string) {
         this.organizacionService.pagination(url)
             .subscribe((res: any) => {
@@ -53,7 +48,6 @@ export class OrganizacionIndexComponent implements OnInit {
                 this.loadPages();
             });
     }
-
     buscar(valor: string) {
         this.organizacionService.buscar(valor)
             .subscribe((res: any) => {

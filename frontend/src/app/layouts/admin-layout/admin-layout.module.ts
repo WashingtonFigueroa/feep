@@ -100,6 +100,12 @@ import { EjecutoraUpdateComponent } from '../../ejecutora/ejecutora-update/ejecu
 import { EjecutoraCreateComponent } from '../../ejecutora/ejecutora-create/ejecutora-create.component';
 import {ProyectoService} from '../../proyecto/proyecto.service';
 import {EjecutoraService} from '../../ejecutora/ejecutora.service';
+import { TipoProyectoComponent } from '../../tipo-proyecto/tipo-proyecto.component';
+import { TipoProyectoIndexComponent } from '../../tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component';
+import { TipoProyectoUpdateComponent } from '../../tipo-proyecto/tipo-proyecto-update/tipo-proyecto-update.component';
+import { TipoProyectoCreateComponent } from '../../tipo-proyecto/tipo-proyecto-create/tipo-proyecto-create.component';
+import {TipoProyectoService} from '../../tipo-proyecto/tipo-proyecto.service';
+
 
 @NgModule({
   imports: [
@@ -191,7 +197,11 @@ import {EjecutoraService} from '../../ejecutora/ejecutora.service';
     EjecutoraComponent,
     EjecutoraIndexComponent,
     EjecutoraUpdateComponent,
-    EjecutoraCreateComponent
+    EjecutoraCreateComponent,
+      TipoProyectoComponent,
+      TipoProyectoIndexComponent,
+      TipoProyectoUpdateComponent,
+      TipoProyectoCreateComponent
   ],
   providers: [
       OrganizacionService,
@@ -212,7 +222,8 @@ import {EjecutoraService} from '../../ejecutora/ejecutora.service';
       AsignacionService,
       ActividadService,
       ProyectoService,
-      EjecutoraService
+      EjecutoraService,
+      TipoProyectoService
   ]
 })
 

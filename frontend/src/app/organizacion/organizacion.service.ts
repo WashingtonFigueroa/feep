@@ -6,7 +6,6 @@ import {HttpClient} from '@angular/common/http';
 export class OrganizacionService {
     base = environment.servidor;
     constructor(private http: HttpClient) { }
-
     index() {
         return this.http.get(`${this.base}organizaciones`);
     }

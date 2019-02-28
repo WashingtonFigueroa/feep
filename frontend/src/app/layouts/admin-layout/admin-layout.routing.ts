@@ -74,6 +74,10 @@ import {EjecutoraComponent} from '../../ejecutora/ejecutora.component';
 import {EjecutoraIndexComponent} from '../../ejecutora/ejecutora-index/ejecutora-index.component';
 import {EjecutoraCreateComponent} from '../../ejecutora/ejecutora-create/ejecutora-create.component';
 import {EjecutoraUpdateComponent} from '../../ejecutora/ejecutora-update/ejecutora-update.component';
+import {TipoProyectoComponent} from "../../tipo-proyecto/tipo-proyecto.component";
+import {TipoProyectoIndexComponent} from "../../tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component";
+import {TipoProyectoCreateComponent} from "../../tipo-proyecto/tipo-proyecto-create/tipo-proyecto-create.component";
+import {TipoProyectoUpdateComponent} from "../../tipo-proyecto/tipo-proyecto-update/tipo-proyecto-update.component";
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -151,6 +155,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: TipoPersonaUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'tipoproyectos',  component: TipoProyectoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: TipoProyectoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: TipoProyectoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: TipoProyectoUpdateComponent
             },
             {
                 path: '',

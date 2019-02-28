@@ -10,7 +10,6 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./tipo-evento-create.component.scss']
 })
 export class TipoEventoCreateComponent implements OnInit {
-
     tipoeventoGroup:  FormGroup;
     constructor(private fb: FormBuilder,
                 private router: Router,
@@ -18,17 +17,14 @@ export class TipoEventoCreateComponent implements OnInit {
                 private toastrService: ToastrService) {
         this.crearForm();
     }
-
     ngOnInit() {
     }
-
     crearForm() {
         this.tipoeventoGroup = this.fb.group({
             'nombre' : ['', [Validators.required]],
             'descripcion' : [''],
         });
     }
-
     store() {
         this.tipoEventoService.store(this.tipoeventoGroup.value)
             .subscribe((res: any) => {

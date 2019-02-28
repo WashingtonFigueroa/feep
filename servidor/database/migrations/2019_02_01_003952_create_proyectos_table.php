@@ -15,12 +15,16 @@ class CreateProyectosTable extends Migration
     {
         Schema::create('proyectos', function (Blueprint $table) {
             $table->increments('proyecto_id');
-                $table->integer('barrio_id')->unsigned();
+            $table->integer('tipo_proyecto_id')->unsigned();
+            $table->foreign('tipo_proyecto_id')
+                ->references('tipo_proyecto_id')
+                ->on('tipo_proyectos')
+                ->onDelete('cascade');
+            $table->integer('barrio_id')->unsigned();
                 $table->foreign('barrio_id')
                     ->references('barrio_id')
                     ->on('barrios')
                     ->onDelete('cascade');
-            $table->string('tipo')->nullable();
             $table->string('nombre')->nullable();
             $table->string('imagen')->nullable();
             $table->date('inicio')->nullable();
@@ -30,7 +34,6 @@ class CreateProyectosTable extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

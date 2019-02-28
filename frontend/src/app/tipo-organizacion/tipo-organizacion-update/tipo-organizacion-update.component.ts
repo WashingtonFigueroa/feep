@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {ActivatedRoute, Router} from "@angular/router";
-import {TipoOrganizacionService} from "../tipo-organizacion.service";
-import {ToastrService} from "ngx-toastr";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute, Router} from '@angular/router';
+import {TipoOrganizacionService} from '../tipo-organizacion.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-tipo-organizacion-update',
@@ -10,7 +10,6 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./tipo-organizacion-update.component.scss']
 })
 export class TipoOrganizacionUpdateComponent implements OnInit {
-
     tipo_organizacion_id: number = null;
     tipo_organizacion: any = null;
     tipoOrganizacionGroup: FormGroup;
@@ -28,21 +27,18 @@ export class TipoOrganizacionUpdateComponent implements OnInit {
                 });
         });
     }
-
     ngOnInit() {
     }
-
     crearForm() {
         this.tipoOrganizacionGroup = this.fb.group({
             'nombre' : [this.tipo_organizacion.nombre, [Validators.required]],
             'descripcion' : [this.tipo_organizacion.descripcion]
         });
     }
-
     update() {
         this.tipoOrganizacionService.update(this.tipo_organizacion_id, this.tipoOrganizacionGroup.value)
             .subscribe((res: any) => {
-              this.toastrService.success('Actualizado','Tipo Organización')
+              this.toastrService.success('Actualizado', 'Tipo Organización')
                 this.router.navigate(['/tipoorganizacion']);
             });
     }

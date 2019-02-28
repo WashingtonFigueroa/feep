@@ -16,8 +16,7 @@ export class OrganizacionCreateComponent implements OnInit {
     organizacionGroup: FormGroup;
     tipo_organizaciones: any = null;
     actividades: any = null;
-
-    constructor(private organizacionService: OrganizacionService,
+      constructor(private organizacionService: OrganizacionService,
                 private tipoorgsService: TipoOrganizacionService,
                 private actividadService: ActividadService,
                 private router: Router,
@@ -33,10 +32,8 @@ export class OrganizacionCreateComponent implements OnInit {
             });
         this.crearForm();
     }
-
     ngOnInit() {
     }
-
     crearForm() {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': [0, [Validators.required]],

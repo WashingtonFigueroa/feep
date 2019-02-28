@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TipoInsumoService} from "../../tipo-insumo/tipo-insumo.service";
-import {TipoEventoService} from "../tipo-evento.service";
+import {TipoEventoService} from '../tipo-evento.service';
 
 @Component({
   selector: 'app-tipo-evento-index',
@@ -8,7 +7,6 @@ import {TipoEventoService} from "../tipo-evento.service";
   styleUrls: ['./tipo-evento-index.component.scss']
 })
 export class TipoEventoIndexComponent implements OnInit {
-
     tipoEventos: any = null;
     pages: any = [];
     constructor(private tipoEventosService: TipoEventoService) {
@@ -36,14 +34,12 @@ export class TipoEventoIndexComponent implements OnInit {
                 this.tipoEventos = res;
             })
     }
-    destroy(tipo_insumo, index) {
-        if (confirm(`¿Esta seguro de eliminar ${tipo_insumo.nombre}?`)) {
-            this.tipoEventosService.destroy(tipo_insumo.tipo_insumo_id)
+    destroy(tipoevento, index) {
+        if (confirm(`¿Esta seguro de eliminar ${tipoevento.nombre}?`)) {
+            this.tipoEventosService.destroy(tipoevento.tipo_evento_id)
                 .subscribe((res: any) => {
                     this.tipoEventos.data.splice(index, 1);
                 });
-
         }
     }
-
 }

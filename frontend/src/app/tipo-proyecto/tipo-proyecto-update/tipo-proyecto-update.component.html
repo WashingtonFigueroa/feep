@@ -5,11 +5,11 @@
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">
-          <button class="btn btn-info" routerLink="/tipoeventos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Editar Tipo Evento</h5>
+          <button class="btn btn-info" routerLink="/tipoorganizacion"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+          <h5 class="title">Editar Tipo de proyecto</h5>
         </div>
         <div class="card-body">
-          <form (submit)="update()" [formGroup]="tipoeventoGroup" *ngIf="tipoevento !== null" role="form">
+          <form (submit)="update()" [formGroup]="tipoproyectoGroup" *ngIf="tipoproyecto !== null" role="form">
             <div class="form-group">
               <label>Nombre</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
@@ -21,8 +21,8 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <button class="btn btn-primary" type="submit" [disabled]="tipoeventoGroup.status === 'INVALID'">Actualizar&nbsp;  <span class="fa fa-save"></span></button>
-                  <a class="btn btn-dark" routerLink="/tipoeventos" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <button class="btn btn-primary" type="submit" [disabled]="tipoproyectoGroup.status === 'INVALID'">Actualizar&nbsp;  <span class="fa fa-save"></span></button>
+                  <a class="btn btn-dark" routerLink="/tipoproyectos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
                 </div>
               </div>
             </div>

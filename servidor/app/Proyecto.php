@@ -11,8 +11,8 @@ class Proyecto extends Model
     protected $table = 'proyectos';
     protected $primaryKey = 'proyecto_id';
     protected $fillable = [
+        'tipo_proyecto_id',
         'barrio_id',
-        'tipo',
         'nombre',
         'imagen',
         'inicio',

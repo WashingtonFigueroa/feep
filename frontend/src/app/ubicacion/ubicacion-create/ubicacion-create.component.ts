@@ -29,7 +29,7 @@ export class UbicacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.provincias = res;
             });
-        this.ubicacionService.barrioslistar()
+        this.ubicacionService.parroquiaslistar()
             .subscribe((res: any) => {
                 this.parroquias = res;
             });

@@ -10,12 +10,27 @@ class EjecutoraController extends Controller
 {
     public function index()
     {
-        $ejecutoras = Ejecutora::orderBy('ejecutora_id', 'desc')->paginate(10);
+        $ejecutoras = Ejecutora::join('proyectos', 'proyectos.proyecto_id', '=', 'ejecutoras.proyecto_id')
+            ->join('organizaciones', 'organizaciones.organizacion_id', '=', 'ejecutoras.organizacion_id')
+            ->selectRaw('ejecutoras.*, organizaciones.nombre as organizacion, proyectos.nombre as proyecto')
+            ->orderBy('ejecutoras.ejecutora_id', 'desc')
+            ->paginate(10);
         return response()->json($ejecutoras, 200);
     }
     public function listar()
     {
         $ejecutoras = Ejecutora::orderBy('ejecutora_id', 'desc')->get();
+        return response()->json($ejecutoras, 200);
+    }
+    public function buscar($valor = '') {
+        $ejecutoras = Ejecutora::join('proyectos', 'proyectos.proyecto_id', '=', 'ejecutoras.proyecto_id')
+            ->join('organizaciones', 'organizaciones.organizacion_id', '=', 'ejecutoras.organizacion_id')
+            ->selectRaw('ejecutoras.*, organizaciones.nombre as organizacion, proyectos.nombre as proyecto')
+            ->where('organizacion.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('proyecto.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('ejecutoras.tipo', 'like', '%' . $valor . '%')
+            ->orderBy('ejecutoras.ejecutora_id', 'desc')
+            ->paginate(10);
         return response()->json($ejecutoras, 200);
     }
     public function store(Request $request)

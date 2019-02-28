@@ -11,17 +11,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+//TIPO ORGANIZACIONES
         \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'Cooperativa','descripcion' => '']);
         \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'Asociación','descripcion' => '']);
         \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'Regulada','descripcion' => '']);
         \App\TipoOrganizacion::create(['tipo' => 'OSG','nombre' => 'OSG','descripcion' => '']);
-
+//ACTIVIDADES
         \App\Actividad::create(['nombre' => 'Producción','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'Servicio','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'Transformación','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'Comercialización','descripcion' => '']);
-
-//        //Provincias
+//TIPO PROYECTOS
+        \App\TipoProyecto::create(['nombre' => 'RECREACION','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);
+        \App\TipoProyecto::create(['nombre' => 'COMUNICACION','descripcion' => 'DESARROLLO']);
+//TIPO EVENTOS
+        \App\TipoEvento::create(['nombre' => 'TALLER','descripcion' => 'DE COMPUTACION']);
+        \App\TipoEvento::create(['nombre' => 'PINTURA','descripcion' => 'ARTES PALSTICAS']);
+        //PROVINCIAS
         \App\Provincia::create(['codigo' => '01','nombre' => 'AZUAY']);
         \App\Provincia::create(['codigo' => '02','nombre' => 'BOLIVAR']);
         \App\Provincia::create(['codigo' => '03','nombre' => 'CAÑAR']);
@@ -47,7 +53,13 @@ class DatabaseSeeder extends Seeder
         \App\Provincia::create(['codigo' => '23','nombre' => 'SANTO DOMINGO DE LOS TSACHILAS']);
         \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
         \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
-//        //Cantones
+//Cantones
+        \App\Ciudad::create(['provincia_id' => 10,'codigo' => '101', 'nombre' => 'IBARRA']);
+//Parroquia
+        \App\Parroquia::create(['ciudad_id' => 1,'codigo' => '1001', 'nombre' => 'SAN ANTONIO']);
+//Barrio
+        \App\Barrio::create(['parroquia_id' => 1,'comunidad' => '', 'nombre' => 'LOS SOLES']);
+
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => 'ZONAS NO DELIMITADAS','descripcion' => '']);
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => ' CUENCA ','descripcion' => '']);
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => ' GIRÓN ','descripcion' => '']);

@@ -27,9 +27,8 @@ Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar'
 Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
 Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 Route::get('provincias-listar', 'API\ProvinciaController@listar');
-Route::get('barrios-listar', 'API\BarrioController@listar');
+
 Route::get('ciudades-listar', 'API\CiudadController@listar');
-Route::get('parroquias-listar', 'API\ParroquiaController@listar');
 Route::get('tipo-eventos-listar', 'API\TipoEventoController@listar');
 
 Route::get('tipo-insumos-listar', 'API\TipoInsumoController@listar');
@@ -38,6 +37,13 @@ Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
 Route::get('tipos-listar', 'API\SuministroController@listar');
 Route::get('personas-listar', 'API\PersonaController@listar');
 Route::get('eventos-listar', 'API\EventoController@listar');
+//¨Parroquia
+Route::get('parroquias-listar', 'API\ParroquiaController@listar');
+
+//Barrios
+Route::get('barrios-listar', 'API\BarrioController@listar');
+//Tipo proyectos
+Route::get('tipo-proyectos-listar', 'API\TipoProyectoController@listar');
 //Proyectos
 Route::get('proyectos-listar', 'API\ProyectoController@listar');
 Route::get('proyectos-buscar/{valor?}', 'API\ProyectoController@buscar');
@@ -71,6 +77,7 @@ Route::apiResources([
     'barrios' => 'API\BarrioController',
     'ciudades' => 'API\CiudadController',
     'personas' => 'API\PersonaController',
+    'tipo-proyectos' => 'API\TipoProyectoController',
     'proyectos' => 'API\ProyectoController',
     'ejecutoras' => 'API\EjecutoraController',
     'eventos' => 'API\EventoController',

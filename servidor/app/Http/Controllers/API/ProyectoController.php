@@ -11,9 +11,10 @@ class ProyectoController extends Controller
 {
     public function index()
     {
-        $proyecto = Proyecto::join('barrios', 'barrios.barrio_id', '=', 'proyecto.barrio_id')
-            ->selectRaw('proyecto.*, barrios.nombre as barrio')
-            ->orderBy('proyecto.proyecto_id', 'desc')
+        $proyecto = Proyecto::join('tipo_proyectos', 'tipo_proyectos.tipo_proyecto_id', '=', 'proyectos.tipo_proyecto_id')
+            ->join('barrios', 'barrios.barrio_id', '=', 'proyectos.barrio_id')
+            ->selectRaw('proyectos.*, barrios.nombre as barrio, tipo_proyectos.nombre as tipoproyecto')
+            ->orderBy('proyectos.proyecto_id', 'desc')
             ->paginate(10);
         return response()->json($proyecto, 200);
     }
@@ -24,13 +25,14 @@ class ProyectoController extends Controller
     }
 
     public function buscar($valor = '') {
-        $proyecto = Proyecto::join('barrios', 'barrios.barrio_id', '=', 'proyecto.barrio_id')
-            ->selectRaw('proyecto.*, barrios.nombre as barrio')
-            ->where('proyecto.nombre', 'like', '%' . $valor . '%')
-            ->orWhere('proyecto.inicio', 'like', '%' . $valor . '%')
-            ->orWhere('proyecto.fin', 'like', '%' . $valor . '%')
+        $proyecto = Proyecto::join('tipo_proyectos', 'tipo_proyectos.tipo_proyecto_id', '=', 'proyectos.tipo_proyecto_id')
+            ->join('barrios', 'barrios.barrio_id', '=', 'proyectos.barrio_id')
+            ->selectRaw('proyectos.*, barrios.nombre as barrio, tipo_proyectos.nombre as tipoproyecto')
+            ->where('proyectos.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('proyectos.inicio', 'like', '%' . $valor . '%')
+            ->orWhere('proyectos.fin', 'like', '%' . $valor . '%')
             ->orWhere('barrio.nombre', 'like', '%' . $valor . '%')
-            ->orderBy('proyecto.proyecto_id', 'desc')
+            ->orderBy('proyectos.proyecto_id', 'desc')
             ->paginate(10);
         return response()->json($proyecto, 200);
     }
@@ -55,7 +57,7 @@ class ProyectoController extends Controller
     public function update(Request $request, $id)
     {
         $proyecto = Proyecto::find($id);
-        $proyecto->update($proyecto);
+        $proyecto->update($request->all());
         return response()->json($proyecto, 200);
     }
     public function destroy($id)
