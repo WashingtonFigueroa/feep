@@ -50,7 +50,7 @@ export class EjecutoraCreateComponent implements OnInit {
         this.ejecutoraService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Datos Agregados', 'Aliados');
-                this.router.navigate(['/ejecutoras']);
+            //limpiar todos los campos menos el proyecto
             }, (error) => {
                 this.toastrService.warning('Registrada', 'Aliados');
             });
