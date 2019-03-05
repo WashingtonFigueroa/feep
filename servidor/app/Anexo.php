@@ -12,7 +12,7 @@ class Anexo extends Model
     protected $primaryKey = 'anexo_id';
     protected $fillable = [
         'evento_id',
-        'imagen',
+        'archivo',
         'descripcion',
     ];
     protected $dates = ['deleted_at'];

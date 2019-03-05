@@ -32,7 +32,6 @@
                       <th> #   </th>
                       <th> Evento   </th>
                       <th> Insumo   </th>
-                      <th> Nombre   </th>
                       <th> Cantidad   </th>
                       <th> fecha   </th>
                       <th> imagen   </th>
@@ -43,15 +42,14 @@
                     <tbody>
                     <tr *ngFor="let insumo of insumos.data; let i = index">
                       <td>  {{ i + 1}} </td>
-                      <td>  {{ insumo.evento_id }} </td>
-                      <td>  {{ insumo.tipo_id }} </td>
-                      <td>  {{ insumo.nombre }} </td>
-                      <td>  {{ insumo.cantidad }} </td>
+                      <td>  {{ insumo.evento}} </td>
+                      <td>  {{ insumo.tipo }} </td>
+                       <td>  {{ insumo.cantidad }} </td>
                       <td>  {{ insumo.fecha }} </td>
                       <td>  {{ insumo.imagen }} </td>
                       <td>  {{ insumo.receptor}} </td>
                       <td class="text-center">
-                        <button routerLink="/insumos/editar/{{insumo.insumo_id}}" type="button"
+                        <button routerLink="/asignaciones/editar/{{insumo.insumo_id}}" type="button"
                                 class="btn btn-xs btn-info">
                           <i class="fa fa-edit"></i>
                         </button>

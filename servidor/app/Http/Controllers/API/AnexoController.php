@@ -8,30 +8,39 @@ use App\Http\Controllers\Controller;
 
 class AnexoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        return response()->json(Anexo::get(), 200);
+        $eventos = Anexo::join('eventos', 'eventos.evento_id', '=', 'anexos.evento_id')
+            ->selectRaw('anexos.*, eventos.nombre as evento')
+            ->orderBy('anexos.anexo_id', 'desc')
+            ->paginate(10);
+        return response()->json($eventos, 200);
+    }
+    public function listar()
+    {
+        $anexo = Anexo::orderBy('anexo_id', 'desc')->get();
+        return response()->json($anexo, 200);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    public function buscar($valor = '') {
+        $proyecto = Anexo::join('eventos', 'eventos.evento_id', '=', 'anexos.evento_id')
+            ->selectRaw('anexos.*, eventos.*')
+            ->where('anexos.descripcion', 'like', '%' . $valor . '%')
+            ->orderBy('anexos.anexo_id', 'desc')
+            ->paginate(10);
+        return response()->json($proyecto, 200);
+    }
     public function store(Request $request)
     {
-        if ($request->hasFile('imagen')) {
-            $url = $request->file('imagen')->store('anexos');
+        if ($request->hasFile('anexo')) {
+            $url = $request->file('anexo')->store('anexos');
             $anexo = new Anexo();
             $anexo->fill($request->all());
-            $anexo->imagen = explode('/', $url)[1];
+            $anexo->archivo = explode('/', $url)[1];
             $anexo->save();
+            return response()->json($anexo, 201);
+        } else {
+            $anexo = Anexo::create($request->all());
             return response()->json($anexo, 201);
         }
     }

@@ -10,19 +10,11 @@ class OrganizacionController extends Controller
 {
     public function index()
     {
-      // $organizaciones = Organizacion::orderBy('organizacion_id','desc')->paginate(10);
-
-
-
         $organizaciones = Organizacion::join('tipo_organizaciones', 'tipo_organizaciones.tipo_organizacion_id', '=', 'organizaciones.tipo_organizacion_id')
             ->join('actividades', 'actividades.actividad_id', '=', 'organizaciones.actividad_id')
             ->selectRaw('organizaciones.*, tipo_organizaciones.nombre as tipoorganizacion, actividades.nombre as actividad')
             ->orderBy('organizacion_id','desc')
             ->paginate(10);
-
-
-
-
         return response()->json($organizaciones, 200);
     }
     public function listar()

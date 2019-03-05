@@ -12,6 +12,7 @@ class Evento extends Model
     protected $primaryKey = 'evento_id';
     protected $fillable = [
         'proyecto_id',
+        'usuario_id',
         'tipo_evento_id',
         'barrio_id',
         'nombre',

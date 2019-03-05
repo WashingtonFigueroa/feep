@@ -69,10 +69,14 @@ class UsuarioController extends Controller
         $usuario->save();
         return response()->json($usuario, 201);
     }
+    public function buscar_usuario ($id) {
+        $usuario = Usuario::find($id);
+        return response()->json($usuario, 200);
+    }
     public function update($id) {
         $usuario = Usuario::find($id);
         $usuario->update(request()->all());
-        return response()->json($usuario, 20);
+        return response()->json($usuario, 200);
     }
     public function destroy($id) {
         $usuario = Usuario::find($id);

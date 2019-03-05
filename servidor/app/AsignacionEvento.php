@@ -11,8 +11,9 @@ class AsignacionEvento extends Model
     protected $table = 'asignacion_eventos';
     protected $primaryKey = 'asignacion_evento_id';
     protected $fillable = [
-        'evento_id',
-        'usuario_id'
+        'proyecto_id',
+        'usuario_id',
+        'descripcion'
     ];
     protected $dates = ['deleted_at'];
 }

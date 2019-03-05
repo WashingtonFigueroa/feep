@@ -16,7 +16,7 @@ class CreateTipoInsumosTable extends Migration
         Schema::create('tipo_insumos', function (Blueprint $table) {
             $table->increments('tipo_insumo_id');
             $table->string('nombre');
-            $table->string('descripcion');
+            $table->string('descripcion')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

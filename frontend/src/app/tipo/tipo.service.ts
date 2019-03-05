@@ -10,7 +10,7 @@ export class TipoService {
     return this.http.get(`${this.base}tipos`);
   }
   listar() {
-    return this.http.get(`${this.base}tipos-listar`);
+    return this.http.get(`${this.base}tipo-listar`);
   }
   load(url) {
     return this.http.get(url);

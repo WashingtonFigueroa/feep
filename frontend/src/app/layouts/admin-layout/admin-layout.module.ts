@@ -105,7 +105,16 @@ import { TipoProyectoIndexComponent } from '../../tipo-proyecto/tipo-proyecto-in
 import { TipoProyectoUpdateComponent } from '../../tipo-proyecto/tipo-proyecto-update/tipo-proyecto-update.component';
 import { TipoProyectoCreateComponent } from '../../tipo-proyecto/tipo-proyecto-create/tipo-proyecto-create.component';
 import {TipoProyectoService} from '../../tipo-proyecto/tipo-proyecto.service';
-
+import { AsignacionEventoComponent } from '../../asignacion-evento/asignacion-evento.component';
+import { AsignacionEventoIndexComponent } from '../../asignacion-evento/asignacion-evento-index/asignacion-evento-index.component';
+import {AsignacionEventoService} from '../../asignacion-evento/asignacion-evento.service';
+import { AsignacionEventoCreateComponent } from '../../asignacion-evento/asignacion-evento-create/asignacion-evento-create.component';
+import { AsignacionEventoUpdateComponent } from '../../asignacion-evento/asignacion-evento-update/asignacion-evento-update.component';
+import { AnexoComponent } from '../../anexo/anexo.component';
+import { AnexoIndexComponent } from '../../anexo/anexo-index/anexo-index.component';
+import { AnexoCreateComponent } from '../../anexo/anexo-create/anexo-create.component';
+import { AnexoUpdateComponent } from '../../anexo/anexo-update/anexo-update.component';
+import {AnexoService} from '../../anexo/anexo.service';
 
 @NgModule({
   imports: [
@@ -201,7 +210,15 @@ import {TipoProyectoService} from '../../tipo-proyecto/tipo-proyecto.service';
       TipoProyectoComponent,
       TipoProyectoIndexComponent,
       TipoProyectoUpdateComponent,
-      TipoProyectoCreateComponent
+      TipoProyectoCreateComponent,
+      AsignacionEventoComponent,
+      AsignacionEventoIndexComponent,
+      AsignacionEventoCreateComponent,
+      AsignacionEventoUpdateComponent,
+      AnexoComponent,
+      AnexoIndexComponent,
+      AnexoCreateComponent,
+      AnexoUpdateComponent,
   ],
   providers: [
       OrganizacionService,
@@ -223,7 +240,9 @@ import {TipoProyectoService} from '../../tipo-proyecto/tipo-proyecto.service';
       ActividadService,
       ProyectoService,
       EjecutoraService,
-      TipoProyectoService
+      TipoProyectoService,
+      AsignacionEventoService,
+      AnexoService,
   ]
 })
 

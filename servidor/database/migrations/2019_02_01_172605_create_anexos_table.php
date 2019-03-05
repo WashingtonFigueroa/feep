@@ -20,7 +20,7 @@ class CreateAnexosTable extends Migration
                 ->references('evento_id')
                 ->on('eventos')
                 ->onDelete('cascade');
-            $table->string('imagen');
+            $table->string('archivo');
             $table->string('descripcion');
             $table->softDeletes();
             $table->timestamps();

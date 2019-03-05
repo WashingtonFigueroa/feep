@@ -1,0 +1,70 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-info" routerLink="/anexos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+          <h5 class="title">Registrar Anexo</h5>
+        </div>
+        <div class="card-body">
+          <form (submit)="store()"[formGroup]="anexoGroup" *ngIf="eventos !== null" role="form">
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="evento_id">* Seleccione Proyecto</label>
+                  <select name="evento_id" id="evento_id" formControlName="evento_id" class="form-control">
+                    <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="archivo" class="upload">Archivo o Imagen &nbsp;<i class="fa fa-upload"></i></label>
+                  <input type="file" class="form-control" #archivo formControlName="archivo" name="archivo" id="archivo">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pl-1">
+                <div class="form-group">
+                  <label>Descripción</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="form-group">
+                    <button class="btn btn-primary" type="submit" [disabled]="anexoGroup.status === 'INVALID'">Guardar &nbsp;
+                      <span class="fa fa-save"></span>
+                    </button>
+                    <a class="btn btn-dark"
+                       routerLink="/anexos/listar">Cancelar &nbsp;
+                      <span class="fa fa-window-close"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <br><br>
+            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

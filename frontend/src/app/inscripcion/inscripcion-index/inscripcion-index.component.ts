@@ -8,7 +8,6 @@ import {InscripcionService} from "../inscripcion.service";
   styleUrls: ['./inscripcion-index.component.scss']
 })
 export class InscripcionIndexComponent implements OnInit {
-
     prev_page: string = null;
     next_page: string = null;
     last_page: number = null;

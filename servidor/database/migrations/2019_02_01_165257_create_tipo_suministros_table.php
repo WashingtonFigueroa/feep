@@ -21,7 +21,7 @@ class CreateTipoSuministrosTable extends Migration
                 ->on('suministros')
                 ->onDelete('cascade');
             $table->string('nombre');
-            $table->string('descripcion');
+            $table->string('descripcion')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -39,7 +39,7 @@
               <div class="col-md-6 pr-1">
                 <div class="form-group">
                   <label>* Tema</label>
-                  <input type="text" class="form-control" formControlName="nombre" name="nombre" >
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" >
                 </div>
               </div>
               <div class="col-md-6 pr-1">
@@ -61,7 +61,7 @@
               <div class="col-md-6 pl-1">
                 <div class="form-group">
                   <label>Dirección</label>
-                  <input type="text" class="form-control" formControlName="direccion" name="direccion">
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion">
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@
               <div class="col-md-4 pl-1">
                 <div class="form-group">
                   <label>Tiempo de Duración</label>
-                  <input type="number" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
+                  <input type="number" onKeyPress="if(this.value.length==2) return false;" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
                 </div>
               </div>
             </div>
@@ -89,13 +89,13 @@
             <!--<div class="col-md-4 pr-1">-->
             <!--<div class="form-group">-->
             <!--<label>Latitud</label>-->
-            <!--<input type="text" class="form-control" formControlName="latitud" name="latitud" id="latitud">-->
+            <!--<input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="latitud" name="latitud" id="latitud">-->
             <!--</div>-->
             <!--</div>-->
             <!--<div class="col-md-4 px-1">-->
             <!--<div class="form-group">-->
             <!--<label>Longitud</label>-->
-            <!--<input type="text" class="form-control" formControlName="longitud" name="longitud" id="longitud">-->
+            <!--<input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="longitud" name="longitud" id="longitud">-->
             <!--</div>-->
             <!--</div>-->
             <!--</div>-->

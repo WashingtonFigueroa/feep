@@ -11,12 +11,13 @@ export const ROUTES: RouteInfo[] = [
     { path: '/organizaciones', title: 'Organizacion',  icon: 'business_bank', class: '' },
     { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
     { path: '/proyectos', title: 'Proyectos',  icon: 'business_globe', class: '' },
-   // { path: '/organizadores', title: 'Organizadores',  icon: 'business_badge', class: '' },
+    { path: '/asignacioneventos', title: 'Asignar Proyectos',  icon: 'business_badge', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
+    { path: '/anexos', title: 'Subir Anexos',  icon: 'arrows-1_cloud-upload-94', class: '' },
     { path: '/asignaciones', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
     { path: '/inscripciones', title: 'Inscripciones',  icon: 'education_atom', class: '' },
-    { path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
-    { path: '/ubicaciones', title: 'Ubicación',  icon: 'location_map-big', class: '' }
+    //{ path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
+    //{ path: '/ubicaciones', title: 'Ubicación',  icon: 'location_map-big', class: '' }
 ];
 
 @Component({

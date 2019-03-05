@@ -8,11 +8,6 @@ use App\Http\Controllers\Controller;
 
 class TipoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $tipos = Tipo::join('tipo_suministros', 'tipo_suministros.tipo_suministro_id', '=', 'tipos.tipo_suministro_id')

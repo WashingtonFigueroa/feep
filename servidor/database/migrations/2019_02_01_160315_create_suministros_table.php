@@ -21,7 +21,7 @@ class CreateSuministrosTable extends Migration
                 ->on('tipo_insumos')
                 ->onDelete('cascade');
             $table->string('nombre');
-            $table->string('descripcion');
+            $table->string('descripcion')->nullable();;
             $table->softDeletes();
             $table->timestamps();
         });

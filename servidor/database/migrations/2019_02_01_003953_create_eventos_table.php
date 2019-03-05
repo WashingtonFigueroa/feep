@@ -21,6 +21,12 @@ class CreateEventosTable extends Migration
                 ->on('proyectos')
                 ->onDelete('cascade');
 
+            $table->integer('usuario_id')->unsigned();
+            $table->foreign('usuario_id')
+                ->references('usuario_id')
+                ->on('usuarios')
+                ->onDelete('cascade');
+
             $table->integer('tipo_evento_id')->unsigned();
             $table->foreign('tipo_evento_id')
                 ->references('tipo_evento_id')

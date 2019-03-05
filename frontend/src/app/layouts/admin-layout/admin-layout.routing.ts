@@ -78,6 +78,14 @@ import {TipoProyectoComponent} from "../../tipo-proyecto/tipo-proyecto.component
 import {TipoProyectoIndexComponent} from "../../tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component";
 import {TipoProyectoCreateComponent} from "../../tipo-proyecto/tipo-proyecto-create/tipo-proyecto-create.component";
 import {TipoProyectoUpdateComponent} from "../../tipo-proyecto/tipo-proyecto-update/tipo-proyecto-update.component";
+import {AsignacionEventoComponent} from "../../asignacion-evento/asignacion-evento.component";
+import {AsignacionEventoIndexComponent} from "../../asignacion-evento/asignacion-evento-index/asignacion-evento-index.component";
+import {AsignacionEventoCreateComponent} from "../../asignacion-evento/asignacion-evento-create/asignacion-evento-create.component";
+import {AsignacionEventoUpdateComponent} from "../../asignacion-evento/asignacion-evento-update/asignacion-evento-update.component";
+import {AnexoComponent} from "../../anexo/anexo.component";
+import {AnexoIndexComponent} from "../../anexo/anexo-index/anexo-index.component";
+import {AnexoCreateComponent} from "../../anexo/anexo-create/anexo-create.component";
+import {AnexoUpdateComponent} from "../../anexo/anexo-update/anexo-update.component";
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -122,6 +130,26 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
+    { path: 'asignacioneventos',  component: AsignacionEventoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: AsignacionEventoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: AsignacionEventoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: AsignacionEventoUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
     { path: 'miembros',  component: MiembroComponent,
         children: [
             {
@@ -135,6 +163,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: MiembroUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'anexos',  component: AnexoComponent,
+        children: [
+            {
+                path: 'listar',
+                component: AnexoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: AnexoCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component: AnexoUpdateComponent
             },
             {
                 path: '',

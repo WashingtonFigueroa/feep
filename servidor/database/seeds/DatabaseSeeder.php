@@ -11,22 +11,44 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //TIPO USUARIOS
+        \App\Usuario::create(['nombres' => 'Washington Figueroa','cuenta' => 'Figo','password' => '123456','email' => 'w.figo.1991@gmail.com','tipo' => 'root']);
+
 //TIPO ORGANIZACIONES
-        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'Cooperativa','descripcion' => '']);
-        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'Asociación','descripcion' => '']);
-        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'Regulada','descripcion' => '']);
+        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'COOPERATIVA','descripcion' => '']);
+        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'ASOCIACIÓN','descripcion' => '']);
+        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'REGULADA','descripcion' => '']);
         \App\TipoOrganizacion::create(['tipo' => 'OSG','nombre' => 'OSG','descripcion' => '']);
 //ACTIVIDADES
-        \App\Actividad::create(['nombre' => 'Producción','descripcion' => '']);
-        \App\Actividad::create(['nombre' => 'Servicio','descripcion' => '']);
-        \App\Actividad::create(['nombre' => 'Transformación','descripcion' => '']);
-        \App\Actividad::create(['nombre' => 'Comercialización','descripcion' => '']);
+        \App\Actividad::create(['nombre' => 'PRODUCCIÓN','descripcion' => '']);
+        \App\Actividad::create(['nombre' => 'SERVICIO','descripcion' => '']);
+        \App\Actividad::create(['nombre' => 'TRANSFORMACIÓN','descripcion' => '']);
+        \App\Actividad::create(['nombre' => 'COMERCIALIZACIÓN','descripcion' => '']);
 //TIPO PROYECTOS
-        \App\TipoProyecto::create(['nombre' => 'RECREACION','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);
-        \App\TipoProyecto::create(['nombre' => 'COMUNICACION','descripcion' => 'DESARROLLO']);
+        \App\TipoProyecto::create(['nombre' => 'RECREACIÓN','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);
+        \App\TipoProyecto::create(['nombre' => 'COMUNICACIÓN','descripcion' => 'DESARROLLO']);
 //TIPO EVENTOS
-        \App\TipoEvento::create(['nombre' => 'TALLER','descripcion' => 'DE COMPUTACION']);
-        \App\TipoEvento::create(['nombre' => 'PINTURA','descripcion' => 'ARTES PALSTICAS']);
+        \App\TipoEvento::create(['nombre' => 'TALLER','descripcion' => 'CREACIÓN DE UN PRODUCTO']);
+        \App\TipoEvento::create(['nombre' => 'PINTURA','descripcion' => 'ARTES PLASTICAS']);
+
+//TIPO INSUMOS
+        \App\TipoInsumo::create(['nombre' => 'AGRÍCOLA','descripcion' => '']);
+        \App\TipoInsumo::create(['nombre' => 'PECUARIO','descripcion' => '']);
+        \App\TipoInsumo::create(['nombre' => 'TECNOLÓGICO','descripcion' => '']);
+//SUMINISTROS
+        \App\Suministro::create(['tipo_insumo_id' => 1,'nombre' => 'SEMILLAS','descripcion' => '']);
+        \App\Suministro::create(['tipo_insumo_id' => 1, 'nombre' => 'PLANTAS','descripcion' => '']);
+        \App\Suministro::create(['tipo_insumo_id' => 1, 'nombre' => 'ÁRBOLES','descripcion' => '']);
+        \App\Suministro::create(['tipo_insumo_id' => 3, 'nombre' => 'EQUIPOS','descripcion' => '']);
+//TIPO SUMINISTRO
+        \App\TipoSuministro::create(['suministro_id' => 1,'nombre' => 'FRUTALES','descripcion' => '']);
+        \App\TipoSuministro::create(['suministro_id' => 1, 'nombre' => 'ORNAMENTALES','descripcion' => '']);
+        \App\TipoSuministro::create(['suministro_id' => 4, 'nombre' => 'OFICINA','descripcion' => '']);
+//TIPOS
+        \App\Tipo::create(['tipo_suministro_id' => 1,'nombre' => 'MANZANA','descripcion' => '']);
+        \App\Tipo::create(['tipo_suministro_id' => 1, 'nombre' => 'LIMA','descripcion' => '']);
+        \App\Tipo::create(['tipo_suministro_id' => 3, 'nombre' => 'COMPUTADOR','descripcion' => '']);
+
         //PROVINCIAS
         \App\Provincia::create(['codigo' => '01','nombre' => 'AZUAY']);
         \App\Provincia::create(['codigo' => '02','nombre' => 'BOLIVAR']);
@@ -285,6 +307,11 @@ class DatabaseSeeder extends Seeder
 //   \App\Ciudad::create(['provincia_id' => 25, 'nombre' => ' LAS GOLONDRINAS ','descripcion' => '']);
 //   \App\Ciudad::create(['provincia_id' => 25, 'nombre' => ' MANGA DEL CURA ','descripcion' => '']);
 //   \App\Ciudad::create(['provincia_id' => 25, 'nombre' => ' EL PIEDRERO ','descripcion' => '']);
+
+//PROYECTO
+        \App\Proyecto::create(['tipo_proyecto_id' => 1,'barrio_id' => 1,'nombre' => 'RENACER','imagen' => '','inicio' => '2019-03-01','fin' => '2019-03-01']);
+//EVENTO
+        \App\Evento::create(['proyecto_id' => 1,'usuario_id' => 1,'tipo_evento_id' => 1,'barrio_id' => '1','nombre' => 'INAGURACION DTMOWED','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','fecha_evento' => '2019-03-01', 'direccion' => 'CALLE A Y CALLE B','duracion_horas' => '4','fecha_finaliza' => '2019-03-01']);
 //
 
     }

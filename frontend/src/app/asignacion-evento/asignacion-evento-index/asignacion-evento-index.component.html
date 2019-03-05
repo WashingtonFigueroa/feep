@@ -1,0 +1,85 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12">
+            <div style="overflow-x:auto;">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Asiganción Proyectos</h4>
+                  <div class="row">
+                    <div class="col-8">
+                      <button class="btn btn-primary" routerLink="/asignacioneventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                    </div>
+                    <div class="col-4">
+                      <form action="" method="post" class="form-inline" role="form">
+                        <div class="form-group">
+                          <label class="sr-only" for="">label</label>
+                          <input type="email" class="input-search" name="" id="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table small" *ngIf="asigancionproyectos !== null">
+                      <thead style="background-color: #303030; color: #f7f7f7">
+                      <tr>
+                        <th> #   </th>
+                        <th> Proyecto   </th>
+                        <th> Usuario Encargado   </th>
+                        <th> Descripción   </th>
+                        <th> Fecha Asignación   </th>
+                        <th class="text-center">Operaciones</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr *ngFor="let asignacionproyecto of asigancionproyectos.data; let i = index">
+                        <td>  {{ i + 1}} </td>
+                        <td>  {{ asignacionproyecto.proyecto }} </td>
+                        <td>  {{ asignacionproyecto.usuario }} </td>
+                        <td>  {{ asignacionproyecto.descripcion }} </td>
+                        <td>  {{ asignacionproyecto.created_at }} </td>
+                        <td class="text-center">
+                          <button routerLink="/asignacioneventos/editar/{{asignacionproyecto.asignacion_evento_id}}" type="button"
+                                  class="btn btn-xs btn-info">
+                            <i class="fa fa-edit"></i>
+                          </button>&nbsp;
+                          <button type="button" class="btn btn-xs btn-danger" (click)="destroy(asignacionproyecto, i)">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div *ngIf="asigancionproyectos !== null && asigancionproyectos.last_page > 1" class="paginacion text-center">
+                    <div>
+                      Página {{ asigancionproyectos.current_page }} de {{ asigancionproyectos.last_page }}
+                    </div>
+                    <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.first_page_url)"><i class="fa fa-backward"></i></button>
+                    <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.prev_page_url)" [disabled]="asigancionproyectos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                    <button class="paginacion-btn" *ngFor="let page of pages"
+                            [class.activated]="page.page == asigancionproyectos.current_page"
+                            (click)="loadPages(page.url)">{{ page.page }}</button>
+                    <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.next_page_url)" [disabled]="asigancionproyectos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                    <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.last_page_url)"><i class="fa fa-forward"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -10,67 +10,64 @@
         </div>
         <div class="card-body">
           <form (submit)="store()" [formGroup]="insumoGroup" *ngIf="eventos !== null && tipos !== null" role="form">
-
-            <div class="col-md-12 pr-1">
-              <div class="form-group">
-                <label>Seleccione Evento</label>
-                <select name="evento_id" id="evento_id" formControlName="evento_id" class="form-control">
-                  <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-12 pr-1">
-              <div class="form-group">
-                <label>Seleccione tipo Insumo</label>
-                <select name="tipo_id" id="tipo_id" formControlName="tipo_id" class="form-control">
-                  <option [value]="tipo.tipo_id" *ngFor="let tipo of tipos">{{ tipo.nombre }}</option>
-                </select>
-              </div>
-            </div>
             <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>Nombre</label>
-                  <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre">
+                  <label>* Seleccione Evento</label>
+                  <select name="evento_id" id="evento_id" formControlName="evento_id" class="form-control">
+                    <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
+                  </select>
                 </div>
               </div>
+              <div class="col-md-6 pl-1">
+                <div class="form-group">
+                  <label>* Seleccione tipo Insumo</label>
+                  <select name="tipo_id" id="tipo_id" formControlName="tipo_id" class="form-control">
+                    <option [value]="tipo.tipo_id" *ngFor="let tipo of tipos">{{ tipo.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--<div class="col-md-6 pl-1">-->
+                <!--<div class="form-group">-->
+                  <!--<label>Nombre</label>-->
+                  <!--<input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre">-->
+                <!--</div>-->
+              <!--</div>-->
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>Cantidad</label>
+                  <label>* Cantidad</label>
                   <input type="number" class="form-control" formControlName="cantidad" name="cantidad" id="cantidad">
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6 pl-1">
                 <div class="form-group">
                   <label>Fecha</label>
                   <input type="date" name="fecha" id="fecha" formControlName="fecha" class="form-control">
                 </div>
               </div>
-              <div class="col-md-6 pr-1">
-                <div class="form-group">
-                  <label>Imagen</label>
-                  <input type="file" class="form-control" formControlName="imagen" name="imagen" id="imagen">
-                </div>
-              </div>
             </div>
-
-            <div class="col-md-12 pr-1">
-              <div class="form-group">
-                <label>Receptor</label>
-                <input type="text" name="fecha" id="receptor" formControlName="receptor" class="form-control">
-              </div>
-            </div>
-
+           <div class="row">
+             <div class="col-md-6 pr-1">
+               <div class="form-group">
+                 <label>* Receptor</label>
+                 <input type="text" onKeyUp="this.value=this.value.toUpperCase();" name="receptor" id="receptor" formControlName="receptor" class="form-control">
+               </div>
+             </div>
+             <div class="col-md-6 pl-1">
+                   <label>Logo</label>
+                   <input type="file" class="form-control" #imagen name="imagen" id="imagen">
+             </div>
+           </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
                   <div class="form-group">
-                    <button class="btn btn-dark" routerLink="/asignaciones/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
                     <button class="btn btn-primary" [disabled]="insumoGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
-                  </div>  </div>
+                    <button class="btn btn-dark" routerLink="/asignaciones/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
+                  </div>
+                </div>
               </div>
             </div>
           </form>

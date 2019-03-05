@@ -48,6 +48,9 @@ Route::get('tipo-proyectos-listar', 'API\TipoProyectoController@listar');
 Route::get('proyectos-listar', 'API\ProyectoController@listar');
 Route::get('proyectos-buscar/{valor?}', 'API\ProyectoController@buscar');
 Route::get('proyectos-imagen/{url}', 'API\ProyectoController@imagen');
+//Asignacion Proyectos
+Route::get('asignacion-proyectos-listar', 'API\AsignacionEventoController@listar');
+Route::get('asignacion-proyectos-buscar/{valor?}', 'API\AsignacionEventoController@buscar');
 //Actividades
 Route::get('actividades-listar', 'API\ActividadController@listar');
 Route::get('actividades-buscar/{valor?}', 'API\ActividadController@buscar');
@@ -60,7 +63,16 @@ Route::get('suministros-buscar/{valor?}', 'API\SuministroController@buscar');
 Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@buscar');
 Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
 Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
+//Suministros tipo
+Route::get('tipo-listar', 'API\TipoController@listar');
+
+//Usuarios
+Route::get('usuarios-listar', 'API\UsuarioController@listar');
 Route::get('usuarios-buscar/{valor?}', 'API\UsuarioController@buscar');
+Route::get('buscar_usuario/{valor?}', 'API\UsuarioController@buscar_usuario');
+//Anexos
+Route::get('anexos-listar', 'API\AnexoController@listar');
+Route::get('anexos-buscar/{valor?}', 'API\AnexoController@buscar');
 
 //consultas
 Route::get('sri/{cedula}', 'API\PersonaController@sri');
@@ -89,8 +101,8 @@ Route::apiResources([
     'tipo-suministros' => 'API\TipoSuministroController',
     'tipos' => 'API\TipoController',
     'insumos' => 'API\InsumoController',
-    'anexo' => 'API\AnexoController',
+    'anexos' => 'API\AnexoController',
     'usuarios' => 'API\UsuarioController',
-    'asignacion-eventos' => 'API\AsignacionEventoController',
+    'asignacion-proyectos' => 'API\AsignacionEventoController',
     'actividades' => 'API\ActividadController'
 ]);

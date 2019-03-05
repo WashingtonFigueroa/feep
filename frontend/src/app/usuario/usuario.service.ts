@@ -13,6 +13,9 @@ export class UsuarioService {
   buscar(valor) {
     return this.http.get(`${this.base}usuarios-buscar/${valor}`);
   }
+    buscar_usuario(valor) {
+    return this.http.get(`${this.base}buscar_usuario/${valor}`);
+  }
   load(url) {
     return this.http.get(url);
   }

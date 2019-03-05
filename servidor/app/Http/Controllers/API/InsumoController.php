@@ -15,7 +15,12 @@ class InsumoController extends Controller
      */
     public function index()
     {
-        return response()->json(Insumo::orderBy('nombre')->paginate(10), 200);
+        $insumos = Insumo::join('eventos','eventos.evento_id','=','insumos.evento_id')
+            ->join('tipos','tipos.tipo_id','=','insumos.tipo_id')
+            ->selectRaw('insumos.*,eventos.nombre as evento, tipos.nombre as tipo')
+            ->orderBy('insumos.insumo_id','desc')
+            ->paginate(10);
+        return response()->json($insumos,200);
     }
 
     /**

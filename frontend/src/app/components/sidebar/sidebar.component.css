@@ -1,6 +1,6 @@
 /* define a fixed width for the entire menu */
 .navigation {
-    width: 300px;
+    width: 400px;
 }
 
 /* reset our lists to remove bullet points and padding */
@@ -12,7 +12,7 @@
 
 .mainmenu li:hover .submenu {
     display: block;
-    max-height: 320px;
+    max-height: 440px;
 }
 
 .submenu a {
