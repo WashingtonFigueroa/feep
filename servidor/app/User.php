@@ -24,7 +24,7 @@ class Usuario extends Authenticatable
         'cuenta',
         'password',
         'email',
-        'tipo',
+        'cargo_id',
     ];
 
     /**

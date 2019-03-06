@@ -24,11 +24,6 @@ class CreateUsersTable extends Migration
             $table->string('cuenta')->unique();
             $table->string('password');
             $table->string('email')->nullable();
-/*            $table->enum('tipo', [
-                'root',
-                'administrador',
-                'trabajador'
-            ]);*/
             $table->softDeletes();
             $table->timestamps();
         });

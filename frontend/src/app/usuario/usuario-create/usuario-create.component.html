@@ -7,7 +7,9 @@
           <h5 class="title">Registrar Usuario</h5>
         </div>
         <div class="card-body">
-          <form (submit)="store()" [formGroup]="usuarioGroup" role="form">
+          <form (submit)="store()"
+                *ngIf="cargos !== null"
+                [formGroup]="usuarioGroup" role="form">
             <div class="form-group">
               <div class="row">
                 <div class="col-6">
@@ -27,10 +29,11 @@
                   <input type="email" class="form-control" formControlName="email" name="email" id="email">
                 </div>
                 <div class="col-6">
-                  <label>Tipo</label>
-                  <select class="form-control" formControlName="tipo" name="tipo" id="tipo">
-                    <option value="administrador">Administrador</option>
-                    <option value="trabajador">Trabajador</option>
+                  <label>Cargo</label>
+                  <select class="form-control" formControlName="cargo_id"
+                          name="cargo_id"
+                          id="cargo_id">
+                    <option [value]="cargo.cargo_id" *ngFor="let cargo of cargos">{{ cargo.nombre }}</option>
                   </select>
                 </div>
               </div>

@@ -46,7 +46,10 @@ class UsuarioController extends Controller
         ], 200);
     }
     public function index() {
-        $usuarios = Usuario::orderBy('nombres')->paginate(10);
+        $usuarios = Usuario::join('cargos', 'cargos.cargo_id', '=', 'usuarios.cargo_id')
+                            ->selectRaw('usuarios.*, cargos.nombre as cargo')
+                            ->orderBy('usuarios.nombres')
+                            ->paginate(10);
         return response()->json($usuarios, 200);
     }
     public function listar() {
@@ -57,7 +60,6 @@ class UsuarioController extends Controller
         $usuarios = Usuario::where('nombres', 'like', '%' . $valor . '%')
                             ->orWhere('cuenta', 'like', '%' . $valor . '%')
                             ->orWhere('email', 'like', '%' . $valor . '%')
-                            ->orWhere('tipo', 'like', '%' . $valor . '%')
                             ->orderBy('nombres')
                             ->paginate(10);
         return response()->json($usuarios, 200);
