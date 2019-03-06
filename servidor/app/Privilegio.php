@@ -15,4 +15,8 @@ class Privilegio extends Model
         'activo'
     ];
     protected $dates = ['deleted_at'];
+
+    public function cargo() {
+        return $this->belongsTo('App\Cargo', 'cargo_id');
+    }
 }

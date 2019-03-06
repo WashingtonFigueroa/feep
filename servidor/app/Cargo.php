@@ -15,4 +15,8 @@ class Cargo extends Model
         'descripcion',
     ];
     protected $dates = ['deleted_at'];
+
+    public function privilegios() {
+        return $this->hasMany('App\Privilegio', 'cargo_id');
+    }
 }
