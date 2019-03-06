@@ -11,6 +11,33 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+//        DB::table('anexos')->truncate();
+//        DB::table('asignacion_eventos')->truncate();
+//        DB::table('ejecutoras')->truncate();
+//        DB::table('insumos')->truncate();
+//        DB::table('organizacion_eventos')->truncate();
+//        DB::table('participantes')->truncate();
+//        DB::table('personas')->truncate();
+//        DB::table('eventos')->truncate();
+//        DB::table('proyectos')->truncate();
+//        DB::table('suministros')->truncate();
+//        DB::table('tipos')->truncate();
+//        DB::table('actividades')->truncate();
+//        DB::table('tipo_eventos')->truncate();
+//        DB::table('tipo_insumos')->truncate();
+//        DB::table('tipo_personas')->truncate();
+//        DB::table('tipo_proyectos')->truncate();
+//        DB::table('tipo_suministros')->truncate();
+//        DB::table('organizaciones')->truncate();
+//        DB::table('tipo_organizaciones')->truncate();
+//        DB::table('barrios')->truncate();
+//        DB::table('parroquias')->truncate();
+//        DB::table('ciudades')->truncate();
+//        DB::table('provincias')->truncate();
+//        DB::table('usuarios')->truncate();
+
+
+
         //TIPO USUARIOS
         \App\Usuario::create(['nombres' => 'Washington Figueroa','cuenta' => 'Figo','password' => '123456','email' => 'w.figo.1991@gmail.com','tipo' => 'root']);
 
@@ -24,6 +51,7 @@ class DatabaseSeeder extends Seeder
         \App\Actividad::create(['nombre' => 'SERVICIO','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'TRANSFORMACIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'COMERCIALIZACIÓN','descripcion' => '']);
+
 //TIPO PROYECTOS
         \App\TipoProyecto::create(['nombre' => 'RECREACIÓN','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);
         \App\TipoProyecto::create(['nombre' => 'COMUNICACIÓN','descripcion' => 'DESARROLLO']);
@@ -313,6 +341,8 @@ class DatabaseSeeder extends Seeder
 //EVENTO
         \App\Evento::create(['proyecto_id' => 1,'usuario_id' => 1,'tipo_evento_id' => 1,'barrio_id' => '1','nombre' => 'INAGURACION DTMOWED','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','fecha_evento' => '2019-03-01', 'direccion' => 'CALLE A Y CALLE B','duracion_horas' => '4','fecha_finaliza' => '2019-03-01']);
 //
+//ORGANIZACION
+        \App\Organizacion::create(['tipo_organizacion_id' => 1,'actividad_id' => 1,'nombre' => 'LA CHOZA','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','representante' => 'JUAN CARLOS LOPEZ','contacto' => '0636545632','direccion' => 'CALLE Q Y CALLE B','descripcion' => 'UNION DE ARTISTAS','acuerdo' => '001','mujeres' => 10,'ninias' => 1,'hombres' => 10,'ninios' => 2,'total' => 23,'latitud' => '','longitud' => '','precision' => '']);
 
     }
 }

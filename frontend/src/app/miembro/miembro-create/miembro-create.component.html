@@ -74,8 +74,8 @@
                 <div class="form-group">
                   <label>Genero</label>
                   <select class="form-control" formControlName="genero" name="genero">
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
+                    <option value="MASCULINO">MASCULINO</option>
+                    <option value="FEMENINO">FEMENINO</option>
                     <option value="Otro">Otro</option>
                   </select>
                 </div>
@@ -84,13 +84,65 @@
             <div class="row">
               <div class="col-md-4 pr-1">
                 <div class="form-group">
-                  <label>Etnia</label>
+                  <label>Auto Identificación étnica</label>
                   <select class="form-control" formControlName="etnia" name="etnia">
-                    <option value="Afroecuatorianos">Afroecuatorianos</option>
-                    <option value="Quichua">Quichua</option>
-                    <option value="Mestizos">Mestizos</option>
-                    <option value="Montubios">Montubios</option>
-                    <option value="Otro">Otro</option>
+                    <option value="INDÍGENA">INDÍGENA</option>
+                    <option value="AFROECUATORIANO/A AFRODESCENDIENTE">AFROECUATORIANO/A AFRODESCENDIENTE</option>
+                    <option value="NEGRO/A">NEGRO/A</option>
+                    <option value="MULATO/A">MULATO/A</option>
+                    <option value="MONTUBIO/A">MONTUBIO/A</option>
+                    <option value="MESTIZO/A">MESTIZO/A</option>
+                    <option value="BLANCO/A">BLANCO/A</option>
+                    <option value="OTRO/A">OTRO/A</option>
+                    <option value="NO SABE/NO RESPONDE">NO SABE/NO RESPONDE</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Pueblos</label>
+                  <select class="form-control" formControlName="nacionalidad" name="nacionalidad">
+                    <option value="NO APLICA">NO APLICA</option>
+                    <option value="ACHUAR">ACHUAR</option>
+                    <option value="AWA">AWA</option>
+                    <option value="COFÁN">COFÁN</option>
+                    <option value="CHACHI">CHACHI</option>
+                    <option value="EPERA">EPERA</option>
+                    <option value="KICHWA">KICHWA</option>
+                    <option value="SECOYA">SECOYA</option>
+                    <option value="SHUAR">SHUAR</option>
+                    <option value="SHIWIAR">SHIWIAR</option>
+                    <option value="SIONA">SIONA</option>
+                    <option value="TSHACHILA">SIONA</option>
+                    <option value="WAORANI">WAORANI</option>
+                    <option value="ZAPARA">ZAPARA</option>
+                    <option value="ANDOA">ANDOA</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>Pueblos</label>
+                  <select class="form-control" formControlName="pueblo" name="pueblo">
+                    <option value="NO APLICA">NO APLICA</option>
+                    <option value="CHIBULEO">CHIBULEO</option>
+                    <option value="HUANCAVILCA">HUANCAVILCA</option>
+                    <option value="KARANKI">KARANKI</option>
+                    <option value="KAÑARI">KAÑARI</option>
+                    <option value="KAYAMBI">KAYAMBI</option>
+                    <option value="KISAPINCHA">KISAPINCHA</option>
+                    <option value="KITUKARA">KITUKARA</option>
+                    <option value="MANTA">MANTA</option>
+                    <option value="NATABUELA">NATABUELA</option>
+                    <option value="OTAVALO">OTAVALO</option>
+                    <option value="PALTAS">PALTAS</option>
+                    <option value="PANZALEO">PANZALEO</option>
+                    <option value="PASTO">PASTO</option>
+                    <option value="PURUHA">PURUHA</option>
+                    <option value="SALASAKA">SALASAKA</option>
+                    <option value="SARAGURO">SARAGURO</option>
+                    <option value="TOMABELA">TOMABELA</option>
+                    <option value="WARAMKA">WARAMKA</option>
                   </select>
                 </div>
               </div>
@@ -107,17 +159,18 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4 pr-1">
-                <div class="form-group">
-                  <label>Operadora</label>
-                  <select class="form-control" formControlName="operadora" name="operadora">
-                    <option value="Masculino">Claro</option>
-                    <option value="Femenino">Movistar</option>
-                    <option value="Otro">Otro</option>
-                  </select>
-                </div>
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>Operadora</label>
+                <select class="form-control" formControlName="operadora" name="operadora">
+                  <option value="CLARO">CLARO</option>
+                  <option value="MOVISTAR">MOVISTAR</option>
+                  <option value="CNT">CNT</option>
+                  <option value="OTRO/A">OTRO/A</option>
+                </select>
               </div>
+            </div>
+            <div class="row">
               <div class="col-md-4 px-1">
                 <div class="form-group">
                   <label>Numero Contacto</label>

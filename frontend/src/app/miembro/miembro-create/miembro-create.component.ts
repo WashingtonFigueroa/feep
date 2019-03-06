@@ -27,6 +27,8 @@ export class MiembroCreateComponent implements OnInit {
         genero : '',
         ocupacion : '',
         etnia : '',
+        nacionalidad : '',
+        pueblo : '',
         fecha_nacimiento : '',
         direccion : '',
         telefono_fijo : '',
@@ -61,6 +63,8 @@ export class MiembroCreateComponent implements OnInit {
             'genero': [''],
             'ocupacion': ['', [Validators.required]],
             'etnia': [''],
+            'nacionalidad': [''],
+            'pueblo': [''],
             'fecha_nacimiento': [''],
             'direccion': [''],
             'telefono_fijo': [''],
@@ -79,6 +83,8 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('genero', this.miembroGroup.value.genero);
             formData.append('ocupacion', this.miembroGroup.value.ocupacion);
             formData.append('etnia', this.miembroGroup.value.etnia);
+            formData.append('nacionalidad', this.miembroGroup.value.nacionalidad);
+            formData.append('pueblo', this.miembroGroup.value.pueblo);
             formData.append('fecha_nacimiento', this.miembroGroup.value.fecha_nacimiento);
             formData.append('direccion', this.miembroGroup.value.direccion);
             formData.append('telefono_fijo', this.miembroGroup.value.telefono_fijo);
@@ -104,6 +110,8 @@ export class MiembroCreateComponent implements OnInit {
             genero : '',
             ocupacion : '',
             etnia : '',
+            nacionalidad : '',
+            pueblo : '',
             fecha_nacimiento : '',
             direccion : '',
             telefono_fijo : '',
@@ -118,6 +126,8 @@ export class MiembroCreateComponent implements OnInit {
             'genero' : '',
             'ocupacion' : '',
             'etnia' : '',
+            'nacionalidad' : '',
+            'pueblo' : '',
             'fecha_nacimiento' : '',
             'direccion' : '',
             'telefono_fijo' : '',
@@ -152,6 +162,8 @@ export class MiembroCreateComponent implements OnInit {
                         'genero' : res.data.genero,
                         'ocupacion' : res.data.ocupacion,
                         'etnia' : res.data.etnia,
+                        'nacionalidad' : res.data.nacionalidad,
+                        'pueblo' : res.data.pueblo,
                         'fecha_nacimiento' : res.data.fecha_nacimiento,
                         'direccion' : res.data.direccion,
                         'telefono_fijo' : res.data.telefono_fijo,
@@ -167,6 +179,8 @@ export class MiembroCreateComponent implements OnInit {
                         this.persona.genero  = res.data.genero ;
                         this.persona.ocupacion  = res.data.ocupacion ;
                         this.persona.etnia  = res.data.etnia ;
+                        this.persona.nacionalidad  = res.data.nacionalidad ;
+                        this.persona.pueblo  = res.data.pueblo ;
                         this.persona.fecha_nacimiento  = res.data.fecha_nacimiento ;
                         this.persona.direccion  = res.data.direccion ;
                         this.persona.telefono_fijo  = res.data.telefono_fijo ;

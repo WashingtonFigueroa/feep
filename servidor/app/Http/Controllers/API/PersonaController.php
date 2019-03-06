@@ -15,7 +15,11 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        $personas = Persona::orderby('persona_id','desc')->paginate();
+        $personas= Persona::join('organizaciones','organizaciones.organizacion_id','=','personas.organizacion_id')
+            ->join('parroquias','parroquias.parroquia_id','=','personas.parroquia_id')
+            ->selectRaw('personas.*, organizaciones.nombre as organizacion,parroquias.nombre as parroquia')
+            ->orderBy('personas.persona_id','desc')
+            ->paginate(10);
         return response()->json($personas, 200);
     }
     public function listar()

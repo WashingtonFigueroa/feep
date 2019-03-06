@@ -18,6 +18,8 @@ class Persona extends Model
         'genero',
         'ocupacion',
         'etnia',
+        'nacionalidad',
+        'pueblo',
         'fecha_nacimiento',
         'direccion',
         'telefono_fijo',

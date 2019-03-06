@@ -63,6 +63,8 @@ export class MiembroUpdateComponent implements OnInit {
             'genero': [this.persona.genero, [Validators.required]],
             'ocupacion': [this.persona.ocupacion, [Validators.required]],
             'etnia': [this.persona.etnia, [Validators.required]],
+            'nacionalidad': [this.persona.nacionalidad, [Validators.required]],
+            'pueblo': [this.persona.pueblo, [Validators.required]],
             'fecha_nacimiento': [this.persona.fecha_nacimiento, [Validators.required]],
             'direccion': [this.persona.direccion, [Validators.required]],
             'telefono_fijo': [this.persona.telefono_fijo],
