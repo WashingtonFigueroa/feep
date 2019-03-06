@@ -66,6 +66,10 @@ Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
 //Suministros tipo
 Route::get('tipo-listar', 'API\TipoController@listar');
 
+//Cargos
+Route::resource('cargos', 'API\CargoController');
+Route::resource('privilegios', 'API\PrivilegioController');
+
 //Usuarios
 Route::get('usuarios-listar', 'API\UsuarioController@listar');
 Route::get('usuarios-buscar/{valor?}', 'API\UsuarioController@buscar');

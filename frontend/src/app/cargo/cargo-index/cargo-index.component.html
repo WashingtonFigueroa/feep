@@ -1,0 +1,80 @@
+<div class="panel-header panel-header-sm"></div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Cargos</h5>
+        </div>
+        <div class="card-body">
+          <img src="../../../assets/img/loading.gif"
+               class="loading"
+               *ngIf="loading"
+               alt="Cargando...">
+          <div *ngIf="!loading" class="table-responsive">
+            <table class="table">
+              <thead style="background-color: #303030; color: #f7f7f7">
+              <th>
+                Nombre
+              </th>
+              <th>
+                Descripción
+              </th>
+              <th class="text-right">
+                Acciones
+              </th>
+              </thead>
+              <tbody>
+              <tr *ngFor="let cargo of cargos; let i = index">
+                <td>
+                  {{ cargo.nombre }}
+                </td>
+                <td>
+                  {{ cargo.descripcion }}
+                </td>
+                <td class="text-right">
+                  <a routerLink="/cargos/editar/{{cargo.cargo_id}}" title="Editar Cargo" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                  <a (click)="destroy(cargo, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <a href="#">
+              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            </a>
+            <br>
+            <a
+                    routerLink="/cargos/crear"
+                    class="btn btn-primary"><span class="fas fa-save"></span> Nuevo Cargo</a>
+          </div>
+          <p class="description text-center">
+            "Los cargos le permiten asignar diferentes roles de acceso al sistema con los privilegios asignados."
+          </p>
+        </div>
+        <hr>
+        <div class="button-container">
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-google-plus-g"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

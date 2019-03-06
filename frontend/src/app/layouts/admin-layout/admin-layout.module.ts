@@ -115,6 +115,13 @@ import { AnexoIndexComponent } from '../../anexo/anexo-index/anexo-index.compone
 import { AnexoCreateComponent } from '../../anexo/anexo-create/anexo-create.component';
 import { AnexoUpdateComponent } from '../../anexo/anexo-update/anexo-update.component';
 import {AnexoService} from '../../anexo/anexo.service';
+import {CargoComponent} from '../../cargo/cargo.component';
+import {CargoIndexComponent} from '../../cargo/cargo-index/cargo-index.component';
+import {CargoCreateComponent} from '../../cargo/cargo-create/cargo-create.component';
+import {CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
+import {PrivilegioComponent} from '../../privilegio/privilegio.component';
+import {CargoService} from '../../cargo/cargo.service';
+import {PrivilegioService} from '../../privilegio/privilegio.service';
 
 @NgModule({
   imports: [
@@ -219,6 +226,11 @@ import {AnexoService} from '../../anexo/anexo.service';
       AnexoIndexComponent,
       AnexoCreateComponent,
       AnexoUpdateComponent,
+      CargoComponent,
+      CargoIndexComponent,
+      CargoCreateComponent,
+      CargoEditComponent,
+      PrivilegioComponent
   ],
   providers: [
       OrganizacionService,
@@ -243,6 +255,8 @@ import {AnexoService} from '../../anexo/anexo.service';
       TipoProyectoService,
       AsignacionEventoService,
       AnexoService,
+      CargoService,
+      PrivilegioService
   ]
 })
 

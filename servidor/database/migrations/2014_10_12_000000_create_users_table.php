@@ -15,15 +15,20 @@ class CreateUsersTable extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->increments('usuario_id');
+            $table->integer('cargo_id')->unsigned();
+            $table->foreign('cargo_id')
+                ->references('cargo_id')
+                ->on('cargos')
+                ->onDelete('cascade');
             $table->string('nombres');
             $table->string('cuenta')->unique();
             $table->string('password');
             $table->string('email')->nullable();
-            $table->enum('tipo', [
+/*            $table->enum('tipo', [
                 'root',
                 'administrador',
                 'trabajador'
-            ]);
+            ]);*/
             $table->softDeletes();
             $table->timestamps();
         });

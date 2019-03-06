@@ -39,7 +39,19 @@ class DatabaseSeeder extends Seeder
 
 
         //TIPO USUARIOS
-        \App\Usuario::create(['nombres' => 'Washington Figueroa','cuenta' => 'Figo','password' => '123456','email' => 'w.figo.1991@gmail.com','tipo' => 'root']);
+        $cargo = \App\Cargo::create(
+            [
+                'nombre' => 'administrador',
+                'descripcion' => 'descripcion del administrador'
+            ]
+        );
+
+
+        \App\Usuario::create(['nombres' => 'Washington Figueroa',
+            'cuenta' => 'Figo',
+            'password' => '123456',
+            'email' => 'w.figo.1991@gmail.com',
+            'cargo_id' => $cargo->cargo_id]);
 
 //TIPO ORGANIZACIONES
         \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'COOPERATIVA','descripcion' => '']);

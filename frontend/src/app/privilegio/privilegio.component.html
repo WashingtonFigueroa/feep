@@ -1,0 +1,117 @@
+<div class="panel-header panel-header-sm"></div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Privilegios</h5>
+        </div>
+        <div class="card-body">
+          <img src="../../assets/img/loading.gif"
+               class="loading"
+               *ngIf="loading"
+               alt="Cargando...">
+          <form *ngIf="!loading">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="cargos">Cargos</label>
+                  <select name="cargo_id" id="cargos"
+                          class="form-control">
+                    <option [value]="cargo.cargo_id" *ngFor="let cargo of cargos">{{ cargo.nombre }}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row" *ngIf="!loading">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="">Privilegios de Acceso</label>
+                  <div class="box-container">
+                    <div class="box">
+                      <i class="now-ui-icons users_circle-08"></i> Cargos
+                    </div>
+                    <div class="box no-asignado">
+                      <i class="now-ui-icons ui-1_lock-circle-open"></i> Privilegios
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons users_single-02"></i> Usuarios
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons business_badge"></i> Asignar Proyectos
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons users_single-02"></i> Personas
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons ui-1_calendar-60"></i> Defensas
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons business_globe"></i> Proyectos
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons education_atom"></i> Inscripciones
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons arrows-1_cloud-upload-94"></i> Subir Anexos
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons ui-1_send"></i> Organizaciones
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons ui-1_calendar-60"></i> Eventos
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons files_box"></i> Asignar Insumos
+                    </div>
+                    <div class="box">
+                      <i class="now-ui-icons loader_gear"></i> Configuracion
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!--          <div *ngIf="!loading" class="table-responsive">
+                    </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <a href="#">
+              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            </a>
+            <br>
+            <a
+                    routerLink="/cargos/crear"
+                    class="btn btn-primary"><span class="fas fa-save"></span> Nuevo Cargo</a>
+            <!--           <a
+                               routerLink="/cargos/crear"
+                               class="btn btn-primary"><span class="fas fa-save"></span> Nuevo Cargo</a>-->
+          </div>
+          <p class="description text-center">
+            "Los cargos le permiten asignar diferentes roles de acceso al sistema con los privilegios asignados."
+          </p>
+        </div>
+        <hr>
+        <div class="button-container">
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-google-plus-g"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

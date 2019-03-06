@@ -1,0 +1,64 @@
+<div class="panel-header panel-header-sm"></div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Registrar Cargo</h5>
+        </div>
+        <div class="card-body">
+          <form (submit)="store()" [formGroup]="cargoGroup">
+            <div class="row">
+              <div class="col-md-6 pr-1">
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" placeholder="Nombre"
+                         formControlName="nombre"
+                         autofocus
+                         id="nombre">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="descripcion">Descripción</label>
+                  <textarea name="descripcion" class="form-control"
+                            placeholder="Escribe aquí la descripción del cargo a registrar..."
+                            formControlName="descripcion"
+                            id="descripcion" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-right">
+                <button
+                        [disabled]="cargoGroup.status === 'INVALID'"
+                        class="btn btn-primary">
+                  Guardar <span class="fas fa-save"></span>
+                </button>
+                <button class="btn btn-default" routerLink="/cargos">
+                  Cancelar <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <br><br>
+            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

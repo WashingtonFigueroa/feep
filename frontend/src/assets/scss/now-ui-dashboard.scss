@@ -49,3 +49,76 @@
  @import "now-ui-dashboard/cards/card-map";
 
  @import "now-ui-dashboard/responsive";
+
+/*css*/
+.action {
+ cursor: pointer;
+ padding: .5em;
+}
+.action-edit {
+ color: $info-color;
+}
+.action-destroy {
+ color: $danger-color;
+}
+.loading {
+ display: block;
+ margin: 0 auto;
+}
+.box-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+.box {
+ width: 49%;
+ margin-bottom: 1em;
+ box-sizing: border-box;
+ border-radius: 25px;
+ padding: 1em 2em;
+ border: 1px solid $dark-gray;
+ cursor: pointer;
+}
+.box:hover {
+ border: 1px solid $black-color;
+ color: $black-color;
+}
+.no-asignado {
+ background-color: #ff5d6d;
+}
+/*paginacion*/
+/*.paginacion {
+ text-align: center;
+}
+.paginacion button {
+ border: none;
+ font-size: .9em;
+ box-sizing: border-box;
+ padding: .5em 0.8em;
+ cursor: pointer;
+ background-color: $primary-color;
+ color: $white-color;
+}
+.paginacion button:hover {
+ background-color: $primary-color-opacity;
+}
+.paginacion button:disabled {
+ background-color: $gray-500;
+ cursor: not-allowed;
+}*/
+.search {
+ margin-top: -1em;
+ border: none;
+ outline: none;
+ padding: .5em 1em;
+ width: 100%;
+ border-radius: 50px;
+ border: 1px solid $gray-500;
+}
+@media all and (max-width: 425px) {
+ .box {
+  width: 100%;
+ }
+}

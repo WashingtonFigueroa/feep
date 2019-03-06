@@ -86,6 +86,11 @@ import {AnexoComponent} from "../../anexo/anexo.component";
 import {AnexoIndexComponent} from "../../anexo/anexo-index/anexo-index.component";
 import {AnexoCreateComponent} from "../../anexo/anexo-create/anexo-create.component";
 import {AnexoUpdateComponent} from "../../anexo/anexo-update/anexo-update.component";
+import {CargoComponent} from '../../cargo/cargo.component';
+import {CargoIndexComponent} from '../../cargo/cargo-index/cargo-index.component';
+import {CargoCreateComponent} from '../../cargo/cargo-create/cargo-create.component';
+import {CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
+import {PrivilegioComponent} from '../../privilegio/privilegio.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -527,4 +532,28 @@ export const AdminLayoutRoutes: Routes = [
             }
         ]
     },
+    { path: 'cargos',      component: CargoComponent, children: [
+            {
+                path: 'listar',
+                component: CargoIndexComponent
+            },
+            {
+                path: 'crear',
+                component: CargoCreateComponent
+            },
+            {
+                path: 'editar/:cargo_id',
+                component: CargoEditComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar',
+                pathMatch: 'full'
+            }
+        ]
+    },
+    {
+        path: 'privilegios',
+        component: PrivilegioComponent
+    }
 ];

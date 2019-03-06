@@ -15,7 +15,6 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import {BrowserModule} from '@angular/platform-browser';
 import { LoginComponent } from './login/login.component';
 
-
 @NgModule({
   imports: [
     BrowserAnimationsModule,
