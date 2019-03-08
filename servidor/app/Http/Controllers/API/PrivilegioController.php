@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Cargo;
+use App\Privilegio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -66,5 +67,11 @@ class PrivilegioController extends Controller
     public function privilegios($cargo_id) {
         $privilegios = Cargo::find($cargo_id)->privilegios()->get();
         return response()->json($privilegios, 200);
+    }
+
+    public function cambiarEstado($privilegio_id) {
+        $privilegio = Privilegio::find($privilegio_id);
+        $privilegio->
+
     }
 }

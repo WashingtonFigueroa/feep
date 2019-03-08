@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/servidor/app/Cargo.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Cargo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6131220-c8da-497e-b31a-3f8a5612de7b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6131220-c8da-497e-b31a-3f8a5612de7b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Privilegio.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Privilegio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,81 +44,67 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="usuarios: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="21" />
+        <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/insumos">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.ts">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="306">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="444">
+              <caret line="325" column="24" lean-forward="true" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="24" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="617">
+              <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/angular-cli.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
-              <folding>
-                <element signature="e#44#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Privilegio.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#23#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -135,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/app/Cargo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
+            <state relative-caret-position="323">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#23#62#0#PHP" expanded="true" />
@@ -147,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-index/usuario-index.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="527">
               <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
@@ -157,7 +143,7 @@
         <entry file="file://$PROJECT_DIR$/servidor/server.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -190,10 +176,11 @@
       <find>loadig</find>
       <find>usuario</find>
       <find>tipo</find>
-      <find>tipo</find>
       <find>form</find>
       <find>defensa</find>
       <find>privilegios</find>
+      <find>ubicaciones</find>
+      <find>canton</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,7 +218,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/styles.css" />
-        <option value="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-create/cargo-create.component.html" />
@@ -246,10 +232,11 @@
         <option value="$PROJECT_DIR$/servidor/app/User.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/usuario/usuario-index/usuario-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Cargo.php" />
         <option value="$PROJECT_DIR$/servidor/app/Privilegio.php" />
         <option value="$PROJECT_DIR$/servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" />
       </list>
     </option>
   </component>
@@ -368,7 +355,37 @@
             <path>
               <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@ng-select" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@ng-select" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-select" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@ng-select" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-select" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -413,18 +430,21 @@
       <workItem from="1550684341250" duration="35000" />
       <workItem from="1551374921340" duration="9850000" />
       <workItem from="1551799411910" duration="3943000" />
-      <workItem from="1551880330457" duration="13142000" />
+      <workItem from="1551880330457" duration="13195000" />
+      <workItem from="1551974038954" duration="278000" />
+      <workItem from="1551999293146" duration="17000" />
+      <workItem from="1552013945085" duration="546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27578000" />
+    <option name="totallyTimeSpent" value="28472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856323" weight="0.32980332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856323" visible="true" weight="0.32980332" />
       <window_info id="Structure" order="1" sideWeight="0.50143677" side_tool="true" weight="0.25718608" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -451,20 +471,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a03223d8-bfb5-41aa-8555-1bf410554048/schema/fepp/table/organizaciones" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -705,7 +711,7 @@
               <point x="0.0" y="81.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.2049530315969257" x="1144.5" y="1161.0" />
+          <settings layout="Hierarchic Group" zoom="0.2049530315969257" x="1145.0" y="1161.0" />
           <SelectedNodes>
             <node>a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ejecutoras</node>
           </SelectedNodes>
@@ -713,6 +719,7 @@
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -753,16 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -783,27 +780,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="543" column="13" lean-forward="true" selection-start-line="543" selection-start-column="13" selection-end-line="543" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -937,12 +917,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="714">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Privilegio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -954,9 +979,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Cargo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-index/usuario-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="527">
           <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
@@ -964,62 +999,55 @@
     <entry file="file://$PROJECT_DIR$/servidor/server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="21" />
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/insumos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="306">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+        <state relative-caret-position="444">
+          <caret line="325" column="24" lean-forward="true" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="24" />
           <folding>
-            <element signature="e#44#58#0#PHP" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Cargo.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="617">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Privilegio.php">
+    <entry file="file://$PROJECT_DIR$/frontend/angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+        <state relative-caret-position="66">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
