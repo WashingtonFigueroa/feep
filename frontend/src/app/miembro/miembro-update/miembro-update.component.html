@@ -2,72 +2,101 @@
 </div>
 <div class="main-content">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <div class="card">
-        <div class="card-header">
-          <button class="btn btn-info" routerLink="/miembros"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Editar Datos Persona</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              &nbsp; &nbsp;<button class="btn btn-dark" routerLink="/miembros"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Editar Persona</h5>
+            </div>
+          </div>
         </div>
         <div class="card-body">
-          <form (submit)="update()"  [formGroup]="personaGroup"  *ngIf="tipo_personas !== null && organizaciones !== null && parroquias !== null" role="form">
+          <form (submit)="update()"  [formGroup]="personaGroup"  *ngIf="organizaciones !== null && parroquias !== null" role="form">
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Seleccione Organización</label>
-                  <select name="organizacion_id" id="organizacion_id" formControlName="organizacion_id" class="form-control">
-                    <option [value]="organizacion.organizacion_id" *ngFor="let organizacion of organizaciones">{{ organizacion.nombre }}</option>
-                  </select>
+                  <label>* Cedula o Pasaporte</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="cedula" name="cedula" id="cedula">
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Cedula o Pasaporte</label>
-                      <input type="text" class="form-control" formControlName="cedula" name="cedula" id="cedula">
+                  <label>* Nombres</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombres" name="nombres" id="nombres">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>* Seleccione Organización</label>
+                  <ng-select [items]="organizaciones"
+                             class="custom"
+                             id="organizacion_id"
+                             bindLabel="nombre"
+                             bindValue="organizacion_id"
+                             formControlName="organizacion_id">
+                  </ng-select>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Nombres</label>
-                  <input type="text" class="form-control" formControlName="nombres" name="nombres" id="nombres">
+                  <label>* Seleccione Parroquia</label>
+                  <ng-select [items]="parroquias"
+                             class="custom"
+                             id="parroquia_id"
+                             bindLabel="nombre"
+                             bindValue="parroquia_id"
+                             formControlName="parroquia_id">
+                  </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Seleccione Parroquia</label>
-                  <select name="parroquia_id" id="parroquia_id" formControlName="parroquia_id" class="form-control">
-                    <option [value]="parroquia.parroquia_id" *ngFor="let parroquia of parroquias">{{ parroquia.nombre }}</option>
-                  </select>
+                  <label>* Dirección</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" id="direccion">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Dirección</label>
-                  <input type="text" class="form-control" formControlName="direccion" name="direccion" id="direccion">
-                </div>
-              </div>
-              <div class="col-md-4 px-1">
-                <div class="form-group">
-                  <label>Fecha Nacimiento</label>
+                  <label>* Fecha Nacimiento</label>
                   <input type="date" class="form-control" formControlName="fecha_nacimiento" name="fecha_nacimiento" id="fecha_nacimiento">
                 </div>
               </div>
-              <div class="col-md-4 pl-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Genero</label>
+                  <label>* Genero</label>
                   <select class="form-control" formControlName="genero" name="genero">
                     <option value="MASCULINO">MASCULINO</option>
                     <option value="FEMENINO">FEMENINO</option>
-                    <option value="Otro">Otro</option>
+                    <option value="OTRO">OTRO</option>
                   </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>* Ocupación</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="ocupacion" name="ocupacion" id="ocupacion">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
                   <label>Auto Identificación étnica</label>
                   <select class="form-control" formControlName="etnia" name="etnia">
@@ -83,9 +112,9 @@
                   </select>
                 </div>
               </div>
-              <div class="col-md-4 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Pueblos</label>
+                  <label>Nacionalidad</label>
                   <select class="form-control" formControlName="nacionalidad" name="nacionalidad">
                     <option value="NO APLICA">NO APLICA</option>
                     <option value="ACHUAR">ACHUAR</option>
@@ -105,7 +134,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-md-4 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
                   <label>Pueblos</label>
                   <select class="form-control" formControlName="pueblo" name="pueblo">
@@ -131,44 +160,33 @@
                   </select>
                 </div>
               </div>
-              <div class="col-md-4 px-1">
-                <div class="form-group">
-                  <label>* Ocupación</label>
-                  <input type="text" class="form-control" formControlName="ocupacion" name="ocupacion" id="ocupacion">
-                </div>
-              </div>
-              <div class="col-md-4 pl-1">
-                <div class="form-group">
-                  <label>Telefono Fijo</label>
-                  <input type="number" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 pr-1">
-              <div class="form-group">
-                <label>Operadora</label>
-                <select class="form-control" formControlName="operadora" name="operadora">
-                  <option value="CLARO">CLARO</option>
-                  <option value="MOVISTAR">MOVISTAR</option>
-                  <option value="CNT">CNT</option>
-                  <option value="OTRO/A">OTRO/A</option>
-                </select>
-              </div>
             </div>
             <div class="row">
-              <div class="col-md-4 px-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Numero Contacto</label>
-                  <input type="number" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                  <label>Telefono Fijo</label>
+                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
                 </div>
               </div>
-              <div class="col-md-4 pl-1">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label>Email</label>
-                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
+                  <label>Operadora</label>
+                  <select class="form-control" formControlName="operadora" name="operadora">
+                    <option value="CLARO">CLARO</option>
+                    <option value="MOVISTAR">MOVISTAR</option>
+                    <option value="CNT">CNT</option>
+                    <option value="OTRO/A">OTRO/A</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Numero Contacto</label>
+                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
                 </div>
               </div>
             </div>
+            <hr>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">

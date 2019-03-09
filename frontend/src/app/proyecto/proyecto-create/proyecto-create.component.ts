@@ -13,6 +13,7 @@ import {UbicacionService} from "../../ubicacion/ubicacion.service";
 })
 export class ProyectoCreateComponent implements OnInit {
     @ViewChild('imagen') imagen;
+    @ViewChild('preview') preview;
     proyectoGroup: FormGroup;
     tipoproyectos: any = null;
     barrios: any = null;
@@ -43,21 +44,33 @@ export class ProyectoCreateComponent implements OnInit {
         });
     }
     store() {
-        const imagen = this.imagen.nativeElement;
-        const formData = new FormData();
-        if (imagen.files[0]) {
-            formData.append('imagen', imagen.files[0]);
-        }
-        formData.append('tipo_proyecto_id', this.proyectoGroup.value.tipo_proyecto_id);
-        formData.append('barrio_id', this.proyectoGroup.value.barrio_id);
-        formData.append('nombre', this.proyectoGroup.value.nombre);
-        formData.append('inicio', this.proyectoGroup.value.inicio);
-        formData.append('fin', this.proyectoGroup.value.fin);
-        this.proyectoService.store(formData).subscribe((res: any) => {
-                this.toastrService.success('Datos Agregados', 'Proyecto');
+        if (this.proyectoGroup.value.fin >= this.proyectoGroup.value.inicio) {
+            const imagen = this.imagen.nativeElement;
+            const formData = new FormData();
+            if (imagen.files[0]) {
+                formData.append('imagen', imagen.files[0]);
+            }
+            formData.append('tipo_proyecto_id', this.proyectoGroup.value.tipo_proyecto_id);
+            formData.append('barrio_id', this.proyectoGroup.value.barrio_id);
+            formData.append('nombre', this.proyectoGroup.value.nombre.toUpperCase());
+            formData.append('inicio', this.proyectoGroup.value.inicio);
+            formData.append('fin', this.proyectoGroup.value.fin);
+            this.proyectoService.store(formData).subscribe((res: any) => {
+                this.toastrService.success('Agregado', 'Proyecto');
                 this.router.navigate(['/proyectos']);
             }, (error) => {
                 this.toastrService.warning('Registrado', 'Proyecto');
             });
+        } else {
+            this.toastrService.info('Rango de Fechas', 'Error')
+        }
+    }
+    loadImage() {
+        const imagen = this.imagen.nativeElement;
+        const reader = new FileReader();
+        reader.onload = (e: any) => {
+            this.preview.nativeElement.src = e.target.result;
+        };
+        reader.readAsDataURL(imagen.files[0]);
     }
 }

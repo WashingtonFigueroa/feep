@@ -5,46 +5,55 @@
     <div class="col-md-8">
       <div class="card">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="form-group">
               &nbsp; &nbsp;<button class="btn btn-dark" routerLink="/asignacioneventos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
             </div>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-10">
             <div class="form-group">
               <br>
-              <h5 class="title">Registrar Aliados al Proyecto</h5>
+              <h5 class="title">Responsables Proyecto</h5>
             </div>
           </div>
         </div>
         <div class="card-body">
           <form (submit)="store()" [formGroup]="asignacionproyectoGroup" *ngIf="usuarios !== null && proyectoss !== null" role="form">
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Seleccione Proyecto</label>
-                  <select name="proyecto_id" id="proyecto_id" formControlName="proyecto_id" class="form-control">
-                    <option [value]="proyecto.proyecto_id" *ngFor="let proyecto of proyectoss">{{ proyecto.nombre }}</option>
-                  </select>
+                  <ng-select [items]="proyectoss"
+                             class="custom"
+                             id="proyecto_id"
+                             bindLabel="nombre"
+                             bindValue="proyecto_id"
+                             formControlName="proyecto_id">
+                  </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Seleccione Organización</label>
-                  <select name="usuario_id" id="usuario_id" formControlName="usuario_id" class="form-control">
-                    <option [value]="usuario.usuario_id" *ngFor="let usuario of usuarios">{{ usuario.nombres }}</option>
-                  </select>
+                  <ng-select [items]="usuarios"
+                             class="custom"
+                             id="usuario_id"
+                             bindLabel="nombres"
+                             bindValue="usuario_id"
+                             formControlName="usuario_id">
+                  </ng-select>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 px-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>Descripción </label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
                 </div>
               </div>
             </div>
+            <hr>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
@@ -66,32 +75,7 @@
         <div class="card-body">
           <div class="author">
             <br><br>
-            <!--<img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">-->
-
-
-            <!--<div class="card-body">-->
-              <!--<div class="table-responsive">-->
-                <!--<table class="table small" *ngIf="asignados !== null">-->
-                  <!--<thead style="background-color: #303030; color: #f7f7f7">-->
-                  <!--<tr>-->
-                    <!--<th> #   </th>-->
-                    <!--<th> Proyecto   </th>-->
-                    <!--<th> Usuario Encargado   </th>-->
-                  <!--</tr>-->
-                  <!--</thead>-->
-                  <!--<tbody>-->
-                  <!--<tr *ngFor="let asignacionproyecto of asignados.data; let i = index">-->
-                    <!--<td>  {{ i + 1}} </td>-->
-                    <!--<td>  {{ asignacionproyecto.proyecto }} </td>-->
-                    <!--<td>  {{ asignacionproyecto.usuario }} </td>-->
-                  <!--</tr>-->
-                  <!--</tbody>-->
-                <!--</table>-->
-              <!--</div>-->
-
-            <!--</div>-->
-
-
+           Lista de responsables
 
           </div>
         </div>

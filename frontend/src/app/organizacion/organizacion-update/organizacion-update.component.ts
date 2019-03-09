@@ -60,15 +60,39 @@ export class OrganizacionUpdateComponent implements OnInit {
             'ninias': new FormControl(this.organizacion.ninias),
             'hombres': new FormControl(this.organizacion.hombres),
             'ninios': new FormControl(this.organizacion.ninios),
+            'total': new FormControl(this.organizacion.total),
             'latitud': new FormControl(this.organizacion.latitud),
             'longitud': new FormControl(this.organizacion.longitud),
             'precision': new FormControl(this.organizacion.precision)
         });
     }
     update() {
-        this.organizacionService.update(this.organizacion_id, this.organizacionGroup.value)
+        const total =   this.organizacionGroup.value.mujeres +
+            this.organizacionGroup.value.ninias +
+            this.organizacionGroup.value.hombres +
+            this.organizacionGroup.value.ninios;
+        this.organizacion.total=total;
+        const formData = new FormData();
+        formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
+        formData.append('actividad_id', this.organizacionGroup.value.actividad_id);
+        formData.append('nombre', this.organizacionGroup.value.nombre.toUpperCase());
+        formData.append('actividad', this.organizacionGroup.value.actividad);
+        formData.append('representante', this.organizacionGroup.value.representante.toUpperCase());
+        formData.append('contacto', this.organizacionGroup.value.contacto);
+        formData.append('direccion', this.organizacionGroup.value.direccion);
+        formData.append('descripcion', this.organizacionGroup.value.descripcion.toUpperCase());
+        formData.append('acuerdo', this.organizacionGroup.value.acuerdo);
+        formData.append('mujeres', this.organizacionGroup.value.mujeres);
+        formData.append('ninias', this.organizacionGroup.value.ninias);
+        formData.append('hombres', this.organizacionGroup.value.hombres);
+        formData.append('ninios', this.organizacionGroup.value.ninios);
+        formData.append('total', total);
+        formData.append('latitud', this.organizacionGroup.value.latitud);
+        formData.append('longitud', this.organizacionGroup.value.longitud);
+        formData.append('precision', this.organizacionGroup.value.precision);
+        this.organizacionService.update(this.organizacion_id, formData)
             .subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados', 'Organización')
+                this.toastrService.success('Actualizada', 'Organización')
                 this.router.navigate(['/organizaciones']);
             });
     }

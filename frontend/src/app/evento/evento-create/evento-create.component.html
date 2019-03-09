@@ -4,36 +4,53 @@
   <div class="row">
     <div class="col-md-8">
       <div class="card">
-        <div class="card-header">
-          <button class="btn btn-info" routerLink="/eventos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
-          <h5 class="title">Registrar Evento</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              &nbsp; &nbsp;          <button class="btn btn-dark" routerLink="/eventos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Registrar Evento</h5>
+            </div>
+          </div>
         </div>
         <div class="card-body">
           <form (submit)="store()"[formGroup]="eventoGroup" *ngIf="proyectos !== null && tipo_eventos !== null && barrios !== null" role="form">
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label for="proyecto_id">* Seleccione Proyecto</label>
-                  <select name="proyecto_id" id="proyecto_id" formControlName="proyecto_id" class="form-control">
-                    <option [value]="proyecto.proyecto_id" *ngFor="let proyecto of proyectos">{{ proyecto.nombre }}</option>
-                  </select>
+                  <ng-select [items]="proyectos"
+                             class="custom"
+                             id="proyecto_id"
+                             bindLabel="nombre"
+                             bindValue="proyecto_id"
+                             formControlName="proyecto_id">
+                  </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label for="tipo_evento_id">* Seleccione Tipo Evento</label>
-                  <select name="tipo_evento_id" id="tipo_evento_id" formControlName="tipo_evento_id" class="form-control">
-                    <option [value]="tipoevento.tipo_evento_id" *ngFor="let tipoevento of tipo_eventos">{{ tipoevento.nombre }}</option>
-                  </select>
+                  <ng-select [items]="tipo_eventos"
+                             class="custom"
+                             id="tipo_evento_id"
+                             bindLabel="nombre"
+                             bindValue="tipo_evento_id"
+                             formControlName="tipo_evento_id">
+                  </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Tema</label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" >
                 </div>
               </div>
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label for="imagen" class="upload">Imagen o Logo <i class="fa fa-upload"></i></label>
                   <input type="file" class="form-control" #imagen formControlName="imagen" name="imagen" id="imagen">
@@ -41,15 +58,19 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Seleccione Barrio</label>
-                  <select name="barrio_id" id="barrio_id" formControlName="barrio_id" class="form-control">
-                    <option [value]="barrio.barrio_id" *ngFor="let barrio of barrios">{{ barrio.nombre }}</option>
-                  </select>
+                  <label>* Seleccione Ubicación</label>
+                  <ng-select [items]="barrios"
+                             class="custom"
+                             id="barrio_id"
+                             bindLabel="nombre"
+                             bindValue="barrio_id"
+                             formControlName="barrio_id">
+                  </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>Dirección</label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion">
@@ -57,19 +78,19 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 pr-1">
+              <div class="col-md-4">
                 <div class="form-group">
                   <label>Fecha Evento</label>
                   <input type="date" class="form-control" formControlName="fecha_evento" name="fecha_evento" >
                 </div>
               </div>
-              <div class="col-md-4 pl-1">
+              <div class="col-md-4">
                 <div class="form-group">
                   <label>Fecha Finaliza Evento</label>
                   <input type="date" class="form-control" formControlName="fecha_finaliza" name="fecha_finaliza" id="fecha_finaliza">
                 </div>
               </div>
-              <div class="col-md-4 pl-1">
+              <div class="col-md-4">
                 <div class="form-group">
                   <label>Tiempo de Duración</label>
                   <input type="number" onKeyPress="if(this.value.length==2) return false;" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
@@ -77,7 +98,7 @@
               </div>
             </div>
             <!--<div class="row">-->
-              <!--<div class="col-md-4 pr-1">-->
+              <!--<div class="col-md-4">-->
                 <!--<div class="form-group">-->
                   <!--<label>Latitud</label>-->
                   <!--<input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="latitud" name="latitud" id="latitud">-->
@@ -90,15 +111,13 @@
                 <!--</div>-->
               <!--</div>-->
             <!--</div>-->
+            <hr>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
                   <div class="form-group">
-                    <button class="btn btn-primary"
-                            type="submit"
-                            [disabled]="eventoGroup.status === 'INVALID'">Guardar &nbsp;
-                      <span class="fa fa-save"></span>
-                    </button>
+                    <button class="btn btn-primary" type="submit" [disabled]="eventoGroup.status === 'INVALID'">Guardar &nbsp;
+                      <span class="fa fa-save"></span> </button>
                     <a class="btn btn-dark"
                        routerLink="/eventos/listar">Cancelar &nbsp;
                       <span class="fa fa-window-close"></span>

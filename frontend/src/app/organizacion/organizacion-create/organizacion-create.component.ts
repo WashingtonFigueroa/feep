@@ -68,12 +68,12 @@ export class OrganizacionCreateComponent implements OnInit {
             }
             formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
             formData.append('actividad_id', this.organizacionGroup.value.actividad_id);
-            formData.append('nombre', this.organizacionGroup.value.nombre);
+            formData.append('nombre', this.organizacionGroup.value.nombre.toUpperCase());
             formData.append('actividad', this.organizacionGroup.value.actividad);
-            formData.append('representante', this.organizacionGroup.value.representante);
+            formData.append('representante', this.organizacionGroup.value.representante.toUpperCase());
             formData.append('contacto', this.organizacionGroup.value.contacto);
             formData.append('direccion', this.organizacionGroup.value.direccion);
-            formData.append('descripcion', this.organizacionGroup.value.descripcion);
+            formData.append('descripcion', this.organizacionGroup.value.descripcion.toUpperCase());
             formData.append('acuerdo', this.organizacionGroup.value.acuerdo);
             formData.append('mujeres', this.organizacionGroup.value.mujeres);
             formData.append('ninias', this.organizacionGroup.value.ninias);
@@ -85,7 +85,7 @@ export class OrganizacionCreateComponent implements OnInit {
             formData.append('precision', this.organizacionGroup.value.precision);
             this.organizacionService.store(formData)
                 .subscribe((res: any) => {
-                    this.toastrService.success('Datos Agregados', 'Organizacion');
+                    this.toastrService.success('Agregada', 'Organización');
                     this.router.navigate(['/organizaciones']);
                 }, (error) => {
                     this.toastrService.warning('Registrada', 'Organización');

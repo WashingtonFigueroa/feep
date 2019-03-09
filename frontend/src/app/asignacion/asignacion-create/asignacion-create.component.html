@@ -4,44 +4,55 @@
   <div class="row">
     <div class="col-md-8">
       <div class="card">
-        <div class="card-header">
-          <button class="btn btn-info" routerLink="/asignaciones"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
-          <h5 class="title">Ingreso Insumos</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              &nbsp; &nbsp; <button class="btn btn-dark" routerLink="/asignaciones"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Registrar Insumos</h5>
+            </div>
+          </div>
         </div>
         <div class="card-body">
           <form (submit)="store()" [formGroup]="insumoGroup" *ngIf="eventos !== null && tipos !== null" role="form">
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Seleccione Evento</label>
-                  <select name="evento_id" id="evento_id" formControlName="evento_id" class="form-control">
-                    <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
-                  </select>
+                  <ng-select [items]="eventos"
+                             class="custom"
+                             id="evento_id"
+                             bindLabel="nombre"
+                             bindValue="evento_id"
+                             formControlName="evento_id">
+                  </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Seleccione tipo Insumo</label>
-                  <select name="tipo_id" id="tipo_id" formControlName="tipo_id" class="form-control">
-                    <option [value]="tipo.tipo_id" *ngFor="let tipo of tipos">{{ tipo.nombre }}</option>
-                  </select>
+                  <ng-select [items]="tipos"
+                             class="custom"
+                             id="tipo_id"
+                             bindLabel="nombre"
+                             bindValue="tipo_id"
+                             formControlName="tipo_id">
+                  </ng-select>
                 </div>
               </div>
             </div>
             <div class="row">
-              <!--<div class="col-md-6 pl-1">-->
-                <!--<div class="form-group">-->
-                  <!--<label>Nombre</label>-->
-                  <!--<input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre">-->
-                <!--</div>-->
-              <!--</div>-->
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Cantidad</label>
                   <input type="number" class="form-control" formControlName="cantidad" name="cantidad" id="cantidad">
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>Fecha</label>
                   <input type="date" name="fecha" id="fecha" formControlName="fecha" class="form-control">
@@ -49,17 +60,18 @@
               </div>
             </div>
            <div class="row">
-             <div class="col-md-6 pr-1">
+             <div class="col-md-6">
                <div class="form-group">
                  <label>* Receptor</label>
                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" name="receptor" id="receptor" formControlName="receptor" class="form-control">
                </div>
              </div>
-             <div class="col-md-6 pl-1">
+             <div class="col-md-6">
                    <label>Logo</label>
                    <input type="file" class="form-control" #imagen name="imagen" id="imagen">
              </div>
            </div>
+            <hr>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">

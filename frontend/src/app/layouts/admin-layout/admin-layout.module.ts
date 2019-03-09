@@ -53,10 +53,6 @@ import { InscripcionComponent } from '../../inscripcion/inscripcion.component';
 import { InscripcionIndexComponent } from '../../inscripcion/inscripcion-index/inscripcion-index.component';
 import { InscripcionUpdateComponent } from '../../inscripcion/inscripcion-update/inscripcion-update.component';
 import { InscripcionCreateComponent } from '../../inscripcion/inscripcion-create/inscripcion-create.component';
-import { OrganizadorComponent } from '../../organizador/organizador.component';
-import { OrganizadorIndexComponent } from '../../organizador/organizador-index/organizador-index.component';
-import { OrganizadorUpdateComponent } from '../../organizador/organizador-update/organizador-update.component';
-import { OrganizadorCreateComponent } from '../../organizador/organizador-create/organizador-create.component';
 import {InscripcionService} from '../../inscripcion/inscripcion.service';
 import {InsumoContainerComponent} from '../../insumo-container/insumo-container.component';
 import {SuministroComponent} from '../../suministro/suministro.component';
@@ -82,7 +78,6 @@ import {AsignacionComponent} from '../../asignacion/asignacion.component';
 import {AsignacionCreateComponent} from '../../asignacion/asignacion-create/asignacion-create.component';
 import {AsignacionUpdateComponent} from '../../asignacion/asignacion-update/asignacion-update.component';
 import {AsignacionIndexComponent} from '../../asignacion/asignacion-index/asignacion-index.component';
-import {OrganizadorService} from '../../organizador/organizador.service';
 import {UsuarioService} from '../../usuario/usuario.service';
 import {AsignacionService} from '../../asignacion/asignacion.service';
 import { ActividadComponent } from '../../actividad/actividad.component';
@@ -175,10 +170,6 @@ import {PrivilegioService} from '../../privilegio/privilegio.service';
     InscripcionIndexComponent,
     InscripcionUpdateComponent,
     InscripcionCreateComponent,
-    OrganizadorComponent,
-    OrganizadorIndexComponent,
-    OrganizadorUpdateComponent,
-    OrganizadorCreateComponent,
     UbicacionIndexComponent,
     UbicacionUpdateComponent,
     UbicacionCreateComponent,
@@ -246,7 +237,6 @@ import {PrivilegioService} from '../../privilegio/privilegio.service';
       SuministroService,
       TipoSuministroService,
       TipoService,
-      OrganizadorService,
       UsuarioService,
       AsignacionService,
       ActividadService,

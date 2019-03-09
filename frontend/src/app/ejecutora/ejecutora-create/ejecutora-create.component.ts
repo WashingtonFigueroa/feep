@@ -15,6 +15,8 @@ export class EjecutoraCreateComponent implements OnInit {
     ejecutoraGroup: FormGroup;
     proyectos: any = null;
     organizaciones: any = null;
+    auspiciantes: string = '';
+
     constructor(private ejecutoraService: EjecutoraService,
                 private proyectoService: ProyectoService,
                 private organizacionService: OrganizacionService,
@@ -46,13 +48,14 @@ export class EjecutoraCreateComponent implements OnInit {
         formData.append('proyecto_id', this.ejecutoraGroup.value.proyecto_id);
         formData.append('organizacion_id', this.ejecutoraGroup.value.organizacion_id);
         formData.append('tipo', this.ejecutoraGroup.value.tipo);
-        formData.append('descripcion', this.ejecutoraGroup.value.descripcion);
+        formData.append('descripcion', this.ejecutoraGroup.value.descripcion.toUpperCase());
         this.ejecutoraService.store(formData)
             .subscribe((res: any) => {
-                this.toastrService.success('Datos Agregados', 'Aliados');
+                this.toastrService.success('Agregado', 'Auspiciante');
+                this.ejecutoraGroup.reset();
             //limpiar todos los campos menos el proyecto
             }, (error) => {
-                this.toastrService.warning('Registrada', 'Aliados');
+                this.toastrService.warning('Registrado', 'Auspiciante');
             });
     }
 }

@@ -52,7 +52,7 @@ export class EjecutoraUpdateComponent implements OnInit {
     }
     update() {
         this.ejecutoraService.update(this.ejecutora_id, this.ejecutoraGroup.value).subscribe((res: any) => {
-            this.toastrService.success('Datos Actualizados', 'Aliados')
+            this.toastrService.success('Actualizado', 'Auspiciante')
             this.router.navigate(['/ejecutoras']);
         });
     }

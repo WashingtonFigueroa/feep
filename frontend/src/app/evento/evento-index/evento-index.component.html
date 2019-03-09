@@ -7,17 +7,20 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header">
-                <h4 class="card-title">Eventos</h4>
+              <h3>&nbsp;&nbsp; Lista Eventos</h3>
+              <div class="container">
                 <div class="row">
-                  <div class="col-8">
+                  <div class="col-sm">
                     <button class="btn btn-primary" routerLink="/eventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
-                  <div class="col-4">
+                  <div class="col-sm">
+                  </div>
+                  <div class="col-sm">
                     <form (submit)="buscar()" class="form-inline" role="form">
                       <div class="form-group">
-                        <label class="sr-only" for="valor">label</label>
-                        <input type="text" class="input-search" [(ngModel)]="valor" name="valor" id="valor">
+                        <input type="email" class="input-search"
+                               [(ngModel)]="valor"
+                               name="valor">
                       </div>
                       <button type="submit" class="btn btn-primary">Buscar</button>
                     </form>
@@ -48,7 +51,7 @@
                       <td>  {{ evento.nombre }} </td>
                       <td>
                         <span *ngIf="!evento.imagen" class="badge badge-danger">Sin imagen</span>
-                        <img src="{{base_imagen}}{{evento.imagen}}" height="100"
+                        <img src="{{base_imagen}}{{evento.imagen}}" height="75"
                              [alt]="evento.nombre" *ngIf="evento.imagen">
                       </td>
                       <td>  {{ evento.direccion }} </td>

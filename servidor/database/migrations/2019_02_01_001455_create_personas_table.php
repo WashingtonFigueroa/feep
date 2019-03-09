@@ -25,7 +25,7 @@ class CreatePersonasTable extends Migration
                 ->references('parroquia_id')
                 ->on('parroquias')
                 ->onDelete('cascade');
-            $table->string('cedula');
+            $table->string('cedula')->unique();
             $table->string('nombres');
             $table->string('genero')->nullable();
             $table->string('ocupacion')->nullable();

@@ -79,14 +79,14 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('organizacion_id', this.miembroGroup.value.organizacion_id);
             formData.append('parroquia_id', this.miembroGroup.value.parroquia_id);
             formData.append('cedula', this.miembroGroup.value.cedula);
-            formData.append('nombres', this.miembroGroup.value.nombres);
+            formData.append('nombres', this.miembroGroup.value.nombres.toUpperCase());
             formData.append('genero', this.miembroGroup.value.genero);
-            formData.append('ocupacion', this.miembroGroup.value.ocupacion);
+            formData.append('ocupacion', this.miembroGroup.value.ocupacion.toUpperCase());
             formData.append('etnia', this.miembroGroup.value.etnia);
             formData.append('nacionalidad', this.miembroGroup.value.nacionalidad);
             formData.append('pueblo', this.miembroGroup.value.pueblo);
             formData.append('fecha_nacimiento', this.miembroGroup.value.fecha_nacimiento);
-            formData.append('direccion', this.miembroGroup.value.direccion);
+            formData.append('direccion', this.miembroGroup.value.direccion.toUpperCase());
             formData.append('telefono_fijo', this.miembroGroup.value.telefono_fijo);
             formData.append('operadora', this.miembroGroup.value.operadora);
             formData.append('contacto', this.miembroGroup.value.contacto);

@@ -4,28 +4,44 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <div class="card-header">
-          <button class="btn btn-info" routerLink="/miembros"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
-          <h5 class="title">Inscripción a Evento</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              &nbsp; &nbsp; <button class="btn btn-info" routerLink="/miembros"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Inscripción a Evento</h5>
+            </div>
+          </div>
         </div>
         <div class="card-body">
           <form (submit)="store()" [formGroup]="participanteGroup" *ngIf="personas !== null && eventos !== null" role="form">
 
-              <div class="col-md-12 pr-1">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <label>Seleccione Evento</label>
-                  <select name="evento_id" id="evento_id" formControlName="evento_id" class="form-control">
-                    <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
-                  </select>
+                  <label>* Seleccione Evento</label>
+                  <ng-select [items]="eventos"
+                             class="custom"
+                             id="evento_id"
+                             bindLabel="nombre"
+                             bindValue="evento_id"
+                             formControlName="evento_id">
+                  </ng-select>
                 </div>
               </div>
-
-              <div class="col-md-12 pr-1">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <label>Seleccione Persona</label>
-                  <select name="persona_id" id="persona_id" formControlName="persona_id" class="form-control">
-                    <option [value]="tipopersona.persona_id" *ngFor="let tipopersona of personas">{{ tipopersona.nombres }}</option>
-                  </select>
+                  <label>* Seleccione Persona</label>
+                  <ng-select [items]="personas"
+                             class="custom"
+                             id="persona_id"
+                             bindLabel="nombres"
+                             bindValue="persona_id"
+                             formControlName="persona_id">
+                  </ng-select>
                 </div>
               </div>
             <div class="row">
@@ -39,7 +55,6 @@
             </div>
           </form>
           <app-miembro-create></app-miembro-create>
-
         </div>
       </div>
     </div>

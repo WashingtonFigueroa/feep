@@ -60,7 +60,7 @@ export class UbicacionCreateComponent implements OnInit {
     storeprovincia() {
         const formData = new FormData();
         formData.append('codigo', this.provinciaGroup.value.codigo);
-        formData.append('nombre', this.provinciaGroup.value.nombre);
+        formData.append('nombre', this.provinciaGroup.value.nombre.toUpperCase());
         this.ubicacionService.storeprovincias(formData)
             .subscribe((res: any) => {
                 this.provincias = res;

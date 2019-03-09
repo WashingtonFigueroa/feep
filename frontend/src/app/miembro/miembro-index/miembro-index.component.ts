@@ -20,7 +20,6 @@ export class MiembroIndexComponent implements OnInit {
         this.miembroService.index()
             .subscribe((res: any) => {
                 this.miembros = res;
-                console.log(res);
                 this.current_page = this.miembros.current_page;
                 this.prev_page = this.miembros.prev_page_url;
                 this.next_page = this.miembros.next_page_url;

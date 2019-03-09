@@ -56,7 +56,7 @@ export class ProyectoUpdateComponent implements OnInit {
     }
     update() {
         this.proyectoService.update(this.proyecto_id, this.proyectoGroup.value).subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados', 'Proyecto')
+                this.toastrService.success('Actualizado', 'Proyecto')
                 this.router.navigate(['/proyectos']);
             });
     }

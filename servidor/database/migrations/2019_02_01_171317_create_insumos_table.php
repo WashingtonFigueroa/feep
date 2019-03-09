@@ -25,7 +25,7 @@ class CreateInsumosTable extends Migration
                 ->references('evento_id')
                 ->on('eventos')
                 ->onDelete('cascade');
-            $table->string('nombre');
+            $table->string('nombre')->nullable();
             $table->integer('cantidad');
             $table->date('fecha')->nullable();
             $table->string('imagen')->nullable();

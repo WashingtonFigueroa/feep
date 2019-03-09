@@ -17,7 +17,7 @@ export class EventoUpdateComponent implements OnInit {
     evento: any = null;
     eventoGroup: FormGroup;
     proyectos: any = null;
-    tipoeventos: any = null;
+    tipo_eventos: any = null;
     barrios: any = null;
     constructor(private eventoService: EventoService,
                 private proyectoService: ProyectoService,
@@ -31,7 +31,7 @@ export class EventoUpdateComponent implements OnInit {
         this.proyectos = res;
       });
       this.tipoeventoService.listar().subscribe((res: any) => {
-                this.tipoeventos = res;
+                this.tipo_eventos = res;
             });
         this.barrioService.barrioslistar().subscribe((res: any) => {
                 this.barrios = res;

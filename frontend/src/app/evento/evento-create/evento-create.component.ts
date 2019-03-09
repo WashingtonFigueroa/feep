@@ -44,6 +44,7 @@ export class EventoCreateComponent implements OnInit {
         this.eventoGroup = this.fb.group({
             'proyecto_id': [0, [Validators.required]],
             'tipo_evento_id': [0, [Validators.required]],
+            'usuario_id': [1, [Validators.required]],
             'barrio_id': [0, [Validators.required]],
             'nombre': ['', [Validators.required]],
             'imagen': [''],
@@ -56,34 +57,41 @@ export class EventoCreateComponent implements OnInit {
         });
     }
     store() {
-        if (this.imagen.nativeElement.files[0]) {
-            const formData = new FormData();
-            formData.append('proyecto_id', this.eventoGroup.value.proyecto_id);
-            formData.append('tipo_evento_id', this.eventoGroup.value.tipo_evento_id);
-            formData.append('barrio_id', this.eventoGroup.value.barrio_id);
-            formData.append('nombre', this.eventoGroup.value.nombre);
-            formData.append('imagen', this.imagen.nativeElement.files[0]);
-            formData.append('fecha_evento', this.eventoGroup.value.fecha_evento);
-            formData.append('direccion', this.eventoGroup.value.direccion);
-            formData.append('duracion_horas', this.eventoGroup.value.duracion_horas);
-            formData.append('fecha_finaliza', this.eventoGroup.value.fecha_finaliza);
-           // formData.append('latitud', this.eventoGroup.value.latitud);
-           // formData.append('longitud', this.eventoGroup.value.longitud);
-            this.eventoService.store(formData)
-                .subscribe((res: any) => {
-                    this.toastrService.success('Registrado', 'Evento');
-                    this.router.navigate(['/eventos']);
-                }, (error) => {
-                    this.toastrService.error('duplicado', 'Evento');
-                });
+        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento)
+        {
+            const usuario = 1;
+            if (this.imagen.nativeElement.files[0]) {
+                const formData = new FormData();
+                formData.append('proyecto_id', this.eventoGroup.value.proyecto_id);
+                formData.append('tipo_evento_id', this.eventoGroup.value.tipo_evento_id);
+                formData.append('usuario_id', usuario);
+                formData.append('barrio_id', this.eventoGroup.value.barrio_id);
+                formData.append('nombre', this.eventoGroup.value.nombre.toUpperCase());
+                formData.append('imagen', this.imagen.nativeElement.files[0]);
+                formData.append('fecha_evento', this.eventoGroup.value.fecha_evento);
+                formData.append('direccion', this.eventoGroup.value.direccion.toUpperCase());
+                formData.append('duracion_horas', this.eventoGroup.value.duracion_horas);
+                formData.append('fecha_finaliza', this.eventoGroup.value.fecha_finaliza);
+                // formData.append('latitud', this.eventoGroup.value.latitud);
+                // formData.append('longitud', this.eventoGroup.value.longitud);
+                this.eventoService.store(formData)
+                    .subscribe((res: any) => {
+                        this.toastrService.success('Agregado', 'Evento');
+                        this.router.navigate(['/eventos']);
+                    }, (error) => {
+                        this.toastrService.error('duplicado', 'Evento');
+                    });
+            } else {
+                this.eventoService.store(this.eventoGroup.value)
+                    .subscribe((res: any) => {
+                        this.toastrService.success('Agregado', 'Evento');
+                        this.router.navigate(['/eventos']);
+                    }, (error) => {
+                        this.toastrService.error('duplicado', 'Evento');
+                    });
+            }
         } else {
-            this.eventoService.store(this.eventoGroup.value)
-                .subscribe((res: any) => {
-                    this.toastrService.success('Registrado', 'Evento');
-                    this.router.navigate(['/eventos']);
-                }, (error) => {
-                    this.toastrService.error('duplicado', 'Evento');
-                });
+            this.toastrService.info('Rango de Fechas', 'Error')
         }
     }
 }

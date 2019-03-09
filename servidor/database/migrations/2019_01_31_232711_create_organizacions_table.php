@@ -27,7 +27,7 @@ class CreateOrganizacionsTable extends Migration
                 ->on('actividades')
                 ->onDelete('cascade');
 
-            $table->string('nombre');
+            $table->string('nombre')->unique();
             $table->string('imagen')->nullable();
             $table->string('representante');
             $table->string('contacto')->nullable();
