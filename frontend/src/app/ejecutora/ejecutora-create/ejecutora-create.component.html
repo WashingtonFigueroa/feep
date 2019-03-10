@@ -83,7 +83,10 @@
           <img src="../assets/img/bg5.jpg" alt="...">
         </div>
         <div class="card-body">
-Ljsta agregada
+            <h3>Lista agregada</h3>
+            <ul>
+                <li *ngFor="let auspiciante of auspiciantes"> {{ auspiciante.organizacion | uppercase }} - {{ auspiciante.tipo | uppercase }}</li>
+            </ul>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Ejecutora;
+use App\Organizacion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -35,7 +36,9 @@ class EjecutoraController extends Controller
     }
     public function store(Request $request)
     {
-        return response()->json(Ejecutora::create($request->all()), 201);
+        $ejecutora = Ejecutora::create($request->all())->toArray();
+        $ejecutora['organizacion'] = Organizacion::find($ejecutora['organizacion_id'])->nombre;
+        return response()->json($ejecutora, 201);
     }
     public function show($id)
     {

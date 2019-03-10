@@ -52,7 +52,7 @@ export class EjecutoraCreateComponent implements OnInit {
         this.ejecutoraService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Agregado', 'Auspiciante');
-
+                this.auspiciantes.push(res);
                 this.ejecutoraGroup.reset();
             //limpiar todos los campos menos el proyecto
             }, (error) => {

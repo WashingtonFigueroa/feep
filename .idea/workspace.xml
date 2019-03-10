@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,63 +27,90 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="ejecutoras: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fepp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fepp: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="organizaciones: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-351818816">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="67" />
-          <entry key="php" value="6" />
-          <entry key="ts" value="24" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="67" />
-          <entry key="PHP" value="6" />
-          <entry key="TypeScript" value="24" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="Angular2LanguageService" value="3" />
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="901" />
-          <entry key="php" value="20" />
-          <entry key="ts" value="646" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="901" />
-          <entry key="PHP" value="20" />
-          <entry key="TypeScript" value="646" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+              <folding>
+                <element signature="e#23#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Persona.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="250">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -93,19 +119,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="37" />
+            <state relative-caret-position="436">
+              <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="378">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="e#44#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -114,13 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>imagen</find>
-      <find>file</find>
-      <find>files</find>
-      <find>store</find>
-      <find>organizacion/</find>
-      <find>cerras</find>
-      <find>thead</find>
       <find>proyectos</find>
       <find>proyecto</find>
       <find>business_globe</find>
@@ -143,7 +183,14 @@
       <find>privilegios</find>
       <find>ubicaciones</find>
       <find>canton</find>
-      <find>oper</find>
+      <find>providers</find>
+      <find>guards</find>
+      <find>register</find>
+      <find>signup</find>
+      <find>login</find>
+      <find>getU</find>
+      <find>store</find>
+      <find>aus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,74 +199,59 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.scss" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_03_06_011126_create_cargos_table.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_03_06_011651_create_privilegios_table.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_11_100000_create_privilegios_table.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_11_000000_create_cargos_table.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-index/cargo-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-create/cargo-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-edit/cargo-edit.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/styles.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-create/cargo-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-index/cargo-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo-edit/cargo-edit.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/usuario/usuario-index/usuario-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html" />
+        <option value="$PROJECT_DIR$/servidor/app/Privilegio.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" />
         <option value="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001455_create_personas_table.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-evento/tipo-evento-index/tipo-evento-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/actividad/actividad-index/actividad-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-index/tipo-suministro-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_171317_create_insumos_table.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/config/database.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Providers/AuthServiceProvider.php" />
+        <option value="$PROJECT_DIR$/servidor/config/auth.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/servidor/app/User.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Cargo.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/servidor/config/app.php" />
+        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/frontend/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/frontend/package.json" />
-      <path value="$PROJECT_DIR$/servidor/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -314,25 +346,25 @@
       <path value="$PROJECT_DIR$/servidor/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/servidor/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/servidor/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/servidor/vendor/symfony/psr-http-message-bridge" />
-      <path value="$PROJECT_DIR$/servidor/vendor/league/event" />
-      <path value="$PROJECT_DIR$/servidor/vendor/league/oauth2-server" />
-      <path value="$PROJECT_DIR$/servidor/vendor/laravel/passport" />
       <path value="$PROJECT_DIR$/servidor/vendor/defuse/php-encryption" />
       <path value="$PROJECT_DIR$/servidor/vendor/firebase/php-jwt" />
       <path value="$PROJECT_DIR$/servidor/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/servidor/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/servidor/vendor/league/event" />
+      <path value="$PROJECT_DIR$/servidor/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/servidor/vendor/laravel/passport" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,118 +375,20 @@
             <path>
               <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@ng-select" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@ng-select" type="462c0819:PsiDirectoryNode" />
-              <item name="ng-select" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@ng-select" type="462c0819:PsiDirectoryNode" />
-              <item name="ng-select" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ejecutora" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ejecutora" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ejecutora-create" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="inscripcion" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="inscripcion" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="inscripcion-create" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="migrations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -464,7 +398,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="ejecucon&#9;null&#9;null&#10;eventocontr&#9;null&#9;null&#10;organizaccontr&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -472,7 +405,7 @@
     <property name="node.js.selected.package.tslint" value="C:\Users\HP User\Documents\trabajos\washington\fepp\frontend\node_modules\tslint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="C:\xampp\htdocs\DTE\feep\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\HP User\Documents\trabajos\washington\fepp\frontend\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -504,21 +437,19 @@
       <workItem from="1551974038954" duration="278000" />
       <workItem from="1551999293146" duration="17000" />
       <workItem from="1552013945085" duration="1024000" />
-      <workItem from="1552095728051" duration="582000" />
-      <workItem from="1552140169884" duration="15193000" />
-      <workItem from="1552178999013" duration="3653000" />
+      <workItem from="1552174107589" duration="8943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51664000" />
+    <option name="totallyTimeSpent" value="37893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856323" weight="0.2912254" />
-      <window_info id="Structure" order="1" sideWeight="0.50143677" side_tool="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.32980332" />
+      <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -528,426 +459,621 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29982963" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5704023" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32902297" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856323" visible="true" weight="0.23298033" />
-      <window_info id="Structure" order="1" sideWeight="0.50143677" side_tool="true" weight="0.25718608" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.9567474" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32902297" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001455_create_personas_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
-          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        <state relative-caret-position="444">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="158" selection-start-line="158" selection-end-line="171" selection-end-column="10" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="63" column="16" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="94" column="55" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="60" column="15" lean-forward="true" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="78" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/insumo-container/insumo-container.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/actividad/actividad-index/actividad-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#306#312#0" expanded="true" />
-            <element signature="e#312#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" selection-start-line="18" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" selection-start-line="21" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="328">
+          <caret line="64" column="64" lean-forward="true" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="102">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-evento/tipo-evento-index/tipo-evento-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-index/tipo-suministro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="113" column="16" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="113" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo-index/cargo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_171317_create_insumos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="16" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="73" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+        <state relative-caret-position="493">
+          <caret line="29" column="100" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="100" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="125" column="54" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        <state relative-caret-position="495">
+          <caret line="199" selection-start-line="196" selection-start-column="16" selection-end-line="199" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="357">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo-index/cargo-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo-create/cargo-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo-edit/cargo-edit.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/img/loading.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-create/usuario-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="47" />
+        <state relative-caret-position="765">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html">
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="1190">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Privilegio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/insumos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3961">
+          <caret line="325" column="24" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/angular-cli.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/usuario/usuario-index/usuario-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/oauth_personal_access_clients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/oauth_refresh_tokens">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/organizacion_eventos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/oauth_access_tokens">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6131220-c8da-497e-b31a-3f8a5612de7b/schema/fepp/table/oauth_auth_codes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/a6131220-c8da-497e-b31a-3f8a5612de7b.SCHEMA:fepp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>a6131220-c8da-497e-b31a-3f8a5612de7b.SCHEMA:fepp</OriginalElement>
+          <nodes>
+            <node x="919.0193965517241" y="680.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.barrios</node>
+            <node x="1198.375" y="1498.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos</node>
+            <node x="506.0" y="2291.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.oauth_refresh_tokens</node>
+            <node x="391.01939655172407" y="680.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_organizaciones</node>
+            <node x="843.8793103448274" y="1608.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.asignacion_eventos</node>
+            <node x="401.12931034482745" y="446.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.parroquias</node>
+            <node x="273.0" y="2291.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.oauth_auth_codes</node>
+            <node x="1216.0" y="2291.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.password_resets</node>
+            <node x="996.0" y="2291.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.migrations</node>
+            <node x="1309.2693965517242" y="1079.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.privilegios</node>
+            <node x="16.75" y="1476.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.personas</node>
+            <node x="1240.5" y="2018.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.anexos</node>
+            <node x="1761.2693965517242" y="1068.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_suministros</node>
+            <node x="760.0" y="2291.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.oauth_personal_access_clients</node>
+            <node x="259.25" y="914.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizaciones</node>
+            <node x="402.12931034482745" y="0.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.provincias</node>
+            <node x="518.482040229885" y="1597.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ejecutoras</node>
+            <node x="1770.2693965517242" y="457.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_insumos</node>
+            <node x="1761.2693965517242" y="1608.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipos</node>
+            <node x="665.0193965517241" y="691.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_proyectos</node>
+            <node x="723.5193965517241" y="1024.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.proyectos</node>
+            <node x="2320.269396551724" y="0.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.oauth_access_tokens</node>
+            <node x="164.01939655172407" y="691.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.actividades</node>
+            <node x="74.25" y="2007.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.participantes</node>
+            <node x="1092.2693965517242" y="1046.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.usuarios</node>
+            <node x="1770.2693965517242" y="680.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.suministros</node>
+            <node x="2048.269396551724" y="0.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.oauth_clients</node>
+            <node x="318.25" y="2018.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizacion_eventos</node>
+            <node x="402.12931034482745" y="212.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ciudades</node>
+            <node x="1203.0193965517242" y="691.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.cargos</node>
+            <node x="1734.5193965517242" y="1974.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.insumos</node>
+            <node x="1517.2693965517242" y="1079.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_eventos</node>
+            <node x="0.0" y="2291.0">a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_personas</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.proyectos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_proyectos">
+              <point x="-58.5" y="-136.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.insumos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipos">
+              <point x="49.25" y="-136.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.parroquias" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ciudades">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.participantes" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos">
+              <point x="56.0" y="-103.0" />
+              <point x="242.25" y="1944.0" />
+              <point x="1226.5" y="1944.0" />
+              <point x="-84.375" y="202.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.barrios" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.parroquias">
+              <point x="0.0" y="-92.0" />
+              <point x="1024.0193965517242" y="655.0" />
+              <point x="558.6293103448274" y="655.0" />
+              <point x="52.5" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizacion_eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos">
+              <point x="68.0" y="-92.0" />
+              <point x="522.25" y="1954.0" />
+              <point x="1282.75" y="1954.0" />
+              <point x="-28.125" y="202.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_suministros" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.suministros">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.usuarios">
+              <point x="28.125" y="-202.0" />
+              <point x="1339.0" y="1426.0" />
+              <point x="1240.0193965517242" y="1426.0" />
+              <point x="49.25" y="114.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ejecutoras" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizaciones">
+              <point x="-56.75" y="-103.0" />
+              <point x="575.232040229885" y="1456.0" />
+              <point x="470.91666666666674" y="1456.0" />
+              <point x="84.66666666666674" y="246.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.barrios">
+              <point x="-28.125" y="-202.0" />
+              <point x="1282.75" y="1436.0" />
+              <point x="1076.5193965517242" y="1436.0" />
+              <point x="52.5" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.proyectos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.barrios">
+              <point x="58.5" y="-136.0" />
+              <point x="899.0193965517241" y="889.0" />
+              <point x="971.5193965517241" y="889.0" />
+              <point x="-52.5" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.participantes" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.personas">
+              <point x="-56.0" y="-103.0" />
+              <point x="0.0" y="224.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.insumos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos">
+              <point x="-49.25" y="-136.0" />
+              <point x="1783.7693965517242" y="1954.0" />
+              <point x="1395.25" y="1954.0" />
+              <point x="84.375" y="202.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizaciones" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_organizaciones">
+              <point x="63.5" y="-246.0" />
+              <point x="449.75" y="889.0" />
+              <point x="518.0193965517241" y="889.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ejecutoras" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.proyectos">
+              <point x="56.75" y="-103.0" />
+              <point x="688.732040229885" y="1456.0" />
+              <point x="762.5193965517241" y="1456.0" />
+              <point x="-78.0" y="136.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.privilegios" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.cargos">
+              <point x="0.0" y="-81.0" />
+              <point x="1403.2693965517242" y="889.0" />
+              <point x="1344.0193965517242" y="889.0" />
+              <point x="47.0" y="81.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.proyectos">
+              <point x="-84.375" y="-202.0" />
+              <point x="1226.5" y="1446.0" />
+              <point x="918.5193965517241" y="1446.0" />
+              <point x="78.0" y="136.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.asignacion_eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.usuarios">
+              <point x="64.75" y="-92.0" />
+              <point x="1038.1293103448274" y="1456.0" />
+              <point x="1141.5193965517242" y="1456.0" />
+              <point x="-49.25" y="114.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizacion_eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizaciones">
+              <point x="-68.0" y="-92.0" />
+              <point x="0.0" y="246.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.ciudades" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.provincias">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizaciones" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.actividades">
+              <point x="-63.5" y="-246.0" />
+              <point x="322.75" y="889.0" />
+              <point x="267.51939655172407" y="889.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_eventos">
+              <point x="84.375" y="-202.0" />
+              <point x="1395.25" y="1456.0" />
+              <point x="1629.2693965517242" y="1456.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.personas" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.parroquias">
+              <point x="-56.75" y="-224.0" />
+              <point x="73.5" y="655.0" />
+              <point x="453.62931034482745" y="655.0" />
+              <point x="-52.5" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.personas" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.organizaciones">
+              <point x="56.75" y="-224.0" />
+              <point x="187.0" y="1456.0" />
+              <point x="301.58333333333326" y="1456.0" />
+              <point x="-84.66666666666674" y="246.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.asignacion_eventos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.proyectos">
+              <point x="-64.75" y="-92.0" />
+              <point x="908.6293103448274" y="1456.0" />
+              <point x="840.5193965517241" y="1456.0" />
+              <point x="0.0" y="136.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_suministros">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.anexos" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.eventos">
+              <point x="0.0" y="-92.0" />
+              <point x="28.125" y="202.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.usuarios" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.cargos">
+              <point x="0.0" y="-114.0" />
+              <point x="1190.7693965517242" y="889.0" />
+              <point x="1250.0193965517242" y="889.0" />
+              <point x="-47.0" y="81.0" />
+            </edge>
+            <edge source="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.suministros" target="a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_insumos">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0054054054054054" x="1055.4982944011863" y="940.9607897664073" />
+          <SelectedNodes>
+            <node>a6131220-c8da-497e-b31a-3f8a5612de7b.TABLE:fepp.tipo_eventos</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Cargo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+          <folding>
+            <element signature="e#23#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Persona.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="250">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="37" />
+        <state relative-caret-position="436">
+          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
         </state>
       </provider>
     </entry>
