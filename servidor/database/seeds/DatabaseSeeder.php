@@ -47,11 +47,14 @@ class DatabaseSeeder extends Seeder
         );
 
 
-        \App\Usuario::create(['nombres' => 'Washington Figueroa',
-            'cuenta' => 'Figo',
-            'password' => '123456',
-            'email' => 'w.figo.1991@gmail.com',
-            'cargo_id' => $cargo->cargo_id]);
+        \App\Usuario::create(
+            [
+                'nombres' => 'Washington Figueroa',
+                'cuenta' => 'Figo',
+                'password' => '123456',
+                'email' => 'w.figo.1991@gmail.com',
+                'cargo_id' => $cargo->cargo_id]
+        );
 
 //TIPO ORGANIZACIONES
         \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'COOPERATIVA','descripcion' => '']);

@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Cargo;
 use App\Usuario;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Validator;
 class UsuarioController extends Controller
 {
-    public function login() {
+/*    public function login() {
         $credentials = request()->only('cuenta', 'password');
         $rules = [
             'cuenta' => 'required',
@@ -44,6 +46,40 @@ class UsuarioController extends Controller
             'token' => $token,
             'mensaje' => 'Usuario autenticado exitosamente'
         ], 200);
+    }*/
+
+    private $successStatus = 200;
+    private $createdStatus= 201;
+    public function login() {
+        if (Auth::attempt([
+            'cuenta' => \request()->input('cuenta'),
+            'password' => \request()->input('password')
+        ])) {
+            $usuario = Auth::user();
+            $success['token'] = $usuario->createToken('FEPP')->accessToken;
+            return response()->json($success, $this->successStatus);
+        } else {
+            return response()->json([
+                'error' => 'Unauthorized',
+                401
+            ]);
+        }
+    }
+    public function signup() {
+        $input = \request()->all();
+        $input['password'] = Hash::make($input['password']);
+        $usuario = Usuario::create($input);
+        $success['token'] = $usuario->createToken('FEPP')->accessToken;
+        return response()->json([
+            'success' => $success
+        ], $this->createdStatus);
+    }
+    public function getUsuario() {
+        $usuario = Auth::user();
+        $usuario['cargo'] = Cargo::find($usuario->cargo_id);
+        return response()->json([
+            'success' => $usuario
+        ], $this->successStatus);
     }
     public function index() {
         $usuarios = Usuario::join('cargos', 'cargos.cargo_id', '=', 'usuarios.cargo_id')

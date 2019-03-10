@@ -16,6 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix('v1')->group(function () {
+    Route::post('login', 'API\UsuarioController@login');
+    Route::post('signup', 'API\UsuarioController@signup');
+
+    Route::group(['middleware' => 'auth:api'], function () {
+        Route::post('get-usuario', 'API\UsuarioController@getUsuario');
+    });
+});
 //Imágenes
 Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
 Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
@@ -83,7 +92,6 @@ Route::get('anexos-buscar/{valor?}', 'API\AnexoController@buscar');
 Route::get('sri/{cedula}', 'API\PersonaController@sri');
 
 /*login*/
-Route::post('login', 'API\UsuarioController@login');
 
 Route::apiResources([
     'tipo-organizaciones' => 'API\TipoOrganizacionController',

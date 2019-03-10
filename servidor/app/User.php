@@ -6,11 +6,13 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Passport\HasApiTokens;
 
 class Usuario extends Authenticatable
 {
     use Notifiable;
     use SoftDeletes;
+    use HasApiTokens;
 
     protected $table = 'usuarios';
     protected $primaryKey = 'usuario_id';
@@ -37,4 +39,8 @@ class Usuario extends Authenticatable
     ];
 
     protected $dates = ['deleted_at'];
+
+    public function cargo() {
+        return $this->belongsTo('App\Cargo', 'cargo_id');
+    }
 }

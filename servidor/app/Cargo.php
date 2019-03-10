@@ -16,6 +16,9 @@ class Cargo extends Model
     ];
     protected $dates = ['deleted_at'];
 
+    public function usuario() {
+        return $this->hasOne('App\Usuario', 'cargo_id');
+    }
     public function privilegios() {
         return $this->hasMany('App\Privilegio', 'cargo_id');
     }
