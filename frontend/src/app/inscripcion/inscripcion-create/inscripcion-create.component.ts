@@ -6,6 +6,7 @@ import {InscripcionService} from "../inscripcion.service";
 import {EventoService} from "../../evento/evento.service";
 import {ToastrService} from "ngx-toastr";
 import {MiembroService} from "../../miembro/miembro.service";
+import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-inscripcion-create',
@@ -22,9 +23,17 @@ export class InscripcionCreateComponent implements OnInit {
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
-        this.personaService.listar()
-            .subscribe((res: any) => {
-                this.personas = res;
+        this.personaService.listar().subscribe((res: any) => {
+                this.personas = [];
+                res.forEach(
+                    (persona:any)=>{
+                        this.personas.push({
+                            persona_id: persona.persona_id,
+                            cedula_: persona.cedula,
+                            nombres:  persona.cedula + ' ' + persona.nombres
+                        });
+                    }
+                )
             });
         this.eventoService.listar()
             .subscribe((res: any) => {

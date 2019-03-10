@@ -15,7 +15,7 @@ export class EjecutoraCreateComponent implements OnInit {
     ejecutoraGroup: FormGroup;
     proyectos: any = null;
     organizaciones: any = null;
-    auspiciantes: string = '';
+    auspiciantes = [];
 
     constructor(private ejecutoraService: EjecutoraService,
                 private proyectoService: ProyectoService,
@@ -52,6 +52,7 @@ export class EjecutoraCreateComponent implements OnInit {
         this.ejecutoraService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Agregado', 'Auspiciante');
+
                 this.ejecutoraGroup.reset();
             //limpiar todos los campos menos el proyecto
             }, (error) => {

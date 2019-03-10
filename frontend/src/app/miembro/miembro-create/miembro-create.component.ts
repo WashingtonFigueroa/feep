@@ -62,7 +62,7 @@ export class MiembroCreateComponent implements OnInit {
             'nombres': ['', [Validators.required]],
             'genero': [''],
             'ocupacion': ['', [Validators.required]],
-            'etnia': [''],
+            'etnia': ['NO SABE/NO RESPONDE'],
             'nacionalidad': [''],
             'pueblo': [''],
             'fecha_nacimiento': [''],

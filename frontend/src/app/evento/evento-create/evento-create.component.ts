@@ -44,7 +44,7 @@ export class EventoCreateComponent implements OnInit {
         this.eventoGroup = this.fb.group({
             'proyecto_id': [0, [Validators.required]],
             'tipo_evento_id': [0, [Validators.required]],
-            'usuario_id': [1, [Validators.required]],
+            // 'usuario_id': [1, [Validators.required]],
             'barrio_id': [0, [Validators.required]],
             'nombre': ['', [Validators.required]],
             'imagen': [''],
@@ -64,7 +64,7 @@ export class EventoCreateComponent implements OnInit {
                 const formData = new FormData();
                 formData.append('proyecto_id', this.eventoGroup.value.proyecto_id);
                 formData.append('tipo_evento_id', this.eventoGroup.value.tipo_evento_id);
-                formData.append('usuario_id', usuario);
+                // formData.append('usuario_id', usuario);
                 formData.append('barrio_id', this.eventoGroup.value.barrio_id);
                 formData.append('nombre', this.eventoGroup.value.nombre.toUpperCase());
                 formData.append('imagen', this.imagen.nativeElement.files[0]);
