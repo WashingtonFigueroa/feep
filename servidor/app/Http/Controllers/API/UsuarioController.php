@@ -60,9 +60,8 @@ class UsuarioController extends Controller
             return response()->json($success, $this->successStatus);
         } else {
             return response()->json([
-                'error' => 'Unauthorized',
-                401
-            ]);
+                'error' => 'Unauthorized'
+            ], 401);
         }
     }
     public function signup() {
