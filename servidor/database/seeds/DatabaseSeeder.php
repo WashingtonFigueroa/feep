@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -51,7 +52,7 @@ class DatabaseSeeder extends Seeder
             [
                 'nombres' => 'Washington Figueroa',
                 'cuenta' => 'Figo',
-                'password' => '123456',
+                'password' => Hash::make('123456'),
                 'email' => 'w.figo.1991@gmail.com',
                 'cargo_id' => $cargo->cargo_id]
         );
