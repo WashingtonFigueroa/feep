@@ -15,7 +15,7 @@ export class AsignacionEventoCreateComponent implements OnInit {
     asignacionproyectoGroup: FormGroup;
     proyectoss: any = null;
     usuarios: any = null;
-    asignados: any = null;
+    asigevento = [];
     constructor(private asignacionproyectoService: AsignacionEventoService,
                 private proyectossService: ProyectoService,
                 private usuariosService: UsuarioService,
@@ -26,7 +26,15 @@ export class AsignacionEventoCreateComponent implements OnInit {
             this.proyectoss = res;
         });
         this.usuariosService.listar().subscribe((res: any) => {
-            this.usuarios = res;
+            this.usuarios = [];
+            res.forEach(
+                (usuario:any)=>{
+                    this.usuarios.push({
+                        usuario_id: usuario.usuario_id,
+                        nombres:  usuario.nombres
+                    });
+                }
+            )
         });
         this.crearForm();
     }
@@ -45,13 +53,11 @@ export class AsignacionEventoCreateComponent implements OnInit {
         formData.append('usuario_id', this.asignacionproyectoGroup.value.usuario_id);
         formData.append('descripcion', this.asignacionproyectoGroup.value.descripcion);
         this.asignacionproyectoService.store(formData).subscribe((res: any) => {
-                this.toastrService.success('usuario Agregado', 'al Proyecto');
-            this.asignados += res;
-            console.log(this.asignados);
-
-                //limpiar todos los campos menos el proyecto
+                this.toastrService.success('Al Proyecto', '');
+            this.asigevento.push(res);
+            this.asignacionproyectoGroup.reset();
             }, (error) => {
-                this.toastrService.warning('usuario', 'Asignado');
+                this.toastrService.warning('Anteriormente', 'Usuario Agregado');
             });
     }
 }

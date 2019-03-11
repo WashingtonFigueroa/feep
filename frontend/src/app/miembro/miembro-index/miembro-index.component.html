@@ -6,84 +6,68 @@
             <div class="card">
                 <div class="row">
                     <div class="col-md-12">
-                            <div class="card">
-                                <h3>&nbsp;&nbsp;Lista Personas</h3>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <button class="btn btn-primary" routerLink="/miembros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
-                                        </div>
-                                        <div class="col-sm">
-                                        </div>
-                                        <div class="col-sm">
-                                            <form (submit)="buscar()" class="form-inline" role="form">
-                                                <div class="form-group">
-                                                    <input type="email" class="input-search"
-                                                           [(ngModel)]="valor"
-                                                           name="valor">
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Buscar</button>
-                                            </form>
-                                        </div>
+                        <div class="card">
+                            <h3>&nbsp;&nbsp;Lista Personas</h3>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <button class="btn btn-primary" routerLink="/miembros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                                     </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table small" *ngIf="miembros !== null">
-                                            <thead style="background-color: #303030; color: #f7f7f7">
-                                            <tr>
-                                                <th> #   </th>
-                                                <th> Organización   </th>
-                                                <th> Cedula   </th>
-                                                <th> Nombres </th>
-                                                <th> Dirección </th>
-                                                <th> Contacto </th>
-                                                <th class="text-center">Operaciones</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr *ngFor="let miembro of miembros.data; let i = index">
-                                                <td>  {{ i + 1}} </td>
-                                                <td>  {{ miembro.organizacion }} </td>
-                                                <td>  {{ miembro.cedula }} </td>
-                                                <td>  {{ miembro.nombres }} </td>
-                                                <td>  {{ miembro.direccion }} </td>
-                                                <td>  {{ miembro.contacto }} </td>
-                                                <td class="text-center">
-                                                    <button routerLink="/miembros/editar/{{miembro.persona_id}}" type="button"
-                                                            class="btn btn-xs btn-info">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-xs btn-danger" (click)="destroy(miembro, i)">
-                                                        <i class="fa fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="col-sm">
                                     </div>
-                                    <div *ngIf="miembros !== null && miembros.last_page > 1" class="paginacion text-center">
-                                        <div>
-                                            Página {{ miembros.current_page }} de {{ miembros.last_page }}
-                                        </div>
-                                        <button class="paginacion-btn" (click)="loadPages(miembros.first_page_url)"><i class="fa fa-backward"></i></button>
-                                        <button class="paginacion-btn" (click)="loadPages(miembros.prev_page_url)" [disabled]="miembros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-                                        <button class="paginacion-btn" *ngFor="let page of pages"
-                                                [class.activated]="page.page == miembros.current_page"
-                                                (click)="loadPages(page.url)">{{ page.page }}</button>
-                                        <button class="paginacion-btn" (click)="loadPages(miembros.next_page_url)" [disabled]="miembros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-                                        <button class="paginacion-btn" (click)="loadPages(miembros.last_page_url)"><i class="fa fa-forward"></i></button>
+                                    <div class="col-sm">
+                                        <form (submit)="buscar()" class="form-inline" role="form">
+                                            <div class="form-group">
+                                                <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Buscar</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
+                            <div class="card-body">
+                                <div *ngIf="miembros !== null" class="table-responsive">
+                                    <table class="table">
+                                        <thead style="background-color: #303030; color: #f7f7f7">
+                                        <th> # </th>
+                                        <th> Organización </th>
+                                        <th> Cedula </th>
+                                        <th> Nombres </th>
+                                        <th> Dirección </th>
+                                        <th> Contacto </th>
+                                        <th class="text-center">Operaciones</th>
+                                        </thead>
+                                        <tbody>
+                                        <tr *ngFor="let miembro of miembros.data; let i = index">
+                                            <td> {{ i + 1}} </td>
+                                            <td> {{ miembro.organizacion }} </td>
+                                            <td> {{ miembro.cedula }} </td>
+                                            <td> {{ miembro.nombres }} </td>
+                                            <td> {{ miembro.direccion }} </td>
+                                            <td> {{ miembro.contacto }} </td>
+                                            <td class="text-center">
+                                                <a routerLink="/miembros/editar/{{miembro.persona_id}}" title="Editar Persona" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                                                <a (click)="destroy(miembro, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div *ngIf="miembros !== null && miembros.last_page > 1" class="paginacion text-center">
+                                    <div>
+                                        Página {{ miembros.current_page }} de {{ miembros.last_page }}
+                                    </div>
+                                    <button class="paginacion-btn" (click)="loadPages(miembros.first_page_url)"><i class="fa fa-backward"></i></button>
+                                    <button class="paginacion-btn" (click)="loadPages(miembros.prev_page_url)" [disabled]="miembros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                                    <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == miembros.current_page" (click)="loadPages(page.url)">{{ page.page }}</button>
+                                    <button class="paginacion-btn" (click)="loadPages(miembros.next_page_url)" [disabled]="miembros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                                    <button class="paginacion-btn" (click)="loadPages(miembros.last_page_url)"><i class="fa fa-forward"></i></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-

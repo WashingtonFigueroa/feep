@@ -54,7 +54,6 @@ export class EjecutoraCreateComponent implements OnInit {
                 this.toastrService.success('Agregado', 'Auspiciante');
                 this.auspiciantes.push(res);
                 this.ejecutoraGroup.reset();
-            //limpiar todos los campos menos el proyecto
             }, (error) => {
                 this.toastrService.warning('Registrado', 'Auspiciante');
             });

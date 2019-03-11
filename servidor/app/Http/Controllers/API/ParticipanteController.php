@@ -15,6 +15,12 @@ class ParticipanteController extends Controller
      */
     public function index()
     {
+        $personas= Participante::join('organizaciones','organizaciones.organizacion_id','=','personas.organizacion_id')
+            ->join('parroquias','parroquias.parroquia_id','=','personas.parroquia_id')
+            ->selectRaw('personas.*, organizaciones.nombre as organizacion,parroquias.nombre as parroquia')
+            ->orderBy('personas.persona_id','desc')
+            ->paginate(10);
+        return response()->json($personas, 200);
         return response()->json(Participante::paginate(), 200);
     }
 

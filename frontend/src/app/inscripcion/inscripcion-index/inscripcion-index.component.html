@@ -44,13 +44,14 @@
                       <td>  {{ participante.evento_id }} </td>
                       <td>  {{ participante.persona_id }} </td>
                       <td class="text-center">
-                        <button routerLink="/participantes/editar/{{participante.participante_id}}" type="button"
-                                class="btn btn-xs btn-info">
-                          <i class="fa fa-edit"></i>
-                        </button>
-                        <button type="button" class="btn btn-xs btn-danger" (click)="destroy(participante, i)">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <!--<button routerLink="/participantes/editar/{{participante.participante_id}}" type="button"-->
+                                <!--class="btn btn-xs btn-info">-->
+                          <!--<i class="fa fa-edit"></i>-->
+                        <!--</button>-->
+                        <!--<button type="button" class="btn btn-xs btn-danger" (click)="destroy(participante, i)">-->
+                          <!--<i class="fa fa-trash"></i>-->
+                        <!--</button>-->
+                        <a (click)="destroy(participante, i)" title="Eliminar Participante" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                       </td>
                     </tr>
                     </tbody>

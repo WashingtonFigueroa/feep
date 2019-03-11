@@ -19,9 +19,7 @@
                     <div class="col-sm">
                       <form (submit)="buscar()" class="form-inline" role="form">
                         <div class="form-group">
-                          <input type="email" class="input-search"
-                                 [(ngModel)]="valor"
-                                 name="valor">
+                          <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
                         </div>
                         <button type="submit" class="btn btn-primary">Buscar</button>
                       </form>
@@ -29,33 +27,26 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table small" *ngIf="asigancionproyectos !== null">
+                  <div *ngIf="asigancionproyectos !== null" class="table-responsive">
+                    <table class="table">
                       <thead style="background-color: #303030; color: #f7f7f7">
-                      <tr>
-                        <th> #   </th>
-                        <th> Proyecto   </th>
-                        <th> Usuario Encargado   </th>
-                        <th> Descripción   </th>
-                        <th> Fecha Asignación   </th>
-                        <th class="text-center">Operaciones</th>
-                      </tr>
+                      <th> # </th>
+                      <th> Proyecto </th>
+                      <th> Usuario Encargado </th>
+                      <th> Descripción </th>
+                      <th> Fecha Asignación </th>
+                      <th class="text-center">Operaciones</th>
                       </thead>
                       <tbody>
                       <tr *ngFor="let asignacionproyecto of asigancionproyectos.data; let i = index">
-                        <td>  {{ i + 1}} </td>
-                        <td>  {{ asignacionproyecto.proyecto }} </td>
-                        <td>  {{ asignacionproyecto.usuario }} </td>
-                        <td>  {{ asignacionproyecto.descripcion }} </td>
-                        <td>  {{ asignacionproyecto.created_at }} </td>
+                        <td> {{ i + 1}} </td>
+                        <td> {{ asignacionproyecto.proyecto }} </td>
+                        <td> {{ asignacionproyecto.usuario }} </td>
+                        <td> {{ asignacionproyecto.descripcion }} </td>
+                        <td> {{ asignacionproyecto.created_at }} </td>
                         <td class="text-center">
-                          <button routerLink="/asignacioneventos/editar/{{asignacionproyecto.asignacion_evento_id}}" type="button"
-                                  class="btn btn-xs btn-info">
-                            <i class="fa fa-edit"></i>
-                          </button>&nbsp;
-                          <button type="button" class="btn btn-xs btn-danger" (click)="destroy(asignacionproyecto, i)">
-                            <i class="fa fa-trash"></i>
-                          </button>
+                          <a routerLink="/asignacioneventos/editar/{{asignacionproyecto.asignacion_evento_id}}" title="Editar Asignación de Evento" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                          <a (click)="destroy(asignacionproyecto, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                         </td>
                       </tr>
                       </tbody>
@@ -67,9 +58,7 @@
                     </div>
                     <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.first_page_url)"><i class="fa fa-backward"></i></button>
                     <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.prev_page_url)" [disabled]="asigancionproyectos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-                    <button class="paginacion-btn" *ngFor="let page of pages"
-                            [class.activated]="page.page == asigancionproyectos.current_page"
-                            (click)="loadPages(page.url)">{{ page.page }}</button>
+                    <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == asigancionproyectos.current_page" (click)="loadPages(page.url)">{{ page.page }}</button>
                     <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.next_page_url)" [disabled]="asigancionproyectos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
                     <button class="paginacion-btn" (click)="loadPages(asigancionproyectos.last_page_url)"><i class="fa fa-forward"></i></button>
                   </div>
@@ -82,7 +71,3 @@
     </div>
   </div>
 </div>
-
-
-
-

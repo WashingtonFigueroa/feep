@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\AsignacionEvento;
+use App\Usuario;
+use App\Proyecto;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +21,10 @@ class AsignacionEventoController extends Controller
     }
     public function store(Request $request)
     {
-        return response()->json(AsignacionEvento::create($request->all()), 201);
+        $evento = AsignacionEvento::create($request->all())->toArray();
+        $evento['proyecto'] = Proyecto::find($evento['proyecto_id'])->nombre;
+        $evento['usuario'] = Usuario::find($evento['usuario_id'])->nombres;
+        return response()->json($evento, 201);
     }
     public function show($id)
     {

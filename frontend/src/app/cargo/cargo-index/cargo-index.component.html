@@ -32,7 +32,7 @@
                 <td>
                   {{ cargo.descripcion }}
                 </td>
-                <td class="text-right">
+                <td class="text-center">
                   <a routerLink="/cargos/editar/{{cargo.cargo_id}}" title="Editar Cargo" class="action action-edit"> <i class="fas fa-edit"></i> </a>
                   <a (click)="destroy(cargo, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                 </td>

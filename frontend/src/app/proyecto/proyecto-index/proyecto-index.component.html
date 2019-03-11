@@ -19,9 +19,7 @@
                     <div class="col-sm">
                       <form (submit)="buscar()" class="form-inline" role="form">
                         <div class="form-group">
-                          <input type="email" class="input-search"
-                                 [(ngModel)]="valor"
-                                 name="valor">
+                          <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
                         </div>
                         <button type="submit" class="btn btn-primary">Buscar</button>
                       </form>
@@ -29,56 +27,50 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table small" *ngIf="proyectos !== null">
+                  <div *ngIf="proyectos !== null" class="table-responsive">
+                    <table class="table">
                       <thead style="background-color: #303030; color: #f7f7f7">
-                      <tr>
-                        <th> #   </th>
-                        <th> Tipo Proyecto   </th>
-                        <th> Lugar   </th>
-                        <th> Nombre   </th>
-                        <!--<th> Imagen   </th>-->
-                        <th> Fecha Creación   </th>
-                        <th class="text-center">Operaciones</th>
-                      </tr>
+                      <th> # </th>
+                      <th> Tipo Proyecto </th>
+                      <th> Lugar </th>
+                      <th> Nombre </th>
+                      <!--<th> Imagen   </th>-->
+                      <th> Fecha Creación </th>
+                      <th class="text-center">Operaciones</th>
+                      <th class="text-center">Asignar Auspiciantes</th>
                       </thead>
                       <tbody>
                       <tr *ngFor="let proyecto of proyectos.data; let i = index">
-                        <td>  {{ i + 1}} </td>
-                        <td>  {{ proyecto.tipoproyecto }} </td>
-                        <td>  {{ proyecto.barrio }} </td>
-                        <td>  {{ proyecto.nombre }} </td>
+                        <td> {{ i + 1}} </td>
+                        <td> {{ proyecto.tipoproyecto }} </td>
+                        <td> {{ proyecto.barrio }} </td>
+                        <td> {{ proyecto.nombre }} </td>
                         <!--<td>  {{ proyecto.imagen }} </td>-->
-                        <td>  {{ proyecto.created_at }} </td>
+                        <td> {{ proyecto.created_at }} </td>
 
                         <td class="text-center">
-                          <button routerLink="/proyectos/editar/{{proyecto.proyecto_id}}" type="button"
-                                  class="btn btn-xs btn-info">
-                            <i class="fa fa-edit"></i>
-                          </button>&nbsp;
-                          <button type="button" class="btn btn-xs btn-danger" (click)="destroy(proyecto, i)">
-                            <i class="fa fa-trash"></i>
-                          </button>&nbsp;
-                            <button type="button" class="btn btn-xs btn-info" routerLink="/ejecutoras/crear">
-                                <i class="fa fa-globe"></i>
-                            </button>
+                          <a routerLink="/proyectos/editar/{{proyecto.proyecto_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit "></i> </a>
+                          <a (click)="destroy(proyecto, i)" title="Eliminar Proyecto" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-xs btn-info" routerLink="/ejecutoras/crear">
+                            <i class="fa fa-globe"></i>
+                          </button>
                         </td>
                       </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div *ngIf="proyectos !== null && proyectos.last_page > 1" class="paginacion text-center">
-                    <div>
-                      Página {{ proyectos.current_page }} de {{ proyectos.last_page }}
-                    </div>
-                    <button class="paginacion-btn" (click)="loadPages(proyectos.first_page_url)"><i class="fa fa-backward"></i></button>
-                    <button class="paginacion-btn" (click)="loadPages(proyectos.prev_page_url)" [disabled]="proyectos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-                    <button class="paginacion-btn" *ngFor="let page of pages"
-                            [class.activated]="page.page == proyectos.current_page"
-                            (click)="loadPages(page.url)">{{ page.page }}</button>
-                    <button class="paginacion-btn" (click)="loadPages(proyectos.next_page_url)" [disabled]="proyectos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-                    <button class="paginacion-btn" (click)="loadPages(proyectos.last_page_url)"><i class="fa fa-forward"></i></button>
+                </div>
+                <div *ngIf="proyectos !== null && proyectos.last_page > 1" class="paginacion text-center">
+                  <div>
+                    Página {{ proyectos.current_page }} de {{ proyectos.last_page }}
                   </div>
+                  <button class="paginacion-btn" (click)="loadPages(proyectos.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(proyectos.prev_page_url)" [disabled]="proyectos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == proyectos.current_page" (click)="loadPages(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPages(proyectos.next_page_url)" [disabled]="proyectos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPages(proyectos.last_page_url)"><i class="fa fa-forward"></i></button>
                 </div>
               </div>
             </div>
@@ -88,7 +80,3 @@
     </div>
   </div>
 </div>
-
-
-
-

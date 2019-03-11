@@ -56,7 +56,7 @@ export class InscripcionCreateComponent implements OnInit {
         this.participanteService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Registrado', 'Participante')
-                this.router.navigate(['/miembros/listar']);
+                this.participanteGroup.reset();
             }, (error) => {
                 this.toastrService.error('duplicado', 'Participante');
             });

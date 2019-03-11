@@ -28,10 +28,9 @@
                 </div>
               </div>
               <div class="card-body">
-                <div class="table-responsive small">
-                  <table class="table " *ngIf="eventos !== null">
-                    <thead style="background-color: #303030; color: #f7f7f7">
-                    <tr>
+                    <div *ngIf="eventos !== null" class="table-responsive">
+                      <table class="table">
+                        <thead style="background-color: #303030; color: #f7f7f7">
                       <th> #   </th>
                       <th> Proyecto   </th>
                       <th> Tipo   </th>
@@ -41,7 +40,6 @@
                       <th> Inicia </th>
                       <th> Finaliza </th>
                       <th class="text-center">Operaciones</th>
-                    </tr>
                     </thead>
                     <tbody>
                     <tr *ngFor="let evento of eventos.data; let i = index">
@@ -58,14 +56,8 @@
                       <td>  {{ evento.fecha_evento | date: 'dd/MM/yyyy' }} </td>
                       <td>  {{ evento.fecha_finaliza | date: 'dd/MM/yyyy' }} </td>
                       <td class="text-center">
-                        <button routerLink="/eventos/editar/{{ evento.evento_id }}" type="button"
-                                class="btn btn-xs btn-info">
-                          <i class="fa fa-edit"></i>
-                        </button>
-                        &nbsp;&nbsp;
-                        <button type="button" class="btn btn-xs btn-danger" (click)="destroy(evento, i)">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <a routerLink="/eventos/editar/{{ evento.evento_id }}" title="Editar Evento" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                        <a (click)="destroy(evento, i)" title="Eliminar Evento" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                       </td>
                     </tr>
                     </tbody>
