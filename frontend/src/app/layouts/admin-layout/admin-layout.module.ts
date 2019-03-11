@@ -125,7 +125,6 @@ import {PrivilegioService} from '../../privilegio/privilegio.service';
     FormsModule,
     ChartsModule,
     NgbModule,
-    ToastrModule.forRoot(),
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,

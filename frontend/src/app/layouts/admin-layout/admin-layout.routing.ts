@@ -508,7 +508,7 @@ export const AdminLayoutRoutes: Routes = [
             }
         ]
     },
-    { path: 'cargos',      component: CargoComponent, children: [
+    { path: 'cargos', component: CargoComponent, children: [
             {
                 path: 'listar',
                 component: CargoIndexComponent
