@@ -67,30 +67,18 @@ export class OrganizacionUpdateComponent implements OnInit {
         });
     }
     update() {
-        const total =   this.organizacionGroup.value.mujeres +
-            this.organizacionGroup.value.ninias +
-            this.organizacionGroup.value.hombres +
-            this.organizacionGroup.value.ninios;
-        this.organizacion.total=total;
-        const formData = new FormData();
-        formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
-        formData.append('actividad_id', this.organizacionGroup.value.actividad_id);
-        formData.append('nombre', this.organizacionGroup.value.nombre.toUpperCase());
-        formData.append('actividad', this.organizacionGroup.value.actividad);
-        formData.append('representante', this.organizacionGroup.value.representante.toUpperCase());
-        formData.append('contacto', this.organizacionGroup.value.contacto);
-        formData.append('direccion', this.organizacionGroup.value.direccion);
-        formData.append('descripcion', this.organizacionGroup.value.descripcion.toUpperCase());
-        formData.append('acuerdo', this.organizacionGroup.value.acuerdo);
-        formData.append('mujeres', this.organizacionGroup.value.mujeres);
-        formData.append('ninias', this.organizacionGroup.value.ninias);
-        formData.append('hombres', this.organizacionGroup.value.hombres);
-        formData.append('ninios', this.organizacionGroup.value.ninios);
-        formData.append('total', total);
-        formData.append('latitud', this.organizacionGroup.value.latitud);
-        formData.append('longitud', this.organizacionGroup.value.longitud);
-        formData.append('precision', this.organizacionGroup.value.precision);
-        this.organizacionService.update(this.organizacion_id, formData)
+        const total =
+            parseInt(this.organizacionGroup.value.mujeres, 10) +
+            parseInt(this.organizacionGroup.value.ninias, 10) +
+            parseInt(this.organizacionGroup.value.hombres, 10) +
+            parseInt(this.organizacionGroup.value.ninios, 10);
+        this.organizacionGroup.patchValue({
+            nombre: this.organizacionGroup.value.nombre.toUpperCase(),
+            representante: this.organizacionGroup.value.representante.toUpperCase(),
+            descripcion: this.organizacionGroup.value.descripcion.toUpperCase(),
+            total: total
+        });
+        this.organizacionService.update(this.organizacion_id, this.organizacionGroup.value)
             .subscribe((res: any) => {
                 this.toastrService.success('Actualizada', 'Organización')
                 this.router.navigate(['/organizaciones']);

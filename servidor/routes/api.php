@@ -31,6 +31,11 @@ Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
 Route::get('anexos-imagen/{url}', 'API\AnexoController@imagen');
 Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
 
+
+//cambiar imagenes
+
+Route::post('organizaciones-imagen-cambiar/{id}', 'API\OrganizacionController@cambiarImagen');
+
 /*listados*/
 Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
 Route::get('organizaciones-listar', 'API\OrganizacionController@listar');

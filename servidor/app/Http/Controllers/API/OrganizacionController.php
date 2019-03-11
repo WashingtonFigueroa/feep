@@ -42,7 +42,8 @@ class OrganizacionController extends Controller
     public function update(Request $request, $id)
     {
         $organizacion = Organizacion::find($id);
-        $organizacion->update($request->all());
+        $organizacion->fill($request->all());
+        $organizacion->save();
         return response()->json($organizacion, 200);
     }
     public function destroy($id)
@@ -53,5 +54,15 @@ class OrganizacionController extends Controller
     }
     public function imagen($url){
         return response()->file(storage_path('app/organizaciones/' . $url));
+    }
+
+    public function cambiarImagen($id) {
+        if (\request()->hasFile('imagen')) {
+            $url = \request()->file('imagen')->store('organizaciones');
+            $organizacion = Organizacion::find($id);
+            $organizacion->imagen = explode('/', $url)[1]; ;
+            $organizacion->save();
+        }
+        return $this->index();
     }
 }

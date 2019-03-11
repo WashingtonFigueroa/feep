@@ -30,4 +30,7 @@ export class OrganizacionService {
     pagination(url: string) {
         return this.http.get(url);
     }
+    cambiarImagen(id, req) {
+        return this.http.post(`${this.base}organizaciones-imagen-cambiar/${id}`, req);
+    }
 }

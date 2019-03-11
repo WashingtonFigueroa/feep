@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {environment} from '../../../environments/environment.prod';
 import {OrganizacionService} from '../organizacion.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-organizacion-index',
@@ -16,7 +17,8 @@ export class OrganizacionIndexComponent implements OnInit {
     organizaciones: any = null;
     url_base = environment.servidor + 'organizaciones-imagen/';
     valor = '';
-    constructor(private organizacionService: OrganizacionService) {
+    constructor(private organizacionService: OrganizacionService,
+                private toastr: ToastrService) {
         this.organizacionService.index()
             .subscribe((res: any) => {
                 this.organizaciones = res;
@@ -66,6 +68,33 @@ export class OrganizacionIndexComponent implements OnInit {
                 .subscribe((res: any) => {
                     this.organizaciones.data.splice(index, 1);
                 });
+        }
+    }
+    cambiarImagen(id) {
+        const imagen: any = document.getElementById('imagen-' + id);
+        const archivo = imagen.files[0];
+        if (archivo) {
+            const formData = new FormData();
+            formData.append('imagen', archivo);
+            this.organizacionService.cambiarImagen(id, formData)
+                .subscribe((res) => {
+                    this.organizaciones = res;
+                    this.current_page = this.organizaciones.current_page;
+                    this.prev_page = this.organizaciones.prev_page_url;
+                    this.next_page = this.organizaciones.next_page_url;
+                    this.last_page = this.organizaciones.last_page;
+                    this.loadPages();
+
+                    this.toastr.success(`<span class="now-ui-icons ui-1_bell-53"></span> Imagen subida`, 'Exito!', {
+                        timeOut: 8000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-success alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
+                });
+        } else {
+            return;
         }
     }
 }
