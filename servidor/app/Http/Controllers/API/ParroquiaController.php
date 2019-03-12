@@ -15,12 +15,18 @@ class ParroquiaController extends Controller
      */
     public function index()
     {
-        $parroquias = Parroquia::orderBy('nombre')->paginate(10);
+        $parroquias = Parroquia::join('ciudades', 'ciudades.ciudad_id', '=', 'parroquias.ciudad_id')
+            ->selectRaw('parroquias.*, ciudades.nombre as ciudad')
+            ->orderBy('parroquias.parroquia_id', 'desc')
+            ->paginate(10);
         return response()->json($parroquias, 200);
     }
     public function listar()
     {
-        $parroquia = Parroquia::orderBy('nombre')->get();
+        $parroquia = Parroquia::join('ciudades', 'ciudades.ciudad_id', '=', 'parroquias.ciudad_id')
+            ->selectRaw('parroquias.*, ciudades.nombre as ciudad')
+            ->orderBy('parroquias.parroquia_id', 'desc')
+            ->get();
         return response()->json($parroquia, 200);
     }
     /**

@@ -12,33 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//        DB::table('anexos')->truncate();
-//        DB::table('asignacion_eventos')->truncate();
-//        DB::table('ejecutoras')->truncate();
-//        DB::table('insumos')->truncate();
-//        DB::table('organizacion_eventos')->truncate();
-//        DB::table('participantes')->truncate();
-//        DB::table('personas')->truncate();
-//        DB::table('eventos')->truncate();
-//        DB::table('proyectos')->truncate();
-//        DB::table('suministros')->truncate();
-//        DB::table('tipos')->truncate();
-//        DB::table('actividades')->truncate();
-//        DB::table('tipo_eventos')->truncate();
-//        DB::table('tipo_insumos')->truncate();
-//        DB::table('tipo_personas')->truncate();
-//        DB::table('tipo_proyectos')->truncate();
-//        DB::table('tipo_suministros')->truncate();
-//        DB::table('organizaciones')->truncate();
-//        DB::table('tipo_organizaciones')->truncate();
-//        DB::table('barrios')->truncate();
-//        DB::table('parroquias')->truncate();
-//        DB::table('ciudades')->truncate();
-//        DB::table('provincias')->truncate();
-//        DB::table('usuarios')->truncate();
-
-
-
         //TIPO USUARIOS
         $cargo = \App\Cargo::create(
             [
@@ -120,11 +93,11 @@ class DatabaseSeeder extends Seeder
         \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
         \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
 //Cantones
-        \App\Ciudad::create(['provincia_id' => 10,'codigo' => '101', 'nombre' => 'IBARRA']);
+//        \App\Ciudad::create(['provincia_id' => 10,'codigo' => '101', 'nombre' => 'IBARRA']);
 //Parroquia
-        \App\Parroquia::create(['ciudad_id' => 1,'codigo' => '1001', 'nombre' => 'SAN ANTONIO']);
+//        \App\Parroquia::create(['ciudad_id' => 1,'codigo' => '1001', 'nombre' => 'SAN ANTONIO']);
 //Barrio
-        \App\Barrio::create(['parroquia_id' => 1,'comunidad' => '', 'nombre' => 'LOS SOLES']);
+//       \App\Barrio::create(['parroquia_id' => 1,'comunidad' => '', 'nombre' => 'LOS SOLES']);
 
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => 'ZONAS NO DELIMITADAS','descripcion' => '']);
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => ' CUENCA ','descripcion' => '']);
@@ -353,12 +326,12 @@ class DatabaseSeeder extends Seeder
 //   \App\Ciudad::create(['provincia_id' => 25, 'nombre' => ' EL PIEDRERO ','descripcion' => '']);
 
 //PROYECTO
-        \App\Proyecto::create(['tipo_proyecto_id' => 1,'barrio_id' => 1,'nombre' => 'RENACER','imagen' => '','inicio' => '2019-03-01','fin' => '2019-03-01']);
+//        \App\Proyecto::create(['tipo_proyecto_id' => 1,'barrio_id' => 1,'nombre' => 'RENACER','imagen' => '','inicio' => '2019-03-01','fin' => '2019-03-01']);
 //EVENTO
-        \App\Evento::create(['proyecto_id' => 1,'usuario_id' => 1,'tipo_evento_id' => 1,'barrio_id' => '1','nombre' => 'INAGURACION DTMOWED','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','fecha_evento' => '2019-03-01', 'direccion' => 'CALLE A Y CALLE B','duracion_horas' => '4','fecha_finaliza' => '2019-03-01']);
+//        \App\Evento::create(['proyecto_id' => 1,'usuario_id' => 1,'tipo_evento_id' => 1,'barrio_id' => '1','nombre' => 'INAGURACION DTMOWED','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','fecha_evento' => '2019-03-01', 'direccion' => 'CALLE A Y CALLE B','duracion_horas' => '4','fecha_finaliza' => '2019-03-01']);
 //
 //ORGANIZACION
-        \App\Organizacion::create(['tipo_organizacion_id' => 1,'actividad_id' => 1,'nombre' => 'LA CHOZA','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','representante' => 'JUAN CARLOS LOPEZ','contacto' => '0636545632','direccion' => 'CALLE Q Y CALLE B','descripcion' => 'UNION DE ARTISTAS','acuerdo' => '001','mujeres' => 10,'ninias' => 1,'hombres' => 10,'ninios' => 2,'total' => 23,'latitud' => '','longitud' => '','precision' => '']);
+//        \App\Organizacion::create(['tipo_organizacion_id' => 1,'actividad_id' => 1,'nombre' => 'LA CHOZA','imagen' => 'EHnmZSw7PmfC8vv0hsZ8PzTraFMUQlGOd02YiIDV.jpeg','representante' => 'JUAN CARLOS LOPEZ','contacto' => '0636545632','direccion' => 'CALLE Q Y CALLE B','descripcion' => 'UNION DE ARTISTAS','acuerdo' => '001','mujeres' => 10,'ninias' => 1,'hombres' => 10,'ninios' => 2,'total' => 23,'latitud' => '','longitud' => '','precision' => '']);
 
     }
 }

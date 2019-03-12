@@ -14,7 +14,11 @@ class BarrioController extends Controller
 
     public function listar()
     {
-        $barrio = Barrio::orderBy('barrio_id','desc')->get();
+        $barrio = Barrio::join('parroquias', 'parroquias.parroquia_id', '=', 'barrios.parroquia_id')
+            ->join('ciudades', 'ciudades.ciudad_id', '=', 'parroquias.ciudad_id')
+            ->selectRaw('barrios.*, ciudades.nombre as ciudad, parroquias.nombre as parroquia')
+            ->orderBy('barrios.barrio_id', 'desc')
+            ->get();
         return response()->json($barrio, 200);
     }
 

@@ -19,7 +19,6 @@ export class UbicacionCreateComponent implements OnInit {
     provincias: any  = null;
     ciudades: any  = null;
     parroquias: any  = null;
-        // comunidades: any  = null;
     constructor(private fb: FormBuilder,
                 private router: Router,
                 private ubicacionService: UbicacionService,
@@ -29,18 +28,21 @@ export class UbicacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.provincias = res;
             });
-        this.ubicacionService.parroquiaslistar()
-            .subscribe((res: any) => {
-                this.parroquias = res;
-            });
-        // this.ubicacionService.comunidadeslistar()
-        //     .subscribe((res: any) => {
-        //         this.comunidades = res;
-        //     });
         this.ubicacionService.ciudadeslistar()
             .subscribe((res: any) => {
                 this.ciudades = res;
             });
+        this.ubicacionService.parroquiaslistar().subscribe((res: any) => {
+            this.parroquias = [];
+            res.forEach(
+                (parroquia:any)=>{
+                    this.parroquias.push({
+                        parroquia_id: parroquia.parroquia_id,
+                        nombre:  parroquia.ciudad + ' - ' + parroquia.nombre
+                    });
+                }
+            )
+        });
         this.crearFormprovincia();
         this.crearFormciudad();
         this.crearFormparroquia();
@@ -121,7 +123,7 @@ export class UbicacionCreateComponent implements OnInit {
     crearFormbarrio() {
         this.barrioGroup = this.fb.group({
             'parroquia_id' : ['', [Validators.required]],
-            'comunidad' : [''],
+            'comunidad' : ['NINGUNA'],
             'nombre' : ['', [Validators.required]]
         });
     }

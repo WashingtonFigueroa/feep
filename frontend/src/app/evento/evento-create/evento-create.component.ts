@@ -21,7 +21,7 @@ export class EventoCreateComponent implements OnInit {
     barrios: any = null;
     constructor(private eventoService: EventoService,
                 private tipoeventoService: TipoEventoService,
-                private parroquiasService: UbicacionService,
+                private  barrioService: UbicacionService,
                 private proyectoService: ProyectoService,
                 private router: Router,
                 private fb: FormBuilder,
@@ -33,10 +33,17 @@ export class EventoCreateComponent implements OnInit {
         this.proyectoService.listar().subscribe((res: any) => {
            this.proyectos = res;
         });
-        this.parroquiasService.barrioslistar()
-            .subscribe((res: any) => {
-                this.barrios = res;
-            });
+        this.barrioService.barrioslistar().subscribe((res: any) => {
+            this.barrios = [];
+            res.forEach(
+                (barrio:any)=>{
+                    this.barrios.push({
+                        barrio_id: barrio.barrio_id,
+                        nombre:  barrio.ciudad + ' - ' + barrio.parroquia + ' - ' + barrio.nombre
+                    });
+                }
+            )
+        });
         this.crearForm();
     }
     ngOnInit() {

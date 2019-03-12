@@ -84,12 +84,8 @@
             <div class="row">
               <div class="col-lg-8 ml-auto mr-auto">
                 <form (submit)="storeparroquia()" [formGroup]="parroquiaGroup" *ngIf="ciudades !== null" role="form">
-
                   <div class="form-group">
                     <label>Seleccione Cantón</label>
-                    <!--<select name="ciudad_id" id="ciudad_id" formControlName="ciudad_id" class="form-control">-->
-                      <!--<option [value]="ciudad.ciudad_id" *ngFor="let ciudad of ciudades">{{ ciudad.nombre }}</option>-->
-                    <!--</select>-->
                     <ng-select [items]="ciudades"
                                class="form-control"
                                id="ciudad_id"

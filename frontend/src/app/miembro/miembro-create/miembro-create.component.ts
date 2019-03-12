@@ -46,10 +46,17 @@ export class MiembroCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.organizaciones = res;
             });
-        this.parroquiasService.parroquiaslistar()
-            .subscribe((res: any) => {
-                this.parroquias = res;
-            });
+        this.parroquiasService.parroquiaslistar().subscribe((res: any) => {
+            this.parroquias = [];
+            res.forEach(
+                (parroquia:any)=>{
+                    this.parroquias.push({
+                        parroquia_id: parroquia.parroquia_id,
+                        nombre:  parroquia.ciudad + ' - ' + parroquia.nombre
+                    });
+                }
+            )
+        });
         this.crearForm();
     }
     ngOnInit() {

@@ -26,8 +26,17 @@ export class ProyectoCreateComponent implements OnInit {
         this.tipoproyectoService.listar().subscribe((res: any) => {
                 this.tipoproyectos = res;
             });
+
         this.barrioService.barrioslistar().subscribe((res: any) => {
-          this.barrios = res;
+            this.barrios = [];
+            res.forEach(
+                (barrio:any)=>{
+                    this.barrios.push({
+                        barrio_id: barrio.barrio_id,
+                        nombre:  barrio.ciudad + ' - ' + barrio.parroquia + ' - ' + barrio.nombre
+                    });
+                }
+            )
         });
         this.crearForm();
     }
