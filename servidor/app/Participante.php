@@ -17,4 +17,8 @@ class Participante extends Model
         'observacion',
     ];
     protected $dates = ['deleted_at'];
+
+    public function evento() {
+        return $this->belongsTo('App\Participante', 'evento_id');
+    }
 }

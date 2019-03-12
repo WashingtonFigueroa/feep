@@ -28,14 +28,12 @@ Route::prefix('v1')->group(function () {
     Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
     Route::get('insumos-imagen/{url}', 'API\InsumoController@imagen');
 
+    Route::get('evento-participantes/{evento_id}', 'API\EventoController@participantes');
 
     Route::group(['middleware' => 'auth:api'], function () {
         Route::post('get-usuario', 'API\UsuarioController@getUsuario');
 
-
-
 //cambiar imagenes
-
         Route::post('organizaciones-imagen-cambiar/{id}', 'API\OrganizacionController@cambiarImagen');
 
         /*listados*/

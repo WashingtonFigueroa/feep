@@ -136,3 +136,8 @@ label.upload:hover {
     padding-bottom: 1em;
     border-bottom: 1px solid #28a946;
 }
+@media all and (max-width: 425px) {
+    .login {
+        width: 100%;
+    }
+}

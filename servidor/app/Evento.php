@@ -25,4 +25,7 @@ class Evento extends Model
         'longitud',
         'estado',
     ];
+    public function participantes() {
+        return $this->hasMany('App\Participante', 'evento_id');
+    }
 }

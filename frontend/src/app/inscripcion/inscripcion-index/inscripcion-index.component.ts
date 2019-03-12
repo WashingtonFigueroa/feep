@@ -1,11 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import {environment} from "../../../environments/environment.prod";
-import {InscripcionService} from "../inscripcion.service";
+import {Component, Inject, OnInit} from '@angular/core';
+import {environment} from '../../../environments/environment.prod';
+import {InscripcionService} from '../inscripcion.service';
+import * as jsPDF from 'jspdf';
+import {EventoService} from '../../evento/evento.service';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-inscripcion-index',
   templateUrl: './inscripcion-index.component.html',
-  styleUrls: ['./inscripcion-index.component.scss']
+  styleUrls: ['./inscripcion-index.component.scss'],
+  providers: [
+      { provide: 'Window', useValue: window }
+  ]
 })
 export class InscripcionIndexComponent implements OnInit {
     prev_page: string = null;
@@ -15,7 +21,16 @@ export class InscripcionIndexComponent implements OnInit {
     current_page: any = null;
     participantes: any = null;
     valor = '';
-    constructor(private participanteService: InscripcionService) {
+    eventos: any = null;
+    printGroup: FormGroup;
+    constructor(@Inject('Window') private window: Window,
+                private fb: FormBuilder,
+                private eventoService: EventoService,
+                private participanteService: InscripcionService) {
+        this.eventoService.listar()
+            .subscribe((res: any) => {
+                this.eventos = res;
+            });
         this.participanteService.index()
             .subscribe((res: any) => {
                 this.participantes = res;
@@ -25,9 +40,16 @@ export class InscripcionIndexComponent implements OnInit {
                 this.last_page = this.participantes.last_page;
                 this.loadPages();
             });
+        this.createForm();
     }
 
     ngOnInit() {
+    }
+
+    createForm() {
+        this.printGroup = this.fb.group({
+            'evento_id': new FormControl('', Validators.required)
+        });
     }
 
     loadPages() {
@@ -71,4 +93,16 @@ export class InscripcionIndexComponent implements OnInit {
                 });
         }
     }
+
+    download() {
+        const doc = new jsPDF();
+        doc.text(20, 20, 'Hello world!');
+        doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
+        doc.addPage();
+        doc.text(20, 20, 'Do you like that?');
+
+        // Save the PDF
+        doc.save('Test.pdf');
+    }
+
 }

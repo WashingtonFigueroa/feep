@@ -10,12 +10,10 @@
               <h3>&nbsp;&nbsp; Lista Inscripciones</h3>
               <div class="container">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-2">
                     <button class="btn btn-info" routerLink="/inscripciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
-                  <div class="col-sm">
-                  </div>
-                  <div class="col-sm">
+                  <div class="col-4 text-right">
                     <form (submit)="buscar()" class="form-inline" role="form">
                       <div class="form-group">
                         <input type="email" class="input-search"
@@ -23,6 +21,18 @@
                                name="valor">
                       </div>
                       <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                  <div class="col-6 text-right">
+                    <form [formGroup]="printGroup"
+                          (submit)="download()"
+                          class="form-inline"
+                          role="form"
+                          *ngIf="eventos !== null">
+                      <select class="form-control" formControlName="evento_id" name="evento_id" id="evento_id">
+                        <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
+                      </select>
+                      <button class="btn btn-sm btn-primary"><i class="fa fa-download"></i></button>
                     </form>
                   </div>
                 </div>

@@ -77,4 +77,27 @@ class EventoController extends Controller
     public function imagen($url){
         return response()->file(storage_path('app/eventos/' . $url));
     }
+
+    public function participantes($evento_id) {
+        $participantes = Evento::join('participantes', 'participantes.evento_id', '=', 'eventos.evento_id')
+                                ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+                                ->where('eventos.evento_id', '=', $evento_id)
+                                ->selectRaw('personas.cedula, 
+                                            personas.nombres,
+                                            personas.genero,
+                                            personas.etnia,
+                                            personas.direccion,
+                                            personas.contacto')
+                                ->orderBy('personas.nombres', 'asc')
+                                ->get();
+        $evento = Evento::find($evento_id);
+        $data['evento'] = [
+            'nombre' => $evento->nombre,
+            'direccion' => $evento->direccion,
+            'fecha_inicio' => $evento->fecha_evento,
+            'fecha_fin' => $evento->fecha_finaliza
+        ];
+        $data['participantes'] = $participantes;
+        return response()->json($data, 200);
+    }
 }
