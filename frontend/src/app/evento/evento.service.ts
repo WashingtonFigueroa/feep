@@ -9,15 +9,7 @@ export class EventoService {
 
     httpHeaders: any;
 
-    constructor(private http: HttpClient,
-                private autenticacionService: AutenticacionService) {
-/*        const token = this.autenticacionService.getToken().split('\"')[1];
-        this.httpHeaders = new HttpHeaders({
-            'Content-Type': 'application/json',
-            'Accept' : 'application/json',
-            'Authorization' : token
-        });*/
-    }
+    constructor(private http: HttpClient) {}
 
     index() {
         return this.http.get(`${this.base}eventos`);
