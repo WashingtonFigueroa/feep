@@ -9,11 +9,14 @@ export class AutenticacionService {
   base = environment.servidor;
   constructor(private http: HttpClient) { }
 
+  getToken() {
+      return atob(localStorage.getItem('fepp-token'));
+  }
   login(req: any) {
-    return this.http.post(`${this.base}v1/login`, req)
+    return this.http.post(`${this.base}login`, req)
         .pipe(map((usuario: any) => {
           if (usuario.token) {
-            const token = btoa(JSON.stringify(usuario.token));
+            const token = btoa('Bearer ' + usuario.token);
             localStorage.setItem('fepp-token', token);
           }
           return usuario;

@@ -38,7 +38,7 @@ import {EventoService} from '../../evento/evento.service';
 import {TipoOrganizacionService} from '../../tipo-organizacion/tipo-organizacion.service';
 import {TipoEventoService} from '../../tipo-evento/tipo-evento.service';
 import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {TipoInsumoComponent} from '../../tipo-insumo/tipo-insumo.component';
 import {TipoInsumoCreateComponent} from '../../tipo-insumo/tipo-insumo-create/tipo-insumo-create.component';
 import {TipoInsumoUpdateComponent} from '../../tipo-insumo/tipo-insumo-update/tipo-insumo-update.component';
@@ -117,6 +117,8 @@ import {CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
 import {PrivilegioComponent} from '../../privilegio/privilegio.component';
 import {CargoService} from '../../cargo/cargo.service';
 import {PrivilegioService} from '../../privilegio/privilegio.service';
+import {JwtInterceptor} from '../../jwt-interceptor';
+import {ErrorInterceptor} from '../../error-interceptor';
 
 @NgModule({
   imports: [
@@ -245,7 +247,10 @@ import {PrivilegioService} from '../../privilegio/privilegio.service';
       AsignacionEventoService,
       AnexoService,
       CargoService,
-      PrivilegioService
+      PrivilegioService,
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
   ]
 })
 

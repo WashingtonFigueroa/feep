@@ -1,7 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -25,7 +24,6 @@ import {AuthGuard} from './auth.guard';
   imports: [
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
@@ -47,10 +45,8 @@ import {AuthGuard} from './auth.guard';
     LoginComponent,
   ],
   providers: [
-      AuthGuard,
-      AutenticacionService,
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+    AuthGuard,
+    AutenticacionService
   ],
   bootstrap: [AppComponent]
 })

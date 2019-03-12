@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Evento;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class EventoController extends Controller
 {
@@ -37,17 +38,23 @@ class EventoController extends Controller
                 ->paginate(10);
         return response()->json($eventos, 200);
     }
+
     public function store(Request $request)
     {
         if ($request->hasFile('imagen')) {
+            $usuario = Auth::user();
             $url = $request->file('imagen')->store('eventos');
             $evento = new Evento();
             $evento->fill($request->all());
+            $evento->usuario_id = $usuario->usuario_id;
             $evento->imagen = explode('/', $url)[1];
             $evento->save();
             return response()->json($evento, 201);
         } else {
-            $evento = Evento::create($request->all());
+            $usuario = Auth::user();
+            $input = $request->all();
+            $input['usuario_id'] = $usuario->usuario_id;
+            $evento = Evento::create($input);
             return response()->json($evento, 201);
         }
     }

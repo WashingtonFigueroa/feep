@@ -1,12 +1,22 @@
 import { Injectable } from '@angular/core';
-import {environment} from "../../environments/environment.prod";
-import {HttpClient} from "../../../node_modules/@angular/common/http";
+import {AutenticacionService} from '../autenticacion.service';
+import {environment} from '../../environments/environment.prod';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable()
 export class EventoService {
     base = environment.servidor;
 
-    constructor(private http: HttpClient) {
+    httpHeaders: any;
+
+    constructor(private http: HttpClient,
+                private autenticacionService: AutenticacionService) {
+/*        const token = this.autenticacionService.getToken().split('\"')[1];
+        this.httpHeaders = new HttpHeaders({
+            'Content-Type': 'application/json',
+            'Accept' : 'application/json',
+            'Authorization' : token
+        });*/
     }
 
     index() {
@@ -25,7 +35,9 @@ export class EventoService {
         return this.http.get(`${this.base}eventos/${id}`);
     }
     store(request) {
-        return this.http.post(`${this.base}eventos`, request);
+        return this.http.post(`${this.base}eventos`, request, {
+            headers: this.httpHeaders
+        });
     }
     update(id, request) {
         return this.http.put(`${this.base}eventos/${id}`, request);
