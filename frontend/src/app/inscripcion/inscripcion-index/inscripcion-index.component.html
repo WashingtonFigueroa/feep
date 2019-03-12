@@ -42,8 +42,8 @@
                     <tbody>
                     <tr *ngFor="let participante of participantes.data; let i = index">
                       <td>  {{ i + 1}} </td>
-                      <td>  {{ participante.evento_id }} </td>
-                      <td>  {{ participante.persona_id }} </td>
+                      <td>  {{ participante.evento }} </td>
+                      <td>  {{ participante.persona }} </td>
                       <td>  {{ participante.observacion }} </td>
                       <td class="text-center">
                           <a (click)="destroy(participante, i)" title="Eliminar Participante" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
