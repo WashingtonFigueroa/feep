@@ -107,16 +107,17 @@ export class InscripcionIndexComponent implements OnInit {
                   y: 80
                 };
 
+                doc.setFontSize(11);
                 doc.setFontType('bold');
                 doc.text('EVENTO:', coord.x, coord.y);
                 doc.setFontType('normal');
-                doc.text(res.evento.nombre, coord.x + 160, coord.y);
+                doc.text(res.evento.nombre, coord.x + 120, coord.y);
 
                 coord.y = coord.y + 30;
                 doc.setFontType('bold');
                 doc.text('DIRECCIÓN:', coord.x, coord.y);
                 doc.setFontType('normal');
-                doc.text(res.evento.direccion, coord.x + 160, coord.y);
+                doc.text(res.evento.direccion, coord.x + 120, coord.y);
 
                 coord.y = coord.y + 30;
                 const inicio =  res.evento.fecha_inicio.split('-')[2] + '/' +
@@ -128,17 +129,49 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.setFontType('bold');
                 doc.text('FECHA DE INICIO:', coord.x, coord.y);
                 doc.setFontType('normal');
-                doc.text(inicio, coord.x + 160, coord.y);
+                doc.text(inicio, coord.x + 120, coord.y);
 
-                coord.x = coord.x + 380;
+                coord.x = coord.x + 490;
                 doc.setFontType('bold');
                 doc.text('FECHA DE FIN:', coord.x, coord.y);
                 doc.setFontType('normal');
-                doc.text(fin, coord.x + 160, coord.y);
+                doc.text(fin, coord.x + 100, coord.y);
 
-                doc.addPage();
+                coord.x = 80;
+                coord.y = coord.y + 60;
+
+                doc.setFontSize(10);
+                doc.setFontType('bold');
+                doc.text('N.', coord.x + 10, coord.y);
+                doc.text('PARTICIPANTE', coord.x + 30, coord.y);
+                doc.text('GENERO', coord.x + 230, coord.y);
+                doc.text('CÉCULA', coord.x + 290, coord.y);
+                doc.text('ETNIA', coord.x + 350, coord.y);
+                doc.text('DIRECCIÓN', coord.x + 420, coord.y);
+                doc.text('CONTACTO', coord.x + 580, coord.y);
+
+                doc.line(coord.x, coord.y - 15, coord.x + 650, coord.y - 15);
+                doc.line(coord.x, coord.y + 10, coord.x + 650, coord.y + 10);
 /*                doc.text(20, 20, 'Do you like that?');*/
+                let i = 1;
+                doc.setFontSize(8);
+                doc.setFontType('normal');
+                res.participantes.forEach((participante: any) => {
+                    coord.y = coord.y + 24;
+                    doc.text(i.toString(), coord.x + 10, coord.y);
+                    doc.text(participante.nombres.toUpperCase(), coord.x + 30, coord.y);
+                    doc.text(participante.genero.toUpperCase(), coord.x + 230, coord.y);
+                    doc.text(participante.cedula.toUpperCase(), coord.x + 290, coord.y);
+                    doc.text(participante.etnia.toUpperCase(), coord.x + 350, coord.y);
+                    doc.text(participante.direccion.toUpperCase(), coord.x + 420, coord.y);
+                    doc.text(participante.contacto.toUpperCase(), coord.x + 580, coord.y);
 
+                    doc.line(coord.x, coord.y + 10, coord.x + 650, coord.y + 10);
+                    i++;
+                });
+                doc.line(310, 580, 500, 580);
+                doc.setFontSize(12);
+                doc.text('FIRMA', 380, 600);
                 // Save the PDF
                 doc.save('Evento.pdf');
             });
