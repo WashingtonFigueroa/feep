@@ -4,9 +4,18 @@
   <div class="row">
     <div class="col-md-8">
       <div class="card">
-        <div class="card-header">
-          <button class="btn btn-info" routerLink="/asignacioneventos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Editar Asignación Usuario</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              &nbsp; &nbsp;  <button class="btn btn-dark" routerLink="/asignacioneventos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Editar Asignación Usuario</h5>
+            </div>
+          </div>
         </div>
         <div class="card-body">
           <form (submit)="update()"  [formGroup]="asignacion_eventoGroup"  *ngIf="proyectos !== null && usuarios !== null" role="form">
@@ -36,10 +45,11 @@
                 </div>
               </div>
             </div>
+            <hr>
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 text-right">
                 <div class="form-group">
-                  <button class="btn btn-primary" type="submit" [disabled]="asignacion_eventoGroup.status === 'INVALID'">Actualizar&nbsp;  <span class="fa fa-save"></span></button>
+                  <button class="btn btn-info" type="submit" [disabled]="asignacion_eventoGroup.status === 'INVALID'">Actualizar&nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;
                   <a class="btn btn-dark" routerLink="/asignacioneventos" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
                 </div>
               </div>

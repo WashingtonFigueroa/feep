@@ -86,7 +86,7 @@ export class OrganizacionIndexComponent implements OnInit {
                     this.loadPages();
 
                     this.toastr.success(`<span class="now-ui-icons ui-1_bell-53"></span> Imagen subida`, 'Exito!', {
-                        timeOut: 8000,
+                        timeOut: 4000,
                         closeButton: true,
                         enableHtml: true,
                         toastClass: 'alert alert-success alert-with-icon',

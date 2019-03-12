@@ -77,7 +77,7 @@ export class MiembroUpdateComponent implements OnInit {
     update() {
         this.personaService.update(this.persona_id, this.personaGroup.value)
             .subscribe((res: any) => {
-              this.toastrService.success('Datos Modificados','Persona');
+              this.toastrService.success('Datos Actualizados','Persona');
                 this.router.navigate(['/miembros']);
             });
     }

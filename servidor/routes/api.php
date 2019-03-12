@@ -38,7 +38,11 @@ Route::post('organizaciones-imagen-cambiar/{id}', 'API\OrganizacionController@ca
 
 /*listados*/
 Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
+//ORGANIZACIONES
 Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
+Route::get('organizaciones-buscar/{valor?}', 'API\OrganizacionController@buscar');
+
+
 Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 Route::get('provincias-listar', 'API\ProvinciaController@listar');
 

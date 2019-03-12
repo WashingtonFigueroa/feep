@@ -62,7 +62,7 @@ export class ProyectoCreateComponent implements OnInit {
                 this.toastrService.warning('Registrado', 'Proyecto');
             });
         } else {
-            this.toastrService.info('Rango de Fechas', 'Error')
+            this.toastrService.warning('Rango de Fechas', 'Error');
         }
     }
     loadImage() {

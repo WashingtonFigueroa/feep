@@ -53,15 +53,6 @@
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div>
-                  <label>Logo</label>
-                  <input type="file" class="form-control"
-                         #imagen
-                         (change)="loadImage()"
-                         name="imagen" id="imagen">
-                </div>
-              </div>
             </div>
             <div class="row">
               <div class="col-md-6">
@@ -79,27 +70,16 @@
             </div>
             <hr>
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 text-right">
                 <div class="form-group">
-                  <button class="btn btn-primary" type="submit" >Actualizar&nbsp;  <span class="fa fa-save"></span></button>
-                  <a class="btn btn-dark" routerLink="/proyectos" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  <div class="form-group">
+                    <button class="btn btn-info" type="submit" >Actualizar&nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;
+                    <a class="btn btn-dark" routerLink="/proyectos" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
+                  </div>
                 </div>
               </div>
             </div>
           </form>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card card-user">
-        <div class="image">
-          <img src="../assets/img/bg5.jpg" alt="...">
-        </div>
-        <div class="card-body">
-          <div class="author">
-            <br><br>
-            <img #preview src="../assets/img/mike.jpg">
-          </div>
         </div>
       </div>
     </div>

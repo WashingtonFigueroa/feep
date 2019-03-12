@@ -55,10 +55,18 @@ export class ProyectoUpdateComponent implements OnInit {
         });
     }
     update() {
-        this.proyectoService.update(this.proyecto_id, this.proyectoGroup.value).subscribe((res: any) => {
+        if (this.proyectoGroup.value.fin >= this.proyectoGroup.value.inicio){
+            this.proyectoGroup.patchValue({
+                nombre: this.proyectoGroup.value.nombre.toUpperCase(),
+            });
+            this.proyectoService.update(this.proyecto_id, this.proyectoGroup.value).subscribe((res: any) => {
                 this.toastrService.success('Actualizado', 'Proyecto')
                 this.router.navigate(['/proyectos']);
             });
+        } else {
+            this.toastrService.warning('Rango de Fechas', 'Error')
+        }
+
     }
     loadImage() {
         const imagen = this.imagen.nativeElement;

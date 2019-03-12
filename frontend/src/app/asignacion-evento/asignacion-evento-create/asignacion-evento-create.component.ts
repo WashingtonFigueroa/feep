@@ -43,7 +43,7 @@ export class AsignacionEventoCreateComponent implements OnInit {
     crearForm() {
         this.asignacionproyectoGroup = this.fb.group({
             'proyecto_id': [0, [Validators.required]],
-            'usuario_id': [0, [Validators.required]],
+            'usuario_id': ['', [Validators.required]],
             'descripcion': ['']
         });
     }
@@ -51,7 +51,7 @@ export class AsignacionEventoCreateComponent implements OnInit {
         const formData = new FormData();
         formData.append('proyecto_id', this.asignacionproyectoGroup.value.proyecto_id);
         formData.append('usuario_id', this.asignacionproyectoGroup.value.usuario_id);
-        formData.append('descripcion', this.asignacionproyectoGroup.value.descripcion);
+        formData.append('descripcion', this.asignacionproyectoGroup.value.descripcion.toUpperCase());
         this.asignacionproyectoService.store(formData).subscribe((res: any) => {
                 this.toastrService.success('Al Proyecto', '');
             this.asigevento.push(res);

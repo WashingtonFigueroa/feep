@@ -22,6 +22,18 @@ class OrganizacionController extends Controller
         $organizacion = Organizacion::orderBy('organizacion_id','desc')->get();
         return response()->json($organizacion, 200);
     }
+    public function buscar($valor = '') {
+        $organizacion = Organizacion::join('tipo_organizaciones', 'tipo_organizaciones.tipo_organizacion_id', '=', 'organizaciones.tipo_organizacion_id')
+            ->join('actividades', 'actividades.actividad_id', '=', 'organizaciones.actividad_id')
+            ->where('tipo_organizaciones.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('actividades.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('organizaciones.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('organizaciones.representante', 'like', '%' . $valor . '%')
+            ->selectRaw('organizaciones.*, tipo_organizaciones.nombre as tipoorganizacion, actividades.nombre as actividad')
+            ->orderBy('organizaciones.organizacion_id')
+            ->paginate(10);
+        return response()->json($organizacion, 200);
+    }
     public function store(Request $request)
     {
         $organizacion = new Organizacion();

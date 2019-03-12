@@ -12,7 +12,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-sm">
-                      <button class="btn btn-primary" routerLink="/proyectos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                      <button class="btn btn-info" routerLink="/proyectos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                     </div>
                     <div class="col-sm">
                     </div>
@@ -35,7 +35,7 @@
                       <th> Lugar </th>
                       <th> Nombre </th>
                       <!--<th> Imagen   </th>-->
-                      <th> Fecha Creación </th>
+                      <th> Fecha Finaliza </th>
                       <th class="text-center">Operaciones</th>
                       <th class="text-center">Asignar Auspiciantes</th>
                       </thead>
@@ -46,7 +46,7 @@
                         <td> {{ proyecto.barrio }} </td>
                         <td> {{ proyecto.nombre }} </td>
                         <!--<td>  {{ proyecto.imagen }} </td>-->
-                        <td> {{ proyecto.created_at }} </td>
+                        <td> {{ proyecto.fin }} </td>
 
                         <td class="text-center">
                           <a routerLink="/proyectos/editar/{{proyecto.proyecto_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit "></i> </a>

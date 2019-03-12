@@ -52,8 +52,8 @@ export class EjecutoraCreateComponent implements OnInit {
         this.ejecutoraService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Agregado', 'Auspiciante');
-                this.auspiciantes.push(res);
                 this.ejecutoraGroup.reset();
+                this.auspiciantes.push(res);
             }, (error) => {
                 this.toastrService.warning('Registrado', 'Auspiciante');
             });

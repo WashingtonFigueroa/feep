@@ -23,7 +23,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>* Cedula o Pasaporte</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="cedula" name="cedula" id="cedula">
+                  <input type="text" class="form-control" formControlName="cedula" name="cedula" id="cedula">
                 </div>
               </div>
               <div class="col-md-4">
@@ -189,14 +189,10 @@
               </div>
             </div>
             <hr>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <button class="btn btn-primary" type="submit" [disabled]="personaGroup.status === 'INVALID'">Actualizar&nbsp;  <span class="fa fa-save"></span></button>
+              <div class="col-md-12 text-right">
+              <button class="btn btn-info" type="submit" [disabled]="personaGroup.status === 'INVALID'">Actualizar&nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;
                   <a class="btn btn-dark" routerLink="/miembros" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>
-                </div>
               </div>
-            </div>
           </form>
         </div>
       </div>

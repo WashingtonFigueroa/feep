@@ -58,7 +58,7 @@
               <div class="col-md-12 text-right">
                 <div class="form-group">
                   <div class="form-group">
-                    <button class="btn btn-info" type="submit" [disabled]="asignacionproyectoGroup.status === 'INVALID'">Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                    <button class="btn btn-info" type="submit" [disabled]="asignacionproyectoGroup.status === 'INVALID'">Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;
                     <button class="btn btn-dark" routerLink="/asignacioneventos" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
                   </div>  </div>
               </div>
@@ -73,7 +73,7 @@
           <img src="../assets/img/bg5.jpg" alt="...">
         </div>
         <div class="card-body">
-          <h3>Lista agregada</h3>
+          <h5>Lista Agregada</h5>
           <ul>
             <li *ngFor="let asig of asigevento"> {{ asig.proyecto | uppercase }} - {{ asig.usuario | uppercase }}</li>
           </ul>

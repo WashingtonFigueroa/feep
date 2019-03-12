@@ -15,7 +15,7 @@ class AsignacionEventoController extends Controller
         $asignacion_proyectos = AsignacionEvento::join('proyectos', 'proyectos.proyecto_id', '=', 'asignacion_eventos.proyecto_id')
                                                 ->join('usuarios', 'usuarios.usuario_id', '=', 'asignacion_eventos.usuario_id')
                                                 ->selectRaw('asignacion_eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario')
-                                                ->orderBy('usuarios.nombres')
+                                                ->orderBy('asignacion_eventos.asignacion_evento_id','desc')
                                                 ->paginate(10);
         return response()->json($asignacion_proyectos, 200);
     }
