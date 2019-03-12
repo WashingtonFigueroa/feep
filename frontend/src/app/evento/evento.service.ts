@@ -1,13 +1,10 @@
 import { Injectable } from '@angular/core';
-import {AutenticacionService} from '../autenticacion.service';
 import {environment} from '../../environments/environment.prod';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class EventoService {
     base = environment.servidor;
-
-    httpHeaders: any;
 
     constructor(private http: HttpClient) {}
 
@@ -27,9 +24,7 @@ export class EventoService {
         return this.http.get(`${this.base}eventos/${id}`);
     }
     store(request) {
-        return this.http.post(`${this.base}eventos`, request, {
-            headers: this.httpHeaders
-        });
+        return this.http.post(`${this.base}eventos`, request);
     }
     update(id, request) {
         return this.http.put(`${this.base}eventos/${id}`, request);

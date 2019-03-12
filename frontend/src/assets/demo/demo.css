@@ -112,5 +112,27 @@ label.upload:hover {
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #1e2125;
+}
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+    background: white;
+}
+.login form{
+    width: 350px;
+    margin: 0 auto;
+}
+.login form h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #28a946;
 }

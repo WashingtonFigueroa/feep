@@ -1,46 +1,36 @@
 <div class="background">
-    <br><br><br><br><br><br>
-  <div class="row">
-    <div class="offset-4 col-md-4">
-      <div class="card">
-        <div class="card-header">
-<!--          <button class="btn btn-info" routerLink="/insumos/tipo-insumos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>-->
-          <h5 class="title">Iniciar Sesión</h5>
-        </div>
-        <div class="card-body">
-            <img src="../../assets/img/loading.gif" *ngIf="loading">
-
-            <form (submit)="login()" [formGroup]="loginGroup" role="form" *ngIf="!loading">
+    <div class="login">
+        <img src="../../assets/img/loading.gif" *ngIf="loading">
+        <form (submit)="login()" [formGroup]="loginGroup" role="form" *ngIf="!loading">
+            <h1>Iniciar Sesión</h1>
+            <h5>BIenvenido de vuelta, por favor ingrese sus credenciales.</h5>
             <div class="form-group">
-              <label>Cuenta</label>
-              <input type="text" class="form-control" formControlName="cuenta" name="cuenta" autofocus>
+                <label>Cuenta</label>
+                <input type="text" class="form-control" formControlName="cuenta" name="cuenta" autofocus>
                 <div *ngIf="submitted && f.cuenta.errors" class="invalid-feedback">
                     <span *ngIf="f.cuenta.errors.required">La cuenta es obligatoria</span>
                 </div>
             </div>
             <div class="form-group">
-              <label>Contraseña</label>
-              <input type="password" formControlName="password" name="password" class="form-control">
+                <label>Contraseña</label>
+                <input type="password" formControlName="password" name="password" class="form-control">
                 <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                     <span *ngIf="f.password.errors.required">La contraseña es obligatoria</span>
                 </div>
             </div>
+            <br>
             <div class="row">
-              <div class="col-md-12">
-                <div class="form-group text-center">
-<!--                  <a class="btn btn-dark" routerLink="/insumos/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>-->
-                  <button
-                          [disabled]="loading"
-                          class="btn btn-primary" type="submit">Iniciar Sesion&nbsp;  <span class="fa fa-sign-in"></span>
-                  </button>
+                <div class="col-md-12">
+                    <div class="form-group text-center">
+                        <!--                  <a class="btn btn-dark" routerLink="/insumos/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>-->
+                        <button
+                                [disabled]="loading"
+                                class="btn btn-primary btn-block" type="submit">INICIAR SESIÓN&nbsp;  <span class="fa fa-sign-in"></span>
+                        </button>
+                    </div>
                 </div>
-              </div>
             </div>
             <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
-          </form>
-        </div>
-      </div>
+        </form>
     </div>
-
-  </div>
 </div>
