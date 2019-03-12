@@ -27,7 +27,7 @@ Route::prefix('v1')->group(function () {
     Route::get('anexos-archivo/{url}', 'API\AnexoController@imagen');
     Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
     Route::get('insumos-imagen/{url}', 'API\InsumoController@imagen');
-
+    
     Route::get('evento-participantes/{evento_id}', 'API\EventoController@participantes');
 
     Route::group(['middleware' => 'auth:api'], function () {

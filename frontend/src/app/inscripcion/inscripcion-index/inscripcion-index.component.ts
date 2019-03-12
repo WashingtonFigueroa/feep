@@ -95,14 +95,53 @@ export class InscripcionIndexComponent implements OnInit {
     }
 
     download() {
-        const doc = new jsPDF();
-        doc.text(20, 20, 'Hello world!');
-        doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
-        doc.addPage();
-        doc.text(20, 20, 'Do you like that?');
+        this.eventoService.participantes(this.printGroup.value.evento_id)
+            .subscribe((res: any) => {
+                const doc = new jsPDF({
+                    orientation: 'landscape',
+                    unit: 'pt',
+                    format: 'letter'
+                });
+                const coord = {
+                  x: 80,
+                  y: 80
+                };
 
-        // Save the PDF
-        doc.save('Test.pdf');
+                doc.setFontType('bold');
+                doc.text('EVENTO:', coord.x, coord.y);
+                doc.setFontType('normal');
+                doc.text(res.evento.nombre, coord.x + 160, coord.y);
+
+                coord.y = coord.y + 30;
+                doc.setFontType('bold');
+                doc.text('DIRECCIÓN:', coord.x, coord.y);
+                doc.setFontType('normal');
+                doc.text(res.evento.direccion, coord.x + 160, coord.y);
+
+                coord.y = coord.y + 30;
+                const inicio =  res.evento.fecha_inicio.split('-')[2] + '/' +
+                                res.evento.fecha_inicio.split('-')[1] + '/' +
+                                res.evento.fecha_inicio.split('-')[0];
+                const fin    =  res.evento.fecha_fin.split('-')[2] + '/' +
+                                res.evento.fecha_fin.split('-')[1] + '/' +
+                                res.evento.fecha_fin.split('-')[0];
+                doc.setFontType('bold');
+                doc.text('FECHA DE INICIO:', coord.x, coord.y);
+                doc.setFontType('normal');
+                doc.text(inicio, coord.x + 160, coord.y);
+
+                coord.x = coord.x + 380;
+                doc.setFontType('bold');
+                doc.text('FECHA DE FIN:', coord.x, coord.y);
+                doc.setFontType('normal');
+                doc.text(fin, coord.x + 160, coord.y);
+
+                doc.addPage();
+/*                doc.text(20, 20, 'Do you like that?');*/
+
+                // Save the PDF
+                doc.save('Evento.pdf');
+            });
     }
 
 }

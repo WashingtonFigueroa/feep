@@ -35,4 +35,7 @@ export class EventoService {
     pagination(url: string) {
         return this.http.get(url);
     }
+    participantes(evento_id: number) {
+        return this.http.get(`${this.base}evento-participantes/${evento_id}`);
+    }
 }

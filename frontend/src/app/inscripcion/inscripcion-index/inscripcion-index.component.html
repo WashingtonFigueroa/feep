@@ -29,7 +29,8 @@
                           class="form-inline"
                           role="form"
                           *ngIf="eventos !== null">
-                      <select class="form-control" formControlName="evento_id" name="evento_id" id="evento_id">
+                      <select class="form-control"
+                              formControlName="evento_id" name="evento_id" id="evento_id">
                         <option [value]="evento.evento_id" *ngFor="let evento of eventos">{{ evento.nombre }}</option>
                       </select>
                       <button class="btn btn-sm btn-primary"><i class="fa fa-download"></i></button>
