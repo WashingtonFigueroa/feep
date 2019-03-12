@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-md-2">
             <div class="form-group">
-              &nbsp; &nbsp; <button class="btn btn-dark" routerLink="/miembros"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+              &nbsp; &nbsp; <button class="btn btn-info" routerLink="/inscripciones"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
             </div>
           </div>
           <div class="col-md-10">
@@ -20,7 +20,7 @@
         <div class="card-body">
           <form (submit)="store()" [formGroup]="participanteGroup" *ngIf="personas !== null && eventos !== null" role="form">
 
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Seleccione Evento</label>
                   <ng-select [items]="eventos"
@@ -32,7 +32,7 @@
                   </ng-select>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>* Seleccione Persona</label>
                   <ng-select [items]="personas"
@@ -44,12 +44,19 @@
                   </ng-select>
                 </div>
               </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Observación</label>
+                <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="observacion" name="observacion" id="observacion">
+              </div>
+            </div>
+            <hr>
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 text-right">
                 <div class="form-group">
                   <div class="form-group">
-                    <button class="btn btn-dark" routerLink="/miembros/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
-                    <button class="btn btn-primary" [disabled]="participanteGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>
+                    <button class="btn btn-info" [disabled]="participanteGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;
+                    <button class="btn btn-dark" routerLink="/inscripciones/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></button>
                   </div>  </div>
               </div>
             </div>

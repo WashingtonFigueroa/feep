@@ -34,26 +34,20 @@ export class AnexoCreateComponent implements OnInit {
         });
     }
     store() {
-        if (this.archivo.nativeElement.files[0]) {
-            const formData = new FormData();
-            formData.append('evento_id', this.anexoGroup.value.evento_id);
-            formData.append('archivo', this.anexoGroup.value.archivo);
-            formData.append('descripcion', this.anexoGroup.value.descripcion);
-            this.anexoService.store(formData)
-                .subscribe((res: any) => {
-                    this.toastrService.success('Registrado', 'Anexo');
-                    this.router.navigate(['/anexos']);
-                }, (error) => {
-                    this.toastrService.error('duplicado', 'Anexo');
-                });
-        } else {
-            this.anexoService.store(this.anexoGroup.value)
-                .subscribe((res: any) => {
-                    this.toastrService.success('Registrado', 'Anexo');
-                    this.router.navigate(['/anexos']);
-                }, (error) => {
-                    this.toastrService.error('duplicado', 'Anexo');
-                });
+        const archivo =  this.archivo.nativeElement;
+        const formData = new FormData();
+        if (archivo.files[0]) {
+            formData.append('archivo', archivo.files[0]);
         }
+        formData.append('evento_id', this.anexoGroup.value.evento_id);
+        formData.append('descripcion', this.anexoGroup.value.descripcion.toUpperCase());
+        this.anexoService.store(formData)
+            .subscribe((res: any) => {
+                this.toastrService.success('Registrado', 'Anexo');
+                this.router.navigate(['/anexos']);
+            }, (error) => {
+                this.toastrService.error('duplicado', 'Anexo');
+            });
+
     }
 }

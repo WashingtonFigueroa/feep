@@ -11,7 +11,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-sm">
-                    <button class="btn btn-primary" routerLink="/anexos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                    <button class="btn btn-info" routerLink="/anexos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
                   <div class="col-sm">
                   </div>
@@ -39,7 +39,7 @@
                     <tr *ngFor="let anexo of anexos.data; let i = index">
                       <td> {{ i + 1}} </td>
                       <td> {{ anexo.evento }} </td>
-                      <td> {{ anexo.archivo }} </td>
+                      <td>  <a href="{{url_base}}{{anexo.archivo}}" target="_blank">Descargar</a></td>
                       <td> {{ anexo.descripcion }} </td>
                       <td class="text-center">
                         <a (click)="destroy(anexo, i)" title="Eliminar Anexo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>

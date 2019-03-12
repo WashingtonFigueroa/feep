@@ -53,7 +53,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="imagen" class="upload">Imagen o Logo <i class="fa fa-upload"></i></label>
-                  <input type="file" class="form-control" #imagen formControlName="imagen" name="imagen" id="imagen">
+                  <input type="file" class="form-control" #imagen (change)="loadImage()" formControlName="imagen" name="imagen" id="imagen">
                 </div>
               </div>
             </div>
@@ -137,8 +137,9 @@
         </div>
         <div class="card-body">
           <div class="author">
-            <br><br>
-            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            <br><br><br>
+            <hr>
+            <img #preview src="../assets/img/mike.jpg" width="200px">
           </div>
         </div>
       </div>

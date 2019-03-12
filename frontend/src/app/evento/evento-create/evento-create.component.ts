@@ -14,6 +14,7 @@ import {ProyectoService} from '../../proyecto/proyecto.service';
 })
 export class EventoCreateComponent implements OnInit {
     @ViewChild('imagen') imagen;
+    @ViewChild('preview') preview;
     eventoGroup: FormGroup;
     proyectos: any = null;
     tipo_eventos: any = null;
@@ -93,5 +94,13 @@ export class EventoCreateComponent implements OnInit {
         } else {
             this.toastrService.info('Rango de Fechas', 'Error')
         }
+    }
+    loadImage() {
+        const imagen = this.imagen.nativeElement;
+        const reader = new FileReader();
+        reader.onload = (e: any) => {
+            this.preview.nativeElement.src = e.target.result;
+        };
+        reader.readAsDataURL(imagen.files[0]);
     }
 }

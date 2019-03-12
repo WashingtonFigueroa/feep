@@ -32,17 +32,16 @@ class AnexoController extends Controller
     }
     public function store(Request $request)
     {
-        if ($request->hasFile('anexo')) {
-            $url = $request->file('anexo')->store('anexos');
-            $anexo = new Anexo();
-            $anexo->fill($request->all());
+        $anexo = new Anexo();
+        $anexo->fill($request->all());
+        if ($request->hasFile('archivo')) {
+            $url = $request->file('archivo')->store('anexos');
             $anexo->archivo = explode('/', $url)[1];
-            $anexo->save();
-            return response()->json($anexo, 201);
-        } else {
-            $anexo = Anexo::create($request->all());
-            return response()->json($anexo, 201);
+        }else {
+            $anexo->archivo = 'sin_imagen';
         }
+        $anexo->save();
+        return response()->json($anexo, 201);
     }
 
     /**

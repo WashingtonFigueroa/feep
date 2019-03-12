@@ -24,8 +24,9 @@ Route::prefix('v1')->group(function () {
     //Imágenes
     Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
     Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
-    Route::get('anexos-imagen/{url}', 'API\AnexoController@imagen');
+    Route::get('anexos-archivo/{url}', 'API\AnexoController@imagen');
     Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
+    Route::get('insumos-imagen/{url}', 'API\InsumoController@imagen');
 
 
     Route::group(['middleware' => 'auth:api'], function () {

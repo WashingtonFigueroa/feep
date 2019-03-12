@@ -55,7 +55,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Fecha</label>
-                  <input type="date" name="fecha" id="fecha" formControlName="fecha" class="form-control">
+                  <input type="date" [ngModel]="today | date:'yyyy-MM-dd'" name="fecha" id="fecha" formControlName="fecha" class="form-control">
                 </div>
               </div>
             </div>
@@ -67,13 +67,17 @@
                </div>
              </div>
              <div class="col-md-6">
-                   <label>Logo</label>
-                   <input type="file" class="form-control" #imagen name="imagen" id="imagen">
+               <div>
+                 <label>Logo</label>
+                 <input type="file" class="form-control"
+                        #imagen
+                        name="imagen" id="imagen">
+               </div>
              </div>
            </div>
             <hr>
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 text-right">
                 <div class="form-group">
                   <div class="form-group">
                     <button class="btn btn-info" [disabled]="insumoGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>

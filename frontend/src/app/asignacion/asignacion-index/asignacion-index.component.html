@@ -11,7 +11,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-sm">
-                    <button class="btn btn-primary" routerLink="/asignaciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                    <button class="btn btn-info" routerLink="/asignaciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
                   <div class="col-sm">
                   </div>
@@ -45,7 +45,11 @@
                       <td> {{ insumo.tipo }} </td>
                       <td> {{ insumo.cantidad }} </td>
                       <td> {{ insumo.fecha }} </td>
-                      <td> {{ insumo.imagen }} </td>
+                      <td>
+                        <div class="logo" *ngIf="insumo.imagen === 'sin_imagen'">
+                          <i class="fa fa-building"></i>
+                        </div>
+                        <img *ngIf="insumo.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{insumo.imagen}}"> </td>
                       <td> {{ insumo.receptor}} </td>
                       <td class="text-center">
                         <a routerLink="/asignaciones/editar/{{insumo.insumo_id}}"title="Editar Insumo " class="action action-edit "> <i class="fas fa-edit "></i> </a>

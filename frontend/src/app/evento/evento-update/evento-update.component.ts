@@ -52,7 +52,6 @@ export class EventoUpdateComponent implements OnInit {
             'tipo_evento_id': [evento.tipo_evento_id, [Validators.required]],
             'barrio_id': [evento.barrio_id, [Validators.required]],
             'nombre' : [evento.nombre, [Validators.required]],
-            'imagen': [evento.imagen, [Validators.required]],
             'fecha_evento': [evento.fecha_evento, [Validators.required]],
             'direccion': [evento.direccion, [Validators.required]],
             'duracion_horas': [evento.duracion_horas, [Validators.required]],
@@ -60,9 +59,18 @@ export class EventoUpdateComponent implements OnInit {
         });
     }
     update() {
-        this.eventoService.update(this.evento_id, this.eventoGroup.value).subscribe((res: any) => {
-            this.toastrService.success('Datos Actualizados', 'Evento')
-            this.router.navigate(['/eventos']);
+        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento)
+        {this.eventoGroup.patchValue({
+            nombre: this.eventoGroup.value.nombre.toUpperCase(),
+            direccion: this.eventoGroup.value.direccion.toUpperCase()
         });
+            this.eventoService.update(this.evento_id, this.eventoGroup.value).subscribe((res: any) => {
+                this.toastrService.success('Datos Actualizados', 'Evento');
+                this.router.navigate(['/eventos']);
+            });
+        } else {
+            this.toastrService.warning('Rango de Fechas', 'Error');
+        }
+
     }
 }

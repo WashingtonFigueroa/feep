@@ -31,44 +31,34 @@ class InsumoController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json(Insumo::create($request->all()), 201);
+        $insumo = new Insumo();
+        $insumo->fill($request->all());
+        if ($request->hasFile('imagen')) {
+            $url = $request->file('imagen')->store('insumos');
+            $insumo->imagen = explode('/', $url)[1];
+        }else {
+            $insumo->imagen = 'sin_imagen';
+        }
+        $insumo->save();
+        return response()->json($insumo, 201);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         return response()->json(Insumo::find($id), 200);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $insumo = Insumo::find($id);
         $insumo->update($request->all());
         return response()->json($insumo, 200);
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $insumo = Insumo::find($id);
         $insumo->delete();
         return response()->json($insumo, 200);
+    }
+    public function imagen($url){
+        return response()->file(storage_path('app/insumos/' . $url));
     }
 }

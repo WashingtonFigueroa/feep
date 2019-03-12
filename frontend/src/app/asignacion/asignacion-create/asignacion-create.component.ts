@@ -16,12 +16,14 @@ export class AsignacionCreateComponent implements OnInit {
     insumoGroup: FormGroup;
     eventos: any = null;
     tipos: any = null;
+    today: Date;
     constructor(private insumoService: AsignacionService,
                 private tipoService: TipoService,
                 private eventoService: EventoService,
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
+        this.today =new Date();
         this.tipoService.listar()
             .subscribe((res: any) => {
                 this.tipos = res;
@@ -53,10 +55,10 @@ export class AsignacionCreateComponent implements OnInit {
         }
         formData.append('tipo_id', this.insumoGroup.value.tipo_id);
         formData.append('evento_id', this.insumoGroup.value.evento_id);
-        formData.append('nombre', this.insumoGroup.value.nombre);
+        formData.append('nombre', this.insumoGroup.value.nombre.toUpperCase());
         formData.append('cantidad', this.insumoGroup.value.cantidad);
         formData.append('fecha', this.insumoGroup.value.fecha);
-        formData.append('receptor', this.insumoGroup.value.receptor);
+        formData.append('receptor', this.insumoGroup.value.receptor.toUpperCase());
         this.insumoService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Asigando', 'Insumo')

@@ -5,6 +5,7 @@ import {ToastrService} from 'ngx-toastr';
 import {EventoService} from '../../evento/evento.service';
 import {TipoService} from '../../tipo/tipo.service';
 import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
+import {AsignacionService} from '../asignacion.service';
 
 @Component({
   selector: 'app-asignacion-update',
@@ -12,14 +13,12 @@ import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
   styleUrls: ['./asignacion-update.component.scss']
 })
 export class AsignacionUpdateComponent implements OnInit {
-    @ViewChild('imagen') imagen;
-    @ViewChild('preview') preview;
     insumo_id: number = null;
     insumo: any = null;
     insumoGroup: FormGroup;
     eventos: any = null;
     tipos: any = null;
-    constructor(private insumoService: TipoInsumoService,
+    constructor(private insumoService: AsignacionService,
                 private eventoService: EventoService,
                 private tipoService: TipoService,
                 private fb: FormBuilder,
@@ -51,24 +50,18 @@ export class AsignacionUpdateComponent implements OnInit {
             'nombre' : new FormControl(this.insumo.nombre, [Validators.required]),
             'cantidad': new FormControl(this.insumo.cantidad, [Validators.required]),
             'fecha': new FormControl(this.insumo.fecha, [Validators.required]),
-           // 'imagen': new FormControl(this.insumo.imagen),
             'receptor': new FormControl(this.insumo.receptor, [Validators.required]),
         });
     }
     update() {
+        // this.insumoGroup.patchValue({
+        //     nombre: this.insumoGroup.value.nombre.toUpperCase(),
+        //     receptor: this.insumoGroup.value.receptor.toUpperCase()
+        // });
         this.insumoService.update(this.insumo_id, this.insumoGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados', 'Insumo')
+                this.toastrService.success('Datos Actualizados', 'Insumo');
                 this.router.navigate(['/asignaciones']);
             });
-    }
-    loadImage() {
-        const imagen = this.imagen.nativeElement;
-        /*        console.log(imagen.files[0]);*/
-        const reader = new FileReader();
-        reader.onload = (e: any) => {
-            this.preview.nativeElement.src = e.target.result;
-        };
-        reader.readAsDataURL(imagen.files[0]);
     }
 }

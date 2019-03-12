@@ -47,12 +47,14 @@ export class InscripcionCreateComponent implements OnInit {
         this.participanteGroup = this.fb.group({
             'evento_id': [0, [Validators.required]],
             'persona_id': [0, [Validators.required]],
+            'observacion': [''],
         });
     }
     store() {
         const formData = new FormData();
         formData.append('evento_id', this.participanteGroup.value.evento_id);
         formData.append('persona_id', this.participanteGroup.value.persona_id);
+        formData.append('observacion', this.participanteGroup.value.observacion);
         this.participanteService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Registrado', 'Participante')

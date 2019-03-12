@@ -15,6 +15,7 @@ export class AsignacionIndexComponent implements OnInit {
     current_page: any = null;
     insumos: any = null;
     valor = '';
+    url_base = environment.servidor + 'insumos-imagen/';
     constructor(private insumosService: AsignacionService) {
         this.insumosService.index()
             .subscribe((res: any) => {
@@ -64,8 +65,8 @@ export class AsignacionIndexComponent implements OnInit {
             });
     }
     destroy(insumos, index) {
-        if (confirm('Esta seguro de eliminar al insumos')) {
-            this.insumosService.destroy(insumos.insumo_idPrimary)
+        if (confirm('Esta seguro de eliminar el Insumo')) {
+            this.insumosService.destroy(insumos.insumo_id)
                 .subscribe((res: any) => {
                     this.insumos.data.splice(index, 1);
                 });

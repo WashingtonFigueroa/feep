@@ -17,6 +17,7 @@ export class AnexoIndexComponent implements OnInit {
     current_page: any = null;
     anexos: any = null;
     valor = '';
+    url_base = environment.servidor + 'anexos-archivo/';
     constructor(private anexoService: AnexoService,
                 private toastrService: ToastrService) {
         this.anexoService.index()
