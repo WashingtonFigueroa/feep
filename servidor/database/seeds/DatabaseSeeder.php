@@ -93,11 +93,11 @@ class DatabaseSeeder extends Seeder
         \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
         \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
 //Cantones
-//        \App\Ciudad::create(['provincia_id' => 10,'codigo' => '101', 'nombre' => 'IBARRA']);
+      \App\Ciudad::create(['provincia_id' => 10,'codigo' => '101', 'nombre' => 'IBARRA']);
 //Parroquia
-//        \App\Parroquia::create(['ciudad_id' => 1,'codigo' => '1001', 'nombre' => 'SAN ANTONIO']);
+       \App\Parroquia::create(['ciudad_id' => 1,'codigo' => '1001', 'nombre' => 'SAN ANTONIO']);
 //Barrio
-//       \App\Barrio::create(['parroquia_id' => 1,'comunidad' => '', 'nombre' => 'LOS SOLES']);
+      \App\Barrio::create(['parroquia_id' => 1,'comunidad' => '', 'nombre' => 'LOS SOLES']);
 
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => 'ZONAS NO DELIMITADAS','descripcion' => '']);
 //   \App\Ciudad::create(['provincia_id' => 1, 'nombre' => ' CUENCA ','descripcion' => '']);

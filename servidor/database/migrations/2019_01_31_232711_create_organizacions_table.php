@@ -26,7 +26,7 @@ class CreateOrganizacionsTable extends Migration
                 ->references('actividad_id')
                 ->on('actividades')
                 ->onDelete('cascade');
-
+            $table->string('documento')->unique()->nullable();
             $table->string('nombre')->unique();
             $table->string('imagen')->nullable();
             $table->string('representante');

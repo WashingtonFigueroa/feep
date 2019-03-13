@@ -13,6 +13,7 @@ class Organizacion extends Model
     protected $fillable = [
         'tipo_organizacion_id',
         'actividad_id',
+        'documento',
         'nombre',
         'imagen',
         'representante',

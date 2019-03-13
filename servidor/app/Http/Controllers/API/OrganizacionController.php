@@ -14,7 +14,7 @@ class OrganizacionController extends Controller
             ->join('actividades', 'actividades.actividad_id', '=', 'organizaciones.actividad_id')
             ->selectRaw('organizaciones.*, tipo_organizaciones.nombre as tipoorganizacion, actividades.nombre as actividad')
             ->orderBy('organizacion_id','desc')
-            ->paginate(10);
+            ->paginate(2);
         return response()->json($organizaciones, 200);
     }
     public function listar()
@@ -27,6 +27,7 @@ class OrganizacionController extends Controller
             ->join('actividades', 'actividades.actividad_id', '=', 'organizaciones.actividad_id')
             ->where('tipo_organizaciones.nombre', 'like', '%' . $valor . '%')
             ->orWhere('actividades.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('organizaciones.documento', 'like', '%' . $valor . '%')
             ->orWhere('organizaciones.nombre', 'like', '%' . $valor . '%')
             ->orWhere('organizaciones.representante', 'like', '%' . $valor . '%')
             ->selectRaw('organizaciones.*, tipo_organizaciones.nombre as tipoorganizacion, actividades.nombre as actividad')
@@ -34,6 +35,7 @@ class OrganizacionController extends Controller
             ->paginate(10);
         return response()->json($organizacion, 200);
     }
+
     public function store(Request $request)
     {
         $organizacion = new Organizacion();

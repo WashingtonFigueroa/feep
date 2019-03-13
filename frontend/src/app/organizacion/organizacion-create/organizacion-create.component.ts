@@ -39,6 +39,7 @@ export class OrganizacionCreateComponent implements OnInit {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': [0, [Validators.required]],
             'actividad_id': [0, [Validators.required]],
+            'documento': ['', [Validators.required]],
             'nombre': ['', [Validators.required]],
             'imagen': [''],
             'representante': ['', [Validators.required]],
@@ -68,6 +69,7 @@ export class OrganizacionCreateComponent implements OnInit {
             }
             formData.append('tipo_organizacion_id', this.organizacionGroup.value.tipo_organizacion_id);
             formData.append('actividad_id', this.organizacionGroup.value.actividad_id);
+            formData.append('documento', this.organizacionGroup.value.documento);
             formData.append('nombre', this.organizacionGroup.value.nombre.toUpperCase());
             formData.append('actividad', this.organizacionGroup.value.actividad);
             formData.append('representante', this.organizacionGroup.value.representante.toUpperCase());

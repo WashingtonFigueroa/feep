@@ -22,7 +22,7 @@
           <div class="row">
               <div class="col-md-6 pr-1">
                 <div class="form-group">
-                  <label>* Seleccione Organización</label>
+                  <label>* Seleccione Tipo Organización</label>
                   <ng-select [items]="tipo_organizaciones"
                              class="custom"
                              id="tipo_organizacion_id"
@@ -47,9 +47,16 @@
           </div>
             <div class="row">
               <div class="col-md-4 pr-1">
+                <div class="form-group">
+                  <label>* Ruc:</label>
+                  <input type="text" onKeyPress="if(this.value.length==10)"  class="form-control" formControlName="documento" name="documento" id="documento" autofocus>
+                </div>
+              </div>
+
+              <div class="col-md-4 pr-1">
                   <div class="form-group">
                     <label>* Nombre</label>
-                    <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
+                    <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" id="nombre">
                   </div>
                 </div>
               <div class="col-md-4 px-1">

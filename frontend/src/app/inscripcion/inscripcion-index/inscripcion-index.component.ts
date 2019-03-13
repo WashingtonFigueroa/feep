@@ -95,16 +95,15 @@ export class InscripcionIndexComponent implements OnInit {
     }
 
     download() {
-        this.eventoService.participantes(this.printGroup.value.evento_id)
-            .subscribe((res: any) => {
+        this.eventoService.participantes(this.printGroup.value.evento_id).subscribe((res: any) => {
                 const doc = new jsPDF({
                     orientation: 'landscape',
                     unit: 'pt',
                     format: 'letter'
                 });
                 const coord = {
-                  x: 80,
-                  y: 80
+                  x: 40,
+                  y: 40
                 };
 
                 doc.setFontSize(11);
@@ -137,21 +136,22 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.setFontType('normal');
                 doc.text(fin, coord.x + 100, coord.y);
 
-                coord.x = 80;
-                coord.y = coord.y + 60;
+                coord.x = 40;
+                coord.y = coord.y + 50;
 
                 doc.setFontSize(10);
                 doc.setFontType('bold');
                 doc.text('N.', coord.x + 10, coord.y);
                 doc.text('PARTICIPANTE', coord.x + 30, coord.y);
-                doc.text('GENERO', coord.x + 230, coord.y);
-                doc.text('CÉCULA', coord.x + 290, coord.y);
-                doc.text('ETNIA', coord.x + 350, coord.y);
-                doc.text('DIRECCIÓN', coord.x + 420, coord.y);
-                doc.text('CONTACTO', coord.x + 580, coord.y);
+                doc.text('GENERO', coord.x + 220, coord.y);
+                doc.text('CÉCULA', coord.x + 280, coord.y);
+                doc.text('ETNIA', coord.x + 340, coord.y);
+                doc.text('DIRECCIÓN', coord.x + 405, coord.y);
+                doc.text('CONTACTO', coord.x + 560, coord.y);
+                doc.text('FIRMA', coord.x + 630, coord.y);
 
-                doc.line(coord.x, coord.y - 15, coord.x + 650, coord.y - 15);
-                doc.line(coord.x, coord.y + 10, coord.x + 650, coord.y + 10);
+                doc.line(coord.x, coord.y - 15, coord.x + 690, coord.y - 15);
+                doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
 /*                doc.text(20, 20, 'Do you like that?');*/
                 let i = 1;
                 doc.setFontSize(8);
@@ -160,18 +160,19 @@ export class InscripcionIndexComponent implements OnInit {
                     coord.y = coord.y + 24;
                     doc.text(i.toString(), coord.x + 10, coord.y);
                     doc.text(participante.nombres.toUpperCase(), coord.x + 30, coord.y);
-                    doc.text(participante.genero.toUpperCase(), coord.x + 230, coord.y);
-                    doc.text(participante.cedula.toUpperCase(), coord.x + 290, coord.y);
-                    doc.text(participante.etnia.toUpperCase(), coord.x + 350, coord.y);
-                    doc.text(participante.direccion.toUpperCase(), coord.x + 420, coord.y);
-                    doc.text(participante.contacto.toUpperCase(), coord.x + 580, coord.y);
-
-                    doc.line(coord.x, coord.y + 10, coord.x + 650, coord.y + 10);
+                    doc.text(participante.genero.toUpperCase(), coord.x + 220, coord.y);
+                    doc.text(participante.cedula, coord.x + 280, coord.y);
+                    doc.text(participante.etnia.toUpperCase(), coord.x + 340, coord.y);
+                    doc.text(participante.direccion.toUpperCase(), coord.x + 405, coord.y);
+                    if (participante.contacto === null){
+                        doc.text('', coord.x + 560, coord.y);
+                    } else {
+                        doc.text(participante.contacto, coord.x + 560, coord.y);
+                    }
+                    doc.text('', coord.x + 630, coord.y);
+                    doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
                     i++;
                 });
-                doc.line(310, 580, 500, 580);
-                doc.setFontSize(12);
-                doc.text('FIRMA', 380, 600);
                 // Save the PDF
                 doc.save('Evento.pdf');
             });
