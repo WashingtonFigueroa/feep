@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="card-body">
-          <form (submit)="update()" [formGroup]="personaGroup"  *ngIf="organizaciones !== null && parroquias !== null" role="form">
+          <form (submit)="update()" [formGroup]="personaGroup"  *ngIf=" persona !== null && organizaciones !== null && parroquias !== null" role="form">
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">

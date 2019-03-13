@@ -54,7 +54,6 @@ export class MiembroUpdateComponent implements OnInit {
 
     crearForm() {
         this.personaGroup = this.fb.group({
-            'tipo_persona_id': [this.persona.tipo_persona_id, [Validators.required]],
             'organizacion_id': [this.persona.organizacion_id, [Validators.required]],
             'parroquia_id': [this.persona.parroquia_id, [Validators.required]],
             'cedula': [this.persona.cedula, [Validators.required]],

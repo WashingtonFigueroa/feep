@@ -27,7 +27,8 @@ Route::prefix('v1')->group(function () {
     Route::get('anexos-archivo/{url}', 'API\AnexoController@imagen');
     Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
     Route::get('insumos-imagen/{url}', 'API\InsumoController@imagen');
-    
+    Route::get('proyectos-imagen/{url}', 'API\ProyectoController@imagen');
+
     Route::get('evento-participantes/{evento_id}', 'API\EventoController@participantes');
 
     Route::group(['middleware' => 'auth:api'], function () {
@@ -68,7 +69,6 @@ Route::prefix('v1')->group(function () {
 //Proyectos
         Route::get('proyectos-listar', 'API\ProyectoController@listar');
         Route::get('proyectos-buscar/{valor?}', 'API\ProyectoController@buscar');
-        Route::get('proyectos-imagen/{url}', 'API\ProyectoController@imagen');
 //Asignacion Proyectos
         Route::get('asignacion-proyectos-listar', 'API\AsignacionEventoController@listar');
         Route::get('asignacion-proyectos-buscar/{valor?}', 'API\AsignacionEventoController@buscar');
