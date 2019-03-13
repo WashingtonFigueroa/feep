@@ -66,4 +66,9 @@ class CargoController extends Controller
         $cargo->delete();
         return response()->json($cargo, 200);
     }
+
+    public function privilegios() {
+        $privilegios = Cargo::privilegios()->get();
+        return response()->json($privilegios, 200);
+    }
 }

@@ -22,4 +22,7 @@ export class PrivilegioComponent implements OnInit {
   ngOnInit() {
   }
 
+  updatePrivilegio() {
+
+  }
 }

@@ -26,42 +26,39 @@
             <div class="row" *ngIf="!loading">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="">Privilegios de Acceso</label>
+                  <label>Privilegios de Acceso</label>
                   <div class="box-container">
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('cargos')">
                       <i class="now-ui-icons users_circle-08"></i> Cargos
                     </div>
-                    <div class="box no-asignado">
+                    <div class="box no-asignado" (click)="updatePrivilegio('privilegios')">
                       <i class="now-ui-icons ui-1_lock-circle-open"></i> Privilegios
                     </div>
-                    <div class="box">
-                      <i class="now-ui-icons users_single-02"></i> Usuarios
-                    </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('asignar-proyectos')">
                       <i class="now-ui-icons business_badge"></i> Asignar Proyectos
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('personas')">
                       <i class="now-ui-icons users_single-02"></i> Personas
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('proyectos')">
                       <i class="now-ui-icons business_globe"></i> Proyectos
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('inscripciones')">
                       <i class="now-ui-icons education_atom"></i> Inscripciones
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('subir-anexos')">
                       <i class="now-ui-icons arrows-1_cloud-upload-94"></i> Subir Anexos
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('organizaciones')">
                       <i class="now-ui-icons ui-1_send"></i> Organizaciones
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('eventos')">
                       <i class="now-ui-icons ui-1_calendar-60"></i> Eventos
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('asignar-insumos')">
                       <i class="now-ui-icons files_box"></i> Asignar Insumos
                     </div>
-                    <div class="box">
+                    <div class="box" (click)="updatePrivilegio('configuracion')">
                       <i class="now-ui-icons loader_gear"></i> Configuracion
                     </div>
                   </div>
