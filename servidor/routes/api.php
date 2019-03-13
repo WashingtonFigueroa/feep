@@ -60,6 +60,8 @@ Route::prefix('v1')->group(function () {
 //PERSONAS
         Route::get('personas-listar', 'API\PersonaController@listar');
         Route::get('personas-buscar/{valor?}', 'API\PersonaController@buscar');
+//asignacion insumo
+        Route::get('insumos-buscar/{valor?}', 'API\InsumoController@buscar');
 
         Route::get('eventos-listar', 'API\EventoController@listar');
 //¨Parroquia
@@ -87,6 +89,8 @@ Route::prefix('v1')->group(function () {
         Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@buscar');
         Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
         Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
+//Participante
+        Route::get('participantes-buscar/{valor?}', 'API\ParticipanteController@buscar');
 //Suministros tipo
         Route::get('tipo-listar', 'API\TipoController@listar');
 
