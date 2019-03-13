@@ -13,7 +13,6 @@ import {UbicacionService} from "../../ubicacion/ubicacion.service";
   styleUrls: ['./miembro-update.component.scss']
 })
 export class MiembroUpdateComponent implements OnInit {
-
     persona_id: number = null;
     persona: any = null;
     personaGroup: FormGroup;
@@ -59,7 +58,7 @@ export class MiembroUpdateComponent implements OnInit {
             'organizacion_id': [this.persona.organizacion_id, [Validators.required]],
             'parroquia_id': [this.persona.parroquia_id, [Validators.required]],
             'cedula': [this.persona.cedula, [Validators.required]],
-            'nombres': [this.persona.nombres, [Validators.required]],
+            'nombres': [this.persona.nombres],
             'genero': [this.persona.genero],
             'ocupacion': [this.persona.ocupacion],
             'etnia': [this.persona.etnia],

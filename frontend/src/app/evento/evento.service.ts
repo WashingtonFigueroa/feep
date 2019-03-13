@@ -38,4 +38,7 @@ export class EventoService {
     participantes(evento_id: number) {
         return this.http.get(`${this.base}evento-participantes/${evento_id}`);
     }
+    cambiarImagen(id, req) {
+        return this.http.post(`${this.base}eventos-imagen-cambiar/${id}`, req);
+    }
 }

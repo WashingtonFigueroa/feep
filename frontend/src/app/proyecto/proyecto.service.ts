@@ -30,4 +30,7 @@ export class ProyectoService {
     pagination(url: string) {
         return this.http.get(url);
     }
+    cambiarImagen(id, req) {
+        return this.http.post(`${this.base}proyetos-imagen-cambiar/${id}`, req);
+    }
 }

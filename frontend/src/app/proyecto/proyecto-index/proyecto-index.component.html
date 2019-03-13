@@ -17,7 +17,7 @@
                     <div class="col-sm">
                     </div>
                     <div class="col-sm">
-                      <form (submit)="buscar()" class="form-inline" role="form">
+                      <form (submit)="buscar(valor)" class="form-inline" role="form">
                         <div class="form-group">
                           <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
                         </div>
@@ -34,7 +34,7 @@
                       <th> Tipo Proyecto </th>
                       <th> Lugar </th>
                       <th> Nombre </th>
-                      <!--<th> Imagen   </th>-->
+                      <th> Imagen   </th>
                       <th> Fecha Finaliza </th>
                       <th class="text-center">Operaciones</th>
                       <th class="text-center">Asignar Auspiciantes</th>
@@ -45,12 +45,20 @@
                         <td> {{ proyecto.tipoproyecto }} </td>
                         <td> {{ proyecto.barrio }} </td>
                         <td> {{ proyecto.nombre }} </td>
-                        <!--<td>  {{ proyecto.imagen }} </td>-->
+                        <td>
+                        <div class="logo" *ngIf="proyecto.imagen === 'sin_imagen'">
+                          <i class="fa fa-building"></i>
+                        </div>
+                        <img *ngIf="proyecto.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{proyecto.imagen}}">
+                        </td>
                         <td> {{ proyecto.fin }} </td>
-
                         <td class="text-center">
                           <a routerLink="/proyectos/editar/{{proyecto.proyecto_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit "></i> </a>
                           <a (click)="destroy(proyecto, i)" title="Eliminar Proyecto" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                          <label for="imagen-{{proyecto.proyecto_id}}"
+                                 title="Cambiar Imagen"
+                                 class="action action-info"><i class="fas fa-upload"></i></label>
+                          <input type="file" id="imagen-{{proyecto.proyecto_id}}" class="hidden" (change)="cambiarImagen(proyecto.proyecto_id)">
                         </td>
                         <td class="text-center">
                           <button type="button" class="btn btn-xs btn-info" routerLink="/ejecutoras/crear">
@@ -66,11 +74,11 @@
                   <div>
                     Página {{ proyectos.current_page }} de {{ proyectos.last_page }}
                   </div>
-                  <button class="paginacion-btn" (click)="loadPages(proyectos.first_page_url)"><i class="fa fa-backward"></i></button>
-                  <button class="paginacion-btn" (click)="loadPages(proyectos.prev_page_url)" [disabled]="proyectos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == proyectos.current_page" (click)="loadPages(page.url)">{{ page.page }}</button>
-                  <button class="paginacion-btn" (click)="loadPages(proyectos.next_page_url)" [disabled]="proyectos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-                  <button class="paginacion-btn" (click)="loadPages(proyectos.last_page_url)"><i class="fa fa-forward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(proyectos.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(proyectos.prev_page_url)" [disabled]="proyectos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == proyectos.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPagination(proyectos.next_page_url)" [disabled]="proyectos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(proyectos.last_page_url)"><i class="fa fa-forward"></i></button>
                 </div>
               </div>
             </div>

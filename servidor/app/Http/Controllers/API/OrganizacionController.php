@@ -14,7 +14,7 @@ class OrganizacionController extends Controller
             ->join('actividades', 'actividades.actividad_id', '=', 'organizaciones.actividad_id')
             ->selectRaw('organizaciones.*, tipo_organizaciones.nombre as tipoorganizacion, actividades.nombre as actividad')
             ->orderBy('organizacion_id','desc')
-            ->paginate(2);
+            ->paginate(10);
         return response()->json($organizaciones, 200);
     }
     public function listar()

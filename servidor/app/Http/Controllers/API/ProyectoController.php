@@ -69,4 +69,13 @@ class ProyectoController extends Controller
     public function imagen($url){
         return response()->file(storage_path('app/proyectos/' . $url));
     }
+    public function cambiarImagen($id) {
+        if (\request()->hasFile('imagen')) {
+            $url = \request()->file('imagen')->store('proyectos');
+            $proyecto = Proyecto::find($id);
+            $proyecto->imagen = explode('/', $url)[1]; ;
+            $proyecto->save();
+        }
+        return $this->index();
+    }
 }

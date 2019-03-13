@@ -61,4 +61,13 @@ class InsumoController extends Controller
     public function imagen($url){
         return response()->file(storage_path('app/insumos/' . $url));
     }
+    public function cambiarImagen($id) {
+        if (\request()->hasFile('imagen')) {
+            $url = \request()->file('imagen')->store('insumos');
+            $insumo = Insumo::find($id);
+            $insumo->imagen = explode('/', $url)[1]; ;
+            $insumo->save();
+        }
+        return $this->index();
+    }
 }

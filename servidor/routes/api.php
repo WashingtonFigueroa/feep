@@ -35,6 +35,9 @@ Route::prefix('v1')->group(function () {
 
 //cambiar imagenes
         Route::post('organizaciones-imagen-cambiar/{id}', 'API\OrganizacionController@cambiarImagen');
+        Route::post('proyetos-imagen-cambiar/{id}', 'API\ProyectoController@cambiarImagen');
+        Route::post('eventos-imagen-cambiar/{id}', 'API\EventoController@cambiarImagen');
+        Route::post('insumos-imagen-cambiar/{id}', 'API\InsumoController@cambiarImagen');
 
         /*listados*/
         Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');

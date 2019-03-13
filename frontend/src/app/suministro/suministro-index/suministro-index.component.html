@@ -9,7 +9,7 @@
               <button class="btn btn-primary" routerLink="/insumos/suministros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
             </div>
             <div class="col-4">
-              <form (submit)="buscar()" class="form-inline" role="form">
+              <form (submit)="buscar(valor)" class="form-inline" role="form">
                 <div class="form-group">
                   <input type="email" class="input-search"
                          [(ngModel)]="valor"
@@ -62,13 +62,11 @@
             <div>
               Página {{ suministros.current_page }} de {{ suministros.last_page }}
             </div>
-            <button class="paginacion-btn" (click)="load(suministros.first_page_url)"><i class="fa fa-backward"></i></button>
-            <button class="paginacion-btn" (click)="load(suministros.prev_page_url)" [disabled]="suministros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-            <button class="paginacion-btn" *ngFor="let page of pages"
-                    [class.activated]="page.page == suministros.current_page"
-                    (click)="load(page.url)">{{ page.page }}</button>
-            <button class="paginacion-btn" (click)="load(suministros.next_page_url)" [disabled]="suministros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-            <button class="paginacion-btn" (click)="load(suministros.last_page_url)"><i class="fa fa-forward"></i></button>
+            <button class="paginacion-btn" (click)="loadPagination(suministros.first_page_url)"><i class="fa fa-backward"></i></button>
+            <button class="paginacion-btn" (click)="loadPagination(suministros.prev_page_url)" [disabled]="suministros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+            <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == suministros.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+            <button class="paginacion-btn" (click)="loadPagination(suministros.next_page_url)" [disabled]="suministros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+            <button class="paginacion-btn" (click)="loadPagination(suministros.last_page_url)"><i class="fa fa-forward"></i></button>
           </div>
         </div>
       </div>

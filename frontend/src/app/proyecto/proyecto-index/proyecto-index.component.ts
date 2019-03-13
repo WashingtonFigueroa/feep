@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment} from '../../../environments/environment.prod';
 import { ProyectoService} from '../../proyecto/proyecto.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-proyecto-index',
@@ -14,9 +15,10 @@ export class ProyectoIndexComponent implements OnInit {
     pages: any = [];
     current_page: any = null;
     proyectos: any = null;
-    url_base = environment.servidor + 'proyectos-imagen/'
+    url_base = environment.servidor + 'proyectos-imagen/';
     valor = '';
-    constructor(private proyectoService: ProyectoService) {
+    constructor(private proyectoService: ProyectoService,
+                private toastrService:ToastrService ) {
         this.proyectoService.index().subscribe((res: any) => {
                 this.proyectos = res;
                 this.current_page = this.proyectos.current_page;
@@ -65,6 +67,33 @@ export class ProyectoIndexComponent implements OnInit {
                 .subscribe((res: any) => {
                     this.proyectos.data.splice(index, 1);
                 });
+        }
+    }
+    cambiarImagen(id) {
+        const imagen: any = document.getElementById('imagen-' + id);
+        const archivo = imagen.files[0];
+        if (archivo) {
+            const formData = new FormData();
+            formData.append('imagen', archivo);
+            this.proyectoService.cambiarImagen(id, formData)
+                .subscribe((res) => {
+                    this.proyectos = res;
+                    this.current_page = this.proyectos.current_page;
+                    this.prev_page = this.proyectos.prev_page_url;
+                    this.next_page = this.proyectos.next_page_url;
+                    this.last_page = this.proyectos.last_page;
+                    this.loadPages();
+
+                    this.toastrService.success(`<span class="now-ui-icons ui-1_bell-53"></span> Imagen subida`, 'Exito!', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-success alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
+                });
+        } else {
+            return;
         }
     }
 }

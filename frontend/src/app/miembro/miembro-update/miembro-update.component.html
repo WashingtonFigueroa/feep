@@ -18,12 +18,12 @@
           </div>
         </div>
         <div class="card-body">
-          <form (submit)="update()"  [formGroup]="personaGroup"  *ngIf="organizaciones !== null && parroquias !== null" role="form">
+          <form (submit)="update()" [formGroup]="personaGroup"  *ngIf="organizaciones !== null && parroquias !== null" role="form">
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
                   <label>* Cedula o Pasaporte</label>
-                  <input type="text" class="form-control" formControlName="cedula" name="cedula" id="cedula">
+                  <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="cedula" name="cedula" id="cedula">
                 </div>
               </div>
               <div class="col-md-4">
@@ -167,7 +167,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Telefono Fijo</label>
-                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
+                  <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
                 </div>
               </div>
               <div class="col-md-4">
@@ -184,7 +184,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>Numero Contacto</label>
-                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                  <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
                 </div>
               </div>
             </div>

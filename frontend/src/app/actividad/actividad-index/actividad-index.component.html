@@ -13,7 +13,7 @@
             <div class="col-sm">
             </div>
             <div class="col-sm">
-              <form (submit)="buscar()" class="form-inline" role="form">
+              <form (submit)="buscar(valor)" class="form-inline" role="form">
                 <div class="form-group">
                   <input type="email" class="input-search"
                          [(ngModel)]="valor"
@@ -57,6 +57,16 @@
               </tr>
               </tbody>
             </table>
+          </div>
+          <div *ngIf="actividades !== null && actividades.last_page > 1" class="paginacion text-center">
+            <div>
+              Página {{ actividades.current_page }} de {{ actividades.last_page }}
+            </div>
+            <button class="paginacion-btn" (click)="loadPagination(actividades.first_page_url)"><i class="fa fa-backward"></i></button>
+            <button class="paginacion-btn" (click)="loadPagination(actividades.prev_page_url)" [disabled]="actividades.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+            <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == actividades.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+            <button class="paginacion-btn" (click)="loadPagination(actividades.next_page_url)" [disabled]="actividades.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+            <button class="paginacion-btn" (click)="loadPagination(actividades.last_page_url)"><i class="fa fa-forward"></i></button>
           </div>
         </div>
       </div>

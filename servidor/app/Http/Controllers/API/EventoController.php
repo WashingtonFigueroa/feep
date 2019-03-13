@@ -100,4 +100,13 @@ class EventoController extends Controller
         $data['participantes'] = $participantes;
         return response()->json($data, 200);
     }
+    public function cambiarImagen($id) {
+        if (\request()->hasFile('imagen')) {
+            $url = \request()->file('imagen')->store('eventos');
+            $evento = Evento::find($id);
+            $evento->imagen = explode('/', $url)[1]; ;
+            $evento->save();
+        }
+        return $this->index();
+    }
 }

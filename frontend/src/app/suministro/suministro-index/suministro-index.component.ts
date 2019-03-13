@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SuministroService} from '../suministro.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-suministro-index',
@@ -7,46 +8,63 @@ import {SuministroService} from '../suministro.service';
   styleUrls: ['./suministro-index.component.scss']
 })
 export class SuministroIndexComponent implements OnInit {
-  suministros: any = null;
-  pages: any = [];
-  valor = '';
-  constructor(private suminitroService: SuministroService) {
-    this.suminitroService.index()
-        .subscribe((res: any) => {
-          this.suministros = res;
-          this.loadPages();
-        });
-  }
-
-  ngOnInit() {
-  }
-
-  loadPages() {
-    for (let i = 1; i <= this.suministros.last_page;  i++) {
-      this.pages.push({
-        page: i,
-        url: this.suministros.path + '?page=' + i
-      });
-    }
-  }
-  load(url) {
-    this.suminitroService.load(url)
-        .subscribe((res: any) => {
-          this.suministros = res;
-        })
-  }
-  buscar() {
-    this.suminitroService.buscar(this.valor)
-        .subscribe((res: any) => {
+    prev_page: string = null;
+    next_page: string = null;
+    last_page: number = null;
+    pages: any = [];
+    current_page: any = null;
+    suministros: any = null;
+    valor = '';
+    constructor(private suministroService: SuministroService,
+                private toastrService:ToastrService ) {
+        this.suministroService.index().subscribe((res: any) => {
             this.suministros = res;
+            this.current_page = this.suministros.current_page;
+            this.prev_page = this.suministros.prev_page_url;
+            this.next_page = this.suministros.next_page_url;
+            this.last_page = this.suministros.last_page;
+            this.loadPages();
         });
-  }
-  destroy(suministro, index) {
-    if (confirm(`¿Esta seguro de eliminar ${suministro.nombre}?`)) {
-      this.suminitroService.destroy(suministro.suministro_id)
-          .subscribe((res: any) => {
-            this.suministros.data.splice(index, 1);
-          });
     }
-  }
+    ngOnInit() {
+    }
+    loadPages() {
+        this.pages = [];
+        for (let i = 1; i <= this.suministros.last_page;  i++) {
+            this.pages.push({
+                page: i,
+                url: this.suministros.path + '?page=' + i
+            });
+        }
+    }
+    loadPagination(url: string) {
+        this.suministroService.pagination(url)
+            .subscribe((res: any) => {
+                this.suministros = res;
+                this.current_page = this.suministros.current_page;
+                this.prev_page = this.suministros.prev_page_url;
+                this.next_page = this.suministros.next_page_url;
+                this.last_page = this.suministros.last_page;
+                this.loadPages();
+            });
+    }
+    buscar(valor: string) {
+        this.suministroService.buscar(valor)
+            .subscribe((res: any) => {
+                this.suministros = res;
+                this.current_page = this.suministros.current_page;
+                this.prev_page = this.suministros.prev_page_url;
+                this.next_page = this.suministros.next_page_url;
+                this.last_page = this.suministros.last_page;
+                this.loadPages();
+            });
+    }
+    destroy(suministro, index) {
+        if (confirm('Esta seguro de eliminar el suministro ' + suministro.nombre)) {
+            this.suministroService.destroy(suministro.suministro_id)
+                .subscribe((res: any) => {
+                    this.suministros.data.splice(index, 1);
+                });
+        }
+    }
 }
