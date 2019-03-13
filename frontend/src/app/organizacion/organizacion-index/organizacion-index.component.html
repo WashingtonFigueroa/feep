@@ -34,6 +34,7 @@
                         <th> Logo </th>
                         <th> Organización </th>
                         <th> Actividad </th>
+                        <th> Documento </th>
                         <th> Nombre </th>
                         <th> Representante </th>
                         <th> Contacto </th>
@@ -50,6 +51,7 @@
                           <img *ngIf="organizacion.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{organizacion.imagen}}"> </td>
                         <td> {{ organizacion.tipoorganizacion }} </td>
                         <td> {{ organizacion.actividad }} </td>
+                        <td> {{ organizacion.documento }} </td>
                         <td> {{ organizacion.nombre }} </td>
                         <td> {{ organizacion.representante }} </td>
                         <td> {{ organizacion.contacto }} </td>

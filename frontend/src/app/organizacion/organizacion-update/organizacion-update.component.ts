@@ -50,6 +50,7 @@ export class OrganizacionUpdateComponent implements OnInit {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': new FormControl(this.organizacion.tipo_organizacion_id, [Validators.required]),
             'actividad_id': new FormControl(this.organizacion.actividad_id, [Validators.required]),
+            'documento' : new FormControl(this.organizacion.documento, [Validators.required]),
             'nombre' : new FormControl(this.organizacion.nombre, [Validators.required]),
             'representante': new FormControl(this.organizacion.representante, [Validators.required]),
             'contacto': new FormControl(this.organizacion.contacto),

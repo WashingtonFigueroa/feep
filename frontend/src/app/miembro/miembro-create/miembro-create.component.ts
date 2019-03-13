@@ -100,8 +100,8 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('email', this.miembroGroup.value.email);
             this.miembroService.store(formData)
                 .subscribe((res: any) => {
-                    this.toastrService.success('Datos Agregados', 'Persona')
-                    this.router.navigate(['/miembros/listar']);
+                    this.toastrService.success('Agregada', 'Persona')
+                    this.miembroGroup.reset();
                 }, (error) => {
                     this.toastrService.warning('Registrada','Persona');
                 });

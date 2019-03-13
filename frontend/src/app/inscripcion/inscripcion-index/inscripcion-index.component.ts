@@ -112,13 +112,13 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.setFontType('normal');
                 doc.text(res.evento.nombre, coord.x + 120, coord.y);
 
-                coord.y = coord.y + 30;
+                coord.y = coord.y + 10;
                 doc.setFontType('bold');
                 doc.text('DIRECCIÓN:', coord.x, coord.y);
                 doc.setFontType('normal');
                 doc.text(res.evento.direccion, coord.x + 120, coord.y);
 
-                coord.y = coord.y + 30;
+                coord.y = coord.y + 10;
                 const inicio =  res.evento.fecha_inicio.split('-')[2] + '/' +
                                 res.evento.fecha_inicio.split('-')[1] + '/' +
                                 res.evento.fecha_inicio.split('-')[0];
@@ -137,7 +137,7 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.text(fin, coord.x + 100, coord.y);
 
                 coord.x = 40;
-                coord.y = coord.y + 50;
+                coord.y = coord.y + 40;
 
                 doc.setFontSize(10);
                 doc.setFontType('bold');
@@ -148,7 +148,7 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.text('ETNIA', coord.x + 340, coord.y);
                 doc.text('DIRECCIÓN', coord.x + 405, coord.y);
                 doc.text('CONTACTO', coord.x + 560, coord.y);
-                doc.text('FIRMA', coord.x + 630, coord.y);
+                doc.text('FIRMA', coord.x + 640, coord.y);
 
                 doc.line(coord.x, coord.y - 15, coord.x + 690, coord.y - 15);
                 doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
@@ -169,7 +169,7 @@ export class InscripcionIndexComponent implements OnInit {
                     } else {
                         doc.text(participante.contacto, coord.x + 560, coord.y);
                     }
-                    doc.text('', coord.x + 630, coord.y);
+                    doc.text('', coord.x + 640, coord.y);
                     doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
                     i++;
                 });
