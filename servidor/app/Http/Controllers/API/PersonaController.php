@@ -22,6 +22,20 @@ class PersonaController extends Controller
             ->paginate(10);
         return response()->json($personas, 200);
     }
+    public function buscar($valor = '') {
+        $organizacion = Persona::join('organizaciones','organizaciones.organizacion_id','=','personas.organizacion_id')
+            ->join('parroquias','parroquias.parroquia_id','=','personas.parroquia_id')
+            ->where('organizaciones.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('parroquias.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('personas.cedula', 'like', '%' . $valor . '%')
+            ->orWhere('personas.nombres', 'like', '%' . $valor . '%')
+            ->orWhere('personas.direccion', 'like', '%' . $valor . '%')
+            ->orWhere('personas.contacto', 'like', '%' . $valor . '%')
+            ->selectRaw('personas.*, organizaciones.nombre as organizacion,parroquias.nombre as parroquia')
+            ->orderBy('personas.persona_id')
+            ->paginate(10);
+        return response()->json($organizacion, 200);
+    }
     public function listar()
     {
         $persona = Persona::orderBy('persona_id','desc')->get();

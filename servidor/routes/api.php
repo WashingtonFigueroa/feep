@@ -45,9 +45,9 @@ Route::prefix('v1')->group(function () {
 //ORGANIZACIONES
         Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
         Route::get('organizaciones-buscar/{valor?}', 'API\OrganizacionController@buscar');
+//PERSONAS
+      //  Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 
-
-        Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
         Route::get('provincias-listar', 'API\ProvinciaController@listar');
 
         Route::get('ciudades-listar', 'API\CiudadController@listar');
@@ -57,7 +57,10 @@ Route::prefix('v1')->group(function () {
         Route::get('suministros-listar', 'API\SuministroController@listar');
         Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
         Route::get('tipos-listar', 'API\SuministroController@listar');
+//PERSONAS
         Route::get('personas-listar', 'API\PersonaController@listar');
+        Route::get('personas-buscar/{valor?}', 'API\PersonaController@buscar');
+
         Route::get('eventos-listar', 'API\EventoController@listar');
 //¨Parroquia
         Route::get('parroquias-listar', 'API\ParroquiaController@listar');
@@ -69,7 +72,7 @@ Route::prefix('v1')->group(function () {
 //Proyectos
         Route::get('proyectos-listar', 'API\ProyectoController@listar');
         Route::get('proyectos-buscar/{valor?}', 'API\ProyectoController@buscar');
-//Asignacion Proyectos
+//Asignacion Proyectos o Evento
         Route::get('asignacion-proyectos-listar', 'API\AsignacionEventoController@listar');
         Route::get('asignacion-proyectos-buscar/{valor?}', 'API\AsignacionEventoController@buscar');
 //Actividades

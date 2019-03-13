@@ -19,6 +19,18 @@ class AsignacionEventoController extends Controller
                                                 ->paginate(10);
         return response()->json($asignacion_proyectos, 200);
     }
+    public function buscar($valor = '') {
+        $organizacion = AsignacionEvento::join('proyectos', 'proyectos.proyecto_id', '=', 'asignacion_eventos.proyecto_id')
+            ->join('usuarios', 'usuarios.usuario_id', '=', 'asignacion_eventos.usuario_id')
+            ->where('proyectos.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('usuarios.nombres', 'like', '%' . $valor . '%')
+            ->orWhere('asignacion_eventos.descripcion', 'like', '%' . $valor . '%')
+            ->orWhere('asignacion_eventos.created_at', 'like', '%' . $valor . '%')
+            ->selectRaw('asignacion_eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario')
+            ->orderBy('asignacion_eventos.asignacion_evento_id')
+            ->paginate(10);
+        return response()->json($organizacion, 200);
+    }
     public function store(Request $request)
     {
         $evento = AsignacionEvento::create($request->all())->toArray();

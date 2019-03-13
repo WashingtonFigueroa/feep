@@ -31,10 +31,12 @@ class EventoController extends Controller
             ->join('usuarios', 'usuarios.usuario_id', '=', 'eventos.usuario_id')
             ->join('tipo_eventos', 'tipo_eventos.tipo_evento_id', '=', 'eventos.tipo_evento_id')
             ->join('barrios', 'barrios.barrio_id', '=', 'eventos.barrio_id')
-                ->selectRaw('eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario, tipo_eventos.nombre as tipo_evento, barrios.nombre as parroquia')
-                ->where('eventos.nombre', 'like', '%' . $valor . '%')
-                ->orWhere('eventos.direccion', 'like', '%' . $valor . '%')
-                ->orderBy('eventos.fecha_evento', 'desc')
+                ->where('proyectos.nombre', 'like', '%' . $valor . '%')
+                ->orWhere('tipo_eventos.nombre', 'like', '%' . $valor . '%')
+                ->orWhere('usuarios.nombres', 'like', '%' . $valor . '%')
+                ->orWhere('eventos.nombre', 'like', '%' . $valor . '%')
+            ->selectRaw('eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario, tipo_eventos.nombre as tipo_evento, barrios.nombre as parroquia')
+            ->orderBy('eventos.evento_id', 'desc')
                 ->paginate(10);
         return response()->json($eventos, 200);
     }
