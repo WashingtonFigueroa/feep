@@ -16,7 +16,7 @@
                   <div class="col-sm">
                   </div>
                   <div class="col-sm">
-                    <form (submit)="buscar()" class="form-inline" role="form">
+                    <form (submit)="buscar(valor)" class="form-inline" role="form">
                       <div class="form-group">
                         <input type="email" class="input-search"
                                [(ngModel)]="valor"
@@ -58,6 +58,10 @@
                       <td class="text-center">
                         <a routerLink="/eventos/editar/{{ evento.evento_id }}" title="Editar Evento" class="action action-edit"> <i class="fas fa-edit"></i> </a>
                         <a (click)="destroy(evento, i)" title="Eliminar Evento" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                        <label for="imagen-{{evento.evento_id}}"
+                               title="Cambiar Imagen"
+                               class="action action-info"><i class="fas fa-upload"></i></label>
+                        <input type="file" id="imagen-{{evento.evento_id}}" class="hidden" (change)="cambiarImagen(evento.evento_id)">
                       </td>
                     </tr>
                     </tbody>
@@ -67,13 +71,11 @@
                   <div>
                     Página {{ eventos.current_page }} de {{ eventos.last_page }}
                   </div>
-                  <button class="paginacion-btn" (click)="loadPages(eventos.first_page_url)"><i class="fa fa-backward"></i></button>
-                  <button class="paginacion-btn" (click)="loadPages(eventos.prev_page_url)" [disabled]="eventos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-                  <button class="paginacion-btn" *ngFor="let page of pages"
-                          [class.activated]="page.page == eventos.current_page"
-                          (click)="loadPages(page.url)">{{ page.page }}</button>
-                  <button class="paginacion-btn" (click)="loadPages(eventos.next_page_url)" [disabled]="eventos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-                  <button class="paginacion-btn" (click)="loadPages(eventos.last_page_url)"><i class="fa fa-forward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(eventos.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(eventos.prev_page_url)" [disabled]="eventos.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == eventos.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPagination(eventos.next_page_url)" [disabled]="eventos.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(eventos.last_page_url)"><i class="fa fa-forward"></i></button>
                 </div>
               </div>
             </div>

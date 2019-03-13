@@ -9,7 +9,6 @@ import {ToastrService} from 'ngx-toastr';
   styleUrls: ['./evento-index.component.scss']
 })
 export class EventoIndexComponent implements OnInit {
-
     prev_page: string = null;
     next_page: string = null;
     last_page: number = null;
@@ -73,6 +72,32 @@ export class EventoIndexComponent implements OnInit {
                 .subscribe((res: any) => {
                     this.eventos.data.splice(index, 1);
                 });
+        }
+    }
+    cambiarImagen(id) {
+        const imagen: any = document.getElementById('imagen-' + id);
+        const archivo = imagen.files[0];
+        if (archivo) {
+            const formData = new FormData();
+            formData.append('imagen', archivo);
+            this.eventoService.cambiarImagen(id, formData)
+                .subscribe((res) => {
+                    this.eventos = res;
+                    this.current_page = this.eventos.current_page;
+                    this.prev_page = this.eventos.prev_page_url;
+                    this.next_page = this.eventos.next_page_url;
+                    this.last_page = this.eventos.last_page;
+                    this.loadPages();
+                    this.toastrService.success(`<span class="now-ui-icons ui-1_bell-53"></span> Imagen subida`, 'Exito!', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-success alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
+                });
+        } else {
+            return;
         }
     }
 }

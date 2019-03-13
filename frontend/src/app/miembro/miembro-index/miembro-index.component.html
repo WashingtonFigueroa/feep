@@ -16,7 +16,7 @@
                                     <div class="col-sm">
                                     </div>
                                     <div class="col-sm">
-                                        <form (submit)="buscar()" class="form-inline" role="form">
+                                        <form (submit)="buscar(valor)" class="form-inline" role="form">
                                             <div class="form-group">
                                                 <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
                                             </div>
@@ -57,11 +57,11 @@
                                     <div>
                                         Página {{ miembros.current_page }} de {{ miembros.last_page }}
                                     </div>
-                                    <button class="paginacion-btn" (click)="loadPages(miembros.first_page_url)"><i class="fa fa-backward"></i></button>
-                                    <button class="paginacion-btn" (click)="loadPages(miembros.prev_page_url)" [disabled]="miembros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
-                                    <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == miembros.current_page" (click)="loadPages(page.url)">{{ page.page }}</button>
-                                    <button class="paginacion-btn" (click)="loadPages(miembros.next_page_url)" [disabled]="miembros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
-                                    <button class="paginacion-btn" (click)="loadPages(miembros.last_page_url)"><i class="fa fa-forward"></i></button>
+                                    <button class="paginacion-btn" (click)="loadPagination(miembros.first_page_url)"><i class="fa fa-backward"></i></button>
+                                    <button class="paginacion-btn" (click)="loadPagination(miembros.prev_page_url)" [disabled]="miembros.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                                    <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == miembros.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+                                    <button class="paginacion-btn" (click)="loadPagination(miembros.next_page_url)" [disabled]="miembros.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                                    <button class="paginacion-btn" (click)="loadPagination(miembros.last_page_url)"><i class="fa fa-forward"></i></button>
                                 </div>
                             </div>
                         </div>

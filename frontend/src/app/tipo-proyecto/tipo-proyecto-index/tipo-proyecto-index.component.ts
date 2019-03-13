@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TipoProyectoService} from '../tipo-proyecto.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-tipo-proyecto-index',
@@ -7,36 +8,62 @@ import {TipoProyectoService} from '../tipo-proyecto.service';
   styleUrls: ['./tipo-proyecto-index.component.scss']
 })
 export class TipoProyectoIndexComponent implements OnInit {
-    tipoproyectos: any = null;
+    prev_page: string = null;
+    next_page: string = null;
+    last_page: number = null;
     pages: any = [];
-    constructor(private tipoProyctosService: TipoProyectoService) {
-        this.tipoProyctosService.index()
-            .subscribe((res: any) => {
-                this.tipoproyectos = res;
-                this.loadPages();
-            });
+    current_page: any = null;
+    tipoProyectos: any = null;
+    valor = '';
+    constructor(private tipoProyectoService: TipoProyectoService,
+                private toastrService:ToastrService ) {
+        this.tipoProyectoService.index().subscribe((res: any) => {
+            this.tipoProyectos = res;
+            this.current_page = this.tipoProyectos.current_page;
+            this.prev_page = this.tipoProyectos.prev_page_url;
+            this.next_page = this.tipoProyectos.next_page_url;
+            this.last_page = this.tipoProyectos.last_page;
+            this.loadPages();
+        });
     }
     ngOnInit() {
     }
     loadPages() {
-        for (let i = 1; i <= this.tipoproyectos.last_page;  i++) {
+        this.pages = [];
+        for (let i = 1; i <= this.tipoProyectos.last_page;  i++) {
             this.pages.push({
                 page: i,
-                url: this.tipoproyectos.path + '?page=' + i
+                url: this.tipoProyectos.path + '?page=' + i
             });
         }
     }
-    load(url) {
-        this.tipoProyctosService.load(url)
+    loadPagination(url: string) {
+        this.tipoProyectoService.pagination(url)
             .subscribe((res: any) => {
-                this.tipoproyectos = res;
-            })
+                this.tipoProyectos = res;
+                this.current_page = this.tipoProyectos.current_page;
+                this.prev_page = this.tipoProyectos.prev_page_url;
+                this.next_page = this.tipoProyectos.next_page_url;
+                this.last_page = this.tipoProyectos.last_page;
+                this.loadPages();
+            });
+    }
+    buscar(valor: string) {
+        this.tipoProyectoService.buscar(valor)
+            .subscribe((res: any) => {
+                this.tipoProyectos = res;
+                this.current_page = this.tipoProyectos.current_page;
+                this.prev_page = this.tipoProyectos.prev_page_url;
+                this.next_page = this.tipoProyectos.next_page_url;
+                this.last_page = this.tipoProyectos.last_page;
+                this.loadPages();
+            });
     }
     destroy(tipo_proyecto, index) {
         if (confirm(`¿Esta seguro de eliminar ${tipo_proyecto.nombre}?`)) {
-            this.tipoProyctosService.destroy(tipo_proyecto.tipo_proyecto_id)
+            this.tipoProyectoService.destroy(tipo_proyecto.tipo_proyecto_id)
                 .subscribe((res: any) => {
-                    this.tipoproyectos.data.splice(index, 1);
+                    this.tipoProyectos.data.splice(index, 1);
                 });
         }
     }

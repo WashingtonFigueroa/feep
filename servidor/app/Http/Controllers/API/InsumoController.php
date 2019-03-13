@@ -8,11 +8,6 @@ use App\Http\Controllers\Controller;
 
 class InsumoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $insumos = Insumo::join('eventos','eventos.evento_id','=','insumos.evento_id')
@@ -22,13 +17,18 @@ class InsumoController extends Controller
             ->paginate(10);
         return response()->json($insumos,200);
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    public function buscar($valor = '') {
+        $insumo = Insumo::join('eventos','eventos.evento_id','=','insumos.evento_id')
+            ->join('tipos','tipos.tipo_id','=','insumos.tipo_id')
+            ->where('eventos.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('tipos.nombre', 'like', '%' . $valor . '%')
+            ->orWhere('insumos.fecha', 'like', '%' . $valor . '%')
+            ->orWhere('insumos.receptor', 'like', '%' . $valor . '%')
+            ->selectRaw('insumos.*,eventos.nombre as evento, tipos.nombre as tipo')
+            ->orderBy('insumos.insumo_id')
+            ->paginate(10);
+        return response()->json($insumo, 200);
+    }
     public function store(Request $request)
     {
         $insumo = new Insumo();
@@ -60,5 +60,14 @@ class InsumoController extends Controller
     }
     public function imagen($url){
         return response()->file(storage_path('app/insumos/' . $url));
+    }
+    public function cambiarImagen($id) {
+        if (\request()->hasFile('imagen')) {
+            $url = \request()->file('imagen')->store('insumos');
+            $insumo = Insumo::find($id);
+            $insumo->imagen = explode('/', $url)[1]; ;
+            $insumo->save();
+        }
+        return $this->index();
     }
 }

@@ -24,8 +24,9 @@ class AnexoController extends Controller
 
     public function buscar($valor = '') {
         $proyecto = Anexo::join('eventos', 'eventos.evento_id', '=', 'anexos.evento_id')
-            ->selectRaw('anexos.*, eventos.*')
-            ->where('anexos.descripcion', 'like', '%' . $valor . '%')
+            ->where('eventos.nombre', 'like', '%' . $valor . '%')
+            ->orwhere('anexos.descripcion', 'like', '%' . $valor . '%')
+            ->selectRaw('anexos.*, eventos.nombre as evento')
             ->orderBy('anexos.anexo_id', 'desc')
             ->paginate(10);
         return response()->json($proyecto, 200);

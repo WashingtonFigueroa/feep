@@ -28,4 +28,7 @@ export class AsignacionService {
     pagination(url: string) {
         return this.http.get(url);
     }
+    cambiarImagen(id, req) {
+        return this.http.post(`${this.base}insumos-imagen-cambiar/${id}`, req);
+    }
 }

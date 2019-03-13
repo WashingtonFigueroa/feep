@@ -27,7 +27,8 @@ Route::prefix('v1')->group(function () {
     Route::get('anexos-archivo/{url}', 'API\AnexoController@imagen');
     Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
     Route::get('insumos-imagen/{url}', 'API\InsumoController@imagen');
-    
+    Route::get('proyectos-imagen/{url}', 'API\ProyectoController@imagen');
+
     Route::get('evento-participantes/{evento_id}', 'API\EventoController@participantes');
 
     Route::group(['middleware' => 'auth:api'], function () {
@@ -35,15 +36,18 @@ Route::prefix('v1')->group(function () {
 
 //cambiar imagenes
         Route::post('organizaciones-imagen-cambiar/{id}', 'API\OrganizacionController@cambiarImagen');
+        Route::post('proyetos-imagen-cambiar/{id}', 'API\ProyectoController@cambiarImagen');
+        Route::post('eventos-imagen-cambiar/{id}', 'API\EventoController@cambiarImagen');
+        Route::post('insumos-imagen-cambiar/{id}', 'API\InsumoController@cambiarImagen');
 
         /*listados*/
         Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
 //ORGANIZACIONES
         Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
         Route::get('organizaciones-buscar/{valor?}', 'API\OrganizacionController@buscar');
+//PERSONAS
+      //  Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
 
-
-        Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
         Route::get('provincias-listar', 'API\ProvinciaController@listar');
 
         Route::get('ciudades-listar', 'API\CiudadController@listar');
@@ -53,7 +57,12 @@ Route::prefix('v1')->group(function () {
         Route::get('suministros-listar', 'API\SuministroController@listar');
         Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
         Route::get('tipos-listar', 'API\SuministroController@listar');
+//PERSONAS
         Route::get('personas-listar', 'API\PersonaController@listar');
+        Route::get('personas-buscar/{valor?}', 'API\PersonaController@buscar');
+//asignacion insumo
+        Route::get('insumos-buscar/{valor?}', 'API\InsumoController@buscar');
+
         Route::get('eventos-listar', 'API\EventoController@listar');
 //¨Parroquia
         Route::get('parroquias-listar', 'API\ParroquiaController@listar');
@@ -65,8 +74,7 @@ Route::prefix('v1')->group(function () {
 //Proyectos
         Route::get('proyectos-listar', 'API\ProyectoController@listar');
         Route::get('proyectos-buscar/{valor?}', 'API\ProyectoController@buscar');
-        Route::get('proyectos-imagen/{url}', 'API\ProyectoController@imagen');
-//Asignacion Proyectos
+//Asignacion Proyectos o Evento
         Route::get('asignacion-proyectos-listar', 'API\AsignacionEventoController@listar');
         Route::get('asignacion-proyectos-buscar/{valor?}', 'API\AsignacionEventoController@buscar');
 //Actividades
@@ -81,6 +89,8 @@ Route::prefix('v1')->group(function () {
         Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@buscar');
         Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
         Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
+//Participante
+        Route::get('participantes-buscar/{valor?}', 'API\ParticipanteController@buscar');
 //Suministros tipo
         Route::get('tipo-listar', 'API\TipoController@listar');
 
