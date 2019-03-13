@@ -103,19 +103,29 @@ class PrivilegioController extends Controller
     public function store(Request $request)
     {
         $privilegio = $request->input('privilegio');
+        $cargo_id = $request->input('cargo_id');
         $accesos = $this->privilegios[$privilegio];
         foreach ($accesos as $acceso) {
-            $existe = Privilegio::where('acceso', '=', $acceso['acceso'])->exists();
+            $existe = Privilegio::where('acceso', '=', $acceso['acceso'])
+                                ->where('cargo_id', '=', $cargo_id)
+                                ->exists();
             if ($existe) {
-                $data = Privilegio::where('acceso', '=', $acceso['acceso'])->first();
-                $data->activo = !$data->activo;
+                $data = Privilegio::where('acceso', '=', $acceso['acceso'])
+                                ->where('cargo_id', '=', $cargo_id)
+                                ->first();
+                if ($data->activo === 'si') {
+                    $data->activo = 'no';
+                } else {
+                    $data->activo = 'si';
+                }
                 $data->save();
-            } else {
+            } /*else {
                 Privilegio::create([
+                    'cargo_id' => $cargo_id,
                     'acceso' => $acceso['acceso'],
-                    'activo' => true
+                    'activo' => 'si'
                 ]);
-            }
+            }*/
         }
         return response()->json([
             'exito' => 'Privilegio actualizado'

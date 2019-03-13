@@ -14,7 +14,7 @@ class CreatePrivilegiosTable extends Migration
     public function up()
     {
         Schema::create('privilegios', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('privilegio_id');
             $table->integer('cargo_id')->unsigned();
             $table->foreign('cargo_id')
                     ->references('cargo_id')
@@ -22,6 +22,7 @@ class CreatePrivilegiosTable extends Migration
                     ->onDelete('cascade');
             $table->string('acceso');
             $table->enum('activo', ['si', 'no'])->default('no');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

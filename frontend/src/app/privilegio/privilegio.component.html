@@ -17,48 +17,61 @@
                 <div class="form-group">
                   <label for="cargos">Cargos</label>
                   <select name="cargo_id" id="cargos"
+                          [(ngModel)]="cargo_id"
+                          (change)="getPrivilegios()"
                           class="form-control">
                     <option [value]="cargo.cargo_id" *ngFor="let cargo of cargos">{{ cargo.nombre }}</option>
                   </select>
                 </div>
               </div>
             </div>
-            <div class="row" *ngIf="!loading">
+            <div class="row" *ngIf="!loading && privilegios !== null">
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Privilegios de Acceso</label>
                   <div class="box-container">
-                    <div class="box" (click)="updatePrivilegio('cargos')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['cargos'].activo === 'no'" (click)="updatePrivilegio('cargos')">
                       <i class="now-ui-icons users_circle-08"></i> Cargos
                     </div>
-                    <div class="box no-asignado" (click)="updatePrivilegio('privilegios')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['privilegios'].activo === 'no'" (click)="updatePrivilegio('privilegios')">
                       <i class="now-ui-icons ui-1_lock-circle-open"></i> Privilegios
                     </div>
-                    <div class="box" (click)="updatePrivilegio('asignar-proyectos')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['asignar-proyectos'].activo === 'no'" (click)="updatePrivilegio('asignar-proyectos')">
                       <i class="now-ui-icons business_badge"></i> Asignar Proyectos
                     </div>
-                    <div class="box" (click)="updatePrivilegio('personas')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['personas'].activo === 'no'" (click)="updatePrivilegio('personas')">
                       <i class="now-ui-icons users_single-02"></i> Personas
                     </div>
-                    <div class="box" (click)="updatePrivilegio('proyectos')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['proyectos'].activo === 'no'" (click)="updatePrivilegio('proyectos')">
                       <i class="now-ui-icons business_globe"></i> Proyectos
                     </div>
-                    <div class="box" (click)="updatePrivilegio('inscripciones')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['inscripciones'].activo === 'no'" (click)="updatePrivilegio('inscripciones')">
                       <i class="now-ui-icons education_atom"></i> Inscripciones
                     </div>
-                    <div class="box" (click)="updatePrivilegio('subir-anexos')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['subir-anexos'].activo === 'no'" (click)="updatePrivilegio('subir-anexos')">
                       <i class="now-ui-icons arrows-1_cloud-upload-94"></i> Subir Anexos
                     </div>
-                    <div class="box" (click)="updatePrivilegio('organizaciones')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['organizaciones'].activo === 'no'" (click)="updatePrivilegio('organizaciones')">
                       <i class="now-ui-icons ui-1_send"></i> Organizaciones
                     </div>
-                    <div class="box" (click)="updatePrivilegio('eventos')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['eventos'].activo === 'no'" (click)="updatePrivilegio('eventos')">
                       <i class="now-ui-icons ui-1_calendar-60"></i> Eventos
                     </div>
-                    <div class="box" (click)="updatePrivilegio('asignar-insumos')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['asignar-insumos'].activo === 'no'" (click)="updatePrivilegio('asignar-insumos')">
                       <i class="now-ui-icons files_box"></i> Asignar Insumos
                     </div>
-                    <div class="box" (click)="updatePrivilegio('configuracion')">
+                    <div class="box"
+                         [class.no-asignado]="privilegios['configuracion'].activo === 'no'" (click)="updatePrivilegio('configuracion')">
                       <i class="now-ui-icons loader_gear"></i> Configuracion
                     </div>
                   </div>

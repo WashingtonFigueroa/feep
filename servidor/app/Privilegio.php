@@ -11,6 +11,7 @@ class Privilegio extends Model
     protected $table = 'privilegios';
     protected $primaryKey = 'privilegio_id';
     protected $fillable = [
+        'cargo_id',
         'acceso',
         'activo'
     ];
