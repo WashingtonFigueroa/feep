@@ -31,6 +31,7 @@ Route::prefix('v1')->group(function () {
 
     Route::get('evento-participantes/{evento_id}', 'API\EventoController@participantes');
 
+    Route::get('cargo-privilegios/{cargo_id}', 'API\CargoController@privilegios');
     Route::group(['middleware' => 'auth:api'], function () {
         Route::post('get-usuario', 'API\UsuarioController@getUsuario');
 
@@ -98,7 +99,8 @@ Route::prefix('v1')->group(function () {
         Route::resource('cargos', 'API\CargoController');
         Route::resource('privilegios', 'API\PrivilegioController');
 //los privilegios de un cargo
-        Route::get('privilegios-cargo/{cargo_id}', 'API\PrivilegioController@privilegios');
+
+/*        Route::get('privilegios-cargo/{cargo_id}', 'API\PrivilegioController@privilegios');*/
 //Usuarios
         Route::get('usuarios-listar', 'API\UsuarioController@listar');
         Route::get('usuarios-buscar/{valor?}', 'API\UsuarioController@buscar');

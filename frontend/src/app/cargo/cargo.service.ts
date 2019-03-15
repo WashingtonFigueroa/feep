@@ -22,4 +22,7 @@ export class CargoService {
   destroy(cargo_id: number) {
     return this.http.delete(`${this.base}cargos/${cargo_id}`);
   }
+  privilegios(cargo_id: number) {
+    return this.http.get(`${this.base}cargo-privilegios/${cargo_id}`);
+  }
 }

@@ -9,6 +9,81 @@ use App\Http\Controllers\Controller;
 
 class PrivilegioController extends Controller
 {
+    private $privilegios = [
+        'cargos' => [
+            [
+                'acceso' => 'cargos/listar'
+            ]
+        ],
+        'privilegios' => [
+            [
+                'acceso' => 'privilegios'
+            ]
+        ],
+        'asignar-proyectos' => [
+            [
+                'acceso' => 'asignacioneventos/listar'
+            ]
+        ],
+        'personas' => [
+            [
+                'acceso' => 'miembros/listar'
+            ]
+        ],
+        'proyectos' => [
+            [
+                'acceso' => 'proyectos/listar'
+            ]
+        ],
+        'inscripciones' => [
+            [
+                'acceso' => 'inscripciones/listar'
+            ]
+        ],
+        'subir-anexos' => [
+            [
+                'acceso' => 'anexos/listar'
+            ]
+        ],
+        'organizaciones' => [
+            [
+                'acceso' => 'organizaciones/listar'
+            ]
+        ],
+        'eventos' => [
+            [
+                'acceso' => 'eventos/listar'
+            ]
+        ],
+        'asignar-insumos' => [
+            [
+                'acceso' => 'asignaciones/listar'
+            ]
+        ],
+        'configuracion' => [
+            [
+                'acceso' => 'tipoorganizacion/listar'
+            ],
+            [
+                'acceso' => 'tipoproyectos/listar'
+            ],
+            [
+                'acceso' => 'tipoeventos/listar'
+            ],
+            [
+                'acceso' => 'actividades/listar'
+            ],
+            [
+                'acceso' => 'insumos/tipo-insumos/listar'
+            ],
+            [
+                'acceso' => 'ubicaciones/listar'
+            ],
+            [
+                'acceso' => 'usuarios/listar'
+            ]
+        ]
+    ];
     /**
      * Display a listing of the resource.
      *
@@ -27,7 +102,34 @@ class PrivilegioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $privilegio = $request->input('privilegio');
+        $cargo_id = $request->input('cargo_id');
+        $accesos = $this->privilegios[$privilegio];
+        foreach ($accesos as $acceso) {
+            $existe = Privilegio::where('acceso', '=', $acceso['acceso'])
+                                ->where('cargo_id', '=', $cargo_id)
+                                ->exists();
+            if ($existe) {
+                $data = Privilegio::where('acceso', '=', $acceso['acceso'])
+                                ->where('cargo_id', '=', $cargo_id)
+                                ->first();
+                if ($data->activo === 'si') {
+                    $data->activo = 'no';
+                } else {
+                    $data->activo = 'si';
+                }
+                $data->save();
+            } /*else {
+                Privilegio::create([
+                    'cargo_id' => $cargo_id,
+                    'acceso' => $acceso['acceso'],
+                    'activo' => 'si'
+                ]);
+            }*/
+        }
+        return response()->json([
+            'exito' => 'Privilegio actualizado'
+        ], 201);
     }
 
     /**
@@ -62,16 +164,5 @@ class PrivilegioController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function privilegios($cargo_id) {
-        $privilegios = Cargo::find($cargo_id)->privilegios()->get();
-        return response()->json($privilegios, 200);
-    }
-
-    public function cambiarEstado($privilegio_id) {
-        $privilegio = Privilegio::find($privilegio_id);
-        $privilegio->
-
     }
 }

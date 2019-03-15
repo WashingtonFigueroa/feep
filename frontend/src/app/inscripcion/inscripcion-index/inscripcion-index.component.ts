@@ -152,7 +152,6 @@ export class InscripcionIndexComponent implements OnInit {
 
                 doc.line(coord.x, coord.y - 15, coord.x + 690, coord.y - 15);
                 doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
-/*                doc.text(20, 20, 'Do you like that?');*/
                 let i = 1;
                 doc.setFontSize(8);
                 doc.setFontType('normal');
@@ -174,8 +173,7 @@ export class InscripcionIndexComponent implements OnInit {
                     i++;
                 });
                 // Save the PDF
-                doc.save('Evento.pdf');
+                doc.save(res.evento.nombre + '.pdf');
             });
     }
-
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Privilegio;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -10,8 +11,26 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
+        $accesos = [
+            'cargos/listar',
+            'privilegios',
+            'asignacioneventos/listar',
+            'miembros/listar',
+            'proyectos/listar',
+            'inscripciones/listar',
+            'anexos/listar',
+            'organizaciones/listar',
+            'eventos/listar',
+            'asignaciones/listar',
+            'tipoorganizacion/listar',
+            'tipoproyectos/listar',
+            'tipoeventos/listar',
+            'actividades/listar',
+            'insumos/tipo-insumos/listar',
+            'ubicaciones/listar',
+            'usuarios/listar'
+        ];
         //TIPO USUARIOS
         $cargo = \App\Cargo::create(
             [
@@ -19,6 +38,13 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'descripcion del administrador'
             ]
         );
+        foreach ($accesos as $acceso) {
+            Privilegio::create([
+                'cargo_id' => $cargo->cargo_id,
+                'acceso' => $acceso,
+                'activo' => 'si'
+            ]);
+        }
 
 
         \App\Usuario::create(
