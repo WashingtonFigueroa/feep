@@ -20,7 +20,20 @@
         <div class="card-body">
           <form (submit)="store()" [formGroup]="organizacionGroup" *ngIf="tipo_organizaciones !== null" role="form">
           <div class="row">
-              <div class="col-md-6">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>* Ruc:</label>
+                <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="documento" name="documento" id="documento" autofocus>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>* Nombre Organización</label>
+                <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" id="nombre">
+              </div>
+            </div>
+
+            <div class="col-md-4">
                 <div class="form-group">
                   <label>* Seleccione Tipo Organización</label>
                   <ng-select [items]="tipo_organizaciones"
@@ -32,7 +45,16 @@
                   </ng-select>
                 </div>
               </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>* Caracteristica 1</label>
+                <select class="form-control" formControlName="caracteristica1" name="caracteristica1">
+                  <option value="REGULADA">REGULADA</option>
+                  <option value="NO REGULADA">NO REGULADA</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
               <div class="form-group">
                 <label>* Seleccione Actividad</label>
                 <ng-select [items]="actividades"
@@ -44,20 +66,45 @@
                 </ng-select>
               </div>
             </div>
+
           </div>
+
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Ruc:</label>
-                  <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="documento" name="documento" id="documento" autofocus>
+                  <label>* Caracteristica 2</label>
+                  <select class="form-control" formControlName="caracteristica2" name="caracteristica2">
+                    <option value="NO REGULADA">BASE</option>
+                    <option value="NO REGULADA">SEGUNDO GRADO</option>
+                  </select> </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>* Caracteristica 3</label>
+                  <select class="form-control" formControlName="caracteristica3" name="caracteristica3">
+                    <option value="REGULADA">ASOCIACION</option>
+                    <option value="REGULADA">EMPRESA</option>
+                    <option value="NO REGULADA">EMPRENDIMEITNO</option>
+                  </select>
                 </div>
               </div>
               <div class="col-md-4">
-                  <div class="form-group">
-                    <label>* Nombre</label>
-                    <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" id="nombre">
-                  </div>
-                </div>
+                <div class="form-group">
+                  <label>* MINISTERIO</label>
+                  <select class="form-control" formControlName="ministerio" name="ministerio">
+                    <option value="NO REGULADA">MAG</option>
+                    <option value="REGULADA">MIES</option>
+                    <option value="REGULADA">MIPRO</option>
+                    <option value="NO REGULADA">OTRO/A</option>
+                  </select>  </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+
+
+
               <div class="col-md-4">
                 <div class="form-group">
                   <label>* Representante</label>

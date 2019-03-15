@@ -28,11 +28,15 @@ class CreateOrganizacionsTable extends Migration
                 ->onDelete('cascade');
             $table->string('documento')->unique()->nullable();
             $table->string('nombre')->unique();
+            $table->string('caracteristica1');
+            $table->string('caracteristica2');
+            $table->string('caracteristica3');
             $table->string('imagen')->nullable();
             $table->string('representante');
             $table->string('contacto')->nullable();
             $table->string('direccion')->nullable();
             $table->string('descripcion')->nullable();
+            $table->string('ministerio');
             $table->string('acuerdo')->nullable();
             $table->integer('mujeres')->nullable();
             $table->integer('ninias')->nullable();

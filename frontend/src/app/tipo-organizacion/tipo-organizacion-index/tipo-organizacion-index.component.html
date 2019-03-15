@@ -41,7 +41,6 @@
               <thead style="background-color: #303030; color: #f7f7f7">
               <tr>
                 <th>#</th>
-                <th>Tipo</th>
                 <th>Nombre</th>
                 <th>Detalle</th>
                 <th class="text-center">Operaciones</th>
@@ -51,9 +50,6 @@
               <tr *ngFor="let tipoorg of tipoorganizaciones.data; let i = index">
                 <td>
                   {{ tipoorg.tipo_organizacion_id }}
-                </td>
-                <td>
-                  {{ tipoorg.tipo }}
                 </td>
                 <td>
                   {{ tipoorg.nombre }}

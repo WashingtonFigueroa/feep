@@ -57,15 +57,14 @@ class DatabaseSeeder extends Seeder
         );
 
 //TIPO ORGANIZACIONES
-        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'COOPERATIVA','descripcion' => '']);
-        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'ASOCIACIÓN','descripcion' => '']);
-        \App\TipoOrganizacion::create(['tipo' => 'OB','nombre' => 'REGULADA','descripcion' => '']);
-        \App\TipoOrganizacion::create(['tipo' => 'OSG','nombre' => 'OSG','descripcion' => '']);
+        \App\TipoOrganizacion::create(['nombre' => 'ASOCIATIVA','descripcion' => '']);
+        \App\TipoOrganizacion::create(['nombre' => 'FAMILIAR','descripcion' => '']);
 //ACTIVIDADES
         \App\Actividad::create(['nombre' => 'PRODUCCIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'SERVICIO','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'TRANSFORMACIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'COMERCIALIZACIÓN','descripcion' => '']);
+        \App\Actividad::create(['nombre' => 'FINANCIERA','descripcion' => '']);
 
 //TIPO PROYECTOS
         \App\TipoProyecto::create(['nombre' => 'RECREACIÓN','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);

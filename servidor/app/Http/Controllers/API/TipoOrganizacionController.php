@@ -23,7 +23,6 @@ class TipoOrganizacionController extends Controller
     public function store(Request $request)
     {
             $tipo_organizacion = new TipoOrganizacion();
-            $tipo_organizacion->tipo = $request->input('tipo');
             $tipo_organizacion->nombre = $request->input('nombre');
             $tipo_organizacion->descripcion = $request->input('descripcion');
             $tipo_organizacion->save();

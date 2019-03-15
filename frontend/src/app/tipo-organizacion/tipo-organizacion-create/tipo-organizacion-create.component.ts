@@ -25,7 +25,6 @@ export class TipoOrganizacionCreateComponent implements OnInit {
 
     crearForm() {
         this.tipoorganizacionGroup = this.fb.group({
-            'tipo' : ['', [Validators.required]],
             'nombre' : ['', [Validators.required]],
             'descripcion' : ['']
         });
@@ -35,10 +34,10 @@ export class TipoOrganizacionCreateComponent implements OnInit {
         this.tipoorganizacionService.store(this.tipoorganizacionGroup.value)
             .subscribe((res: any) => {
                 console.log(res);
-                this.toastrService.success('Datos Agredados','Tipo Organización')
+                this.toastrService.success('Agredada','Tipo Organización')
                 this.router.navigate(['/tipoorganizacion/listar']);
             }, (error: any) => {
-               this.toastrService.warning('Datos Registrados','Tipo Organización')
+               this.toastrService.warning('Registrada','Tipo Organización')
                 this.tipoorganizacionGroup.reset();
             });
     }
