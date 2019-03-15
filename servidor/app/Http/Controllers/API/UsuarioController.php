@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Cargo;
+use App\Privilegio;
 use App\Usuario;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -57,6 +58,19 @@ class UsuarioController extends Controller
         ])) {
             $usuario = Auth::user();
             $success['token'] = $usuario->createToken('FEPP')->accessToken;
+            $accesos = Privilegio::where('cargo_id', '=', $usuario->cargo_id)
+                                            ->where('activo', '=', 'si')
+                                            ->selectRaw('privilegios.acceso')
+                                            ->get();
+            $data = '';
+            foreach ($accesos as $acceso) {
+                if ($data === '') {
+                    $data = $acceso->acceso;
+                } else {
+                    $data = $data . ',' . $acceso->acceso;
+                }
+            }
+            $success['accesos'] = $data;
             return response()->json($success, $this->successStatus);
         } else {
             return response()->json([
