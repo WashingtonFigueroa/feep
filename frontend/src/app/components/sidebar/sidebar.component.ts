@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 declare interface RouteInfo {
     path: string;
@@ -8,9 +9,9 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
    // { path: '/dashboard', title: 'Inicio',  icon: 'design_app', class: '' },
-    { path: '/organizaciones', title: 'Organizacion',  icon: 'business_bank', class: '' },
-    { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
-    { path: '/proyectos', title: 'Proyectos',  icon: 'business_globe', class: '' },
+    { path: '/organizaciones/listar', title: 'Organizacion',  icon: 'business_bank', class: '' },
+    { path: '/miembros/listar', title: 'Personas',  icon: 'users_single-02', class: '' },
+    { path: '/proyectos/listar', title: 'Proyectos',  icon: 'business_globe', class: '' },
     { path: '/asignacioneventos', title: 'Asignar Proyectos',  icon: 'business_badge', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
     { path: '/anexos', title: 'Subir Anexos',  icon: 'arrows-1_cloud-upload-94', class: '' },
@@ -28,7 +29,7 @@ export const ROUTES: RouteInfo[] = [
 export class SidebarComponent implements OnInit {
   menuItems: any[];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
@@ -39,4 +40,8 @@ export class SidebarComponent implements OnInit {
       }
       return true;
   };
+  go(url: string) {
+      console.log(url);
+      this.router.navigate([url]);
+  }
 }

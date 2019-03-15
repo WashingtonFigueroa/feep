@@ -2,18 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Organizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Organizacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/TipoOrganizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/TipoOrganizacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_230602_create_tipo_organizacions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_230602_create_tipo_organizacions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0106de166ff9e6d3ca72067f243f32db.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0106de166ff9e6d3ca72067f243f32db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/03f4e0b2f0c55eb7ce0ba1f1f66fd3d2.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/03f4e0b2f0c55eb7ce0ba1f1f66fd3d2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0519dd6d6e80d6f2d293d7e81042a630.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0519dd6d6e80d6f2d293d7e81042a630.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0850ab3ed4d4921ecee8241d1e88ca36.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0850ab3ed4d4921ecee8241d1e88ca36.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/09dc86fd92afc23653a2edb33de3521b.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/09dc86fd92afc23653a2edb33de3521b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0c16969cb2112e36c5adafb2bf06d471.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0c16969cb2112e36c5adafb2bf06d471.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0c78e9fc1bbf0a6abf44e9b98b5c29cf.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0c78e9fc1bbf0a6abf44e9b98b5c29cf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0cddde428853c52d889864f8b3459115.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0cddde428853c52d889864f8b3459115.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0ef4c07726f1ebc3a274783afdf11b8c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/0ef4c07726f1ebc3a274783afdf11b8c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/150a20d68d9c2272e48d5fc8e1e76108.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/150a20d68d9c2272e48d5fc8e1e76108.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/16e3f89a04de58701f455c6359b2f069.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/16e3f89a04de58701f455c6359b2f069.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1842245730a68bfe9066bec911e15569.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1842245730a68bfe9066bec911e15569.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1a9a8185d8530a41dcba737a94bd4a0d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1a9a8185d8530a41dcba737a94bd4a0d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1db73e15f798ccd1f43489a1acb7a607.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1db73e15f798ccd1f43489a1acb7a607.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1f233c18167e1e71df2dcc1ffa0f7d07.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1f233c18167e1e71df2dcc1ffa0f7d07.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1f440d90554b208d9c5ff67407b65536.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1f440d90554b208d9c5ff67407b65536.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1fba67cb783ea4ef41dfc6fee1d30864.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/1fba67cb783ea4ef41dfc6fee1d30864.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/22c576fb368c29bfc018a058f4c7c37b.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/22c576fb368c29bfc018a058f4c7c37b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/25ca0e328f6e934b7f93387aaf7e3796.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/25ca0e328f6e934b7f93387aaf7e3796.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/26b0c97c97e8bc744c9491a6d29f7886.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/26b0c97c97e8bc744c9491a6d29f7886.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2953fbf8c68c0c80d4657ce2520668aa.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2953fbf8c68c0c80d4657ce2520668aa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2a04c09c53fe00df04e58b13cfe4fdca.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2a04c09c53fe00df04e58b13cfe4fdca.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2a1bc0751dcc0513b941af5e419a963a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2a1bc0751dcc0513b941af5e419a963a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2a679811bbb2e4cb98b7d19f391527d4.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2a679811bbb2e4cb98b7d19f391527d4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2ba8b554ed0a32774e17bb4250767a0d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2ba8b554ed0a32774e17bb4250767a0d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2d21ad6022045f652213f02d55ce5fc4.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2d21ad6022045f652213f02d55ce5fc4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2e739617fcd39a36fb98cbe88dabf892.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/2e739617fcd39a36fb98cbe88dabf892.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/31630c531fcac1facf4559e25d29bfcf.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/31630c531fcac1facf4559e25d29bfcf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/32f7cec72dca022598a3d44e1c97a02c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/32f7cec72dca022598a3d44e1c97a02c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/343bed341a573bfcba8483675107043e.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/343bed341a573bfcba8483675107043e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/35dfdffaa8d7a5a530a844f6aa64ab2b.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/35dfdffaa8d7a5a530a844f6aa64ab2b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/367389b8fa7566d81a1bcd71f8852570.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/367389b8fa7566d81a1bcd71f8852570.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/36aef5feed9b8a98e5e28810092e4eeb.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/36aef5feed9b8a98e5e28810092e4eeb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/39cee20af0c811c18047a347ab2bb9b7.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/39cee20af0c811c18047a347ab2bb9b7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/3b2c506678fcc939316fcd23ebb53d5f.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/3b2c506678fcc939316fcd23ebb53d5f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/3d7c05b000f975b9c6efee03fa3a5977.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/3d7c05b000f975b9c6efee03fa3a5977.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/42418b2e4322e06327994ec59306a291.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/42418b2e4322e06327994ec59306a291.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/45cfb094ee7ab5191233c05e1e3b84ce.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/45cfb094ee7ab5191233c05e1e3b84ce.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/47a1a8c939db5b7289f79e665493f9d9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/47a1a8c939db5b7289f79e665493f9d9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/4877419a22d1a97eaa5bfb54c0957715.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/4877419a22d1a97eaa5bfb54c0957715.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/4f94704febe3c9e4f77060145ed40b02.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/4f94704febe3c9e4f77060145ed40b02.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/4ff2046b31d1ece0e9f52f158a8ef080.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/4ff2046b31d1ece0e9f52f158a8ef080.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/50e4130495e6db3ba8ab7cd7cf583e46.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/50e4130495e6db3ba8ab7cd7cf583e46.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/55235f08504d444f929b09210777236d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/55235f08504d444f929b09210777236d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/55b010942ecea130a7861804d27c28a6.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/55b010942ecea130a7861804d27c28a6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/55fce45ffafd602099186cbe37948c01.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/55fce45ffafd602099186cbe37948c01.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/582dd9d7c7779dcf01253139eae0b252.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/582dd9d7c7779dcf01253139eae0b252.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5b1b7b9526ecc3546e0a708024ecf1e4.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5b1b7b9526ecc3546e0a708024ecf1e4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5b9c5fe66d3d8ca322ea984037e9bce8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5b9c5fe66d3d8ca322ea984037e9bce8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5cbb8bdf115e2f2590c1bc67cdeff88f.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5cbb8bdf115e2f2590c1bc67cdeff88f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5e2562dbb610d16164af7cb4913ea2e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5e2562dbb610d16164af7cb4913ea2e8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5f3e662569111a231d8a5b0a3f24390a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5f3e662569111a231d8a5b0a3f24390a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5fdd1c108600911b718c5f5978c86556.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/5fdd1c108600911b718c5f5978c86556.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/61834682cc8c82617330784e88eb9700.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/61834682cc8c82617330784e88eb9700.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/619acdc6d7d8c0063d4ce5573eb28ce8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/619acdc6d7d8c0063d4ce5573eb28ce8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/629d38cedd6805aaa6a000b52ba5d63a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/629d38cedd6805aaa6a000b52ba5d63a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/635c6b669b0e5e36c5ee85fff7b2fc9a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/635c6b669b0e5e36c5ee85fff7b2fc9a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/64ff2f226ccc5c1b9b5507a38cbab8cd.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/64ff2f226ccc5c1b9b5507a38cbab8cd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6a09c2f30697bf37de667dd9fe645754.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6a09c2f30697bf37de667dd9fe645754.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6e18a5107b158d1d676ee6f62be77bdd.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6e18a5107b158d1d676ee6f62be77bdd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6ecdea87b6dfb0ebb2ec4218b63e4dc8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6ecdea87b6dfb0ebb2ec4218b63e4dc8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6f1974bec8a22e13a9b868288d044afa.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/6f1974bec8a22e13a9b868288d044afa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/759d0c6f6e583e05cb2d64c4abcad244.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/759d0c6f6e583e05cb2d64c4abcad244.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/75e0b435f72721a5d9330d52db36040a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/75e0b435f72721a5d9330d52db36040a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7709f8f315d53f49d3c1cf576be17af6.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7709f8f315d53f49d3c1cf576be17af6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7a1114c62ea1653e304fbc7de076eb56.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7a1114c62ea1653e304fbc7de076eb56.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7aab2ff86123d3151f1fb7d0c633a543.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7aab2ff86123d3151f1fb7d0c633a543.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7cc8c809f1563a9bbf22167b7fd20ded.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/7cc8c809f1563a9bbf22167b7fd20ded.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/841c9cf4aad68eb04c6602a2ef08957e.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/841c9cf4aad68eb04c6602a2ef08957e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/846bddfa64971fded1508682f2ee7a20.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/846bddfa64971fded1508682f2ee7a20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/853d95d0eb17d0d8d125310be180fd14.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/853d95d0eb17d0d8d125310be180fd14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/858c07c4f1ed904aeec5c1ac476a8e52.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/858c07c4f1ed904aeec5c1ac476a8e52.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/8927bcc2a70333aeaccb2d07602c7f46.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/8927bcc2a70333aeaccb2d07602c7f46.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/8ac1a3a763e7e1d9b3d7ab0827613cb7.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/8ac1a3a763e7e1d9b3d7ab0827613cb7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/904cc73b8d5a582abe9e7f1ef7c153db.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/904cc73b8d5a582abe9e7f1ef7c153db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/94c966ca7d799d94752dbd615d92e137.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/94c966ca7d799d94752dbd615d92e137.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9525e75268331b663122647b4792812d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9525e75268331b663122647b4792812d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/95eeffaac08f620c7f02901dcfe58b5f.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/95eeffaac08f620c7f02901dcfe58b5f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/968c16678e0d7e9913f4f6c3d81904ef.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/968c16678e0d7e9913f4f6c3d81904ef.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/96e7084995f4d48083d94a71bad464f5.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/96e7084995f4d48083d94a71bad464f5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/98ab1a56369c3a3b1c19c217eb9cb1e7.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/98ab1a56369c3a3b1c19c217eb9cb1e7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9930d2d8746d6dd8b16faec7a5e23c3c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9930d2d8746d6dd8b16faec7a5e23c3c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9bdc85ca77bbbd9713efb8c1ec709740.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9bdc85ca77bbbd9713efb8c1ec709740.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9cc626afdf2e1f9e6009442392ca417a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9cc626afdf2e1f9e6009442392ca417a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9e9556cdb759d90dc658fa3c00d08d87.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9e9556cdb759d90dc658fa3c00d08d87.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9ee49d97f804ff8b918a87cbb26e76ac.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9ee49d97f804ff8b918a87cbb26e76ac.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9f789ae8630a933150363277175309fd.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/9f789ae8630a933150363277175309fd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a0c90a0c376d6667c487471fc04bd34c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a0c90a0c376d6667c487471fc04bd34c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a0d3abb166d2e653db1e37869ba32680.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a0d3abb166d2e653db1e37869ba32680.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a3f5bf2bcdd36621dec1b5542c5cf275.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a3f5bf2bcdd36621dec1b5542c5cf275.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a8fff7bcf1c4151b7bc6347e1e9e4db0.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/a8fff7bcf1c4151b7bc6347e1e9e4db0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/aa3d09788edcbd8c5137b0c904e398b3.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/aa3d09788edcbd8c5137b0c904e398b3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ad572a953c06004b8cb9057f81ca5acd.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ad572a953c06004b8cb9057f81ca5acd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ae47a1b5efcf3491d38ac6043e89137d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ae47a1b5efcf3491d38ac6043e89137d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b254b57cdc6f2ea2707cad2d3d49b0b7.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b254b57cdc6f2ea2707cad2d3d49b0b7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b33e8bdf8fff855e98eb6fae9ec107d9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b33e8bdf8fff855e98eb6fae9ec107d9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b344fcc49c3fb5275ed0a3f520c794de.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b344fcc49c3fb5275ed0a3f520c794de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b434cd15b63da81db01b0f1e758efabb.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b434cd15b63da81db01b0f1e758efabb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b4977efbe9d12466fbb6cc7a7ecef77e.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b4977efbe9d12466fbb6cc7a7ecef77e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b9606b6431b01c4abf2d3f9b1676f71a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/b9606b6431b01c4abf2d3f9b1676f71a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/bc25a86909ff575b8bba0d2a84dddbf8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/bc25a86909ff575b8bba0d2a84dddbf8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/bc356345490258400529bbf544fe8c15.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/bc356345490258400529bbf544fe8c15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c0ada8d109a0b2e1b53fdc04ab9df144.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c0ada8d109a0b2e1b53fdc04ab9df144.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c1ba7e6c8beef7d93c32fed8633e7d01.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c1ba7e6c8beef7d93c32fed8633e7d01.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c453c170b42d2fc4cfb04c54e1bb5645.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c453c170b42d2fc4cfb04c54e1bb5645.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c4c583e17f56986011345e234d0c7c03.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c4c583e17f56986011345e234d0c7c03.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c66164fb531061ed2cba91fd6cd9b6e1.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/c66164fb531061ed2cba91fd6cd9b6e1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/cbb38f7f3fc8706788750021f05048ed.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/cbb38f7f3fc8706788750021f05048ed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/cddadd011e48151c89f3d6ebfb6c7705.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/cddadd011e48151c89f3d6ebfb6c7705.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d0b647fcde0cc64f737a514ca58a7f0d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d0b647fcde0cc64f737a514ca58a7f0d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d3276d6ed6b5fabde2ffc81211a6e159.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d3276d6ed6b5fabde2ffc81211a6e159.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d4998f90a0fb556158508343b2b56728.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d4998f90a0fb556158508343b2b56728.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d4ba7efaeba76c2001c9cc12610cdf6c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d4ba7efaeba76c2001c9cc12610cdf6c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d8c2c24102698f3c52c5beb757acc8d0.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/d8c2c24102698f3c52c5beb757acc8d0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/dc3c81c5da72b16feeeca7ea78b88c52.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/dc3c81c5da72b16feeeca7ea78b88c52.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ddbb07afe044c66be834cd5861b776fb.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ddbb07afe044c66be834cd5861b776fb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e3cccae3d2885e613d99dc3d606803b1.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e3cccae3d2885e613d99dc3d606803b1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e4f5a4b986d9328b5fb2ca8beb561eec.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e4f5a4b986d9328b5fb2ca8beb561eec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e87bfbe1736a79f2112cebaebc55631d.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e87bfbe1736a79f2112cebaebc55631d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e8b7b838392a7024f99154c5d90194be.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e8b7b838392a7024f99154c5d90194be.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e8f18aa62679e30742d512e244df6340.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/e8f18aa62679e30742d512e244df6340.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ed19ede62f270107fd887431a71746f5.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/ed19ede62f270107fd887431a71746f5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/effe141832afc1c7cf957acdb84cd154.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/effe141832afc1c7cf957acdb84cd154.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f07488548ab824f340093cc7f87d2916.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f07488548ab824f340093cc7f87d2916.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f09ab9a3b1cad78a04bf59d6b7c9eff3.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f09ab9a3b1cad78a04bf59d6b7c9eff3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f39c2ec892724b30775fb48eb76c85b3.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f39c2ec892724b30775fb48eb76c85b3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f58dc74cd6498fc06cc3219ca6e11f8a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f58dc74cd6498fc06cc3219ca6e11f8a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f63a17a4ff4b403c657be3bf29a5fe20.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/f63a17a4ff4b403c657be3bf29a5fe20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/fcef7cd3411aff7e934e4a68119f93bb.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/fcef7cd3411aff7e934e4a68119f93bb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/fdb1696f6405bc4a2a1d0bc0331bddca.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/@angular-devkit/build-optimizer/src/.cache/fdb1696f6405bc4a2a1d0bc0331bddca.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,99 +169,118 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-351818816">
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="Angular2LanguageService" value="9" />
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="67" />
-          <entry key="php" value="64" />
-          <entry key="scss" value="1" />
-          <entry key="ts" value="58" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="67" />
-          <entry key="PHP" value="64" />
-          <entry key="SCSS" value="1" />
-          <entry key="TypeScript" value="58" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="1249" />
-          <entry key="php" value="1083" />
-          <entry key="scss" value="1" />
-          <entry key="ts" value="1395" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="1249" />
-          <entry key="PHP" value="1083" />
-          <entry key="SCSS" value="1" />
-          <entry key="TypeScript" value="1395" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.103" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/auth.guard.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="27">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <element signature="e#7#26#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+            <state relative-caret-position="70">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>file</find>
       <find>update</find>
       <find>latitud</find>
       <find>organzacione</find>
-      <find>organizaciones</find>
       <find>table</find>
       <find>imagen</find>
       <find>hidden</find>
       <find>evento</find>
-      <find>login</find>
       <find>eventos-imagen</find>
-      <find>store</find>
       <find>350</find>
       <find>script</find>
       <find>uscar</find>
@@ -139,17 +288,21 @@
       <find>EVEN</find>
       <find>DOWNLO</find>
       <find>group</find>
-      <find>organizaci</find>
-      <find>cambiarImagen</find>
-      <find>persona</find>
-      <find>proyecto</find>
-      <find>asignacioneven</find>
-      <find>InsumoController</find>
-      <find>insumos-buscar</find>
-      <find>insumos-listar</find>
-      <find>ParticipanteController</find>
-      <find>privile</find>
-      <find>camb</find>
+      <find>cargo-pri</find>
+      <find>usuario</find>
+      <find>store</find>
+      <find>proyectos-imagen</find>
+      <find>cargo-privle</find>
+      <find>cargo-pr</find>
+      <find>cargo-p</find>
+      <find>organizaciones</find>
+      <find>json</find>
+      <find>asignar</find>
+      <find>login</find>
+      <find>continua</find>
+      <find>console.</find>
+      <find>privilegio</find>
+      <find>error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,74 +311,59 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-evento/tipo-evento-index/tipo-evento-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-evento/tipo-evento-index/tipo-evento-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProyectoController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento.service.ts" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AsignacionEventoController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001455_create_personas_table.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Persona.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Evento.php" />
-        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Middleware/Cors.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/index.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Organizacion.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/error-interceptor.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_230602_create_tipo_organizacions_table.php" />
-        <option value="$PROJECT_DIR$/servidor/app/TipoOrganizacion.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/demo/demo.css" />
+        <option value="$PROJECT_DIR$/servidor/app/Evento.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Participante.php" />
+        <option value="$PROJECT_DIR$/frontend/angular-cli.json" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_11_000000_create_cargos_table.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.service.ts" />
+        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/app/Privilegio.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_11_100000_create_privilegios_table.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts" />
         <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.html" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/frontend/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/frontend/package.json" />
-      <path value="$PROJECT_DIR$/servidor/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -329,131 +467,26 @@
       <path value="$PROJECT_DIR$/servidor/vendor/namshi/jose" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="932" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="organizacion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="organizacion" type="462c0819:PsiDirectoryNode" />
-              <item name="organizacion-create" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion-create" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion-index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion" type="462c0819:PsiDirectoryNode" />
-              <item name="tipo-organizacion-update" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="eventcontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/EventoController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;asignacio&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts&#10;asignacioneves&#9;null&#9;null&#10;proyecser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;proyecto&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;miembrser&#9;null&#9;null&#10;proyecon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;organicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;proyectoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;ProyectoController&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;AsignacionService&#9;null&#9;null&#10;insumoser&#9;null&#9;null&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;eventoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento.service.ts&#10;organizaser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion.service.ts&#10;API&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacontro&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;organizacon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;seed.php&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\HP User\Documents\trabajos\washington\fepp\frontend\node_modules\tslint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="C:\xampp\htdocs\DTE\feep\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\HP User\Documents\trabajos\washington\fepp\frontend\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -493,27 +526,24 @@
       <workItem from="1552356315784" duration="2765000" />
       <workItem from="1552395115052" duration="1274000" />
       <workItem from="1552405772955" duration="8412000" />
-      <workItem from="1552423007373" duration="5850000" />
-      <workItem from="1552482734806" duration="7611000" />
-      <workItem from="1552492113788" duration="9731000" />
-      <workItem from="1552514836415" duration="2560000" />
-      <workItem from="1552526850279" duration="1011000" />
-      <workItem from="1552564072098" duration="9671000" />
-      <workItem from="1552593008363" duration="7763000" />
-      <workItem from="1552615001364" duration="68000" />
-      <workItem from="1552617186109" duration="27000" />
-      <workItem from="1552617218808" duration="2894000" />
+      <workItem from="1552423007373" duration="6648000" />
+      <workItem from="1552441430478" duration="13000" />
+      <workItem from="1552446568186" duration="752000" />
+      <workItem from="1552484081448" duration="5064000" />
+      <workItem from="1552497695772" duration="19236000" />
+      <workItem from="1552518434395" duration="1192000" />
+      <workItem from="1552667763563" duration="4652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130303000" />
+    <option name="totallyTimeSpent" value="114011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.19364598" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.32980332" />
       <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -524,375 +554,577 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.59625214" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.85057473" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32902297" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.32902297" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.20801815" />
-      <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.48381603" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32902297" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion.service.ts">
+    <entry file="file://$PROJECT_DIR$/servidor/storage/app/eventos/X4wIpBhrnfSJBvo6rOmkDJ4u5Ke3cm3z8aN7pkki.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="55" />
+        <state relative-caret-position="221">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/server.php">
+    <entry file="file://$PROJECT_DIR$/servidor/storage/app/eventos/2qabS8kemJ7jw0WYeZvSIxNcnudu5CujkIXGdHIO.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/storage/app/eventos/VCuYL7RIrHYb38opygGr3xKurJKPeK049sZwxCo5.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="52" column="29" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="52" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="98" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Middleware/Cors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Ciudad.php" />
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" />
     <entry file="file://$PROJECT_DIR$/servidor/app/Persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001455_create_personas_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="114" column="18" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="114" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/demo/demo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="597">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts">
+    <entry file="uml://DATABASE/cf391114-94cb-48a0-903f-8a433fefe78f.SCHEMA:fepp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>cf391114-94cb-48a0-903f-8a433fefe78f.SCHEMA:fepp</OriginalElement>
+          <nodes>
+            <node x="1304.0754310344828" y="680.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_organizaciones</node>
+            <node x="1578.0754310344828" y="691.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.actividades</node>
+            <node x="0.0" y="1068.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_suministros</node>
+            <node x="506.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_refresh_tokens</node>
+            <node x="9.0" y="680.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.suministros</node>
+            <node x="470.0" y="1079.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_eventos</node>
+            <node x="1216.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.password_resets</node>
+            <node x="262.0" y="1079.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.privilegios</node>
+            <node x="273.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_auth_codes</node>
+            <node x="1423.689655172414" y="914.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones</node>
+            <node x="387.31465517241384" y="691.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.cargos</node>
+            <node x="594.1810344827586" y="1998.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.anexos</node>
+            <node x="1346.689655172414" y="1998.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizacion_eventos</node>
+            <node x="1235.6185344827586" y="446.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias</node>
+            <node x="1981.939655172414" y="0.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_clients</node>
+            <node x="853.3060344827586" y="1588.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.asignacion_eventos</node>
+            <node x="734.9935344827586" y="1046.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios</node>
+            <node x="991.5754310344828" y="1024.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos</node>
+            <node x="608.3060344827586" y="1478.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos</node>
+            <node x="996.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.migrations</node>
+            <node x="0.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_personas</node>
+            <node x="1236.6185344827586" y="0.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.provincias</node>
+            <node x="9.0" y="457.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_insumos</node>
+            <node x="1638.689655172414" y="1987.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.participantes</node>
+            <node x="2253.939655172414" y="0.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_access_tokens</node>
+            <node x="1236.6185344827586" y="212.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ciudades</node>
+            <node x="1050.0754310344828" y="691.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_proyectos</node>
+            <node x="1693.189655172414" y="1456.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas</node>
+            <node x="1189.314655172414" y="1577.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ejecutoras</node>
+            <node x="730.3146551724138" y="680.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios</node>
+            <node x="0.0" y="1588.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipos</node>
+            <node x="760.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_personal_access_clients</node>
+            <node x="71.75" y="1954.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.insumos</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ejecutoras" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones">
+              <point x="56.75" y="-103.0" />
+              <point x="1359.564655172414" y="1436.0" />
+              <point x="1466.0229885057472" y="1436.0" />
+              <point x="-84.66666666666669" y="246.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.cargos">
+              <point x="0.0" y="-114.0" />
+              <point x="833.4935344827586" y="884.0" />
+              <point x="528.3146551724138" y="884.0" />
+              <point x="47.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos">
+              <point x="84.375" y="-202.0" />
+              <point x="805.1810344827586" y="1436.0" />
+              <point x="1030.5754310344828" y="1436.0" />
+              <point x="-78.0" y="136.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones">
+              <point x="68.0" y="-92.0" />
+              <point x="0.0" y="246.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios">
+              <point x="28.125" y="-202.0" />
+              <point x="748.9310344827586" y="1436.0" />
+              <point x="784.2435344827586" y="1436.0" />
+              <point x="-49.25" y="114.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.privilegios" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.cargos">
+              <point x="0.0" y="-81.0" />
+              <point x="356.0" y="894.0" />
+              <point x="434.31465517241384" y="894.0" />
+              <point x="-47.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios">
+              <point x="-28.125" y="-202.0" />
+              <point x="692.6810344827586" y="1436.0" />
+              <point x="704.5" y="1436.0" />
+              <point x="704.5" y="894.0" />
+              <point x="782.8146551724138" y="894.0" />
+              <point x="-52.5" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.insumos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
+              <point x="49.25" y="-136.0" />
+              <point x="219.5" y="1934.0" />
+              <point x="636.4310344827586" y="1934.0" />
+              <point x="-84.375" y="202.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_proyectos">
+              <point x="58.5" y="-136.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.anexos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
+              <point x="0.0" y="-92.0" />
+              <point x="-28.125" y="202.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.suministros" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_insumos">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_suministros" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.suministros">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_suministros">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ejecutoras" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos">
+              <point x="-56.75" y="-103.0" />
+              <point x="1246.064655172414" y="1436.0" />
+              <point x="1186.5754310344828" y="1436.0" />
+              <point x="78.0" y="136.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.participantes" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas">
+              <point x="56.0" y="-103.0" />
+              <point x="0.0" y="224.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ciudades">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.asignacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios">
+              <point x="-64.75" y="-92.0" />
+              <point x="918.0560344827586" y="1426.0" />
+              <point x="882.7435344827586" y="1426.0" />
+              <point x="49.25" y="114.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.actividades">
+              <point x="63.5" y="-246.0" />
+              <point x="1614.189655172414" y="894.0" />
+              <point x="1681.5754310344828" y="894.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios">
+              <point x="-58.5" y="-136.0" />
+              <point x="1050.0754310344828" y="894.0" />
+              <point x="887.8146551724138" y="894.0" />
+              <point x="52.5" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
+              <point x="-68.0" y="-92.0" />
+              <point x="1414.689655172414" y="1934.0" />
+              <point x="748.9310344827586" y="1934.0" />
+              <point x="28.125" y="202.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.participantes" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
+              <point x="-56.0" y="-103.0" />
+              <point x="1694.689655172414" y="1924.0" />
+              <point x="805.1810344827586" y="1924.0" />
+              <point x="84.375" y="202.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ciudades" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.provincias">
+              <point x="0.0" y="-92.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias">
+              <point x="0.0" y="-92.0" />
+              <point x="835.3146551724138" y="655.0" />
+              <point x="1288.1185344827586" y="655.0" />
+              <point x="-52.5" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias">
+              <point x="56.75" y="-224.0" />
+              <point x="1863.439655172414" y="655.0" />
+              <point x="1393.1185344827586" y="655.0" />
+              <point x="52.5" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_eventos">
+              <point x="-84.375" y="-202.0" />
+              <point x="636.4310344827586" y="1436.0" />
+              <point x="582.0" y="1436.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.asignacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos">
+              <point x="64.75" y="-92.0" />
+              <point x="1047.5560344827586" y="1436.0" />
+              <point x="1108.5754310344828" y="1436.0" />
+              <point x="0.0" y="136.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.insumos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipos">
+              <point x="-49.25" y="-136.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_organizaciones">
+              <point x="-63.5" y="-246.0" />
+              <point x="1487.189655172414" y="894.0" />
+              <point x="1431.0754310344828" y="894.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones">
+              <point x="-56.75" y="-224.0" />
+              <point x="1749.939655172414" y="1436.0" />
+              <point x="1635.3563218390805" y="1436.0" />
+              <point x="84.66666666666669" y="246.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0999999999999999" x="1287.0" y="1775.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://cf391114-94cb-48a0-903f-8a433fefe78f/schema/fepp/table/eventos" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="1666">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Parroquia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/angular-cli.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/servidor/app/Evento.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="425">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php">
+    <entry file="file://$PROJECT_DIR$/servidor/app/Participante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a494b34c-7860-4455-92b5-2bfc3e6ee1e8/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Cargo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts">
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2014_10_11_000000_create_cargos_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.service.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+        <state>
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="374">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="43" column="78" lean-forward="true" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
+        <state relative-caret-position="319">
+          <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/index.html">
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2014_10_11_100000_create_privilegios_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="155">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
+    <entry file="das://a494b34c-7860-4455-92b5-2bfc3e6ee1e8/schema/fepp/table/privilegios" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="57" />
+        <state relative-caret-position="363">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.scss">
+    <entry file="file://$PROJECT_DIR$/servidor/app/Privilegio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="459">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="34">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-515">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Organizacion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="85" column="81" selection-start-line="85" selection-start-column="81" selection-end-line="85" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_230602_create_tipo_organizacions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-update/tipo-organizacion-update.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-update/tipo-organizacion-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/TipoOrganizacion.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="18">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/auth.guard.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+        <state relative-caret-position="30">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#7#26#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>

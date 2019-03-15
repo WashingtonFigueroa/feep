@@ -5,20 +5,29 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class AuthGuard implements CanActivate {
 
-  constructor(private router: Router) {
-
-  }
+  constructor(private router: Router) {}
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-      if (localStorage.getItem('fepp-token')) {
-        return true;
+      if (localStorage.getItem('fepp-token') !== null) {
+          if (localStorage.getItem('fepp-token2') !== null) {
+              let rutas = [];
+              rutas = localStorage.getItem('fepp-token2').split(',');
+              if (state.url === '/login') {
+                  return true;
+              }
+              if (state.url === '/dashboard') {
+                  return true;
+              }
+              if (rutas !== null) {
+                  for (let i = 0; i < rutas.length; i++) {
+                      if (rutas[i] === state.url) {
+                          return true;
+                      }
+                  }
+              }
+          }
       }
-      this.router.navigate(['/login'], {
-        queryParams: {
-          returnUrl: state.url
-        }
-      });
       return false;
   }
 }

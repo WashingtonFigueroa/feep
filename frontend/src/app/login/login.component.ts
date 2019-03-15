@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
               private router: Router,
               private toastr: ToastrService,
               private autenticacionService: AutenticacionService) {
+    console.log(this.router.url);
   }
 
   ngOnInit() {
@@ -53,10 +54,11 @@ export class LoginComponent implements OnInit {
                 toastClass: 'alert alert-success alert-with-icon',
                 positionClass: 'toast-top-right'
               });
-              this.router.navigate(['/eventos']);
+              this.router.navigate(['/eventos/listar']);
             },
             error => {
               this.error = error;
+              console.log(error);
               this.loginGroup.reset();
               this.loading = false;
               this.toastr.error(`<span class="now-ui-icons ui-1_bell-53"></span> Credenciales incorrectas`, 'Error de autenticación', {

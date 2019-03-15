@@ -17,7 +17,9 @@ export class AutenticacionService {
         .pipe(map((usuario: any) => {
           if (usuario.token) {
             const token = btoa('Bearer ' + usuario.token);
+            const accesos = usuario.accesos;
             localStorage.setItem('fepp-token', token);
+            localStorage.setItem('fepp-token2', accesos);
           }
           return usuario;
         }));
@@ -25,5 +27,6 @@ export class AutenticacionService {
 
   logout() {
     localStorage.removeItem('fepp-token');
+    localStorage.removeItem('fepp-token2');
   }
 }
