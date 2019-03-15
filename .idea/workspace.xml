@@ -2,10 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/feep.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Actividad.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Anexo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/AsignacionEvento.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Barrio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Ciudad.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Ejecutora.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ActividadController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AsignacionEventoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/BarrioController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EjecutoraController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParroquiaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProvinciaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProyectoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/SuministroController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoEventoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoInsumoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoOrganizacionController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoPersonaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoProyectoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/TipoSuministroController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Insumo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Organizacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/OrganizacionEvento.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Parroquia.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Participante.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Provincia.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Proyecto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Suministro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Tipo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/TipoEvento.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/TipoInsumo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/TipoOrganizacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/TipoPersona.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/TipoProyecto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/TipoSuministro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_230602_create_tipo_organizacions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_231452_create_tipo_personas_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232025_create_provincias_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232710_create_actividads_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_234155_create_tipo_eventos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_000340_create_parroquias_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_000345_create_barrios_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003951_create_tipo_proyectos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003952_create_proyectos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003954_create_ejecutoras_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_030933_create_participantes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_040527_create_organizacion_eventos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_155450_create_tipo_insumos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_160315_create_suministros_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_165257_create_tipo_suministros_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_170516_create_tipos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_171317_create_insumos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_172605_create_anexos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/migrations/2019_02_04_175804_create_asignacion_eventos_table.php" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,86 +101,64 @@
     <session id="-351818816">
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="2" />
+          <entry key="Angular2LanguageService" value="9" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="36" />
-          <entry key="php" value="28" />
-          <entry key="ts" value="38" />
+          <entry key="html" value="63" />
+          <entry key="php" value="54" />
+          <entry key="scss" value="1" />
+          <entry key="ts" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="36" />
-          <entry key="PHP" value="28" />
-          <entry key="TypeScript" value="38" />
+          <entry key="HTML" value="63" />
+          <entry key="PHP" value="54" />
+          <entry key="SCSS" value="1" />
+          <entry key="TypeScript" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="325" />
-          <entry key="php" value="465" />
-          <entry key="ts" value="440" />
+          <entry key="html" value="1196" />
+          <entry key="php" value="967" />
+          <entry key="scss" value="1" />
+          <entry key="ts" value="1320" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="325" />
-          <entry key="PHP" value="465" />
-          <entry key="TypeScript" value="440" />
+          <entry key="HTML" value="1196" />
+          <entry key="PHP" value="967" />
+          <entry key="SCSS" value="1" />
+          <entry key="TypeScript" value="1320" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.103" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>aus</find>
-      <find>cerrar</find>
       <find>file</find>
       <find>update</find>
       <find>latitud</find>
@@ -143,6 +187,8 @@
       <find>insumos-buscar</find>
       <find>insumos-listar</find>
       <find>ParticipanteController</find>
+      <find>privile</find>
+      <find>camb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,35 +197,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_232711_create_organizacions_table.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Organizacion.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/actividad/actividad-index/actividad-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.ts" />
@@ -193,15 +216,38 @@
         <option value="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProyectoController.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento.service.ts" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AsignacionEventoController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001455_create_personas_table.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Persona.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php" />
+        <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Evento.php" />
         <option value="$PROJECT_DIR$/servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" />
       </list>
     </option>
   </component>
@@ -323,119 +369,39 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="x" value="-7" />
+    <option name="width" value="932" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="inscripcion" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="feep" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="servidor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="API" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
               <item name="servidor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
               <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fepp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fepp" type="462c0819:PsiDirectoryNode" />
-              <item name="servidor" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="eventos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -445,9 +411,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="asignacio&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts&#10;asignacioneves&#9;null&#9;null&#10;proyecser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;proyecto&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;miembrser&#9;null&#9;null&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;proyecon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;organicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;proyectoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;ProyectoController&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;AsignacionService&#9;null&#9;null&#10;insumoser&#9;null&#9;null&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;eventoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento.service.ts&#10;organizaser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion.service.ts&#10;API&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacontro&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;organizacon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;seed.php&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" />
+    <property name="SearchEverywhereHistoryKey" value="eventcontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/EventoController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;asignacio&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts&#10;asignacioneves&#9;null&#9;null&#10;proyecser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;proyecto&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;miembrser&#9;null&#9;null&#10;proyecon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;organicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;proyectoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;ProyectoController&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;AsignacionService&#9;null&#9;null&#10;insumoser&#9;null&#9;null&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;eventoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento.service.ts&#10;organizaser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion.service.ts&#10;API&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacontro&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;organizacon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;seed.php&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\HP User\Documents\trabajos\washington\fepp\frontend\node_modules\tslint" />
@@ -495,18 +462,47 @@
       <workItem from="1552405772955" duration="8412000" />
       <workItem from="1552423007373" duration="5850000" />
       <workItem from="1552482734806" duration="7611000" />
-      <workItem from="1552492113788" duration="4490000" />
+      <workItem from="1552492113788" duration="9731000" />
+      <workItem from="1552514836415" duration="2560000" />
+      <workItem from="1552526850279" duration="1011000" />
+      <workItem from="1552564072098" duration="9671000" />
+      <workItem from="1552593008363" duration="7763000" />
+      <workItem from="1552615001364" duration="68000" />
+      <workItem from="1552617186109" duration="27000" />
+      <workItem from="1552617218808" duration="519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101068000" />
+    <option name="totallyTimeSpent" value="127928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.20801815" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.21255673" />
+      <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.59625214" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32902297" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.20801815" />
       <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -527,29 +523,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.2397882" />
-      <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3100511" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32879046" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32902297" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,285 +532,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="38" column="78" lean-forward="true" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="82" column="58" lean-forward="true" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" column="137" selection-start-line="27" selection-start-column="137" selection-end-line="27" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/actividad/actividad-index/actividad-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/actividad/actividad-index/actividad-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="72" column="10" lean-forward="true" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <caret line="69" column="55" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
-          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
-          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
-          <caret line="73" column="80" selection-start-line="73" selection-start-column="80" selection-end-line="73" selection-end-column="80" />
-          <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
-          <caret line="74" column="116" selection-start-line="74" selection-start-column="116" selection-end-line="74" selection-end-column="116" />
-          <caret line="75" column="115" selection-start-line="75" selection-start-column="115" selection-end-line="75" selection-end-column="115" />
-          <caret line="76" column="80" selection-start-line="76" selection-start-column="80" selection-end-line="76" selection-end-column="80" />
-          <caret line="76" column="116" selection-start-line="76" selection-start-column="116" selection-end-line="76" selection-end-column="116" />
-          <caret line="77" column="80" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
-          <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
-          <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
-          <caret line="70" column="86" selection-start-line="70" selection-start-column="86" selection-end-line="70" selection-end-column="86" />
-          <caret line="70" column="128" selection-start-line="70" selection-start-column="128" selection-end-line="70" selection-end-column="128" />
-          <caret line="71" column="121" selection-start-line="71" selection-start-column="121" selection-end-line="71" selection-end-column="121" />
-          <caret line="72" column="86" selection-start-line="72" selection-start-column="86" selection-end-line="72" selection-end-column="86" />
-          <caret line="72" column="128" selection-start-line="72" selection-start-column="128" selection-end-line="72" selection-end-column="128" />
-          <caret line="73" column="86" selection-start-line="73" selection-start-column="86" selection-end-line="73" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-          <caret line="55" column="73" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
-          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
-          <caret line="57" column="89" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="89" />
-          <caret line="59" column="99" selection-start-line="59" selection-start-column="99" selection-end-line="59" selection-end-column="99" />
-          <caret line="60" column="99" selection-start-line="60" selection-start-column="99" selection-end-line="60" selection-end-column="99" />
-          <caret line="60" column="136" selection-start-line="60" selection-start-column="136" selection-end-line="60" selection-end-column="136" />
-          <caret line="61" column="134" selection-start-line="61" selection-start-column="134" selection-end-line="61" selection-end-column="134" />
-          <caret line="62" column="99" selection-start-line="62" selection-start-column="99" selection-end-line="62" selection-end-column="99" />
-          <caret line="62" column="136" selection-start-line="62" selection-start-column="136" selection-end-line="62" selection-end-column="136" />
-          <caret line="63" column="99" selection-start-line="63" selection-start-column="99" selection-end-line="63" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="99" lean-forward="true" selection-start-line="11" selection-end-line="99" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/suministro/suministro-index/suministro-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="70" lean-forward="true" selection-start-line="10" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-evento/tipo-evento-index/tipo-evento-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-evento/tipo-evento-index/tipo-evento-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-insumo/tipo-insumo-index/tipo-insumo-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="87" column="10" lean-forward="true" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="70" lean-forward="true" selection-start-line="10" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-suministro/tipo-suministro-create/tipo-suministro-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo/tipo-index/tipo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="65" column="64" lean-forward="true" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ActividadController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -845,27 +539,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProyectoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="78" lean-forward="true" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ProyectoController.php" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="15" column="58" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,9 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,30 +568,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/AsignacionEventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Insumo.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/AsignacionEventoController.php" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/AnexoController.php" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Insumo.php" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -924,34 +578,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/InsumoController.php" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
     <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="55" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="52" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionEventoController.php" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="98" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_01_31_235452_create_ciudads_table.php" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Middleware/Cors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Ciudad.php" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CiudadController.php" />
+    <entry file="file://$PROJECT_DIR$/servidor/app/Persona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_001455_create_personas_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="114" column="18" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="114" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+        <state relative-caret-position="59">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        <state relative-caret-position="-54">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Evento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_003953_create_eventos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="43" column="78" lean-forward="true" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
         </state>
       </provider>
     </entry>
