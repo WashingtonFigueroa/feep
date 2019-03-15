@@ -10,45 +10,45 @@ use App\Http\Controllers\Controller;
 class CargoController extends Controller
 {
     private $accesos = [
-        'cargos/listar',
-        'privilegios',
-        'asignacioneventos/listar',
-        'miembros/listar',
-        'proyectos/listar',
-        'inscripciones/listar',
-        'anexos/listar',
-        'organizaciones/listar',
-        'eventos/listar',
-        'asignaciones/listar',
-        'tipoorganizacion/listar',
-        'tipoproyectos/listar',
-        'tipoeventos/listar',
-        'actividades/listar',
-        'insumos/tipo-insumos/listar',
-        'ubicaciones/listar',
-        'usuarios/listar'
+        '/cargos/listar',
+        '/privilegios',
+        '/asignacioneventos/listar',
+        '/miembros/listar',
+        '/proyectos/listar',
+        '/inscripciones/listar',
+        '/anexos/listar',
+        '/organizaciones/listar',
+        '/eventos/listar',
+        '/asignaciones/listar',
+        '/tipoorganizacion/listar',
+        '/tipoproyectos/listar',
+        '/tipoeventos/listar',
+        '/actividades/listar',
+        '/insumos/tipo-insumos/listar',
+        '/ubicaciones/listar',
+        '/usuarios/listar'
     ];
     public function getPrivilegio($ruta) {
         $privilegio = '';
         switch ($ruta) {
-            case 'cargos/listar': $privilegio = 'cargos'; break;
-            case 'privilegios': $privilegio = 'privilegios'; break;
-            case 'asignacioneventos/listar': $privilegio = 'asignar-proyectos'; break;
-            case 'miembros/listar': $privilegio = 'personas'; break;
-            case 'proyectos/listar': $privilegio = 'proyectos'; break;
-            case 'inscripciones/listar': $privilegio = 'inscripciones'; break;
-            case 'anexos/listar': $privilegio = 'subir-anexos'; break;
-            case 'organizaciones/listar': $privilegio = 'organizaciones'; break;
-            case 'eventos/listar': $privilegio = 'eventos'; break;
-            case 'asignaciones/listar': $privilegio = 'asignar-insumos'; break;
+            case '/cargos/listar': $privilegio = 'cargos'; break;
+            case '/privilegios': $privilegio = 'privilegios'; break;
+            case '/asignacioneventos/listar': $privilegio = 'asignar-proyectos'; break;
+            case '/miembros/listar': $privilegio = 'personas'; break;
+            case '/proyectos/listar': $privilegio = 'proyectos'; break;
+            case '/inscripciones/listar': $privilegio = 'inscripciones'; break;
+            case '/anexos/listar': $privilegio = 'subir-anexos'; break;
+            case '/organizaciones/listar': $privilegio = 'organizaciones'; break;
+            case '/eventos/listar': $privilegio = 'eventos'; break;
+            case '/asignaciones/listar': $privilegio = 'asignar-insumos'; break;
 
-            case 'tipoorganizacion/listar': $privilegio = 'configuracion'; break;
-            case 'tipoproyectos/listar': $privilegio = 'configuracion'; break;
-            case 'tipoeventos/listar': $privilegio = 'configuracion'; break;
-            case 'actividades/listar': $privilegio = 'configuracion'; break;
-            case 'insumos/tipo-insumos/listar': $privilegio = 'configuracion'; break;
-            case 'ubicaciones/listar': $privilegio = 'configuracion';break;
-            case 'usuarios/listar': $privilegio = 'configuracion';break;
+            case '/tipoorganizacion/listar': $privilegio = 'configuracion'; break;
+            case '/tipoproyectos/listar': $privilegio = 'configuracion'; break;
+            case '/tipoeventos/listar': $privilegio = 'configuracion'; break;
+            case '/actividades/listar': $privilegio = 'configuracion'; break;
+            case '/insumos/tipo-insumos/listar': $privilegio = 'configuracion'; break;
+            case '/ubicaciones/listar': $privilegio = 'configuracion';break;
+            case '/usuarios/listar': $privilegio = 'configuracion';break;
         }
         return $privilegio;
     }

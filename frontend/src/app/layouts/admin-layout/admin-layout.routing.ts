@@ -70,28 +70,29 @@ import {EjecutoraComponent} from '../../ejecutora/ejecutora.component';
 import {EjecutoraIndexComponent} from '../../ejecutora/ejecutora-index/ejecutora-index.component';
 import {EjecutoraCreateComponent} from '../../ejecutora/ejecutora-create/ejecutora-create.component';
 import {EjecutoraUpdateComponent} from '../../ejecutora/ejecutora-update/ejecutora-update.component';
-import {TipoProyectoComponent} from "../../tipo-proyecto/tipo-proyecto.component";
-import {TipoProyectoIndexComponent} from "../../tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component";
-import {TipoProyectoCreateComponent} from "../../tipo-proyecto/tipo-proyecto-create/tipo-proyecto-create.component";
-import {TipoProyectoUpdateComponent} from "../../tipo-proyecto/tipo-proyecto-update/tipo-proyecto-update.component";
-import {AsignacionEventoComponent} from "../../asignacion-evento/asignacion-evento.component";
-import {AsignacionEventoIndexComponent} from "../../asignacion-evento/asignacion-evento-index/asignacion-evento-index.component";
-import {AsignacionEventoCreateComponent} from "../../asignacion-evento/asignacion-evento-create/asignacion-evento-create.component";
-import {AsignacionEventoUpdateComponent} from "../../asignacion-evento/asignacion-evento-update/asignacion-evento-update.component";
-import {AnexoComponent} from "../../anexo/anexo.component";
-import {AnexoIndexComponent} from "../../anexo/anexo-index/anexo-index.component";
-import {AnexoCreateComponent} from "../../anexo/anexo-create/anexo-create.component";
-import {AnexoUpdateComponent} from "../../anexo/anexo-update/anexo-update.component";
+import {TipoProyectoComponent} from '../../tipo-proyecto/tipo-proyecto.component';
+import {TipoProyectoIndexComponent} from '../../tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component';
+import {TipoProyectoCreateComponent} from '../../tipo-proyecto/tipo-proyecto-create/tipo-proyecto-create.component';
+import {TipoProyectoUpdateComponent} from '../../tipo-proyecto/tipo-proyecto-update/tipo-proyecto-update.component';
+import {AsignacionEventoComponent} from '../../asignacion-evento/asignacion-evento.component';
+import {AsignacionEventoIndexComponent} from '../../asignacion-evento/asignacion-evento-index/asignacion-evento-index.component';
+import {AsignacionEventoCreateComponent} from '../../asignacion-evento/asignacion-evento-create/asignacion-evento-create.component';
+import {AsignacionEventoUpdateComponent} from '../../asignacion-evento/asignacion-evento-update/asignacion-evento-update.component';
+import {AnexoComponent} from '../../anexo/anexo.component';
+import {AnexoIndexComponent} from '../../anexo/anexo-index/anexo-index.component';
+import {AnexoCreateComponent} from '../../anexo/anexo-create/anexo-create.component';
+import {AnexoUpdateComponent} from '../../anexo/anexo-update/anexo-update.component';
 import {CargoComponent} from '../../cargo/cargo.component';
 import {CargoIndexComponent} from '../../cargo/cargo-index/cargo-index.component';
 import {CargoCreateComponent} from '../../cargo/cargo-create/cargo-create.component';
 import {CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
 import {PrivilegioComponent} from '../../privilegio/privilegio.component';
+import {AuthGuard} from '../../auth.guard';
 
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
-    { path: 'organizaciones',  component: OrganizacionComponent,
+    { path: 'organizaciones',  component: OrganizacionComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -111,7 +112,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'tipoorganizacion',  component: TipoOrganizacionComponent,
+    { path: 'tipoorganizacion',  component: TipoOrganizacionComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -131,7 +132,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'asignacioneventos',  component: AsignacionEventoComponent,
+    { path: 'asignacioneventos',  component: AsignacionEventoComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -151,7 +152,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'miembros',  component: MiembroComponent,
+    { path: 'miembros',  component: MiembroComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -171,7 +172,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'anexos',  component: AnexoComponent,
+    { path: 'anexos',  component: AnexoComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -191,7 +192,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'tipopersona',  component: TipoPersonaComponent,
+    { path: 'tipopersona',  component: TipoPersonaComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -211,7 +212,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'tipoproyectos',  component: TipoProyectoComponent,
+    { path: 'tipoproyectos',  component: TipoProyectoComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -231,7 +232,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'proyectos',  component: ProyectoComponent,
+    { path: 'proyectos',  component: ProyectoComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -251,7 +252,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'ejecutoras',  component: EjecutoraComponent,
+    { path: 'ejecutoras',  component: EjecutoraComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -271,7 +272,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'eventos',  component: EventoComponent,
+    { path: 'eventos',  component: EventoComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -291,7 +292,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'tipoeventos',  component: TipoEventoComponent,
+    { path: 'tipoeventos',  component: TipoEventoComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -311,7 +312,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'ubicaciones',  component: UbicacionComponent,
+    { path: 'ubicaciones',  component: UbicacionComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -331,7 +332,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'insumos',  component: InsumoContainerComponent,
+    { path: 'insumos',  component: InsumoContainerComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'tipo-insumos',
@@ -428,7 +429,7 @@ export const AdminLayoutRoutes: Routes = [
             }
         ]
     },
-    { path: 'inscripciones',  component: InscripcionComponent,
+    { path: 'inscripciones',  component: InscripcionComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -448,7 +449,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'actividades',  component: ActividadComponent,
+    { path: 'actividades',  component: ActividadComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -468,7 +469,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'usuarios',  component: UsuarioComponent,
+    { path: 'usuarios',  component: UsuarioComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -488,7 +489,7 @@ export const AdminLayoutRoutes: Routes = [
             },
         ]
     },
-    { path: 'asignaciones',  component: AsignacionComponent,
+    { path: 'asignaciones',  component: AsignacionComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
@@ -508,7 +509,7 @@ export const AdminLayoutRoutes: Routes = [
             }
         ]
     },
-    { path: 'cargos', component: CargoComponent, children: [
+    { path: 'cargos', component: CargoComponent, canActivate: [AuthGuard], children: [
             {
                 path: 'listar',
                 component: CargoIndexComponent
@@ -530,6 +531,7 @@ export const AdminLayoutRoutes: Routes = [
     },
     {
         path: 'privilegios',
+        canActivate: [AuthGuard],
         component: PrivilegioComponent
     }
 ];

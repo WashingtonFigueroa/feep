@@ -12,75 +12,75 @@ class PrivilegioController extends Controller
     private $privilegios = [
         'cargos' => [
             [
-                'acceso' => 'cargos/listar'
+                'acceso' => '/cargos/listar'
             ]
         ],
         'privilegios' => [
             [
-                'acceso' => 'privilegios'
+                'acceso' => '/privilegios'
             ]
         ],
         'asignar-proyectos' => [
             [
-                'acceso' => 'asignacioneventos/listar'
+                'acceso' => '/asignacioneventos/listar'
             ]
         ],
         'personas' => [
             [
-                'acceso' => 'miembros/listar'
+                'acceso' => '/miembros/listar'
             ]
         ],
         'proyectos' => [
             [
-                'acceso' => 'proyectos/listar'
+                'acceso' => '/proyectos/listar'
             ]
         ],
         'inscripciones' => [
             [
-                'acceso' => 'inscripciones/listar'
+                'acceso' => '/inscripciones/listar'
             ]
         ],
         'subir-anexos' => [
             [
-                'acceso' => 'anexos/listar'
+                'acceso' => '/anexos/listar'
             ]
         ],
         'organizaciones' => [
             [
-                'acceso' => 'organizaciones/listar'
+                'acceso' => '/organizaciones/listar'
             ]
         ],
         'eventos' => [
             [
-                'acceso' => 'eventos/listar'
+                'acceso' => '/eventos/listar'
             ]
         ],
         'asignar-insumos' => [
             [
-                'acceso' => 'asignaciones/listar'
+                'acceso' => '/asignaciones/listar'
             ]
         ],
         'configuracion' => [
             [
-                'acceso' => 'tipoorganizacion/listar'
+                'acceso' => '/tipoorganizacion/listar'
             ],
             [
-                'acceso' => 'tipoproyectos/listar'
+                'acceso' => '/tipoproyectos/listar'
             ],
             [
-                'acceso' => 'tipoeventos/listar'
+                'acceso' => '/tipoeventos/listar'
             ],
             [
-                'acceso' => 'actividades/listar'
+                'acceso' => '/actividades/listar'
             ],
             [
-                'acceso' => 'insumos/tipo-insumos/listar'
+                'acceso' => '/insumos/tipo-insumos/listar'
             ],
             [
-                'acceso' => 'ubicaciones/listar'
+                'acceso' => '/ubicaciones/listar'
             ],
             [
-                'acceso' => 'usuarios/listar'
+                'acceso' => '/usuarios/listar'
             ]
         ]
     ];

@@ -8,6 +8,9 @@
                 </div>
             <br>
             <h5>BIenvenido de vuelta, por favor ingrese sus credenciales.</h5>
+            <div *ngIf="error" class="alert alert-danger">
+                No autorizado
+            </div>
             <div class="form-group">
                 <label>Cuenta</label>
                 <input type="text" class="form-control" formControlName="cuenta" name="cuenta" autofocus>
@@ -34,7 +37,6 @@
                     </div>
                 </div>
             </div>
-            <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
         </form>
     </div>
 </div>

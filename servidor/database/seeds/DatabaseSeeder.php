@@ -13,23 +13,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run() {
         $accesos = [
-            'cargos/listar',
-            'privilegios',
-            'asignacioneventos/listar',
-            'miembros/listar',
-            'proyectos/listar',
-            'inscripciones/listar',
-            'anexos/listar',
-            'organizaciones/listar',
-            'eventos/listar',
-            'asignaciones/listar',
-            'tipoorganizacion/listar',
-            'tipoproyectos/listar',
-            'tipoeventos/listar',
-            'actividades/listar',
-            'insumos/tipo-insumos/listar',
-            'ubicaciones/listar',
-            'usuarios/listar'
+            '/cargos/listar',
+            '/privilegios',
+            '/asignacioneventos/listar',
+            '/miembros/listar',
+            '/proyectos/listar',
+            '/inscripciones/listar',
+            '/anexos/listar',
+            '/organizaciones/listar',
+            '/eventos/listar',
+            '/asignaciones/listar',
+            '/tipoorganizacion/listar',
+            '/tipoproyectos/listar',
+            '/tipoeventos/listar',
+            '/actividades/listar',
+            '/insumos/tipo-insumos/listar',
+            '/ubicaciones/listar',
+            '/usuarios/listar'
         ];
         //TIPO USUARIOS
         $cargo = \App\Cargo::create(
