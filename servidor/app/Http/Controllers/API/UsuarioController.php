@@ -74,7 +74,7 @@ class UsuarioController extends Controller
             return response()->json($success, $this->successStatus);
         } else {
             return response()->json([
-                'error' => 'Unauthorized'
+                'error' => 'No autorizado'
             ], 401);
         }
     }
