@@ -3,6 +3,10 @@
         <img src="../../assets/img/loading.gif" *ngIf="loading">
         <form (submit)="login()" [formGroup]="loginGroup" role="form" *ngIf="!loading">
             <h1>Iniciar Sesión</h1>
+                <div class="text-center">
+                    <img src="../../assets/img/fepp.png">
+                </div>
+            <br>
             <h5>BIenvenido de vuelta, por favor ingrese sus credenciales.</h5>
             <div class="form-group">
                 <label>Cuenta</label>

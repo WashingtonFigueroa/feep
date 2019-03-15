@@ -47,7 +47,7 @@
               </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label>* Caracteristica 1</label>
+                <label>* Seleccione Caracteristica 1</label>
                 <select class="form-control" formControlName="caracteristica1" name="caracteristica1">
                   <option value="REGULADA">REGULADA</option>
                   <option value="NO REGULADA">NO REGULADA</option>
@@ -56,41 +56,39 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label>* Seleccione Actividad</label>
-                <ng-select [items]="actividades"
-                           class="custom"
-                           id="actividad_id"
-                           bindLabel="nombre"
-                           bindValue="actividad_id"
-                           formControlName="actividad_id">
-                </ng-select>
+                <label>* Seleccione Caracteristica 2</label>
+                <select class="form-control" formControlName="caracteristica2" name="caracteristica2">
+                  <option value="BASE">BASE</option>
+                  <option value="SEGUNDO GRADO">SEGUNDO GRADO</option>
+                </select> </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>* Seleccione Caracteristica 3</label>
+                <select class="form-control" formControlName="caracteristica3" name="caracteristica3">
+                  <option value="ASOCIACION">ASOCIACION</option>
+                  <option value="EMPRESA">EMPRESA</option>
+                  <option value="EMPRENDIMIENTO">EMPRENDIMIENTO</option>
+                </select>
               </div>
             </div>
-
           </div>
-
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Caracteristica 2</label>
-                  <select class="form-control" formControlName="caracteristica2" name="caracteristica2">
-                    <option value="NO REGULADA">BASE</option>
-                    <option value="NO REGULADA">SEGUNDO GRADO</option>
-                  </select> </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>* Caracteristica 3</label>
-                  <select class="form-control" formControlName="caracteristica3" name="caracteristica3">
-                    <option value="REGULADA">ASOCIACION</option>
-                    <option value="REGULADA">EMPRESA</option>
-                    <option value="NO REGULADA">EMPRENDIMEITNO</option>
-                  </select>
+                  <label>* Seleccione Actividad</label>
+                  <ng-select [items]="actividades"
+                             class="custom"
+                             id="actividad_id"
+                             bindLabel="nombre"
+                             bindValue="actividad_id"
+                             formControlName="actividad_id">
+                  </ng-select>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* MINISTERIO</label>
+                  <label>* Ministerio</label>
                   <select class="form-control" formControlName="ministerio" name="ministerio">
                     <option value="NO REGULADA">MAG</option>
                     <option value="REGULADA">MIES</option>
@@ -98,33 +96,16 @@
                     <option value="NO REGULADA">OTRO/A</option>
                   </select>  </div>
               </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Acuerdo Ministerial</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="acuerdo" name="acuerdo" id="acuerdo">
+                </div>
+              </div>
             </div>
 
 
             <div class="row">
-
-
-
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>* Representante</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="representante" name="representante" id="representante">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Contacto</label>
-                  <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                <label>Descripción</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
-              </div>
-              </div>
               <div class="col-md-4">
                 <div>
                   <label>Logo</label>
@@ -134,41 +115,57 @@
                          name="imagen" id="imagen">
                 </div>
               </div>
-            </div>
-            <div class="row">
+
+
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Acuerdo Ministerial</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="acuerdo" name="acuerdo" id="acuerdo">
+                  <label>* Nombre Representante Legal</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="representante" name="representante" id="representante">
                 </div>
               </div>
               <div class="col-md-4">
+                <div class="form-group">
+                  <label>Número Telefónico</label>
+                  <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Mujeres</label>
                   <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres" name="mujeres" id="mujeres">
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Niñas</label>
                   <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninias" name="ninias" id="ninias">
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Hombres</label>
                   <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="hombres" name="hombres" id="hombres">
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Niños</label>
                   <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninios" name="ninios" id="ninios">
                 </div>
               </div>
             </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Descripción</label>
+                <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
+              </div>
+            </div>
+
+
             <br>
               <div class="col-md-12 text-right">
                     <button class="btn btn-info" type="submit" [disabled]="organizacionGroup.status === 'INVALID'">Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;

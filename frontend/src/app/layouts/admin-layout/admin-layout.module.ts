@@ -109,16 +109,21 @@ import { AnexoComponent } from '../../anexo/anexo.component';
 import { AnexoIndexComponent } from '../../anexo/anexo-index/anexo-index.component';
 import { AnexoCreateComponent } from '../../anexo/anexo-create/anexo-create.component';
 import { AnexoUpdateComponent } from '../../anexo/anexo-update/anexo-update.component';
-import {AnexoService} from '../../anexo/anexo.service';
-import {CargoComponent} from '../../cargo/cargo.component';
-import {CargoIndexComponent} from '../../cargo/cargo-index/cargo-index.component';
-import {CargoCreateComponent} from '../../cargo/cargo-create/cargo-create.component';
-import {CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
-import {PrivilegioComponent} from '../../privilegio/privilegio.component';
-import {CargoService} from '../../cargo/cargo.service';
-import {PrivilegioService} from '../../privilegio/privilegio.service';
-import {JwtInterceptor} from '../../jwt-interceptor';
-import {ErrorInterceptor} from '../../error-interceptor';
+import { AnexoService} from '../../anexo/anexo.service';
+import { CargoComponent} from '../../cargo/cargo.component';
+import { CargoIndexComponent} from '../../cargo/cargo-index/cargo-index.component';
+import { CargoCreateComponent} from '../../cargo/cargo-create/cargo-create.component';
+import { CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
+import { PrivilegioComponent} from '../../privilegio/privilegio.component';
+import { CargoService} from '../../cargo/cargo.service';
+import { PrivilegioService} from '../../privilegio/privilegio.service';
+import { JwtInterceptor} from '../../jwt-interceptor';
+import { ErrorInterceptor} from '../../error-interceptor';
+import { ResumenComponent } from '../../resumen/resumen.component';
+import { ResumenIndexComponent } from '../../resumen/resumen-index/resumen-index.component';
+import { ResumenUpdateComponent } from '../../resumen/resumen-update/resumen-update.component';
+import { ResumenCreateComponent } from '../../resumen/resumen-create/resumen-create.component';
+import { ResumenService} from '../../resumen/resumen.service';
 
 @NgModule({
   imports: [
@@ -206,23 +211,27 @@ import {ErrorInterceptor} from '../../error-interceptor';
     EjecutoraIndexComponent,
     EjecutoraUpdateComponent,
     EjecutoraCreateComponent,
-      TipoProyectoComponent,
-      TipoProyectoIndexComponent,
-      TipoProyectoUpdateComponent,
-      TipoProyectoCreateComponent,
-      AsignacionEventoComponent,
-      AsignacionEventoIndexComponent,
-      AsignacionEventoCreateComponent,
-      AsignacionEventoUpdateComponent,
-      AnexoComponent,
-      AnexoIndexComponent,
-      AnexoCreateComponent,
-      AnexoUpdateComponent,
-      CargoComponent,
-      CargoIndexComponent,
-      CargoCreateComponent,
-      CargoEditComponent,
-      PrivilegioComponent
+    TipoProyectoComponent,
+    TipoProyectoIndexComponent,
+    TipoProyectoUpdateComponent,
+    TipoProyectoCreateComponent,
+    AsignacionEventoComponent,
+    AsignacionEventoIndexComponent,
+    AsignacionEventoCreateComponent,
+    AsignacionEventoUpdateComponent,
+    AnexoComponent,
+    AnexoIndexComponent,
+    AnexoCreateComponent,
+    AnexoUpdateComponent,
+    CargoComponent,
+    CargoIndexComponent,
+    CargoCreateComponent,
+    CargoEditComponent,
+    PrivilegioComponent,
+    ResumenComponent,
+    ResumenIndexComponent,
+    ResumenUpdateComponent,
+    ResumenCreateComponent,
   ],
   providers: [
       OrganizacionService,
@@ -248,9 +257,9 @@ import {ErrorInterceptor} from '../../error-interceptor';
       AnexoService,
       CargoService,
       PrivilegioService,
+      ResumenService,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-
   ]
 })
 

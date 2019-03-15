@@ -46,11 +46,8 @@ export class LoginComponent implements OnInit {
         .pipe(first())
         .subscribe(
             data => {
-              this.toastr.success(`<span class="now-ui-icons ui-1_bell-53"></span> Accediendo al sistema`, 'Iniciando sesión', {
-                timeOut: 8000,
-                closeButton: true,
-                enableHtml: true,
-                toastClass: 'alert alert-success alert-with-icon',
+              this.toastr.success('Accediendo al sistema', 'Iniciando sesión', {
+                timeOut: 2000,
                 positionClass: 'toast-top-right'
               });
               this.router.navigate(['/eventos']);
@@ -59,11 +56,8 @@ export class LoginComponent implements OnInit {
               this.error = error;
               this.loginGroup.reset();
               this.loading = false;
-              this.toastr.error(`<span class="now-ui-icons ui-1_bell-53"></span> Credenciales incorrectas`, 'Error de autenticación', {
-                timeOut: 8000,
-                closeButton: true,
-                enableHtml: true,
-                toastClass: 'alert alert-danger alert-with-icon',
+              this.toastr.error('Credenciales incorrecta', 'Error de autenticación', {
+                timeOut: 2000,
                 positionClass: 'toast-top-right'
               });
             }

@@ -72,7 +72,6 @@ class OrganizacionController extends Controller
     public function imagen($url){
         return response()->file(storage_path('app/organizaciones/' . $url));
     }
-
     public function cambiarImagen($id) {
         if (\request()->hasFile('imagen')) {
             $url = \request()->file('imagen')->store('organizaciones');

@@ -3,13 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-
 import { AppComponent } from './app.component';
-
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {BrowserModule} from '@angular/platform-browser';
 import { LoginComponent } from './login/login.component';
@@ -37,7 +33,7 @@ import {AuthGuard} from './auth.guard';
     NgbModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, // required animations module
+    BrowserAnimationsModule,
   ],
   declarations: [
     AppComponent,

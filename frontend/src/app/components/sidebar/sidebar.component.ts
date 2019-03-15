@@ -7,7 +7,7 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-   // { path: '/dashboard', title: 'Inicio',  icon: 'design_app', class: '' },
+    { path: '/dashboard', title: 'Inicio',  icon: 'design_app', class: '' },
     { path: '/organizaciones', title: 'Organizacion',  icon: 'business_bank', class: '' },
     { path: '/miembros', title: 'Personas',  icon: 'users_single-02', class: '' },
     { path: '/proyectos', title: 'Proyectos',  icon: 'business_globe', class: '' },
@@ -16,8 +16,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/anexos', title: 'Subir Anexos',  icon: 'arrows-1_cloud-upload-94', class: '' },
     { path: '/asignaciones', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
     { path: '/inscripciones', title: 'Inscripciones',  icon: 'education_atom', class: '' },
-    //{ path: '/insumos', title: 'Insumos',  icon: 'business_briefcase-24', class: '' },
-    //{ path: '/ubicaciones', title: 'Ubicación',  icon: 'location_map-big', class: '' }
 ];
 
 @Component({
