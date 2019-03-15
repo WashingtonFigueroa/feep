@@ -12,7 +12,7 @@ export class AuthGuard implements CanActivate {
       if (localStorage.getItem('fepp-token') !== null) {
           if (localStorage.getItem('fepp-token2') !== null) {
               let rutas = [];
-              rutas = localStorage.getItem('fepp-token2').split(',');
+              rutas = atob(localStorage.getItem('fepp-token2')).split(',');
               if (state.url === '/login') {
                   return true;
               }
