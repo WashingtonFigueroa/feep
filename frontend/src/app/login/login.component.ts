@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
                 timeOut: 2000,
                 positionClass: 'toast-top-right'
               });
-              this.router.navigate(['/eventos/listar']);
+              this.router.navigate(['/dashboard']);
             },
             error => {
               this.error = error;
