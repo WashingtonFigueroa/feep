@@ -37,19 +37,44 @@
                 </p>
               </a>
             </li>-->
-<!--            <li class="nav-item" ngbDropdown>
+           <li class="nav-item" ngbDropdown>
               <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>
-                <i class="now-ui-icons location_world"></i>
+                <i class="now-ui-icons loader_gear"></i>
                 <p>
                   <span class="d-lg-none d-md-block">Some Actions</span>
                 </p>
               </a>
               <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" routerLink="/tipoorganizacion">
+                      <i class="now-ui-icons arrows-1_minimal-right"></i>
+                      <p>Tipo Organización</p>
+                  </a>
+                  <a class="dropdown-item" routerLink="/tipoproyectos">
+                      <i class="now-ui-icons arrows-1_minimal-right"></i>
+                      <p>Tipo Proyectos</p>
+                  </a>
+                  <a class="dropdown-item" routerLink="/tipoeventos">
+                      <i class="now-ui-icons arrows-1_minimal-right"></i>
+                      <p>Tipo Eventos</p>
+                  </a>
+                  <a class="dropdown-item" routerLink="/actividades">
+                      <i class="now-ui-icons arrows-1_minimal-right"></i>
+                      <p>Tipo Actividad</p>
+                  </a>
+                  <a class="dropdown-item" routerLink="/insumos/tipo-insumos">
+                      <i class="now-ui-icons users_single-02"></i>
+                      <p>Ingreso de Insumos</p>
+                  </a>
+                  <a class="dropdown-item" routerLink="/ubicaciones">
+                      <i class="now-ui-icons users_single-02"></i>
+                      <p>Ubicación</p>
+                  </a>
+                  <a class="dropdown-item" routerLink="/usuarios">
+                      <i class="now-ui-icons users_single-02"></i>
+                      <p>Usuarios</p>
+                  </a>
               </div>
-            </li>-->
+            </li>
             <li class="nav-item" ngbDropdown>
                 <a class="nav-link" id="dropdownBasic2" ngbDropdownToggle>
                     <i class="now-ui-icons users_single-02"></i>
@@ -58,8 +83,6 @@
                     </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-<!--                    <a class="dropdown-item" href="#">Perfil</a>-->
-<!--                    <a class="dropdown-item" href="#">Another action</a>-->
                     <a class="dropdown-item" routerLink="/cargos">Cargos</a>
                     <a class="dropdown-item" routerLink="/privilegios">Privilegios</a>
                     <a class="dropdown-item" (click)="logout()">Cerrar Sesión</a>

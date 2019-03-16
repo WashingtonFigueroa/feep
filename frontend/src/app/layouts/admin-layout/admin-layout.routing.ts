@@ -88,6 +88,10 @@ import {CargoCreateComponent} from '../../cargo/cargo-create/cargo-create.compon
 import {CargoEditComponent} from '../../cargo/cargo-edit/cargo-edit.component';
 import {PrivilegioComponent} from '../../privilegio/privilegio.component';
 import {AuthGuard} from '../../auth.guard';
+import {ResumenComponent} from '../../resumen/resumen.component';
+import {ResumenIndexComponent} from '../../resumen/resumen-index/resumen-index.component';
+import {ResumenCreateComponent} from '../../resumen/resumen-create/resumen-create.component';
+import {ResumenUpdateComponent} from '../../resumen/resumen-update/resumen-update.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -285,6 +289,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: 'editar/:id',
                 component: EventoUpdateComponent
+            },
+            {
+                path: '',
+                redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'resumenes',  component:ResumenComponent, canActivate: [AuthGuard],
+        children: [
+            {
+                path: 'listar',
+                component:ResumenIndexComponent
+            },
+            {
+                path: 'crear',
+                component:ResumenCreateComponent
+            },
+            {
+                path: 'editar/:id',
+                component:ResumenUpdateComponent
             },
             {
                 path: '',
