@@ -29,7 +29,8 @@ class DatabaseSeeder extends Seeder
             '/actividades/listar',
             '/insumos/tipo-insumos/listar',
             '/ubicaciones/listar',
-            '/usuarios/listar'
+            '/usuarios/listar',
+            '/resumenes/listar'
         ];
         //TIPO USUARIOS
         $cargo = \App\Cargo::create(
@@ -45,8 +46,6 @@ class DatabaseSeeder extends Seeder
                 'activo' => 'si'
             ]);
         }
-
-
         \App\Usuario::create(
             [
                 'nombres' => 'Washington Figueroa',
@@ -55,7 +54,6 @@ class DatabaseSeeder extends Seeder
                 'email' => 'w.figo.1991@gmail.com',
                 'cargo_id' => $cargo->cargo_id]
         );
-
 //TIPO ORGANIZACIONES
         \App\TipoOrganizacion::create(['nombre' => 'ASOCIATIVA','descripcion' => '']);
         \App\TipoOrganizacion::create(['nombre' => 'FAMILIAR','descripcion' => '']);
@@ -65,7 +63,6 @@ class DatabaseSeeder extends Seeder
         \App\Actividad::create(['nombre' => 'TRANSFORMACIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'COMERCIALIZACIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'FINANCIERA','descripcion' => '']);
-
 //TIPO PROYECTOS
         \App\TipoProyecto::create(['nombre' => 'RECREACIÓN','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);
         \App\TipoProyecto::create(['nombre' => 'COMUNICACIÓN','descripcion' => 'DESARROLLO']);
@@ -90,8 +87,7 @@ class DatabaseSeeder extends Seeder
         \App\Tipo::create(['tipo_suministro_id' => 1,'nombre' => 'MANZANA','descripcion' => '']);
         \App\Tipo::create(['tipo_suministro_id' => 1, 'nombre' => 'LIMA','descripcion' => '']);
         \App\Tipo::create(['tipo_suministro_id' => 3, 'nombre' => 'COMPUTADOR','descripcion' => '']);
-
-        //PROVINCIAS
+//PROVINCIAS
         \App\Provincia::create(['codigo' => '01','nombre' => 'AZUAY']);
         \App\Provincia::create(['codigo' => '02','nombre' => 'BOLIVAR']);
         \App\Provincia::create(['codigo' => '03','nombre' => 'CAÑAR']);

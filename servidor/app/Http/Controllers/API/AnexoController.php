@@ -21,7 +21,6 @@ class AnexoController extends Controller
         $anexo = Anexo::orderBy('anexo_id', 'desc')->get();
         return response()->json($anexo, 200);
     }
-
     public function buscar($valor = '') {
         $proyecto = Anexo::join('eventos', 'eventos.evento_id', '=', 'anexos.evento_id')
             ->where('eventos.nombre', 'like', '%' . $valor . '%')
@@ -44,25 +43,10 @@ class AnexoController extends Controller
         $anexo->save();
         return response()->json($anexo, 201);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         return response()->json(Anexo::find($id), 200);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $anexo = Anexo::find($id);
@@ -70,12 +54,6 @@ class AnexoController extends Controller
         return response()->json($anexo, 200);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $anexo = Anexo::find($id);

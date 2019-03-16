@@ -1,3 +1,77 @@
-<p>
-  resumen-index works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <h3>&nbsp;&nbsp;Resumen de los Eventos</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <button class="btn btn-info" routerLink="/resumenes/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                  </div>
+                  <div class="col-sm">
+                  </div>
+                  <div class="col-sm">
+                    <form (submit)="buscar(valor)" class="form-inline" role="form">
+                      <div class="form-group">
+                        <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div *ngIf="resumenes !== null" class="table-responsive">
+                  <table class="table">
+                    <thead style="background-color: #303030; color: #f7f7f7">
+                    <th> # </th>
+                    <th> Evento </th>
+                    <th> Total Asistentes </th>
+                    <th> # Mujeres </th>
+                    <th> # Hombres </th>
+                    <th> # Niñas </th>
+                    <th> # Niños </th>
+                    <th> Observaciones </th>
+                    <th class="text-center">Operaciones</th>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let resumen of resumenes.data; let i = index">
+                      <td> {{ i + 1}} </td>
+                      <td> {{ resumen.evento }} </td>
+                      <td> {{ resumen.asistentes }} </td>
+                      <td> {{ resumen.num_mujeres }} </td>
+                      <td> {{ resumen.num_hombre }} </td>
+                      <td> {{ resumen.num_ninias }} </td>
+                      <td> {{ resumen.num_ninios }} </td>
+                      <td> {{ resumen.observaciones }} </td>
+                      <td class="text-center">
+                        <a routerLink="/resumenes/editar/{{resumen.resumen_id}}" title="Editar Persona" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                        <a (click)="destroy(resumen, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div *ngIf="resumenes !== null && resumenes.last_page > 1" class="paginacion text-center">
+                  <div>
+                    Página {{ resumenes.current_page }} de {{ resumenes.last_page }}
+                  </div>
+                  <button class="paginacion-btn" (click)="loadPagination(resumenes.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(resumenes.prev_page_url)" [disabled]="resumenes.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == resumenes.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPagination(resumenes.next_page_url)" [disabled]="resumenes.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(resumenes.last_page_url)"><i class="fa fa-forward"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -34,13 +34,11 @@ Route::prefix('v1')->group(function () {
     Route::get('cargo-privilegios/{cargo_id}', 'API\CargoController@privilegios');
     Route::group(['middleware' => 'auth:api'], function () {
         Route::post('get-usuario', 'API\UsuarioController@getUsuario');
-
 //cambiar imagenes
         Route::post('organizaciones-imagen-cambiar/{id}', 'API\OrganizacionController@cambiarImagen');
         Route::post('proyetos-imagen-cambiar/{id}', 'API\ProyectoController@cambiarImagen');
         Route::post('eventos-imagen-cambiar/{id}', 'API\EventoController@cambiarImagen');
         Route::post('insumos-imagen-cambiar/{id}', 'API\InsumoController@cambiarImagen');
-
         /*listados*/
         Route::get('tipo-organizaciones-listar', 'API\TipoOrganizacionController@listar');
 //ORGANIZACIONES
@@ -48,12 +46,9 @@ Route::prefix('v1')->group(function () {
         Route::get('organizaciones-buscar/{valor?}', 'API\OrganizacionController@buscar');
 //PERSONAS
       //  Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
-
         Route::get('provincias-listar', 'API\ProvinciaController@listar');
-
         Route::get('ciudades-listar', 'API\CiudadController@listar');
         Route::get('tipo-eventos-listar', 'API\TipoEventoController@listar');
-
         Route::get('tipo-insumos-listar', 'API\TipoInsumoController@listar');
         Route::get('suministros-listar', 'API\SuministroController@listar');
         Route::get('tipo-suministros-listar', 'API\TipoSuministroController@listar');
@@ -63,11 +58,9 @@ Route::prefix('v1')->group(function () {
         Route::get('personas-buscar/{valor?}', 'API\PersonaController@buscar');
 //asignacion insumo
         Route::get('insumos-buscar/{valor?}', 'API\InsumoController@buscar');
-
         Route::get('eventos-listar', 'API\EventoController@listar');
-//¨Parroquia
+//Parroquia
         Route::get('parroquias-listar', 'API\ParroquiaController@listar');
-
 //Barrios
         Route::get('barrios-listar', 'API\BarrioController@listar');
 //Tipo proyectos
@@ -99,7 +92,6 @@ Route::prefix('v1')->group(function () {
         Route::resource('cargos', 'API\CargoController');
         Route::resource('privilegios', 'API\PrivilegioController');
 //los privilegios de un cargo
-
 /*        Route::get('privilegios-cargo/{cargo_id}', 'API\PrivilegioController@privilegios');*/
 //Usuarios
         Route::get('usuarios-listar', 'API\UsuarioController@listar');
@@ -108,10 +100,11 @@ Route::prefix('v1')->group(function () {
 //Anexos
         Route::get('anexos-listar', 'API\AnexoController@listar');
         Route::get('anexos-buscar/{valor?}', 'API\AnexoController@buscar');
-
+//Resumen
+        Route::get('resumenes-listar', 'API\ResumenController@listar');
+        Route::get('resumenes-buscar/{valor?}', 'API\ResumenController@buscar');
 //consultas
         Route::get('sri/{cedula}', 'API\PersonaController@sri');
-
         /*login*/
         Route::apiResources([
             'tipo-organizaciones' => 'API\TipoOrganizacionController',
@@ -137,9 +130,9 @@ Route::prefix('v1')->group(function () {
             'anexos' => 'API\AnexoController',
             'usuarios' => 'API\UsuarioController',
             'asignacion-proyectos' => 'API\AsignacionEventoController',
-            'actividades' => 'API\ActividadController'
+            'actividades' => 'API\ActividadController',
+            'resumenes' => 'API\ResumenController'
         ]);
-
     });
 });
 

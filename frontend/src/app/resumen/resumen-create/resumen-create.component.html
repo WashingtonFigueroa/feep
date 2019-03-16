@@ -1,3 +1,112 @@
-<p>
-  resumen-create works!
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              &nbsp; &nbsp; <button class="btn btn-info" routerLink="/anexos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="form-group">
+              <br>
+              <h5 class="title">Registrar Resumen</h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form (submit)="store()"[formGroup]="resumenGroup" *ngIf="eventos !== null" role="form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="evento_id">* Seleccione Evento</label>
+                  <ng-select [items]="eventos"
+                             class="custom"
+                             id="evento_id"
+                             bindLabel="nombre"
+                             bindValue="evento_id"
+                             formControlName="evento_id">
+                  </ng-select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Total A</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres" name="mujeres" id="to">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Mujeres</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres" name="mujeres" id="mujeres">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Niñas</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninias" name="ninias" id="ninias">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Hombres</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="hombres" name="hombres" id="hombres">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Niños</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninios" name="ninios" id="ninios">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Descripción</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion">
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-12 text-right">
+                <div class="form-group">
+                  <div class="form-group">
+                    <button class="btn btn-info" type="submit" [disabled]="resumenGroup.status === 'INVALID'">Guardar &nbsp;
+                      <span class="fa fa-save"></span>
+                    </button>&nbsp;&nbsp;
+                    <a class="btn btn-dark"
+                       routerLink="/anexos/listar">Cancelar &nbsp;
+                      <span class="fa fa-window-close"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <br><br>
+            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
