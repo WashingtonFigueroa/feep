@@ -63,12 +63,12 @@ export class MiembroCreateComponent implements OnInit {
     }
     crearForm() {
         this.miembroGroup = this.fb.group({
-            'organizacion_id': ['', [Validators.required]],
-            'parroquia_id': ['', [Validators.required]],
+            'organizacion_id': [1, [Validators.required]],
+            'parroquia_id': [2048, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
             'genero': ['MASCULINO'],
-            'ocupacion': ['', [Validators.required]],
+            'ocupacion': [''],
             'etnia': ['MESTIZO/A'],
             'nacionalidad': ['NO APLICA'],
             'pueblo': ['NO APLICA'],
@@ -128,19 +128,8 @@ export class MiembroCreateComponent implements OnInit {
         };
         this.miembroGroup.patchValue({
             'persona_id' : 0,
-            'organizacion_id' : 0,
+            'organizacion_id' : 1,
             'parroquia_id' : 0,
-            'genero' : '',
-            'ocupacion' : '',
-            'etnia' : '',
-            'nacionalidad' : '',
-            'pueblo' : '',
-            'fecha_nacimiento' : '',
-            'direccion' : '',
-            'telefono_fijo' : '',
-            'operadora' : '',
-            'contacto' : '',
-            'email' : '',
         });
     }
     searchPerson() {

@@ -25,7 +25,7 @@
                   <label>* Cedula o Pasaporte</label>
                   <div class="row">
                     <div class="col-7">
-                      <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="cedula" name="cedula" id="cedula">
+                      <input type="text" maxlength="13" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="cedula" name="cedula" id="cedula">
                     </div>
                     <div class="col-3 text-right">
                       <a class="btn btn-info" (click)="searchPerson()"><i class="fa fa-search"></i></a>
@@ -99,7 +99,7 @@
                   <select class="form-control" formControlName="genero" name="genero">
                     <option value="MASCULINO">MASCULINO</option>
                     <option value="FEMENINO">FEMENINO</option>
-                    <option value="OTRO">OTRO</option>
+                    <option value="OTRO/A">OTRO/A</option>
                   </select>
                 </div>
               </div>
