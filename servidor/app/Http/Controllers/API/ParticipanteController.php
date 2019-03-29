@@ -7,6 +7,7 @@ use App\Participante;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+
 class ParticipanteController extends Controller
 {
     public function index()
@@ -20,22 +21,18 @@ class ParticipanteController extends Controller
     }
     public function store(Request $request)
     {
-        $participante = null;
-        if ($request->input('persona_id') === 0) {
-            $persona_id = Persona::create($request->all())->persona_id;
-            $participante = new Participante();
-            $participante->fill($request->all());
-            $participante->persona_id = $persona_id;
-            $participante->save();
-        } else {
-            $participante = Participante::create($request->all());
-        }
-
+        $participante = Participante::create($request->all());
+//        $participante = null;
+//        if ($request->input('persona_id') === 0) {
+//            $persona_id = Persona::create($request->all()->persona_id);
+//            $participante = new Participante();
+//            $participante->fill($request->all());
+//            $participante->persona_id = $persona_id;
+//            $participante->save();
+//        } else {
+//            $participante = Participante::create($request->all());
+//        }
         return response()->json($participante, 201);
-
-
-//        $participante = Participante::create($request->all());
-//        return response()->json($participante, 201);
     }
     public function buscar($valor = '') {
         $participante = Participante::join('eventos','eventos.evento_id','=','participantes.evento_id')

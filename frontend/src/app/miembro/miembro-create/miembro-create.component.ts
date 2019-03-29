@@ -101,7 +101,8 @@ export class MiembroCreateComponent implements OnInit {
             this.miembroService.store(formData)
                 .subscribe((res: any) => {
                     this.toastrService.success('Agregada', 'Persona')
-                    this.miembroGroup.reset();
+                    this.resetPersona();
+                    //this.miembroGroup.reset();
                 }, (error) => {
                     this.toastrService.warning('Registrada','Persona');
                 });
@@ -114,22 +115,28 @@ export class MiembroCreateComponent implements OnInit {
             parroquia_id : 0,
             cedula : '',
             nombres : '',
-            genero : '',
             ocupacion : '',
-            etnia : '',
-            nacionalidad : '',
-            pueblo : '',
             fecha_nacimiento : '',
             direccion : '',
-            telefono_fijo : '',
-            operadora : '',
             contacto : '',
             email : '',
         };
         this.miembroGroup.patchValue({
             'persona_id' : 0,
-            'organizacion_id' : 1,
-            'parroquia_id' : 0,
+            'organizacion_id': 1,
+            'parroquia_id': 2048,
+            'nombres':'',
+            'genero': 'MASCULINO',
+            'ocupacion': '',
+            'etnia': 'MESTIZO/A',
+            'nacionalidad': 'NO APLICA',
+            'pueblo': 'NO APLICA',
+            'fecha_nacimiento': '',
+            'direccion': '',
+            'telefono_fijo': '',
+            'operadora': 'OTRO/A',
+            'contacto': '',
+            'email': '',
         });
     }
     searchPerson() {

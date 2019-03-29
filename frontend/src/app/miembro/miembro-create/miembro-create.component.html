@@ -63,6 +63,27 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
+                  <label>* Dirección</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" id="direccion">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Numero Contacto</label>
+                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
                   <label>* Seleccione Parroquia</label>
                   <ng-select [items]="parroquias"
                              class="custom"
@@ -73,20 +94,6 @@
                   </ng-select>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>* Dirección</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" id="direccion">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Email</label>
-                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
-                </div>
-              </div>
-            </div>
-            <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
                   <label>* Fecha Nacimiento</label>
@@ -103,10 +110,29 @@
                   </select>
                 </div>
               </div>
+            </div>
+            <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
                   <label>* Ocupación</label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="ocupacion" name="ocupacion" id="ocupacion">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Telefono Fijo</label>
+                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Operadora</label>
+                  <select class="form-control" formControlName="operadora" name="operadora">
+                    <option value="CLARO">CLARO</option>
+                    <option value="MOVISTAR">MOVISTAR</option>
+                    <option value="CNT">CNT</option>
+                    <option value="OTRO/A">OTRO/A</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -176,31 +202,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Telefono Fijo</label>
-                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Operadora</label>
-                  <select class="form-control" formControlName="operadora" name="operadora">
-                    <option value="CLARO">CLARO</option>
-                    <option value="MOVISTAR">MOVISTAR</option>
-                    <option value="CNT">CNT</option>
-                    <option value="OTRO/A">OTRO/A</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Numero Contacto</label>
-                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
-                </div>
-              </div>
-            </div>
+
             <hr>
             <div class="col-md-12 text-right">
               <button class="btn btn-info" [disabled]="miembroGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;

@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/fepp.zip" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,41 +94,43 @@
     <session id="660396286">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="5" />
-          <entry key="php" value="4" />
-          <entry key="ts" value="7" />
+          <entry key="html" value="6" />
+          <entry key="php" value="8" />
+          <entry key="ts" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
-          <entry key="PHP" value="4" />
-          <entry key="TypeScript" value="7" />
+          <entry key="HTML" value="6" />
+          <entry key="PHP" value="8" />
+          <entry key="TypeScript" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="106" />
-          <entry key="php" value="174" />
-          <entry key="ts" value="134" />
+          <entry key="html" value="130" />
+          <entry key="php" value="340" />
+          <entry key="ts" value="169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="106" />
-          <entry key="PHP" value="174" />
-          <entry key="TypeScript" value="134" />
+          <entry key="HTML" value="130" />
+          <entry key="PHP" value="340" />
+          <entry key="TypeScript" value="169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="1" />
+          <entry key="Angular2LanguageService" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -142,36 +138,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1090">
-              <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-              <caret line="122" column="77" selection-start-line="122" selection-start-column="77" selection-end-line="122" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1772">
-              <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-              <folding>
-                <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="113" column="29" lean-forward="true" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="86" column="82" lean-forward="true" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="126">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="e#44#60#0#PHP" expanded="true" />
               </folding>
@@ -180,10 +168,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
+        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+            <state relative-caret-position="169">
+              <caret line="122" column="58" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -191,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-846">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="e#44#60#0#PHP" expanded="true" />
               </folding>
@@ -204,7 +192,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>file</find>
       <find>update</find>
       <find>latitud</find>
       <find>organzacione</find>
@@ -234,6 +221,7 @@
       <find>ParticipanteController</find>
       <find>privile</find>
       <find>camb</find>
+      <find>participantes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -288,11 +276,11 @@
         <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
       </list>
     </option>
   </component>
@@ -455,23 +443,6 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inscripcion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="inscripcion" type="462c0819:PsiDirectoryNode" />
-              <item name="inscripcion-create" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feep" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="miembro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -518,6 +489,12 @@
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="API" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -527,7 +504,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="miembrcrets&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;miembrcreht&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;organizaccreatets&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organizaciocreh&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;organizaser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion.service.ts&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacontro&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;eventcontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/EventoController.php&#10;asignacio&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts&#10;asignacioneves&#9;null&#9;null&#10;proyecser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;proyecto&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;miembrser&#9;null&#9;null&#10;proyecon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;organicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;proyectoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;ProyectoController&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;AsignacionService&#9;null&#9;null&#10;insumoser&#9;null&#9;null&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;eventoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento.service.ts&#10;API&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;seed.php&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" />
+    <property name="SearchEverywhereHistoryKey" value="miembrcreats&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;personac&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/app/Http/Controllers/API/PersonaController.php&#10;ParticipanteController&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/app/Http/Controllers/API/ParticipanteController.php&#10;miembrcrets&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.ts&#10;miembrcreht&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/miembro/miembro-create/miembro-create.component.html&#10;organizaccreatets&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts&#10;organizaciocreh&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html&#10;organizaser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/organizacion/organizacion.service.ts&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacontro&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;eventcontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/EventoController.php&#10;asignacio&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.ts&#10;asignacioneves&#9;null&#9;null&#10;proyecser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;proyecto&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;miembrser&#9;null&#9;null&#10;proyecon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;organicontr&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;proyectoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/proyecto/proyecto.service.ts&#10;ProyectoController&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/ProyectoController.php&#10;AsignacionService&#9;null&#9;null&#10;insumoser&#9;null&#9;null&#10;eventoindeht&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento-index/evento-index.component.html&#10;eventoser&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/frontend/src/app/evento/evento.service.ts&#10;API&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/routes/api.php&#10;organizacon&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/app/Http/Controllers/API/OrganizacionController.php&#10;seed.php&#9;FILE&#9;file://C:/xampp/htdocs/DTE/feep/servidor/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../nordentrx" />
@@ -593,18 +570,19 @@
       <workItem from="1552617218808" duration="16649000" />
       <workItem from="1552696358999" duration="8753000" />
       <workItem from="1552744370497" duration="869000" />
-      <workItem from="1553692818366" duration="15644000" />
+      <workItem from="1553692818366" duration="18361000" />
+      <workItem from="1553772521531" duration="6081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169324000" />
+    <option name="totallyTimeSpent" value="178122000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.27155825" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.23298033" />
       <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -657,13 +635,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-create/tipo-organizacion-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-organizacion/tipo-organizacion-index/tipo-organizacion-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -830,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
@@ -917,9 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -960,61 +921,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="99" column="68" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="99" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="20" column="115" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="115" />
-          <folding>
-            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1772">
-          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-          <folding>
-            <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-846">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="16" />
-          <folding>
-            <element signature="e#44#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1090">
+        <state relative-caret-position="2052">
           <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
           <caret line="122" column="77" selection-start-line="122" selection-start-column="77" selection-end-line="122" selection-end-column="77" />
           <folding>
@@ -1023,13 +932,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Participante.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="122" column="58" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="126">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PersonaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="113" column="29" lean-forward="true" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="86" column="82" lean-forward="true" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
         </state>
       </provider>
     </entry>
