@@ -19,21 +19,22 @@ class ParticipanteController extends Controller
             ->paginate(10);
         return response()->json($personas, 200);
     }
+
     public function store(Request $request)
     {
-        $participante = Participante::create($request->all());
-//        $participante = null;
-//        if ($request->input('persona_id') === 0) {
-//            $persona_id = Persona::create($request->all()->persona_id);
-//            $participante = new Participante();
-//            $participante->fill($request->all());
-//            $participante->persona_id = $persona_id;
-//            $participante->save();
-//        } else {
-//            $participante = Participante::create($request->all());
-//        }
+        $participante = null;
+        if ((int)$request->input('persona_id') === 0) {
+            $persona = Persona::create($request->all());
+            $participante = new Participante();
+            $participante->fill($request->all());
+            $participante->persona_id = $persona->persona_id;
+            $participante->save();
+        } else {
+            $participante = Participante::create($request->all());
+        }
         return response()->json($participante, 201);
     }
+
     public function buscar($valor = '') {
         $participante = Participante::join('eventos','eventos.evento_id','=','participantes.evento_id')
             ->join('personas','personas.persona_id','=','participantes.persona_id')

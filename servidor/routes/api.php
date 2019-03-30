@@ -131,7 +131,8 @@ Route::prefix('v1')->group(function () {
             'usuarios' => 'API\UsuarioController',
             'asignacion-proyectos' => 'API\AsignacionEventoController',
             'actividades' => 'API\ActividadController',
-            'resumenes' => 'API\ResumenController'
+            'resumenes' => 'API\ResumenController',
+            'reportes' => 'API\ReporteController'
         ]);
     });
 });

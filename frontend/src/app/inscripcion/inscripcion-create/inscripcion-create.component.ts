@@ -38,6 +38,7 @@ export class InscripcionCreateComponent implements OnInit {
         contacto : '',
         email : '',
     };
+    numEvento: any = 0;
     constructor(private organizacionService: OrganizacionService,
                 private parroquiasService: UbicacionService,
                 private participanteService: InscripcionService,
@@ -64,8 +65,9 @@ export class InscripcionCreateComponent implements OnInit {
         this.eventoService.listar()
             .subscribe((res: any) => {
                 this.eventos = res;
+                this.numEvento = res.length;
+                this.crearForm();
             });
-        this.crearForm();
     }
     ngOnInit() {
     }
@@ -73,7 +75,7 @@ export class InscripcionCreateComponent implements OnInit {
         this.persona = {
             persona_id : 0,
             organizacion_id : 0,
-            parroquia_id : 0,
+            parroquia_id : 2048,
             cedula : '',
             nombres : '',
             genero : '',
@@ -91,19 +93,19 @@ export class InscripcionCreateComponent implements OnInit {
         this.participanteGroup.patchValue({
             'persona_id' : 0,
             'organizacion_id' : 1,
-            'parroquia_id' : 0,
+            'parroquia_id' : 2048,
         });
     }
     crearForm() {
         this.participanteGroup = this.fb.group({
-            'evento_id': [0, [Validators.required]],
+            'evento_id': [parseInt(this.numEvento), [Validators.required]],
             'persona_id': [0, [Validators.required]],
             'observacion': [''],
             'organizacion_id': [1, [Validators.required]],
             'parroquia_id': [2048, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
-            'genero': ['MASCULINO'],
+            'genero': ['MASCULINO', [Validators.required]],
             'ocupacion': [''],
             'etnia': ['MESTIZO/A'],
             'nacionalidad': ['NO APLICA'],
@@ -137,13 +139,15 @@ export class InscripcionCreateComponent implements OnInit {
         formData.append('operadora', this.participanteGroup.value.operadora);
         formData.append('contacto', this.participanteGroup.value.contacto);
         formData.append('email', this.participanteGroup.value.email);
-        this.participanteService.store(formData)
-            .subscribe((res: any) => {
-                this.toastrService.success('Registrado', 'Participante')
-                this.participanteGroup.reset();
-            }, (error) => {
-                this.toastrService.error('duplicado', 'Participante');
-            });
+
+console.log(formData);
+        // this.participanteService.store(formData)
+        //     .subscribe((res: any) => {
+        //         this.toastrService.success('Registrado', 'Participante')
+        //         this.participanteGroup.reset();
+        //     }, (error) => {
+        //         this.toastrService.error('duplicado', 'Participante');
+        //     });
     }
 
     searchPerson() {
@@ -164,7 +168,7 @@ export class InscripcionCreateComponent implements OnInit {
                 });
             } else {
                 this.participanteGroup.patchValue({
-                    'persona_id' : res.data.persona_id,
+                    'persona_id' : parseInt(res.data.persona_id,10),
                     'organizacion_id' : res.data.organizacion_id,
                     'parroquia_id' : res.data.parroquia_id,
                     'cedula' : res.data.cedula,

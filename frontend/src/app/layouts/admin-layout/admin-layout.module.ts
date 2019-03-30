@@ -124,6 +124,7 @@ import { ResumenIndexComponent } from '../../resumen/resumen-index/resumen-index
 import { ResumenUpdateComponent } from '../../resumen/resumen-update/resumen-update.component';
 import { ResumenCreateComponent } from '../../resumen/resumen-create/resumen-create.component';
 import { ResumenService} from '../../resumen/resumen.service';
+import {DashboardService} from '../../dashboard/dashboard.service';
 
 @NgModule({
   imports: [
@@ -258,7 +259,8 @@ import { ResumenService} from '../../resumen/resumen.service';
       CargoService,
       PrivilegioService,
       ResumenService,
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+      DashboardService,
+      { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ]
 })
