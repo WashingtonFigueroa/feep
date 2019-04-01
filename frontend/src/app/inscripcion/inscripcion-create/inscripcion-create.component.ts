@@ -127,27 +127,32 @@ export class InscripcionCreateComponent implements OnInit {
         formData.append('organizacion_id', this.participanteGroup.value.organizacion_id);
         formData.append('parroquia_id', this.participanteGroup.value.parroquia_id);
         formData.append('cedula', this.participanteGroup.value.cedula);
-        formData.append('nombres', this.participanteGroup.value.nombres.toUpperCase());
+        if(this.participanteGroup.value.nombres !== null) {
+            formData.append('nombres', this.participanteGroup.value.nombres.toUpperCase());
+        }
         formData.append('genero', this.participanteGroup.value.genero);
-        formData.append('ocupacion', this.participanteGroup.value.ocupacion.toUpperCase());
+        if(this.participanteGroup.value.ocupacion !== null) {
+            formData.append('ocupacion', this.participanteGroup.value.ocupacion.toUpperCase());
+        }
         formData.append('etnia', this.participanteGroup.value.etnia);
         formData.append('nacionalidad', this.participanteGroup.value.nacionalidad);
         formData.append('pueblo', this.participanteGroup.value.pueblo);
         formData.append('fecha_nacimiento', this.participanteGroup.value.fecha_nacimiento);
-        formData.append('direccion', this.participanteGroup.value.direccion.toUpperCase());
+        if(this.participanteGroup.value.direccion !== null) {
+            formData.append('direccion', this.participanteGroup.value.direccion.toUpperCase());
+        }
         formData.append('telefono_fijo', this.participanteGroup.value.telefono_fijo);
         formData.append('operadora', this.participanteGroup.value.operadora);
         formData.append('contacto', this.participanteGroup.value.contacto);
         formData.append('email', this.participanteGroup.value.email);
 
-console.log(formData);
-        // this.participanteService.store(formData)
-        //     .subscribe((res: any) => {
-        //         this.toastrService.success('Registrado', 'Participante')
-        //         this.participanteGroup.reset();
-        //     }, (error) => {
-        //         this.toastrService.error('duplicado', 'Participante');
-        //     });
+         this.participanteService.store(formData)
+             .subscribe((res: any) => {
+                 this.toastrService.success('Registrado', 'Participante')
+                 this.participanteGroup.reset();
+             }, (error) => {
+                 this.toastrService.error('duplicado', 'Participante');
+             });
     }
 
     searchPerson() {
