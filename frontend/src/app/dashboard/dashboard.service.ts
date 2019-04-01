@@ -11,6 +11,9 @@ export class DashboardService {
     index() {
         return this.http.get(`${this.base}reportes`);
     }
+    numero_asistentes() {
+        return this.http.get(`${this.base}reportes-num_asistencia`);
+    }
     listar() {
         return this.http.get(`${this.base}reportes-listar`);
     }

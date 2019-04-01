@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import * as Chartist from 'chartist';
 import {environment} from '../../environments/environment.prod';
-import {OrganizacionService} from '../organizacion/organizacion.service';
 import {ToastrService} from 'ngx-toastr';
 import {DashboardService} from './dashboard.service';
-
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -17,7 +14,9 @@ export class DashboardComponent implements OnInit {
     pages: any = [];
     current_page: any = null;
     reportes: any = null;
+    num_asistentes: any = null;
     valor = '';
+    base_imagen: string = environment.servidor + 'eventos-imagen/';
     constructor(private dashboardService: DashboardService,
                 private toastr: ToastrService) {
         this.dashboardService.index()
@@ -29,6 +28,7 @@ export class DashboardComponent implements OnInit {
                 this.last_page = this.reportes.last_page;
                 this.loadPages();
             });
+        this.num_asistentes = dashboardService.numero_asistentes();
     }
     ngOnInit() {
     }

@@ -103,6 +103,10 @@ Route::prefix('v1')->group(function () {
 //Resumen
         Route::get('resumenes-listar', 'API\ResumenController@listar');
         Route::get('resumenes-buscar/{valor?}', 'API\ResumenController@buscar');
+//Reportes
+//        Route::get('reportes-numero_asistentes/{valor?}', 'API\ReporteController@numero_asistentes');
+        Route::get('reportes-num_asistencia', 'API\ResumenController@num_asistencia');
+
 //consultas
         Route::get('sri/{cedula}', 'API\PersonaController@sri');
         /*login*/

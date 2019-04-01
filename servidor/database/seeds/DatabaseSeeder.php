@@ -30,7 +30,8 @@ class DatabaseSeeder extends Seeder
             '/insumos/tipo-insumos/listar',
             '/ubicaciones/listar',
             '/usuarios/listar',
-            '/resumenes/listar'
+            '/resumenes/listar',
+            '/ejecutoras/crear'
         ];
         //TIPO USUARIOS
         $cargo = \App\Cargo::create(
