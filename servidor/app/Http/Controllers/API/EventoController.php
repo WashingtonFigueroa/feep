@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Evento;
+use App\Participante;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -110,5 +111,29 @@ class EventoController extends Controller
             $evento->save();
         }
         return $this->index();
+    }
+
+    /*
+     * Cantidad de varones, mujeres de un evento
+     *
+     * */
+    public function reporte($evento_id) {
+        $data = [];
+        $varones = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
+                ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+                ->where('participantes.evento_id', '=',$evento_id)
+                ->where('personas.genero', '=', 'MASCULINO')
+                ->count();
+
+        $mujeres = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
+                ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+                ->where('participantes.evento_id', '=',$evento_id)
+                ->where('personas.genero', '=', 'FEMENINO')
+                ->count();
+
+        return response()->json([
+            'varones' => $varones,
+            'mujeres' => $mujeres
+        ]);
     }
 }

@@ -32,6 +32,8 @@ Route::prefix('v1')->group(function () {
     Route::get('evento-participantes/{evento_id}', 'API\EventoController@participantes');
 
     Route::get('cargo-privilegios/{cargo_id}', 'API\CargoController@privilegios');
+    Route::get('reporte/{evento_id}','API\EventoController@reporte');
+
     Route::group(['middleware' => 'auth:api'], function () {
         Route::post('get-usuario', 'API\UsuarioController@getUsuario');
 //cambiar imagenes
