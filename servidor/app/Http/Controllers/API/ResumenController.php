@@ -10,7 +10,19 @@ class ResumenController extends Controller
 {
     public function index()
     {
-        return response()->json(Resumen::orderBy('resumen_id','desc')->paginate(10), 200);
+        $personas= Resumen::join('eventos','eventos.evento_id','=','resumenes.evento_id')
+            ->selectRaw('resumenes.*, eventos.nombre as evento')
+            ->orderBy('resumenes.resumen_id','desc')
+            ->paginate(10);
+        return response()->json($personas, 200);
+    }
+    public function buscar($valor = '') {
+        $participante = Resumen::join('eventos','eventos.evento_id','=','resumenes.evento_id')
+            ->where('eventos.nombre', 'like', '%' . $valor . '%')
+            ->selectRaw('resumenes.*, eventos.nombre as evento')
+            ->orderBy('resumenes.resumen_id','desc')
+            ->paginate(10);
+        return response()->json($participante, 200);
     }
     public function listar()
     {

@@ -14,7 +14,8 @@ class ParticipanteController extends Controller
     {
         $personas= Participante::join('eventos','eventos.evento_id','=','participantes.evento_id')
             ->join('personas','personas.persona_id','=','participantes.persona_id')
-            ->selectRaw('participantes.*, eventos.nombre as evento, personas.nombres as persona')
+            ->join('organizaciones', 'organizaciones.organizacion_id', '=', 'personas.organizacion_id')
+            ->selectRaw('participantes.*, eventos.nombre as evento, personas.nombres as persona, organizaciones.nombre as organizacion')
             ->orderBy('participantes.participante_id','desc')
             ->paginate(10);
         return response()->json($personas, 200);

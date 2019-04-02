@@ -56,30 +56,30 @@ class DatabaseSeeder extends Seeder
                 'cargo_id' => $cargo->cargo_id]
         );
 //TIPO ORGANIZACIONES
+        \App\TipoOrganizacion::create(['nombre' => 'OTRO/A','descripcion' => '']);
         \App\TipoOrganizacion::create(['nombre' => 'ASOCIATIVA','descripcion' => '']);
         \App\TipoOrganizacion::create(['nombre' => 'FAMILIAR','descripcion' => '']);
-        \App\TipoOrganizacion::create(['nombre' => 'OTRO/A','descripcion' => '']);
 //ACTIVIDADES
+        \App\Actividad::create(['nombre' => 'OTRO/A','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'PRODUCCIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'SERVICIO','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'TRANSFORMACIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'COMERCIALIZACIÓN','descripcion' => '']);
         \App\Actividad::create(['nombre' => 'FINANCIERA','descripcion' => '']);
-        \App\Actividad::create(['nombre' => 'OTRO/A','descripcion' => '']);
 //TIPO PROYECTOS
+        \App\TipoProyecto::create(['nombre' => 'OTRO/A','descripcion' => '']);
         \App\TipoProyecto::create(['nombre' => 'RECREACIÓN','descripcion' => 'FUNDAMENTAL PARA LA VIDA']);
         \App\TipoProyecto::create(['nombre' => 'COMUNICACIÓN','descripcion' => 'DESARROLLO']);
-        \App\TipoProyecto::create(['nombre' => 'OTRO/A','descripcion' => '']);
 //TIPO EVENTOS
+        \App\TipoEvento::create(['nombre' => 'OTRO/A','descripcion' => '']);
         \App\TipoEvento::create(['nombre' => 'TALLER','descripcion' => 'CREACIÓN DE UN PRODUCTO']);
         \App\TipoEvento::create(['nombre' => 'PINTURA','descripcion' => 'ARTES PLASTICAS']);
-        \App\TipoEvento::create(['nombre' => 'OTRO/A','descripcion' => '']);
 
 //TIPO INSUMOS
+        \App\TipoInsumo::create(['nombre' => 'OTRO/A','descripcion' => '']);
         \App\TipoInsumo::create(['nombre' => 'AGRÍCOLA','descripcion' => '']);
         \App\TipoInsumo::create(['nombre' => 'PECUARIO','descripcion' => '']);
         \App\TipoInsumo::create(['nombre' => 'TECNOLÓGICO','descripcion' => '']);
-        \App\TipoInsumo::create(['nombre' => 'OTRO/A','descripcion' => '']);
 //SUMINISTROS
         \App\Suministro::create(['tipo_insumo_id' => 1,'nombre' => 'OTRO/A','descripcion' => '']);
 //        \App\Suministro::create(['tipo_insumo_id' => 1, 'nombre' => 'PLANTAS','descripcion' => '']);

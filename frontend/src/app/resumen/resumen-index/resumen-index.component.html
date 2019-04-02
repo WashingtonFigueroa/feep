@@ -7,6 +7,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
+              <br>
               <h3>&nbsp;&nbsp;Resumen de los Eventos</h3>
               <div class="container">
                 <div class="row">
@@ -50,7 +51,7 @@
                       <td> {{ resumen.num_ninios }} </td>
                       <td> {{ resumen.observaciones }} </td>
                       <td class="text-center">
-                        <a routerLink="/resumenes/editar/{{resumen.resumen_id}}" title="Editar Persona" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                        <!--<a routerLink="/resumenes/editar/{{resumen.resumen_id}}" title="Editar Persona" class="action action-edit"> <i class="fas fa-edit"></i> </a>-->
                         <a (click)="destroy(resumen, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                       </td>
                     </tr>

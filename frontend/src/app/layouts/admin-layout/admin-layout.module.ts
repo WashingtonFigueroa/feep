@@ -125,6 +125,7 @@ import { ResumenUpdateComponent } from '../../resumen/resumen-update/resumen-upd
 import { ResumenCreateComponent } from '../../resumen/resumen-create/resumen-create.component';
 import { ResumenService} from '../../resumen/resumen.service';
 import {DashboardService} from '../../dashboard/dashboard.service';
+import { EventoReporteComponent } from '../../evento/evento-reporte/evento-reporte.component';
 
 @NgModule({
   imports: [
@@ -233,6 +234,7 @@ import {DashboardService} from '../../dashboard/dashboard.service';
     ResumenIndexComponent,
     ResumenUpdateComponent,
     ResumenCreateComponent,
+      EventoReporteComponent,
   ],
   providers: [
       OrganizacionService,

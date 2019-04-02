@@ -7,6 +7,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
+              <br>
               <h3>&nbsp;&nbsp; Lista Eventos</h3>
               <div class="container">
                 <div class="row">
@@ -33,7 +34,6 @@
                         <thead style="background-color: #303030; color: #f7f7f7">
                       <th> #   </th>
                       <th> Proyecto   </th>
-                      <th> Tipo   </th>
                       <th> Nombre   </th>
                       <th> Imagen   </th>
                       <th> Dirección </th>
@@ -45,7 +45,6 @@
                     <tr *ngFor="let evento of eventos.data; let i = index">
                       <td>  {{i+1}} </td>
                       <td>  {{ evento.proyecto }} </td>
-                      <td>  {{ evento.tipo_evento }} </td>
                       <td>  {{ evento.nombre }} </td>
                       <td>
                         <span *ngIf="!evento.imagen" class="badge badge-danger">Sin imagen</span>
@@ -62,6 +61,7 @@
                                title="Cambiar Imagen"
                                class="action action-info"><i class="fas fa-upload"></i></label>
                         <input type="file" id="imagen-{{evento.evento_id}}" class="hidden" (change)="cambiarImagen(evento.evento_id)">
+                        <a routerLink="/eventos/reporte/{{ evento.evento_id }}" title="Ver Reporte" class="action action-edit"> <i class="far fa-clipboard"></i> </a>
                       </td>
                     </tr>
                     </tbody>
@@ -83,9 +83,6 @@
         </div>
       </div>
     </div>
-  </div>
+ </div>
 </div>
-
-
-
 

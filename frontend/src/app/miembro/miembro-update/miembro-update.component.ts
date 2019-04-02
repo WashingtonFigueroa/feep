@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {ActivatedRoute, Router} from "@angular/router";
-import {ToastrService} from "ngx-toastr";
-import {MiembroService} from "../miembro.service";
-import {TipoPersonaService} from "../../tipo-persona/tipo-persona.service";
-import {OrganizacionService} from "../../organizacion/organizacion.service";
-import {UbicacionService} from "../../ubicacion/ubicacion.service";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute, Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {MiembroService} from '../miembro.service';
+import {TipoPersonaService} from '../../tipo-persona/tipo-persona.service';
+import {OrganizacionService} from '../../organizacion/organizacion.service';
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
 
 @Component({
   selector: 'app-miembro-update',
@@ -16,7 +16,7 @@ export class MiembroUpdateComponent implements OnInit {
     persona_id: number = null;
     persona: any = null;
     personaGroup: FormGroup;
-    tipo_personas : any = null;
+    tipo_personas: any = null;
     organizaciones: any = null;
     parroquias: any = null;
     constructor(private personaService: MiembroService,
@@ -26,7 +26,7 @@ export class MiembroUpdateComponent implements OnInit {
                 private fb: FormBuilder,
                 private router: Router,
                 private route: ActivatedRoute,
-                private toastrService:ToastrService) {
+                private toastrService: ToastrService) {
         this.tipopersonaService.listar()
             .subscribe((res: any) => {
                 this.tipo_personas = res;
@@ -75,7 +75,7 @@ export class MiembroUpdateComponent implements OnInit {
     update() {
         this.personaService.update(this.persona_id, this.personaGroup.value)
             .subscribe((res: any) => {
-              this.toastrService.success('Datos Actualizados','Persona');
+              this.toastrService.success('Datos Actualizados', 'Persona');
                 this.router.navigate(['/miembros']);
             });
     }

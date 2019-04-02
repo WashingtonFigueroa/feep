@@ -2,9 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/feep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/feep.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/ngx-toastr/toastr.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/ngx-toastr/toastr.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/anexo/anexo-update/anexo-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/anexo/anexo-update/anexo-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/mike.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/mike.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ResumenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ResumenController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
@@ -47,330 +96,62 @@
     </expand>
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="660396286">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="46" />
+          <entry key="php" value="14" />
+          <entry key="scss" value="1" />
+          <entry key="ts" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="46" />
+          <entry key="PHP" value="14" />
+          <entry key="SCSS" value="1" />
+          <entry key="TypeScript" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="3" />
+          <entry key="TsLintLanguageService" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="732" />
+          <entry key="php" value="422" />
+          <entry key="ts" value="571" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="732" />
+          <entry key="PHP" value="422" />
+          <entry key="TypeScript" value="571" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="53" column="49" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="49" />
-              <folding>
-                <element signature="e#7#26#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
-              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-              <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-              <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-              <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-              <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
-              <caret line="154" column="9" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/936b7b39-d9f9-43c5-87f9-4ab2205067b8/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://DATABASE/936b7b39-d9f9-43c5-87f9-4ab2205067b8">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>936b7b39-d9f9-43c5-87f9-4ab2205067b8</OriginalElement>
-              <nodes>
-                <node x="1577.71875" y="453.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_insumos</node>
-                <node x="1248.7588888888888" y="2052.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.resumenes</node>
-                <node x="749.0713888888888" y="1688.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.asignacion_eventos</node>
-                <node x="1006.0713888888888" y="1578.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos</node>
-                <node x="135.85124999999994" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.actividades</node>
-                <node x="448.8838888888889" y="442.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias</node>
-                <node x="2285.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_personas</node>
-                <node x="645.8512499999999" y="1071.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos</node>
-                <node x="239.75" y="906.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones</node>
-                <node x="2536.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_auth_codes</node>
-                <node x="340.85124999999994" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_organizaciones</node>
-                <node x="2077.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_access_tokens</node>
-                <node x="1361.71875" y="1115.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.privilegios</node>
-                <node x="1568.71875" y="1115.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_suministros</node>
-                <node x="449.88388888888903" y="210.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ciudades</node>
-                <node x="916.7916666666667" y="674.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios</node>
-                <node x="482.2916666666667" y="1677.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ejecutoras</node>
-                <node x="1547.46875" y="2140.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.insumos</node>
-                <node x="708.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.password_resets</node>
-                <node x="278.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_refresh_tokens</node>
-                <node x="918.5088888888888" y="1093.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios</node>
-                <node x="1139.71875" y="1126.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_eventos</node>
-                <node x="1259.2916666666667" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.cargos</node>
-                <node x="1833.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_clients</node>
-                <node x="592.8512499999999" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_proyectos</node>
-                <node x="22.25" y="1556.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas</node>
-                <node x="449.88388888888903" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.provincias</node>
-                <node x="294.0" y="2184.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizacion_eventos</node>
-                <node x="903.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.hoja1</node>
-                <node x="0.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_personal_access_clients</node>
-                <node x="510.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.migrations</node>
-                <node x="1577.71875" y="674.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.suministros</node>
-                <node x="1568.71875" y="1688.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipos</node>
-                <node x="75.0" y="2173.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.participantes</node>
-                <node x="1020.0713888888888" y="2184.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.anexos</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones">
-                  <point x="51.25" y="-223.0" />
-                  <point x="176.0" y="1536.0" />
-                  <point x="278.41666666666674" y="1536.0" />
-                  <point x="-77.33333333333331" y="300.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_proyectos">
-                  <point x="-53.0" y="-135.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_eventos">
-                  <point x="76.125" y="-201.0" />
-                  <point x="1183.6963888888888" y="1536.0" />
-                  <point x="1240.71875" y="1536.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_suministros">
-                  <point x="0.0" y="-91.0" />
-                  <point x="0.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.insumos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-                  <point x="-43.75" y="-135.0" />
-                  <point x="1591.21875" y="2022.0" />
-                  <point x="1188.7713888888889" y="2022.0" />
-                  <point x="81.20000000000005" y="201.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.suministros" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_insumos">
-                  <point x="0.0" y="-91.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias">
-                  <point x="-51.25" y="-223.0" />
-                  <point x="73.5" y="649.0" />
-                  <point x="495.8838888888889" y="649.0" />
-                  <point x="-47.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.cargos">
-                  <point x="0.0" y="-113.0" />
-                  <point x="1004.5088888888888" y="886.0" />
-                  <point x="1300.7916666666667" y="886.0" />
-                  <point x="-41.5" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_organizaciones">
-                  <point x="58.0" y="-300.0" />
-                  <point x="413.75" y="886.0" />
-                  <point x="456.85124999999994" y="886.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios">
-                  <point x="-25.375" y="-201.0" />
-                  <point x="1082.1963888888888" y="1536.0" />
-                  <point x="1047.5088888888888" y="1536.0" />
-                  <point x="43.0" y="113.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_suministros" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.suministros">
-                  <point x="0.0" y="-91.0" />
-                  <point x="0.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias">
-                  <point x="1.1368683772161603E-13" y="-91.0" />
-                  <point x="1010.7916666666667" y="649.0" />
-                  <point x="589.8838888888889" y="649.0" />
-                  <point x="47.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.privilegios" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.cargos">
-                  <point x="0.0" y="-91.0" />
-                  <point x="1455.21875" y="886.0" />
-                  <point x="1383.7916666666667" y="886.0" />
-                  <point x="41.5" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.resumenes" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-                  <point x="0.0" y="-223.0" />
-                  <point x="1342.7588888888888" y="2032.0" />
-                  <point x="1148.1713888888887" y="2032.0" />
-                  <point x="40.59999999999991" y="201.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.asignacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos">
-                  <point x="-59.25" y="-91.0" />
-                  <point x="808.3213888888888" y="1536.0" />
-                  <point x="751.8512499999999" y="1536.0" />
-                  <point x="0.0" y="135.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos">
-                  <point x="-76.125" y="-201.0" />
-                  <point x="1031.4463888888888" y="1526.0" />
-                  <point x="822.5179166666665" y="1526.0" />
-                  <point x="70.66666666666663" y="135.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones">
-                  <point x="-61.75" y="-91.0" />
-                  <point x="0.0" y="300.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.asignacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios">
-                  <point x="59.25" y="-91.0" />
-                  <point x="926.8213888888888" y="1536.0" />
-                  <point x="961.5088888888888" y="1536.0" />
-                  <point x="-43.0" y="113.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.participantes" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-                  <point x="49.75" y="-102.0" />
-                  <point x="224.25" y="2022.0" />
-                  <point x="1026.3713888888888" y="2022.0" />
-                  <point x="-81.20000000000005" y="201.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ciudades">
-                  <point x="5.6843418860808015E-14" y="-91.0" />
-                  <point x="0.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ejecutoras" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones">
-                  <point x="-50.5" y="-102.0" />
-                  <point x="532.7916666666667" y="1536.0" />
-                  <point x="433.0833333333333" y="1536.0" />
-                  <point x="77.33333333333331" y="300.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-                  <point x="61.75" y="-91.0" />
-                  <point x="479.25" y="2032.0" />
-                  <point x="1066.971388888889" y="2032.0" />
-                  <point x="-40.59999999999991" y="201.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios">
-                  <point x="53.0" y="-135.0" />
-                  <point x="804.8512499999999" y="886.0" />
-                  <point x="963.7916666666667" y="886.0" />
-                  <point x="-47.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.participantes" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas">
-                  <point x="-49.75" y="-102.0" />
-                  <point x="0.0" y="223.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.actividades">
-                  <point x="-58.0" y="-300.0" />
-                  <point x="297.75" y="886.0" />
-                  <point x="228.35124999999994" y="886.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios">
-                  <point x="25.375" y="-201.0" />
-                  <point x="1132.9463888888888" y="1536.0" />
-                  <point x="1129.21875" y="1536.0" />
-                  <point x="1129.21875" y="876.0" />
-                  <point x="1057.7916666666667" y="876.0" />
-                  <point x="47.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.insumos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipos">
-                  <point x="43.75" y="-135.0" />
-                  <point x="0.0" y="91.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ejecutoras" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos">
-                  <point x="50.5" y="-102.0" />
-                  <point x="633.7916666666667" y="1536.0" />
-                  <point x="681.1845833333332" y="1536.0" />
-                  <point x="-70.66666666666663" y="135.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ciudades" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.provincias">
-                  <point x="5.6843418860808015E-14" y="-91.0" />
-                  <point x="0.0" y="80.0" />
-                </edge>
-                <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.anexos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-                  <point x="0.0" y="-91.0" />
-                  <point x="0.0" y="201.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.5" x="155.23524904214565" y="2201.8812260536397" />
-              <SelectedNodes>
-                <node>936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
-              <folding>
-                <element signature="e#44#59#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.prod.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>latitud</find>
-      <find>organzacione</find>
       <find>table</find>
       <find>imagen</find>
       <find>hidden</find>
@@ -399,6 +180,8 @@
       <find>store</find>
       <find>evento</find>
       <find>i</find>
+      <find>evento-participante</find>
+      <find>resume</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -407,59 +190,74 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Middleware/Cors.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/navbar/navbar.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/error-interceptor.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/OrganizacionController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/936b7b39-d9f9-43c5-87f9-4ab2205067b8/console.sql" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/assets/demo/demo.css" />
-        <option value="$PROJECT_DIR$/servidor/app/Evento.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Participante.php" />
-        <option value="$PROJECT_DIR$/frontend/angular-cli.json" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_11_000000_create_cargos_table.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/cargo/cargo.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.service.ts" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/app/Privilegio.php" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2014_10_11_100000_create_privilegios_table.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php" />
-        <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/node_modules/ngx-toastr/toastr.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html" />
+        <option value="$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/936b7b39-d9f9-43c5-87f9-4ab2205067b8/console.sql" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/anexo/anexo-update/anexo-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.ts" />
+        <option value="$PROJECT_DIR$/servidor/routes/api.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.html" />
+        <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/ResumenController.php" />
+        <option value="$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.ts" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/frontend/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/frontend/package.json" />
+      <path value="$PROJECT_DIR$/servidor/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -563,32 +361,114 @@
       <path value="$PROJECT_DIR$/servidor/vendor/namshi/jose" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1366" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen-create" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen-index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen" type="462c0819:PsiDirectoryNode" />
+              <item name="resumen-update" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feep" type="462c0819:PsiDirectoryNode" />
+              <item name="servidor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/routes/api.php&#10;part&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/app/Http/Controllers/API/ParticipanteController.php&#10;resumecont&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/app/Http/Controllers/API/ResumenController.php&#10;ResumenController&#9;null&#9;null&#10;partici&#9;null&#9;null&#10;EventoController&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/app/Http/Controllers/API/EventoController.php&#10;api.&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/routes/api.php&#10;side&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/components/sidebar/sidebar.component.ts&#10;jwt&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/jwt-interceptor.ts&#10;jwt-in&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/frontend/src/app/jwt-interceptor.ts&#10;eventocontr&#9;FILE&#9;file://C:/wamp64/www/DTMOWED/feep/servidor/app/Http/Controllers/API/EventoController.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nordentrx" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/frontend/node_modules/tslint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="C:\Users\HP User\Documents\trabajos\washington\fepp\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\wamp64\www\DTMOWED\feep\frontend\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -637,17 +517,19 @@
       <workItem from="1552667763563" duration="4787000" />
       <workItem from="1552676966272" duration="2649000" />
       <workItem from="1554094109503" duration="2469000" />
+      <workItem from="1554126344612" duration="14278000" />
+      <workItem from="1554176165681" duration="1497000" />
+      <workItem from="1554217382207" duration="20674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119264000" />
+    <option name="totallyTimeSpent" value="155713000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.32980332" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.27231467" />
       <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -660,7 +542,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.85057473" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20783645" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.6853448" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -670,791 +552,423 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.22919819" />
+      <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3633218" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.6853448" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.32902297" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.33282906" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/servidor/storage/app/eventos/VCuYL7RIrHYb38opygGr3xKurJKPeK049sZwxCo5.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="90">
+          <caret line="128" column="17" lean-forward="true" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Persona.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.scss">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="324">
+          <caret line="150" column="27" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="150" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/demo/demo.css">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/cf391114-94cb-48a0-903f-8a433fefe78f.SCHEMA:fepp">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>cf391114-94cb-48a0-903f-8a433fefe78f.SCHEMA:fepp</OriginalElement>
-          <nodes>
-            <node x="1304.0754310344828" y="680.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_organizaciones</node>
-            <node x="1578.0754310344828" y="691.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.actividades</node>
-            <node x="0.0" y="1068.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_suministros</node>
-            <node x="506.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_refresh_tokens</node>
-            <node x="9.0" y="680.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.suministros</node>
-            <node x="470.0" y="1079.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_eventos</node>
-            <node x="1216.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.password_resets</node>
-            <node x="262.0" y="1079.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.privilegios</node>
-            <node x="273.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_auth_codes</node>
-            <node x="1423.689655172414" y="914.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones</node>
-            <node x="387.31465517241384" y="691.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.cargos</node>
-            <node x="594.1810344827586" y="1998.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.anexos</node>
-            <node x="1346.689655172414" y="1998.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizacion_eventos</node>
-            <node x="1235.6185344827586" y="446.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias</node>
-            <node x="1981.939655172414" y="0.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_clients</node>
-            <node x="853.3060344827586" y="1588.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.asignacion_eventos</node>
-            <node x="734.9935344827586" y="1046.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios</node>
-            <node x="991.5754310344828" y="1024.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos</node>
-            <node x="608.3060344827586" y="1478.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos</node>
-            <node x="996.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.migrations</node>
-            <node x="0.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_personas</node>
-            <node x="1236.6185344827586" y="0.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.provincias</node>
-            <node x="9.0" y="457.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_insumos</node>
-            <node x="1638.689655172414" y="1987.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.participantes</node>
-            <node x="2253.939655172414" y="0.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_access_tokens</node>
-            <node x="1236.6185344827586" y="212.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ciudades</node>
-            <node x="1050.0754310344828" y="691.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_proyectos</node>
-            <node x="1693.189655172414" y="1456.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas</node>
-            <node x="1189.314655172414" y="1577.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ejecutoras</node>
-            <node x="730.3146551724138" y="680.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios</node>
-            <node x="0.0" y="1588.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipos</node>
-            <node x="760.0" y="2271.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.oauth_personal_access_clients</node>
-            <node x="71.75" y="1954.0">cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.insumos</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ejecutoras" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones">
-              <point x="56.75" y="-103.0" />
-              <point x="1359.564655172414" y="1436.0" />
-              <point x="1466.0229885057472" y="1436.0" />
-              <point x="-84.66666666666669" y="246.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.cargos">
-              <point x="0.0" y="-114.0" />
-              <point x="833.4935344827586" y="884.0" />
-              <point x="528.3146551724138" y="884.0" />
-              <point x="47.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos">
-              <point x="84.375" y="-202.0" />
-              <point x="805.1810344827586" y="1436.0" />
-              <point x="1030.5754310344828" y="1436.0" />
-              <point x="-78.0" y="136.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones">
-              <point x="68.0" y="-92.0" />
-              <point x="0.0" y="246.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios">
-              <point x="28.125" y="-202.0" />
-              <point x="748.9310344827586" y="1436.0" />
-              <point x="784.2435344827586" y="1436.0" />
-              <point x="-49.25" y="114.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.privilegios" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.cargos">
-              <point x="0.0" y="-81.0" />
-              <point x="356.0" y="894.0" />
-              <point x="434.31465517241384" y="894.0" />
-              <point x="-47.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios">
-              <point x="-28.125" y="-202.0" />
-              <point x="692.6810344827586" y="1436.0" />
-              <point x="704.5" y="1436.0" />
-              <point x="704.5" y="894.0" />
-              <point x="782.8146551724138" y="894.0" />
-              <point x="-52.5" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.insumos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
-              <point x="49.25" y="-136.0" />
-              <point x="219.5" y="1934.0" />
-              <point x="636.4310344827586" y="1934.0" />
-              <point x="-84.375" y="202.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_proyectos">
-              <point x="58.5" y="-136.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.anexos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
-              <point x="0.0" y="-92.0" />
-              <point x="-28.125" y="202.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.suministros" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_insumos">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_suministros" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.suministros">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_suministros">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ejecutoras" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos">
-              <point x="-56.75" y="-103.0" />
-              <point x="1246.064655172414" y="1436.0" />
-              <point x="1186.5754310344828" y="1436.0" />
-              <point x="78.0" y="136.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.participantes" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas">
-              <point x="56.0" y="-103.0" />
-              <point x="0.0" y="224.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ciudades">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.asignacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.usuarios">
-              <point x="-64.75" y="-92.0" />
-              <point x="918.0560344827586" y="1426.0" />
-              <point x="882.7435344827586" y="1426.0" />
-              <point x="49.25" y="114.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.actividades">
-              <point x="63.5" y="-246.0" />
-              <point x="1614.189655172414" y="894.0" />
-              <point x="1681.5754310344828" y="894.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios">
-              <point x="-58.5" y="-136.0" />
-              <point x="1050.0754310344828" y="894.0" />
-              <point x="887.8146551724138" y="894.0" />
-              <point x="52.5" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
-              <point x="-68.0" y="-92.0" />
-              <point x="1414.689655172414" y="1934.0" />
-              <point x="748.9310344827586" y="1934.0" />
-              <point x="28.125" y="202.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.participantes" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos">
-              <point x="-56.0" y="-103.0" />
-              <point x="1694.689655172414" y="1924.0" />
-              <point x="805.1810344827586" y="1924.0" />
-              <point x="84.375" y="202.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.ciudades" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.provincias">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.barrios" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias">
-              <point x="0.0" y="-92.0" />
-              <point x="835.3146551724138" y="655.0" />
-              <point x="1288.1185344827586" y="655.0" />
-              <point x="-52.5" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.parroquias">
-              <point x="56.75" y="-224.0" />
-              <point x="1863.439655172414" y="655.0" />
-              <point x="1393.1185344827586" y="655.0" />
-              <point x="52.5" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_eventos">
-              <point x="-84.375" y="-202.0" />
-              <point x="636.4310344827586" y="1436.0" />
-              <point x="582.0" y="1436.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.asignacion_eventos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.proyectos">
-              <point x="64.75" y="-92.0" />
-              <point x="1047.5560344827586" y="1436.0" />
-              <point x="1108.5754310344828" y="1436.0" />
-              <point x="0.0" y="136.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.insumos" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipos">
-              <point x="-49.25" y="-136.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.tipo_organizaciones">
-              <point x="-63.5" y="-246.0" />
-              <point x="1487.189655172414" y="894.0" />
-              <point x="1431.0754310344828" y="894.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.personas" target="cf391114-94cb-48a0-903f-8a433fefe78f.TABLE:fepp.organizaciones">
-              <point x="-56.75" y="-224.0" />
-              <point x="1749.939655172414" y="1436.0" />
-              <point x="1635.3563218390805" y="1436.0" />
-              <point x="84.66666666666669" y="246.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0999999999999999" x="1287.0" y="1775.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://cf391114-94cb-48a0-903f-8a433fefe78f/schema/fepp/table/eventos" />
-    <entry file="file://$PROJECT_DIR$/servidor/app/Parroquia.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Evento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Participante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="233">
+          <caret line="71" column="11" lean-forward="true" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a494b34c-7860-4455-92b5-2bfc3e6ee1e8/console.sql" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Cargo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2014_10_11_000000_create_cargos_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/cargo/cargo.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2014_10_11_100000_create_privilegios_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a494b34c-7860-4455-92b5-2bfc3e6ee1e8/schema/fepp/table/privilegios" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/privilegio/privilegio.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Privilegio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="288">
+          <caret line="31" column="74" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        <state relative-caret-position="450">
+          <caret line="130" column="38" selection-start-line="130" selection-start-column="38" selection-end-line="130" selection-end-column="38" />
+          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/tipo-proyecto/tipo-proyecto-index/tipo-proyecto-index.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="246">
+          <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/Auth/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
-            <element signature="e#0#79#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="345">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.routing.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/jwt-interceptor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="234">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard/cards/_card-user.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/auth.guard.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="81" column="24" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="81" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="251">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/UsuarioController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-index/miembro-index.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="684">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="27" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/autenticacion.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="-108">
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/CargoController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="2682">
+          <caret line="149" column="18" lean-forward="true" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/PrivilegioController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-update/proyecto-update.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+        <state relative-caret-position="336">
+          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.prod.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="432">
+          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/.env">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="180">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="161" column="14" lean-forward="true" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-index/ejecutora-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-create/ejecutora-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/servidor/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="53" column="49" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="49" />
+        <state relative-caret-position="-504">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="94" column="81" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="154" column="42" lean-forward="true" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
           <folding>
-            <element signature="e#7#26#0#PHP" expanded="true" />
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-create/inscripcion-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
-          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-          <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-          <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-          <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-          <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
-          <caret line="154" column="9" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="9" />
+        <state relative-caret-position="-1603">
+          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/inscripcion/inscripcion-index/inscripcion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-update/anexo-update.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-update/anexo-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-index/asignacion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-update/asignacion-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion/asignacion-create/asignacion-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen-update/resumen-update.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="68" column="56" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="68" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ParticipanteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="106" column="29" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/936b7b39-d9f9-43c5-87f9-4ab2205067b8">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>936b7b39-d9f9-43c5-87f9-4ab2205067b8</OriginalElement>
-          <nodes>
-            <node x="1577.71875" y="453.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_insumos</node>
-            <node x="1248.7588888888888" y="2052.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.resumenes</node>
-            <node x="749.0713888888888" y="1688.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.asignacion_eventos</node>
-            <node x="1006.0713888888888" y="1578.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos</node>
-            <node x="135.85124999999994" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.actividades</node>
-            <node x="448.8838888888889" y="442.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias</node>
-            <node x="2285.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_personas</node>
-            <node x="645.8512499999999" y="1071.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos</node>
-            <node x="239.75" y="906.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones</node>
-            <node x="2536.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_auth_codes</node>
-            <node x="340.85124999999994" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_organizaciones</node>
-            <node x="2077.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_access_tokens</node>
-            <node x="1361.71875" y="1115.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.privilegios</node>
-            <node x="1568.71875" y="1115.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_suministros</node>
-            <node x="449.88388888888903" y="210.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ciudades</node>
-            <node x="916.7916666666667" y="674.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios</node>
-            <node x="482.2916666666667" y="1677.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ejecutoras</node>
-            <node x="1547.46875" y="2140.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.insumos</node>
-            <node x="708.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.password_resets</node>
-            <node x="278.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_refresh_tokens</node>
-            <node x="918.5088888888888" y="1093.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios</node>
-            <node x="1139.71875" y="1126.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_eventos</node>
-            <node x="1259.2916666666667" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.cargos</node>
-            <node x="1833.71875" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_clients</node>
-            <node x="592.8512499999999" y="685.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_proyectos</node>
-            <node x="22.25" y="1556.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas</node>
-            <node x="449.88388888888903" y="0.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.provincias</node>
-            <node x="294.0" y="2184.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizacion_eventos</node>
-            <node x="903.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.hoja1</node>
-            <node x="0.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.oauth_personal_access_clients</node>
-            <node x="510.0" y="2543.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.migrations</node>
-            <node x="1577.71875" y="674.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.suministros</node>
-            <node x="1568.71875" y="1688.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipos</node>
-            <node x="75.0" y="2173.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.participantes</node>
-            <node x="1020.0713888888888" y="2184.0">936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.anexos</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones">
-              <point x="51.25" y="-223.0" />
-              <point x="176.0" y="1536.0" />
-              <point x="278.41666666666674" y="1536.0" />
-              <point x="-77.33333333333331" y="300.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_proyectos">
-              <point x="-53.0" y="-135.0" />
-              <point x="0.0" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_eventos">
-              <point x="76.125" y="-201.0" />
-              <point x="1183.6963888888888" y="1536.0" />
-              <point x="1240.71875" y="1536.0" />
-              <point x="0.0" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_suministros">
-              <point x="0.0" y="-91.0" />
-              <point x="0.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.insumos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-              <point x="-43.75" y="-135.0" />
-              <point x="1591.21875" y="2022.0" />
-              <point x="1188.7713888888889" y="2022.0" />
-              <point x="81.20000000000005" y="201.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.suministros" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_insumos">
-              <point x="0.0" y="-91.0" />
-              <point x="0.0" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias">
-              <point x="-51.25" y="-223.0" />
-              <point x="73.5" y="649.0" />
-              <point x="495.8838888888889" y="649.0" />
-              <point x="-47.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.cargos">
-              <point x="0.0" y="-113.0" />
-              <point x="1004.5088888888888" y="886.0" />
-              <point x="1300.7916666666667" y="886.0" />
-              <point x="-41.5" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_organizaciones">
-              <point x="58.0" y="-300.0" />
-              <point x="413.75" y="886.0" />
-              <point x="456.85124999999994" y="886.0" />
-              <point x="0.0" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios">
-              <point x="-25.375" y="-201.0" />
-              <point x="1082.1963888888888" y="1536.0" />
-              <point x="1047.5088888888888" y="1536.0" />
-              <point x="43.0" y="113.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipo_suministros" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.suministros">
-              <point x="0.0" y="-91.0" />
-              <point x="0.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias">
-              <point x="1.1368683772161603E-13" y="-91.0" />
-              <point x="1010.7916666666667" y="649.0" />
-              <point x="589.8838888888889" y="649.0" />
-              <point x="47.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.privilegios" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.cargos">
-              <point x="0.0" y="-91.0" />
-              <point x="1455.21875" y="886.0" />
-              <point x="1383.7916666666667" y="886.0" />
-              <point x="41.5" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.resumenes" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-              <point x="0.0" y="-223.0" />
-              <point x="1342.7588888888888" y="2032.0" />
-              <point x="1148.1713888888887" y="2032.0" />
-              <point x="40.59999999999991" y="201.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.asignacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos">
-              <point x="-59.25" y="-91.0" />
-              <point x="808.3213888888888" y="1536.0" />
-              <point x="751.8512499999999" y="1536.0" />
-              <point x="0.0" y="135.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos">
-              <point x="-76.125" y="-201.0" />
-              <point x="1031.4463888888888" y="1526.0" />
-              <point x="822.5179166666665" y="1526.0" />
-              <point x="70.66666666666663" y="135.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones">
-              <point x="-61.75" y="-91.0" />
-              <point x="0.0" y="300.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.asignacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.usuarios">
-              <point x="59.25" y="-91.0" />
-              <point x="926.8213888888888" y="1536.0" />
-              <point x="961.5088888888888" y="1536.0" />
-              <point x="-43.0" y="113.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.participantes" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-              <point x="49.75" y="-102.0" />
-              <point x="224.25" y="2022.0" />
-              <point x="1026.3713888888888" y="2022.0" />
-              <point x="-81.20000000000005" y="201.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.parroquias" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ciudades">
-              <point x="5.6843418860808015E-14" y="-91.0" />
-              <point x="0.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ejecutoras" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones">
-              <point x="-50.5" y="-102.0" />
-              <point x="532.7916666666667" y="1536.0" />
-              <point x="433.0833333333333" y="1536.0" />
-              <point x="77.33333333333331" y="300.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizacion_eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-              <point x="61.75" y="-91.0" />
-              <point x="479.25" y="2032.0" />
-              <point x="1066.971388888889" y="2032.0" />
-              <point x="-40.59999999999991" y="201.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios">
-              <point x="53.0" y="-135.0" />
-              <point x="804.8512499999999" y="886.0" />
-              <point x="963.7916666666667" y="886.0" />
-              <point x="-47.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.participantes" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.personas">
-              <point x="-49.75" y="-102.0" />
-              <point x="0.0" y="223.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.organizaciones" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.actividades">
-              <point x="-58.0" y="-300.0" />
-              <point x="297.75" y="886.0" />
-              <point x="228.35124999999994" y="886.0" />
-              <point x="0.0" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.barrios">
-              <point x="25.375" y="-201.0" />
-              <point x="1132.9463888888888" y="1536.0" />
-              <point x="1129.21875" y="1536.0" />
-              <point x="1129.21875" y="876.0" />
-              <point x="1057.7916666666667" y="876.0" />
-              <point x="47.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.insumos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.tipos">
-              <point x="43.75" y="-135.0" />
-              <point x="0.0" y="91.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ejecutoras" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.proyectos">
-              <point x="50.5" y="-102.0" />
-              <point x="633.7916666666667" y="1536.0" />
-              <point x="681.1845833333332" y="1536.0" />
-              <point x="-70.66666666666663" y="135.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.ciudades" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.provincias">
-              <point x="5.6843418860808015E-14" y="-91.0" />
-              <point x="0.0" y="80.0" />
-            </edge>
-            <edge source="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.anexos" target="936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos">
-              <point x="0.0" y="-91.0" />
-              <point x="0.0" y="201.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.5" x="155.23524904214565" y="2201.8812260536397" />
-          <SelectedNodes>
-            <node>936b7b39-d9f9-43c5-87f9-4ab2205067b8.TABLE:fepp.eventos</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/ResumenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen-index/resumen-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+        <state relative-caret-position="234">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/936b7b39-d9f9-43c5-87f9-4ab2205067b8/console.sql">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="162">
+          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="125">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
           <folding>
-            <element signature="e#44#59#0#PHP" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>

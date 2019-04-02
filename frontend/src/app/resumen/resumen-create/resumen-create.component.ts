@@ -29,10 +29,10 @@ export class ResumenCreateComponent implements OnInit {
         this.resumenGroup = this.fb.group({
             'evento_id': [0, [Validators.required]],
             'asistentes': [''],
-            'num_mujeres': [''],
-            'num_ninias': [''],
-            'num_hombre': [''],
-            'num_ninios': [''],
+            'num_mujeres': [0],
+            'num_ninias': [0],
+            'num_hombre': [0],
+            'num_ninios': [0],
             'indigena': [''],
             'afroecuatoriano': [''],
             'negro': [''],
@@ -45,9 +45,13 @@ export class ResumenCreateComponent implements OnInit {
         });
     }
     store() {
+        const total = this.resumenGroup.value.num_mujeres +
+            this.resumenGroup.value.num_ninias +
+            this.resumenGroup.value.num_hombre +
+            this.resumenGroup.value.num_ninios;
         const formData = new FormData();
         formData.append('evento_id', this.resumenGroup.value.evento_id);
-        formData.append('asistentes', this.resumenGroup.value.asistentes);
+        formData.append('asistentes', total);
         formData.append('num_mujeres', this.resumenGroup.value.num_mujeres);
         formData.append('num_ninias', this.resumenGroup.value.num_ninias);
         formData.append('num_hombre', this.resumenGroup.value.num_hombre);
@@ -64,7 +68,7 @@ export class ResumenCreateComponent implements OnInit {
         this.resumenService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Registrado', 'Resumen');
-                this.router.navigate(['/resumens']);
+                this.router.navigate(['/resumenes']);
             }, (error) => {
                 this.toastrService.error('duplicado', 'Resumen');
             });

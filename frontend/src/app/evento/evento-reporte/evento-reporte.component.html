@@ -1,0 +1,163 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+         &nbsp; &nbsp;  <button class="btn btn-dark" routerLink="/eventos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
+              <h5 class="title">&nbsp;&nbsp;Reporte Evento</h5>
+        <div class="card-body">
+          <form [formGroup]="eventoGroup"
+                *ngIf="evento !== null && proyectos !== null && tipo_eventos !== null && barrios !== null" role="form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="proyecto_id">Proyecto</label>
+                  <ng-select [items]="proyectos"
+                             class="custom"
+                             id="proyecto_id"
+                             bindLabel="nombre"
+                             bindValue="proyecto_id"
+                             formControlName="proyecto_id">
+                  </ng-select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="tipo_evento_id">Tipo Evento</label>
+                  <ng-select [items]="tipo_eventos"
+                             class="custom"
+                             id="tipo_evento_id"
+                             bindLabel="nombre"
+                             bindValue="tipo_evento_id"
+                             formControlName="tipo_evento_id">
+                  </ng-select>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Tema</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Ubicación</label>
+                  <ng-select [items]="barrios"
+                             class="custom"
+                             id="barrio_id"
+                             bindLabel="nombre"
+                             bindValue="barrio_id"
+                             formControlName="barrio_id">
+                  </ng-select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Dirección</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Fecha Evento</label>
+                  <input type="date" class="form-control" formControlName="fecha_evento" name="fecha_evento" disabled>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Fecha Finaliza Evento</label>
+                  <input type="date" class="form-control" formControlName="fecha_finaliza" name="fecha_finaliza" id="fecha_finaliza" disabled>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Tiempo de Duración (Horas)</label>
+                  <input type="number" onKeyPress="if(this.value.length==2) return false;" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas" disabled>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <table class="table" *ngIf="reportes != null">
+                    <thead>
+                    <tr>
+                      <th>
+                        #
+                      </th>
+                      <th>
+                        Parámetro
+                      </th>
+                      <th>
+                        Número
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td> 1 </td>
+                      <td> N° Hombres </td>
+                      <td> {{reportes.varones}} </td>
+                    </tr>
+                    <tr class="table-active">
+                      <td> 2 </td>
+                      <td> N° Muejeres </td>
+                      <td> {{reportes.mujeres}} </td>
+                    </tr>
+                    <tr class="table-success">
+                      <td> 3 </td>
+                      <td> N° Total </td>
+                      <td> {{reportes.varones + reportes.mujeres}} </td>
+                    </tr>
+                    <tr class="table-warning">
+                      <td> 4 </td>
+                      <td> N° Afroecuatoriano </td>
+                      <td> {{reportes.afro}} </td>
+                    </tr>
+                    <tr class="table-danger">
+                      <td> 5 </td>
+                      <td> N° Indígena </td>
+                      <td> {{reportes.indigena}} </td>
+                    </tr>
+                    <tr>
+                      <td> 6 </td>
+                      <td> N° Mestizo / Montubio </td>
+                      <td> {{reportes.mestizo}} </td>
+                    </tr>
+                    <!--<tr class="table-active">-->
+                      <!--<td> 7 </td>-->
+                      <!--<td> N° Adultos </td>-->
+                      <!--<td> {{reportes.mujeres}} </td>-->
+                    <!--</tr>-->
+                    <!--<tr class="table-success">-->
+                      <!--<td> 8 </td>-->
+                      <!--<td> N° Niños </td>-->
+                      <!--<td> {{reportes.varones + reportes.mujeres}} </td>-->
+                    <!--</tr>-->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

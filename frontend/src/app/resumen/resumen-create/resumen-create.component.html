@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-md-2">
             <div class="form-group">
-              &nbsp; &nbsp; <button class="btn btn-info" routerLink="/anexos"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
+              &nbsp; &nbsp; <button class="btn btn-info" routerLink="/resumenes"><span class="fa fa-caret-left"></span> &nbsp; Atras</button>
 
             </div>
           </div>
@@ -33,10 +33,10 @@
                   </ng-select>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-6">
                 <div class="form-group">
-                  <label>N° Total A</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres" name="mujeres" id="to">
+                  <label>Observacion :</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="observaciones" name="observaciones">
                 </div>
               </div>
             </div>
@@ -44,34 +44,52 @@
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Mujeres</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres" name="mujeres" id="mujeres">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="num_mujeres" name="num_mujeres" id="num_mujeres">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Niñas</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninias" name="ninias" id="ninias">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="num_ninias" name="num_ninias" id="num_ninias">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Hombres</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="hombres" name="hombres" id="hombres">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="num_hombre" name="num_hombre" id="num_hombre">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Niños</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninios" name="ninios" id="ninios">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="num_ninios" name="num_ninios" id="num_ninios">
                 </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <div class="form-group">
-                  <label>Descripción</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion">
+                  <label>N° Mestizos/Montibios</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mestizo" name="mestizo" id="mestizo">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Afroecuatorianos</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="afroecuatoriano" name="afroecuatoriano" id="afroecuatoriano">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Indigenas</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="indigena" name="indigena" id="indigena">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>N° Otros</label>
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="otro" name="otro" id="otro">
                 </div>
               </div>
             </div>
@@ -84,7 +102,7 @@
                       <span class="fa fa-save"></span>
                     </button>&nbsp;&nbsp;
                     <a class="btn btn-dark"
-                       routerLink="/anexos/listar">Cancelar &nbsp;
+                       routerLink="/resumenes/listar">Cancelar &nbsp;
                       <span class="fa fa-window-close"></span>
                     </a>
                   </div>
@@ -98,12 +116,12 @@
     <div class="col-md-4">
       <div class="card card-user">
         <div class="image">
-          <img src="../assets/img/bg5.jpg" alt="...">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
         </div>
-        <div class="card-body">
+        <div class="card-body" >
           <div class="author">
-            <br><br>
-            <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+            <br><br><br><br>
+            <img #preview src="../assets/img/mike.jpg" width="250px">
           </div>
         </div>
       </div>

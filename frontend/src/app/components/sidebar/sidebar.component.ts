@@ -40,7 +40,7 @@ export class SidebarComponent implements OnInit {
       return true;
   };
   go(url: string) {
-      console.log(url);
+     // console.log(url);
       this.router.navigate([url]);
   }
 }

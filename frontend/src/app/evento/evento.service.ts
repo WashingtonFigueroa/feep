@@ -23,6 +23,9 @@ export class EventoService {
     show(id) {
         return this.http.get(`${this.base}eventos/${id}`);
     }
+    reporte(id) {
+        return this.http.get(`${this.base}reporte/${id}`);
+    }
     store(request) {
         return this.http.post(`${this.base}eventos`, request);
     }

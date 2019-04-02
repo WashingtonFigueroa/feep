@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {UbicacionService} from '../../ubicacion/ubicacion.service';
-import {ActivatedRoute, Router} from '@angular/router';
-import {ToastrService} from 'ngx-toastr';
 import {EventoService} from '../evento.service';
 import {ProyectoService} from '../../proyecto/proyecto.service';
 import {TipoEventoService} from '../../tipo-evento/tipo-evento.service';
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
+import {ActivatedRoute, Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
-  selector: 'app-evento-update',
-  templateUrl: './evento-update.component.html',
-  styleUrls: ['./evento-update.component.scss']
+  selector: 'app-evento-reporte',
+  templateUrl: './evento-reporte.component.html',
+  styleUrls: ['./evento-reporte.component.scss']
 })
-export class EventoUpdateComponent implements OnInit {
+export class EventoReporteComponent implements OnInit {
     evento_id: number = null;
     evento: any = null;
     eventoGroup: FormGroup;
     proyectos: any = null;
     tipo_eventos: any = null;
     barrios: any = null;
+    reportes: any = null;
     constructor(private eventoService: EventoService,
                 private proyectoService: ProyectoService,
                 private tipoeventoService: TipoEventoService,
@@ -27,20 +28,24 @@ export class EventoUpdateComponent implements OnInit {
                 private router: Router,
                 private route: ActivatedRoute,
                 private toastrService: ToastrService) {
-      this.proyectoService.listar().subscribe((res: any) => {
-        this.proyectos = res;
-      });
-      this.tipoeventoService.listar().subscribe((res: any) => {
-                this.tipo_eventos = res;
-            });
+        this.proyectoService.listar().subscribe((res: any) => {
+            this.proyectos = res;
+        });
+        this.tipoeventoService.listar().subscribe((res: any) => {
+            this.tipo_eventos = res;
+        });
         this.barrioService.barrioslistar().subscribe((res: any) => {
-                this.barrios = res;
-            });
+            this.barrios = res;
+        });
         this.route.params.subscribe((param: any) => {
             this.evento_id = param.id;
             this.eventoService.show(this.evento_id).subscribe((res: any) => {
                 this.evento = res;
                 this.crearForm(res);
+            });
+            this.eventoService.reporte(this.evento_id).subscribe((res: any) => {
+                this.reportes = res;
+                // console.log(this.reportes);
             });
         });
     }
@@ -57,20 +62,5 @@ export class EventoUpdateComponent implements OnInit {
             'duracion_horas': [evento.duracion_horas, [Validators.required]],
             'fecha_finaliza': [evento.fecha_finaliza, [Validators.required]]
         });
-    }
-    update() {
-        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento)
-        { this.eventoGroup.patchValue({
-            nombre: this.eventoGroup.value.nombre.toUpperCase(),
-            direccion: this.eventoGroup.value.direccion.toUpperCase()
-        });
-            this.eventoService.update(this.evento_id, this.eventoGroup.value).subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados', 'Evento');
-                this.router.navigate(['/eventos']);
-            });
-        } else {
-            this.toastrService.warning('Rango de Fechas', 'Error');
-        }
-
     }
 }

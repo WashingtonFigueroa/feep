@@ -32,7 +32,6 @@ export class EventoIndexComponent implements OnInit {
 
     ngOnInit() {
     }
-
     loadPages() {
         this.pages = [];
         for (let i = 1; i <= this.last_page; i++) {
@@ -42,7 +41,6 @@ export class EventoIndexComponent implements OnInit {
             });
         }
     }
-
     loadPagination(url: string) {
         this.eventoService.pagination(url)
             .subscribe((res: any) => {
@@ -66,6 +64,7 @@ export class EventoIndexComponent implements OnInit {
                 this.loadPages();
             });
     }
+
     destroy(evento, index) {
         if (confirm('Esta seguro de eliminar al evento ' + evento.nombres)) {
             this.eventoService.destroy(evento.evento_id)

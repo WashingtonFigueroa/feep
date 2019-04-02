@@ -102,7 +102,7 @@ export class InscripcionIndexComponent implements OnInit {
                     format: 'letter'
                 });
                 const coord = {
-                  x: 40,
+                  x: 10,
                   y: 40
                 };
 
@@ -117,8 +117,7 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.text('DIRECCIÓN:', coord.x, coord.y);
                 doc.setFontType('normal');
                 doc.text(res.evento.direccion, coord.x + 120, coord.y);
-
-                coord.y = coord.y + 10;
+                coord.y = coord.y + 15;
                 const inicio =  res.evento.fecha_inicio.split('-')[2] + '/' +
                                 res.evento.fecha_inicio.split('-')[1] + '/' +
                                 res.evento.fecha_inicio.split('-')[0];
@@ -136,22 +135,21 @@ export class InscripcionIndexComponent implements OnInit {
                 doc.setFontType('normal');
                 doc.text(fin, coord.x + 100, coord.y);
 
-                coord.x = 40;
+                coord.x = 10;
                 coord.y = coord.y + 40;
 
                 doc.setFontSize(10);
                 doc.setFontType('bold');
                 doc.text('N.', coord.x + 10, coord.y);
                 doc.text('PARTICIPANTE', coord.x + 30, coord.y);
-                doc.text('GENERO', coord.x + 220, coord.y);
-                doc.text('CÉCULA', coord.x + 280, coord.y);
-                doc.text('ETNIA', coord.x + 340, coord.y);
-                doc.text('DIRECCIÓN', coord.x + 405, coord.y);
-                doc.text('CONTACTO', coord.x + 560, coord.y);
-                doc.text('FIRMA', coord.x + 640, coord.y);
+                doc.text('DOCUMENTO', coord.x + 230, coord.y);
+                doc.text('ASOCIACIÓN', coord.x + 310, coord.y);
+                doc.text('EMAIL', coord.x + 450, coord.y);
+                doc.text('CONTACTO', coord.x + 600, coord.y);
+                doc.text('FIRMA', coord.x + 700, coord.y);
 
-                doc.line(coord.x, coord.y - 15, coord.x + 690, coord.y - 15);
-                doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
+                doc.line(coord.x, coord.y - 15, coord.x + 770, coord.y - 15);
+                doc.line(coord.x, coord.y + 10, coord.x + 770, coord.y + 10);
                 let i = 1;
                 doc.setFontSize(8);
                 doc.setFontType('normal');
@@ -159,17 +157,20 @@ export class InscripcionIndexComponent implements OnInit {
                     coord.y = coord.y + 24;
                     doc.text(i.toString(), coord.x + 10, coord.y);
                     doc.text(participante.nombres.toUpperCase(), coord.x + 30, coord.y);
-                    doc.text(participante.genero.toUpperCase(), coord.x + 220, coord.y);
-                    doc.text(participante.cedula, coord.x + 280, coord.y);
-                    doc.text(participante.etnia.toUpperCase(), coord.x + 340, coord.y);
-                    doc.text(participante.direccion.toUpperCase(), coord.x + 405, coord.y);
-                    if (participante.contacto === null){
-                        doc.text('', coord.x + 560, coord.y);
+                    doc.text(participante.cedula, coord.x + 230, coord.y);
+                    doc.text(participante.organizacion.toUpperCase(), coord.x + 310, coord.y);
+                    if (participante.email === null) {
+                        doc.text('', coord.x + 405, coord.y);
                     } else {
-                        doc.text(participante.contacto, coord.x + 560, coord.y);
+                        doc.text(participante.email, coord.x + 450, coord.y);
                     }
-                    doc.text('', coord.x + 640, coord.y);
-                    doc.line(coord.x, coord.y + 10, coord.x + 690, coord.y + 10);
+                    if (participante.contacto === null) {
+                        doc.text('', coord.x + 600, coord.y);
+                    } else {
+                        doc.text(participante.contacto, coord.x + 600, coord.y);
+                    }
+                    doc.text('', coord.x + 770, coord.y);
+                    doc.line(coord.x, coord.y + 10, coord.x + 770, coord.y + 10);
                     i++;
                 });
                 // Save the PDF

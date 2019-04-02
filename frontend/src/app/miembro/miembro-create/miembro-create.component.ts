@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {OrganizacionService} from '../../organizacion/organizacion.service';
 import {Router} from '@angular/router';
-import {UbicacionService} from "../../ubicacion/ubicacion.service";
-import {MiembroService} from "../miembro.service";
-import {ToastrService} from "ngx-toastr";
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
+import {MiembroService} from '../miembro.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-miembro-create',
@@ -15,7 +15,7 @@ export class MiembroCreateComponent implements OnInit {
     miembroGroup: FormGroup;
     organizaciones: any = null;
     parroquias: any = null;
-    //Buscador Cedula
+    // Buscador Cedula
     mostrar = false;
     miembros: any = [];
     persona: any = {
@@ -41,7 +41,7 @@ export class MiembroCreateComponent implements OnInit {
                 private parroquiasService: UbicacionService,
                 private router: Router,
                 private fb: FormBuilder,
-                private toastrService:ToastrService) {
+                private toastrService: ToastrService) {
         this.organizacionService.listar()
             .subscribe((res: any) => {
                 this.organizaciones = res;
@@ -49,7 +49,7 @@ export class MiembroCreateComponent implements OnInit {
         this.parroquiasService.parroquiaslistar().subscribe((res: any) => {
             this.parroquias = [];
             res.forEach(
-                (parroquia:any)=>{
+                (parroquia: any) => {
                     this.parroquias.push({
                         parroquia_id: parroquia.parroquia_id,
                         nombre:  parroquia.ciudad + ' - ' + parroquia.nombre
@@ -67,9 +67,9 @@ export class MiembroCreateComponent implements OnInit {
             'parroquia_id': [2048, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
-            'genero': ['MASCULINO'],
+            'genero': ['M'],
             'ocupacion': [''],
-            'etnia': ['MESTIZO/A'],
+            'etnia': ['MESTIZO/MONTUBIO'],
             'nacionalidad': ['NO APLICA'],
             'pueblo': ['NO APLICA'],
             'fecha_nacimiento': [''],
@@ -81,7 +81,7 @@ export class MiembroCreateComponent implements OnInit {
         });
     }
     store() {
-        if (this.miembroGroup.value.nombres != '') {
+        if (this.miembroGroup.value.nombres !== '') {
             const formData = new FormData();
             formData.append('organizacion_id', this.miembroGroup.value.organizacion_id);
             formData.append('parroquia_id', this.miembroGroup.value.parroquia_id);
@@ -102,9 +102,9 @@ export class MiembroCreateComponent implements OnInit {
                 .subscribe((res: any) => {
                     this.toastrService.success('Agregada', 'Persona')
                     this.resetPersona();
-                    //this.miembroGroup.reset();
+                    // this.miembroGroup.reset();
                 }, (error) => {
-                    this.toastrService.warning('Registrada','Persona');
+                    this.toastrService.warning('Registrada', 'Persona');
                 });
         }
     }
@@ -125,10 +125,10 @@ export class MiembroCreateComponent implements OnInit {
             'persona_id' : 0,
             'organizacion_id': 1,
             'parroquia_id': 2048,
-            'nombres':'',
-            'genero': 'MASCULINO',
+            'nombres': '',
+            'genero': 'M',
             'ocupacion': '',
-            'etnia': 'MESTIZO/A',
+            'etnia': 'MESTIZO/MONTUBIO',
             'nacionalidad': 'NO APLICA',
             'pueblo': 'NO APLICA',
             'fecha_nacimiento': '',

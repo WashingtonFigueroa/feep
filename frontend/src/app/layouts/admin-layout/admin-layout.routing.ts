@@ -92,6 +92,8 @@ import {ResumenComponent} from '../../resumen/resumen.component';
 import {ResumenIndexComponent} from '../../resumen/resumen-index/resumen-index.component';
 import {ResumenCreateComponent} from '../../resumen/resumen-create/resumen-create.component';
 import {ResumenUpdateComponent} from '../../resumen/resumen-update/resumen-update.component';
+import {EventoReporteComponent} from '../../evento/evento-reporte/evento-reporte.component';
+
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -291,24 +293,28 @@ export const AdminLayoutRoutes: Routes = [
                 component: EventoUpdateComponent
             },
             {
+                path: 'reporte/:id',
+                component: EventoReporteComponent
+            },
+            {
                 path: '',
                 redirectTo: 'listar'
             },
         ]
     },
-    { path: 'resumenes',  component:ResumenComponent, canActivate: [AuthGuard],
+    { path: 'resumenes',  component: ResumenComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
-                component:ResumenIndexComponent
+                component: ResumenIndexComponent
             },
             {
                 path: 'crear',
-                component:ResumenCreateComponent
+                component: ResumenCreateComponent
             },
             {
                 path: 'editar/:id',
-                component:ResumenUpdateComponent
+                component: ResumenUpdateComponent
             },
             {
                 path: '',
