@@ -39,7 +39,7 @@
                         <th> Nombre </th>
                         <th> Representante </th>
                         <th> Contacto </th>
-                        <th> N° Personas </th>
+                        <th> N°.P. </th>
                         <th class="text-center">Operaciones</th>
                       </thead>
                       <tbody>
@@ -59,8 +59,8 @@
                         <td> {{ organizacion.contacto }} </td>
                         <td class="text-center"> {{ organizacion.total }} </td>
                         <td class="text-center">
-                          <a routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit"></i> </a>
-                          <a (click)="destroy(organizacion, i)" title="Eliminar Proyecto" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                          <a routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" title="Editar Organización" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                          <a (click)="destroy(organizacion, i)" title="Eliminar Organización" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                           <label for="imagen-{{organizacion.organizacion_id}}"
                                  title="Cambiar Imagen"
                                  class="action action-info"><i class="fas fa-upload"></i></label>

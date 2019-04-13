@@ -36,9 +36,19 @@ export class TipoEventoUpdateComponent implements OnInit {
         });
     }
     update() {
+        this.tipoeventoGroup.patchValue({
+            nombre: this.tipoeventoGroup.value.nombre.toUpperCase(),
+            descripcion: this.tipoeventoGroup.value.descripcion.toUpperCase(),
+        });
         this.tipoeventoService.update(this.tipoevento_id, this.tipoeventoGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Actualizado', 'Tipo Evento')
+                this.toastrService.success('Tipo Evento Actualizado.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/tipoeventos']);
             });
     }

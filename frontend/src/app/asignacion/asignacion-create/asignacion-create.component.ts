@@ -5,6 +5,7 @@ import {Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
 import {AsignacionService} from "../asignacion.service";
 import {TipoService} from "../../tipo/tipo.service";
+import {MiembroService} from '../../miembro/miembro.service';
 
 @Component({
   selector: 'app-asignacion-create',
@@ -16,14 +17,16 @@ export class AsignacionCreateComponent implements OnInit {
     insumoGroup: FormGroup;
     eventos: any = null;
     tipos: any = null;
+    personas: any = null;
     today: Date;
     constructor(private insumoService: AsignacionService,
                 private tipoService: TipoService,
+                private personasService: MiembroService,
                 private eventoService: EventoService,
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
-        this.today =new Date();
+        this.today = new Date();
         this.tipoService.listar()
             .subscribe((res: any) => {
                 this.tipos = res;
@@ -32,6 +35,17 @@ export class AsignacionCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.eventos = res;
             });
+        this.personasService.listar().subscribe((res: any) => {
+            this.personas = [];
+            res.forEach(
+                (persona: any) => {
+                    this.personas.push({
+                        persona_id: persona.persona_id,
+                        nombres:  persona.nombres
+                    });
+                }
+            )
+        });
         this.crearForm();
     }
     ngOnInit() {

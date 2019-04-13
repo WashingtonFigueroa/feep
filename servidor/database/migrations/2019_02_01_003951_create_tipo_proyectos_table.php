@@ -15,7 +15,7 @@ class CreateTipoProyectosTable extends Migration
     {
         Schema::create('tipo_proyectos', function (Blueprint $table) {
             $table->increments('tipo_proyecto_id');
-            $table->string('nombre');
+            $table->string('nombre')->unique();
             $table->string('descripcion')->nullable();
             $table->softDeletes();
             $table->timestamps();

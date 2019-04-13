@@ -2,17 +2,6 @@
 
 use Illuminate\Http\Request;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -21,7 +10,7 @@ Route::prefix('v1')->group(function () {
     Route::post('login', 'API\UsuarioController@login');
     Route::post('signup', 'API\UsuarioController@signup');
 
-    //Imágenes
+//Imágenes
     Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
     Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
     Route::get('anexos-archivo/{url}', 'API\AnexoController@imagen');
@@ -93,8 +82,6 @@ Route::prefix('v1')->group(function () {
 //Cargos
         Route::resource('cargos', 'API\CargoController');
         Route::resource('privilegios', 'API\PrivilegioController');
-//los privilegios de un cargo
-/*        Route::get('privilegios-cargo/{cargo_id}', 'API\PrivilegioController@privilegios');*/
 //Usuarios
         Route::get('usuarios-listar', 'API\UsuarioController@listar');
         Route::get('usuarios-buscar/{valor?}', 'API\UsuarioController@buscar');
@@ -106,7 +93,6 @@ Route::prefix('v1')->group(function () {
         Route::get('resumenes-listar', 'API\ResumenController@listar');
         Route::get('resumenes-buscar/{valor?}', 'API\ResumenController@buscar');
 //Reportes
-//        Route::get('reportes-numero_asistentes/{valor?}', 'API\ReporteController@numero_asistentes');
         Route::get('reportes-num_asistencia', 'API\ResumenController@num_asistencia');
         Route::get('reporte/{evento_id}','API\EventoController@reporte');
 //consultas

@@ -40,9 +40,19 @@ export class ActividadUpdateComponent implements OnInit {
     }
 
     update() {
+        this.actividadGroup.patchValue({
+            nombre: this.actividadGroup.value.nombre.toUpperCase(),
+            descripcion: this.actividadGroup.value.descripcion.toUpperCase(),
+        });
         this.actividadService.update(this.actividad_id, this.actividadGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Actualizado','Actividad');
+                this.toastrService.info('Tipo Actividad Actualizada.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/actividades']);
             });
     }

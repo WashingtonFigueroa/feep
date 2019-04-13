@@ -119,7 +119,9 @@ class DatabaseSeeder extends Seeder
         \App\Provincia::create(['codigo' => '23','nombre' => 'SANTO DOMINGO DE LOS TSACHILAS']);
         \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
         \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
-//Cantones
+//ORGANIZACIONES
+//        \App\Organizacion::create(['tipo_organizacion_id' => 1,'actividad_id' => 1,'documento' => '','nombre' => 'PARTICULAR','caracteristica1' => 'NO REGULADA','caracteristica2' => 'BASE','caracteristica3' => 'EMPRENDIMIENTO','representante' => 'NINGUNO']);
+        //Cantones
 //      \App\Ciudad::create(['provincia_id' => 10,'codigo' => '101', 'nombre' => 'IBARRA']);
 //Parroquia
 //       \App\Parroquia::create(['ciudad_id' => 1,'codigo' => '1001', 'nombre' => 'SAN ANTONIO']);

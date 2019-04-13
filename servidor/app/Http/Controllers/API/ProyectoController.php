@@ -12,8 +12,7 @@ class ProyectoController extends Controller
     public function index()
     {
         $proyecto = Proyecto::join('tipo_proyectos', 'tipo_proyectos.tipo_proyecto_id', '=', 'proyectos.tipo_proyecto_id')
-            ->join('barrios', 'barrios.barrio_id', '=', 'proyectos.barrio_id')
-            ->selectRaw('proyectos.*, barrios.nombre as barrio, tipo_proyectos.nombre as tipoproyecto')
+            ->selectRaw('proyectos.*, tipo_proyectos.nombre as tipoproyecto')
             ->orderBy('proyectos.proyecto_id', 'desc')
             ->paginate(10);
         return response()->json($proyecto, 200);
@@ -26,13 +25,12 @@ class ProyectoController extends Controller
 
     public function buscar($valor = '') {
         $proyecto = Proyecto::join('tipo_proyectos', 'tipo_proyectos.tipo_proyecto_id', '=', 'proyectos.tipo_proyecto_id')
-            ->join('barrios', 'barrios.barrio_id', '=', 'proyectos.barrio_id')
             ->where('tipo_proyectos.nombre', 'like', '%' . $valor . '%')
             ->orWhere('proyectos.nombre', 'like', '%' . $valor . '%')
             ->orWhere('proyectos.inicio', 'like', '%' . $valor . '%')
             ->orWhere('proyectos.fin', 'like', '%' . $valor . '%')
-            ->orWhere('barrios.nombre', 'like', '%' . $valor . '%')
-            ->selectRaw('proyectos.*, barrios.nombre as barrio, tipo_proyectos.nombre as tipoproyecto')
+            ->orWhere('proyectos.ubicacion', 'like', '%' . $valor . '%')
+            ->selectRaw('proyectos.*,tipo_proyectos.nombre as tipoproyecto')
             ->orderBy('proyectos.proyecto_id', 'desc')
             ->paginate(10);
         return response()->json($proyecto, 200);

@@ -4,11 +4,12 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
+        <br>
         <h3>&nbsp;&nbsp; Lista Tipo de Eventos</h3>
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <button class="btn btn-primary" routerLink="/tipoeventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+              <button class="btn btn-info" routerLink="/tipoeventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
             </div>
             <div class="col-sm">
             </div>
@@ -25,15 +26,13 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="table-responsive small">
-            <table class="table" *ngIf="tipoEventos !== null">
+          <div *ngIf="tipoEventos !== null" class="table-responsive">
+            <table class="table">
               <thead style="background-color: #303030; color: #f7f7f7">
-              <tr>
                 <th>#</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th class="text-center">Operaciones</th>
-              </tr>
               </thead>
               <tbody>
               <tr *ngFor="let tipoevento of tipoEventos.data; let i = index">
@@ -47,12 +46,8 @@
                   {{ tipoevento.descripcion }}
                 </td>
                 <td class="text-center">
-                  <button routerLink="/tipoeventos/editar/{{tipoevento.tipo_evento_id}}" type="button" class="btn btn-xs btn-info">
-                    <i class="fa fa-edit"></i>
-                  </button>                  &nbsp;
-                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipoevento, i)">
-                    <i class="fa fa-trash"></i>
-                  </button>
+                  <a routerLink="/tipoeventos/editar/{{tipoevento.tipo_evento_id}}" title="Editar Evento" class="action action-edit"> <i class="fas fa-edit "></i> </a>
+                  <a (click)="destroy(tipoevento, i)" title="Eliminar Evento" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                 </td>
               </tr>
               </tbody>

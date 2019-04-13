@@ -21,7 +21,7 @@ export class MiembroCreateComponent implements OnInit {
     persona: any = {
         persona_id : 0,
         organizacion_id : 0,
-        parroquia_id : 0,
+        parroquia_id : 612,
         cedula : '',
         nombres : '',
         genero : '',
@@ -64,12 +64,12 @@ export class MiembroCreateComponent implements OnInit {
     crearForm() {
         this.miembroGroup = this.fb.group({
             'organizacion_id': [1, [Validators.required]],
-            'parroquia_id': [2048, [Validators.required]],
+            'parroquia_id': [612, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
-            'genero': ['M'],
+            'genero': ['', [Validators.required]],
             'ocupacion': [''],
-            'etnia': ['MESTIZO/MONTUBIO'],
+            'etnia': ['MESTIZO/A'],
             'nacionalidad': ['NO APLICA'],
             'pueblo': ['NO APLICA'],
             'fecha_nacimiento': [''],
@@ -112,7 +112,7 @@ export class MiembroCreateComponent implements OnInit {
         this.persona = {
             persona_id : 0,
             organizacion_id : 0,
-            parroquia_id : 0,
+            parroquia_id : 612,
             cedula : '',
             nombres : '',
             ocupacion : '',
@@ -124,11 +124,11 @@ export class MiembroCreateComponent implements OnInit {
         this.miembroGroup.patchValue({
             'persona_id' : 0,
             'organizacion_id': 1,
-            'parroquia_id': 2048,
+            'parroquia_id': 612,
             'nombres': '',
             'genero': 'M',
             'ocupacion': '',
-            'etnia': 'MESTIZO/MONTUBIO',
+            'etnia': 'MESTIZO/A',
             'nacionalidad': 'NO APLICA',
             'pueblo': 'NO APLICA',
             'fecha_nacimiento': '',

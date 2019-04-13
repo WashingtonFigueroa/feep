@@ -12,8 +12,6 @@ import {ActividadService} from '../../actividad/actividad.service';
   styleUrls: ['./organizacion-update.component.scss']
 })
 export class OrganizacionUpdateComponent implements OnInit {
-    @ViewChild('imagen') imagen;
-    @ViewChild('preview') preview;
     organizacion_id: number = null;
     organizacion: any = null;
     organizacionGroup: FormGroup;
@@ -50,14 +48,13 @@ export class OrganizacionUpdateComponent implements OnInit {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': new FormControl(this.organizacion.tipo_organizacion_id, [Validators.required]),
             'actividad_id': new FormControl(this.organizacion.actividad_id, [Validators.required]),
-            'documento' : new FormControl(this.organizacion.documento, [Validators.required]),
+            'documento' : new FormControl(this.organizacion.documento),
             'nombre' : new FormControl(this.organizacion.nombre, [Validators.required]),
-            'caracteristica1' : new FormControl(this.organizacion.caracteristica1, [Validators.required]),
-            'caracteristica2' : new FormControl(this.organizacion.caracteristica2, [Validators.required]),
-            'caracteristica3' : new FormControl(this.organizacion.caracteristica3, [Validators.required]),
-            'representante': new FormControl(this.organizacion.representante, [Validators.required]),
+            'caracteristica1' : new FormControl(this.organizacion.caracteristica1),
+            'caracteristica2' : new FormControl(this.organizacion.caracteristica2),
+            'caracteristica3' : new FormControl(this.organizacion.caracteristica3),
+            'representante': new FormControl(this.organizacion.representante),
             'contacto': new FormControl(this.organizacion.contacto),
-            'direccion': new FormControl(this.organizacion.direccion),
             'descripcion': new FormControl(this.organizacion.descripcion),
             'ministerio': new FormControl(this.organizacion.ministerio),
             'acuerdo': new FormControl(this.organizacion.acuerdo),
@@ -65,10 +62,7 @@ export class OrganizacionUpdateComponent implements OnInit {
             'ninias': new FormControl(this.organizacion.ninias),
             'hombres': new FormControl(this.organizacion.hombres),
             'ninios': new FormControl(this.organizacion.ninios),
-            'total': new FormControl(this.organizacion.total),
-            'latitud': new FormControl(this.organizacion.latitud),
-            'longitud': new FormControl(this.organizacion.longitud),
-            'precision': new FormControl(this.organizacion.precision)
+            'total': new FormControl(this.organizacion.total)
         });
     }
     update() {
@@ -88,14 +82,5 @@ export class OrganizacionUpdateComponent implements OnInit {
                 this.toastrService.success('Actualizada', 'Organización')
                 this.router.navigate(['/organizaciones']);
             });
-    }
-    loadImage() {
-        const imagen = this.imagen.nativeElement;
-/*        console.log(imagen.files[0]);*/
-        const reader = new FileReader();
-        reader.onload = (e: any) => {
-            this.preview.nativeElement.src = e.target.result;
-        };
-        reader.readAsDataURL(imagen.files[0]);
     }
 }

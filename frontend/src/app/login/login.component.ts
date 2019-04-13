@@ -47,10 +47,13 @@ export class LoginComponent implements OnInit {
         .pipe(first())
         .subscribe(
             data => {
-              this.toastr.success('Accediendo al sistema', 'Iniciando sesión', {
-                timeOut: 2000,
-                positionClass: 'toast-top-right'
-              });
+                this.toastr.success('Accediendo al sistema', 'Iniciando sesión',  {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
               this.router.navigate(['/dashboard']);
             },
             error => {
@@ -58,10 +61,13 @@ export class LoginComponent implements OnInit {
               console.log(error);
               this.loginGroup.reset();
               this.loading = false;
-              this.toastr.error('Credenciales incorrecta', 'Error de autenticación', {
-                timeOut: 2000,
-                positionClass: 'toast-top-right'
-              });
+                this.toastr.error('Credenciales incorrecta', 'Error de autenticación',  {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-error alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
             }
         );
   }

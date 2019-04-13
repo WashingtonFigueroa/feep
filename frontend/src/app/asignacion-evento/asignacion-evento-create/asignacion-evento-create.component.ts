@@ -16,19 +16,17 @@ export class AsignacionEventoCreateComponent implements OnInit {
     proyectoss: any = null;
     usuarios: any = null;
     asigevento = [];
+    numProyecto: any = 0;
     constructor(private asignacionproyectoService: AsignacionEventoService,
                 private proyectossService: ProyectoService,
                 private usuariosService: UsuarioService,
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
-        this.proyectossService.listar().subscribe((res: any) => {
-            this.proyectoss = res;
-        });
         this.usuariosService.listar().subscribe((res: any) => {
             this.usuarios = [];
             res.forEach(
-                (usuario:any)=>{
+                (usuario: any) => {
                     this.usuarios.push({
                         usuario_id: usuario.usuario_id,
                         nombres:  usuario.nombres
@@ -36,13 +34,18 @@ export class AsignacionEventoCreateComponent implements OnInit {
                 }
             )
         });
-        this.crearForm();
+        this.proyectossService.listar().subscribe((res: any) => {
+            this.proyectoss = res;
+            this.numProyecto = res.length;
+            this.crearForm();
+
+        });
     }
     ngOnInit() {
     }
     crearForm() {
         this.asignacionproyectoGroup = this.fb.group({
-            'proyecto_id': [0, [Validators.required]],
+            'proyecto_id': [parseInt(this.numProyecto , 10), [Validators.required]],
             'usuario_id': ['', [Validators.required]],
             'descripcion': ['']
         });
@@ -53,11 +56,24 @@ export class AsignacionEventoCreateComponent implements OnInit {
         formData.append('usuario_id', this.asignacionproyectoGroup.value.usuario_id);
         formData.append('descripcion', this.asignacionproyectoGroup.value.descripcion.toUpperCase());
         this.asignacionproyectoService.store(formData).subscribe((res: any) => {
-                this.toastrService.success('Al Proyecto', '');
-            this.asigevento.push(res);
-            this.asignacionproyectoGroup.reset();
+            this.toastrService.success('Proyecto Asignado.', 'Exitosamente', {
+                timeOut: 4000,
+                closeButton: true,
+                enableHtml: true,
+                toastClass: 'alert alert-success alert-with-icon',
+                positionClass: 'toast-top-right'
+            });
+            this.router.navigate(['/asignacioneventos']);
+           // this.asigevento.push(res);
+           // this.asignacionproyectoGroup.reset();
             }, (error) => {
-                this.toastrService.warning('Anteriormente', 'Usuario Agregado');
+            this.toastrService.warning('Proyecto Asignado', 'Duplicado', {
+                timeOut: 4000,
+                closeButton: true,
+                enableHtml: true,
+                toastClass: 'alert alert-warning alert-with-icon',
+                positionClass: 'toast-top-right'
+            });
             });
     }
 }

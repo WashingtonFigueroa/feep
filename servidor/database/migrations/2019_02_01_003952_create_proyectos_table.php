@@ -20,12 +20,8 @@ class CreateProyectosTable extends Migration
                 ->references('tipo_proyecto_id')
                 ->on('tipo_proyectos')
                 ->onDelete('cascade');
-            $table->integer('barrio_id')->unsigned();
-                $table->foreign('barrio_id')
-                    ->references('barrio_id')
-                    ->on('barrios')
-                    ->onDelete('cascade');
             $table->string('nombre')->nullable();
+            $table->string('ubicacion')->nullable();
             $table->string('imagen')->nullable();
             $table->date('inicio')->nullable();
             $table->date('fin')->nullable();

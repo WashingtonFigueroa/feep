@@ -63,7 +63,13 @@
              <div class="col-md-6">
                <div class="form-group">
                  <label>* Receptor</label>
-                 <input type="text" onKeyUp="this.value=this.value.toUpperCase();" name="receptor" id="receptor" formControlName="receptor" class="form-control">
+                 <ng-select [items]="personas"
+                            class="custom"
+                            id="receptor"
+                            bindLabel="nombres"
+                            bindValue="nombres"
+                            formControlName="receptor">
+                 </ng-select>
                </div>
              </div>
              <div class="col-md-6">

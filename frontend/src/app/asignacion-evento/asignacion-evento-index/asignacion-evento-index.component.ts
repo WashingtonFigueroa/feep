@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {environment} from "../../../environments/environment.prod";
-import {ProyectoService} from "../../proyecto/proyecto.service";
-import {AsignacionEventoService} from "../asignacion-evento.service";
+import {AsignacionEventoService} from '../asignacion-evento.service';
 
 @Component({
   selector: 'app-asignacion-evento-index',
@@ -60,7 +58,7 @@ export class AsignacionEventoIndexComponent implements OnInit {
             });
     }
     destroy(asignacion_evento, index) {
-        if (confirm('Esta seguro de eliminar el usuario del proyecto ' + asignacion_evento.nombre)) {
+        if (confirm('Esta seguro de eliminar el usuario del proyecto ' + asignacion_evento.proyecto)) {
             this.asignacionproyectoService.destroy(asignacion_evento.asignacion_evento_id)
                 .subscribe((res: any) => {
                     this.asigancionproyectos.data.splice(index, 1);

@@ -30,12 +30,28 @@ export class ActividadCreateComponent implements OnInit {
     }
 
     store() {
+        this.actividadGroup.patchValue({
+            nombre: this.actividadGroup.value.nombre.toUpperCase(),
+            descripcion: this.actividadGroup.value.descripcion.toUpperCase(),
+        });
         this.actividadService.store(this.actividadGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Datos Agredados','Actividad')
+                this.toastrService.success('Tipo Actividad Agregada.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/actividades/listar']);
             }, (error: any) => {
-                this.toastrService.warning('Datos Registrados','Actividad')
+                this.toastrService.warning('Tipo Actividad Duplicada.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-warning alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.actividadGroup.reset();
             });
     }

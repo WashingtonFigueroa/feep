@@ -1,25 +1,25 @@
 <div class="background">
-    <div class="login">
-        <img src="../../assets/img/loading.gif" *ngIf="loading">
+    <div class="login" style="background-color: rgba(0,0,0,0.90)">
+        <img src="../../assets/img/loading.gif" *ngIf="loading" width="50%">
         <form (submit)="login()" [formGroup]="loginGroup" role="form" *ngIf="!loading">
-            <h1>Iniciar Sesión</h1>
+            <h1 style="color: #ffffff">Iniciar Sesión</h1>
                 <div class="text-center">
                     <img src="../../assets/img/fepp.png">
                 </div>
             <br>
-            <h5>BIenvenido de vuelta, por favor ingrese sus credenciales.</h5>
+            <h5 style="color: #ffffff">BIenvenido de vuelta, por favor ingrese sus credenciales.</h5>
             <div *ngIf="error" class="alert alert-danger">
                 No autorizado
             </div>
             <div class="form-group">
-                <label>Cuenta</label>
+                <label style="color:#ffffff ">Cuenta</label>
                 <input type="text" class="form-control" formControlName="cuenta" name="cuenta" autofocus>
                 <div *ngIf="submitted && f.cuenta.errors" class="invalid-feedback">
                     <span *ngIf="f.cuenta.errors.required">La cuenta es obligatoria</span>
                 </div>
             </div>
             <div class="form-group">
-                <label>Contraseña</label>
+                <label style="color:#ffffff ">Contraseña</label>
                 <input type="password" formControlName="password" name="password" class="form-control">
                 <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                     <span *ngIf="f.password.errors.required">La contraseña es obligatoria</span>

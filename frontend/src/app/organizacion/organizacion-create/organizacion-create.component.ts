@@ -39,7 +39,7 @@ export class OrganizacionCreateComponent implements OnInit {
         this.organizacionGroup = this.fb.group({
             'tipo_organizacion_id': [3, [Validators.required]],
             'actividad_id': [6, [Validators.required]],
-            'documento': ['', [Validators.required]],
+            'documento': [''],
             'nombre': ['', [Validators.required]],
             'caracteristica1': ['NO REGULADA', [Validators.required]],
             'caracteristica2': ['BASE', [Validators.required]],
@@ -56,9 +56,6 @@ export class OrganizacionCreateComponent implements OnInit {
             'hombres': [''],
             'ninios': [''],
             'total': [''],
-            'latitud': [''],
-            'longitud': [''],
-            'precision': ['']
         });
     }
     store() {
@@ -90,9 +87,6 @@ export class OrganizacionCreateComponent implements OnInit {
             formData.append('hombres', this.organizacionGroup.value.hombres);
             formData.append('ninios', this.organizacionGroup.value.ninios);
             formData.append('total', total);
-            formData.append('latitud', this.organizacionGroup.value.latitud);
-            formData.append('longitud', this.organizacionGroup.value.longitud);
-            formData.append('precision', this.organizacionGroup.value.precision);
             this.organizacionService.store(formData)
                 .subscribe((res: any) => {
                     this.toastrService.success('Agregada', 'Organización');

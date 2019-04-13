@@ -32,10 +32,10 @@
                     <table class="table">
                       <thead style="background-color: #303030; color: #f7f7f7">
                       <th> # </th>
+                      <th> Imagen   </th>
+                      <th> Nombre Proyecto</th>
                       <th> Tipo Proyecto </th>
                       <th> Lugar </th>
-                      <th> Nombre </th>
-                      <th> Imagen   </th>
                       <th> Fecha Finaliza </th>
                       <th class="text-center">Operaciones</th>
                       <th class="text-center">Asignar Auspiciantes</th>
@@ -43,15 +43,14 @@
                       <tbody>
                       <tr *ngFor="let proyecto of proyectos.data; let i = index">
                         <td> {{ i + 1}} </td>
+                        <td>
+                          <span *ngIf="!proyecto.imagen" class="badge badge-danger">Sin imagen</span>
+                          <img src="{{url_base}}{{proyecto.imagen}}" height="75"
+                               [alt]="proyecto.nombre" *ngIf="proyecto.imagen">
+                        </td>
+                        <td width="350px"> {{ proyecto.nombre }} </td>
                         <td> {{ proyecto.tipoproyecto }} </td>
                         <td> {{ proyecto.barrio }} </td>
-                        <td> {{ proyecto.nombre }} </td>
-                        <td>
-                        <div class="logo" *ngIf="proyecto.imagen === 'sin_imagen'">
-                          <i class="fa fa-building"></i>
-                        </div>
-                        <img *ngIf="proyecto.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{proyecto.imagen}}">
-                        </td>
                         <td> {{ proyecto.fin }} </td>
                         <td class="text-center">
                           <a routerLink="/proyectos/editar/{{proyecto.proyecto_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit "></i> </a>

@@ -43,13 +43,13 @@
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Nombres</label>
+                  <label>* Apellidos y Nombres :</label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombres" name="nombres" id="nombres">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Seleccione Organización</label>
+                  <label>* Seleccione Organización :</label>
                   <ng-select [items]="organizaciones"
                              class="custom"
                              id="organizacion_id"
@@ -63,28 +63,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Dirección</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" id="direccion">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Numero Contacto</label>
-                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>Email</label>
-                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label>* Seleccione Parroquia</label>
+                  <label>* Seleccione Parroquía :</label>
                   <ng-select [items]="parroquias"
                              class="custom"
                              id="parroquia_id"
@@ -96,13 +75,31 @@
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Fecha Nacimiento</label>
+                  <label>* Dirección :</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" id="direccion">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Numero Contacto :</label>
+                  <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Email :</label>
+                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Fecha Nacimiento :</label>
                   <input type="date" class="form-control" formControlName="fecha_nacimiento" name="fecha_nacimiento" id="fecha_nacimiento">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Genero</label>
+                  <label>* Seleccione Genero</label>
                   <select class="form-control" formControlName="genero" name="genero">
                     <option value="M">MASCULINO</option>
                     <option value="F">FEMENINO</option>
@@ -110,22 +107,23 @@
                 </div>
               </div>
             </div>
+            <hr>
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>* Ocupación</label>
+                  <label>Ocupación :</label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="ocupacion" name="ocupacion" id="ocupacion">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Telefono Fijo</label>
+                  <label>Telefono Fijo :</label>
                   <input type="text" onKeyPress="if(this.value.length==10) return false;" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="telefono_fijo" name="telefono_fijo" id="telefono_fijo">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Operadora</label>
+                  <label>Operadora :</label>
                   <select class="form-control" formControlName="operadora" name="operadora">
                     <option value="CLARO">CLARO</option>
                     <option value="MOVISTAR">MOVISTAR</option>
@@ -138,22 +136,20 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Auto Identificación étnica</label>
+                  <label>Seleccione Auto Identificación étnica :</label>
                   <select class="form-control" formControlName="etnia" name="etnia">
                     <option value="INDÍGENA">INDÍGENA</option>
                     <option value="AFROECUATORIANO/A AFRODESCENDIENTE">AFROECUATORIANO/A AFRODESCENDIENTE</option>
-                    <!--<option value="NEGRO/A">NEGRO/A</option>-->
-                    <!--<option value="MULATO/A">MULATO/A</option>-->
-                    <!--<option value="MONTUBIO/A">MONTUBIO/A</option>-->
-                    <option value="MESTIZO/MONTUBIO">MESTIZO/MONTUBIO</option>
-                    <!--<option value="BLANCO/A">BLANCO/A</option>-->
+                    <option value="MONTUBIO/A">MONTUBIO/A</option>
+                    <option value="MESTIZO/A">MESTIZO/A</option>
+                    <option value="BLANCO/A">BLANCO/A</option>
                     <option value="OTRO/A">OTRO/A</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Nacionalidad</label>
+                  <label>Seleccione Nacionalidad :</label>
                   <select class="form-control" formControlName="nacionalidad" name="nacionalidad">
                     <option value="NO APLICA">NO APLICA</option>
                     <option value="ACHUAR">ACHUAR</option>
@@ -175,7 +171,7 @@
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Pueblos</label>
+                  <label>Seleccione Pueblo :</label>
                   <select class="form-control" formControlName="pueblo" name="pueblo">
                     <option value="NO APLICA">NO APLICA</option>
                     <option value="CHIBULEO">CHIBULEO</option>
@@ -200,7 +196,6 @@
                 </div>
               </div>
             </div>
-
             <hr>
             <div class="col-md-12 text-right">
               <button class="btn btn-info" [disabled]="miembroGroup.status === 'INVALID'" type="submit" >Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;

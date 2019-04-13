@@ -17,7 +17,7 @@ class EventoController extends Controller
             ->join('tipo_eventos', 'tipo_eventos.tipo_evento_id', '=', 'eventos.tipo_evento_id')
             ->join('barrios', 'barrios.barrio_id', '=', 'eventos.barrio_id')
                     ->selectRaw('eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario, tipo_eventos.nombre as tipo_evento, barrios.nombre as parroquia')
-                    ->orderBy('eventos.fecha_evento', 'desc')
+                    ->orderBy('eventos.evento_id', 'desc')
                     ->paginate(10);
         return response()->json($eventos, 200);
     }

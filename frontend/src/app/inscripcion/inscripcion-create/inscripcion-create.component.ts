@@ -23,7 +23,7 @@ export class InscripcionCreateComponent implements OnInit {
     persona: any = {
         persona_id : 0,
         organizacion_id : 0,
-        parroquia_id : 0,
+        parroquia_id : 1,
         cedula : '',
         nombres : '',
         genero : 'M',
@@ -75,7 +75,7 @@ export class InscripcionCreateComponent implements OnInit {
         this.persona = {
             persona_id : 0,
             organizacion_id : 0,
-            parroquia_id : 2048,
+            parroquia_id : 1,
             cedula : '',
             nombres : '',
             genero : 'M',
@@ -93,7 +93,7 @@ export class InscripcionCreateComponent implements OnInit {
         this.participanteGroup.patchValue({
             'persona_id' : 0,
             'organizacion_id' : 1,
-            'parroquia_id' : 2048,
+            'parroquia_id' : 1,
             'nombre': '',
             'genero': 'M',
             'etnia': 'MESTIZO/MONTUBIO',
@@ -113,7 +113,7 @@ export class InscripcionCreateComponent implements OnInit {
             'persona_id': [0, [Validators.required]],
             'observacion': [''],
             'organizacion_id': [1, [Validators.required]],
-            'parroquia_id': [2048, [Validators.required]],
+            'parroquia_id': [1, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
             'genero': ['M', [Validators.required]],

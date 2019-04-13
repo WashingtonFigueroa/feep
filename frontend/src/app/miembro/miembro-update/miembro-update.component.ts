@@ -58,7 +58,7 @@ export class MiembroUpdateComponent implements OnInit {
             'parroquia_id': [this.persona.parroquia_id, [Validators.required]],
             'cedula': [this.persona.cedula, [Validators.required]],
             'nombres': [this.persona.nombres],
-            'genero': [this.persona.genero],
+            'genero': [this.persona.genero, [Validators.required]],
             'ocupacion': [this.persona.ocupacion],
             'etnia': [this.persona.etnia],
             'nacionalidad': [this.persona.nacionalidad],
