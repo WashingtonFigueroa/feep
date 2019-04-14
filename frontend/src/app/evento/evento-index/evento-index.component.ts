@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {environment} from '../../../environments/environment.prod';
 import {EventoService} from '../evento.service';
 import {ToastrService} from 'ngx-toastr';
+import { ngxCsv} from 'ngx-csv/ngx-csv';
 
 @Component({
   selector: 'app-evento-index',
@@ -15,6 +16,7 @@ export class EventoIndexComponent implements OnInit {
     pages: any = [];
     current_page: any = null;
     eventos: any = null;
+    exceleventos: any = null;
     valor = '';
     base_imagen: string = environment.servidor + 'eventos-imagen/';
     constructor(private eventoService: EventoService,
@@ -22,6 +24,7 @@ export class EventoIndexComponent implements OnInit {
         this.eventoService.index()
             .subscribe((res: any) => {
                 this.eventos = res;
+                this.exceleventos = res;
                 this.current_page = this.eventos.current_page;
                 this.prev_page = this.eventos.prev_page_url;
                 this.next_page = this.eventos.next_page_url;
@@ -29,7 +32,6 @@ export class EventoIndexComponent implements OnInit {
                 this.loadPages();
             });
     }
-
     ngOnInit() {
     }
     loadPages() {
@@ -98,5 +100,15 @@ export class EventoIndexComponent implements OnInit {
         } else {
             return;
         }
+    }
+    export() {
+        const date = new Date();
+        const now = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+        this.eventoService.exporar_excel_eventos().subscribe(eventos => {
+            const csv = new ngxCsv(eventos, 'eventos-' + now , {
+                fieldSeparator: ';',
+                headers: ['Nombre Proyecto', 'Tipo Evento', 'Nombre Evento', 'Responsable', 'Ubicacion', 'Direccion', 'Fecha Inicia', 'Fecha Finaliza', 'Duracion Horas']
+            });
+        });
     }
 }

@@ -44,4 +44,7 @@ export class EventoService {
     cambiarImagen(id, req) {
         return this.http.post(`${this.base}eventos-imagen-cambiar/${id}`, req);
     }
+    exporar_excel_eventos() {
+        return this.http.get(this.base + 'exporar_excel_eventos');
+    }
 }

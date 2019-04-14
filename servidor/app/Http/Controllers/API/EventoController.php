@@ -42,6 +42,19 @@ class EventoController extends Controller
         return response()->json($eventos, 200);
     }
 
+    public function exporarExcel()
+    {
+        $eventos = Evento::join('proyectos', 'proyectos.proyecto_id', '=', 'eventos.proyecto_id')
+            ->join('usuarios', 'usuarios.usuario_id', '=', 'eventos.usuario_id')
+            ->join('tipo_eventos', 'tipo_eventos.tipo_evento_id', '=', 'eventos.tipo_evento_id')
+            ->join('barrios', 'barrios.barrio_id', '=', 'eventos.barrio_id')
+         //   ->where('eventos.estado','=',1)
+            ->selectRaw('proyectos.nombre as proyecto, tipo_eventos.nombre as tipo_evento, eventos.nombre, usuarios.nombres as usuario, barrios.nombre as parroquia, eventos.direccion, eventos.fecha_evento, eventos.fecha_finaliza, eventos.duracion_horas')
+            ->orderBy('eventos.evento_id', 'desc')
+            ->get();
+        return response()->json($eventos, 200);
+    }
+
     public function store(Request $request)
     {
         if ($request->hasFile('imagen')) {

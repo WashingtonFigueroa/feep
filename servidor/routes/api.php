@@ -72,8 +72,10 @@ Route::prefix('v1')->group(function () {
         Route::get('tipo-insumos-buscar/{valor?}', 'API\TipoInsumoController@buscar');
         Route::get('suministros-buscar/{valor?}', 'API\SuministroController@buscar');
         Route::get('tipo-suministros-buscar/{valor?}', 'API\TipoSuministroController@buscar');
+//Eventos
         Route::get('tipos-buscar/{valor?}', 'API\TipoController@buscar');
         Route::get('eventos-buscar/{valor?}', 'API\EventoController@buscar');
+        Route::get('exporar_excel_eventos', 'API\EventoController@exporarExcel');
 //Participante
         Route::get('participantes-buscar/{valor?}', 'API\ParticipanteController@buscar');
 //Suministros tipo
