@@ -17,7 +17,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/anexos', title: 'Subir Anexos',  icon: 'arrows-1_cloud-upload-94', class: '' },
     { path: '/asignaciones', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
     { path: '/resumenes', title: 'Resumen Evento',  icon: 'education_atom', class: '' },
-    { path: '/inscripciones', title: 'Inscripciones',  icon: 'design_bullet-list-67', class: '' },
+    { path: '/inscripciones', title: 'Registro',  icon: 'design_bullet-list-67', class: '' },
 ];
 
 @Component({

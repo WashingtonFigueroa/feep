@@ -22,7 +22,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="proyecto_id">* Seleccione Proyecto</label>
+                  <label for="proyecto_id">* Seleccione Proyecto :</label>
                   <ng-select [items]="proyectos"
                              class="custom"
                              id="proyecto_id"
@@ -34,7 +34,13 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="tipo_evento_id">* Seleccione Tipo Evento</label>
+                  <label>* Nombre Evento / Tema :</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" autofocus>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="tipo_evento_id">* Seleccione Tipo Evento :</label>
                   <ng-select [items]="tipo_eventos"
                              class="custom"
                              id="tipo_evento_id"
@@ -46,21 +52,15 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Tema</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="nombre" name="nombre" >
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="imagen" class="upload">Imagen o Logo <i class="fa fa-upload"></i></label>
+                  <label for="imagen" class="upload">Seleccione Imagen o Logo : <i class="fa fa-upload"></i></label>
                   <input type="file" class="form-control" #imagen (change)="loadImage()" formControlName="imagen" name="imagen" id="imagen">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <label>* Seleccione Ubicación</label>
+                  <label>* Seleccione Ubicación :</label>
                   <ng-select [items]="barrios"
                              class="custom"
                              id="barrio_id"
@@ -72,7 +72,7 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Dirección</label>
+                  <label>* Dirección Evento :</label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion">
                 </div>
               </div>
@@ -80,19 +80,19 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Fecha Evento</label>
+                  <label>* Fecha Inicia Evento :</label>
                   <input type="date" class="form-control" formControlName="fecha_evento" name="fecha_evento" >
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Fecha Finaliza Evento</label>
+                  <label>* Fecha Finaliza Evento :</label>
                   <input type="date" class="form-control" formControlName="fecha_finaliza" name="fecha_finaliza" id="fecha_finaliza">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Tiempo de Duración</label>
+                  <label>* Tiempo en horas :</label>
                   <input type="number" onKeyPress="if(this.value.length==2) return false;" class="form-control" formControlName="duracion_horas" name="duracion_horas" id="duracion_horas">
                 </div>
               </div>
@@ -117,9 +117,8 @@
                 <div class="form-group">
                   <div class="form-group">
                     <button class="btn btn-info" type="submit" [disabled]="eventoGroup.status === 'INVALID'">Guardar &nbsp;
-                      <span class="fa fa-save"></span> </button>
-                    <a class="btn btn-dark"
-                       routerLink="/eventos/listar">Cancelar &nbsp;
+                      <span class="fa fa-save"></span> </button>&nbsp;&nbsp;
+                    <a class="btn btn-dark"routerLink="/eventos/listar">Cancelar &nbsp;
                       <span class="fa fa-window-close"></span>
                     </a>
                   </div>

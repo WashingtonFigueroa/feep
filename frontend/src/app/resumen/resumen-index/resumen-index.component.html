@@ -31,7 +31,7 @@
                   <table class="table">
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <th> # </th>
-                    <th> Evento </th>
+                    <th> Nombre Evento </th>
                     <th> Total Asistentes </th>
                     <th> # Mujeres </th>
                     <th> # Hombres </th>
@@ -43,7 +43,7 @@
                     <tbody>
                     <tr *ngFor="let resumen of resumenes.data; let i = index">
                       <td> {{ i + 1}} </td>
-                      <td> {{ resumen.evento }} </td>
+                      <td width="350px"> {{ resumen.evento }} </td>
                       <td> {{ resumen.asistentes }} </td>
                       <td> {{ resumen.num_mujeres }} </td>
                       <td> {{ resumen.num_hombre }} </td>

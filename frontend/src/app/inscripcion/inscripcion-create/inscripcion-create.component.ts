@@ -118,7 +118,7 @@ export class InscripcionCreateComponent implements OnInit {
             'nombres': ['', [Validators.required]],
             'genero': ['M', [Validators.required]],
             'ocupacion': [''],
-            'etnia': ['MESTIZO/MONTUBIO'],
+            'etnia': ['MESTIZO/A'],
             'nacionalidad': ['NO APLICA'],
             'pueblo': ['NO APLICA'],
             'fecha_nacimiento': [''],
@@ -159,11 +159,22 @@ export class InscripcionCreateComponent implements OnInit {
 
          this.participanteService.store(formData)
              .subscribe((res: any) => {
-                 this.toastrService.success('Registrado', 'Participante')
-                // this.participanteGroup.reset();
-                 this.resetPersona();
+                 this.toastrService.success('Participante agregado exitosamente.', '', {
+                     timeOut: 4000,
+                     closeButton: true,
+                     enableHtml: true,
+                     toastClass: 'alert alert-success alert-with-icon',
+                     positionClass: 'toast-top-right'
+                 });
+                 this.crearForm();
              }, (error) => {
-                 this.toastrService.error('duplicado', 'Participante');
+                 this.toastrService.warning('Participante duplicado.', '', {
+                     timeOut: 4000,
+                     closeButton: true,
+                     enableHtml: true,
+                     toastClass: 'alert alert-warning alert-with-icon',
+                     positionClass: 'toast-top-right'
+                 });
              });
     }
 

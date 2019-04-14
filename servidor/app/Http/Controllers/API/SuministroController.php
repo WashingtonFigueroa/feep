@@ -17,13 +17,13 @@ class SuministroController extends Controller
     {
         $suministros = Suministro::join('tipo_insumos', 'tipo_insumos.tipo_insumo_id', '=', 'suministros.tipo_insumo_id')
                                 ->selectRaw('suministros.*, tipo_insumos.nombre as tipo_insumo')
-                                ->orderBy('nombre')
+                                ->orderBy('suministro_id','desc')
                                 ->paginate(10);
         return response()->json($suministros, 200);
     }
 
     public function listar() {
-        $suministros = Suministro::orderBy('nombre')->get();
+        $suministros = Suministro::orderBy('suministro_id','desc')->get();
         return response()->json($suministros, 200);
     }
 

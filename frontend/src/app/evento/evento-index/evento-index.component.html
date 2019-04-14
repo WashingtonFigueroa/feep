@@ -33,9 +33,9 @@
                       <table class="table">
                         <thead style="background-color: #303030; color: #f7f7f7">
                       <th> #   </th>
-                      <th> Proyecto   </th>
-                      <th> Nombre   </th>
                       <th> Imagen   </th>
+                      <th> Nombre Evento  </th>
+                      <th> Proyecto   </th>
                       <th> Dirección </th>
                       <th> Inicia </th>
                       <th> Finaliza </th>
@@ -44,13 +44,13 @@
                     <tbody>
                     <tr *ngFor="let evento of eventos.data; let i = index">
                       <td>  {{i+1}} </td>
-                      <td>  {{ evento.proyecto }} </td>
-                      <td>  {{ evento.nombre }} </td>
                       <td>
                         <span *ngIf="!evento.imagen" class="badge badge-danger">Sin imagen</span>
                         <img src="{{base_imagen}}{{evento.imagen}}" height="75"
                              [alt]="evento.nombre" *ngIf="evento.imagen">
                       </td>
+                      <td width="350px">  {{ evento.nombre }} </td>
+                      <td width="350px">  {{ evento.proyecto }} </td>
                       <td>  {{ evento.direccion }} </td>
                       <td>  {{ evento.fecha_evento | date: 'dd/MM/yyyy' }} </td>
                       <td>  {{ evento.fecha_finaliza | date: 'dd/MM/yyyy' }} </td>

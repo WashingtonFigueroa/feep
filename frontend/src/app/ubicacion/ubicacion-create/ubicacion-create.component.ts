@@ -35,7 +35,7 @@ export class UbicacionCreateComponent implements OnInit {
         this.ubicacionService.parroquiaslistar().subscribe((res: any) => {
             this.parroquias = [];
             res.forEach(
-                (parroquia:any)=>{
+                (parroquia: any) => {
                     this.parroquias.push({
                         parroquia_id: parroquia.parroquia_id,
                         nombre:  parroquia.ciudad + ' - ' + parroquia.nombre
@@ -123,7 +123,7 @@ export class UbicacionCreateComponent implements OnInit {
     crearFormbarrio() {
         this.barrioGroup = this.fb.group({
             'parroquia_id' : ['', [Validators.required]],
-            'comunidad' : ['NINGUNA'],
+            'comunidad' : [''],
             'nombre' : ['', [Validators.required]]
         });
     }

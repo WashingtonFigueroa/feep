@@ -16,7 +16,7 @@ export class SuministroIndexComponent implements OnInit {
     suministros: any = null;
     valor = '';
     constructor(private suministroService: SuministroService,
-                private toastrService:ToastrService ) {
+                private toastrService: ToastrService ) {
         this.suministroService.index().subscribe((res: any) => {
             this.suministros = res;
             this.current_page = this.suministros.current_page;

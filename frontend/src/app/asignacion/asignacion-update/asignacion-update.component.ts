@@ -6,6 +6,7 @@ import {EventoService} from '../../evento/evento.service';
 import {TipoService} from '../../tipo/tipo.service';
 import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
 import {AsignacionService} from '../asignacion.service';
+import {MiembroService} from '../../miembro/miembro.service';
 
 @Component({
   selector: 'app-asignacion-update',
@@ -18,8 +19,10 @@ export class AsignacionUpdateComponent implements OnInit {
     insumoGroup: FormGroup;
     eventos: any = null;
     tipos: any = null;
+    personas: any = null;
     constructor(private insumoService: AsignacionService,
                 private eventoService: EventoService,
+                private personasService: MiembroService,
                 private tipoService: TipoService,
                 private fb: FormBuilder,
                 private router: Router,
@@ -39,6 +42,17 @@ export class AsignacionUpdateComponent implements OnInit {
                     this.insumo = res;
                     this.crearForm();
                 });
+        });
+        this.personasService.listar().subscribe((res: any) => {
+            this.personas = [];
+            res.forEach(
+                (persona: any) => {
+                    this.personas.push({
+                        persona_id: persona.persona_id,
+                        nombres:  persona.nombres
+                    });
+                }
+            )
         });
     }
     ngOnInit() {
@@ -60,7 +74,13 @@ export class AsignacionUpdateComponent implements OnInit {
         // });
         this.insumoService.update(this.insumo_id, this.insumoGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados', 'Insumo');
+                this.toastrService.success('Insumo modificado exitosamente.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/asignaciones']);
             });
     }

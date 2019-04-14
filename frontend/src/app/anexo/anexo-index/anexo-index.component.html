@@ -31,7 +31,7 @@
                   <table class="table">
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <th> # </th>
-                    <th> Evento </th>
+                    <th> Nombre Evento </th>
                     <th> Ver Archivo </th>
                     <th> Descripción </th>
                     <th class="text-center">Operaciones</th>
@@ -39,7 +39,7 @@
                     <tbody>
                     <tr *ngFor="let anexo of anexos.data; let i = index">
                       <td> {{ i + 1}} </td>
-                      <td> {{ anexo.evento }} </td>
+                      <td width="350px"> {{ anexo.evento }} </td>
                       <td>  <a href="{{url_base}}{{anexo.archivo}}" target="_blank">Descargar</a></td>
                       <td> {{ anexo.descripcion }} </td>
                       <td class="text-center">

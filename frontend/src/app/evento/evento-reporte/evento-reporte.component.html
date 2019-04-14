@@ -42,7 +42,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label>Ubicación</label>
                   <ng-select [items]="barrios"
@@ -90,14 +90,14 @@
         <div class="image">
           <img src="../assets/img/bg5.jpg" alt="..." width="100%">
         </div>
+        <br><br><br>
         <div class="card-body">
           <div class="author">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12 ">
                   <table class="table" *ngIf="reportes != null">
-                    <thead>
-                    <tr>
+                    <thead style="background-color: #303030; color: #f7f7f7">
                       <th>
                         #
                       </th>
@@ -107,7 +107,6 @@
                       <th>
                         Número
                       </th>
-                    </tr>
                     </thead>
                     <tbody>
                     <tr>
@@ -127,17 +126,17 @@
                     </tr>
                     <tr class="table-warning">
                       <td> 4 </td>
-                      <td> N° Afroecuatoriano </td>
+                      <td> N° Afroecuatorianos </td>
                       <td> {{reportes.afro}} </td>
                     </tr>
                     <tr class="table-danger">
                       <td> 5 </td>
-                      <td> N° Indígena </td>
+                      <td> N° Indígenas </td>
                       <td> {{reportes.indigena}} </td>
                     </tr>
                     <tr>
                       <td> 6 </td>
-                      <td> N° Mestizo / Montubio </td>
+                      <td> N° Mestizos </td>
                       <td> {{reportes.mestizo}} </td>
                     </tr>
                     <!--<tr class="table-active">-->

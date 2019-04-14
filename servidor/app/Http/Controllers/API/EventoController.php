@@ -144,7 +144,7 @@ class EventoController extends Controller
         $mestizo = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
             ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
             ->where('participantes.evento_id', '=',$evento_id)
-            ->where('personas.etnia', '=', 'MESTIZO/MONTUBIO')
+            ->where('personas.etnia', '=', 'MESTIZO/A')
             ->count();
 //        $ninios = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
 //            ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')

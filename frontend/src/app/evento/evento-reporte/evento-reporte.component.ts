@@ -20,6 +20,7 @@ export class EventoReporteComponent implements OnInit {
     tipo_eventos: any = null;
     barrios: any = null;
     reportes: any = null;
+    x: any = null;
     constructor(private eventoService: EventoService,
                 private proyectoService: ProyectoService,
                 private tipoeventoService: TipoEventoService,
@@ -35,7 +36,20 @@ export class EventoReporteComponent implements OnInit {
             this.tipo_eventos = res;
         });
         this.barrioService.barrioslistar().subscribe((res: any) => {
-            this.barrios = res;
+            this.barrios = [];
+            res.forEach(
+                (barrio: any) => {
+                    if (barrio.comunidad === 'null') {
+                        this.x = '';
+                    } else {
+                        this.x = barrio.comunidad;
+                    }
+                    this.barrios.push({
+                        barrio_id: barrio.barrio_id,
+                        nombre:  barrio.ciudad + ' - ' + barrio.parroquia + ' - ' + this.x + ' - ' + barrio.nombre
+                    });
+                }
+            )
         });
         this.route.params.subscribe((param: any) => {
             this.evento_id = param.id;

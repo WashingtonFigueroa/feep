@@ -19,6 +19,8 @@ export class EventoCreateComponent implements OnInit {
     proyectos: any = null;
     tipo_eventos: any = null;
     barrios: any = null;
+    x: any = null;
+    numProyecto: any = 0;
     constructor(private eventoService: EventoService,
                 private tipoeventoService: TipoEventoService,
                 private  barrioService: UbicacionService,
@@ -30,29 +32,34 @@ export class EventoCreateComponent implements OnInit {
             .subscribe((res: any) => {
                 this.tipo_eventos = res;
             });
-        this.proyectoService.listar().subscribe((res: any) => {
-           this.proyectos = res;
-        });
         this.barrioService.barrioslistar().subscribe((res: any) => {
             this.barrios = [];
             res.forEach(
-                (barrio:any)=>{
+                (barrio: any) => {
+                    if (barrio.comunidad === 'null') {
+                        this.x = '';
+                    } else {
+                        this.x = barrio.comunidad;
+                    }
                     this.barrios.push({
                         barrio_id: barrio.barrio_id,
-                        nombre:  barrio.ciudad + ' - ' + barrio.parroquia + ' - ' + barrio.nombre
+                        nombre:  barrio.ciudad + ' - ' + barrio.parroquia + ' - ' + this.x + ' - ' + barrio.nombre
                     });
                 }
             )
         });
-        this.crearForm();
+        this.proyectoService.listar().subscribe((res: any) => {
+            this.proyectos = res;
+            this.numProyecto = res.length;
+            this.crearForm();
+        });
     }
     ngOnInit() {
     }
     crearForm() {
         this.eventoGroup = this.fb.group({
-            'proyecto_id': [0, [Validators.required]],
-            'tipo_evento_id': [0, [Validators.required]],
-            // 'usuario_id': [1, [Validators.required]],
+            'proyecto_id': [parseInt(this.numProyecto , 10), [Validators.required]],
+            'tipo_evento_id': [1, [Validators.required]],
             'barrio_id': [0, [Validators.required]],
             'nombre': ['', [Validators.required]],
             'imagen': [''],
@@ -65,17 +72,15 @@ export class EventoCreateComponent implements OnInit {
         });
     }
     store() {
-        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento)
-        {
-            const usuario = 1;
+        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento) {
+            const formData = new FormData();
             if (this.imagen.nativeElement.files[0]) {
-                const formData = new FormData();
+                formData.append('imagen', this.imagen.nativeElement.files[0]);
+            }
                 formData.append('proyecto_id', this.eventoGroup.value.proyecto_id);
                 formData.append('tipo_evento_id', this.eventoGroup.value.tipo_evento_id);
-                // formData.append('usuario_id', usuario);
                 formData.append('barrio_id', this.eventoGroup.value.barrio_id);
                 formData.append('nombre', this.eventoGroup.value.nombre.toUpperCase());
-                formData.append('imagen', this.imagen.nativeElement.files[0]);
                 formData.append('fecha_evento', this.eventoGroup.value.fecha_evento);
                 formData.append('direccion', this.eventoGroup.value.direccion.toUpperCase());
                 formData.append('duracion_horas', this.eventoGroup.value.duracion_horas);
@@ -84,20 +89,23 @@ export class EventoCreateComponent implements OnInit {
                 // formData.append('longitud', this.eventoGroup.value.longitud);
                 this.eventoService.store(formData)
                     .subscribe((res: any) => {
-                        this.toastrService.success('Agregado', 'Evento');
+                        this.toastrService.success('Evento agregado exitosamente.', '', {
+                            timeOut: 2000,
+                            closeButton: true,
+                            enableHtml: true,
+                            toastClass: 'alert alert-success alert-with-icon',
+                            positionClass: 'toast-top-right'
+                        });
                         this.router.navigate(['/eventos']);
                     }, (error) => {
-                        this.toastrService.error('duplicado', 'Evento');
+                        this.toastrService.warning('Evento duplicado.', '', {
+                            timeOut: 2000,
+                            closeButton: true,
+                            enableHtml: true,
+                            toastClass: 'alert alert-warning alert-with-icon',
+                            positionClass: 'toast-top-right'
+                        });
                     });
-            } else {
-                this.eventoService.store(this.eventoGroup.value)
-                    .subscribe((res: any) => {
-                        this.toastrService.success('Agregado', 'Evento');
-                        this.router.navigate(['/eventos']);
-                    }, (error) => {
-                        this.toastrService.error('duplicado', 'Evento');
-                    });
-            }
         } else {
             this.toastrService.info('Rango de Fechas', 'Error')
         }
