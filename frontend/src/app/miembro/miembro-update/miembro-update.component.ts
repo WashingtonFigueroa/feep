@@ -75,7 +75,13 @@ export class MiembroUpdateComponent implements OnInit {
     update() {
         this.personaService.update(this.persona_id, this.personaGroup.value)
             .subscribe((res: any) => {
-              this.toastrService.success('Datos Actualizados', 'Persona');
+                this.toastrService.success('Datos actualizados exitosamente.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/miembros']);
             });
     }

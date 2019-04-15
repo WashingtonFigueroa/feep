@@ -62,7 +62,7 @@ export class OrganizacionUpdateComponent implements OnInit {
             'ninias': new FormControl(this.organizacion.ninias),
             'hombres': new FormControl(this.organizacion.hombres),
             'ninios': new FormControl(this.organizacion.ninios),
-            'total': new FormControl(this.organizacion.total)
+            'total': new FormControl(0)
         });
     }
     update() {
@@ -74,12 +74,17 @@ export class OrganizacionUpdateComponent implements OnInit {
         this.organizacionGroup.patchValue({
             nombre: this.organizacionGroup.value.nombre.toUpperCase(),
             representante: this.organizacionGroup.value.representante.toUpperCase(),
-            descripcion: this.organizacionGroup.value.descripcion.toUpperCase(),
             total: total
         });
         this.organizacionService.update(this.organizacion_id, this.organizacionGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Actualizada', 'Organización')
+                this.toastrService.success('Datos actulizados.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/organizaciones']);
             });
     }

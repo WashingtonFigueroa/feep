@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bbb6ee-b008-4c2b-a66c-c155c1eb80a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servidor/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/img/sidebar.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/sidebar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard/_variables.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,20 +78,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="html" value="131" />
+          <entry key="css" value="3" />
+          <entry key="html" value="140" />
           <entry key="php" value="40" />
-          <entry key="scss" value="5" />
-          <entry key="ts" value="111" />
+          <entry key="scss" value="7" />
+          <entry key="ts" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="131" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="140" />
           <entry key="PHP" value="40" />
-          <entry key="SCSS" value="5" />
-          <entry key="TypeScript" value="111" />
+          <entry key="SCSS" value="7" />
+          <entry key="TypeScript" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -96,77 +102,40 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1870" />
+          <entry key="html" value="1977" />
           <entry key="php" value="948" />
-          <entry key="scss" value="3" />
-          <entry key="ts" value="2591" />
+          <entry key="scss" value="7" />
+          <entry key="ts" value="2914" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1870" />
+          <entry key="HTML" value="1977" />
           <entry key="PHP" value="948" />
-          <entry key="SCSS" value="3" />
-          <entry key="TypeScript" value="2591" />
+          <entry key="SCSS" value="7" />
+          <entry key="TypeScript" value="2914" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-              <folding>
-                <element signature="e#44#59#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="77" column="41" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="113" column="1" lean-forward="true" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
+            <state relative-caret-position="36">
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
               <folding>
-                <element signature="e#724#730#0" expanded="true" />
-                <element signature="e#730#736#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -211,17 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ejecutora/ejecutora-update/ejecutora-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-create/asignacion-evento-create.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-index/asignacion-evento-index.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts" />
-        <option value="$PROJECT_DIR$/servidor/database/migrations/2019_02_01_000345_create_barrios_table.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.ts" />
@@ -260,8 +218,19 @@
         <option value="$PROJECT_DIR$/servidor/routes/api.php" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts" />
         <option value="$PROJECT_DIR$/servidor/app/Http/Controllers/API/EventoController.php" />
-        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard/_variables.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" />
       </list>
     </option>
   </component>
@@ -383,7 +352,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -423,7 +393,7 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="evento" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="feep" type="b2602c69:ProjectViewProjectNode" />
@@ -431,8 +401,8 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="evento" type="462c0819:PsiDirectoryNode" />
-              <item name="evento-index" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="feep" type="b2602c69:ProjectViewProjectNode" />
@@ -562,18 +532,18 @@
       <workItem from="1554920732107" duration="6267000" />
       <workItem from="1555025916251" duration="2651000" />
       <workItem from="1555175930525" duration="18060000" />
-      <workItem from="1555253769868" duration="20062000" />
+      <workItem from="1555253769868" duration="25021000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216277000" />
+    <option name="totallyTimeSpent" value="221236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" weight="0.19440243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.23714653" />
       <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -586,7 +556,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.53321975" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2823366" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.6853448" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -628,123 +598,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/asignacion-evento/asignacion-evento-update/asignacion-evento-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/ubicacion/ubicacion-create/ubicacion-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="123" column="42" lean-forward="true" selection-start-line="123" selection-start-column="42" selection-end-line="123" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servidor/database/migrations/2019_02_01_000345_create_barrios_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="77" column="78" lean-forward="true" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-create/evento-create.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="113" selection-end-column="16" />
-          <folding>
-            <element signature="e#5707#5713#0" expanded="true" />
-            <element signature="e#5708#5714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-update/evento-update.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-reporte/evento-reporte.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-index/anexo-index.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/anexo/anexo-create/anexo-create.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/resumen/resumen-create/resumen-create.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1017,6 +870,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/servidor/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1034,30 +894,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento.service.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="18">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-update/miembro-update.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="113" column="1" lean-forward="true" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+        <state relative-caret-position="365">
+          <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/miembro/miembro-create/miembro-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="108" column="23" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="108" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="141" column="173" lean-forward="true" selection-start-line="141" selection-start-column="173" selection-end-line="141" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="137" column="175" selection-start-line="137" selection-start-column="175" selection-end-line="137" selection-end-column="175" />
+          <caret line="143" column="172" selection-start-line="143" selection-start-column="172" selection-end-line="143" selection-end-column="172" />
+          <caret line="149" column="175" selection-start-line="149" selection-start-column="175" selection-end-line="149" selection-end-column="175" />
+          <caret line="155" column="172" selection-start-line="155" selection-start-column="172" selection-end-line="155" selection-end-column="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-create/organizacion-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-index/proyecto-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/evento/evento-index/evento-index.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
+        <state relative-caret-position="288">
+          <caret line="49" column="79" lean-forward="true" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="79" />
           <folding>
             <element signature="e#724#730#0" expanded="true" />
             <element signature="e#730#736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-index/organizacion-index.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/now-ui-dashboard/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/organizacion/organizacion-update/organizacion-update.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/proyecto/proyecto-create/proyecto-create.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="77" column="48" lean-forward="true" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -82,17 +82,50 @@ export class OrganizacionCreateComponent implements OnInit {
             formData.append('descripcion', this.organizacionGroup.value.descripcion.toUpperCase());
             formData.append('ministerio', this.organizacionGroup.value.ministerio);
             formData.append('acuerdo', this.organizacionGroup.value.acuerdo);
+        if (this.organizacionGroup.value.mujeres === '') {
+            formData.append('mujeres',  '0');
+        } else {
             formData.append('mujeres', this.organizacionGroup.value.mujeres);
+        }
+        if (this.organizacionGroup.value.ninias === '') {
+            formData.append('ninias',  '0');
+        } else {
             formData.append('ninias', this.organizacionGroup.value.ninias);
+        }
+        if (this.organizacionGroup.value.hombres === '') {
+            formData.append('hombres',  '0');
+        } else {
             formData.append('hombres', this.organizacionGroup.value.hombres);
+        }
+        if (this.organizacionGroup.value.ninios === '') {
+            formData.append('ninios',  '0');
+        } else {
             formData.append('ninios', this.organizacionGroup.value.ninios);
+        }
+        if (total === '0') {
+            formData.append('total', '0');
+
+        } else {
             formData.append('total', total);
+        }
             this.organizacionService.store(formData)
                 .subscribe((res: any) => {
-                    this.toastrService.success('Agregada', 'Organización');
+                    this.toastrService.success('Organización agregada exitosamente.', '', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-success alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
                     this.router.navigate(['/organizaciones']);
                 }, (error) => {
-                    this.toastrService.warning('Registrada', 'Organización');
+                    this.toastrService.warning('Datos duplicados.', '', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-warning alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
                 });
     }
     loadImage() {

@@ -52,13 +52,31 @@ export class ProyectoCreateComponent implements OnInit {
             formData.append('inicio', this.proyectoGroup.value.inicio);
             formData.append('fin', this.proyectoGroup.value.fin);
             this.proyectoService.store(formData).subscribe((res: any) => {
-                this.toastrService.success('Agregado', 'Proyecto');
+                this.toastrService.success('Proyecto agregado exitosamente.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/proyectos']);
             }, (error) => {
-                this.toastrService.warning('Registrado', 'Proyecto');
+                this.toastrService.warning('Datos duplicados.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-warning alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
             });
         } else {
-            this.toastrService.warning('Rango de Fechas', 'Error');
+            this.toastrService.warning('Rango de fechas incorrecto.', '', {
+                timeOut: 8000,
+                closeButton: true,
+                enableHtml: true,
+                toastClass: 'alert alert-warning alert-with-icon',
+                positionClass: 'toast-top-right'
+            });
         }
     }
     loadImage() {

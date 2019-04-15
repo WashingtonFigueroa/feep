@@ -46,10 +46,8 @@
                       <tr *ngFor="let organizacion of organizaciones.data; let i = index">
                         <td> {{ i + 1}} </td>
                         <td>
-                          <div class="logo" *ngIf="organizacion.imagen === 'sin_imagen'">
-                            <i class="fa fa-building"></i>
-                          </div>
-                          <img *ngIf="organizacion.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{organizacion.imagen}}">
+                          <span *ngIf="organizacion.imagen === 'sin_imagen'" class="badge badge-danger">Sin imagen</span>
+                          <img *ngIf="organizacion.imagen !== 'sin_imagen'" height="75" src="{{url_base}}{{organizacion.imagen}}">
                         </td>
                         <td> {{ organizacion.tipoorganizacion }} </td>
                         <td> {{ organizacion.actividad }} </td>

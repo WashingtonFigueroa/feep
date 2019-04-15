@@ -100,11 +100,23 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('email', this.miembroGroup.value.email);
             this.miembroService.store(formData)
                 .subscribe((res: any) => {
-                    this.toastrService.success('Agregada', 'Persona')
+                    this.toastrService.success('Persona agregada exitosamente.', '', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-success alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
                     this.resetPersona();
                     // this.miembroGroup.reset();
                 }, (error) => {
-                    this.toastrService.warning('Registrada', 'Persona');
+                    this.toastrService.warning('Datos duplicada.', '', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-warning alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
                 });
         }
     }
