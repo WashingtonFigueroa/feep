@@ -2,13 +2,16 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <div class="card-header">
-          <h4 class="card-title">Suministros</h4>
+        <br>
+        <h3>&nbsp;&nbsp; Sub Categorías</h3>
+        <div class="container">
           <div class="row">
-            <div class="col-8">
+            <div class="col-sm">
               <button class="btn btn-primary" routerLink="/insumos/suministros/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
             </div>
-            <div class="col-4">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
               <form (submit)="buscar(valor)" class="form-inline" role="form">
                 <div class="form-group">
                   <input type="email" class="input-search"
@@ -26,8 +29,8 @@
               <thead>
               <tr class="text-primary">
                 <th>#</th>
-                <th>Tipo de Insumo</th>
-                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Nombre Sub Categoría</th>
                 <th>Descripción</th>
                 <th class="text-center">Operaciones</th>
               </tr>

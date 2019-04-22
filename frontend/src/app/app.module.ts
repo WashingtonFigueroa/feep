@@ -16,6 +16,7 @@ import {AutenticacionService} from './autenticacion.service';
 import {ToastrModule} from 'ngx-toastr';
 import {AuthGuard} from './auth.guard';
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,

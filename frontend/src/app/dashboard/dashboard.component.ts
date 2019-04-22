@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
     num_asistentes: any = null;
     valor = '';
     base_imagen: string = environment.servidor + 'eventos-imagen/';
+    today: Date;
     constructor(private dashboardService: DashboardService,
                 private toastr: ToastrService) {
         this.dashboardService.index()
@@ -29,6 +30,7 @@ export class DashboardComponent implements OnInit {
                 this.loadPages();
             });
         this.num_asistentes = dashboardService.numero_asistentes();
+        this.today = new Date();
     }
     ngOnInit() {
     }

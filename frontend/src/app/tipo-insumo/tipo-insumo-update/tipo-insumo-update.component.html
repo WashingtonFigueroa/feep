@@ -4,16 +4,16 @@
       <div class="card">
         <div class="card-header">
           <button class="btn btn-info" routerLink="/insumos/tipo-insumos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Editar Tipo de Insumo</h5>
+          <h5 class="title">Editar Categoría</h5>
         </div>
         <div class="card-body">
           <form (submit)="update()" [formGroup]="tipoInsumoGroup" *ngIf="tipo_insumo !== null" role="form">
             <div class="form-group">
-              <label>Nombre</label>
+              <label>* Nombre Categoría :</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
             </div>
             <div class="form-group">
-              <label>Descripcion</label>
+              <label>Descripción :</label>
               <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
             </div>
             <div class="row">
@@ -28,6 +28,18 @@
         </div>
       </div>
     </div>
-
+    <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
+        </div>
+        <div class="card-body" >
+          <div class="author">
+            <br><br><br><br>
+            <img #preview src="../assets/img/mike.jpg" width="250px">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

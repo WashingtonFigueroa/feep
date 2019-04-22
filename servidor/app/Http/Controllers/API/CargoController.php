@@ -26,7 +26,9 @@ class CargoController extends Controller
         '/actividades/listar',
         '/insumos/tipo-insumos/listar',
         '/ubicaciones/listar',
-        '/usuarios/listar'
+        '/usuarios/listar',
+        '/resumenes/listar',
+        '/reportes/reporte1'
     ];
     public function getPrivilegio($ruta) {
         $privilegio = '';
@@ -41,6 +43,8 @@ class CargoController extends Controller
             case '/organizaciones/listar': $privilegio = 'organizaciones'; break;
             case '/eventos/listar': $privilegio = 'eventos'; break;
             case '/asignaciones/listar': $privilegio = 'asignar-insumos'; break;
+            case '/resumenes/listar': $privilegio = 'resumenes'; break;
+            case '/reportes/reporte1': $privilegio = 'reportes'; break;
 
             case '/tipoorganizacion/listar': $privilegio = 'configuracion'; break;
             case '/tipoproyectos/listar': $privilegio = 'configuracion'; break;

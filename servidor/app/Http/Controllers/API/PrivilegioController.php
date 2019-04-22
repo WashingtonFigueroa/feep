@@ -60,6 +60,16 @@ class PrivilegioController extends Controller
                 'acceso' => '/asignaciones/listar'
             ]
         ],
+        'resumenes' => [
+            [
+                'acceso' => '/resumenes/listar'
+            ]
+        ],
+        'reportes' => [
+            [
+                'acceso' => '/reportes/reporte1'
+            ]
+        ],
         'configuracion' => [
             [
                 'acceso' => '/tipoorganizacion/listar'
@@ -119,13 +129,13 @@ class PrivilegioController extends Controller
                     $data->activo = 'si';
                 }
                 $data->save();
-            } /*else {
+            } else {
                 Privilegio::create([
                     'cargo_id' => $cargo_id,
                     'acceso' => $acceso['acceso'],
                     'activo' => 'si'
                 ]);
-            }*/
+            }
         }
         return response()->json([
             'exito' => 'Privilegio actualizado'

@@ -10,14 +10,15 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Inicio',  icon: 'design_app', class: '' },
     { path: '/organizaciones/listar', title: 'Organizacion',  icon: 'business_bank', class: '' },
-    { path: '/miembros/listar', title: 'Personas',  icon: 'users_single-02', class: '' },
+    { path: '/miembros/listar', title: 'Beneficiarios',  icon: 'users_single-02', class: '' },
     { path: '/proyectos/listar', title: 'Proyectos',  icon: 'business_globe', class: '' },
     { path: '/asignacioneventos', title: 'Asignar Proyectos',  icon: 'business_badge', class: '' },
     { path: '/eventos', title: 'Eventos',  icon: 'ui-1_calendar-60', class: '' },
     { path: '/anexos', title: 'Subir Anexos',  icon: 'arrows-1_cloud-upload-94', class: '' },
     { path: '/asignaciones', title: 'Asignar Insumos',  icon: 'files_box', class: '' },
-    { path: '/resumenes', title: 'Resumen Evento',  icon: 'education_atom', class: '' },
+    { path: '/resumenes', title: 'Conteo Rapido',  icon: 'education_atom', class: '' },
     { path: '/inscripciones', title: 'Registro',  icon: 'design_bullet-list-67', class: '' },
+    { path: '/reportes/reporte1', title: 'Reporte',  icon: 'files_single-copy-04', class: '' },
 ];
 
 @Component({

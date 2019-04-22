@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run() {
-        $accesos = [
+/*        $accesos = [
                     '/cargos/listar',
                     '/privilegios',
                     '/asignacioneventos/listar',
@@ -30,8 +30,10 @@ class DatabaseSeeder extends Seeder
                     '/insumos/tipo-insumos/listar',
                     '/ubicaciones/listar',
                     '/usuarios/listar',
+                    '/ejecutoras/crear',
                     '/resumenes/listar',
-                    '/ejecutoras/crear'
+                    '/reportes/reporte1',
+
                 ];
                 //TIPO USUARIOS
                 $cargo = \App\Cargo::create(
@@ -50,8 +52,8 @@ class DatabaseSeeder extends Seeder
                 \App\Usuario::create(
                     [
                         'nombres' => 'Washington Figueroa',
-                        'cuenta' => 'Fepp2019',
-                        'password' => Hash::make('1Evento'),
+                        'cuenta' => 'Admin',
+                        'password' => Hash::make('123456'),
                         'email' => 'w.figo.1991@gmail.com',
                         'cargo_id' => $cargo->cargo_id]
                 );
@@ -128,7 +130,7 @@ class DatabaseSeeder extends Seeder
                 \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
                 \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
 
-
+*/
 
 
 
