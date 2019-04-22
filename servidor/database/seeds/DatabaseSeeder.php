@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run() {
-/*        $accesos = [
+        $accesos = [
                     '/cargos/listar',
                     '/privilegios',
                     '/asignacioneventos/listar',
@@ -130,12 +130,8 @@ class DatabaseSeeder extends Seeder
                 \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
                 \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
 
-*/
-
-
-
 //Barrio
-\App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Los Ceibos (barrio-cabecera)']);
+/*\App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Los Ceibos (barrio-cabecera)']);
 \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'El Cedro']);
 \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Caranqui (cabecera-barrio histórico)']);
 \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Ruinas de Caranqui (protegido por el Muncicipio de Ibarra)']);
@@ -205,7 +201,7 @@ class DatabaseSeeder extends Seeder
         \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Catacumbas']);
         \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Priorato-La Esperanza (barrio-cabecera)']);
         \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Huertos Familiares']);
-        \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Miraflores y Barrio España']);
+        \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Miraflores y Barrio España']);*/
 
 
 
