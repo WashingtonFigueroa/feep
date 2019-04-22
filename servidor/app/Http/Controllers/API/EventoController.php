@@ -130,7 +130,6 @@ class EventoController extends Controller
                 ->where('participantes.evento_id', '=',$evento_id)
                 ->where('personas.genero', '=', 'FEMENINO')
                 ->count();
-
         return response()->json([
             'varones' => $varones,
             'mujeres' => $mujeres
