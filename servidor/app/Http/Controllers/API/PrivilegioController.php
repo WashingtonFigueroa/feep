@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Cargo;
 use App\Privilegio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
