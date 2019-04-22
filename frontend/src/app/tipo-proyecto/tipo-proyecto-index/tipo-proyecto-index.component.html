@@ -4,11 +4,12 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
+        <br>
         <h3>&nbsp;&nbsp; Lista Tipo de Proyectos</h3>
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <button class="btn btn-primary" routerLink="/tipoProyectos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+              <button class="btn btn-info" routerLink="/tipoproyectos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
             </div>
             <div class="col-sm">
             </div>
@@ -25,15 +26,13 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="table-responsive small">
-            <table class="table" *ngIf="tipoProyectos !== null">
+          <div *ngIf="tipoProyectos !== null" class="table-responsive">
+            <table class="table">
               <thead style="background-color: #303030; color: #f7f7f7">
-              <tr>
                 <th>#</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th class="text-center">Operaciones</th>
-              </tr>
               </thead>
               <tbody>
               <tr *ngFor="let tipoproyecto of tipoProyectos.data; let i = index">
@@ -47,12 +46,8 @@
                   {{ tipoproyecto.descripcion }}
                 </td>
                 <td class="text-center">
-                  <button routerLink="/tipoProyectos/editar/{{tipoproyecto.tipo_proyecto_id}}" type="button" class="btn btn-xs btn-info">
-                    <i class="fa fa-edit"></i>
-                  </button>                  &nbsp;
-                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipoproyecto, i)">
-                    <i class="fa fa-trash"></i>
-                  </button>
+                  <a routerLink="/tipoproyectos/editar/{{tipoproyecto.tipo_proyecto_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit "></i> </a>
+                  <a (click)="destroy(tipoproyecto, i)" title="Eliminar Proyecto" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                 </td>
               </tr>
               </tbody>

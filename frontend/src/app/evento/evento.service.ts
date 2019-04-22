@@ -23,6 +23,9 @@ export class EventoService {
     show(id) {
         return this.http.get(`${this.base}eventos/${id}`);
     }
+    reporte(id) {
+        return this.http.get(`${this.base}reporte/${id}`);
+    }
     store(request) {
         return this.http.post(`${this.base}eventos`, request);
     }
@@ -40,5 +43,8 @@ export class EventoService {
     }
     cambiarImagen(id, req) {
         return this.http.post(`${this.base}eventos-imagen-cambiar/${id}`, req);
+    }
+    exporar_excel_eventos() {
+        return this.http.get(this.base + 'exporar_excel_eventos');
     }
 }

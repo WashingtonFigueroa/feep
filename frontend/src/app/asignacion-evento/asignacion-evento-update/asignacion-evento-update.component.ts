@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {ActivatedRoute, Router} from "@angular/router";
-import {ToastrService} from "ngx-toastr";
-import {AsignacionEventoService} from "../asignacion-evento.service";
-import {ProyectoService} from "../../proyecto/proyecto.service";
-import {UsuarioService} from "../../usuario/usuario.service";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute, Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {AsignacionEventoService} from '../asignacion-evento.service';
+import {ProyectoService} from '../../proyecto/proyecto.service';
+import {UsuarioService} from '../../usuario/usuario.service';
 
 @Component({
   selector: 'app-asignacion-evento-update',
@@ -23,7 +23,7 @@ export class AsignacionEventoUpdateComponent implements OnInit {
                 private fb: FormBuilder,
                 private router: Router,
                 private route: ActivatedRoute,
-                private toastrService:ToastrService) {
+                private toastrService: ToastrService) {
         this.proyectoService.listar()
             .subscribe((res: any) => {
                 this.proyectos = res;
@@ -54,9 +54,18 @@ export class AsignacionEventoUpdateComponent implements OnInit {
     }
 
     update() {
+        this.asignacion_eventoGroup.patchValue({
+            descripcion: this.asignacion_eventoGroup.value.descripcion.toUpperCase(),
+        });
         this.asignacion_eventoService.update(this.asignacion_evento_id, this.asignacion_eventoGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Modificada','Asignación');
+                this.toastrService.success('Asignación Exitosa.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/asignacioneventos']);
             });
     }

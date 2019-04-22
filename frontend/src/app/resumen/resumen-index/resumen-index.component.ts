@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MiembroService} from '../../miembro/miembro.service';
 import {environment} from '../../../environments/environment.prod';
+import {ResumenService} from '../resumen.service';
 
 @Component({
   selector: 'app-resumen-index',
@@ -15,8 +16,8 @@ export class ResumenIndexComponent implements OnInit {
     current_page: any = null;
     resumenes: any = null;
     valor = '';
-    constructor(private miembroService: MiembroService) {
-        this.miembroService.index()
+    constructor(private resumenService: ResumenService) {
+        this.resumenService.index()
             .subscribe((res: any) => {
                 this.resumenes = res;
                 this.current_page = this.resumenes.current_page;
@@ -38,7 +39,7 @@ export class ResumenIndexComponent implements OnInit {
         }
     }
     loadPagination(url: string) {
-        this.miembroService.pagination(url)
+        this.resumenService.pagination(url)
             .subscribe((res: any) => {
                 this.resumenes = res;
                 this.current_page = this.resumenes.current_page;
@@ -49,7 +50,7 @@ export class ResumenIndexComponent implements OnInit {
             });
     }
     buscar(valor: string) {
-        this.miembroService.buscar(valor)
+        this.resumenService.buscar(valor)
             .subscribe((res: any) => {
                 this.resumenes = res;
                 this.current_page = this.resumenes.current_page;
@@ -61,7 +62,7 @@ export class ResumenIndexComponent implements OnInit {
     }
     destroy(resumenes, index) {
         if (confirm('Esta seguro de eliminar')) {
-            this.miembroService.destroy(resumenes.resumen_id)
+            this.resumenService.destroy(resumenes.resumen_id)
                 .subscribe((res: any) => {
                     this.resumenes.data.splice(index, 1);
                 });

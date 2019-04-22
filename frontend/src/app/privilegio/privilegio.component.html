@@ -74,6 +74,14 @@
                          [class.no-asignado]="privilegios['configuracion'].activo === 'no'" (click)="updatePrivilegio('configuracion')">
                       <i class="now-ui-icons loader_gear"></i> Configuracion
                     </div>
+                    <div class="box"
+                         [class.no-asignado]="privilegios['resumenes'].activo === 'no'" (click)="updatePrivilegio('resumenes')">
+                      <i class="now-ui-icons loader_gear"></i> Resumenes
+                    </div>
+                    <div class="box"
+                         [class.no-asignado]="privilegios['reportes'].activo === 'no'" (click)="updatePrivilegio('reportes')">
+                      <i class="now-ui-icons loader_gear"></i> Reportes
+                    </div>
                   </div>
                 </div>
               </div>

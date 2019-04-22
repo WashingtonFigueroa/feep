@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {TipoInsumoService} from '../tipo-insumo.service';
-import {TipoService} from '../../tipo/tipo.service';
 import {ToastrService} from 'ngx-toastr';
+import {TipoInsumoService} from '../tipo-insumo.service';
 
 @Component({
   selector: 'app-tipo-insumo-index',
@@ -16,8 +15,8 @@ export class TipoInsumoIndexComponent implements OnInit {
     current_page: any = null;
     tipo_insumos: any = null;
     valor = '';
-    constructor(private tipoInsumoService: TipoService,
-                private toastrService:ToastrService ) {
+    constructor(private tipoInsumoService: TipoInsumoService,
+                private toastrService: ToastrService ) {
         this.tipoInsumoService.index().subscribe((res: any) => {
             this.tipo_insumos = res;
             this.current_page = this.tipo_insumos.current_page;

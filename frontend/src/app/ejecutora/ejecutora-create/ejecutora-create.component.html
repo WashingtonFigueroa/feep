@@ -18,11 +18,11 @@
           </div>
         </div>
         <div class="card-body">
-          <form (submit)="store()" [formGroup]="ejecutoraGroup" *ngIf="organizaciones !== null" role="form">
+          <form (submit)="store()" [formGroup]="ejecutoraGroup" *ngIf="organizaciones !== null && proyectos !== null" role="form">
             <div class="row">
-              <div class="col-md-6 pr-1">
+              <div class="col-md-6">
                 <div class="form-group" *ngIf="proyectos !== null">
-                  <label>* Seleccione Proyecto</label>
+                  <label>* Seleccione Proyecto :</label>
                   <ng-select [items]="proyectos"
                              class="custom"
                              id="proyecto_id"
@@ -32,9 +32,21 @@
                   </ng-select>
                 </div>
               </div>
-              <div class="col-md-6 pl-1">
+              <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Seleccione Organización</label>
+                  <label>* Seleccione tipo de Colaborador :</label>
+                  <select class="custom-select form-control" formControlName="tipo" name="tipo" id="tipo" >
+                    <option value="EJECUTORA">EJECUTORA</option>
+                    <option value="FINANCÍA">FINANCÍA</option>
+                    <option value="BENEFICIARÍA">BENEFICIARÍA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>* Seleccione Organización :</label>
                   <ng-select [items]="organizaciones"
                              class="custom"
                              id="organizacion_id"
@@ -44,19 +56,7 @@
                   </ng-select>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 pr-1">
-                <div class="form-group">
-                  <label>* Tipo</label>
-                  <select class="custom-select form-control" formControlName="tipo" name="tipo" id="tipo">
-                    <option value="EJECUTORA">EJECUTORA</option>
-                    <option value="FINANCÍA">FINANCÍA</option>
-                    <option value="BENEFICIARÍA">BENEFICIARÍA</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6 px-1">
+              <div class="col-md-6">
                 <div class="form-group">
                   <label>Descripción </label>
                   <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
@@ -67,7 +67,7 @@
             <div class="row">
               <div class="col-md-12 text-right">
                 <button type="submit"
-                        [disabled]="ejecutoraGroup.status === 'INVALID'"
+                        [disabled]="ejecutoraGroup.status == 'INVALID'"
                         class="btn btn-info">
                   Guardar <span class="fas fa-pen"></span>
                 </button>&nbsp;&nbsp;
@@ -81,16 +81,29 @@
         </div>
       </div>
     </div>
+    <!--<div class="col-md-4">-->
+      <!--<div class="card card-user">-->
+        <!--<div class="image">-->
+          <!--<img src="../assets/img/bg5.jpg" alt="..." width="100%">-->
+        <!--</div>-->
+        <!--<div class="card-body">-->
+          <!--<h5>Lista Agregada</h5>-->
+          <!--<ul>-->
+            <!--<li *ngFor="let auspiciante of auspiciantes"> {{ auspiciante.organizacion }} - {{ auspiciante.tipo }}</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
     <div class="col-md-4">
       <div class="card card-user">
         <div class="image">
-          <img src="../assets/img/bg5.jpg" alt="...">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
         </div>
-        <div class="card-body">
-          <h5>Lista Agregada</h5>
-          <ul>
-            <li *ngFor="let auspiciante of auspiciantes"> {{ auspiciante.organizacion }} - {{ auspiciante.tipo }}</li>
-          </ul>
+        <div class="card-body" >
+          <div class="author">
+            <br><br><br><br>
+            <img #preview src="../assets/img/mike.jpg" width="250px">
+          </div>
         </div>
       </div>
     </div>

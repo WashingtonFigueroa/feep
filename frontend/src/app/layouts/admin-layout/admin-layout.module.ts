@@ -125,6 +125,12 @@ import { ResumenUpdateComponent } from '../../resumen/resumen-update/resumen-upd
 import { ResumenCreateComponent } from '../../resumen/resumen-create/resumen-create.component';
 import { ResumenService} from '../../resumen/resumen.service';
 import {DashboardService} from '../../dashboard/dashboard.service';
+import { EventoReporteComponent } from '../../evento/evento-reporte/evento-reporte.component';
+import { ReporteComponent } from '../../reporte/reporte.component';
+import { Reporte1Component } from '../../reporte/reporte-1/reporte-1.component';
+import { Reporte2Component } from '../../reporte/reporte-2/reporte-2.component';
+import { Reporte3Component } from '../../reporte/reporte-3/reporte-3.component';
+import {ReporteService} from '../../reporte/reporte.service';
 
 @NgModule({
   imports: [
@@ -233,6 +239,11 @@ import {DashboardService} from '../../dashboard/dashboard.service';
     ResumenIndexComponent,
     ResumenUpdateComponent,
     ResumenCreateComponent,
+      EventoReporteComponent,
+      ReporteComponent,
+      Reporte1Component,
+      Reporte2Component,
+      Reporte3Component,
   ],
   providers: [
       OrganizacionService,
@@ -260,6 +271,7 @@ import {DashboardService} from '../../dashboard/dashboard.service';
       PrivilegioService,
       ResumenService,
       DashboardService,
+      ReporteService,
       { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ]

@@ -92,6 +92,12 @@ import {ResumenComponent} from '../../resumen/resumen.component';
 import {ResumenIndexComponent} from '../../resumen/resumen-index/resumen-index.component';
 import {ResumenCreateComponent} from '../../resumen/resumen-create/resumen-create.component';
 import {ResumenUpdateComponent} from '../../resumen/resumen-update/resumen-update.component';
+import {EventoReporteComponent} from '../../evento/evento-reporte/evento-reporte.component';
+import {ReporteComponent} from '../../reporte/reporte.component';
+import {Reporte1Component} from '../../reporte/reporte-1/reporte-1.component';
+import {Reporte2Component} from '../../reporte/reporte-2/reporte-2.component';
+import {Reporte3Component} from '../../reporte/reporte-3/reporte-3.component';
+
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -133,6 +139,26 @@ export const AdminLayoutRoutes: Routes = [
             {
                 path: '',
                 redirectTo: 'listar'
+            },
+        ]
+    },
+    { path: 'reportes',  component: ReporteComponent, canActivate: [AuthGuard],
+        children: [
+            {
+                path: 'reporte1',
+                component: Reporte1Component
+            },
+            {
+                path: 'reporte2',
+                component: Reporte2Component
+            },
+            {
+                path: 'reporte3',
+                component: Reporte3Component
+            },
+            {
+                path: '',
+                redirectTo: 'reporte1'
             },
         ]
     },
@@ -291,24 +317,28 @@ export const AdminLayoutRoutes: Routes = [
                 component: EventoUpdateComponent
             },
             {
+                path: 'reporte/:id',
+                component: EventoReporteComponent
+            },
+            {
                 path: '',
                 redirectTo: 'listar'
             },
         ]
     },
-    { path: 'resumenes',  component:ResumenComponent, canActivate: [AuthGuard],
+    { path: 'resumenes',  component: ResumenComponent, canActivate: [AuthGuard],
         children: [
             {
                 path: 'listar',
-                component:ResumenIndexComponent
+                component: ResumenIndexComponent
             },
             {
                 path: 'crear',
-                component:ResumenCreateComponent
+                component: ResumenCreateComponent
             },
             {
                 path: 'editar/:id',
-                component:ResumenUpdateComponent
+                component: ResumenUpdateComponent
             },
             {
                 path: '',

@@ -51,8 +51,17 @@ export class EjecutoraUpdateComponent implements OnInit {
         });
     }
     update() {
+        this.ejecutoraGroup.patchValue({
+            descripcion: this.ejecutoraGroup.value.descripcion.toUpperCase(),
+        });
         this.ejecutoraService.update(this.ejecutora_id, this.ejecutoraGroup.value).subscribe((res: any) => {
-            this.toastrService.success('Actualizado', 'Auspiciante')
+            this.toastrService.success('Auspiciante Actualizado.', '', {
+                timeOut: 4000,
+                closeButton: true,
+                enableHtml: true,
+                toastClass: 'alert alert-success alert-with-icon',
+                positionClass: 'toast-top-right'
+            });
             this.router.navigate(['/ejecutoras']);
         });
     }

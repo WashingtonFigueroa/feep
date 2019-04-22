@@ -4,7 +4,7 @@
       <div class="card">
         <div class="card-header">
           <button class="btn btn-info" routerLink="/insumos/tipos"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Registrar Tipo</h5>
+          <h5 class="title">Registrar Producto</h5>
         </div>
         <div class="card-body">
           <form (submit)="store()"
@@ -12,7 +12,7 @@
                 *ngIf="tipo_suministros !== null"
                 role="form">
             <div class="form-group">
-              <label>Tipo de Suministro</label>
+              <label>* Seleccione Sub Categoría 1.1:</label>
               <select formControlName="tipo_suministro_id"
                       class="form-control"
                       name="tipo_suministro_id">
@@ -20,11 +20,11 @@
               </select>
             </div>
             <div class="form-group">
-              <label>Nombre</label>
+              <label>* Nombre Producto:</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
             </div>
             <div class="form-group">
-              <label>Descripción</label>
+              <label>Descripción :</label>
               <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
             </div>
             <div class="row">
@@ -42,26 +42,14 @@
     <div class="col-md-4">
       <div class="card card-user">
         <div class="image">
-          <img src="../assets/img/bg5.jpg" alt="...">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
         </div>
-        <div class="card-body">
+        <div class="card-body" >
           <div class="author">
-            <a href="#">
-              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
-            </a>
-            <br>
-            <button class="btn btn-primary" routerLink="/insumos/tipo-suministros/crear" >Tipo de Suministro&nbsp;  <span class="fa fa-save"></span></button>
-            <p class="description">
-              Tipo de Suministro
-            </p>
+            <br><br><br><br>
+            <img #preview src="../assets/img/mike.jpg" width="250px">
           </div>
-          <p class="description text-center">
-            "Lamborghini Mercy
-            <br> Your chick she so thirsty
-            <br> I'm in that two seat Lambo"
-          </p>
         </div>
-        <hr>
       </div>
     </div>
   </div>

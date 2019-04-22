@@ -32,4 +32,7 @@ export class TipoInsumoService {
   destroy(id) {
     return this.http.delete(`${this.base}tipo-insumos/${id}`);
   }
+    pagination(url: string) {
+        return this.http.get(url);
+    }
 }

@@ -18,10 +18,8 @@ export class ProyectoUpdateComponent implements OnInit {
     proyecto: any = null;
     proyectoGroup: FormGroup;
     tipoproyectos: any = null;
-    barrios: any = null;
     constructor(private proyectoService: ProyectoService,
                 private tipoproyectoService: TipoProyectoService,
-                private barrioService: UbicacionService,
                 private fb: FormBuilder,
                 private router: Router,
                 private route: ActivatedRoute,
@@ -29,10 +27,6 @@ export class ProyectoUpdateComponent implements OnInit {
         this.tipoproyectoService.listar()
             .subscribe((res: any) => {
                 this.tipoproyectos = res;
-            });
-        this.barrioService.barrioslistar()
-            .subscribe((res: any) => {
-                this.barrios = res;
             });
         this.route.params.subscribe((param: any) => {
             this.proyecto_id = param.id;
@@ -48,14 +42,14 @@ export class ProyectoUpdateComponent implements OnInit {
     crearForm(proyecto: any) {
         this.proyectoGroup = this.fb.group({
             'tipo_proyecto_id': new FormControl(proyecto.tipo_proyecto_id, [Validators.required]),
-            'barrio_id': new FormControl(proyecto.barrio_id, [Validators.required]),
             'nombre' : new FormControl(proyecto.nombre, [Validators.required]),
+            'ubicacion' : new FormControl(proyecto.ubicacion, [Validators.required]),
             'inicio': new FormControl(proyecto.inicio, [Validators.required]),
             'fin': new FormControl(proyecto.fin, [Validators.required])
         });
     }
     update() {
-        if (this.proyectoGroup.value.fin >= this.proyectoGroup.value.inicio){
+        if (this.proyectoGroup.value.fin >= this.proyectoGroup.value.inicio) {
             this.proyectoGroup.patchValue({
                 nombre: this.proyectoGroup.value.nombre.toUpperCase(),
             });

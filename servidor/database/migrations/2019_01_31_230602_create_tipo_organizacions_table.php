@@ -15,7 +15,7 @@ class CreateTipoOrganizacionsTable extends Migration
     {
         Schema::create('tipo_organizaciones', function (Blueprint $table) {
             $table->increments('tipo_organizacion_id');
-            $table->string('nombre');
+            $table->string('nombre')->unique();
             $table->text('descripcion')->nullable();
             $table->softDeletes();
             $table->timestamps();

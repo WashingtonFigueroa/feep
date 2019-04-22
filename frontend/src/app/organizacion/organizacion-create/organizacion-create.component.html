@@ -135,36 +135,34 @@
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Mujeres</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres" name="mujeres" id="mujeres">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="mujeres"  name="mujeres" id="mujeres" value="0">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Niñas</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninias" name="ninias" id="ninias">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninias"  name="ninias" id="ninias" value="0">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Hombres</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="hombres" name="hombres" id="hombres">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="hombres"  name="hombres" id="hombres" value="0">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label>N° Niños</label>
-                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninios" name="ninios" id="ninios">
+                  <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" formControlName="ninios"  name="ninios" id="ninios" value="0">
                 </div>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group">
-                <label>Descripción</label>
+                <label>Dirección :</label>
                 <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
               </div>
             </div>
-
-
             <br>
               <div class="col-md-12 text-right">
                     <button class="btn btn-info" type="submit" [disabled]="organizacionGroup.status === 'INVALID'">Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;
@@ -177,13 +175,12 @@
     <div class="col-md-4">
       <div class="card card-user">
         <div class="image">
-          <img src="../assets/img/bg5.jpg" alt="...">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
         </div>
-        <div class="card-body">
+        <div class="card-body" >
           <div class="author">
-            <br><br><br>
-            <hr>
-            <img #preview src="../assets/img/mike.jpg" width="200px">
+            <br><br><br><br>
+            <img #preview src="../assets/img/mike.jpg" width="250px">
           </div>
         </div>
       </div>

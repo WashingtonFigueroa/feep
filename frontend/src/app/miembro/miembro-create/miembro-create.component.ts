@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {OrganizacionService} from '../../organizacion/organizacion.service';
 import {Router} from '@angular/router';
-import {UbicacionService} from "../../ubicacion/ubicacion.service";
-import {MiembroService} from "../miembro.service";
-import {ToastrService} from "ngx-toastr";
+import {UbicacionService} from '../../ubicacion/ubicacion.service';
+import {MiembroService} from '../miembro.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-miembro-create',
@@ -15,13 +15,13 @@ export class MiembroCreateComponent implements OnInit {
     miembroGroup: FormGroup;
     organizaciones: any = null;
     parroquias: any = null;
-    //Buscador Cedula
+    // Buscador Cedula
     mostrar = false;
     miembros: any = [];
     persona: any = {
         persona_id : 0,
         organizacion_id : 0,
-        parroquia_id : 0,
+        parroquia_id : 612,
         cedula : '',
         nombres : '',
         genero : '',
@@ -41,7 +41,7 @@ export class MiembroCreateComponent implements OnInit {
                 private parroquiasService: UbicacionService,
                 private router: Router,
                 private fb: FormBuilder,
-                private toastrService:ToastrService) {
+                private toastrService: ToastrService) {
         this.organizacionService.listar()
             .subscribe((res: any) => {
                 this.organizaciones = res;
@@ -49,7 +49,7 @@ export class MiembroCreateComponent implements OnInit {
         this.parroquiasService.parroquiaslistar().subscribe((res: any) => {
             this.parroquias = [];
             res.forEach(
-                (parroquia:any)=>{
+                (parroquia: any) => {
                     this.parroquias.push({
                         parroquia_id: parroquia.parroquia_id,
                         nombre:  parroquia.ciudad + ' - ' + parroquia.nombre
@@ -64,10 +64,10 @@ export class MiembroCreateComponent implements OnInit {
     crearForm() {
         this.miembroGroup = this.fb.group({
             'organizacion_id': [1, [Validators.required]],
-            'parroquia_id': [2048, [Validators.required]],
+            'parroquia_id': [612, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
-            'genero': ['MASCULINO'],
+            'genero': ['', [Validators.required]],
             'ocupacion': [''],
             'etnia': ['MESTIZO/A'],
             'nacionalidad': ['NO APLICA'],
@@ -81,7 +81,7 @@ export class MiembroCreateComponent implements OnInit {
         });
     }
     store() {
-        if (this.miembroGroup.value.nombres != '') {
+        if (this.miembroGroup.value.nombres !== '') {
             const formData = new FormData();
             formData.append('organizacion_id', this.miembroGroup.value.organizacion_id);
             formData.append('parroquia_id', this.miembroGroup.value.parroquia_id);
@@ -100,11 +100,23 @@ export class MiembroCreateComponent implements OnInit {
             formData.append('email', this.miembroGroup.value.email);
             this.miembroService.store(formData)
                 .subscribe((res: any) => {
-                    this.toastrService.success('Agregada', 'Persona')
+                    this.toastrService.success('Persona agregada exitosamente.', '', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-success alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
                     this.resetPersona();
-                    //this.miembroGroup.reset();
+                    // this.miembroGroup.reset();
                 }, (error) => {
-                    this.toastrService.warning('Registrada','Persona');
+                    this.toastrService.warning('Datos duplicada.', '', {
+                        timeOut: 4000,
+                        closeButton: true,
+                        enableHtml: true,
+                        toastClass: 'alert alert-warning alert-with-icon',
+                        positionClass: 'toast-top-right'
+                    });
                 });
         }
     }
@@ -112,7 +124,7 @@ export class MiembroCreateComponent implements OnInit {
         this.persona = {
             persona_id : 0,
             organizacion_id : 0,
-            parroquia_id : 0,
+            parroquia_id : 612,
             cedula : '',
             nombres : '',
             ocupacion : '',
@@ -124,9 +136,9 @@ export class MiembroCreateComponent implements OnInit {
         this.miembroGroup.patchValue({
             'persona_id' : 0,
             'organizacion_id': 1,
-            'parroquia_id': 2048,
-            'nombres':'',
-            'genero': 'MASCULINO',
+            'parroquia_id': 612,
+            'nombres': '',
+            'genero': 'M',
             'ocupacion': '',
             'etnia': 'MESTIZO/A',
             'nacionalidad': 'NO APLICA',

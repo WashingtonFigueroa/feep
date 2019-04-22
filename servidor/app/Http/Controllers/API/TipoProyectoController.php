@@ -10,12 +10,12 @@ class TipoProyectoController extends Controller
 {
     public function index()
     {
-        $tipo_proyectos = TipoProyecto::orderBy('nombre')->paginate(10);
+        $tipo_proyectos = TipoProyecto::orderBy('tipo_proyecto_id','desc')->paginate(10);
         return response()->json($tipo_proyectos, 200);
     }
     public function listar()
     {
-        $tipo_proyectos = TipoProyecto::orderBy('nombre')->get();
+        $tipo_proyectos = TipoProyecto::orderBy('tipo_proyecto_id','desc')->get();
         return response()->json($tipo_proyectos, 200);
     }
     public function store(Request $request)

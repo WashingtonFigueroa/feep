@@ -7,7 +7,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <h3>&nbsp;&nbsp;Resumen de los Eventos</h3>
+              <br>
+              <h3>&nbsp;&nbsp;Conteo Rápido Eventos</h3>
               <div class="container">
                 <div class="row">
                   <div class="col-sm">
@@ -30,7 +31,7 @@
                   <table class="table">
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <th> # </th>
-                    <th> Evento </th>
+                    <th> Nombre Evento </th>
                     <th> Total Asistentes </th>
                     <th> # Mujeres </th>
                     <th> # Hombres </th>
@@ -42,7 +43,7 @@
                     <tbody>
                     <tr *ngFor="let resumen of resumenes.data; let i = index">
                       <td> {{ i + 1}} </td>
-                      <td> {{ resumen.evento }} </td>
+                      <td width="350px"> {{ resumen.evento }} </td>
                       <td> {{ resumen.asistentes }} </td>
                       <td> {{ resumen.num_mujeres }} </td>
                       <td> {{ resumen.num_hombre }} </td>
@@ -50,7 +51,7 @@
                       <td> {{ resumen.num_ninios }} </td>
                       <td> {{ resumen.observaciones }} </td>
                       <td class="text-center">
-                        <a routerLink="/resumenes/editar/{{resumen.resumen_id}}" title="Editar Persona" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                        <!--<a routerLink="/resumenes/editar/{{resumen.resumen_id}}" title="Editar Persona" class="action action-edit"> <i class="fas fa-edit"></i> </a>-->
                         <a (click)="destroy(resumen, i)" title="Eliminar Cargo" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                       </td>
                     </tr>

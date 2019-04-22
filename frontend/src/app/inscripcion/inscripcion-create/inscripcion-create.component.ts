@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {Router} from "@angular/router";
-import {InscripcionService} from "../inscripcion.service";
-import {EventoService} from "../../evento/evento.service";
-import {ToastrService} from "ngx-toastr";
-import {MiembroService} from "../../miembro/miembro.service";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+import {InscripcionService} from '../inscripcion.service';
+import {EventoService} from '../../evento/evento.service';
+import {ToastrService} from 'ngx-toastr';
+import {MiembroService} from '../../miembro/miembro.service';
 import {OrganizacionService} from '../../organizacion/organizacion.service';
 import {UbicacionService} from '../../ubicacion/ubicacion.service';
 
@@ -23,10 +23,10 @@ export class InscripcionCreateComponent implements OnInit {
     persona: any = {
         persona_id : 0,
         organizacion_id : 0,
-        parroquia_id : 0,
+        parroquia_id : 1,
         cedula : '',
         nombres : '',
-        genero : '',
+        genero : 'M',
         ocupacion : '',
         etnia : '',
         nacionalidad : '',
@@ -54,7 +54,7 @@ export class InscripcionCreateComponent implements OnInit {
         this.parroquiasService.parroquiaslistar().subscribe((res: any) => {
             this.parroquias = [];
             res.forEach(
-                (parroquia:any)=>{
+                (parroquia: any) => {
                     this.parroquias.push({
                         parroquia_id: parroquia.parroquia_id,
                         nombre:  parroquia.ciudad + ' - ' + parroquia.nombre
@@ -75,10 +75,10 @@ export class InscripcionCreateComponent implements OnInit {
         this.persona = {
             persona_id : 0,
             organizacion_id : 0,
-            parroquia_id : 2048,
+            parroquia_id : 1,
             cedula : '',
             nombres : '',
-            genero : '',
+            genero : 'M',
             ocupacion : '',
             etnia : '',
             nacionalidad : '',
@@ -93,19 +93,30 @@ export class InscripcionCreateComponent implements OnInit {
         this.participanteGroup.patchValue({
             'persona_id' : 0,
             'organizacion_id' : 1,
-            'parroquia_id' : 2048,
+            'parroquia_id' : 1,
+            'nombre': '',
+            'genero': 'M',
+            'etnia': 'MESTIZO/MONTUBIO',
+            'nacionalidad': 'NO APLICA',
+            'pueblo': 'NO APLICA',
+            'fecha_nacimiento': '',
+            'direccion': '',
+            'telefono_fijo': '',
+            'operadora': 'OTRO/A',
+            'contacto': '',
+            'email': '',
         });
     }
     crearForm() {
         this.participanteGroup = this.fb.group({
-            'evento_id': [parseInt(this.numEvento), [Validators.required]],
+            'evento_id': [parseInt(this.numEvento , 10), [Validators.required]],
             'persona_id': [0, [Validators.required]],
             'observacion': [''],
             'organizacion_id': [1, [Validators.required]],
-            'parroquia_id': [2048, [Validators.required]],
+            'parroquia_id': [1, [Validators.required]],
             'cedula': ['', [Validators.required]],
             'nombres': ['', [Validators.required]],
-            'genero': ['MASCULINO', [Validators.required]],
+            'genero': ['M', [Validators.required]],
             'ocupacion': [''],
             'etnia': ['MESTIZO/A'],
             'nacionalidad': ['NO APLICA'],
@@ -127,18 +138,18 @@ export class InscripcionCreateComponent implements OnInit {
         formData.append('organizacion_id', this.participanteGroup.value.organizacion_id);
         formData.append('parroquia_id', this.participanteGroup.value.parroquia_id);
         formData.append('cedula', this.participanteGroup.value.cedula);
-        if(this.participanteGroup.value.nombres !== null) {
+        if (this.participanteGroup.value.nombres !== null) {
             formData.append('nombres', this.participanteGroup.value.nombres.toUpperCase());
         }
         formData.append('genero', this.participanteGroup.value.genero);
-        if(this.participanteGroup.value.ocupacion !== null) {
+        if (this.participanteGroup.value.ocupacion !== null) {
             formData.append('ocupacion', this.participanteGroup.value.ocupacion.toUpperCase());
         }
         formData.append('etnia', this.participanteGroup.value.etnia);
         formData.append('nacionalidad', this.participanteGroup.value.nacionalidad);
         formData.append('pueblo', this.participanteGroup.value.pueblo);
         formData.append('fecha_nacimiento', this.participanteGroup.value.fecha_nacimiento);
-        if(this.participanteGroup.value.direccion !== null) {
+        if (this.participanteGroup.value.direccion !== null) {
             formData.append('direccion', this.participanteGroup.value.direccion.toUpperCase());
         }
         formData.append('telefono_fijo', this.participanteGroup.value.telefono_fijo);
@@ -148,10 +159,22 @@ export class InscripcionCreateComponent implements OnInit {
 
          this.participanteService.store(formData)
              .subscribe((res: any) => {
-                 this.toastrService.success('Registrado', 'Participante')
-                 this.participanteGroup.reset();
+                 this.toastrService.success('Participante agregado exitosamente.', '', {
+                     timeOut: 4000,
+                     closeButton: true,
+                     enableHtml: true,
+                     toastClass: 'alert alert-success alert-with-icon',
+                     positionClass: 'toast-top-right'
+                 });
+                 this.crearForm();
              }, (error) => {
-                 this.toastrService.error('duplicado', 'Participante');
+                 this.toastrService.warning('Participante duplicado.', '', {
+                     timeOut: 4000,
+                     closeButton: true,
+                     enableHtml: true,
+                     toastClass: 'alert alert-warning alert-with-icon',
+                     positionClass: 'toast-top-right'
+                 });
              });
     }
 
@@ -173,7 +196,7 @@ export class InscripcionCreateComponent implements OnInit {
                 });
             } else {
                 this.participanteGroup.patchValue({
-                    'persona_id' : parseInt(res.data.persona_id,10),
+                    'persona_id' : parseInt(res.data.persona_id, 10),
                     'organizacion_id' : res.data.organizacion_id,
                     'parroquia_id' : res.data.parroquia_id,
                     'cedula' : res.data.cedula,

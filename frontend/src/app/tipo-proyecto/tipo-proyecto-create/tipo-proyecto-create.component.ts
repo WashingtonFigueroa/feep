@@ -26,12 +26,28 @@ export class TipoProyectoCreateComponent implements OnInit {
         });
     }
     store() {
-        this.tipoproyectoService.store(this.tipoproyectoGroup.value)
+        const formData = new FormData();
+        formData.append('nombre', this.tipoproyectoGroup.value.nombre.toUpperCase());
+        formData.append('descripcion', this.tipoproyectoGroup.value.descripcion.toUpperCase());
+        this.tipoproyectoService.store(formData)
             .subscribe((res: any) => {
-                this.toastrService.success('Registrado', 'Tipo Proyecto')
+                this.toastrService.success('Tipo Proyecto Agregado.', '', {
+                    timeOut: 200,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/tipoproyectos']);
             }, (error) => {
-                this.toastrService.error('duplicado', 'Tipo Proyecto');
+                this.toastrService.warning('Tipo Proyecto Duplicado.', '', {
+                    timeOut: 200,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-warning alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
+                this.tipoproyectoGroup.reset();
             });
     }
 }

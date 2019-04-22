@@ -36,9 +36,19 @@ export class TipoProyectoUpdateComponent implements OnInit {
         });
     }
     update() {
+        this.tipoproyectoGroup.patchValue({
+            nombre: this.tipoproyectoGroup.value.nombre.toUpperCase(),
+            descripcion: this.tipoproyectoGroup.value.descripcion.toUpperCase(),
+        });
         this.tipoproyectoService.update(this.tipoproyecto_id, this.tipoproyectoGroup.value)
             .subscribe((res: any) => {
-                this.toastrService.success('Actualizado', 'Tipo Proyecto')
+                this.toastrService.info('Tipo Proyecto Actualizado.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/tipoproyectos']);
             });
     }

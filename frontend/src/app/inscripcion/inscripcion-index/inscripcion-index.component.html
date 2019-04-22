@@ -7,10 +7,11 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <h3>&nbsp;&nbsp; Lista Inscripciones</h3>
+              <br>
+              <h3>&nbsp;&nbsp; Lista de Asistencia a Eventos</h3>
               <div class="container">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-4">
                     <button class="btn btn-info" routerLink="/inscripciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
                   <div class="col-4">
@@ -23,7 +24,7 @@
                       <button type="submit" class="btn btn-primary">Buscar</button>
                     </form>
                   </div>
-                  <div class="col-2 text-right">
+                  <div class="col-4 text-right">
                     <form [formGroup]="printGroup"
                           (submit)="download()"
                           class="form-inline"
@@ -44,8 +45,9 @@
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <tr>
                       <th> #   </th>
-                      <th> Evento   </th>
-                      <th> Participante   </th>
+                      <th> Nombre Evento   </th>
+                      <th> Nombre Participante   </th>
+                      <th> Asociación   </th>
                       <th> Observación   </th>
                       <th class="text-center">Operaciones</th>
                     </tr>
@@ -53,8 +55,9 @@
                     <tbody>
                     <tr *ngFor="let participante of participantes.data; let i = index">
                       <td>  {{ i + 1}} </td>
-                      <td>  {{ participante.evento }} </td>
-                      <td>  {{ participante.persona }} </td>
+                      <td width="350px">  {{ participante.evento }} </td>
+                      <td width="350px">  {{ participante.persona }} </td>
+                      <td>  {{ participante.organizacion }} </td>
                       <td>  {{ participante.observacion }} </td>
                       <td class="text-center">
                           <a (click)="destroy(participante, i)" title="Eliminar Participante" class="action action-destroy"> <i class="fas fa-trash"></i> </a>

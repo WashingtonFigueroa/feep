@@ -8,32 +8,38 @@
           <div class="col-md-12">
             <div class="card">
               <br>
-              <h3>&nbsp;&nbsp; Ultimos Eventos</h3>
+              <h3>&nbsp;&nbsp; Eventos</h3>
               <div class="card-body">
                 <div *ngIf="reportes !== null" class="table-responsive">
                   <table class="table">
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <th> #   </th>
-                    <th> Nombre   </th>
                     <th> Imagen   </th>
+                    <th> Nombre Evento  </th>
+                    <th> Responsable</th>
                     <th> Dirección </th>
                     <th> Inicia </th>
                     <th> Finaliza </th>
-                    <th class="text-center">Responsable</th>
                     </thead>
                     <tbody>
                     <tr *ngFor="let evento of reportes.data; let i = index">
                       <td>  {{i+1}} </td>
-                      <td>  {{ evento.nombre }} </td>
                       <td>
                         <span *ngIf="!evento.imagen" class="badge badge-danger">Sin imagen</span>
                         <img src="{{base_imagen}}{{evento.imagen}}" height="75"
                              [alt]="evento.nombre" *ngIf="evento.imagen">
                       </td>
+                      <td width="400px">  {{ evento.nombre }} </td>
+                      <td>  {{ evento.usuario }} </td>
                       <td>  {{ evento.direccion }} </td>
                       <td>  {{ evento.fecha_evento | date: 'dd/MM/yyyy' }} </td>
-                      <td>  {{ evento.fecha_finaliza | date: 'dd/MM/yyyy' }} </td>
-                      <td>  {{ evento.usuario }} </td>
+
+                      <div *ngIf="(evento.fecha_finaliza|date:'yyy/MM/dd') < (today |date:'yyy/MM/dd')">
+                        <td style="background-color: rgba(113,241,113,0.67)" width="200px">  {{ evento.fecha_finaliza | date: 'yyy/MM/dd' }}  </td>
+                      </div>
+                      <div *ngIf="(evento.fecha_finaliza|date:'yyy/MM/dd') >= (today |date:'yyy/MM/dd')">
+                        <td style="background-color: rgba(247,255,0,0.49)" width="200px">  {{ evento.fecha_finaliza | date: 'yyy/MM/dd' }} </td>
+                      </div>
                     </tr>
                     </tbody>
                   </table>

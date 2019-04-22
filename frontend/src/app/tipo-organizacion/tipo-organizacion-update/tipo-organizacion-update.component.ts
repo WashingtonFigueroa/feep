@@ -36,9 +36,19 @@ export class TipoOrganizacionUpdateComponent implements OnInit {
         });
     }
     update() {
+        this.tipoOrganizacionGroup.patchValue({
+            nombre: this.tipoOrganizacionGroup.value.nombre.toUpperCase(),
+            descripcion: this.tipoOrganizacionGroup.value.descripcion.toUpperCase(),
+        });
         this.tipoOrganizacionService.update(this.tipo_organizacion_id, this.tipoOrganizacionGroup.value)
             .subscribe((res: any) => {
-              this.toastrService.success('Actualizado', 'Tipo Organización')
+                this.toastrService.info('Tipo Organización Actualizado.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/tipoorganizacion']);
             });
     }

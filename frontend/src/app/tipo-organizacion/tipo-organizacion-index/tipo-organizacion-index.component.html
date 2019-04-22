@@ -4,47 +4,34 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <h3>&nbsp;&nbsp; Lista Tipo Organizaciones</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <button class="btn btn-primary" routerLink="/tipoorganizacion/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
-            </div>
-            <div class="col-sm">
-            </div>
-            <div class="col-sm">
-              One of three columns
-            </div>
-          </div>
-        </div>
-        <div class="card-header">
-          <h4 class="card-title"></h4>
-          <div class="row">
-            <div class="col-8">
-            </div>
-            <div class="col-4">
-              <form (submit)="buscar(valor)" class="form-inline" role="form">
-                <div class="form-group">
-                  <input type="email" class="input-search"
-                         [(ngModel)]="valor"
-                         name="valor">
+        <br>
+          <h3>&nbsp;&nbsp;Tipo Organizaciones</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <button class="btn btn-info" routerLink="/tipoorganizacion/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                  </div>
+                  <div class="col-sm">
+                  </div>
+                  <div class="col-sm">
+                    <form (submit)="buscar(valor)" class="form-inline" role="form">
+                      <div class="form-group">
+                        <input type="email" class="input-search" [(ngModel)]="valor" name="valor">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Buscar</button>
-              </form>
-            </div>
-          </div>
-        </div>
+              </div>
 
         <div class="card-body">
-          <div class="table-responsive">
-            <table class="table small" *ngIf=" tipoorganizaciones!== null">
+          <div *ngIf="tipoorganizaciones !== null" class="table-responsive">
+            <table class="table">
               <thead style="background-color: #303030; color: #f7f7f7">
-              <tr>
                 <th>#</th>
                 <th>Nombre</th>
                 <th>Detalle</th>
                 <th class="text-center">Operaciones</th>
-              </tr>
               </thead>
               <tbody>
               <tr *ngFor="let tipoorg of tipoorganizaciones.data; let i = index">
@@ -58,12 +45,8 @@
                   {{ tipoorg.descripcion }}
                 </td>
                 <td class="text-center">
-                  <button routerLink="/tipoorganizacion/editar/{{tipoorg.tipo_organizacion_id}}" type="button" class="btn btn-xs btn-info">
-                    <i class="fa fa-edit"></i>
-                  </button>                  &nbsp;
-                  <button type="button" class="btn btn-xs btn-danger" (click)="destroy(tipoorg, i)">
-                    <i class="fa fa-trash"></i>
-                  </button>
+                  <a routerLink="/tipoorganizacion/editar/{{tipoorg.tipo_organizacion_id}}" title="Editar Tipo Proyecto" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                  <a (click)="destroy(tipoorg, i)" title="Eliminar Tipo Proyecto" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                 </td>
               </tr>
               </tbody>

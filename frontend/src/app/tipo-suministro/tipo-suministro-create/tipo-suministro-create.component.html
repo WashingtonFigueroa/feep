@@ -4,7 +4,7 @@
       <div class="card">
         <div class="card-header">
           <button class="btn btn-info" routerLink="/insumos/tipo-suministros"><span class="fa fa-caret-left"></span> &nbsp; Atrás</button>
-          <h5 class="title">Registrar Tipo de Suministro</h5>
+          <h5 class="title">Registrar Sub Categoría 1.1</h5>
         </div>
         <div class="card-body">
           <form (submit)="store()"
@@ -12,7 +12,7 @@
                 *ngIf="suministros !== null"
                 role="form">
             <div class="form-group">
-              <label>Suministro</label>
+              <label>* Seleccione Sub Categoría 1:</label>
               <select formControlName="suministro_id"
                       class="form-control"
                       name="suministro_id">
@@ -20,11 +20,11 @@
               </select>
             </div>
             <div class="form-group">
-              <label>Nombre</label>
+              <label>* Nombre Sub Categoría 1.1 :</label>
               <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" autofocus>
             </div>
             <div class="form-group">
-              <label>Descripción</label>
+              <label>Descripción :</label>
               <input type="text" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
             </div>
             <div class="row">

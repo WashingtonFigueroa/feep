@@ -15,12 +15,12 @@ class TipoInsumoController extends Controller
      */
     public function index()
     {
-        return response()->json(TipoInsumo::orderBy('nombre')->paginate(10), 200);
+        return response()->json(TipoInsumo::orderBy('tipo_insumo_id','desc')->paginate(10), 200);
     }
 
     public function listar()
     {
-        return response()->json(TipoInsumo::orderBy('nombre')->get(), 200);
+        return response()->json(TipoInsumo::orderBy('tipo_insumo_id','desc')->get(), 200);
     }
 
     public function buscar($valor = '') {

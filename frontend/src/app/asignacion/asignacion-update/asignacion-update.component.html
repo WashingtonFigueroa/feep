@@ -22,7 +22,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Seleccione Evento</label>
+                  <label>* Seleccione el Evento :</label>
                   <ng-select [items]="eventos"
                              class="custom"
                              id="evento_id"
@@ -34,7 +34,7 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Seleccione tipo Insumo</label>
+                  <label>* Seleccione tipo Insumo :</label>
                   <ng-select [items]="tipos"
                              class="custom"
                              id="tipo_id"
@@ -48,13 +48,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Cantidad</label>
+                  <label>* Cantidad :</label>
                   <input type="number" class="form-control" formControlName="cantidad" name="cantidad" id="cantidad">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Fecha</label>
+                  <label>Fecha Entrega :</label>
                   <input type="date" name="fecha" id="fecha" formControlName="fecha" class="form-control">
                 </div>
               </div>
@@ -62,8 +62,14 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>* Receptor</label>
-                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" name="receptor" id="receptor" formControlName="receptor" class="form-control">
+                  <label>* Seleccione el Receptor :</label>
+                  <ng-select [items]="personas"
+                             class="custom"
+                             id="receptor"
+                             bindLabel="nombres"
+                             bindValue="nombres"
+                             formControlName="receptor">
+                  </ng-select>
                 </div>
               </div>
             </div>
@@ -83,13 +89,12 @@
     <div class="col-md-4">
       <div class="card card-user">
         <div class="image">
-          <img src="../assets/img/bg5.jpg" alt="...">
+          <img src="../assets/img/bg5.jpg" alt="..." width="100%">
         </div>
-        <div class="card-body">
+        <div class="card-body" >
           <div class="author">
-            <br><br><br>
-            <hr>
-            <img #preview src="../assets/img/mike.jpg" width="200px">
+            <br><br><br><br>
+            <img #preview src="../assets/img/mike.jpg" width="250px">
           </div>
         </div>
       </div>

@@ -31,13 +31,28 @@ export class TipoOrganizacionCreateComponent implements OnInit {
     }
 
     store() {
+        this.tipoorganizacionGroup.patchValue({
+            nombre: this.tipoorganizacionGroup.value.nombre.toUpperCase(),
+            descripcion: this.tipoorganizacionGroup.value.descripcion.toUpperCase(),
+        });
         this.tipoorganizacionService.store(this.tipoorganizacionGroup.value)
             .subscribe((res: any) => {
-                console.log(res);
-                this.toastrService.success('Agredada','Tipo Organización')
+                this.toastrService.success('Tipo Organización Agregado.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/tipoorganizacion/listar']);
             }, (error: any) => {
-               this.toastrService.warning('Registrada','Tipo Organización')
+                this.toastrService.success('Tipo Organización Duplicado.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-info alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.tipoorganizacionGroup.reset();
             });
     }

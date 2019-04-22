@@ -7,6 +7,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
+              <br>
               <h3>&nbsp;&nbsp; Lista Asignación Insumos</h3>
               <div class="container">
                 <div class="row">
@@ -30,27 +31,28 @@
                   <table class="table">
                     <thead style="background-color: #303030; color: #f7f7f7">
                     <th> # </th>
-                    <th> Evento </th>
+                    <th> imagen </th>
+                    <th> Nombre Evento </th>
+                    <th> Receptor </th>
                     <th> Insumo </th>
                     <th> Cantidad </th>
                     <th> fecha </th>
-                    <th> imagen </th>
-                    <th> receptor </th>
                     <th class="text-center">Operaciones</th>
                     </thead>
                     <tbody>
                     <tr *ngFor="let insumo of insumos.data; let i = index">
                       <td> {{ i + 1}} </td>
-                      <td> {{ insumo.evento}} </td>
-                      <td> {{ insumo.tipo }} </td>
-                      <td> {{ insumo.cantidad }} </td>
-                      <td> {{ insumo.fecha }} </td>
                       <td>
                         <div class="logo" *ngIf="insumo.imagen === 'sin_imagen'">
                           <i class="fa fa-building"></i>
                         </div>
-                        <img *ngIf="insumo.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{insumo.imagen}}"> </td>
-                      <td> {{ insumo.receptor}} </td>
+                        <img *ngIf="insumo.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{insumo.imagen}}">
+                      </td>
+                      <td width="350px"> {{ insumo.evento}} </td>
+                      <td width="350px"> {{ insumo.receptor}} </td>
+                      <td> {{ insumo.tipo }} </td>
+                      <td> {{ insumo.cantidad }} </td>
+                      <td> {{ insumo.fecha }} </td>
                       <td class="text-center">
                         <a routerLink="/asignaciones/editar/{{insumo.insumo_id}}"title="Editar Insumo " class="action action-edit "> <i class="fas fa-edit "></i> </a>
                         <a (click)="destroy(insumo, i) " title="Eliminar Cargo " class="action action-destroy "> <i class="fas fa-trash "></i> </a>

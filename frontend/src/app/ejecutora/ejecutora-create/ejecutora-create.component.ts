@@ -15,29 +15,30 @@ export class EjecutoraCreateComponent implements OnInit {
     ejecutoraGroup: FormGroup;
     proyectos: any = null;
     organizaciones: any = null;
-    auspiciantes = [];
-
+   // auspiciantes = [];
+    numProyecto: any = 0;
     constructor(private ejecutoraService: EjecutoraService,
                 private proyectoService: ProyectoService,
                 private organizacionService: OrganizacionService,
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
-        this.proyectoService.listar()
-            .subscribe((res: any) => {
-                this.proyectos = res;
-            });
         this.organizacionService.listar()
             .subscribe((res: any) => {
                 this.organizaciones = res;
             });
-        this.crearForm();
+        this.proyectoService.listar()
+            .subscribe((res: any) => {
+                this.proyectos = res;
+                this.numProyecto = res.length;
+                this.crearForm();
+            });
     }
     ngOnInit() {
     }
     crearForm() {
         this.ejecutoraGroup = this.fb.group({
-            'proyecto_id': [0, [Validators.required]],
+            'proyecto_id': [parseInt(this.numProyecto , 10), [Validators.required]],
             'organizacion_id': [0, [Validators.required]],
             'tipo': ['', [Validators.required]],
             'descripcion': ['']
@@ -51,11 +52,24 @@ export class EjecutoraCreateComponent implements OnInit {
         formData.append('descripcion', this.ejecutoraGroup.value.descripcion.toUpperCase());
         this.ejecutoraService.store(formData)
             .subscribe((res: any) => {
-                this.toastrService.success('Agregado', 'Auspiciante');
-                this.ejecutoraGroup.reset();
-                this.auspiciantes.push(res);
+                this.toastrService.success('Auspiciante registrado exitosamente.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
+                this.router.navigate(['/ejecutoras/listar']);
+                // this.ejecutoraGroup.reset();
+               // this.auspiciantes.push(res);
             }, (error) => {
-                this.toastrService.warning('Registrado', 'Auspiciante');
+                this.toastrService.warning('Auspiciante duplicado.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-warning alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
             });
     }
 }

@@ -17,7 +17,7 @@ class EventoController extends Controller
             ->join('tipo_eventos', 'tipo_eventos.tipo_evento_id', '=', 'eventos.tipo_evento_id')
             ->join('barrios', 'barrios.barrio_id', '=', 'eventos.barrio_id')
                     ->selectRaw('eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario, tipo_eventos.nombre as tipo_evento, barrios.nombre as parroquia')
-                    ->orderBy('eventos.fecha_evento', 'desc')
+                    ->orderBy('eventos.evento_id', 'desc')
                     ->paginate(10);
         return response()->json($eventos, 200);
     }
@@ -39,6 +39,19 @@ class EventoController extends Controller
             ->selectRaw('eventos.*, proyectos.nombre as proyecto, usuarios.nombres as usuario, tipo_eventos.nombre as tipo_evento, barrios.nombre as parroquia')
             ->orderBy('eventos.evento_id', 'desc')
                 ->paginate(10);
+        return response()->json($eventos, 200);
+    }
+
+    public function exporarExcel()
+    {
+        $eventos = Evento::join('proyectos', 'proyectos.proyecto_id', '=', 'eventos.proyecto_id')
+            ->join('usuarios', 'usuarios.usuario_id', '=', 'eventos.usuario_id')
+            ->join('tipo_eventos', 'tipo_eventos.tipo_evento_id', '=', 'eventos.tipo_evento_id')
+            ->join('barrios', 'barrios.barrio_id', '=', 'eventos.barrio_id')
+         //   ->where('eventos.estado','=',1)
+            ->selectRaw('proyectos.nombre as proyecto, tipo_eventos.nombre as tipo_evento, eventos.nombre, usuarios.nombres as usuario, barrios.nombre as parroquia, eventos.direccion, eventos.fecha_evento, eventos.fecha_finaliza, eventos.duracion_horas')
+            ->orderBy('eventos.evento_id', 'desc')
+            ->get();
         return response()->json($eventos, 200);
     }
 
@@ -84,13 +97,15 @@ class EventoController extends Controller
     public function participantes($evento_id) {
         $participantes = Evento::join('participantes', 'participantes.evento_id', '=', 'eventos.evento_id')
                                 ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+                                ->join('organizaciones', 'organizaciones.organizacion_id', '=', 'personas.organizacion_id')
                                 ->where('eventos.evento_id', '=', $evento_id)
                                 ->selectRaw('personas.cedula, 
                                             personas.nombres,
                                             personas.genero,
                                             personas.etnia,
-                                            personas.direccion,
-                                            personas.contacto')
+                                            personas.email,
+                                            personas.contacto,
+                                            organizaciones.nombre as organizacion')
                                 ->orderBy('personas.nombres', 'asc')
                                 ->get();
         $evento = Evento::find($evento_id);
@@ -122,17 +137,46 @@ class EventoController extends Controller
         $varones = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
                 ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
                 ->where('participantes.evento_id', '=',$evento_id)
-                ->where('personas.genero', '=', 'MASCULINO')
+                ->where('personas.genero', '=', 'M')
                 ->count();
-
         $mujeres = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
                 ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
                 ->where('participantes.evento_id', '=',$evento_id)
-                ->where('personas.genero', '=', 'FEMENINO')
+                ->where('personas.genero', '=', 'F')
                 ->count();
+<<<<<<< HEAD
+=======
+        $afro = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
+            ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+            ->where('participantes.evento_id', '=',$evento_id)
+            ->where('personas.etnia', '=', 'AFROECUATORIANO/A AFRODESCENDIENTE')
+            ->count();
+        $indigena = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
+            ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+            ->where('participantes.evento_id', '=',$evento_id)
+            ->where('personas.etnia', '=', 'INDÍGENA')
+            ->count();
+        $mestizo = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
+            ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+            ->where('participantes.evento_id', '=',$evento_id)
+            ->where('personas.etnia', '=', 'MESTIZO/A')
+            ->count();
+//        $ninios = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
+//            ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
+//            ->selectRaw('participantes.*, personas.fecha_nacimiento as fecha_nacimiento')
+//            ->where('participantes.evento_id', '=',$evento_id)
+//            ->get();
+//        $obj = response()->joson($ninios);
+
+ //        echo($obj);
+
+>>>>>>> 91aff1b1219e3fa958415ee2f5afe88020f081ef
         return response()->json([
             'varones' => $varones,
-            'mujeres' => $mujeres
+            'mujeres' => $mujeres,
+            'afro' => $afro,
+            'indigena' => $indigena,
+            'mestizo' => $mestizo
         ]);
     }
 }

@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {TipoSuministroService} from '../../tipo-suministro/tipo-suministro.service';
 import {TipoService} from '../tipo.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-tipo-create',
@@ -15,6 +16,7 @@ export class TipoCreateComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private router: Router,
+              private toastrService: ToastrService,
               private tipoSuministroService: TipoSuministroService,
               private tipoService: TipoService) {
     this.tipoSuministroService.listar()
@@ -38,7 +40,13 @@ export class TipoCreateComponent implements OnInit {
   store() {
     this.tipoService.store(this.tipoGroup.value)
         .subscribe((res: any) => {
-          alert(res.nombre + ' registrado');
+            this.toastrService.success('Tipo agregado exitosamente.', '', {
+                timeOut: 4000,
+                closeButton: true,
+                enableHtml: true,
+                toastClass: 'alert alert-success alert-with-icon',
+                positionClass: 'toast-top-right'
+            });
           this.router.navigate(['/insumos/tipos']);
         });
   }

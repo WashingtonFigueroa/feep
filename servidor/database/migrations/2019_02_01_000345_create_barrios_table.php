@@ -20,7 +20,7 @@ class CreateBarriosTable extends Migration
                 ->references('parroquia_id')
                 ->on('parroquias')
                 ->onDelete('cascade');
-            $table->string('comunidad')->default('Ninguna');
+            $table->string('comunidad')->nullable();
             $table->string('nombre');
             $table->softDeletes();
             $table->timestamps();

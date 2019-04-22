@@ -19,6 +19,7 @@ export class EventoUpdateComponent implements OnInit {
     proyectos: any = null;
     tipo_eventos: any = null;
     barrios: any = null;
+    x: any = null;
     constructor(private eventoService: EventoService,
                 private proyectoService: ProyectoService,
                 private tipoeventoService: TipoEventoService,
@@ -34,8 +35,21 @@ export class EventoUpdateComponent implements OnInit {
                 this.tipo_eventos = res;
             });
         this.barrioService.barrioslistar().subscribe((res: any) => {
-                this.barrios = res;
-            });
+            this.barrios = [];
+            res.forEach(
+                (barrio: any) => {
+                    if (barrio.comunidad === 'null') {
+                        this.x = '';
+                    } else {
+                        this.x = barrio.comunidad;
+                    }
+                    this.barrios.push({
+                        barrio_id: barrio.barrio_id,
+                        nombre:  barrio.ciudad + ' - ' + barrio.parroquia + ' - ' + this.x + ' - ' + barrio.nombre
+                    });
+                }
+            )
+        });
         this.route.params.subscribe((param: any) => {
             this.evento_id = param.id;
             this.eventoService.show(this.evento_id).subscribe((res: any) => {
@@ -59,13 +73,19 @@ export class EventoUpdateComponent implements OnInit {
         });
     }
     update() {
-        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento)
-        {this.eventoGroup.patchValue({
+        if (this.eventoGroup.value.fecha_finaliza >= this.eventoGroup.value.fecha_evento) {
+            this.eventoGroup.patchValue({
             nombre: this.eventoGroup.value.nombre.toUpperCase(),
             direccion: this.eventoGroup.value.direccion.toUpperCase()
         });
             this.eventoService.update(this.evento_id, this.eventoGroup.value).subscribe((res: any) => {
-                this.toastrService.success('Datos Actualizados', 'Evento');
+                this.toastrService.success('Evento Actualizado.', '', {
+                    timeOut: 2000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/eventos']);
             });
         } else {

@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import {SuministroService} from '../suministro.service';
 import {TipoInsumoService} from '../../tipo-insumo/tipo-insumo.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-suministro-update',
@@ -17,6 +18,7 @@ export class SuministroUpdateComponent implements OnInit {
   tipo_insumos: any = null;
   constructor(private suministroService: SuministroService,
               private tipoInsumoService: TipoInsumoService,
+              private toastrService: ToastrService,
               private fb: FormBuilder,
               private router: Router,
               private route: ActivatedRoute) {
@@ -50,6 +52,13 @@ export class SuministroUpdateComponent implements OnInit {
   update() {
     this.suministroService.update(this.suministro_id, this.suministroGroup.value)
         .subscribe((res: any) => {
+            this.toastrService.success('Suministro modificado exitosamente.', '', {
+                timeOut: 4000,
+                closeButton: true,
+                enableHtml: true,
+                toastClass: 'alert alert-success alert-with-icon',
+                positionClass: 'toast-top-right'
+            });
           this.router.navigate(['/insumos/suministros']);
         });
   }

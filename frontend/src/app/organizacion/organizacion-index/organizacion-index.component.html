@@ -8,6 +8,7 @@
           <div class="col-md-12">
             <div style="overflow-x:auto;">
               <div class="card">
+                <br>
                 <h3>&nbsp;&nbsp;Lista Organizaciones</h3>
                 <div class="container">
                   <div class="row">
@@ -38,17 +39,15 @@
                         <th> Nombre </th>
                         <th> Representante </th>
                         <th> Contacto </th>
-                        <th> N° Personas </th>
+                        <th> N°.P. </th>
                         <th class="text-center">Operaciones</th>
                       </thead>
                       <tbody>
                       <tr *ngFor="let organizacion of organizaciones.data; let i = index">
                         <td> {{ i + 1}} </td>
                         <td>
-                          <div class="logo" *ngIf="organizacion.imagen === 'sin_imagen'">
-                            <i class="fa fa-building"></i>
-                          </div>
-                          <img *ngIf="organizacion.imagen !== 'sin_imagen'" height="80" width="80" src="{{url_base}}{{organizacion.imagen}}">
+                          <span *ngIf="organizacion.imagen === 'sin_imagen'" class="badge badge-danger">Sin imagen</span>
+                          <img *ngIf="organizacion.imagen !== 'sin_imagen'" height="75" src="{{url_base}}{{organizacion.imagen}}">
                         </td>
                         <td> {{ organizacion.tipoorganizacion }} </td>
                         <td> {{ organizacion.actividad }} </td>
@@ -58,8 +57,8 @@
                         <td> {{ organizacion.contacto }} </td>
                         <td class="text-center"> {{ organizacion.total }} </td>
                         <td class="text-center">
-                          <a routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" title="Editar Proyecto" class="action action-edit"> <i class="fas fa-edit"></i> </a>
-                          <a (click)="destroy(organizacion, i)" title="Eliminar Proyecto" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
+                          <a routerLink="/organizaciones/editar/{{organizacion.organizacion_id}}" title="Editar Organización" class="action action-edit"> <i class="fas fa-edit"></i> </a>
+                          <a (click)="destroy(organizacion, i)" title="Eliminar Organización" class="action action-destroy"> <i class="fas fa-trash"></i> </a>
                           <label for="imagen-{{organizacion.organizacion_id}}"
                                  title="Cambiar Imagen"
                                  class="action action-info"><i class="fas fa-upload"></i></label>

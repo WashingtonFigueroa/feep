@@ -64,7 +64,7 @@ export class TipoOrganizacionIndexComponent implements OnInit {
             });
     }
     destroy(tipoorganizacion, index) {
-        if (confirm('Esta seguro de eliminar al tipoorganizacion ' + tipoorganizacion.nombres)) {
+        if (confirm('Esta seguro de eliminar al tipoorganizacion ' + tipoorganizacion.nombre)) {
             this.tipoorganizacionService.destroy(tipoorganizacion.tipo_organizacion_id)
                 .subscribe((res: any) => {
                     this.tipoorganizaciones.data.splice(index, 1);

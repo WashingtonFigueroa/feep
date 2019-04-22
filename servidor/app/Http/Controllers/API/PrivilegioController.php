@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Cargo;
 use App\Privilegio;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -58,6 +57,16 @@ class PrivilegioController extends Controller
         'asignar-insumos' => [
             [
                 'acceso' => '/asignaciones/listar'
+            ]
+        ],
+        'resumenes' => [
+            [
+                'acceso' => '/resumenes/listar'
+            ]
+        ],
+        'reportes' => [
+            [
+                'acceso' => '/reportes/reporte1'
             ]
         ],
         'configuracion' => [
@@ -119,13 +128,13 @@ class PrivilegioController extends Controller
                     $data->activo = 'si';
                 }
                 $data->save();
-            } /*else {
+            } else {
                 Privilegio::create([
                     'cargo_id' => $cargo_id,
                     'acceso' => $acceso['acceso'],
                     'activo' => 'si'
                 ]);
-            }*/
+            }
         }
         return response()->json([
             'exito' => 'Privilegio actualizado'

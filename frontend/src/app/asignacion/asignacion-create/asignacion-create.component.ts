@@ -1,10 +1,11 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {EventoService} from "../../evento/evento.service";
-import {Router} from "@angular/router";
-import {ToastrService} from "ngx-toastr";
-import {AsignacionService} from "../asignacion.service";
-import {TipoService} from "../../tipo/tipo.service";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {EventoService} from '../../evento/evento.service';
+import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {AsignacionService} from '../asignacion.service';
+import {TipoService} from '../../tipo/tipo.service';
+import {MiembroService} from '../../miembro/miembro.service';
 
 @Component({
   selector: 'app-asignacion-create',
@@ -16,30 +17,45 @@ export class AsignacionCreateComponent implements OnInit {
     insumoGroup: FormGroup;
     eventos: any = null;
     tipos: any = null;
+    personas: any = null;
     today: Date;
+    numEvento: any = 0;
     constructor(private insumoService: AsignacionService,
                 private tipoService: TipoService,
+                private personasService: MiembroService,
                 private eventoService: EventoService,
                 private router: Router,
                 private fb: FormBuilder,
                 private toastrService: ToastrService) {
-        this.today =new Date();
+        this.today = new Date();
         this.tipoService.listar()
             .subscribe((res: any) => {
                 this.tipos = res;
             });
+        this.personasService.listar().subscribe((res: any) => {
+            this.personas = [];
+            res.forEach(
+                (persona: any) => {
+                    this.personas.push({
+                        persona_id: persona.persona_id,
+                        nombres:  persona.nombres
+                    });
+                }
+            )
+        });
         this.eventoService.listar()
             .subscribe((res: any) => {
                 this.eventos = res;
+                this.numEvento = res.length;
+                this.crearForm();
             });
-        this.crearForm();
     }
     ngOnInit() {
     }
     crearForm() {
         this.insumoGroup = this.fb.group({
-            'tipo_id': [0, [Validators.required]],
-            'evento_id': [0, [Validators.required]],
+            'tipo_id': [1, [Validators.required]],
+            'evento_id': [parseInt(this.numEvento , 10), [Validators.required]],
             'nombre': [''],
             'cantidad': ['', [Validators.required]],
             'fecha': [''],
@@ -61,10 +77,22 @@ export class AsignacionCreateComponent implements OnInit {
         formData.append('receptor', this.insumoGroup.value.receptor.toUpperCase());
         this.insumoService.store(formData)
             .subscribe((res: any) => {
-                this.toastrService.success('Asigando', 'Insumo')
+                this.toastrService.success('Insumo agregado exitosamente.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-success alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
                 this.router.navigate(['/asignaciones/listar']);
             }, (error) => {
-                this.toastrService.error('duplicado', 'Insumo');
+                this.toastrService.warning('Insumo duplicado.', '', {
+                    timeOut: 4000,
+                    closeButton: true,
+                    enableHtml: true,
+                    toastClass: 'alert alert-warning alert-with-icon',
+                    positionClass: 'toast-top-right'
+                });
             });
     }
 }
