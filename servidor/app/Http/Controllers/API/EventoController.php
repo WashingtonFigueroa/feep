@@ -144,8 +144,6 @@ class EventoController extends Controller
                 ->where('participantes.evento_id', '=',$evento_id)
                 ->where('personas.genero', '=', 'F')
                 ->count();
-<<<<<<< HEAD
-=======
         $afro = Participante::join('eventos', 'eventos.evento_id', '=', 'participantes.evento_id')
             ->join('personas', 'personas.persona_id', '=', 'participantes.persona_id')
             ->where('participantes.evento_id', '=',$evento_id)
@@ -170,7 +168,6 @@ class EventoController extends Controller
 
  //        echo($obj);
 
->>>>>>> 91aff1b1219e3fa958415ee2f5afe88020f081ef
         return response()->json([
             'varones' => $varones,
             'mujeres' => $mujeres,

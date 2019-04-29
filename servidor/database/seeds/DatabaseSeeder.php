@@ -38,8 +38,8 @@ class DatabaseSeeder extends Seeder
                 //TIPO USUARIOS
                 $cargo = \App\Cargo::create(
                     [
-                        'nombre' => 'administrador',
-                        'descripcion' => 'descripcion del administrador'
+                        'nombre' => 'SuperAdmin',
+                        'descripcion' => 'DTMOWED Desarrolladores'
                     ]
                 );
                 foreach ($accesos as $acceso) {
@@ -101,8 +101,6 @@ class DatabaseSeeder extends Seeder
                 \App\Tipo::create(['tipo_suministro_id' => 1, 'nombre' => 'LIMA','descripcion' => '']);
                 \App\Tipo::create(['tipo_suministro_id' => 3, 'nombre' => 'COMPUTADOR','descripcion' => '']);
 
-
-
         //PROVINCIAS
                 \App\Provincia::create(['codigo' => '01','nombre' => 'AZUAY']);
                 \App\Provincia::create(['codigo' => '02','nombre' => 'BOLIVAR']);
@@ -129,6 +127,8 @@ class DatabaseSeeder extends Seeder
                 \App\Provincia::create(['codigo' => '23','nombre' => 'SANTO DOMINGO DE LOS TSACHILAS']);
                 \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
                 \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
+//Organizacion
+        \App\Organizacion::create(['tipo_organizacion_id' => 1, 'actividad_id' => 1, 'documento' => '9999999999', 'nombre' => 'PARTICULAR', 'caracteristica1' => 'NO REGULADA', 'caracteristica2' => 'BASE', 'caracteristica3' => 'EMPRENDIMIENTO', 'imagen' => 'sin_imagen', 'representante' => 'PARTICULAR', 'contacto' => '999999999', 'direccion' => '', 'descripcion' => 'IBARRA', 'ministerio' => '000', 'acuerdo' => '', 'mujeres' => '0', 'ninias' => '0', 'hombres' => '0', 'ninios' => '0', 'total' => '0', 'latitud' => '', 'longitud' => '', 'precision' => '']);
 
 //Barrio
 /*\App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Los Ceibos (barrio-cabecera)']);

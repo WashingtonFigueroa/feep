@@ -1,3 +1,76 @@
-<p>
-  mundo reportes
-</p>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <br>
+              <h3>&nbsp;&nbsp; Lista de Beneficiarios</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <button class="btn btn-info" routerLink="/inscripciones/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
+                  </div>
+                  <div class="col-4">
+                    <form (submit)="buscar(valor)" class="form-inline" role="form">
+                      <div class="form-group">
+                        <input type="email" class="input-search"
+                               [(ngModel)]="valor"
+                               name="valor">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                  <div class="col-4 text-right">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table small" *ngIf="beneficiarios !== null">
+                    <thead style="background-color: #303030; color: #f7f7f7">
+                    <tr>
+                      <th> #   </th>
+                      <th> Nombre Evento   </th>
+                      <th> Nombre Participante   </th>
+                      <th> Asociación   </th>
+                      <th> Observación   </th>
+                      <th class="text-center">Operaciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let beneficiario of beneficiarios.data; let i = index">
+                      <td>  {{ i + 1}} </td>
+                      <td width="350px">  {{ beneficiario.evento }} </td>
+                      <td width="350px">  {{ beneficiario.persona }} </td>
+                      <td>  {{ beneficiario.organizacion }} </td>
+                      <td>  {{ beneficiario.observacion }} </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div *ngIf="beneficiarios !== null && beneficiarios.last_page > 1" class="paginacion text-center">
+                  <div>
+                    Página {{ beneficiarios.current_page }} de {{ beneficiarios.last_page }}
+                  </div>
+                  <button class="paginacion-btn" (click)="loadPagination(beneficiarios.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(beneficiarios.prev_page_url)" [disabled]="beneficiarios.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == beneficiarios.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPagination(beneficiarios.next_page_url)" [disabled]="beneficiarios.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(beneficiarios.last_page_url)"><i class="fa fa-forward"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

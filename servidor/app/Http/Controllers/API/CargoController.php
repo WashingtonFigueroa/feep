@@ -63,7 +63,8 @@ class CargoController extends Controller
      */
     public function index()
     {
-        return response()->json(Cargo::orderBy('nombre')->get(), 200);
+        return response()->json(Cargo::Where('nombre','!=','SuperAdmin')
+        ->orderBy('nombre')->get(), 200);
     }
 
     /**

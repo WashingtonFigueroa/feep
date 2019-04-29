@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {environment} from "../../environments/environment.prod";
-import {HttpClient} from "../../../node_modules/@angular/common/http";
+import {environment} from '../../environments/environment.prod';
+import {HttpClient} from '../../../node_modules/@angular/common/http';
 
 @Injectable()
 export class InscripcionService {

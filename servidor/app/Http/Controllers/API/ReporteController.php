@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Evento;
+use App\Participante;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,6 +20,19 @@ class ReporteController extends Controller
             ->paginate(5);
         return response()->json($eventos, 200);
     }
+
+    public function beneficiarios()
+    {
+        $personas= Participante::join('eventos','eventos.evento_id','=','participantes.evento_id')
+            ->join('proyectos','proyectos.proyecto_id','=','eventos.proyecto_id')
+            ->join('personas','personas.persona_id','=','participantes.persona_id')
+            ->join('organizaciones', 'organizaciones.organizacion_id', '=', 'personas.organizacion_id')
+            ->selectRaw('proyectos.nombre as proyecto, participantes.*, eventos.nombre as evento, personas.nombres as persona, organizaciones.nombre as organizacion')
+            ->orderBy('participantes.participante_id','desc')
+            ->paginate(10);
+        return response()->json($personas, 200);
+    }
+
     public function num_asistencia()
     {
         $num= Participante::count()

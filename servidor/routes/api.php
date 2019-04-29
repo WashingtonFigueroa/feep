@@ -9,6 +9,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::prefix('v1')->group(function () {
     Route::post('login', 'API\UsuarioController@login');
     Route::post('signup', 'API\UsuarioController@signup');
+//Area Pruebas
+
 
 //Imágenes
     Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
@@ -95,9 +97,16 @@ Route::prefix('v1')->group(function () {
         Route::get('resumenes-listar', 'API\ResumenController@listar');
         Route::get('resumenes-buscar/{valor?}', 'API\ResumenController@buscar');
 //Reportes
-        Route::get('reportes-num_asistencia', 'API\ResumenController@num_asistencia');
         Route::get('reporte/{evento_id}','API\EventoController@reporte');
-//consultas
+        Route::get('reportes-num_asistencia', 'API\ReporteController@num_asistencia');
+        Route::get('reportes-beneficiarios', 'API\ReporteController@beneficiarios');
+
+
+
+
+        Route::get('reportes-num-beneficiarios', 'API\ReporteController@num-beneficiarios');
+
+        //consultas
         Route::get('sri/{cedula}', 'API\PersonaController@sri');
         /*login*/
         Route::apiResources([

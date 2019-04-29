@@ -96,6 +96,7 @@ class UsuarioController extends Controller
     }
     public function index() {
         $usuarios = Usuario::join('cargos', 'cargos.cargo_id', '=', 'usuarios.cargo_id')
+            ->where('cargos.nombre','!=','SuperAdmin')
                             ->selectRaw('usuarios.*, cargos.nombre as cargo')
                             ->orderBy('usuarios.nombres')
                             ->paginate(10);
