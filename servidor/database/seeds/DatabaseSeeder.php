@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run() {
-        $accesos = [
+  /*      $accesos = [
                     '/cargos/listar',
                     '/privilegios',
                     '/asignacioneventos/listar',
@@ -131,7 +131,8 @@ class DatabaseSeeder extends Seeder
         \App\Organizacion::create(['tipo_organizacion_id' => 1, 'actividad_id' => 1, 'documento' => '9999999999', 'nombre' => 'PARTICULAR', 'caracteristica1' => 'NO REGULADA', 'caracteristica2' => 'BASE', 'caracteristica3' => 'EMPRENDIMIENTO', 'imagen' => 'sin_imagen', 'representante' => 'PARTICULAR', 'contacto' => '999999999','email' => '', 'direccion' => 'IBARRA', 'ministerio' => '000', 'acuerdo' => '', 'mujeres' => '0', 'ninias' => '0', 'hombres' => '0', 'ninios' => '0', 'total' => '0', 'facebook' => '', 'twitter' => '', 'watshap' => '', 'instragram' => '', 'interna' => '', 'externa' => '']);
 
 //Barrio
-/*\App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Los Ceibos (barrio-cabecera)']);
+*/
+  \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Los Ceibos (barrio-cabecera)']);
 \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'El Cedro']);
 \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Caranqui (cabecera-barrio histórico)']);
 \App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Ruinas de Caranqui (protegido por el Muncicipio de Ibarra)']);
@@ -201,10 +202,7 @@ class DatabaseSeeder extends Seeder
         \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Catacumbas']);
         \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Priorato-La Esperanza (barrio-cabecera)']);
         \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Huertos Familiares']);
-        \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Miraflores y Barrio España']);*/
-
-
-
+        \App\Barrio::create(['parroquia_id' => 611,'comunidad' => '', 'nombre' => 'Miraflores y Barrio España']);
 
     }
 }
