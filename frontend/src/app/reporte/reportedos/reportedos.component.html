@@ -1,0 +1,121 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <br>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="btn-group table-responsive" role="group">
+                      <button class="btn btn-secondary " routerLink="/reportes" type="button">
+                        REPORTES &nbsp;&nbsp; Proyectos-Eventos
+                      </button>
+                      <!--<button class="btn btn-secondary" routerLink="/reportes/reportedos" type="button">-->
+                        <!--Beneficiario-->
+                      <!--</button>-->
+                      <button class="btn btn-secondary" routerLink="/reportes/reportetres" type="button">
+                        Varios
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form [formGroup]="buscarGroup" (submit)="listabeneficiarios()" *ngIf="today !== null && today2 !== null">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <section class="form-group">
+                              <label>Fecha Inicio</label>
+                              <input type="date" [ngModel]="today | date:'yyyy-MM-dd'"
+                                     (ngModelChange)="today = $event"
+                                     formControlName="start" name="start" id="start"
+                                     class="form-control form-control-rounded" #searchDate>
+                            </section>
+                          </div>
+                          <div class="col-md-4">
+                            <section class="form-group">
+                              <label>Fecha Finaliza</label>
+                              <input type="date" [ngModel]="today2 | date:'yyyy-MM-dd'"
+                                     (ngModelChange)="today2 = $event"
+                                     formControlName="end" name="end" id="end"
+                                     class="form-control form-control-rounded" #searchDate>
+                            </section>
+                          </div>
+                          <div class="col-md-4">
+                            <button class="btn btn-primary"><i class="fa fa-filter"></i>&nbsp;&nbsp;Consultar </button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-4">
+                    <form (submit)="buscar(valor)" class="form-inline" role="form">
+                      <div class="form-group">
+                        <input type="email" class="input-search" [(ngModel)]="valor" name="valor" placeholder="Buscar...">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                  <div class="col-md-2">
+                    <br>
+                    <p>Número de Registros : {{total}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table small" *ngIf="reportes !== null">
+                    <thead style="background-color: #e9ecef; color: #007bff">
+                    <th> #   </th>
+                    <th> Nombre Proyecto   </th>
+                    <th> Nombre Evento   </th>
+                    <th> Nombre Participante   </th>
+                    <th> Asociación   </th>
+                    <th> Genero   </th>
+                    <th> Edad </th>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let reporte of reportes.data; let i = index">
+                      <td>  {{ i + 1}} </td>
+                      <td width="350px">  {{ reporte.proyecto }} </td>
+                      <td width="350px">  {{ reporte.evento }} </td>
+                      <td width="350px">  {{ reporte.persona }} </td>
+                      <td>  {{ reporte.organizacion }} </td>
+                      <td>  {{ reporte.genero }} </td>
+                      <td>  {{ reporte.edad  }} </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div *ngIf="reportes !== null && reportes.last_page > 1" class="paginacion text-center">
+                  <div>
+                    Página {{ reportes.current_page }} de {{ reportes.last_page }}
+                  </div>
+                  <button class="paginacion-btn" (click)="loadPagination(reportes.first_page_url)"><i class="fa fa-backward"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(reportes.prev_page_url)" [disabled]="reportes.prev_page_url === null"><i class="fa fa-chevron-left"></i></button>
+                  <button class="paginacion-btn" *ngFor="let page of pages" [class.activated]="page.page == reportes.current_page" (click)="loadPagination(page.url)">{{ page.page }}</button>
+                  <button class="paginacion-btn" (click)="loadPagination(reportes.next_page_url)" [disabled]="reportes.next_page_url === null"><i class="fa fa-chevron-right"></i></button>
+                  <button class="paginacion-btn" (click)="loadPagination(reportes.last_page_url)"><i class="fa fa-forward"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

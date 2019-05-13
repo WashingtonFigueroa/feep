@@ -127,10 +127,15 @@ import { ResumenService} from '../../resumen/resumen.service';
 import {DashboardService} from '../../dashboard/dashboard.service';
 import { EventoReporteComponent } from '../../evento/evento-reporte/evento-reporte.component';
 import { ReporteComponent } from '../../reporte/reporte.component';
-import { Reporte1Component } from '../../reporte/reporte-1/reporte-1.component';
-import { Reporte2Component } from '../../reporte/reporte-2/reporte-2.component';
-import { Reporte3Component } from '../../reporte/reporte-3/reporte-3.component';
+import { ReporteunoComponent } from '../../reporte/reporteuno/reporteuno.component';
+import { ReportedosComponent } from '../../reporte/reportedos/reportedos.component';
+import { ReportetresComponent } from '../../reporte/reportetres/reportetres.component';
 import {ReporteService} from '../../reporte/reporte.service';
+import * as PlotlyJS from 'plotly.js/dist/plotly.js';
+import { PlotlyModule } from 'angular-plotly.js';
+import { GraficabeneficiariosComponent } from '../../dashboard/graficabeneficiarios/graficabeneficiarios.component';
+
+PlotlyModule.plotlyjs = PlotlyJS;
 
 @NgModule({
   imports: [
@@ -142,7 +147,8 @@ import {ReporteService} from '../../reporte/reporte.service';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    NgSelectModule
+    NgSelectModule,
+      PlotlyModule,
   ],
   declarations: [
     DashboardComponent,
@@ -241,9 +247,10 @@ import {ReporteService} from '../../reporte/reporte.service';
     ResumenCreateComponent,
       EventoReporteComponent,
       ReporteComponent,
-      Reporte1Component,
-      Reporte2Component,
-      Reporte3Component,
+      ReporteunoComponent,
+      ReportedosComponent,
+      ReportetresComponent,
+      GraficabeneficiariosComponent,
   ],
   providers: [
       OrganizacionService,

@@ -9,7 +9,8 @@
             <div style="overflow-x:auto;">
               <div class="card">
                 <br>
-                <h3>&nbsp;&nbsp;Lista Organizaciones</h3>
+                <h5>&nbsp;&nbsp; <strong>Organizaciones </strong></h5>
+                <hr>
                 <div class="container">
                   <div class="row">
                     <div class="col-sm">
@@ -30,7 +31,7 @@
                 <div class="card-body">
                       <div *ngIf="organizaciones !== null" class="table-responsive">
                         <table class="table">
-                          <thead style="background-color: #303030; color: #f7f7f7">
+                          <thead style="background-color: #e9ecef; color: #007bff">
                         <th> # </th>
                         <th> Logo </th>
                         <th> Organización </th>
@@ -52,8 +53,8 @@
                         <td> {{ organizacion.tipoorganizacion }} </td>
                         <td> {{ organizacion.actividad }} </td>
                         <td> {{ organizacion.documento }} </td>
-                        <td> {{ organizacion.nombre }} </td>
-                        <td> {{ organizacion.representante }} </td>
+                        <td width="250px"> {{ organizacion.nombre }} </td>
+                        <td width="250px"> {{ organizacion.representante }} </td>
                         <td> {{ organizacion.contacto }} </td>
                         <td class="text-center"> {{ organizacion.total }} </td>
                         <td class="text-center">

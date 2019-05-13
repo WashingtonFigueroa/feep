@@ -35,7 +35,7 @@ class CreateOrganizacionsTable extends Migration
             $table->string('representante');
             $table->string('contacto')->nullable();
             $table->string('direccion')->nullable();
-            $table->string('descripcion')->nullable();
+            $table->string('email')->nullable();
             $table->string('ministerio');
             $table->string('acuerdo')->nullable();
             $table->integer('mujeres')->nullable();
@@ -43,9 +43,12 @@ class CreateOrganizacionsTable extends Migration
             $table->integer('hombres')->nullable();
             $table->integer('ninios')->nullable();
             $table->integer('total')->nullable();
-            $table->string('latitud')->nullable();
-            $table->string('longitud')->nullable();
-            $table->string('precision')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('watshap')->nullable();
+            $table->string('instragram')->nullable();
+            $table->string('interna')->nullable();
+            $table->string('externa')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

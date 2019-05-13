@@ -24,6 +24,7 @@ class InsumoController extends Controller
             ->orWhere('tipos.nombre', 'like', '%' . $valor . '%')
             ->orWhere('insumos.fecha', 'like', '%' . $valor . '%')
             ->orWhere('insumos.receptor', 'like', '%' . $valor . '%')
+            ->orWhere('insumos.receptor2', 'like', '%' . $valor . '%')
             ->selectRaw('insumos.*,eventos.nombre as evento, tipos.nombre as tipo')
             ->orderBy('insumos.insumo_id')
             ->paginate(10);

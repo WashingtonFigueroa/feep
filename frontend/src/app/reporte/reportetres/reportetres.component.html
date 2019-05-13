@@ -1,0 +1,115 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <br>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="btn-group table-responsive" role="group">
+                      <button class="btn btn-secondary " routerLink="/reportes" type="button">
+                        REPORTES &nbsp;&nbsp; Proyectos-Eventos
+                      </button>
+                      <!--<button class="btn btn-secondary" routerLink="/reportes/reportedos" type="button">-->
+                        <!--Beneficiario-->
+                      <!--</button>-->
+                      <button class="btn btn-secondary" routerLink="/reportes/reportetres" type="button">
+                        Varios
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>Descargar Información:</p>
+                        <button class="btn btn-primary" (click)="excelOrganizaciones()"><span class="fa fa-file"></span>&nbsp;&nbsp;Exportar organizaciones</button>
+                        <button class="btn btn-primary" (click)="exportBeneficiarios()"><span class="fa fa-file"></span>&nbsp;&nbsp;Exportar Beneficiarios</button>
+                        <button class="btn btn-primary" (click)="exportProyectos()"><span class="fa fa-file"></span>&nbsp;&nbsp;Exportar Proyectos</button>
+                        <button class="btn btn-primary" (click)="export()"><span class="fa fa-file"></span>&nbsp;&nbsp;Exportar Eventos</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-10">
+                      <form (submit)="excelPorInsumo()" [formGroup]="insumosGroup" *ngIf="tipos !== null">
+                        <p>Descargar Información por Insumo:</p>
+                        <div class="form-group">
+                        <label>Fecha de inicio</label>
+                        <input type="date" class="form-control" formControlName="start" required autofocus>
+                        <small class="text-muted">Seleccione la fecha de inicio</small>
+                        </div>
+                        <div class="form-group">
+                        <label>Fecha de fin</label>
+                        <input type="date" class="form-control" formControlName="end" required>
+                        <small class="text-muted">Seleccione la fecha de fin</small>
+                        </div>
+                          <div class="form-group">
+                            <label>* Seleccione tipo Insumo :</label>
+                            <ng-select [items]="tipos"
+                                       class="custom"
+                                       id="dato"
+                                       bindLabel="nombre"
+                                       bindValue="nombre"
+                                       formControlName="dato">
+                            </ng-select>
+                          </div>
+                          <button class="btn btn-primary" [disabled]="insumosGroup.status === 'INVALID'">Generar Reporte</button>
+                      </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-10">
+                        <form (submit)="excelPorParroquia()" [formGroup]="barriosGroup" *ngIf="barrios !== null">
+                          <p>Descargar Información por Parroquia:</p>
+                          <div class="form-group">
+                            <label>Fecha de inicio</label>
+                            <input type="date" class="form-control" formControlName="start1" required autofocus>
+                            <small class="text-muted">Seleccione la fecha de inicio</small>
+                          </div>
+                          <div class="form-group">
+                            <label>Fecha de fin</label>
+                            <input type="date" class="form-control" formControlName="end1" required>
+                            <small class="text-muted">Seleccione la fecha de fin</small>
+                          </div>
+                          <div class="form-group">
+                            <label>* Seleccione Ubicación :</label>
+                            <ng-select [items]="barrios"
+                                       class="custom"
+                                       id="dato1"
+                                       bindLabel="nombre"
+                                       bindValue="barrio_id"
+                                       formControlName="dato1">
+                            </ng-select>
+                          </div>
+                          <button class="btn btn-primary" [disabled]="barriosGroup.status === 'INVALID'">Generar Reporte</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+

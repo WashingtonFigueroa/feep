@@ -21,8 +21,8 @@ class Organizacion extends Model
         'imagen',
         'representante',
         'contacto',
+        'email',
         'direccion',
-        'descripcion',
         'ministerio',
         'acuerdo',
         'mujeres',
@@ -30,9 +30,12 @@ class Organizacion extends Model
         'hombres',
         'ninios',
         'total',
-        'latitud',
-        'longitud',
-        'precision',
+        'facebook',
+        'twitter',
+        'watshap',
+        'instragram',
+        'interna',
+        'externa',
     ];
     protected $dates = ['deleted_at'];
 }

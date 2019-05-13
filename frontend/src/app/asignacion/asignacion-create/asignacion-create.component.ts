@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+ import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {EventoService} from '../../evento/evento.service';
 import {Router} from '@angular/router';
@@ -6,6 +6,7 @@ import {ToastrService} from 'ngx-toastr';
 import {AsignacionService} from '../asignacion.service';
 import {TipoService} from '../../tipo/tipo.service';
 import {MiembroService} from '../../miembro/miembro.service';
+ import {OrganizacionService} from '../../organizacion/organizacion.service';
 
 @Component({
   selector: 'app-asignacion-create',
@@ -18,11 +19,13 @@ export class AsignacionCreateComponent implements OnInit {
     eventos: any = null;
     tipos: any = null;
     personas: any = null;
+    organizaciones: any = null;
     today: Date;
     numEvento: any = 0;
     constructor(private insumoService: AsignacionService,
                 private tipoService: TipoService,
                 private personasService: MiembroService,
+                private organizacionService: OrganizacionService,
                 private eventoService: EventoService,
                 private router: Router,
                 private fb: FormBuilder,
@@ -31,6 +34,10 @@ export class AsignacionCreateComponent implements OnInit {
         this.tipoService.listar()
             .subscribe((res: any) => {
                 this.tipos = res;
+            });
+        this.organizacionService.listar()
+            .subscribe((res: any) => {
+                this.organizaciones = res;
             });
         this.personasService.listar().subscribe((res: any) => {
             this.personas = [];
@@ -60,7 +67,8 @@ export class AsignacionCreateComponent implements OnInit {
             'cantidad': ['', [Validators.required]],
             'fecha': [''],
             'imagen': [''],
-            'receptor': ['', [Validators.required]],
+            'receptor': [''],
+            'receptor2': [''],
         });
     }
     store() {
@@ -75,6 +83,7 @@ export class AsignacionCreateComponent implements OnInit {
         formData.append('cantidad', this.insumoGroup.value.cantidad);
         formData.append('fecha', this.insumoGroup.value.fecha);
         formData.append('receptor', this.insumoGroup.value.receptor.toUpperCase());
+        formData.append('receptor2', this.insumoGroup.value.receptor2.toUpperCase());
         this.insumoService.store(formData)
             .subscribe((res: any) => {
                 this.toastrService.success('Insumo agregado exitosamente.', '', {

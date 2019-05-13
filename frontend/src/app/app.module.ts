@@ -15,6 +15,8 @@ import {ErrorInterceptor} from './error-interceptor';
 import {AutenticacionService} from './autenticacion.service';
 import {ToastrModule} from 'ngx-toastr';
 import {AuthGuard} from './auth.guard';
+import {PlotlyModule} from 'angular-plotly.js';
+
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import {AuthGuard} from './auth.guard';
     AppComponent,
     AdminLayoutComponent,
     LoginComponent,
+
   ],
   providers: [
     AuthGuard,

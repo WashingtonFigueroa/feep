@@ -14,7 +14,6 @@ Route::prefix('v1')->group(function () {
 
 //Imágenes
     Route::get('organizaciones-imagen/{url}', 'API\OrganizacionController@imagen');
-    Route::get('tipo-personas-imagen/{url}', 'API\TipoPersonaController@imagen');
     Route::get('anexos-archivo/{url}', 'API\AnexoController@imagen');
     Route::get('eventos-imagen/{url}', 'API\EventoController@imagen');
     Route::get('insumos-imagen/{url}', 'API\InsumoController@imagen');
@@ -38,7 +37,6 @@ Route::prefix('v1')->group(function () {
         Route::get('organizaciones-listar', 'API\OrganizacionController@listar');
         Route::get('organizaciones-buscar/{valor?}', 'API\OrganizacionController@buscar');
 //PERSONAS
-      //  Route::get('tipo-personas-listar', 'API\TipoPersonaController@listar');
         Route::get('provincias-listar', 'API\ProvinciaController@listar');
         Route::get('ciudades-listar', 'API\CiudadController@listar');
         Route::get('tipo-eventos-listar', 'API\TipoEventoController@listar');
@@ -99,19 +97,23 @@ Route::prefix('v1')->group(function () {
 //Reportes
         Route::get('reporte/{evento_id}','API\EventoController@reporte');
         Route::get('reportes-num_asistencia', 'API\ReporteController@num_asistencia');
-        Route::get('reportes-beneficiarios', 'API\ReporteController@beneficiarios');
-
-
-
-
+        Route::get('reportes-beneficiario/{start}/{end}', 'API\ReporteController@beneficiarios');
+        Route::get('reportes-indexbeneficiarios', 'API\ReporteController@indexbeneficiarios');
+        Route::get('reportes-beneficiario-buscar/{valor?}', 'API\ReporteController@buscar');
         Route::get('reportes-num-beneficiarios', 'API\ReporteController@num-beneficiarios');
-
+        Route::get('excelProyectos', 'API\ReporteController@excelProyectos');
+        Route::get('excelBeneficiarios', 'API\ReporteController@excelBeneficiarios');
+        Route::get('excelOrganizaciones', 'API\ReporteController@excelOrganizaciones');
+        Route::get('excelPorInsumo/{valor}/{start}/{end}', 'API\ReporteController@excelPorInsumo');
+        Route::get('excelPorParroquia/{valor}/{start}/{end}', 'API\ReporteController@excelPorParroquia');
+//Graficas
+Route::get('eventos_mes', 'API\GraficasController@eventosMes');
+Route::get('beneficiariosMes', 'API\GraficasController@beneficiariosMes');
         //consultas
         Route::get('sri/{cedula}', 'API\PersonaController@sri');
         /*login*/
         Route::apiResources([
             'tipo-organizaciones' => 'API\TipoOrganizacionController',
-            'tipo-personas' => 'API\TipoPersonaController',
             'provincias' => 'API\ProvinciaController',
             'organizaciones' => 'API\OrganizacionController',
             'tipo-eventos' => 'API\TipoEventoController',

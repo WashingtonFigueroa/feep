@@ -73,6 +73,18 @@
                </div>
              </div>
              <div class="col-md-6">
+               <div class="form-group">
+                 <label>* Seleccione el Receptor Organización :</label>
+                 <ng-select [items]="organizaciones"
+                            class="custom"
+                            id="receptor2"
+                            bindLabel="nombre"
+                            bindValue="nombre"
+                            formControlName="receptor2">
+                 </ng-select>
+               </div>
+             </div>
+             <div class="col-md-6">
                <div>
                  <label>* Seleccione Imagen :</label>
                  <input type="file" class="form-control"

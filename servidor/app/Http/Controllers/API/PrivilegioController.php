@@ -66,7 +66,7 @@ class PrivilegioController extends Controller
         ],
         'reportes' => [
             [
-                'acceso' => '/reportes/reporte1'
+                'acceso' => '/reportes/reporteuno'
             ]
         ],
         'configuracion' => [

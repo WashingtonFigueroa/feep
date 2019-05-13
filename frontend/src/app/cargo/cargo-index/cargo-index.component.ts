@@ -33,7 +33,7 @@ export class CargoIndexComponent implements OnInit {
               timeOut: 8000,
               closeButton: true,
               enableHtml: true,
-              toastClass: "alert alert-danger alert-with-icon",
+              toastClass: 'alert alert-danger alert-with-icon',
               positionClass: 'toast-top-right'
             });
             this.cargos.splice(index, 1);

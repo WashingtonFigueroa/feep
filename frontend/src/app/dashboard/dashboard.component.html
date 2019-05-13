@@ -8,11 +8,40 @@
           <div class="col-md-12">
             <div class="card">
               <br>
-              <h3>&nbsp;&nbsp; Eventos</h3>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <h5 class="card-header" style="background-color: #303030;color: #ffffff">
+                        Eventos por mes
+                      </h5>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <plotly-plot [data]="eventos.data" [layout]="eventos.layout" class="table-responsive"></plotly-plot>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card">
+                      <h5 class="card-header" style="background-color: #303030;color: #ffffff">
+                        Beneficiarios por mes
+                      </h5>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <app-graficabeneficiarios></app-graficabeneficiarios>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h5>&nbsp;&nbsp; <strong>Eventos en curso</strong></h5>
+              <hr>
               <div class="card-body">
                 <div *ngIf="reportes !== null" class="table-responsive">
                   <table class="table">
-                    <thead style="background-color: #303030; color: #f7f7f7">
+                    <thead style="background-color: #e9ecef; color: #007bff">
                     <th> #   </th>
                     <th> Imagen   </th>
                     <th> Nombre Evento  </th>
@@ -30,9 +59,9 @@
                              [alt]="evento.nombre" *ngIf="evento.imagen">
                       </td>
                       <td width="400px">  {{ evento.nombre }} </td>
-                      <td>  {{ evento.usuario }} </td>
+                      <td width="350px">  {{ evento.usuario }} </td>
                       <td>  {{ evento.direccion }} </td>
-                      <td>  {{ evento.fecha_evento | date: 'dd/MM/yyyy' }} </td>
+                      <td>  {{ evento.fecha_evento | date: 'yyy/MM/dd' }} </td>
 
                       <div *ngIf="(evento.fecha_finaliza|date:'yyy/MM/dd') < (today |date:'yyy/MM/dd')">
                         <td style="background-color: rgba(113,241,113,0.67)" width="200px">  {{ evento.fecha_finaliza | date: 'yyy/MM/dd' }}  </td>

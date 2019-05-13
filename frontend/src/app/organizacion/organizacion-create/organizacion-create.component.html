@@ -125,8 +125,20 @@
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label>Número Telefónico</label>
+                  <label>Número Contacto :</label>
                   <input type="text" maxlength="10" onkeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue=false" class="form-control" formControlName="contacto" name="contacto" id="contacto">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Email :</label>
+                  <input type="email" class="form-control" formControlName="email" name="email" id="email">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Dirección :</label>
+                  <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="direccion" name="direccion" id="direccion">
                 </div>
               </div>
             </div>
@@ -157,12 +169,46 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <label>Dirección :</label>
-                <input type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" formControlName="descripcion" name="descripcion" id="descripcion">
-              </div>
-            </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Facebook</label>
+      <input type="text" class="form-control" formControlName="facebook" name="facebook" id="facebook">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Twitter </label>
+      <input type="text" class="form-control" formControlName="twitter" name="twitter" id="twitter">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>WhatsApp</label>
+      <input type="text" class="form-control" formControlName="watshap" name="watshap" id="watshap">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Instragram</label>
+      <input type="text" class="form-control" formControlName="instragram" name="instragram" id="instragram">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Comunicación Interna</label>
+      <input type="text" class="form-control" formControlName="interna" name="interna" id="interna">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Comunicación Externa</label>
+      <input type="text" class="form-control" formControlName="externa" name="externa" id="externa">
+    </div>
+  </div>
+</div>
+
+
             <br>
               <div class="col-md-12 text-right">
                     <button class="btn btn-info" type="submit" [disabled]="organizacionGroup.status === 'INVALID'">Guardar &nbsp;  <span class="fa fa-save"></span></button>&nbsp;&nbsp;

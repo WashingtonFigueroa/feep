@@ -1,9 +1,9 @@
 <div class="background">
-    <div class="login" style="background-color: rgba(0,0,0,0.50)">
+    <div class="login" style="background-color: rgba(0,0,0,0.80)">
         <img src="../../assets/img/loading.gif" *ngIf="loading" width="50%">
         <form (submit)="login()" [formGroup]="loginGroup" role="form" *ngIf="!loading">
-            <h1 style="color: #ffffff">Iniciar Sesión</h1>
                 <div class="text-center">
+
                     <img src="../../assets/img/fepp.png">
                 </div>
             <br>
@@ -32,9 +32,19 @@
                         <!--                  <a class="btn btn-dark" routerLink="/insumos/tipo-insumos/listar" >Cancelar &nbsp;  <span class="fa fa-window-close"></span></a>-->
                         <button
                                 [disabled]="loading"
-                                class="btn btn-primary btn-block" type="submit">INICIAR SESIÓN&nbsp;  <span class="fa fa-sign-in"></span>
+                                class="btn btn-primary circle" type="submit">INICIAR SESIÓN&nbsp;  <span class="fa fa-sign-in"></span>
                         </button>
                     </div>
+                    <br>
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="copyright" style="color: #f7f7f7">
+                                &copy;
+                                {{test | date: 'yyyy'}}, Diseñado y Codificado por
+                                <a href="https://www.dtmowed.org/" target="_blank"><strong>&nbsp;DT MOWED&nbsp;&nbsp;</strong></a>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </form>

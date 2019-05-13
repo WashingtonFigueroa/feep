@@ -8,14 +8,14 @@
           <div class="col-md-12">
             <div class="card">
               <br>
-              <h3>&nbsp;&nbsp; Lista Eventos</h3>
+              <h5>&nbsp;&nbsp; <strong>Eventos</strong></h5>
+              <hr>
               <div class="container">
                 <div class="row">
                   <div class="col-sm">
                     <button class="btn btn-info" routerLink="/eventos/crear">REGISTRAR &nbsp; <span class="fa fa-save"></span></button>
                   </div>
                   <div class="col-sm">
-                    <button class="btn btn-primary" (click)="export()"><span class="fa fa-file"></span>&nbsp;&nbsp;Exportar Excel</button>
                   </div>
                   <div class="col-sm">
                     <form (submit)="buscar()" class="form-inline" role="form">
@@ -32,7 +32,7 @@
               <div class="card-body">
                     <div *ngIf="eventos !== null" class="table-responsive">
                       <table class="table">
-                        <thead style="background-color: #303030; color: #f7f7f7">
+                        <thead style="background-color: #e9ecef; color: #007bff">
                       <th> #   </th>
                       <th> Imagen   </th>
                       <th> Nombre Evento  </th>

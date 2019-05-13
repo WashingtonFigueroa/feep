@@ -55,14 +55,21 @@ export class OrganizacionUpdateComponent implements OnInit {
             'caracteristica3' : new FormControl(this.organizacion.caracteristica3),
             'representante': new FormControl(this.organizacion.representante),
             'contacto': new FormControl(this.organizacion.contacto),
-            'descripcion': new FormControl(this.organizacion.descripcion),
+            'email': new FormControl(this.organizacion.email),
+            'direccion': new FormControl(this.organizacion.direccion),
             'ministerio': new FormControl(this.organizacion.ministerio),
             'acuerdo': new FormControl(this.organizacion.acuerdo),
             'mujeres': new FormControl(this.organizacion.mujeres),
             'ninias': new FormControl(this.organizacion.ninias),
             'hombres': new FormControl(this.organizacion.hombres),
             'ninios': new FormControl(this.organizacion.ninios),
-            'total': new FormControl(0)
+            'total': new FormControl(0),
+            'facebook': new FormControl(this.organizacion.facebook),
+            'twitter': new FormControl(this.organizacion.twitter),
+            'watshap': new FormControl(this.organizacion.watshap),
+            'instragram': new FormControl(this.organizacion.instragram),
+            'interna': new FormControl(this.organizacion.interna),
+            'externa': new FormControl(this.organizacion.externa),
         });
     }
     update() {

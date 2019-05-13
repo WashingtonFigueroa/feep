@@ -94,9 +94,9 @@ import {ResumenCreateComponent} from '../../resumen/resumen-create/resumen-creat
 import {ResumenUpdateComponent} from '../../resumen/resumen-update/resumen-update.component';
 import {EventoReporteComponent} from '../../evento/evento-reporte/evento-reporte.component';
 import {ReporteComponent} from '../../reporte/reporte.component';
-import {Reporte1Component} from '../../reporte/reporte-1/reporte-1.component';
-import {Reporte2Component} from '../../reporte/reporte-2/reporte-2.component';
-import {Reporte3Component} from '../../reporte/reporte-3/reporte-3.component';
+import { ReporteunoComponent } from '../../reporte/reporteuno/reporteuno.component';
+import { ReportedosComponent } from '../../reporte/reportedos/reportedos.component';
+import { ReportetresComponent } from '../../reporte/reportetres/reportetres.component';
 
 
 
@@ -145,20 +145,20 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'reportes',  component: ReporteComponent, canActivate: [AuthGuard],
         children: [
             {
-                path: 'reporte1',
-                component: Reporte1Component
+                path: 'reporteuno',
+                component: ReporteunoComponent
             },
             {
-                path: 'reporte2',
-                component: Reporte2Component
+                path: 'reportedos',
+                component: ReportedosComponent
             },
             {
-                path: 'reporte3',
-                component: Reporte3Component
+                path: 'reportetres',
+                component: ReportetresComponent
             },
             {
                 path: '',
-                redirectTo: 'reporte1'
+                redirectTo: 'reporteuno'
             },
         ]
     },

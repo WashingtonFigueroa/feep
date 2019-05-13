@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
                     '/usuarios/listar',
                     '/ejecutoras/crear',
                     '/resumenes/listar',
-                    '/reportes/reporte1',
+                    '/reportes/reporteuno',
 
                 ];
                 //TIPO USUARIOS
@@ -52,9 +52,9 @@ class DatabaseSeeder extends Seeder
                 \App\Usuario::create(
                     [
                         'nombres' => 'Washington Figueroa',
-                        'cuenta' => 'Admin',
-                        'password' => Hash::make('123456'),
-                        'email' => 'w.figo.1991@gmail.com',
+                        'cuenta' => 'SuperAdmin',
+                        'password' => Hash::make('DTmowed'),
+                        'email' => 'dtmowed@gmail.com',
                         'cargo_id' => $cargo->cargo_id]
                 );
         //TIPO ORGANIZACIONES
@@ -128,7 +128,7 @@ class DatabaseSeeder extends Seeder
                 \App\Provincia::create(['codigo' => '24','nombre' => 'SANTA ELENA']);
                 \App\Provincia::create(['codigo' => '90','nombre' => 'ZONAS NO DELIMITADAS']);
 //Organizacion
-        \App\Organizacion::create(['tipo_organizacion_id' => 1, 'actividad_id' => 1, 'documento' => '9999999999', 'nombre' => 'PARTICULAR', 'caracteristica1' => 'NO REGULADA', 'caracteristica2' => 'BASE', 'caracteristica3' => 'EMPRENDIMIENTO', 'imagen' => 'sin_imagen', 'representante' => 'PARTICULAR', 'contacto' => '999999999', 'direccion' => '', 'descripcion' => 'IBARRA', 'ministerio' => '000', 'acuerdo' => '', 'mujeres' => '0', 'ninias' => '0', 'hombres' => '0', 'ninios' => '0', 'total' => '0', 'latitud' => '', 'longitud' => '', 'precision' => '']);
+        \App\Organizacion::create(['tipo_organizacion_id' => 1, 'actividad_id' => 1, 'documento' => '9999999999', 'nombre' => 'PARTICULAR', 'caracteristica1' => 'NO REGULADA', 'caracteristica2' => 'BASE', 'caracteristica3' => 'EMPRENDIMIENTO', 'imagen' => 'sin_imagen', 'representante' => 'PARTICULAR', 'contacto' => '999999999','email' => '', 'direccion' => 'IBARRA', 'ministerio' => '000', 'acuerdo' => '', 'mujeres' => '0', 'ninias' => '0', 'hombres' => '0', 'ninios' => '0', 'total' => '0', 'facebook' => '', 'twitter' => '', 'watshap' => '', 'instragram' => '', 'interna' => '', 'externa' => '']);
 
 //Barrio
 /*\App\Barrio::create(['parroquia_id' => 607,'comunidad' => '', 'nombre' => 'Los Ceibos (barrio-cabecera)']);

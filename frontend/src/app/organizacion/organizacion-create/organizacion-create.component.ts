@@ -47,8 +47,8 @@ export class OrganizacionCreateComponent implements OnInit {
             'imagen': [''],
             'representante': ['', [Validators.required]],
             'contacto': [''],
+            'email': [''],
             'direccion': [''],
-            'descripcion': [''],
             'ministerio':  ['OTRO/A', [Validators.required]],
             'acuerdo': [''],
             'mujeres': [''],
@@ -56,6 +56,12 @@ export class OrganizacionCreateComponent implements OnInit {
             'hombres': [''],
             'ninios': [''],
             'total': [''],
+            'facebook': [''],
+            'twitter': [''],
+            'watshap': [''],
+            'instragram': [''],
+            'interna': [''],
+            'externa': [''],
         });
     }
     store() {
@@ -78,8 +84,8 @@ export class OrganizacionCreateComponent implements OnInit {
             formData.append('actividad', this.organizacionGroup.value.actividad);
             formData.append('representante', this.organizacionGroup.value.representante.toUpperCase());
             formData.append('contacto', this.organizacionGroup.value.contacto);
-            formData.append('direccion', this.organizacionGroup.value.direccion);
-            formData.append('descripcion', this.organizacionGroup.value.descripcion.toUpperCase());
+            formData.append('email', this.organizacionGroup.value.email);
+            formData.append('direccion', this.organizacionGroup.value.direccion.toUpperCase());
             formData.append('ministerio', this.organizacionGroup.value.ministerio);
             formData.append('acuerdo', this.organizacionGroup.value.acuerdo);
         if (this.organizacionGroup.value.mujeres === '') {
@@ -108,7 +114,14 @@ export class OrganizacionCreateComponent implements OnInit {
         } else {
             formData.append('total', total);
         }
-            this.organizacionService.store(formData)
+        formData.append('facebook', this.organizacionGroup.value.facebook);
+        formData.append('twitter', this.organizacionGroup.value.twitter);
+        formData.append('watshap', this.organizacionGroup.value.watshap);
+        formData.append('instragram', this.organizacionGroup.value.instragram);
+        formData.append('interna', this.organizacionGroup.value.interna);
+        formData.append('externa', this.organizacionGroup.value.externa);
+
+        this.organizacionService.store(formData)
                 .subscribe((res: any) => {
                     this.toastrService.success('Organización agregada exitosamente.', '', {
                         timeOut: 4000,

@@ -18,6 +18,7 @@ class Insumo extends Model
         'fecha',
         'imagen',
         'receptor',
+        'receptor2',
     ];
     protected $dates = ['deleted_at'];
 }

@@ -7,12 +7,8 @@ export class DashboardService {
 
     base = environment.servidor;
     constructor(private http: HttpClient) { }
-
     index() {
         return this.http.get(`${this.base}reportes`);
-    }
-    numero_asistentes() {
-        return this.http.get(`${this.base}reportes-num_asistencia`);
     }
     listar() {
         return this.http.get(`${this.base}reportes-listar`);
@@ -22,5 +18,11 @@ export class DashboardService {
     }
     pagination(url: string) {
         return this.http.get(url);
+    }
+    eventos_mes() {
+        return this.http.get(`${this.base}eventos_mes`);
+    }
+    beneficiariosMes() {
+        return this.http.get(`${this.base}beneficiariosMes`);
     }
 }

@@ -101,14 +101,5 @@ export class EventoIndexComponent implements OnInit {
             return;
         }
     }
-    export() {
-        const date = new Date();
-        const now = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
-        this.eventoService.exporar_excel_eventos().subscribe(eventos => {
-            const csv = new ngxCsv(eventos, 'eventos-' + now , {
-                fieldSeparator: ';',
-                headers: ['Nombre Proyecto', 'Tipo Evento', 'Nombre Evento', 'Responsable', 'Ubicacion', 'Direccion', 'Fecha Inicia', 'Fecha Finaliza', 'Duracion Horas']
-            });
-        });
-    }
+
 }

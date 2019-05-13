@@ -11,7 +11,7 @@ import {ToastrService} from 'ngx-toastr';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+    test: Date = new Date();
   loginGroup: FormGroup;
   returnUrl: string;
   loading = false;

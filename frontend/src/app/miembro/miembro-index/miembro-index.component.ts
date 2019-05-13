@@ -53,6 +53,7 @@ export class MiembroIndexComponent implements OnInit {
             });
     }
 
+
     buscar(valor: string) {
         this.miembroService.buscar(valor)
             .subscribe((res: any) => {

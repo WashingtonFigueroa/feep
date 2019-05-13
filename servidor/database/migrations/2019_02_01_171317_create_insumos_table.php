@@ -30,6 +30,7 @@ class CreateInsumosTable extends Migration
             $table->date('fecha')->nullable();
             $table->string('imagen')->nullable();
             $table->string('receptor');
+            $table->string('receptor2');
             $table->softDeletes();
             $table->timestamps();
         });

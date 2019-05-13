@@ -18,7 +18,7 @@ export class ProyectoIndexComponent implements OnInit {
     url_base = environment.servidor + 'proyectos-imagen/';
     valor = '';
     constructor(private proyectoService: ProyectoService,
-                private toastrService:ToastrService ) {
+                private toastrService: ToastrService ) {
         this.proyectoService.index().subscribe((res: any) => {
                 this.proyectos = res;
                 this.current_page = this.proyectos.current_page;
